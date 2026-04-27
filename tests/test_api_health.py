@@ -13,7 +13,6 @@ def test_protected_endpoint_requires_token(app_client):
 
 def test_protected_endpoint_with_token(app_client):
     client, token = app_client
-    r = client.post("/simulate/tick", headers={"Authorization": f"Bearer {token}"})
-    # Endpoint may return 200 or 422 depending on later wiring;
-    # for skeleton we accept any non-401.
-    assert r.status_code != 401
+    r = client.post("/simulate/reset", json={"small": True},
+                    headers={"Authorization": f"Bearer {token}"})
+    assert r.status_code == 200

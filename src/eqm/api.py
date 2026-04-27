@@ -9,6 +9,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel
 
 from eqm.config import Settings, get_settings
+from eqm.engine import run_engine
 from eqm.models import (
     Assignment,
     CMDBResource,
@@ -19,6 +20,10 @@ from eqm.models import (
     WorkflowState,
 )
 from eqm.persistence import JsonStore
+from eqm.rules.base import DataSnapshot
+from eqm.scenarios import SCENARIOS, run_scenario
+from eqm.seed import SeedBundle, SeedConfig, generate_seed
+from eqm.simulator import drift_tick
 from eqm.workflow import LEGAL_TRANSITIONS, IllegalTransition, transition
 
 bearer_scheme = HTTPBearer(auto_error=False)
@@ -41,11 +46,6 @@ def get_store(settings: Settings = Depends(get_settings)) -> JsonStore:  # noqa:
 @app.get("/health")
 def health() -> dict:
     return {"status": "ok"}
-
-
-@app.post("/simulate/tick", dependencies=[Depends(require_token)])
-def simulate_tick_placeholder() -> dict:
-    return {"todo": "wired in Task 32"}
 
 
 async def _read_list(store: JsonStore, name: str) -> list[dict]:
@@ -299,3 +299,86 @@ async def violation_reopen(vid: str, body: ReopenRequest,
             await store.write("violations.json", raw)
             return v
     raise HTTPException(404, "Violation not found")
+
+
+class ResetRequest(BaseModel):
+    small: bool = False
+
+
+class ScenarioRequest(BaseModel):
+    name: str
+
+
+async def _load_bundle(store: JsonStore) -> SeedBundle:
+    return SeedBundle(
+        entitlements=[Entitlement(**x) for x in await _read_list(store, "entitlements.json")],
+        hr_employees=[HREmployee(**x) for x in await _read_list(store, "hr_employees.json")],
+        cmdb_resources=[CMDBResource(**x) for x in await _read_list(store, "cmdb_resources.json")],
+        assignments=[Assignment(**x) for x in await _read_list(store, "assignments.json")],
+    )
+
+
+async def _save_bundle_and_evaluate(store: JsonStore, bundle: SeedBundle) -> int:
+    await store.write("entitlements.json",
+                      [e.model_dump(mode="json") for e in bundle.entitlements])
+    await store.write("hr_employees.json",
+                      [e.model_dump(mode="json") for e in bundle.hr_employees])
+    await store.write("cmdb_resources.json",
+                      [e.model_dump(mode="json") for e in bundle.cmdb_resources])
+    await store.write("assignments.json",
+                      [e.model_dump(mode="json") for e in bundle.assignments])
+    snap = DataSnapshot(bundle.entitlements, bundle.hr_employees,
+                         bundle.cmdb_resources, bundle.assignments)
+    existing_raw = await _read_list(store, "violations.json")
+    existing = [Violation(**x) for x in existing_raw]
+    result = run_engine(snap, existing_violations=existing)
+    await store.write("violations.json",
+                      [v.model_dump(mode="json") for v in result.violations])
+    return result.new_count
+
+
+@app.post("/simulate/reset", dependencies=[Depends(require_token)])
+async def simulate_reset(body: ResetRequest,
+                          store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
+    cfg = (SeedConfig(num_entitlements=50, num_employees=100,
+                      num_resources=15, num_assignments=200, seed=42)
+           if body.small else SeedConfig())
+    bundle = generate_seed(cfg)
+    new_count = await _save_bundle_and_evaluate(store, bundle)
+    return {"entitlements": len(bundle.entitlements),
+            "hr_employees": len(bundle.hr_employees),
+            "cmdb_resources": len(bundle.cmdb_resources),
+            "assignments": len(bundle.assignments),
+            "new_violations": new_count}
+
+
+@app.post("/simulate/tick", dependencies=[Depends(require_token)])
+async def simulate_tick(store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
+    bundle = await _load_bundle(store)
+    tick = int(datetime.now(UTC).timestamp()) // 60
+    summary = drift_tick(bundle, tick_number=tick)
+    new_count = await _save_bundle_and_evaluate(store, bundle)
+    return {"tick_number": tick, "changes": summary.changes,
+            "new_violations": new_count}
+
+
+@app.post("/simulate/scenario", dependencies=[Depends(require_token)])
+async def simulate_scenario(body: ScenarioRequest,
+                             store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
+    if body.name not in SCENARIOS:
+        raise HTTPException(400, f"Unknown scenario. Known: {sorted(SCENARIOS)}")
+    bundle = await _load_bundle(store)
+    run_scenario(body.name, bundle)
+    new_count = await _save_bundle_and_evaluate(store, bundle)
+    return {"scenario": body.name, "new_violations": new_count}
+
+
+@app.post("/sync/push-now", dependencies=[Depends(require_token)])
+async def sync_push_now() -> dict:
+    # Wired in Task 36 (git integration); for now return a stub.
+    return {"status": "not_implemented_yet"}
+
+
+@app.post("/sync/pull-now", dependencies=[Depends(require_token)])
+async def sync_pull_now() -> dict:
+    return {"status": "not_implemented_yet"}
