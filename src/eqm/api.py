@@ -6,6 +6,7 @@ from datetime import UTC, datetime
 
 from fastapi import Depends, FastAPI, HTTPException, Query, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from pydantic import BaseModel
 
 from eqm.config import Settings, get_settings
 from eqm.models import (
@@ -14,8 +15,11 @@ from eqm.models import (
     Entitlement,
     HREmployee,
     Violation,
+    WorkflowHistoryEntry,
+    WorkflowState,
 )
 from eqm.persistence import JsonStore
+from eqm.workflow import LEGAL_TRANSITIONS, IllegalTransition, transition
 
 bearer_scheme = HTTPBearer(auto_error=False)
 app = FastAPI(title="EQM Utility", version="0.1.0")
@@ -236,3 +240,62 @@ async def revoke_assignment(asn_id: str,
             await store.write("assignments.json", raw)
             return {"id": asn_id, "active": False}
     raise HTTPException(404, "Assignment not found")
+
+
+class TransitionRequest(BaseModel):
+    to_state: WorkflowState
+    actor: str
+    note: str | None = None
+    override_fix: dict | None = None
+
+
+class ReopenRequest(BaseModel):
+    actor: str
+    note: str
+
+
+@app.post("/violations/{vid}/transition", response_model=Violation,
+          dependencies=[Depends(require_token)])
+async def violation_transition(vid: str, body: TransitionRequest,
+                               store: JsonStore = Depends(get_store)) -> Violation:  # noqa: B008
+    raw = await _read_list(store, "violations.json")
+    for i, x in enumerate(raw):
+        if x.get("id") == vid:
+            v = Violation(**x)
+            try:
+                transition(v, to=body.to_state, actor=body.actor,
+                           note=body.note, override_fix=body.override_fix)
+            except IllegalTransition as e:
+                # Disambiguate: missing note vs disallowed transition.
+                if (body.to_state in LEGAL_TRANSITIONS[v.workflow_state]
+                    and body.to_state == WorkflowState.REJECTED
+                    and not body.note):
+                    raise HTTPException(400, "Rejection requires a note") from e
+                raise HTTPException(409, str(e)) from e
+            raw[i] = v.model_dump(mode="json")
+            await store.write("violations.json", raw)
+            return v
+    raise HTTPException(404, "Violation not found")
+
+
+@app.post("/violations/{vid}/reopen", response_model=Violation,
+          dependencies=[Depends(require_token)])
+async def violation_reopen(vid: str, body: ReopenRequest,
+                            store: JsonStore = Depends(get_store)) -> Violation:  # noqa: B008
+    raw = await _read_list(store, "violations.json")
+    for i, x in enumerate(raw):
+        if x.get("id") == vid:
+            v = Violation(**x)
+            if v.workflow_state != WorkflowState.REJECTED:
+                raise HTTPException(409,
+                    f"Reopen only valid from REJECTED; current={v.workflow_state.value}")
+            v.workflow_history.append(WorkflowHistoryEntry(
+                from_state=WorkflowState.REJECTED, to_state=WorkflowState.OPEN,
+                actor=body.actor, timestamp=datetime.now(UTC),
+                note=body.note,
+            ))
+            v.workflow_state = WorkflowState.OPEN
+            raw[i] = v.model_dump(mode="json")
+            await store.write("violations.json", raw)
+            return v
+    raise HTTPException(404, "Violation not found")
