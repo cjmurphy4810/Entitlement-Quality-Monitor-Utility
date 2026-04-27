@@ -2,13 +2,20 @@
 
 from __future__ import annotations
 
+from collections import defaultdict
 from datetime import UTC, datetime
+from typing import Annotated
 
-from fastapi import Depends, FastAPI, HTTPException, Query, status
+from fastapi import Depends, FastAPI, Form, HTTPException, Query, status
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
+from starlette.requests import Request
 
 from eqm.config import Settings, get_settings
+from eqm.dashboard import STATIC_DIR, TEMPLATES_DIR
 from eqm.engine import run_engine
 from eqm.models import (
     Assignment,
@@ -28,6 +35,8 @@ from eqm.workflow import LEGAL_TRANSITIONS, IllegalTransition, transition
 
 bearer_scheme = HTTPBearer(auto_error=False)
 app = FastAPI(title="EQM Utility", version="0.1.0")
+app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 
 
 def require_token(
@@ -382,3 +391,59 @@ async def sync_push_now() -> dict:
 @app.post("/sync/pull-now", dependencies=[Depends(require_token)])
 async def sync_pull_now() -> dict:
     return {"status": "not_implemented_yet"}
+
+
+def _scenarios_list() -> list[str]:
+    return sorted(SCENARIOS.keys())
+
+
+@app.get("/", response_class=HTMLResponse)
+async def dashboard_overview(request: Request,
+                              store: JsonStore = Depends(get_store)) -> HTMLResponse:  # noqa: B008
+    ents = await _read_list(store, "entitlements.json")
+    emps = await _read_list(store, "hr_employees.json")
+    ress = await _read_list(store, "cmdb_resources.json")
+    asns = await _read_list(store, "assignments.json")
+    vios_raw = await _read_list(store, "violations.json")
+    by_sev: dict[str, dict[str, int]] = defaultdict(
+        lambda: {"open": 0, "pending_approval": 0, "resolved": 0})
+    for v in vios_raw:
+        sev = v.get("severity", "low")
+        st = v.get("workflow_state", "open")
+        bucket = by_sev[sev]
+        if st in bucket:
+            bucket[st] += 1
+    return templates.TemplateResponse(request, "overview.html", {
+        "counts": {"entitlements": len(ents), "hr_employees": len(emps),
+                   "cmdb_resources": len(ress), "assignments": len(asns)},
+        "violations_by": by_sev,
+        "scenarios": _scenarios_list(),
+    })
+
+
+@app.post("/dashboard/actions/tick")
+async def dashboard_action_tick(store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
+    bundle = await _load_bundle(store)
+    tick = int(datetime.now(UTC).timestamp()) // 60
+    drift_tick(bundle, tick_number=tick)
+    await _save_bundle_and_evaluate(store, bundle)
+    return RedirectResponse("/", status_code=303)
+
+
+@app.post("/dashboard/actions/scenario")
+async def dashboard_action_scenario(name: Annotated[str, Form()],
+                                      store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
+    if name not in SCENARIOS:
+        raise HTTPException(400, "Unknown scenario")
+    bundle = await _load_bundle(store)
+    run_scenario(name, bundle)
+    await _save_bundle_and_evaluate(store, bundle)
+    return RedirectResponse("/", status_code=303)
+
+
+@app.post("/dashboard/actions/reset")
+async def dashboard_action_reset(store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
+    bundle = generate_seed(SeedConfig(num_entitlements=50, num_employees=100,
+                                        num_resources=15, num_assignments=200, seed=42))
+    await _save_bundle_and_evaluate(store, bundle)
+    return RedirectResponse("/", status_code=303)
