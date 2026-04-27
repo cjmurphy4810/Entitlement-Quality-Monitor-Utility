@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from datetime import UTC, datetime
+
 from fastapi import Depends, FastAPI, HTTPException, Query, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
@@ -155,7 +157,6 @@ async def get_violations(
     if severity:
         items = [v for v in items if v.severity.value == severity]
     if since:
-        from datetime import datetime
         cutoff = datetime.fromisoformat(since)
         items = [v for v in items if v.detected_at >= cutoff]
     return items
@@ -168,3 +169,70 @@ async def get_violation(vid: str, store: JsonStore = Depends(get_store)) -> Viol
         if x.get("id") == vid:
             return Violation(**x)
     raise HTTPException(404, "Violation not found")
+
+
+ENTITLEMENT_PATCHABLE = {"name", "pbl_description", "access_tier",
+                         "acceptable_roles", "division", "linked_resource_ids",
+                         "sod_tags"}
+EMPLOYEE_PATCHABLE = {"current_role", "current_division", "status", "manager_id",
+                      "terminated_at"}
+RESOURCE_PATCHABLE = {"name", "type", "criticality", "owner_division",
+                      "environment", "linked_entitlement_ids", "description"}
+
+
+async def _patch_record(store: JsonStore, name: str, item_id: str,
+                        patch: dict, allowed: set[str], model) -> dict:
+    raw = await _read_list(store, name)
+    for i, x in enumerate(raw):
+        if x.get("id") == item_id:
+            unknown = set(patch) - allowed
+            if unknown:
+                raise HTTPException(400, f"Cannot patch fields: {sorted(unknown)}")
+            x = {**x, **patch}
+            if "updated_at" in model.model_fields:
+                x["updated_at"] = datetime.now(UTC).isoformat()
+            validated = model(**x).model_dump(mode="json")
+            raw[i] = validated
+            await store.write(name, raw)
+            return validated
+    raise HTTPException(404, "Not found")
+
+
+@app.patch("/entitlements/{ent_id}", response_model=Entitlement,
+           dependencies=[Depends(require_token)])
+async def patch_entitlement(ent_id: str, patch: dict,
+                            store: JsonStore = Depends(get_store)) -> Entitlement:  # noqa: B008
+    return Entitlement(**await _patch_record(
+        store, "entitlements.json", ent_id, patch,
+        ENTITLEMENT_PATCHABLE, Entitlement))
+
+
+@app.patch("/hr/employees/{emp_id}", response_model=HREmployee,
+           dependencies=[Depends(require_token)])
+async def patch_employee(emp_id: str, patch: dict,
+                         store: JsonStore = Depends(get_store)) -> HREmployee:  # noqa: B008
+    return HREmployee(**await _patch_record(
+        store, "hr_employees.json", emp_id, patch,
+        EMPLOYEE_PATCHABLE, HREmployee))
+
+
+@app.patch("/cmdb/resources/{res_id}", response_model=CMDBResource,
+           dependencies=[Depends(require_token)])
+async def patch_resource(res_id: str, patch: dict,
+                         store: JsonStore = Depends(get_store)) -> CMDBResource:  # noqa: B008
+    return CMDBResource(**await _patch_record(
+        store, "cmdb_resources.json", res_id, patch,
+        RESOURCE_PATCHABLE, CMDBResource))
+
+
+@app.delete("/assignments/{asn_id}", dependencies=[Depends(require_token)])
+async def revoke_assignment(asn_id: str,
+                            store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
+    raw = await _read_list(store, "assignments.json")
+    for i, x in enumerate(raw):
+        if x.get("id") == asn_id:
+            x["active"] = False
+            raw[i] = x
+            await store.write("assignments.json", raw)
+            return {"id": asn_id, "active": False}
+    raise HTTPException(404, "Assignment not found")
