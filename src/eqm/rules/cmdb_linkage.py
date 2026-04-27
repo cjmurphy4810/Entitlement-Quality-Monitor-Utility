@@ -19,8 +19,6 @@ class _CMDB01:
         violations: list[Violation] = []
         existing_ids: list[str] = []
         for ent in snapshot.entitlements:
-            if not ent.linked_resource_ids:
-                continue  # no declared links — not an orphan, just unlinked
             valid_links = [rid for rid in ent.linked_resource_ids
                            if rid in valid_resource_ids]
             if not valid_links:

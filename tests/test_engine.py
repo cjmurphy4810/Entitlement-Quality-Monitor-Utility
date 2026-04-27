@@ -5,9 +5,12 @@ from tests.rules.conftest import make_entitlement
 
 
 def _bad_snapshot() -> DataSnapshot:
-    # An entitlement with PBL too short -> ENT-Q-01.
-    e = make_entitlement(id="ENT-1", pbl_description="x")
-    return DataSnapshot([e], [], [], [])
+    from eqm.models import AccessTier
+    from tests.rules.conftest import make_resource
+    res = make_resource(id="RES-1")
+    e = make_entitlement(id="ENT-1", access_tier=AccessTier.READ_WRITE,
+                         pbl_description="x")
+    return DataSnapshot([e], [], [res], [])
 
 
 def test_engine_emits_violations_first_run():
