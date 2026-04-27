@@ -17,3 +17,6 @@ table th, table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #eee; tex
 .sev-high td:first-child { color: #c60; font-weight: 600; }
 .sev-medium td:first-child { color: #a80; }
 .sev-low td:first-child { color: #555; }
+.state-resolved td { color: #888; text-decoration: line-through; }
+.state-rejected td { color: #888; font-style: italic; }
+.history-row td { background: #fafafa; padding-left: 2rem; }

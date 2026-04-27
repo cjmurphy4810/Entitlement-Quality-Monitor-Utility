@@ -45,3 +45,16 @@ def test_cmdb_tab(app_client, tmp_path):
     r = client.get("/dashboard/cmdb")
     assert r.status_code == 200
     assert "Criticality" in r.text
+
+
+def test_violations_tab_groups_by_severity(app_client, tmp_path):
+    client, token = app_client
+    client.post("/simulate/reset", json={"small": True},
+                headers={"Authorization": f"Bearer {token}"})
+    client.post("/simulate/scenario", json={"name": "kitchen_sink"},
+                headers={"Authorization": f"Bearer {token}"})
+    r = client.get("/dashboard/violations")
+    assert r.status_code == 200
+    body = r.text
+    for sev in ["critical", "high", "medium", "low"]:
+        assert sev in body.lower()

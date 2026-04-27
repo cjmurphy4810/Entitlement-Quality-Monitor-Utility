@@ -471,3 +471,11 @@ async def dashboard_cmdb(request: Request,
     items = await _read_list(store, "cmdb_resources.json")
     return templates.TemplateResponse(request, "cmdb.html",
                                        {"items": items, "scenarios": _scenarios_list()})
+
+
+@app.get("/dashboard/violations", response_class=HTMLResponse)
+async def dashboard_violations(request: Request,
+                                 store: JsonStore = Depends(get_store)) -> HTMLResponse:  # noqa: B008
+    items = await _read_list(store, "violations.json")
+    return templates.TemplateResponse(request, "violations.html",
+                                       {"items": items, "scenarios": _scenarios_list()})

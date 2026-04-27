@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Violations ({{ items|length }})</h2>
+{% for sev in ["critical", "high", "medium", "low"] %}
+  {% set bucket = items | selectattr("severity", "equalto", sev) | list %}
+  {% if bucket %}
+    <h3 class="sev-{{ sev }}">{{ sev|upper }} ({{ bucket|length }})</h3>
+    <table>
+      <thead><tr>
+        <th>ID</th><th>Rule</th><th>Target</th><th>State</th>
+        <th>Detected</th><th>Recommended</th><th>Explanation</th>
+      </tr></thead>
+      <tbody>
+      {% for v in bucket %}
+      <tr class="state-{{ v.workflow_state }}">
+        <td>{{ v.id }}</td>
+        <td>{{ v.rule_id }} — {{ v.rule_name }}</td>
+        <td>{{ v.target_type }} {{ v.target_id }}</td>
+        <td>{{ v.workflow_state }}</td>
+        <td>{{ v.detected_at }}</td>
+        <td>{{ v.recommended_action }}</td>
+        <td>{{ v.explanation }}</td>
+      </tr>
+      {% if v.workflow_history %}
+      <tr class="history-row"><td colspan="7">
+        <details><summary>Workflow history ({{ v.workflow_history|length }})</summary>
+        <ul>
+        {% for h in v.workflow_history %}
+          <li>{{ h.timestamp }} — {{ h.actor }}: {{ h.from_state }} → {{ h.to_state }}{% if h.note %} ({{ h.note }}){% endif %}</li>
+        {% endfor %}
+        </ul></details>
+      </td></tr>
+      {% endif %}
+      {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% endfor %}
+{% endblock %}
