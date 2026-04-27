@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import re
 from collections.abc import Iterable
 from dataclasses import dataclass
+from datetime import UTC, datetime
 from typing import Protocol, runtime_checkable
 
 from eqm.models import (
@@ -52,3 +54,15 @@ class Rule(Protocol):
     recommended_action: RecommendedAction
 
     def evaluate(self, snapshot: DataSnapshot) -> list[Violation]: ...
+
+
+def now_utc() -> datetime:
+    return datetime.now(UTC)
+
+
+_VIO_RE = re.compile(r"VIO-(\d+)")
+
+
+def next_violation_id(existing_ids: list[str]) -> str:
+    nums = [int(m.group(1)) for vid in existing_ids if (m := _VIO_RE.match(vid))]
+    return f"VIO-{(max(nums) + 1) if nums else 1:05d}"
