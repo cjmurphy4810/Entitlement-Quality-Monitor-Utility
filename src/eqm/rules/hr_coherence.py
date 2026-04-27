@@ -48,3 +48,46 @@ class _HR01:
 
 HR_01 = _HR01()
 ALL_RULES.append(HR_01)
+
+
+class _HR02:
+    id = "HR-02"
+    name = "Division mismatch"
+    severity = Severity.MEDIUM
+    category = "hr_coherence"
+    recommended_action = RecommendedAction.AUTO_REVOKE_ASSIGNMENT
+
+    def evaluate(self, snapshot: DataSnapshot) -> list[Violation]:
+        ent_by_id = {e.id: e for e in snapshot.entitlements}
+        emp_by_id = {e.id: e for e in snapshot.hr_employees}
+        violations: list[Violation] = []
+        existing_ids: list[str] = []
+        for a in snapshot.assignments:
+            if not a.active:
+                continue
+            ent = ent_by_id.get(a.entitlement_id)
+            emp = emp_by_id.get(a.employee_id)
+            if not ent or not emp:
+                continue
+            if emp.current_division != ent.division:
+                vid = next_violation_id(existing_ids)
+                existing_ids.append(vid)
+                violations.append(Violation(
+                    id=vid, rule_id=self.id, rule_name=self.name,
+                    severity=self.severity, detected_at=now_utc(),
+                    target_type="assignment", target_id=a.id,
+                    explanation=(f"Employee division '{emp.current_division.value}' "
+                                 f"does not match entitlement division "
+                                 f"'{ent.division.value}'."),
+                    evidence={"employee_id": emp.id,
+                              "employee_division": emp.current_division.value,
+                              "entitlement_id": ent.id,
+                              "entitlement_division": ent.division.value},
+                    recommended_action=self.recommended_action,
+                    suggested_fix={"_action": "delete_assignment"},
+                ))
+        return violations
+
+
+HR_02 = _HR02()
+ALL_RULES.append(HR_02)
