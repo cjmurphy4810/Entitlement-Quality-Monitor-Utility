@@ -111,3 +111,50 @@ class _TOX02:
 
 TOX_02 = _TOX02()
 ALL_RULES.append(TOX_02)
+
+
+class _TOX03:
+    id = "TOX-03"
+    name = "Tier-1 in 3+ divisions"
+    severity = Severity.HIGH
+    category = "toxic_combination"
+    recommended_action = RecommendedAction.ROUTE_TO_COMPLIANCE
+
+    THRESHOLD = 3
+
+    def evaluate(self, snapshot: DataSnapshot) -> list[Violation]:
+        ent_by_id = {e.id: e for e in snapshot.entitlements}
+        divs_by_emp: dict[str, set[str]] = defaultdict(set)
+        ent_ids_by_emp: dict[str, set[str]] = defaultdict(set)
+        for a in snapshot.assignments:
+            if not a.active:
+                continue
+            ent = ent_by_id.get(a.entitlement_id)
+            if not ent or ent.access_tier != AccessTier.ADMIN:
+                continue
+            divs_by_emp[a.employee_id].add(ent.division.value)
+            ent_ids_by_emp[a.employee_id].add(ent.id)
+
+        violations: list[Violation] = []
+        existing_ids: list[str] = []
+        for emp_id, divs in divs_by_emp.items():
+            if len(divs) >= self.THRESHOLD:
+                vid = next_violation_id(existing_ids)
+                existing_ids.append(vid)
+                violations.append(Violation(
+                    id=vid, rule_id=self.id, rule_name=self.name,
+                    severity=self.severity, detected_at=now_utc(),
+                    target_type="employee", target_id=emp_id,
+                    explanation=(f"Employee holds Tier-1 (Admin) in {len(divs)} "
+                                 f"divisions: {sorted(divs)}"),
+                    evidence={"divisions": sorted(divs),
+                              "entitlement_ids": sorted(ent_ids_by_emp[emp_id])},
+                    recommended_action=self.recommended_action,
+                    suggested_fix={"_action": "compliance_review",
+                                   "_note": "Reduce Tier-1 footprint to ≤2 divisions"},
+                ))
+        return violations
+
+
+TOX_03 = _TOX03()
+ALL_RULES.append(TOX_03)
