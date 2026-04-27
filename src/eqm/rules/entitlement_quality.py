@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from eqm.models import (
+    AccessTier,
     RecommendedAction,
     Severity,
     Violation,
@@ -50,3 +51,42 @@ class _ENTQ01:
 
 ENT_Q_01 = _ENTQ01()
 ALL_RULES.append(ENT_Q_01)
+
+
+class _ENTQ02:
+    id = "ENT-Q-02"
+    name = "PBL template match"
+    severity = Severity.MEDIUM
+    category = "entitlement_quality"
+    recommended_action = RecommendedAction.ROUTE_TO_ENTITLEMENT_OWNER
+
+    def evaluate(self, snapshot: DataSnapshot) -> list[Violation]:
+        violations: list[Violation] = []
+        existing_ids: list[str] = []
+        for ent in snapshot.entitlements:
+            desc = (ent.pbl_description or "").lower()
+            reason = None
+            if ent.access_tier == AccessTier.ADMIN and "administrator" not in desc:
+                reason = "Tier-1 PBL must mention 'administrator'"
+            elif ent.access_tier == AccessTier.GENERAL_RO and "read-only" not in desc and "read only" not in desc:
+                reason = "Tier-4 PBL must mention 'read-only'"
+            if reason:
+                vid = next_violation_id(existing_ids)
+                existing_ids.append(vid)
+                violations.append(Violation(
+                    id=vid, rule_id=self.id, rule_name=self.name,
+                    severity=self.severity, detected_at=now_utc(),
+                    target_type="entitlement", target_id=ent.id,
+                    explanation=reason,
+                    evidence={"access_tier": int(ent.access_tier),
+                              "pbl_description": ent.pbl_description},
+                    recommended_action=self.recommended_action,
+                    suggested_fix={"pbl_description":
+                        f"[Owner — rewrite to match Tier-{int(ent.access_tier)} template "
+                        f"({'administrator + system name' if ent.access_tier == AccessTier.ADMIN else 'read-only + system name'}).]"},
+                ))
+        return violations
+
+
+ENT_Q_02 = _ENTQ02()
+ALL_RULES.append(ENT_Q_02)
