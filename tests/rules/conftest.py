@@ -30,8 +30,8 @@ def make_entitlement(**kw) -> Entitlement:
     defaults = dict(
         id="ENT-1", name="Test Entitlement",
         pbl_description="Grants administrator access to the test system for managing configuration.",
-        access_tier=AccessTier.ADMIN, acceptable_roles=[Role.OPERATIONS],
-        division=Division.TECH_OPS, linked_resource_ids=["RES-1"],
+        access_tier=AccessTier.READ_WRITE, acceptable_roles=[Role.OPERATIONS],
+        division=Division.TECH_OPS, linked_resource_ids=[],
         sod_tags=[], created_at=NOW, updated_at=NOW,
     )
     defaults.update(kw)

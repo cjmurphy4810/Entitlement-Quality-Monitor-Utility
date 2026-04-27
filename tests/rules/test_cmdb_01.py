@@ -4,7 +4,8 @@ from tests.rules.conftest import make_entitlement, make_resource
 
 
 def test_cmdb_01_orphan_fires():
-    e = make_entitlement(id="ENT-1", linked_resource_ids=[])
+    # Entitlement declares a resource link that does not exist in CMDB — treat as orphan.
+    e = make_entitlement(id="ENT-1", linked_resource_ids=["RES-MISSING"])
     violations = CMDB_01.evaluate(DataSnapshot([e], [], [], []))
     assert len(violations) == 1
     assert violations[0].target_id == "ENT-1"
