@@ -5,6 +5,7 @@ from __future__ import annotations
 from eqm.models import (
     AccessTier,
     RecommendedAction,
+    Role,
     Severity,
     Violation,
 )
@@ -90,3 +91,42 @@ class _ENTQ02:
 
 ENT_Q_02 = _ENTQ02()
 ALL_RULES.append(ENT_Q_02)
+
+
+class _ENTQ03:
+    id = "ENT-Q-03"
+    name = "Tier vs role coherence"
+    severity = Severity.HIGH
+    category = "entitlement_quality"
+    recommended_action = RecommendedAction.UPDATE_ENTITLEMENT_FIELD
+
+    FORBIDDEN_AT_TIER_1 = {Role.CUSTOMER, Role.BUSINESS_USER}
+
+    def evaluate(self, snapshot: DataSnapshot) -> list[Violation]:
+        violations: list[Violation] = []
+        existing_ids: list[str] = []
+        for ent in snapshot.entitlements:
+            if ent.access_tier != AccessTier.ADMIN:
+                continue
+            forbidden = [r for r in ent.acceptable_roles if r in self.FORBIDDEN_AT_TIER_1]
+            if forbidden:
+                vid = next_violation_id(existing_ids)
+                existing_ids.append(vid)
+                cleaned = [r for r in ent.acceptable_roles if r not in self.FORBIDDEN_AT_TIER_1]
+                violations.append(Violation(
+                    id=vid, rule_id=self.id, rule_name=self.name,
+                    severity=self.severity, detected_at=now_utc(),
+                    target_type="entitlement", target_id=ent.id,
+                    explanation=(f"Tier-1 (Admin) entitlement lists forbidden roles: "
+                                 f"{[r.value for r in forbidden]}"),
+                    evidence={"access_tier": 1,
+                              "acceptable_roles": [r.value for r in ent.acceptable_roles],
+                              "forbidden_roles": [r.value for r in forbidden]},
+                    recommended_action=self.recommended_action,
+                    suggested_fix={"acceptable_roles": [r.value for r in cleaned]},
+                ))
+        return violations
+
+
+ENT_Q_03 = _ENTQ03()
+ALL_RULES.append(ENT_Q_03)
