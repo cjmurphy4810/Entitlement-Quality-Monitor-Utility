@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from datetime import timedelta
 
-from eqm.models import RecommendedAction, Severity, Violation
+from eqm.models import EmployeeStatus, RecommendedAction, Severity, Violation
 from eqm.rules import ALL_RULES
 from eqm.rules.base import DataSnapshot, next_violation_id, now_utc
 
@@ -157,3 +157,43 @@ class _HR03:
 
 HR_03 = _HR03()
 ALL_RULES.append(HR_03)
+
+
+class _HR04:
+    id = "HR-04"
+    name = "Terminated user holds active assignment"
+    severity = Severity.CRITICAL
+    category = "hr_coherence"
+    recommended_action = RecommendedAction.AUTO_REVOKE_ASSIGNMENT
+
+    def evaluate(self, snapshot: DataSnapshot) -> list[Violation]:
+        emp_by_id = {e.id: e for e in snapshot.hr_employees}
+        violations: list[Violation] = []
+        existing_ids: list[str] = []
+        for a in snapshot.assignments:
+            if not a.active:
+                continue
+            emp = emp_by_id.get(a.employee_id)
+            if not emp:
+                continue
+            if emp.status == EmployeeStatus.TERMINATED:
+                vid = next_violation_id(existing_ids)
+                existing_ids.append(vid)
+                violations.append(Violation(
+                    id=vid, rule_id=self.id, rule_name=self.name,
+                    severity=self.severity, detected_at=now_utc(),
+                    target_type="assignment", target_id=a.id,
+                    explanation=(f"Terminated employee {emp.id} ({emp.full_name}) "
+                                 f"still holds active assignment {a.id}."),
+                    evidence={"employee_id": emp.id,
+                              "terminated_at": (emp.terminated_at.isoformat()
+                                                if emp.terminated_at else None),
+                              "entitlement_id": a.entitlement_id},
+                    recommended_action=self.recommended_action,
+                    suggested_fix={"_action": "delete_assignment"},
+                ))
+        return violations
+
+
+HR_04 = _HR04()
+ALL_RULES.append(HR_04)
