@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>HR Employees ({{ items|length }})</h2>
+<table>
+  <thead><tr>
+    <th>ID</th><th>Name</th><th>Role</th><th>Division</th><th>Status</th>
+    <th>Hired</th><th>Terminated</th>
+  </tr></thead>
+  <tbody>
+  {% for e in items %}
+  <tr>
+    <td>{{ e.id }}</td>
+    <td>{{ e.full_name }}</td>
+    <td>{{ e.current_role }}</td>
+    <td>{{ e.current_division }}</td>
+    <td>{{ e.status }}</td>
+    <td>{{ e.hired_at }}</td>
+    <td>{{ e.terminated_at or "" }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

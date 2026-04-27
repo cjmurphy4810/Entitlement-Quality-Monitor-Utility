@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Entitlements ({{ items|length }})</h2>
+<table>
+  <thead><tr>
+    <th>ID</th><th>Name</th><th>Tier</th><th>Division</th><th>Roles</th>
+    <th>Linked Resources</th><th>SoD Tags</th>
+  </tr></thead>
+  <tbody>
+  {% for e in items %}
+  <tr>
+    <td>{{ e.id }}</td>
+    <td>{{ e.name }}</td>
+    <td>{{ e.access_tier }}</td>
+    <td>{{ e.division }}</td>
+    <td>{{ e.acceptable_roles | join(", ") }}</td>
+    <td>{{ e.linked_resource_ids | join(", ") }}</td>
+    <td>{{ e.sod_tags | join(", ") }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

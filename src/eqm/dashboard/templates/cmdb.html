@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>CMDB Resources ({{ items|length }})</h2>
+<table>
+  <thead><tr>
+    <th>ID</th><th>Name</th><th>Type</th><th>Criticality</th><th>Owner Division</th>
+    <th>Environment</th><th>Linked Entitlements</th>
+  </tr></thead>
+  <tbody>
+  {% for r in items %}
+  <tr>
+    <td>{{ r.id }}</td>
+    <td>{{ r.name }}</td>
+    <td>{{ r.type }}</td>
+    <td>{{ r.criticality }}</td>
+    <td>{{ r.owner_division }}</td>
+    <td>{{ r.environment }}</td>
+    <td>{{ r.linked_entitlement_ids | length }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

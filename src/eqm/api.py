@@ -447,3 +447,27 @@ async def dashboard_action_reset(store: JsonStore = Depends(get_store)) -> Redir
                                         num_resources=15, num_assignments=200, seed=42))
     await _save_bundle_and_evaluate(store, bundle)
     return RedirectResponse("/", status_code=303)
+
+
+@app.get("/dashboard/entitlements", response_class=HTMLResponse)
+async def dashboard_entitlements(request: Request,
+                                   store: JsonStore = Depends(get_store)) -> HTMLResponse:  # noqa: B008
+    items = await _read_list(store, "entitlements.json")
+    return templates.TemplateResponse(request, "entitlements.html",
+                                       {"items": items, "scenarios": _scenarios_list()})
+
+
+@app.get("/dashboard/hr", response_class=HTMLResponse)
+async def dashboard_hr(request: Request,
+                        store: JsonStore = Depends(get_store)) -> HTMLResponse:  # noqa: B008
+    items = await _read_list(store, "hr_employees.json")
+    return templates.TemplateResponse(request, "hr.html",
+                                       {"items": items, "scenarios": _scenarios_list()})
+
+
+@app.get("/dashboard/cmdb", response_class=HTMLResponse)
+async def dashboard_cmdb(request: Request,
+                          store: JsonStore = Depends(get_store)) -> HTMLResponse:  # noqa: B008
+    items = await _read_list(store, "cmdb_resources.json")
+    return templates.TemplateResponse(request, "cmdb.html",
+                                       {"items": items, "scenarios": _scenarios_list()})
