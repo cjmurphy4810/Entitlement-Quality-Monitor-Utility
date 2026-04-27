@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from eqm.models import (
     AccessTier,
+    Division,
     RecommendedAction,
     Role,
     Severity,
@@ -130,3 +131,46 @@ class _ENTQ03:
 
 ENT_Q_03 = _ENTQ03()
 ALL_RULES.append(ENT_Q_03)
+
+
+class _ENTQ04:
+    id = "ENT-Q-04"
+    name = "Division-resource coherence"
+    severity = Severity.HIGH
+    category = "entitlement_quality"
+    recommended_action = RecommendedAction.ROUTE_TO_COMPLIANCE
+
+    def evaluate(self, snapshot: DataSnapshot) -> list[Violation]:
+        violations: list[Violation] = []
+        existing_ids: list[str] = []
+        resources_by_id = {r.id: r for r in snapshot.cmdb_resources}
+        for ent in snapshot.entitlements:
+            reason = None
+            evidence: dict = {"division": ent.division.value,
+                              "access_tier": int(ent.access_tier),
+                              "acceptable_roles": [r.value for r in ent.acceptable_roles]}
+            if ent.division == Division.HR and Role.DEVELOPER in ent.acceptable_roles:
+                reason = "HR division entitlement cannot include 'developer' role"
+            elif ent.division == Division.LEGAL_COMPLIANCE and ent.access_tier == AccessTier.ADMIN:
+                prod_resources = [resources_by_id[rid].id for rid in ent.linked_resource_ids
+                                  if rid in resources_by_id and resources_by_id[rid].environment == "prod"]
+                if prod_resources:
+                    reason = "Legal/Compliance division cannot have Tier-1 (Admin) on prod resources"
+                    evidence["prod_resources"] = prod_resources
+            if reason:
+                vid = next_violation_id(existing_ids)
+                existing_ids.append(vid)
+                violations.append(Violation(
+                    id=vid, rule_id=self.id, rule_name=self.name,
+                    severity=self.severity, detected_at=now_utc(),
+                    target_type="entitlement", target_id=ent.id,
+                    explanation=reason, evidence=evidence,
+                    recommended_action=self.recommended_action,
+                    suggested_fix={"_action": "review_with_compliance",
+                                   "_note": reason},
+                ))
+        return violations
+
+
+ENT_Q_04 = _ENTQ04()
+ALL_RULES.append(ENT_Q_04)
