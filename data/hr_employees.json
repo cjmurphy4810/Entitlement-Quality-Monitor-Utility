@@ -764,7 +764,7 @@
     "email": "user00040@example.com",
     "current_role": "operations",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -775,7 +775,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-05-13T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-04-28T21:02:37.338583Z"
   },
   {
     "id": "EMP-00041",
@@ -1116,14 +1116,20 @@
     "id": "EMP-00058",
     "full_name": "Jessica Williams",
     "email": "user00058@example.com",
-    "current_role": "customer",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_dev",
         "started_at": "2023-04-24T04:52:59.501678Z",
+        "ended_at": "2026-04-28T21:02:37.338583Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-04-28T21:02:37.338583Z",
         "ended_at": null
       }
     ],
@@ -2079,6 +2085,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-28T19:49:46.916214Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00109",
+    "full_name": "Wanda Foster",
+    "email": "emp-00109@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-04-28T21:02:37.338583Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-28T21:02:37.338583Z",
     "terminated_at": null
   }
 ]
