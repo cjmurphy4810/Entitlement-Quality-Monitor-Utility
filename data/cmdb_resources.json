@@ -1,0 +1,260 @@
+[
+  {
+    "id": "RES-00001",
+    "name": "Rodriguez, Figueroa and Sanchez Application",
+    "type": "application",
+    "criticality": "low",
+    "owner_division": "business_ops",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00013",
+      "ENT-00019",
+      "ENT-00032",
+      "ENT-00046"
+    ],
+    "description": "Say quality throughout beautiful."
+  },
+  {
+    "id": "RES-00002",
+    "name": "Johnson-Davis Share_drive",
+    "type": "share_drive",
+    "criticality": "medium",
+    "owner_division": "tech_dev",
+    "environment": "prod",
+    "linked_entitlement_ids": [
+      "ENT-00003",
+      "ENT-00010",
+      "ENT-00012",
+      "ENT-00025",
+      "ENT-00029",
+      "ENT-00040",
+      "ENT-00043"
+    ],
+    "description": "Measure ago current practice nation."
+  },
+  {
+    "id": "RES-00003",
+    "name": "Cole LLC Api",
+    "type": "api",
+    "criticality": "low",
+    "owner_division": "legal_compliance",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00007",
+      "ENT-00014",
+      "ENT-00018",
+      "ENT-00026",
+      "ENT-00044",
+      "ENT-00047",
+      "ENT-00049"
+    ],
+    "description": "Serve civil institution."
+  },
+  {
+    "id": "RES-00004",
+    "name": "Moore-Bernard Application",
+    "type": "application",
+    "criticality": "low",
+    "owner_division": "business_dev",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00004",
+      "ENT-00008",
+      "ENT-00013",
+      "ENT-00016",
+      "ENT-00022",
+      "ENT-00036",
+      "ENT-00041",
+      "ENT-00045"
+    ],
+    "description": "Bill here grow gas enough analysis."
+  },
+  {
+    "id": "RES-00005",
+    "name": "Herrera-Dudley Api",
+    "type": "api",
+    "criticality": "low",
+    "owner_division": "hr",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00003",
+      "ENT-00028",
+      "ENT-00043",
+      "ENT-00048"
+    ],
+    "description": "Bad fall pick those gun court."
+  },
+  {
+    "id": "RES-00006",
+    "name": "Williams and Sons Api",
+    "type": "api",
+    "criticality": "critical",
+    "owner_division": "business_dev",
+    "environment": "staging",
+    "linked_entitlement_ids": [
+      "ENT-00001",
+      "ENT-00015",
+      "ENT-00036",
+      "ENT-00050"
+    ],
+    "description": "World talk term herself law."
+  },
+  {
+    "id": "RES-00007",
+    "name": "Martin-Kelly Api",
+    "type": "api",
+    "criticality": "high",
+    "owner_division": "cyber_tech",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00007",
+      "ENT-00015",
+      "ENT-00019",
+      "ENT-00022",
+      "ENT-00033",
+      "ENT-00036",
+      "ENT-00045"
+    ],
+    "description": "Reduce raise author play move."
+  },
+  {
+    "id": "RES-00008",
+    "name": "Martin Group Database",
+    "type": "database",
+    "criticality": "high",
+    "owner_division": "business_ops",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00006",
+      "ENT-00010",
+      "ENT-00026",
+      "ENT-00046",
+      "ENT-00047"
+    ],
+    "description": "Writer policy news range successful."
+  },
+  {
+    "id": "RES-00009",
+    "name": "Perez Inc Share_drive",
+    "type": "share_drive",
+    "criticality": "high",
+    "owner_division": "tech_dev",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00008",
+      "ENT-00021",
+      "ENT-00023",
+      "ENT-00038",
+      "ENT-00039",
+      "ENT-00043",
+      "ENT-00046",
+      "ENT-00050"
+    ],
+    "description": "Husband at tree note responsibility defense."
+  },
+  {
+    "id": "RES-00010",
+    "name": "Foster-Rocha Database",
+    "type": "database",
+    "criticality": "low",
+    "owner_division": "business_sales",
+    "environment": "staging",
+    "linked_entitlement_ids": [
+      "ENT-00006",
+      "ENT-00008",
+      "ENT-00014",
+      "ENT-00020",
+      "ENT-00023",
+      "ENT-00025",
+      "ENT-00037",
+      "ENT-00038",
+      "ENT-00042"
+    ],
+    "description": "Central cause seat much section investment on."
+  },
+  {
+    "id": "RES-00011",
+    "name": "Robinson-Bright Api",
+    "type": "api",
+    "criticality": "high",
+    "owner_division": "cyber_tech",
+    "environment": "prod",
+    "linked_entitlement_ids": [
+      "ENT-00002",
+      "ENT-00013",
+      "ENT-00024",
+      "ENT-00027"
+    ],
+    "description": "Management sense technology check civil quite others."
+  },
+  {
+    "id": "RES-00012",
+    "name": "James-Ferrell Database",
+    "type": "database",
+    "criticality": "low",
+    "owner_division": "legal_compliance",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00011",
+      "ENT-00014",
+      "ENT-00030",
+      "ENT-00034",
+      "ENT-00040",
+      "ENT-00047"
+    ],
+    "description": "Edge network wall quite boy those seem."
+  },
+  {
+    "id": "RES-00013",
+    "name": "Peterson, Carter and Moore Api",
+    "type": "api",
+    "criticality": "high",
+    "owner_division": "business_sales",
+    "environment": "prod",
+    "linked_entitlement_ids": [
+      "ENT-00005",
+      "ENT-00011",
+      "ENT-00042"
+    ],
+    "description": "West then enjoy."
+  },
+  {
+    "id": "RES-00014",
+    "name": "Gill, Romero and Rodriguez Share_drive",
+    "type": "share_drive",
+    "criticality": "low",
+    "owner_division": "cyber_tech",
+    "environment": "prod",
+    "linked_entitlement_ids": [
+      "ENT-00009",
+      "ENT-00010",
+      "ENT-00011",
+      "ENT-00017",
+      "ENT-00021",
+      "ENT-00022",
+      "ENT-00025",
+      "ENT-00033",
+      "ENT-00035",
+      "ENT-00040"
+    ],
+    "description": "Fear police participant check several much single morning."
+  },
+  {
+    "id": "RES-00015",
+    "name": "George Group Share_drive",
+    "type": "share_drive",
+    "criticality": "high",
+    "owner_division": "tech_dev",
+    "environment": "dev",
+    "linked_entitlement_ids": [
+      "ENT-00002",
+      "ENT-00009",
+      "ENT-00015",
+      "ENT-00023",
+      "ENT-00027",
+      "ENT-00031",
+      "ENT-00033"
+    ],
+    "description": "Born guy world."
+  }
+]

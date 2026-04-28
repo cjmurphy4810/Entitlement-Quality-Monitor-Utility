@@ -1,0 +1,932 @@
+[
+  {
+    "id": "ENT-00001",
+    "name": "legal_compliance admin 1",
+    "pbl_description": "Grants administrator access and full configuration rights to the Rodriguez, Figueroa and Sanchez Application system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations",
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00006"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-05-20T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00002",
+    "name": "tech_dev elevated_ro 2",
+    "pbl_description": "Provides elevated read access in Johnson-Davis Share_drive with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations",
+      "customer",
+      "developer",
+      "business_analyst",
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00015",
+      "RES-00011"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-01-06T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00003",
+    "name": "cyber_tech elevated_ro 3",
+    "pbl_description": "Provides elevated read access in Cole LLC Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer",
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00005",
+      "RES-00002"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-12T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00004",
+    "name": "business_dev elevated_ro 4",
+    "pbl_description": "Provides elevated read access in Moore-Bernard Application with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst",
+      "customer",
+      "developer",
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-27T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00005",
+    "name": "legal_compliance elevated_ro 5",
+    "pbl_description": "Provides elevated read access in Herrera-Dudley Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst",
+      "business_user",
+      "developer",
+      "customer",
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00013"
+    ],
+    "sod_tags": [
+      "payment_initiate"
+    ],
+    "created_at": "2026-02-09T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00006",
+    "name": "legal_compliance read_write 6",
+    "pbl_description": "Allows authorized users to read and write business records in Williams and Sons Api.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00010",
+      "RES-00008"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-19T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00007",
+    "name": "tech_dev admin 7",
+    "pbl_description": "Grants administrator access and full configuration rights to the Martin-Kelly Api system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations",
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00007",
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-12-15T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00008",
+    "name": "hr read_write 8",
+    "pbl_description": "Allows authorized users to read and write business records in Martin Group Database.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00009",
+      "RES-00010",
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-02-05T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00009",
+    "name": "business_sales admin 9",
+    "pbl_description": "Grants administrator access and full configuration rights to the Perez Inc Share_drive system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer",
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00015",
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-12-27T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00010",
+    "name": "business_dev admin 10",
+    "pbl_description": "Grants administrator access and full configuration rights to the Foster-Rocha Database system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00008",
+      "RES-00014",
+      "RES-00002"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-30T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00011",
+    "name": "tech_ops read_write 11",
+    "pbl_description": "Allows authorized users to read and write business records in Robinson-Bright Api.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations",
+      "business_user",
+      "business_analyst",
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00013",
+      "RES-00012",
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-11-20T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00012",
+    "name": "business_sales general_ro 12",
+    "pbl_description": "Provides general read-only visibility into James-Ferrell Database for reporting and review purposes.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer",
+      "business_analyst",
+      "developer",
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00002"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-01T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00013",
+    "name": "business_dev read_write 13",
+    "pbl_description": "Allows authorized users to read and write business records in Peterson, Carter and Moore Api.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00011",
+      "RES-00001",
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-04-12T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00014",
+    "name": "tech_dev elevated_ro 14",
+    "pbl_description": "Provides elevated read access in Gill, Romero and Rodriguez Share_drive with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations",
+      "business_user",
+      "business_analyst",
+      "customer",
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00003",
+      "RES-00012",
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-12-25T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00015",
+    "name": "legal_compliance general_ro 15",
+    "pbl_description": "Provides general read-only visibility into George Group Share_drive for reporting and review purposes.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer",
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00007",
+      "RES-00006",
+      "RES-00015"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-04-01T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00016",
+    "name": "cyber_tech admin 16",
+    "pbl_description": "Grants administrator access and full configuration rights to the Rodriguez, Figueroa and Sanchez Application system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations",
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-09-11T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00017",
+    "name": "legal_compliance read_write 17",
+    "pbl_description": "Allows authorized users to read and write business records in Johnson-Davis Share_drive.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst",
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-09-14T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00018",
+    "name": "cyber_tech admin 18",
+    "pbl_description": "Grants administrator access and full configuration rights to the Cole LLC Api system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-08-25T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00019",
+    "name": "legal_compliance read_write 19",
+    "pbl_description": "Allows authorized users to read and write business records in Moore-Bernard Application.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00001",
+      "RES-00007"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-09-08T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00020",
+    "name": "legal_compliance elevated_ro 20",
+    "pbl_description": "Provides elevated read access in Herrera-Dudley Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst",
+      "operations",
+      "developer",
+      "customer",
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-03-28T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00021",
+    "name": "cyber_tech elevated_ro 21",
+    "pbl_description": "Provides elevated read access in Williams and Sons Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00009",
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-03-30T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00022",
+    "name": "tech_ops admin 22",
+    "pbl_description": "Grants administrator access and full configuration rights to the Martin-Kelly Api system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00014",
+      "RES-00004",
+      "RES-00007"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-11T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00023",
+    "name": "cyber_tech read_write 23",
+    "pbl_description": "Allows authorized users to read and write business records in Martin Group Database.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00010",
+      "RES-00015",
+      "RES-00009"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-12-16T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00024",
+    "name": "business_sales read_write 24",
+    "pbl_description": "Allows authorized users to read and write business records in Perez Inc Share_drive.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst",
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00011"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-09-06T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00025",
+    "name": "tech_dev elevated_ro 25",
+    "pbl_description": "Provides elevated read access in Foster-Rocha Database with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00010",
+      "RES-00002",
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-08-12T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00026",
+    "name": "tech_ops elevated_ro 26",
+    "pbl_description": "Provides elevated read access in Robinson-Bright Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer",
+      "operations",
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00003",
+      "RES-00008"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-05-03T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00027",
+    "name": "hr elevated_ro 27",
+    "pbl_description": "Provides elevated read access in James-Ferrell Database with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00015",
+      "RES-00011"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-02-19T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00028",
+    "name": "tech_dev elevated_ro 28",
+    "pbl_description": "Provides elevated read access in Peterson, Carter and Moore Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00005"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-01-11T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00029",
+    "name": "business_dev elevated_ro 29",
+    "pbl_description": "Provides elevated read access in Gill, Romero and Rodriguez Share_drive with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer",
+      "business_analyst",
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00002"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-12-08T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00030",
+    "name": "cyber_tech admin 30",
+    "pbl_description": "Grants administrator access and full configuration rights to the George Group Share_drive system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer",
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00012"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-05-02T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00031",
+    "name": "hr general_ro 31",
+    "pbl_description": "Provides general read-only visibility into Rodriguez, Figueroa and Sanchez Application for reporting and review purposes.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00015"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-02-11T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00032",
+    "name": "business_sales admin 32",
+    "pbl_description": "Grants administrator access and full configuration rights to the Johnson-Davis Share_drive system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00001"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-04-08T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00033",
+    "name": "business_dev elevated_ro 33",
+    "pbl_description": "Provides elevated read access in Cole LLC Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer",
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00015",
+      "RES-00014",
+      "RES-00007"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-02-08T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00034",
+    "name": "tech_ops read_write 34",
+    "pbl_description": "Allows authorized users to read and write business records in Moore-Bernard Application.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user",
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00012"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-09-30T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00035",
+    "name": "business_ops read_write 35",
+    "pbl_description": "Allows authorized users to read and write business records in Herrera-Dudley Api.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer",
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-01-16T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00036",
+    "name": "business_sales general_ro 36",
+    "pbl_description": "Provides general read-only visibility into Williams and Sons Api for reporting and review purposes.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations",
+      "customer",
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00004",
+      "RES-00007",
+      "RES-00006"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-03-24T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00037",
+    "name": "business_sales elevated_ro 37",
+    "pbl_description": "Provides elevated read access in Martin-Kelly Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst",
+      "business_user",
+      "developer",
+      "customer",
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-12-14T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00038",
+    "name": "tech_dev admin 38",
+    "pbl_description": "Grants administrator access and full configuration rights to the Martin Group Database system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations",
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00010",
+      "RES-00009"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-07T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00039",
+    "name": "business_ops read_write 39",
+    "pbl_description": "Allows authorized users to read and write business records in Perez Inc Share_drive.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00009"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-07-27T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00040",
+    "name": "business_sales read_write 40",
+    "pbl_description": "Allows authorized users to read and write business records in Foster-Rocha Database.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer",
+      "business_analyst",
+      "operations",
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00014",
+      "RES-00002",
+      "RES-00012"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-08-12T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00041",
+    "name": "legal_compliance elevated_ro 41",
+    "pbl_description": "Provides elevated read access in Robinson-Bright Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst",
+      "business_user",
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-10-16T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00042",
+    "name": "business_ops read_write 42",
+    "pbl_description": "Allows authorized users to read and write business records in James-Ferrell Database.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer",
+      "operations",
+      "business_analyst",
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00013",
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-11-15T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00043",
+    "name": "finance general_ro 43",
+    "pbl_description": "Provides general read-only visibility into Peterson, Carter and Moore Api for reporting and review purposes.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations",
+      "business_analyst",
+      "business_user",
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00002",
+      "RES-00005",
+      "RES-00009"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-06-15T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00044",
+    "name": "tech_dev elevated_ro 44",
+    "pbl_description": "Provides elevated read access in Gill, Romero and Rodriguez Share_drive with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user",
+      "operations"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [
+      "payment_approve"
+    ],
+    "created_at": "2025-08-28T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00045",
+    "name": "finance admin 45",
+    "pbl_description": "Grants administrator access and full configuration rights to the George Group Share_drive system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer",
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00007",
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-05-11T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00046",
+    "name": "tech_dev admin 46",
+    "pbl_description": "Grants administrator access and full configuration rights to the Rodriguez, Figueroa and Sanchez Application system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer",
+      "operations"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00009",
+      "RES-00008",
+      "RES-00001"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-02-25T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00047",
+    "name": "tech_ops general_ro 47",
+    "pbl_description": "Provides general read-only visibility into Johnson-Davis Share_drive for reporting and review purposes.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer",
+      "business_user",
+      "operations",
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00008",
+      "RES-00003",
+      "RES-00012"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-09-10T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00048",
+    "name": "business_dev elevated_ro 48",
+    "pbl_description": "Provides elevated read access in Cole LLC Api with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer",
+      "business_analyst",
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00005"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-04-28T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00049",
+    "name": "business_dev elevated_ro 49",
+    "pbl_description": "Provides elevated read access in Moore-Bernard Application with limited write capability for approved exceptions.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user",
+      "customer",
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2025-10-14T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00050",
+    "name": "business_dev read_write 50",
+    "pbl_description": "Allows authorized users to read and write business records in Herrera-Dudley Api.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00006",
+      "RES-00009"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-03-28T04:52:59.501678Z",
+    "updated_at": "2026-04-28T04:52:59.501678Z"
+  },
+  {
+    "id": "ENT-00051",
+    "name": "new entitlement ENT-00051",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-04-28T04:52:59.966268Z",
+    "updated_at": "2026-04-28T04:52:59.966268Z"
+  }
+]

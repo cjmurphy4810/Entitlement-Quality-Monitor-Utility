@@ -1,0 +1,1921 @@
+[
+  {
+    "id": "EMP-00001",
+    "full_name": "Cynthia Allen",
+    "email": "user00001@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2024-01-22T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-01-22T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00002",
+    "full_name": "Angela Dennis",
+    "email": "user00002@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2023-01-05T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-01-05T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00003",
+    "full_name": "Vanessa Patel",
+    "email": "user00003@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2024-07-26T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-07-26T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00004",
+    "full_name": "Matthew Arroyo",
+    "email": "user00004@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2023-03-07T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-03-07T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00005",
+    "full_name": "Joseph Obrien",
+    "email": "user00005@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2025-01-04T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-01-04T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00006",
+    "full_name": "Tanya Campos",
+    "email": "user00006@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2024-01-23T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-01-23T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00007",
+    "full_name": "Michelle Ross",
+    "email": "user00007@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2023-08-15T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-08-15T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00008",
+    "full_name": "Jacqueline Lam",
+    "email": "user00008@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-02-02T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-02-02T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00009",
+    "full_name": "David Brown",
+    "email": "user00009@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2025-10-09T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-10-09T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00010",
+    "full_name": "Julian Chapman",
+    "email": "user00010@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2025-03-22T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-03-22T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00011",
+    "full_name": "Michael Brown",
+    "email": "user00011@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2025-01-20T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-01-20T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00012",
+    "full_name": "Andre Rivera",
+    "email": "user00012@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2024-09-06T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-09-06T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00013",
+    "full_name": "Diana Washington",
+    "email": "user00013@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2025-10-13T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-10-13T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00014",
+    "full_name": "Miranda Khan",
+    "email": "user00014@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2024-04-12T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-04-12T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00015",
+    "full_name": "Dana Kennedy",
+    "email": "user00015@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "on_leave",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-01-25T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-01-25T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00016",
+    "full_name": "Brandon Hopkins",
+    "email": "user00016@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2022-10-04T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-10-04T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00017",
+    "full_name": "Jason Shields",
+    "email": "user00017@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2022-06-27T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-06-27T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00018",
+    "full_name": "Matthew Lucas",
+    "email": "user00018@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2022-04-27T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-04-27T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00019",
+    "full_name": "Nicholas Mcbride",
+    "email": "user00019@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2022-11-05T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-11-05T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00020",
+    "full_name": "Corey Herrera",
+    "email": "user00020@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2024-06-30T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-06-30T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00021",
+    "full_name": "Clifford Ford",
+    "email": "user00021@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2023-01-05T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-01-05T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00022",
+    "full_name": "Angela Morton",
+    "email": "user00022@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2022-03-26T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-03-26T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00023",
+    "full_name": "Annette Pearson",
+    "email": "user00023@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2025-09-02T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-09-02T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00024",
+    "full_name": "Alexis Davis",
+    "email": "user00024@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2023-01-25T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-01-25T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00025",
+    "full_name": "Cynthia Russell",
+    "email": "user00025@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2023-11-03T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-11-03T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00026",
+    "full_name": "Dr. Steven Martin",
+    "email": "user00026@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2022-08-11T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-08-11T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00027",
+    "full_name": "James House",
+    "email": "user00027@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2025-08-25T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-08-25T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00028",
+    "full_name": "Dominique Horton",
+    "email": "user00028@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2022-04-11T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-04-11T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00029",
+    "full_name": "Rachel Stanley",
+    "email": "user00029@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2022-08-05T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-08-05T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00030",
+    "full_name": "Mr. Daniel Brown",
+    "email": "user00030@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2023-08-20T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-08-20T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00031",
+    "full_name": "Amy Edwards",
+    "email": "user00031@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2024-06-07T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-06-07T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00032",
+    "full_name": "John Calhoun",
+    "email": "user00032@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2023-09-18T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-09-18T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00033",
+    "full_name": "Amy Romero",
+    "email": "user00033@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2024-05-10T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-05-10T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00034",
+    "full_name": "Andrea Jones",
+    "email": "user00034@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2023-07-05T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-07-05T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00035",
+    "full_name": "Jennifer David",
+    "email": "user00035@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2024-09-03T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-09-03T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00036",
+    "full_name": "Lauren Williams",
+    "email": "user00036@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-03-09T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-03-09T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00037",
+    "full_name": "Matthew Cunningham",
+    "email": "user00037@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2024-11-20T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-11-20T04:52:59.501678Z",
+    "terminated_at": "2026-04-28T04:52:59.966268Z"
+  },
+  {
+    "id": "EMP-00038",
+    "full_name": "Dean Santiago",
+    "email": "user00038@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2024-11-22T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-11-22T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00039",
+    "full_name": "Derek Anderson",
+    "email": "user00039@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-02-22T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-02-22T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00040",
+    "full_name": "Joyce Hickman",
+    "email": "user00040@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2022-05-13T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-05-13T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00041",
+    "full_name": "Alexandra Howell",
+    "email": "user00041@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2023-08-03T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-08-03T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00042",
+    "full_name": "Ariel Medina",
+    "email": "user00042@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2023-02-26T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-02-26T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00043",
+    "full_name": "Brandi Bailey",
+    "email": "user00043@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2024-07-10T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-07-10T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00044",
+    "full_name": "David Mitchell",
+    "email": "user00044@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2024-06-21T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-06-21T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00045",
+    "full_name": "Joshua Turner",
+    "email": "user00045@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2025-03-02T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-03-02T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00046",
+    "full_name": "Dr. Kendra Contreras",
+    "email": "user00046@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2022-12-08T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-12-08T04:52:59.501678Z",
+    "terminated_at": "2026-03-25T04:52:59.501678Z"
+  },
+  {
+    "id": "EMP-00047",
+    "full_name": "Tara Garcia",
+    "email": "user00047@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2025-09-05T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-09-05T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00048",
+    "full_name": "Deborah Preston",
+    "email": "user00048@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2024-03-20T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-03-20T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00049",
+    "full_name": "Brittney Campbell",
+    "email": "user00049@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2025-07-13T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-07-13T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00050",
+    "full_name": "Grant Watts",
+    "email": "user00050@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2024-08-08T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-08-08T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00051",
+    "full_name": "Kathy King",
+    "email": "user00051@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2025-08-31T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-08-31T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00052",
+    "full_name": "Amber Walters",
+    "email": "user00052@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2023-08-11T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-08-11T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00053",
+    "full_name": "Amanda Cook",
+    "email": "user00053@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2025-12-14T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-12-14T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00054",
+    "full_name": "William Martin",
+    "email": "user00054@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2025-11-16T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-11-16T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00055",
+    "full_name": "Michael Hoffman",
+    "email": "user00055@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2025-05-23T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-05-23T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00056",
+    "full_name": "Tony Vazquez",
+    "email": "user00056@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2025-10-06T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-10-06T04:52:59.501678Z",
+    "terminated_at": "2026-04-20T04:52:59.501678Z"
+  },
+  {
+    "id": "EMP-00057",
+    "full_name": "Andrew Wood",
+    "email": "user00057@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2022-11-04T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-11-04T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00058",
+    "full_name": "Jessica Williams",
+    "email": "user00058@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2023-04-24T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-04-24T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00059",
+    "full_name": "Timothy Stanton",
+    "email": "user00059@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2022-12-10T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-12-10T04:52:59.501678Z",
+    "terminated_at": "2026-04-08T04:52:59.501678Z"
+  },
+  {
+    "id": "EMP-00060",
+    "full_name": "Hunter Fleming",
+    "email": "user00060@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "on_leave",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2022-10-28T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-10-28T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00061",
+    "full_name": "Heather Castro",
+    "email": "user00061@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2022-09-25T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-09-25T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00062",
+    "full_name": "Valerie Brady",
+    "email": "user00062@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2024-11-23T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-11-23T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00063",
+    "full_name": "Cynthia Martin",
+    "email": "user00063@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-03-24T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-03-24T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00064",
+    "full_name": "Cassandra Gutierrez",
+    "email": "user00064@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2024-08-10T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-08-10T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00065",
+    "full_name": "Tim Patton",
+    "email": "user00065@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2022-04-20T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-04-20T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00066",
+    "full_name": "Michael Moss",
+    "email": "user00066@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2024-10-04T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-10-04T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00067",
+    "full_name": "Christopher Haynes",
+    "email": "user00067@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2023-11-10T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-11-10T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00068",
+    "full_name": "Andrew Ruiz",
+    "email": "user00068@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2024-10-01T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-10-01T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00069",
+    "full_name": "Thomas Bailey",
+    "email": "user00069@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2025-04-24T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-04-24T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00070",
+    "full_name": "Shelby Walker",
+    "email": "user00070@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2023-10-12T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-10-12T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00071",
+    "full_name": "Jennifer Ramirez",
+    "email": "user00071@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2024-09-18T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-09-18T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00072",
+    "full_name": "Raymond Bell",
+    "email": "user00072@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2025-10-16T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-10-16T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00073",
+    "full_name": "Meghan Anthony",
+    "email": "user00073@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2022-11-09T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-11-09T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00074",
+    "full_name": "Alexander Wiley",
+    "email": "user00074@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2022-06-18T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-06-18T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00075",
+    "full_name": "Kevin Terrell",
+    "email": "user00075@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2022-06-22T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-06-22T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00076",
+    "full_name": "Kyle Reed",
+    "email": "user00076@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2025-04-05T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-04-05T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00077",
+    "full_name": "Jessica Joyce",
+    "email": "user00077@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2025-03-23T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-03-23T04:52:59.501678Z",
+    "terminated_at": "2026-03-31T04:52:59.501678Z"
+  },
+  {
+    "id": "EMP-00078",
+    "full_name": "Steven Lee",
+    "email": "user00078@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2023-08-10T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-08-10T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00079",
+    "full_name": "Jeffrey Meyer",
+    "email": "user00079@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2022-06-26T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-06-26T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00080",
+    "full_name": "Melissa Bentley",
+    "email": "user00080@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2023-12-07T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-12-07T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00081",
+    "full_name": "Christina Reynolds",
+    "email": "user00081@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2023-02-27T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-02-27T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00082",
+    "full_name": "Tammie Hanson",
+    "email": "user00082@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2024-10-29T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-10-29T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00083",
+    "full_name": "Belinda Mccullough",
+    "email": "user00083@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-03-27T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-03-27T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00084",
+    "full_name": "Mary Nguyen",
+    "email": "user00084@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2023-12-04T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-12-04T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00085",
+    "full_name": "Kristen Lee",
+    "email": "user00085@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2022-10-01T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-10-01T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00086",
+    "full_name": "Jamie Adkins",
+    "email": "user00086@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2025-02-06T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-02-06T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00087",
+    "full_name": "Keith Sullivan",
+    "email": "user00087@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2023-10-14T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-10-14T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00088",
+    "full_name": "Elizabeth Clark",
+    "email": "user00088@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-01-29T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-01-29T04:52:59.501678Z",
+    "terminated_at": "2026-03-20T04:52:59.501678Z"
+  },
+  {
+    "id": "EMP-00089",
+    "full_name": "Lisa Morris",
+    "email": "user00089@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2024-07-01T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-07-01T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00090",
+    "full_name": "Michael Dixon",
+    "email": "user00090@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2025-09-20T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-09-20T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00091",
+    "full_name": "Toni Fitzgerald",
+    "email": "user00091@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2025-08-01T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-08-01T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00092",
+    "full_name": "Diane Beck",
+    "email": "user00092@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2022-03-23T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2022-03-23T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00093",
+    "full_name": "Anna Crane",
+    "email": "user00093@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2023-07-15T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-07-15T04:52:59.501678Z",
+    "terminated_at": "2026-04-12T04:52:59.501678Z"
+  },
+  {
+    "id": "EMP-00094",
+    "full_name": "Eric Drake",
+    "email": "user00094@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2025-06-06T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-06-06T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00095",
+    "full_name": "Angel Riggs",
+    "email": "user00095@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2025-06-23T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-06-23T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00096",
+    "full_name": "Patricia Gibson",
+    "email": "user00096@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "on_leave",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2024-05-02T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-05-02T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00097",
+    "full_name": "Laura Higgins",
+    "email": "user00097@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-03-24T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-03-24T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00098",
+    "full_name": "James Hernandez",
+    "email": "user00098@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2025-05-29T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2025-05-29T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00099",
+    "full_name": "Stephanie Dalton",
+    "email": "user00099@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2024-05-18T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2024-05-18T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00100",
+    "full_name": "Paula Robinson",
+    "email": "user00100@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "on_leave",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2023-09-09T04:52:59.501678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2023-09-09T04:52:59.501678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00101",
+    "full_name": "Donna Garcia",
+    "email": "emp-00101@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-04-28T04:52:59.966268Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-28T04:52:59.966268Z",
+    "terminated_at": null
+  }
+]
