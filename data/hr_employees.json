@@ -497,14 +497,20 @@
     "id": "EMP-00027",
     "full_name": "James House",
     "email": "user00027@example.com",
-    "current_role": "business_analyst",
-    "current_division": "finance",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "finance",
         "started_at": "2025-08-25T04:52:59.501678Z",
+        "ended_at": "2026-04-28T09:42:20.781417Z"
+      },
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-04-28T09:42:20.781417Z",
         "ended_at": null
       }
     ],
@@ -632,7 +638,7 @@
     "email": "user00034@example.com",
     "current_role": "business_user",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -643,7 +649,7 @@
     ],
     "manager_id": null,
     "hired_at": "2023-07-05T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-04-28T09:42:20.781417Z"
   },
   {
     "id": "EMP-00035",
@@ -1941,6 +1947,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-28T07:28:36.536901Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00103",
+    "full_name": "Mr. Kurt Rogers",
+    "email": "emp-00103@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-04-28T09:42:20.781417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-28T09:42:20.781417Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00104",
+    "full_name": "Jason Perry",
+    "email": "emp-00104@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-04-28T09:42:20.781417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-28T09:42:20.781417Z",
     "terminated_at": null
   }
 ]
