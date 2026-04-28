@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Overview</h2>
+<div class="cards">
+  <div class="card"><h3>Entitlements</h3><p class="big">{{ counts.entitlements }}</p></div>
+  <div class="card"><h3>HR Employees</h3><p class="big">{{ counts.hr_employees }}</p></div>
+  <div class="card"><h3>CMDB Resources</h3><p class="big">{{ counts.cmdb_resources }}</p></div>
+  <div class="card"><h3>Assignments</h3><p class="big">{{ counts.assignments }}</p></div>
+</div>
+<h3>Open violations by severity</h3>
+<table class="severity">
+  <tr><th>Severity</th><th>Open</th><th>Pending Approval</th><th>Resolved</th></tr>
+  {% for sev in ["critical", "high", "medium", "low"] %}
+  <tr class="sev-{{ sev }}">
+    <td>{{ sev }}</td>
+    <td>{{ violations_by[sev]["open"] }}</td>
+    <td>{{ violations_by[sev]["pending_approval"] }}</td>
+    <td>{{ violations_by[sev]["resolved"] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
