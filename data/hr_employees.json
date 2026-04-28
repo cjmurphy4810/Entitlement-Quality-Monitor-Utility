@@ -60,14 +60,20 @@
     "id": "EMP-00004",
     "full_name": "Matthew Arroyo",
     "email": "user00004@example.com",
-    "current_role": "business_analyst",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "hr",
         "started_at": "2023-03-07T04:52:59.501678Z",
+        "ended_at": "2026-04-28T16:05:13.174376Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-04-28T16:05:13.174376Z",
         "ended_at": null
       }
     ],
@@ -1985,6 +1991,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-28T09:42:20.781417Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00105",
+    "full_name": "John Olson",
+    "email": "emp-00105@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-04-28T16:05:13.174376Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-28T16:05:13.174376Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00106",
+    "full_name": "Laura Lopez",
+    "email": "emp-00106@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-04-28T16:05:13.174376Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-28T16:05:13.174376Z",
     "terminated_at": null
   }
 ]
