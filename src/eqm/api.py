@@ -171,7 +171,9 @@ async def get_violations(
     if severity:
         items = [v for v in items if v.severity.value == severity]
     if since:
-        cutoff = datetime.fromisoformat(since)
+        cutoff = datetime.fromisoformat(since.replace("Z", "+00:00"))
+        if cutoff.tzinfo is None:
+            cutoff = cutoff.replace(tzinfo=UTC)
         items = [v for v in items if v.detected_at >= cutoff]
     return items
 
@@ -400,11 +402,8 @@ async def sync_push_now(git: GitSync = Depends(get_git_sync)) -> dict:  # noqa: 
 
 
 @app.post("/sync/pull-now", dependencies=[Depends(require_token)])
-async def sync_pull_now(git: GitSync = Depends(get_git_sync),  # noqa: B008
-                         store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
-    pulled = git.pull_now()
-    store.invalidate()  # rebuild cache from disk on next read
-    return {"pulled": pulled}
+async def sync_pull_now(git: GitSync = Depends(get_git_sync)) -> dict:  # noqa: B008
+    return {"pulled": git.pull_now()}
 
 
 def _scenarios_list() -> list[str]:
@@ -435,7 +434,7 @@ async def dashboard_overview(request: Request,
     })
 
 
-@app.post("/dashboard/actions/tick")
+@app.post("/dashboard/actions/tick", dependencies=[Depends(require_token)])
 async def dashboard_action_tick(store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
     bundle = await _load_bundle(store)
     tick = int(datetime.now(UTC).timestamp()) // 60
@@ -444,7 +443,7 @@ async def dashboard_action_tick(store: JsonStore = Depends(get_store)) -> Redire
     return RedirectResponse("/", status_code=303)
 
 
-@app.post("/dashboard/actions/scenario")
+@app.post("/dashboard/actions/scenario", dependencies=[Depends(require_token)])
 async def dashboard_action_scenario(name: Annotated[str, Form()],
                                       store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
     if name not in SCENARIOS:
@@ -455,7 +454,7 @@ async def dashboard_action_scenario(name: Annotated[str, Form()],
     return RedirectResponse("/", status_code=303)
 
 
-@app.post("/dashboard/actions/reset")
+@app.post("/dashboard/actions/reset", dependencies=[Depends(require_token)])
 async def dashboard_action_reset(store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
     bundle = generate_seed(SeedConfig(num_entitlements=50, num_employees=100,
                                         num_resources=15, num_assignments=200, seed=42))

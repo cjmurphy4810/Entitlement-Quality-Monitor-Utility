@@ -77,3 +77,27 @@ def test_get_hr_and_cmdb(app_client, tmp_path):
     assert client.get("/cmdb/resources").status_code == 200
     assert client.get("/cmdb/resources/RES-1").status_code == 200
     assert client.get("/assignments?employee_id=EMP-1").status_code == 200
+
+
+def test_get_violations_since_with_naive_timestamp(app_client, tmp_path):
+    """Issue #1: ?since with naive ISO timestamp should not crash."""
+    import json
+    client, _ = app_client
+    (tmp_path / "violations.json").write_text(json.dumps([
+        {"id": "VIO-1", "rule_id": "ENT-Q-01", "rule_name": "x",
+         "severity": "low", "detected_at": "2026-04-01T00:00:00+00:00",
+         "target_type": "entitlement", "target_id": "ENT-1",
+         "explanation": "x", "evidence": {}, "recommended_action": "update_entitlement_field",
+         "suggested_fix": {}, "workflow_state": "open", "workflow_history": [],
+         "appian_case_id": None}
+    ]))
+    for n in ["entitlements.json", "hr_employees.json", "cmdb_resources.json", "assignments.json"]:
+        (tmp_path / n).write_text("[]")
+    # Naive timestamp (no offset) — should be treated as UTC and not crash.
+    r = client.get("/violations?since=2026-01-01T00:00:00")
+    assert r.status_code == 200
+    assert len(r.json()) == 1
+    # Z-suffix should also work.
+    r = client.get("/violations?since=2026-05-01T00:00:00Z")
+    assert r.status_code == 200
+    assert r.json() == []  # detected_at is in April
