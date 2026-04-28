@@ -2105,5 +2105,24 @@
     "manager_id": null,
     "hired_at": "2026-04-28T21:02:37.338583Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00110",
+    "full_name": "Kimberly Marshall",
+    "email": "emp-00110@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-04-28T22:30:05.879492Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-28T22:30:05.879492Z",
+    "terminated_at": null
   }
 ]

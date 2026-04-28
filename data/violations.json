@@ -9227,5 +9227,101 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00375",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-28T22:30:05.889870Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00215",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00023",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00008",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00376",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-28T22:30:05.889937Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00216",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00051",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00377",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-28T22:30:05.899766Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00215",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00023",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00008",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00378",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-28T22:30:05.899865Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00216",
+    "explanation": "Employee division 'finance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00051",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
