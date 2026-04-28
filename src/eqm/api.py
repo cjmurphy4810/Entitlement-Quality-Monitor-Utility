@@ -17,6 +17,7 @@ from starlette.requests import Request
 from eqm.config import Settings, get_settings
 from eqm.dashboard import STATIC_DIR, TEMPLATES_DIR
 from eqm.engine import run_engine
+from eqm.git_sync import GitSync
 from eqm.models import (
     Assignment,
     CMDBResource,
@@ -382,15 +383,28 @@ async def simulate_scenario(body: ScenarioRequest,
     return {"scenario": body.name, "new_violations": new_count}
 
 
+def get_git_sync(settings: Settings = Depends(get_settings)) -> GitSync:  # noqa: B008
+    return GitSync(
+        repo_dir=settings.data_dir.parent,  # repo root is one level above /data
+        data_subdir=settings.data_dir.name,
+        remote_url=settings.git_remote_url,
+        push_enabled=settings.git_push_enabled,
+    )
+
+
 @app.post("/sync/push-now", dependencies=[Depends(require_token)])
-async def sync_push_now() -> dict:
-    # Wired in Task 36 (git integration); for now return a stub.
-    return {"status": "not_implemented_yet"}
+async def sync_push_now(git: GitSync = Depends(get_git_sync)) -> dict:  # noqa: B008
+    committed = git.commit_data("manual: push-now from API")
+    pushed = git.push_now() if committed else False
+    return {"committed": committed, "pushed": pushed}
 
 
 @app.post("/sync/pull-now", dependencies=[Depends(require_token)])
-async def sync_pull_now() -> dict:
-    return {"status": "not_implemented_yet"}
+async def sync_pull_now(git: GitSync = Depends(get_git_sync),  # noqa: B008
+                         store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
+    pulled = git.pull_now()
+    store.invalidate()  # rebuild cache from disk on next read
+    return {"pulled": pulled}
 
 
 def _scenarios_list() -> list[str]:
