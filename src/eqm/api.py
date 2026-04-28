@@ -187,6 +187,66 @@ async def get_violation(vid: str, store: JsonStore = Depends(get_store)) -> Viol
     raise HTTPException(404, "Violation not found")
 
 
+@app.get("/api/flagged-records")
+async def get_flagged_records(
+    state: str | None = None,
+    severity: str | None = None,
+    store: JsonStore = Depends(get_store),  # noqa: B008
+) -> dict:
+    """Appian-friendly view of active violations.
+
+    Returns ``{"data": [...]}`` with each record adapted from a Violation,
+    resolving the affected user (when the target is an employee or assignment)
+    so Appian can drive workflow tasks against a real userId/userName.
+    Defaults to violations in OPEN or PENDING_APPROVAL state.
+    """
+    raw_vios = await _read_list(store, "violations.json")
+    raw_emps = await _read_list(store, "hr_employees.json")
+    raw_asns = await _read_list(store, "assignments.json")
+    emp_by_id = {e["id"]: e for e in raw_emps}
+    asn_by_id = {a["id"]: a for a in raw_asns}
+
+    items = [Violation(**v) for v in raw_vios]
+    if state:
+        items = [v for v in items if v.workflow_state.value == state]
+    else:
+        items = [v for v in items
+                 if v.workflow_state.value in ("open", "pending_approval")]
+    if severity:
+        items = [v for v in items if v.severity.value == severity]
+
+    data: list[dict] = []
+    for v in items:
+        emp_id, emp_name = "n/a", "n/a"
+        if v.target_type == "employee":
+            emp_id = v.target_id
+            emp = emp_by_id.get(v.target_id)
+            if emp:
+                emp_name = emp["full_name"]
+        elif v.target_type == "assignment":
+            asn = asn_by_id.get(v.target_id)
+            if asn:
+                emp_id = asn["employee_id"]
+                emp = emp_by_id.get(emp_id)
+                if emp:
+                    emp_name = emp["full_name"]
+        data.append({
+            "violationId": v.id,
+            "userId": emp_id,
+            "userName": emp_name,
+            "ruleId": v.rule_id,
+            "ruleName": v.rule_name,
+            "status": v.workflow_state.value.replace("_", " ").title(),
+            "severity": v.severity.value.title(),
+            "reason": v.explanation,
+            "targetType": v.target_type,
+            "targetId": v.target_id,
+            "recommendedAction": v.recommended_action.value,
+            "detectedAt": v.detected_at.isoformat(),
+        })
+    return {"data": data}
+
+
 ENTITLEMENT_PATCHABLE = {"name", "pbl_description", "access_tier",
                          "acceptable_roles", "division", "linked_resource_ids",
                          "sod_tags"}

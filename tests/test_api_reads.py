@@ -101,3 +101,66 @@ def test_get_violations_since_with_naive_timestamp(app_client, tmp_path):
     r = client.get("/violations?since=2026-05-01T00:00:00Z")
     assert r.status_code == 200
     assert r.json() == []  # detected_at is in April
+
+
+def test_flagged_records_default_returns_open_and_pending(app_client, tmp_path):
+    """Appian view: defaults to open + pending_approval, includes user context for assignment-target violations."""
+    import json
+    client, _ = app_client
+    (tmp_path / "hr_employees.json").write_text(json.dumps([
+        {"id": "EMP-1", "full_name": "Alice Demo", "email": "alice@example.com",
+         "current_role": "operations", "current_division": "tech_ops",
+         "status": "active", "role_history": [],
+         "manager_id": None, "hired_at": "2024-01-01T00:00:00+00:00", "terminated_at": None}
+    ]))
+    (tmp_path / "assignments.json").write_text(json.dumps([
+        {"id": "ASN-1", "employee_id": "EMP-1", "entitlement_id": "ENT-1",
+         "granted_at": "2024-06-01T00:00:00+00:00", "granted_by": "system",
+         "last_certified_at": None, "active": True}
+    ]))
+    (tmp_path / "violations.json").write_text(json.dumps([
+        {"id": "VIO-1", "rule_id": "HR-04", "rule_name": "Terminated user holds active assignment",
+         "severity": "critical", "detected_at": "2026-04-01T00:00:00+00:00",
+         "target_type": "assignment", "target_id": "ASN-1",
+         "explanation": "x", "evidence": {}, "recommended_action": "auto_revoke_assignment",
+         "suggested_fix": {}, "workflow_state": "open", "workflow_history": [],
+         "appian_case_id": None},
+        {"id": "VIO-2", "rule_id": "ENT-Q-01", "rule_name": "PBL completeness",
+         "severity": "low", "detected_at": "2026-04-01T00:00:00+00:00",
+         "target_type": "entitlement", "target_id": "ENT-1",
+         "explanation": "x", "evidence": {}, "recommended_action": "update_entitlement_field",
+         "suggested_fix": {}, "workflow_state": "resolved", "workflow_history": [],
+         "appian_case_id": None},
+    ]))
+    for n in ["entitlements.json", "cmdb_resources.json"]:
+        (tmp_path / n).write_text("[]")
+
+    r = client.get("/api/flagged-records")
+    assert r.status_code == 200
+    body = r.json()
+    assert "data" in body
+    # VIO-2 is resolved → excluded by default
+    assert len(body["data"]) == 1
+    rec = body["data"][0]
+    assert rec["userId"] == "EMP-1"
+    assert rec["userName"] == "Alice Demo"
+    assert rec["severity"] == "Critical"
+    assert rec["status"] == "Open"
+    assert rec["ruleId"] == "HR-04"
+
+
+def test_flagged_records_severity_filter(app_client, tmp_path):
+    import json
+    client, _ = app_client
+    (tmp_path / "violations.json").write_text(json.dumps([
+        {"id": "VIO-1", "rule_id": "ENT-Q-01", "rule_name": "x",
+         "severity": "low", "detected_at": "2026-04-01T00:00:00+00:00",
+         "target_type": "entitlement", "target_id": "ENT-1",
+         "explanation": "x", "evidence": {}, "recommended_action": "update_entitlement_field",
+         "suggested_fix": {}, "workflow_state": "open", "workflow_history": [],
+         "appian_case_id": None}
+    ]))
+    for n in ["entitlements.json", "hr_employees.json", "cmdb_resources.json", "assignments.json"]:
+        (tmp_path / n).write_text("[]")
+    assert len(client.get("/api/flagged-records?severity=critical").json()["data"]) == 0
+    assert len(client.get("/api/flagged-records?severity=low").json()["data"]) == 1
