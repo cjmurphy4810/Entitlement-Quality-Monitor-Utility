@@ -1,0 +1,50 @@
+name: simulate-drift
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Drift tick
+        env:
+          EQM_DATA_DIR: ${{ github.workspace }}/data
+          EQM_BEARER_TOKEN: not-used-here
+          EQM_GIT_PUSH_ENABLED: "0"
+        run: |
+          # Seed if data dir is empty
+          if [ ! -s data/entitlements.json ]; then
+            python -m eqm seed --small
+          fi
+          python -m eqm drift
+
+      - name: Commit if changed
+        run: |
+          git config user.name "eqm-simulator-bot"
+          git config user.email "actions@github.com"
+          git add data
+          if git diff --staged --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git commit -m "chore(simulator): scheduled drift tick $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
