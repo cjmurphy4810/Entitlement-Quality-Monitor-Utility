@@ -10351,5 +10351,139 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00422",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-29T22:52:30.824841Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00240",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00109",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00014",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00423",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-29T22:52:30.824956Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00241",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00005",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00029",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00424",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-04-29T22:52:30.825141Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00012",
+    "explanation": "Terminated employee EMP-00098 (James Hernandez) still holds active assignment ASN-00012.",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "terminated_at": "2026-04-29T22:52:30.801368+00:00",
+      "entitlement_id": "ENT-00032"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00425",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-04-29T22:52:30.825152Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00015",
+    "explanation": "Terminated employee EMP-00098 (James Hernandez) still holds active assignment ASN-00015.",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "terminated_at": "2026-04-29T22:52:30.801368+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00426",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-04-29T22:52:30.825368Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00097",
+    "explanation": "Terminated employee EMP-00098 (James Hernandez) still holds active assignment ASN-00097.",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "terminated_at": "2026-04-29T22:52:30.801368+00:00",
+      "entitlement_id": "ENT-00020"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00427",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-04-29T22:52:30.825453Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00127",
+    "explanation": "Terminated employee EMP-00098 (James Hernandez) still holds active assignment ASN-00127.",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "terminated_at": "2026-04-29T22:52:30.801368+00:00",
+      "entitlement_id": "ENT-00038"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
