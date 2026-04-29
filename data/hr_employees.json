@@ -2243,5 +2243,43 @@
     "manager_id": null,
     "hired_at": "2026-04-29T10:23:11.870213Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00116",
+    "full_name": "Misty Carter",
+    "email": "emp-00116@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-04-29T11:58:30.968763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T11:58:30.968763Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00117",
+    "full_name": "Jamie Nixon",
+    "email": "emp-00117@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-04-29T11:58:30.968763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T11:58:30.968763Z",
+    "terminated_at": null
   }
 ]
