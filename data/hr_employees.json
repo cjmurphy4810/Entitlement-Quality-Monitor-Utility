@@ -1210,14 +1210,20 @@
     "id": "EMP-00062",
     "full_name": "Valerie Brady",
     "email": "user00062@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2024-11-23T04:52:59.501678Z",
+        "ended_at": "2026-04-29T08:06:32.478417Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-04-29T08:06:32.478417Z",
         "ended_at": null
       }
     ],
@@ -2173,6 +2179,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-29T05:39:05.139395Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00113",
+    "full_name": "Cathy Whitney",
+    "email": "emp-00113@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-04-29T08:06:32.478417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T08:06:32.478417Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00114",
+    "full_name": "Pamela David",
+    "email": "emp-00114@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-04-29T08:06:32.478417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T08:06:32.478417Z",
     "terminated_at": null
   }
 ]
