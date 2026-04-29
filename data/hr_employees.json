@@ -2287,5 +2287,24 @@
     "manager_id": null,
     "hired_at": "2026-04-29T11:58:30.968763Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00118",
+    "full_name": "Cheryl Andrade",
+    "email": "emp-00118@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-04-29T17:55:31.525452Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T17:55:31.525452Z",
+    "terminated_at": null
   }
 ]
