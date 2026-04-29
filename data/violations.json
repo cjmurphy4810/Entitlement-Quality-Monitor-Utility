@@ -10485,5 +10485,174 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00428",
+    "rule_id": "CMDB-01",
+    "rule_name": "Orphan entitlement",
+    "severity": "low",
+    "detected_at": "2026-04-29T23:49:41.111714Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00056",
+    "explanation": "Entitlement is not linked to any valid CMDB resource.",
+    "evidence": {
+      "declared_links": [],
+      "valid_links": []
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "_action": "link_to_resource",
+      "_note": "Owner should add at least one valid resource id."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00429",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-29T23:49:41.117613Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00244",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00042",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00009",
+      "acceptable_roles": [
+        "developer",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00430",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-29T23:49:41.131582Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00242",
+    "explanation": "Employee division 'hr' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00115",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00043",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00431",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-29T23:49:41.131707Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00243",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00093",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00040",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00432",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-29T23:49:41.131864Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00244",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00042",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00009",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00433",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-04-29T23:49:41.132713Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00243",
+    "explanation": "Terminated employee EMP-00093 (Anna Crane) still holds active assignment ASN-00243.",
+    "evidence": {
+      "employee_id": "EMP-00093",
+      "terminated_at": "2026-04-12T04:52:59.501678+00:00",
+      "entitlement_id": "ENT-00040"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00434",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-04-29T23:49:41.134530Z",
+    "target_type": "employee",
+    "target_id": "EMP-00042",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00014.",
+    "evidence": {
+      "resource_id": "RES-00014",
+      "developer_admin_entitlements": [
+        "ENT-00009"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00009"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
