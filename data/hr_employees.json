@@ -2344,5 +2344,24 @@
     "manager_id": null,
     "hired_at": "2026-04-29T20:38:15.420041Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00121",
+    "full_name": "Jill Flores",
+    "email": "emp-00121@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-04-29T21:55:30.084302Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T21:55:30.084302Z",
+    "terminated_at": null
   }
 ]
