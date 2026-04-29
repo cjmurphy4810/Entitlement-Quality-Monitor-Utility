@@ -960,5 +960,21 @@
     "sod_tags": [],
     "created_at": "2026-04-29T11:58:30.968763Z",
     "updated_at": "2026-04-29T11:58:30.968763Z"
+  },
+  {
+    "id": "ENT-00054",
+    "name": "new entitlement ENT-00054",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-04-29T20:38:15.420041Z",
+    "updated_at": "2026-04-29T20:38:15.420041Z"
   }
 ]

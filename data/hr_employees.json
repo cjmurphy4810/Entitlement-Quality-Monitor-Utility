@@ -2306,5 +2306,43 @@
     "manager_id": null,
     "hired_at": "2026-04-29T17:55:31.525452Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00119",
+    "full_name": "Anne Keller",
+    "email": "emp-00119@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-04-29T20:38:15.420041Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T20:38:15.420041Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00120",
+    "full_name": "Dr. David Hopkins MD",
+    "email": "emp-00120@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-04-29T20:38:15.420041Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-29T20:38:15.420041Z",
+    "terminated_at": null
   }
 ]
