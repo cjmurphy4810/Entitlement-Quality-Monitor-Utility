@@ -1022,5 +1022,19 @@
     "sod_tags": [],
     "created_at": "2026-04-30T05:43:36.530411Z",
     "updated_at": "2026-04-30T05:43:36.530411Z"
+  },
+  {
+    "id": "ENT-00058",
+    "name": "new entitlement ENT-00058",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-04-30T11:57:17.679213Z",
+    "updated_at": "2026-04-30T11:57:17.679213Z"
   }
 ]
