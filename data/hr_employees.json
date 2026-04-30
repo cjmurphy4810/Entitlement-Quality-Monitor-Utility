@@ -950,14 +950,20 @@
     "id": "EMP-00048",
     "full_name": "Deborah Preston",
     "email": "user00048@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2024-03-20T04:52:59.501678Z",
+        "ended_at": "2026-04-30T23:45:42.282107Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-04-30T23:45:42.282107Z",
         "ended_at": null
       }
     ],
@@ -2657,6 +2663,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-30T22:46:19.590704Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00135",
+    "full_name": "Kent Anderson",
+    "email": "emp-00135@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-04-30T23:45:42.282107Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T23:45:42.282107Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00136",
+    "full_name": "Emily Vargas",
+    "email": "emp-00136@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-04-30T23:45:42.282107Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T23:45:42.282107Z",
     "terminated_at": null
   }
 ]

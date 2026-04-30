@@ -5252,8 +5252,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-04-30T23:45:42.314944Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -12115,6 +12124,216 @@
       "employee_division": "business_ops",
       "entitlement_id": "ENT-00027",
       "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00494",
+    "rule_id": "CMDB-01",
+    "rule_name": "Orphan entitlement",
+    "severity": "low",
+    "detected_at": "2026-04-30T23:45:42.288928Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00063",
+    "explanation": "Entitlement is not linked to any valid CMDB resource.",
+    "evidence": {
+      "declared_links": [],
+      "valid_links": []
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "_action": "link_to_resource",
+      "_note": "Owner should add at least one valid resource id."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00495",
+    "rule_id": "ENT-Q-01",
+    "rule_name": "PBL completeness",
+    "severity": "low",
+    "detected_at": "2026-04-30T23:45:42.289152Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00063",
+    "explanation": "PBL description fails completeness check: banned phrase: 'do things'",
+    "evidence": {
+      "pbl_description": "Lets the user do things in the system.",
+      "reasons": [
+        "banned phrase: 'do things'"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 please rewrite this description to clearly state what access is granted, on which system, and to whom.]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00496",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-04-30T23:45:42.289208Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00063",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "Lets the user do things in the system."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00497",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-30T23:45:42.293032Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00200",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user', 'developer'].",
+    "evidence": {
+      "employee_id": "EMP-00048",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00034",
+      "acceptable_roles": [
+        "business_user",
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00498",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-30T23:45:42.295738Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00272",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00017",
+      "acceptable_roles": [
+        "business_analyst",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00499",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-30T23:45:42.297569Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00083",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00048",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00010",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00500",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-30T23:45:42.311500Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00270",
+    "explanation": "Employee division 'finance' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00005",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00054",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00501",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-30T23:45:42.311618Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00271",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00035",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00034",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00502",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-30T23:45:42.311735Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00272",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00017",
+      "entitlement_division": "legal_compliance"
     },
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
