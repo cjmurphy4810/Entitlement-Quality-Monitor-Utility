@@ -1715,14 +1715,20 @@
     "id": "EMP-00087",
     "full_name": "Keith Sullivan",
     "email": "user00087@example.com",
-    "current_role": "operations",
-    "current_division": "business_ops",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_ops",
         "started_at": "2023-10-14T04:52:59.501678Z",
+        "ended_at": "2026-04-30T18:51:23.862305Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-04-30T18:51:23.862305Z",
         "ended_at": null
       }
     ],
@@ -2563,6 +2569,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-30T17:13:45.714967Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00131",
+    "full_name": "Cassidy Hill",
+    "email": "emp-00131@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-04-30T18:51:23.862305Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T18:51:23.862305Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00132",
+    "full_name": "Preston Dyer",
+    "email": "emp-00132@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-04-30T18:51:23.862305Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T18:51:23.862305Z",
     "terminated_at": null
   }
 ]
