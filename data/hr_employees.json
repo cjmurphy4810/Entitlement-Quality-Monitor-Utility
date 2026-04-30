@@ -2444,5 +2444,43 @@
     "manager_id": null,
     "hired_at": "2026-04-30T10:23:20.581415Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00125",
+    "full_name": "Juan Wheeler",
+    "email": "emp-00125@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-04-30T13:52:49.650182Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T13:52:49.650182Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00126",
+    "full_name": "Joseph Frey",
+    "email": "emp-00126@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-04-30T13:52:49.650182Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T13:52:49.650182Z",
+    "terminated_at": null
   }
 ]
