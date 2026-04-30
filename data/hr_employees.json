@@ -2526,5 +2526,43 @@
     "manager_id": null,
     "hired_at": "2026-04-30T15:44:52.927524Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00129",
+    "full_name": "Andrew Brooks",
+    "email": "emp-00129@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-04-30T17:13:45.714967Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T17:13:45.714967Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00130",
+    "full_name": "Theresa Spencer",
+    "email": "emp-00130@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-04-30T17:13:45.714967Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T17:13:45.714967Z",
+    "terminated_at": null
   }
 ]
