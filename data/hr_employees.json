@@ -824,14 +824,20 @@
     "id": "EMP-00042",
     "full_name": "Ariel Medina",
     "email": "user00042@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2023-02-26T04:52:59.501678Z",
+        "ended_at": "2026-04-30T20:06:58.215924Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-04-30T20:06:58.215924Z",
         "ended_at": null
       }
     ],
