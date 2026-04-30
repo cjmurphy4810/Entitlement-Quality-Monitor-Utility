@@ -11056,5 +11056,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00452",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-04-30T10:23:20.608534Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00252",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00069",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00011",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00453",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-04-30T10:23:20.608929Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00081",
+    "explanation": "Terminated employee EMP-00053 (Amanda Cook) still holds active assignment ASN-00081.",
+    "evidence": {
+      "employee_id": "EMP-00053",
+      "terminated_at": "2026-04-30T10:23:20.581415+00:00",
+      "entitlement_id": "ENT-00022"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
