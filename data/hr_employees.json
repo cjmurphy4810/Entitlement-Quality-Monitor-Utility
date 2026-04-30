@@ -692,14 +692,20 @@
     "id": "EMP-00036",
     "full_name": "Lauren Williams",
     "email": "user00036@example.com",
-    "current_role": "business_user",
-    "current_division": "hr",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "hr",
         "started_at": "2026-03-09T04:52:59.501678Z",
+        "ended_at": "2026-04-30T22:46:19.590704Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-04-30T22:46:19.590704Z",
         "ended_at": null
       }
     ],
@@ -2613,6 +2619,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-30T18:51:23.862305Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00133",
+    "full_name": "Chloe Hendricks",
+    "email": "emp-00133@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-04-30T22:46:19.590704Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T22:46:19.590704Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00134",
+    "full_name": "Ashley Lozano",
+    "email": "emp-00134@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-04-30T22:46:19.590704Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T22:46:19.590704Z",
     "terminated_at": null
   }
 ]
