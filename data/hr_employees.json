@@ -1121,14 +1121,20 @@
     "id": "EMP-00057",
     "full_name": "Andrew Wood",
     "email": "user00057@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2022-11-04T04:52:59.501678Z",
+        "ended_at": "2026-04-30T15:44:52.927524Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-04-30T15:44:52.927524Z",
         "ended_at": null
       }
     ],
@@ -2481,6 +2487,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-30T13:52:49.650182Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00127",
+    "full_name": "Maureen Watkins",
+    "email": "emp-00127@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-04-30T15:44:52.927524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T15:44:52.927524Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00128",
+    "full_name": "Bill Baker",
+    "email": "emp-00128@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-04-30T15:44:52.927524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-04-30T15:44:52.927524Z",
     "terminated_at": null
   }
 ]
