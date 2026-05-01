@@ -123,14 +123,20 @@
     "id": "EMP-00007",
     "full_name": "Michelle Ross",
     "email": "user00007@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_ops",
+    "current_role": "business_user",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_ops",
         "started_at": "2023-08-15T04:52:59.501678Z",
+        "ended_at": "2026-05-01T19:02:44.718904Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-01T19:02:44.718904Z",
         "ended_at": null
       }
     ],
@@ -2915,6 +2921,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T15:51:13.530939Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00147",
+    "full_name": "Nancy Bradshaw",
+    "email": "emp-00147@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-05-01T19:02:44.718904Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T19:02:44.718904Z",
     "terminated_at": null
   }
 ]
