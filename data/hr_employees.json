@@ -2891,5 +2891,24 @@
     "manager_id": null,
     "hired_at": "2026-05-01T14:35:41.999879Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00146",
+    "full_name": "Lisa Johnson",
+    "email": "emp-00146@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-05-01T15:51:13.530939Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T15:51:13.530939Z",
+    "terminated_at": null
   }
 ]

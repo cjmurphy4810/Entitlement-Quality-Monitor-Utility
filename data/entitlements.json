@@ -1112,5 +1112,19 @@
     "sod_tags": [],
     "created_at": "2026-04-30T23:45:42.282107Z",
     "updated_at": "2026-04-30T23:45:42.282107Z"
+  },
+  {
+    "id": "ENT-00064",
+    "name": "new entitlement ENT-00064",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-01T15:51:13.530939Z",
+    "updated_at": "2026-05-01T15:51:13.530939Z"
   }
 ]
