@@ -12590,5 +12590,53 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00513",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T08:27:54.492551Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00277",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00129",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00018",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00514",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T08:27:54.510625Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00277",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00129",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00018",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
