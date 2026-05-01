@@ -673,14 +673,20 @@
     "id": "EMP-00035",
     "full_name": "Jennifer David",
     "email": "user00035@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2024-09-03T04:52:59.501678Z",
+        "ended_at": "2026-05-01T02:30:44.751160Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-01T02:30:44.751160Z",
         "ended_at": null
       }
     ],
@@ -2701,6 +2707,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-30T23:45:42.282107Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00137",
+    "full_name": "Jeffrey Gibson",
+    "email": "emp-00137@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-01T02:30:44.751160Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T02:30:44.751160Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00138",
+    "full_name": "Christie Parks",
+    "email": "emp-00138@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-05-01T02:30:44.751160Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T02:30:44.751160Z",
     "terminated_at": null
   }
 ]
