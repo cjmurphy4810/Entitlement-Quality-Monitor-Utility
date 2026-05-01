@@ -2784,5 +2784,43 @@
     "manager_id": null,
     "hired_at": "2026-05-01T06:10:36.182711Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00141",
+    "full_name": "Kathy Krause",
+    "email": "emp-00141@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-01T10:05:53.580979Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T10:05:53.580979Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00142",
+    "full_name": "David Douglas",
+    "email": "emp-00142@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-01T10:05:53.580979Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T10:05:53.580979Z",
+    "terminated_at": null
   }
 ]
