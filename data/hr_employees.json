@@ -2853,5 +2853,43 @@
     "manager_id": null,
     "hired_at": "2026-05-01T13:05:45.054475Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00144",
+    "full_name": "Scott Smith",
+    "email": "emp-00144@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-01T14:35:41.999879Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T14:35:41.999879Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00145",
+    "full_name": "Aaron Patterson",
+    "email": "emp-00145@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-01T14:35:41.999879Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T14:35:41.999879Z",
+    "terminated_at": null
   }
 ]
