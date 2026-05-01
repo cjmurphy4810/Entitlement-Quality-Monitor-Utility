@@ -2060,14 +2060,20 @@
     "id": "EMP-00102",
     "full_name": "Michael Walker",
     "email": "emp-00102@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-04-28T07:28:36.536901Z",
+        "ended_at": "2026-05-01T23:13:43.951053Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-05-01T23:13:43.951053Z",
         "ended_at": null
       }
     ],
@@ -2897,7 +2903,7 @@
     "email": "emp-00145@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -2908,7 +2914,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T14:35:41.999879Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-01T23:13:43.951053Z"
   },
   {
     "id": "EMP-00146",
@@ -2971,6 +2977,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T21:12:44.560955Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00149",
+    "full_name": "Caroline Jimenez",
+    "email": "emp-00149@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-05-01T23:13:43.951053Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T23:13:43.951053Z",
     "terminated_at": null
   }
 ]
