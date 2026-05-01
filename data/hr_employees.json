@@ -125,7 +125,7 @@
     "email": "user00007@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -142,7 +142,7 @@
     ],
     "manager_id": null,
     "hired_at": "2023-08-15T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-01T20:13:49.604524Z"
   },
   {
     "id": "EMP-00008",
@@ -2927,14 +2927,20 @@
     "id": "EMP-00147",
     "full_name": "Nancy Bradshaw",
     "email": "emp-00147@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-05-01T19:02:44.718904Z",
+        "ended_at": "2026-05-01T20:13:49.604524Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-01T20:13:49.604524Z",
         "ended_at": null
       }
     ],
