@@ -12399,5 +12399,196 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00505",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-05-01T06:10:36.189478Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00011",
+    "explanation": "Entitlement Tier-4 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 4,
+      "offending_resources": [
+        {
+          "id": "RES-00013",
+          "criticality": "high"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00506",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-05-01T06:10:36.189688Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00011",
+    "explanation": "Tier-4 PBL must mention 'read-only'",
+    "evidence": {
+      "access_tier": 4,
+      "pbl_description": "Allows authorized users to read and write business records in Robinson-Bright Api."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-4 template (read-only + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00507",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T06:10:36.197165Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00274",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00064",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00054",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00508",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T06:10:36.197248Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00275",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00020",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00051",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00509",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T06:10:36.197330Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00276",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00007",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00063",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00510",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T06:10:36.214974Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00274",
+    "explanation": "Employee division 'finance' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00064",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00054",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00511",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T06:10:36.215106Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00275",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00020",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00051",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00512",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T06:10:36.215236Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00276",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00007",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00063",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

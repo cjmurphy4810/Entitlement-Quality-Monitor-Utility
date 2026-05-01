@@ -189,7 +189,7 @@
     "id": "ENT-00011",
     "name": "tech_ops read_write 11",
     "pbl_description": "Allows authorized users to read and write business records in Robinson-Bright Api.",
-    "access_tier": 2,
+    "access_tier": 4,
     "acceptable_roles": [
       "operations",
       "business_user",
@@ -204,7 +204,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-11-20T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-01T06:10:36.182711Z"
   },
   {
     "id": "ENT-00012",

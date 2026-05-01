@@ -2746,5 +2746,43 @@
     "manager_id": null,
     "hired_at": "2026-05-01T02:30:44.751160Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00139",
+    "full_name": "Janice Todd",
+    "email": "emp-00139@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-01T06:10:36.182711Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T06:10:36.182711Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00140",
+    "full_name": "Maria Lewis",
+    "email": "emp-00140@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-05-01T06:10:36.182711Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T06:10:36.182711Z",
+    "terminated_at": null
   }
 ]
