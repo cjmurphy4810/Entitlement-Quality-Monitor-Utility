@@ -1826,14 +1826,20 @@
     "id": "EMP-00090",
     "full_name": "Michael Dixon",
     "email": "user00090@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2025-09-20T04:52:59.501678Z",
+        "ended_at": "2026-05-01T21:12:44.560955Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-01T21:12:44.560955Z",
         "ended_at": null
       }
     ],
@@ -2946,6 +2952,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T19:02:44.718904Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00148",
+    "full_name": "Grace Hodge",
+    "email": "emp-00148@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-05-01T21:12:44.560955Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-01T21:12:44.560955Z",
     "terminated_at": null
   }
 ]
