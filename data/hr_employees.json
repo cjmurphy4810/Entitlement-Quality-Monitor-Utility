@@ -313,14 +313,20 @@
     "id": "EMP-00017",
     "full_name": "Jason Shields",
     "email": "user00017@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2022-06-27T04:52:59.501678Z",
+        "ended_at": "2026-05-01T17:54:20.571816Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-05-01T17:54:20.571816Z",
         "ended_at": null
       }
     ],
