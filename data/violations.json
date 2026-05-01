@@ -12709,5 +12709,122 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00518",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T11:37:13.259382Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00280",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['customer', 'business_user', 'operations', 'business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00139",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00047",
+      "acceptable_roles": [
+        "customer",
+        "business_user",
+        "operations",
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00519",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-01T11:37:13.276051Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00280",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00139",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00047",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00520",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-01T11:37:13.276345Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00034",
+    "explanation": "Terminated employee EMP-00081 (Christina Reynolds) still holds active assignment ASN-00034.",
+    "evidence": {
+      "employee_id": "EMP-00081",
+      "terminated_at": "2026-05-01T11:37:13.245875+00:00",
+      "entitlement_id": "ENT-00007"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00521",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-01T11:37:13.276587Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00126",
+    "explanation": "Terminated employee EMP-00081 (Christina Reynolds) still holds active assignment ASN-00126.",
+    "evidence": {
+      "employee_id": "EMP-00081",
+      "terminated_at": "2026-05-01T11:37:13.245875+00:00",
+      "entitlement_id": "ENT-00032"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00522",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-01T11:37:13.276941Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00250",
+    "explanation": "Terminated employee EMP-00081 (Christina Reynolds) still holds active assignment ASN-00250.",
+    "evidence": {
+      "employee_id": "EMP-00081",
+      "terminated_at": "2026-05-01T11:37:13.245875+00:00",
+      "entitlement_id": "ENT-00028"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
