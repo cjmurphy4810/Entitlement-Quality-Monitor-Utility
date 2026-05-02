@@ -1172,5 +1172,21 @@
     "sod_tags": [],
     "created_at": "2026-05-02T06:07:51.207047Z",
     "updated_at": "2026-05-02T06:07:51.207047Z"
+  },
+  {
+    "id": "ENT-00068",
+    "name": "new entitlement ENT-00068",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00017"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-02T10:44:33.344289Z",
+    "updated_at": "2026-05-02T10:44:33.344289Z"
   }
 ]
