@@ -2276,7 +2276,7 @@
     "email": "emp-00112@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -2287,7 +2287,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-29T05:39:05.139395Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-02T08:05:08.869730Z"
   },
   {
     "id": "EMP-00113",
@@ -3046,6 +3046,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T00:11:03.015423Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00152",
+    "full_name": "Abigail Jimenez",
+    "email": "emp-00152@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-02T08:05:08.869730Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T08:05:08.869730Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00153",
+    "full_name": "Timothy Lang",
+    "email": "emp-00153@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-05-02T08:05:08.869730Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T08:05:08.869730Z",
     "terminated_at": null
   }
 ]
