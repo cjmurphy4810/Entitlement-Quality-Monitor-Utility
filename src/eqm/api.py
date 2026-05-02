@@ -273,6 +273,45 @@ async def get_flagged_record(vid: str,
                                include_internal=True)
 
 
+@app.get("/api/overview")
+async def get_overview(store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
+    """Population totals plus distinct count of assignments touched by any open finding.
+
+    Lets the Appian Health Dashboard show a "Clean vs Findings" denominator in
+    its pie chart. ``assignmentsWithFindings`` counts unique assignments that
+    are the direct target of a violation, or whose employee is the target.
+    """
+    raw_asns = await _read_list(store, "assignments.json")
+    raw_ents = await _read_list(store, "entitlements.json")
+    raw_emps = await _read_list(store, "hr_employees.json")
+    raw_cmdb = await _read_list(store, "cmdb_resources.json")
+    raw_vios = await _read_list(store, "violations.json")
+
+    asns_by_employee: dict[str, set[str]] = defaultdict(set)
+    for a in raw_asns:
+        asns_by_employee[a["employee_id"]].add(a["id"])
+
+    affected: set[str] = set()
+    for v in raw_vios:
+        if v.get("workflow_state") in ("resolved", "rejected"):
+            continue
+        ttype = v.get("target_type")
+        tid = v.get("target_id")
+        if ttype == "assignment":
+            affected.add(tid)
+        elif ttype == "employee":
+            affected.update(asns_by_employee.get(tid, set()))
+
+    return {"data": {
+        "totalAssignments": len(raw_asns),
+        "totalEntitlements": len(raw_ents),
+        "totalEmployees": len(raw_emps),
+        "totalCmdbResources": len(raw_cmdb),
+        "assignmentsWithFindings": len(affected),
+        "cleanAssignments": max(0, len(raw_asns) - len(affected)),
+    }}
+
+
 ENTITLEMENT_PATCHABLE = {"name", "pbl_description", "access_tier",
                          "acceptable_roles", "division", "linked_resource_ids",
                          "sod_tags"}
