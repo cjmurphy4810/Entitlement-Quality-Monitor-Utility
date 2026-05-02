@@ -3274,5 +3274,43 @@
     "manager_id": null,
     "hired_at": "2026-05-02T18:07:23.936330Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00163",
+    "full_name": "Elizabeth Perry",
+    "email": "emp-00163@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-02T19:33:17.051280Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T19:33:17.051280Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00164",
+    "full_name": "Jeffrey Hobbs",
+    "email": "emp-00164@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-05-02T19:33:17.051280Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T19:33:17.051280Z",
+    "terminated_at": null
   }
 ]
