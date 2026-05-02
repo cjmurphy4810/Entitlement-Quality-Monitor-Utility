@@ -164,3 +164,56 @@ def test_flagged_records_severity_filter(app_client, tmp_path):
         (tmp_path / n).write_text("[]")
     assert len(client.get("/api/flagged-records?severity=critical").json()["data"]) == 0
     assert len(client.get("/api/flagged-records?severity=low").json()["data"]) == 1
+
+
+def test_flagged_records_include_all(app_client, tmp_path):
+    """include_all=true returns every state, not just open + pending_approval."""
+    import json
+    client, _ = app_client
+    (tmp_path / "violations.json").write_text(json.dumps([
+        {"id": "VIO-1", "rule_id": "ENT-Q-01", "rule_name": "x",
+         "severity": "low", "detected_at": "2026-04-01T00:00:00+00:00",
+         "target_type": "entitlement", "target_id": "ENT-1",
+         "explanation": "x", "evidence": {}, "recommended_action": "update_entitlement_field",
+         "suggested_fix": {}, "workflow_state": "resolved", "workflow_history": [],
+         "appian_case_id": None},
+        {"id": "VIO-2", "rule_id": "ENT-Q-01", "rule_name": "x",
+         "severity": "low", "detected_at": "2026-04-01T00:00:00+00:00",
+         "target_type": "entitlement", "target_id": "ENT-2",
+         "explanation": "x", "evidence": {}, "recommended_action": "update_entitlement_field",
+         "suggested_fix": {}, "workflow_state": "rejected", "workflow_history": [],
+         "appian_case_id": None},
+    ]))
+    for n in ["entitlements.json", "hr_employees.json", "cmdb_resources.json", "assignments.json"]:
+        (tmp_path / n).write_text("[]")
+    # Default: filtered out
+    assert client.get("/api/flagged-records").json()["data"] == []
+    # include_all=true: both returned
+    assert len(client.get("/api/flagged-records?include_all=true").json()["data"]) == 2
+
+
+def test_flagged_record_detail(app_client, tmp_path):
+    """/api/flagged-records/{vid} returns single record with evidence + history."""
+    import json
+    client, _ = app_client
+    (tmp_path / "violations.json").write_text(json.dumps([
+        {"id": "VIO-1", "rule_id": "HR-04", "rule_name": "Terminated user holds active assignment",
+         "severity": "critical", "detected_at": "2026-04-01T00:00:00+00:00",
+         "target_type": "assignment", "target_id": "ASN-1",
+         "explanation": "Bob is terminated", "evidence": {"terminated_at": "2026-03-15"},
+         "recommended_action": "auto_revoke_assignment",
+         "suggested_fix": {"_action": "delete_assignment"},
+         "workflow_state": "open", "workflow_history": [],
+         "appian_case_id": None}
+    ]))
+    for n in ["entitlements.json", "hr_employees.json", "cmdb_resources.json", "assignments.json"]:
+        (tmp_path / n).write_text("[]")
+    r = client.get("/api/flagged-records/VIO-1")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["violationId"] == "VIO-1"
+    assert body["evidence"] == {"terminated_at": "2026-03-15"}
+    assert body["suggestedFix"] == {"_action": "delete_assignment"}
+    assert body["workflowHistory"] == []
+    # 404 for unknown
+    assert client.get("/api/flagged-records/MISSING").status_code == 404

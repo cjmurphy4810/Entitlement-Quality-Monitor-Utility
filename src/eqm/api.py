@@ -187,18 +187,56 @@ async def get_violation(vid: str, store: JsonStore = Depends(get_store)) -> Viol
     raise HTTPException(404, "Violation not found")
 
 
+def _project_violation(v: Violation, emp_by_id: dict, asn_by_id: dict,
+                       *, include_internal: bool = False) -> dict:
+    """Adapt a Violation to the Appian-friendly shape, resolving user context."""
+    emp_id, emp_name = "n/a", "n/a"
+    if v.target_type == "employee":
+        emp_id = v.target_id
+        emp = emp_by_id.get(v.target_id)
+        if emp:
+            emp_name = emp["full_name"]
+    elif v.target_type == "assignment":
+        asn = asn_by_id.get(v.target_id)
+        if asn:
+            emp_id = asn["employee_id"]
+            emp = emp_by_id.get(emp_id)
+            if emp:
+                emp_name = emp["full_name"]
+    out = {
+        "violationId": v.id,
+        "userId": emp_id,
+        "userName": emp_name,
+        "ruleId": v.rule_id,
+        "ruleName": v.rule_name,
+        "status": v.workflow_state.value.replace("_", " ").title(),
+        "severity": v.severity.value.title(),
+        "reason": v.explanation,
+        "targetType": v.target_type,
+        "targetId": v.target_id,
+        "recommendedAction": v.recommended_action.value,
+        "detectedAt": v.detected_at.isoformat(),
+    }
+    if include_internal:
+        out["evidence"] = v.evidence
+        out["suggestedFix"] = v.suggested_fix
+        out["workflowHistory"] = [h.model_dump(mode="json") for h in v.workflow_history]
+    return out
+
+
 @app.get("/api/flagged-records")
 async def get_flagged_records(
     state: str | None = None,
     severity: str | None = None,
+    include_all: bool = False,
     store: JsonStore = Depends(get_store),  # noqa: B008
 ) -> dict:
-    """Appian-friendly view of active violations.
+    """Appian-friendly view of violations.
 
-    Returns ``{"data": [...]}`` with each record adapted from a Violation,
-    resolving the affected user (when the target is an employee or assignment)
-    so Appian can drive workflow tasks against a real userId/userName.
-    Defaults to violations in OPEN or PENDING_APPROVAL state.
+    Returns ``{"data": [...]}``. By default returns only violations in OPEN or
+    PENDING_APPROVAL state; pass ``?include_all=true`` to get every state
+    (including RESOLVED/REJECTED) so a remediation dashboard can show
+    Not Started / In Progress / Complete buckets.
     """
     raw_vios = await _read_list(store, "violations.json")
     raw_emps = await _read_list(store, "hr_employees.json")
@@ -209,42 +247,30 @@ async def get_flagged_records(
     items = [Violation(**v) for v in raw_vios]
     if state:
         items = [v for v in items if v.workflow_state.value == state]
-    else:
+    elif not include_all:
         items = [v for v in items
                  if v.workflow_state.value in ("open", "pending_approval")]
     if severity:
         items = [v for v in items if v.severity.value == severity]
 
-    data: list[dict] = []
-    for v in items:
-        emp_id, emp_name = "n/a", "n/a"
-        if v.target_type == "employee":
-            emp_id = v.target_id
-            emp = emp_by_id.get(v.target_id)
-            if emp:
-                emp_name = emp["full_name"]
-        elif v.target_type == "assignment":
-            asn = asn_by_id.get(v.target_id)
-            if asn:
-                emp_id = asn["employee_id"]
-                emp = emp_by_id.get(emp_id)
-                if emp:
-                    emp_name = emp["full_name"]
-        data.append({
-            "violationId": v.id,
-            "userId": emp_id,
-            "userName": emp_name,
-            "ruleId": v.rule_id,
-            "ruleName": v.rule_name,
-            "status": v.workflow_state.value.replace("_", " ").title(),
-            "severity": v.severity.value.title(),
-            "reason": v.explanation,
-            "targetType": v.target_type,
-            "targetId": v.target_id,
-            "recommendedAction": v.recommended_action.value,
-            "detectedAt": v.detected_at.isoformat(),
-        })
-    return {"data": data}
+    return {"data": [_project_violation(v, emp_by_id, asn_by_id) for v in items]}
+
+
+@app.get("/api/flagged-records/{vid}")
+async def get_flagged_record(vid: str,
+                              store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
+    """Single Appian-friendly violation record with full evidence + history."""
+    raw_vios = await _read_list(store, "violations.json")
+    raw_emps = await _read_list(store, "hr_employees.json")
+    raw_asns = await _read_list(store, "assignments.json")
+    emp_by_id = {e["id"]: e for e in raw_emps}
+    asn_by_id = {a["id"]: a for a in raw_asns}
+
+    raw = next((v for v in raw_vios if v.get("id") == vid), None)
+    if raw is None:
+        raise HTTPException(404, f"Violation {vid} not found")
+    return _project_violation(Violation(**raw), emp_by_id, asn_by_id,
+                               include_internal=True)
 
 
 ENTITLEMENT_PATCHABLE = {"name", "pbl_description", "access_tier",
