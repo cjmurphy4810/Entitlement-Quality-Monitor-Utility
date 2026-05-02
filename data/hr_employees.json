@@ -205,14 +205,20 @@
     "id": "EMP-00011",
     "full_name": "Michael Brown",
     "email": "user00011@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2025-01-20T04:52:59.501678Z",
+        "ended_at": "2026-05-02T15:10:37.000338Z"
+      },
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-05-02T15:10:37.000338Z",
         "ended_at": null
       }
     ],
@@ -3160,6 +3166,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T14:09:22.989234Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00158",
+    "full_name": "Ronnie Zuniga",
+    "email": "emp-00158@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-05-02T15:10:37.000338Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T15:10:37.000338Z",
     "terminated_at": null
   }
 ]
