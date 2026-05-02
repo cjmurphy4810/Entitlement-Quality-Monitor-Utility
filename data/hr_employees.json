@@ -302,7 +302,7 @@
     "email": "user00016@example.com",
     "current_role": "operations",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -313,7 +313,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-10-04T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-02T12:56:05.819354Z"
   },
   {
     "id": "EMP-00017",
@@ -3103,6 +3103,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T11:39:48.860693Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00155",
+    "full_name": "Brittany Gordon",
+    "email": "emp-00155@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-02T12:56:05.819354Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T12:56:05.819354Z",
     "terminated_at": null
   }
 ]

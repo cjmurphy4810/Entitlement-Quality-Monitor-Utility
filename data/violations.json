@@ -14423,5 +14423,199 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00589",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-02T12:56:05.834524Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00312",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['operations', 'developer'].",
+    "evidence": {
+      "employee_id": "EMP-00142",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00016",
+      "acceptable_roles": [
+        "operations",
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00590",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-02T12:56:05.834607Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00314",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00125",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00060",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00591",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-02T12:56:05.855317Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00312",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00142",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00016",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00592",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-02T12:56:05.855447Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00313",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00094",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00014",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00593",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-02T12:56:05.855577Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00314",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00125",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00060",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00594",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-02T12:56:05.856361Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00168",
+    "explanation": "Terminated employee EMP-00016 (Brandon Hopkins) still holds active assignment ASN-00168.",
+    "evidence": {
+      "employee_id": "EMP-00016",
+      "terminated_at": "2026-05-02T12:56:05.819354+00:00",
+      "entitlement_id": "ENT-00019"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00595",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-02T12:56:05.856908Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00289",
+    "explanation": "Terminated employee EMP-00016 (Brandon Hopkins) still holds active assignment ASN-00289.",
+    "evidence": {
+      "employee_id": "EMP-00016",
+      "terminated_at": "2026-05-02T12:56:05.819354+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00596",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-05-02T12:56:05.858995Z",
+    "target_type": "employee",
+    "target_id": "EMP-00142",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00004.",
+    "evidence": {
+      "resource_id": "RES-00004",
+      "developer_admin_entitlements": [
+        "ENT-00016"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00016"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
