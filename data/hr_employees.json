@@ -3123,5 +3123,43 @@
     "manager_id": null,
     "hired_at": "2026-05-02T12:56:05.819354Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00156",
+    "full_name": "Jonathan Hoffman",
+    "email": "emp-00156@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-02T14:09:22.989234Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T14:09:22.989234Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00157",
+    "full_name": "Tammy Hughes",
+    "email": "emp-00157@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-05-02T14:09:22.989234Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T14:09:22.989234Z",
+    "terminated_at": null
   }
 ]
