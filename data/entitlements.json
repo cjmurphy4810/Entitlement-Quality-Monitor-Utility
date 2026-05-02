@@ -1142,5 +1142,19 @@
     "sod_tags": [],
     "created_at": "2026-05-02T00:11:03.015423Z",
     "updated_at": "2026-05-02T00:11:03.015423Z"
+  },
+  {
+    "id": "ENT-00066",
+    "name": "new entitlement ENT-00066",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-02T03:58:02.974842Z",
+    "updated_at": "2026-05-02T03:58:02.974842Z"
   }
 ]

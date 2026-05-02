@@ -2502,14 +2502,20 @@
     "id": "EMP-00124",
     "full_name": "Chad Chavez",
     "email": "emp-00124@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-04-30T10:23:20.581415Z",
+        "ended_at": "2026-05-02T03:58:02.974842Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-02T03:58:02.974842Z",
         "ended_at": null
       }
     ],
