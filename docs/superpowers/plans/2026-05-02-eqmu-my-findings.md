@@ -12,9 +12,13 @@
 
 ---
 
-## Phase 0: Iframe feasibility spike
+## Phase 0: Iframe feasibility spike — RESULT: BLOCKED, pivoted
 
-De-risk the highest-risk unknown first. If Appian's CSP blocks `pbl-evaluator.fly.dev` from loading inside an iframe, the entire feature pivots from "embed" to "open in new tab" — better to know now than after building the SAIL.
+**Outcome (2026-05-02):** Appian Cloud's platform-level CSP blocks the iframe. PBL Evaluator's nginx sends no `X-Frame-Options` (verified via curl), so the block is on Appian's side. The "Embedded Interfaces" admin setting is for the opposite direction (CORS for embedding Appian INTO external apps). Pivoted to `a!safeLink` opening in a new tab.
+
+**Spec and plan have been updated to reflect the new-tab approach** — the rest of the plan (Phases 1–6) is unchanged except Task 5.5 which now uses `a!safeLink` instead of `a!webContentField`.
+
+The Phase 0 task instructions below are preserved for historical reference.
 
 ### Task 0.1: Drop a test webContentField into an existing interface
 
@@ -1232,15 +1236,33 @@ a!cardLayout(
       },
       marginBelow: "STANDARD"
     ),
-    a!webContentField(
-      label: "Rewrite the PBL using the embedded evaluator",
-      url: cons!EQMU_PBL_EVALUATOR_URL & "?" &
-        "name=" & rule!EQMU_urlEncode(text: tostring(index(local!selectedEntitlement, "name", ""))) & "&" &
-        "description=" & rule!EQMU_urlEncode(text: tostring(index(local!selectedEntitlement, "pbl_description", ""))) & "&" &
-        "resourceType=entitlement" & "&" &
-        "resourceName=" & rule!EQMU_urlEncode(text: tostring(index(local!selectedEntitlement, "name", "")))
-      ,
-      height: "TALL"
+    a!richTextDisplayField(
+      labelPosition: "COLLAPSED",
+      value: {
+        a!richTextIcon(icon: "external-link"),
+        a!richTextItem(text: "  "),
+        a!richTextItem(
+          text: "Open PBL Evaluator with this entitlement →",
+          link: a!safeLink(
+            uri: cons!EQMU_PBL_EVALUATOR_URL & "?" &
+              "name=" & rule!EQMU_urlEncode(text: tostring(index(local!selectedEntitlement, "name", ""))) & "&" &
+              "description=" & rule!EQMU_urlEncode(text: tostring(index(local!selectedEntitlement, "pbl_description", ""))) & "&" &
+              "resourceType=entitlement" & "&" &
+              "resourceName=" & rule!EQMU_urlEncode(text: tostring(index(local!selectedEntitlement, "name", ""))),
+            openLinkIn: "NEW_TAB"
+          ),
+          linkStyle: "STANDALONE",
+          size: "MEDIUM_PLUS",
+          style: "STRONG"
+        ),
+        char(10),
+        a!richTextItem(
+          text: "(Opens in a new tab. Rewrite the PBL there, then come back and paste it below.)",
+          style: "EMPHASIS",
+          size: "SMALL"
+        )
+      },
+      marginBelow: "STANDARD"
     ),
     a!paragraphField(
       label: "Rewritten PBL Description",
@@ -1295,15 +1317,17 @@ a!cardLayout(
 Expected:
 - Click a PBL finding's violation ID in the grid → drill-down renders with:
   - Rule name + entitlement name + severity + reason text
-  - Embedded PBL Evaluator iframe (TALL height) showing the Evaluate page with Name, Description, Resource Name pre-populated from the selected entitlement
+  - "Open PBL Evaluator with this entitlement →" link (clicking opens in a new tab with form pre-populated)
   - Empty "Rewritten PBL Description" textarea
   - Save & Re-evaluate (disabled — textarea empty) and Cancel buttons
 
 - [ ] **Step 5: End-to-end test**
 
-In the iframe, type a longer/clearer PBL description in the description field, scroll down and click "Submit" inside the iframe. The evaluator should produce a score.
+Click the "Open PBL Evaluator with this entitlement" link. A new browser tab opens at `pbl-evaluator.fly.dev/evaluate?name=...&description=...` with the form pre-filled.
 
-Then in the Appian textarea below the iframe, paste the improved PBL text. The Save & Re-evaluate button should activate.
+In the new tab, type a longer/clearer PBL description in the Description field and click "Submit". The evaluator produces a score.
+
+Switch back to the Appian browser tab and paste the improved PBL text into the textarea. The Save & Re-evaluate button activates.
 
 Click **Save & Re-evaluate**. Expected: button shows busy state briefly, then the drill-down clears, the grid refreshes, and the PBL finding is gone (because the rule no longer fires against the new description).
 

@@ -1,12 +1,14 @@
 # Design: EQMU "My Findings" Per-User Remediation Interface
 
 **Date:** 2026-05-02
-**Status:** Approved (awaiting implementation plan)
+**Status:** Approved with iframe→new-tab pivot (Phase 0 spike confirmed Appian Cloud's platform CSP blocks third-party iframes)
 **Owner:** zdjimas
 
 ## Overview
 
-Add a per-user remediation experience to the EQMU Appian site so that any logged-in user can see violations touching them and fix them in place — including an embedded PBL Evaluator iframe for rewriting low-quality entitlement descriptions, plus generic resolution actions for non-PBL findings.
+Add a per-user remediation experience to the EQMU Appian site so that any logged-in user can see violations touching them and fix them in place — including a one-click launcher to PBL Evaluator (opens in a new browser tab pre-populated with the entitlement under remediation) for rewriting low-quality entitlement descriptions, plus generic resolution actions for non-PBL findings.
+
+**Iframe pivot note:** Original design embedded PBL Evaluator via `a!webContentField`. Phase 0 spike confirmed Appian Cloud's platform-level CSP blocks third-party iframes regardless of tenant config (curl confirmed PBL Evaluator sends no `X-Frame-Options` headers, so the block originates from Appian's parent frame). Pivoted to `a!safeLink` opening in a new tab. The user works in the new tab then alt-tabs back to Appian to paste the rewritten PBL and submit.
 
 For this iteration we ship as a **single-user demo**: a SAIL constant pins one EQM employee, an optional `?demoUserId=EMP-XXXXX` URL parameter overrides it for switching demo personas mid-presentation. Real Appian-user-to-EQM-employee mapping is deferred.
 
@@ -14,7 +16,7 @@ For this iteration we ship as a **single-user demo**: a SAIL constant pins one E
 
 - Add a new "My Findings" page to the existing EQMU Appian Site, alongside Dashboard / Remediation / Finding Detail.
 - Filter findings to those touching the demo user (direct user-targeted findings + findings on assignments and entitlements they hold).
-- Embed PBL Evaluator (already deployed at `https://pbl-evaluator.fly.dev/`) inside the drill-down panel, pre-populated via URL parameters with the entitlement under remediation.
+- Provide a one-click "Open PBL Evaluator" launcher (`a!safeLink`, new tab) pre-populated via URL parameters with the entitlement under remediation.
 - Support write-back from the user dashboard: PATCH the entitlement's `pbl_description`, trigger a rule-engine tick, and refresh findings so resolved violations clear in the UI.
 - Provide a generic "Mark as Resolved" / "Re-evaluate Now" action for non-PBL findings.
 
@@ -40,7 +42,7 @@ SAIL renders KPI cards, filterable grid, drill-down panel
   ↓ user clicks a row → local!selectedViolationId set
   ↓ if PBL finding: rule!EQMU_getEntitlementById(entId)
 SAIL drill-down panel:
-  - PBL: a!webContentField with PBL Evaluator URL + entitlement params
+  - PBL: a!safeLink "Open PBL Evaluator" (new tab, params prefilled)
          + textarea + "Save & Re-evaluate" button
   - Non-PBL: read-only details + "Mark as Resolved" + "Re-evaluate Now"
   ↓ on action button click
@@ -161,7 +163,7 @@ SectionLayout "My Findings"
 └── Drill-down panel (only when local!selectedViolationId is set)
     ├── Header: rule name, severity tag, recommendation text
     ├── If PBL finding:
-    │   ├── a!webContentField (url with entitlement params, height: 700px)
+    │   ├── a!safeLink "Open PBL Evaluator in new tab" (URL with entitlement params)
     │   ├── a!paragraphField "Rewritten PBL Description"
     │   └── Buttons: [Save & Re-evaluate] (SOLID, primary) [Cancel] (GHOST)
     └── If non-PBL finding:
@@ -169,17 +171,19 @@ SectionLayout "My Findings"
         └── Buttons: [Mark as Resolved] (SOLID) [Re-evaluate Now] (OUTLINE) [Cancel] (GHOST)
 ```
 
-### Iframe URL construction
+### Launcher URL construction
 
 ```
 cons!EQMU_PBL_EVALUATOR_URL & "?" &
-  "name="                  & urlencode(index(local!selectedEntitlement, "name", "")) & "&" &
-  "description="           & urlencode(index(local!selectedEntitlement, "pbl_description", "")) & "&" &
-  "resourceType="          & urlencode(...) & "&" &
-  ...
+  "name="                  & rule!EQMU_urlEncode(index(local!selectedEntitlement, "name", "")) & "&" &
+  "description="           & rule!EQMU_urlEncode(index(local!selectedEntitlement, "pbl_description", "")) & "&" &
+  "resourceType=entitlement&" &
+  "resourceName="          & rule!EQMU_urlEncode(index(local!selectedEntitlement, "name", ""))
 ```
 
-`urlencode()` not present natively in Appian SAIL — use `substitute()` chains for the standard offending characters (`& % # + space`) or define a small expression rule `EQMU_urlEncode(text)` if it gets repetitive.
+Wrapped in `a!safeLink(uri: ..., openLinkIn: "NEW_TAB")` and rendered as a clickable link inside the drill-down panel ("Open PBL Evaluator with this entitlement →").
+
+`urlencode()` not present natively in Appian SAIL — defined as a small expression rule `EQMU_urlEncode(text)` using a chain of `substitute()` calls for `% & # + space` (encode `%` first to avoid double-encoding).
 
 ### Save & Re-evaluate flow (PBL branch)
 
@@ -244,12 +248,14 @@ For the demo, pre-pick 2–3 employees that have a mix of finding types so that 
 
 ## Open questions / risks
 
-- **`urlencode` in SAIL:** Appian doesn't have a native function. The mitigation is `substitute()` for `&`, `%`, `#`, `+`, space (5 substitutions). Acceptable for free-text PBL fields where these are uncommon, but could break for unusual content. Consider a helper expression rule `EQMU_urlEncode`.
-- **Iframe height:** PBL Evaluator's Evaluate page is content-heavy (form + score + recommendations). 700px works for typical content but long recommendation lists may scroll inside the iframe. Acceptable.
+- **`urlencode` in SAIL:** Appian doesn't have a native function. Mitigation is a small expression rule `EQMU_urlEncode` using `substitute()` chains for `%`, `&`, `#`, `+`, space (encode `%` first to avoid double-encoding).
 - **Tick timing:** `POST /simulate/tick` is synchronous in the current EQM implementation; the rule engine runs on the request thread. If runtime grows past ~5s for any reason, Appian's integration timeout (10s default) might fire. Current runs are sub-second.
 - **Demo user selection:** EMP-00001 may not have varied findings. Verify before locking the constant. Document the chosen employee's profile in the README.
 - **Multiple PBL findings on the same entitlement:** if a user has both "PBL completeness" and "PBL template match" on the same entitlement, fixing the PBL once should clear both on the next tick. Verify this is the case.
-- **Iframe + Appian session:** Appian sometimes blocks third-party iframes via X-Frame-Options. PBL Evaluator's nginx config doesn't set X-Frame-Options. If Appian's parent frame applies a CSP that blocks `frame-src` to `pbl-evaluator.fly.dev`, the embed will fail. **Test this before sinking time into the rest.**
+
+## Resolved issues (Phase 0 spike findings)
+
+- **Iframe block (RESOLVED):** Appian Cloud's platform-level CSP blocks third-party iframes via `a!webContentField` regardless of tenant config. Confirmed via test embed of `https://pbl-evaluator.fly.dev/` — the field rendered blank with no useful content. PBL Evaluator's nginx sends no `X-Frame-Options` headers (verified via curl), so the block is on Appian's side. The "Embedded Interfaces" admin setting controls embedding Appian INTO external apps (the opposite direction), not the iframe allow-list. Pivoted to `a!safeLink` opening in a new browser tab.
 
 ## Out of scope (saved for later iterations)
 
