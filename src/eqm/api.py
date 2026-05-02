@@ -312,6 +312,55 @@ async def get_overview(store: JsonStore = Depends(get_store)) -> dict:  # noqa: 
     }}
 
 
+@app.get("/api/user-findings")
+async def get_user_findings(
+    userId: str,
+    include_all: bool = False,
+    store: JsonStore = Depends(get_store),  # noqa: B008
+) -> dict:
+    """Findings touching a specific user.
+
+    Joins three categories of findings:
+    1. target_type=employee AND target_id=userId
+    2. target_type=assignment AND assignment.employee_id=userId
+    3. target_type=entitlement AND entitlement_id IN
+       (active assignments where employee_id=userId)
+
+    Returns ``{"data": [...]}`` matching the ``/api/flagged-records`` shape.
+    Excludes resolved/rejected by default; pass ``include_all=true`` for parity.
+    """
+    raw_vios = await _read_list(store, "violations.json")
+    raw_emps = await _read_list(store, "hr_employees.json")
+    raw_asns = await _read_list(store, "assignments.json")
+    emp_by_id = {e["id"]: e for e in raw_emps}
+    asn_by_id = {a["id"]: a for a in raw_asns}
+
+    user_assignment_ids: set[str] = set()
+    user_entitlement_ids: set[str] = set()
+    for a in raw_asns:
+        if a["employee_id"] == userId and a.get("active", True):
+            user_assignment_ids.add(a["id"])
+            user_entitlement_ids.add(a["entitlement_id"])
+
+    items: list[Violation] = []
+    seen: set[str] = set()
+    for v in raw_vios:
+        if not include_all and v.get("workflow_state") in ("resolved", "rejected"):
+            continue
+        ttype = v.get("target_type")
+        tid = v.get("target_id")
+        match = (
+            (ttype == "employee" and tid == userId) or
+            (ttype == "assignment" and tid in user_assignment_ids) or
+            (ttype == "entitlement" and tid in user_entitlement_ids)
+        )
+        if match and v["id"] not in seen:
+            items.append(Violation(**v))
+            seen.add(v["id"])
+
+    return {"data": [_project_violation(v, emp_by_id, asn_by_id) for v in items]}
+
+
 ENTITLEMENT_PATCHABLE = {"name", "pbl_description", "access_tier",
                          "acceptable_roles", "division", "linked_resource_ids",
                          "sod_tags"}
