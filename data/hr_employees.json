@@ -579,7 +579,7 @@
     "email": "user00029@example.com",
     "current_role": "operations",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -590,7 +590,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-08-05T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-02T17:12:32.139455Z"
   },
   {
     "id": "EMP-00030",
@@ -3210,6 +3210,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T16:07:24.214507Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00160",
+    "full_name": "Laura Strickland",
+    "email": "emp-00160@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-05-02T17:12:32.139455Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T17:12:32.139455Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00161",
+    "full_name": "Mr. Miguel Mendoza",
+    "email": "emp-00161@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-02T17:12:32.139455Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T17:12:32.139455Z",
     "terminated_at": null
   }
 ]
