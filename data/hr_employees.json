@@ -2207,7 +2207,7 @@
     "email": "emp-00109@example.com",
     "current_role": "operations",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -2218,7 +2218,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-28T21:02:37.338583Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-02T11:39:48.860693Z"
   },
   {
     "id": "EMP-00110",
@@ -3084,6 +3084,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T08:05:08.869730Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00154",
+    "full_name": "Jeffrey Miller",
+    "email": "emp-00154@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-05-02T11:39:48.860693Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T11:39:48.860693Z",
     "terminated_at": null
   }
 ]
