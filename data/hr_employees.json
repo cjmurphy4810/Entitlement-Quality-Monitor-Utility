@@ -2047,14 +2047,20 @@
     "id": "EMP-00101",
     "full_name": "Donna Garcia",
     "email": "emp-00101@example.com",
-    "current_role": "customer",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_dev",
         "started_at": "2026-04-28T04:52:59.966268Z",
+        "ended_at": "2026-05-02T18:07:23.936330Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-05-02T18:07:23.936330Z",
         "ended_at": null
       }
     ],
@@ -3248,6 +3254,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T17:12:32.139455Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00162",
+    "full_name": "Jennifer Bryant",
+    "email": "emp-00162@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-02T18:07:23.936330Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-02T18:07:23.936330Z",
     "terminated_at": null
   }
 ]
