@@ -1503,14 +1503,20 @@
     "id": "EMP-00073",
     "full_name": "Meghan Anthony",
     "email": "user00073@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2022-11-09T04:52:59.501678Z",
+        "ended_at": "2026-05-03T17:41:45.529206Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-03T17:41:45.529206Z",
         "ended_at": null
       }
     ],
@@ -2704,7 +2710,7 @@
     "email": "emp-00132@example.com",
     "current_role": "business_user",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -2715,7 +2721,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-30T18:51:23.862305Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-03T17:41:45.529206Z"
   },
   {
     "id": "EMP-00133",
