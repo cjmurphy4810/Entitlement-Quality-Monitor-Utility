@@ -3381,5 +3381,43 @@
     "manager_id": null,
     "hired_at": "2026-05-02T23:37:09.791455Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00168",
+    "full_name": "Amy Hogan",
+    "email": "emp-00168@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-05-03T09:17:32.575936Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-03T09:17:32.575936Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00169",
+    "full_name": "Amy Collins",
+    "email": "emp-00169@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-03T09:17:32.575936Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-03T09:17:32.575936Z",
+    "terminated_at": null
   }
 ]
