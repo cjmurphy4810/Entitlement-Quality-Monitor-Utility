@@ -3589,5 +3589,24 @@
     "manager_id": null,
     "hired_at": "2026-05-03T16:41:11.847394Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00178",
+    "full_name": "Marie Smith",
+    "email": "emp-00178@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-03T19:50:52.403500Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-03T19:50:52.403500Z",
+    "terminated_at": null
   }
 ]
