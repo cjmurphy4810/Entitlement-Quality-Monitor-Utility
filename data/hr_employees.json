@@ -3545,5 +3545,43 @@
     "manager_id": null,
     "hired_at": "2026-05-03T15:40:41.336574Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00176",
+    "full_name": "Randy Harris",
+    "email": "emp-00176@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-03T16:41:11.847394Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-03T16:41:11.847394Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00177",
+    "full_name": "Ariana Taylor",
+    "email": "emp-00177@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-03T16:41:11.847394Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-03T16:41:11.847394Z",
+    "terminated_at": null
   }
 ]

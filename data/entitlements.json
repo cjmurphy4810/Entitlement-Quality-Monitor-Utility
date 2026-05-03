@@ -1248,5 +1248,21 @@
     "sod_tags": [],
     "created_at": "2026-05-03T05:42:40.037311Z",
     "updated_at": "2026-05-03T05:42:40.037311Z"
+  },
+  {
+    "id": "ENT-00073",
+    "name": "new entitlement ENT-00073",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-03T16:41:11.847394Z",
+    "updated_at": "2026-05-03T16:41:11.847394Z"
   }
 ]
