@@ -3463,5 +3463,24 @@
     "manager_id": null,
     "hired_at": "2026-05-03T10:30:05.972794Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00172",
+    "full_name": "Pamela Herrera",
+    "email": "emp-00172@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-05-03T11:21:34.283398Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-03T11:21:34.283398Z",
+    "terminated_at": null
   }
 ]
