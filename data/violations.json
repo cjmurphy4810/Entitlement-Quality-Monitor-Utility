@@ -17471,5 +17471,96 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00714",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-03T23:38:09.028547Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00368",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00130",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00057",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00715",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-03T23:38:09.055211Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00011",
+    "explanation": "Terminated employee EMP-00069 (Thomas Bailey) still holds active assignment ASN-00011.",
+    "evidence": {
+      "employee_id": "EMP-00069",
+      "terminated_at": "2026-05-03T23:38:09.007243+00:00",
+      "entitlement_id": "ENT-00025"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00716",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-03T23:38:09.055625Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00112",
+    "explanation": "Terminated employee EMP-00069 (Thomas Bailey) still holds active assignment ASN-00112.",
+    "evidence": {
+      "employee_id": "EMP-00069",
+      "terminated_at": "2026-05-03T23:38:09.007243+00:00",
+      "entitlement_id": "ENT-00046"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00717",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-03T23:38:09.056555Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00252",
+    "explanation": "Terminated employee EMP-00069 (Thomas Bailey) still holds active assignment ASN-00252.",
+    "evidence": {
+      "employee_id": "EMP-00069",
+      "terminated_at": "2026-05-03T23:38:09.007243+00:00",
+      "entitlement_id": "ENT-00011"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
