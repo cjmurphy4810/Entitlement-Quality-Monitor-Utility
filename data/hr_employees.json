@@ -3488,5 +3488,24 @@
     "manager_id": null,
     "hired_at": "2026-05-03T11:21:34.283398Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00173",
+    "full_name": "Richard Anderson",
+    "email": "emp-00173@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-05-03T14:43:29.573259Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-03T14:43:29.573259Z",
+    "terminated_at": null
   }
 ]
