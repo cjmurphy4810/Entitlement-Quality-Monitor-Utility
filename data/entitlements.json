@@ -1232,5 +1232,21 @@
     "sod_tags": [],
     "created_at": "2026-05-02T21:34:24.344050Z",
     "updated_at": "2026-05-02T21:34:24.344050Z"
+  },
+  {
+    "id": "ENT-00072",
+    "name": "new entitlement ENT-00072",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00021"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-03T05:42:40.037311Z",
+    "updated_at": "2026-05-03T05:42:40.037311Z"
   }
 ]
