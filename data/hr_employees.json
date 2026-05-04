@@ -514,14 +514,20 @@
     "id": "EMP-00026",
     "full_name": "Dr. Steven Martin",
     "email": "user00026@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "hr",
         "started_at": "2022-08-11T04:52:59.501678Z",
+        "ended_at": "2026-05-04T14:37:39.173990Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-04T14:37:39.173990Z",
         "ended_at": null
       }
     ],
@@ -3348,7 +3354,7 @@
     "email": "emp-00164@example.com",
     "current_role": "operations",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -3359,7 +3365,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T19:33:17.051280Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-04T14:37:39.173990Z"
   },
   {
     "id": "EMP-00165",
@@ -3853,6 +3859,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-04T12:19:16.552669Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00191",
+    "full_name": "Stephanie Cantu",
+    "email": "emp-00191@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-04T14:37:39.173990Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T14:37:39.173990Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00192",
+    "full_name": "William Beasley",
+    "email": "emp-00192@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-04T14:37:39.173990Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T14:37:39.173990Z",
     "terminated_at": null
   }
 ]
