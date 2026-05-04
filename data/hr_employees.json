@@ -3954,5 +3954,24 @@
     "manager_id": null,
     "hired_at": "2026-05-04T20:00:52.262554Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00195",
+    "full_name": "Sarah Tate",
+    "email": "emp-00195@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-04T21:36:12.673109Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T21:36:12.673109Z",
+    "terminated_at": null
   }
 ]
