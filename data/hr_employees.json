@@ -434,7 +434,7 @@
     "email": "user00022@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -445,7 +445,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-03-26T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-04T16:28:16.244890Z"
   },
   {
     "id": "EMP-00023",
@@ -2095,8 +2095,8 @@
     "id": "EMP-00101",
     "full_name": "Donna Garcia",
     "email": "emp-00101@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -2109,6 +2109,12 @@
         "role": "business_analyst",
         "division": "tech_ops",
         "started_at": "2026-05-02T18:07:23.936330Z",
+        "ended_at": "2026-05-04T16:28:16.244890Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-04T16:28:16.244890Z",
         "ended_at": null
       }
     ],
@@ -3897,6 +3903,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-04T14:37:39.173990Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00193",
+    "full_name": "Amanda Johnson",
+    "email": "emp-00193@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-04T16:28:16.244890Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T16:28:16.244890Z",
     "terminated_at": null
   }
 ]
