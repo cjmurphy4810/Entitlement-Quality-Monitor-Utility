@@ -3734,5 +3734,24 @@
     "manager_id": null,
     "hired_at": "2026-05-04T02:12:14.745408Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00185",
+    "full_name": "Michelle Galloway",
+    "email": "emp-00185@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-04T05:48:14.930111Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T05:48:14.930111Z",
+    "terminated_at": "2026-05-04T05:48:14.930111Z"
   }
 ]
