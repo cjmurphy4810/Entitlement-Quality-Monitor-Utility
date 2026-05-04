@@ -3715,5 +3715,24 @@
     "manager_id": null,
     "hired_at": "2026-05-03T23:38:09.007243Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00184",
+    "full_name": "Willie Lopez",
+    "email": "emp-00184@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-04T02:12:14.745408Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T02:12:14.745408Z",
+    "terminated_at": null
   }
 ]
