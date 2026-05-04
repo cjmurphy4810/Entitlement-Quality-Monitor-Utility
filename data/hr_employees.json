@@ -897,14 +897,20 @@
     "id": "EMP-00043",
     "full_name": "Brandi Bailey",
     "email": "user00043@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2024-07-10T04:52:59.501678Z",
+        "ended_at": "2026-05-04T20:00:52.262554Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-05-04T20:00:52.262554Z",
         "ended_at": null
       }
     ],
@@ -3928,6 +3934,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-04T16:28:16.244890Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00194",
+    "full_name": "Benjamin Gregory",
+    "email": "emp-00194@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-04T20:00:52.262554Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T20:00:52.262554Z",
     "terminated_at": null
   }
 ]
