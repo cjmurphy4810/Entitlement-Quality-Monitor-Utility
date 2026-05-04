@@ -3778,5 +3778,43 @@
     "manager_id": null,
     "hired_at": "2026-05-04T08:22:33.493591Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00187",
+    "full_name": "Sandra Edwards",
+    "email": "emp-00187@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-04T10:30:39.159468Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T10:30:39.159468Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00188",
+    "full_name": "Tricia Sims",
+    "email": "emp-00188@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-04T10:30:39.159468Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-04T10:30:39.159468Z",
+    "terminated_at": null
   }
 ]
