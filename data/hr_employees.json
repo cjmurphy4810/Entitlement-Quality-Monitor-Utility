@@ -3890,7 +3890,7 @@
     "email": "emp-00190@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -3901,7 +3901,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-04T12:19:16.552669Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-05T18:51:41.597879Z"
   },
   {
     "id": "EMP-00191",
@@ -4205,6 +4205,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T12:44:45.168107Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00207",
+    "full_name": "Terry Ramirez",
+    "email": "emp-00207@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-05T18:51:41.597879Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T18:51:41.597879Z",
     "terminated_at": null
   }
 ]
