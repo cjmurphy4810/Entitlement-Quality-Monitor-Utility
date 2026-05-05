@@ -4162,5 +4162,43 @@
     "manager_id": null,
     "hired_at": "2026-05-05T11:15:00.316942Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00205",
+    "full_name": "Amanda Richardson",
+    "email": "emp-00205@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-05T12:44:45.168107Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T12:44:45.168107Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00206",
+    "full_name": "Phillip Thomas",
+    "email": "emp-00206@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-05-05T12:44:45.168107Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T12:44:45.168107Z",
+    "terminated_at": null
   }
 ]
