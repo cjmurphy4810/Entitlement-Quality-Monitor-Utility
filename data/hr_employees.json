@@ -866,8 +866,8 @@
     "id": "EMP-00042",
     "full_name": "Ariel Medina",
     "email": "user00042@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -886,6 +886,12 @@
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-05-03T07:52:45.907104Z",
+        "ended_at": "2026-05-05T11:15:00.316942Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-05-05T11:15:00.316942Z",
         "ended_at": null
       }
     ],
@@ -4136,6 +4142,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T09:57:07.173716Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00204",
+    "full_name": "Jorge Mercado",
+    "email": "emp-00204@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-05T11:15:00.316942Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T11:15:00.316942Z",
     "terminated_at": null
   }
 ]
