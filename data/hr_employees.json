@@ -3662,7 +3662,7 @@
     "email": "emp-00178@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -3673,7 +3673,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-03T19:50:52.403500Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-05T20:03:48.419268Z"
   },
   {
     "id": "EMP-00179",
@@ -4224,6 +4224,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T18:51:41.597879Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00208",
+    "full_name": "Stephanie Frederick",
+    "email": "emp-00208@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-05T20:03:48.419268Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T20:03:48.419268Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00209",
+    "full_name": "Sean Wright",
+    "email": "emp-00209@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-05-05T20:03:48.419268Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T20:03:48.419268Z",
     "terminated_at": null
   }
 ]
