@@ -3603,14 +3603,20 @@
     "id": "EMP-00175",
     "full_name": "Penny Morrison",
     "email": "emp-00175@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-05-03T15:40:41.336574Z",
+        "ended_at": "2026-05-05T23:42:45.495455Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-05T23:42:45.495455Z",
         "ended_at": null
       }
     ],
@@ -4319,6 +4325,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T22:51:04.117843Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00213",
+    "full_name": "James Mcbride",
+    "email": "emp-00213@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-05-05T23:42:45.495455Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T23:42:45.495455Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00214",
+    "full_name": "William King",
+    "email": "emp-00214@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-05T23:42:45.495455Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T23:42:45.495455Z",
     "terminated_at": null
   }
 ]
