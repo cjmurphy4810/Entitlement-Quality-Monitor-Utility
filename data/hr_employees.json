@@ -4099,5 +4099,43 @@
     "manager_id": null,
     "hired_at": "2026-05-05T05:26:47.983207Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00202",
+    "full_name": "Denise Hayes",
+    "email": "emp-00202@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-05-05T09:57:07.173716Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T09:57:07.173716Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00203",
+    "full_name": "Donna Johnson",
+    "email": "emp-00203@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-05T09:57:07.173716Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-05T09:57:07.173716Z",
+    "terminated_at": null
   }
 ]
