@@ -3358,7 +3358,7 @@
     "email": "emp-00162@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -3369,7 +3369,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T18:07:23.936330Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-06T16:59:20.769169Z"
   },
   {
     "id": "EMP-00163",
@@ -3957,14 +3957,20 @@
     "id": "EMP-00193",
     "full_name": "Amanda Johnson",
     "email": "emp-00193@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "developer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-05-04T16:28:16.244890Z",
+        "ended_at": "2026-05-06T16:59:20.769169Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-06T16:59:20.769169Z",
         "ended_at": null
       }
     ],
@@ -4483,6 +4489,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T15:09:30.392768Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00221",
+    "full_name": "Douglas Russo",
+    "email": "emp-00221@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-06T16:59:20.769169Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T16:59:20.769169Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00222",
+    "full_name": "Evan Cruz",
+    "email": "emp-00222@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-06T16:59:20.769169Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T16:59:20.769169Z",
     "terminated_at": null
   }
 ]
