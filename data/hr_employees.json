@@ -186,14 +186,20 @@
     "id": "EMP-00010",
     "full_name": "Julian Chapman",
     "email": "user00010@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2025-03-22T04:52:59.501678Z",
+        "ended_at": "2026-05-06T20:08:30.809378Z"
+      },
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-05-06T20:08:30.809378Z",
         "ended_at": null
       }
     ],
@@ -4565,6 +4571,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T18:21:54.534333Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00225",
+    "full_name": "Jennifer Hughes",
+    "email": "emp-00225@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-05-06T20:08:30.809378Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T20:08:30.809378Z",
     "terminated_at": null
   }
 ]
