@@ -4364,5 +4364,43 @@
     "manager_id": null,
     "hired_at": "2026-05-05T23:42:45.495455Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00215",
+    "full_name": "Lisa Hoffman",
+    "email": "emp-00215@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-05-06T02:11:31.792538Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T02:11:31.792538Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00216",
+    "full_name": "Kristin Gray",
+    "email": "emp-00216@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-06T02:11:31.792538Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T02:11:31.792538Z",
+    "terminated_at": null
   }
 ]
