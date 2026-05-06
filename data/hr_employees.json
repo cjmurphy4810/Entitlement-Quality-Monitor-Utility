@@ -799,7 +799,7 @@
     "email": "user00039@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -816,7 +816,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-02-22T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-06T05:42:13.536854Z"
   },
   {
     "id": "EMP-00040",
@@ -4401,6 +4401,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T02:11:31.792538Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00217",
+    "full_name": "Katherine Smith",
+    "email": "emp-00217@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-05-06T05:42:13.536854Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T05:42:13.536854Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00218",
+    "full_name": "Yolanda Allen",
+    "email": "emp-00218@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-06T05:42:13.536854Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T05:42:13.536854Z",
     "terminated_at": null
   }
 ]
