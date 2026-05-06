@@ -396,7 +396,7 @@
     "email": "user00020@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -413,7 +413,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-06-30T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-06T21:38:22.009427Z"
   },
   {
     "id": "EMP-00021",
@@ -2711,14 +2711,20 @@
     "id": "EMP-00129",
     "full_name": "Andrew Brooks",
     "email": "emp-00129@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-04-30T17:13:45.714967Z",
+        "ended_at": "2026-05-06T21:38:22.009427Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-05-06T21:38:22.009427Z",
         "ended_at": null
       }
     ],
@@ -4590,6 +4596,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T20:08:30.809378Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00226",
+    "full_name": "Derrick Carroll",
+    "email": "emp-00226@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-05-06T21:38:22.009427Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T21:38:22.009427Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00227",
+    "full_name": "Cody Duran",
+    "email": "emp-00227@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-06T21:38:22.009427Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-06T21:38:22.009427Z",
     "terminated_at": null
   }
 ]
