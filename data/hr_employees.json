@@ -4710,5 +4710,24 @@
     "manager_id": null,
     "hired_at": "2026-05-07T05:44:53.660497Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00231",
+    "full_name": "Nicholas Jackson",
+    "email": "emp-00231@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-05-07T08:24:31.956507Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T08:24:31.956507Z",
+    "terminated_at": null
   }
 ]
