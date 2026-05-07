@@ -4062,14 +4062,20 @@
     "id": "EMP-00196",
     "full_name": "Marcus Knight",
     "email": "emp-00196@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2026-05-04T23:47:30.972959Z",
+        "ended_at": "2026-05-07T23:51:01.259891Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-05-07T23:51:01.259891Z",
         "ended_at": null
       }
     ],
@@ -4943,5 +4949,43 @@
     "manager_id": null,
     "hired_at": "2026-05-07T22:56:03.468921Z",
     "terminated_at": "2026-05-07T22:56:03.468921Z"
+  },
+  {
+    "id": "EMP-00242",
+    "full_name": "Gary Jacobson",
+    "email": "emp-00242@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-05-07T23:51:01.259891Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T23:51:01.259891Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00243",
+    "full_name": "Colleen Dorsey",
+    "email": "emp-00243@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-05-07T23:51:01.259891Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T23:51:01.259891Z",
+    "terminated_at": null
   }
 ]
