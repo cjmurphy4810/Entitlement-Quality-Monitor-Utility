@@ -2439,14 +2439,20 @@
     "id": "EMP-00115",
     "full_name": "Catherine Tran",
     "email": "emp-00115@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-04-29T10:23:11.870213Z",
+        "ended_at": "2026-05-07T02:13:45.045266Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-05-07T02:13:45.045266Z",
         "ended_at": null
       }
     ],
@@ -4382,7 +4388,7 @@
     "email": "emp-00214@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -4393,7 +4399,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T23:42:45.495455Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-07T02:13:45.045266Z"
   },
   {
     "id": "EMP-00215",
@@ -4640,6 +4646,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T21:38:22.009427Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00228",
+    "full_name": "Benjamin Mitchell",
+    "email": "emp-00228@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-07T02:13:45.045266Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T02:13:45.045266Z",
     "terminated_at": null
   }
 ]
