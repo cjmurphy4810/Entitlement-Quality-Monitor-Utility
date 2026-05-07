@@ -1381,8 +1381,8 @@
     "id": "EMP-00065",
     "full_name": "Tim Patton",
     "email": "user00065@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -1395,6 +1395,12 @@
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-05-03T22:34:37.830667Z",
+        "ended_at": "2026-05-07T05:44:53.660497Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-07T05:44:53.660497Z",
         "ended_at": null
       }
     ],
@@ -4665,6 +4671,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-07T02:13:45.045266Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00229",
+    "full_name": "Mrs. Maria Brown",
+    "email": "emp-00229@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-07T05:44:53.660497Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T05:44:53.660497Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00230",
+    "full_name": "Mr. Rodney Sanders MD",
+    "email": "emp-00230@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-07T05:44:53.660497Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T05:44:53.660497Z",
     "terminated_at": null
   }
 ]
