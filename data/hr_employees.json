@@ -4836,5 +4836,43 @@
     "manager_id": null,
     "hired_at": "2026-05-07T17:14:59.486795Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00237",
+    "full_name": "Jaime Edwards",
+    "email": "emp-00237@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-07T19:12:41.189292Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T19:12:41.189292Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00238",
+    "full_name": "Joel Lawson",
+    "email": "emp-00238@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-05-07T19:12:41.189292Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T19:12:41.189292Z",
+    "terminated_at": null
   }
 ]

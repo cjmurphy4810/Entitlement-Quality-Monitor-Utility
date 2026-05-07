@@ -977,7 +977,7 @@
     "entitlement_id": "ENT-00001",
     "granted_at": "2026-01-14T04:52:59.501678Z",
     "granted_by": "system",
-    "last_certified_at": "2026-05-05T11:15:00.316942Z",
+    "last_certified_at": "2026-05-07T19:12:41.189292Z",
     "active": true
   },
   {
@@ -2399,7 +2399,7 @@
     "entitlement_id": "ENT-00015",
     "granted_at": "2026-04-30T22:46:19.590704Z",
     "granted_by": "system",
-    "last_certified_at": "2026-05-05T02:10:40.568338Z",
+    "last_certified_at": "2026-05-07T19:12:41.189292Z",
     "active": true
   },
   {
@@ -2705,7 +2705,7 @@
     "entitlement_id": "ENT-00019",
     "granted_at": "2026-05-02T00:11:03.015423Z",
     "granted_by": "system",
-    "last_certified_at": "2026-05-04T12:19:16.552669Z",
+    "last_certified_at": "2026-05-07T19:12:41.189292Z",
     "active": true
   },
   {
@@ -3290,7 +3290,7 @@
     "entitlement_id": "ENT-00064",
     "granted_at": "2026-05-03T21:36:15.663075Z",
     "granted_by": "system",
-    "last_certified_at": null,
+    "last_certified_at": "2026-05-07T19:12:41.189292Z",
     "active": true
   },
   {
@@ -3488,7 +3488,7 @@
     "entitlement_id": "ENT-00047",
     "granted_at": "2026-05-04T18:01:42.209527Z",
     "granted_by": "system",
-    "last_certified_at": null,
+    "last_certified_at": "2026-05-07T19:12:41.189292Z",
     "active": true
   },
   {
@@ -4108,6 +4108,24 @@
     "employee_id": "EMP-00102",
     "entitlement_id": "ENT-00015",
     "granted_at": "2026-05-07T17:14:59.486795Z",
+    "granted_by": "system",
+    "last_certified_at": null,
+    "active": true
+  },
+  {
+    "id": "ASN-00458",
+    "employee_id": "EMP-00042",
+    "entitlement_id": "ENT-00006",
+    "granted_at": "2026-05-07T19:12:41.189292Z",
+    "granted_by": "system",
+    "last_certified_at": null,
+    "active": true
+  },
+  {
+    "id": "ASN-00459",
+    "employee_id": "EMP-00111",
+    "entitlement_id": "ENT-00008",
+    "granted_at": "2026-05-07T19:12:41.189292Z",
     "granted_by": "system",
     "last_certified_at": null,
     "active": true
