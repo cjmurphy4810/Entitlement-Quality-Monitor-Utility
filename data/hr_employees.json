@@ -4735,5 +4735,24 @@
     "manager_id": null,
     "hired_at": "2026-05-07T08:24:31.956507Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00232",
+    "full_name": "Brianna Moreno",
+    "email": "emp-00232@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-05-07T12:26:38.475252Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T12:26:38.475252Z",
+    "terminated_at": null
   }
 ]

@@ -22194,5 +22194,81 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00906",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-07T12:26:38.505971Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00452",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer', 'operations', 'business_analyst', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00047",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00042",
+      "acceptable_roles": [
+        "developer",
+        "operations",
+        "business_analyst",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00907",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-07T12:26:38.506110Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00453",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00086",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00006",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00908",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-07T12:26:38.548171Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00453",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00086",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00006",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
