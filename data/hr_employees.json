@@ -955,7 +955,7 @@
     "email": "user00045@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -966,7 +966,7 @@
     ],
     "manager_id": null,
     "hired_at": "2025-03-02T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-07T17:14:59.486795Z"
   },
   {
     "id": "EMP-00046",
@@ -4797,6 +4797,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-07T15:11:59.693424Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00235",
+    "full_name": "Susan Calhoun",
+    "email": "emp-00235@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-05-07T17:14:59.486795Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T17:14:59.486795Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00236",
+    "full_name": "Javier Murray",
+    "email": "emp-00236@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-05-07T17:14:59.486795Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T17:14:59.486795Z",
     "terminated_at": null
   }
 ]

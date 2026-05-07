@@ -22392,5 +22392,116 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00914",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-07T17:14:59.557105Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00457",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00102",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00015",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00915",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-07T17:14:59.557799Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00024",
+    "explanation": "Terminated employee EMP-00045 (Joshua Turner) still holds active assignment ASN-00024.",
+    "evidence": {
+      "employee_id": "EMP-00045",
+      "terminated_at": "2026-05-07T17:14:59.486795+00:00",
+      "entitlement_id": "ENT-00038"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00916",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-07T17:14:59.558144Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00092",
+    "explanation": "Terminated employee EMP-00045 (Joshua Turner) still holds active assignment ASN-00092.",
+    "evidence": {
+      "employee_id": "EMP-00045",
+      "terminated_at": "2026-05-07T17:14:59.486795+00:00",
+      "entitlement_id": "ENT-00036"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00917",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-07T17:14:59.558556Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00146",
+    "explanation": "Terminated employee EMP-00045 (Joshua Turner) still holds active assignment ASN-00146.",
+    "evidence": {
+      "employee_id": "EMP-00045",
+      "terminated_at": "2026-05-07T17:14:59.486795+00:00",
+      "entitlement_id": "ENT-00020"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00918",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-07T17:14:59.558921Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00189",
+    "explanation": "Terminated employee EMP-00045 (Joshua Turner) still holds active assignment ASN-00189.",
+    "evidence": {
+      "employee_id": "EMP-00045",
+      "terminated_at": "2026-05-07T17:14:59.486795+00:00",
+      "entitlement_id": "ENT-00016"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
