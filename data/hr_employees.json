@@ -4874,5 +4874,30 @@
     "manager_id": null,
     "hired_at": "2026-05-07T19:12:41.189292Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00239",
+    "full_name": "Natalie Mccoy",
+    "email": "emp-00239@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-05-07T20:46:46.443533Z",
+        "ended_at": "2026-05-07T20:46:46.443533Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-05-07T20:46:46.443533Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T20:46:46.443533Z",
+    "terminated_at": null
   }
 ]
