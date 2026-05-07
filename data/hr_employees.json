@@ -4924,5 +4924,24 @@
     "manager_id": null,
     "hired_at": "2026-05-07T21:51:27.225102Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00241",
+    "full_name": "Thomas Taylor",
+    "email": "emp-00241@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-05-07T22:56:03.468921Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-07T22:56:03.468921Z",
+    "terminated_at": "2026-05-07T22:56:03.468921Z"
   }
 ]
