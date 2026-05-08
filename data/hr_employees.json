@@ -709,8 +709,8 @@
     "id": "EMP-00035",
     "full_name": "Jennifer David",
     "email": "user00035@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
@@ -723,6 +723,12 @@
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-05-01T02:30:44.751160Z",
+        "ended_at": "2026-05-08T13:18:11.356827Z"
+      },
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-05-08T13:18:11.356827Z",
         "ended_at": null
       }
     ],
@@ -5143,6 +5149,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T11:51:39.622492Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00251",
+    "full_name": "Vanessa Garcia",
+    "email": "emp-00251@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-05-08T13:18:11.356827Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T13:18:11.356827Z",
     "terminated_at": null
   }
 ]
