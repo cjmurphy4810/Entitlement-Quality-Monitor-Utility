@@ -5106,5 +5106,43 @@
     "manager_id": null,
     "hired_at": "2026-05-08T10:20:28.276107Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00249",
+    "full_name": "Patrick Roberts",
+    "email": "emp-00249@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-05-08T11:51:39.622492Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T11:51:39.622492Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00250",
+    "full_name": "Ms. Kristina Duffy MD",
+    "email": "emp-00250@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-05-08T11:51:39.622492Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T11:51:39.622492Z",
+    "terminated_at": null
   }
 ]

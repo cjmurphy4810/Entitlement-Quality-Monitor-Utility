@@ -23232,5 +23232,195 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00949",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T11:51:39.662412Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00478",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_user', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00082",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00044",
+      "acceptable_roles": [
+        "business_user",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00950",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T11:51:39.662554Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00479",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00074",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00951",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T11:51:39.662695Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00480",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['developer', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00072",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00003",
+      "acceptable_roles": [
+        "developer",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00952",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T11:51:39.707608Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00478",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00082",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00044",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00953",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T11:51:39.707817Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00479",
+    "explanation": "Employee division 'finance' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00074",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00954",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T11:51:39.708024Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00480",
+    "explanation": "Employee division 'finance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00072",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00003",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00955",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-08T11:51:39.714268Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00478",
+    "explanation": "Terminated employee EMP-00082 (Tammie Hanson) still holds active assignment ASN-00478.",
+    "evidence": {
+      "employee_id": "EMP-00082",
+      "terminated_at": "2026-05-03T02:13:13.366032+00:00",
+      "entitlement_id": "ENT-00044"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00956",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-08T11:51:39.714341Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00479",
+    "explanation": "Terminated employee EMP-00098 (James Hernandez) still holds active assignment ASN-00479.",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "terminated_at": "2026-04-29T22:52:30.801368+00:00",
+      "entitlement_id": "ENT-00074"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
