@@ -1678,7 +1678,7 @@
     "email": "user00078@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -1695,7 +1695,7 @@
     ],
     "manager_id": null,
     "hired_at": "2023-08-10T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-08T18:06:06.349745Z"
   },
   {
     "id": "EMP-00079",
@@ -5187,6 +5187,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T15:06:55.422692Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00253",
+    "full_name": "Kelly Dyer",
+    "email": "emp-00253@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-08T18:06:06.349745Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T18:06:06.349745Z",
     "terminated_at": null
   }
 ]
