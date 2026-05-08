@@ -5264,5 +5264,43 @@
     "manager_id": null,
     "hired_at": "2026-05-08T21:54:26.786088Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00257",
+    "full_name": "Robert Molina",
+    "email": "emp-00257@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-08T22:51:17.113442Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T22:51:17.113442Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00258",
+    "full_name": "Michael Armstrong",
+    "email": "emp-00258@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-05-08T22:51:17.113442Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T22:51:17.113442Z",
+    "terminated_at": null
   }
 ]
