@@ -5302,5 +5302,24 @@
     "manager_id": null,
     "hired_at": "2026-05-08T22:51:17.113442Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00259",
+    "full_name": "Ryan Sanford",
+    "email": "emp-00259@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-08T23:51:40.707898Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T23:51:40.707898Z",
+    "terminated_at": null
   }
 ]
