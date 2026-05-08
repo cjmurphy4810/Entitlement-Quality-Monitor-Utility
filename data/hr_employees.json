@@ -4847,7 +4847,7 @@
     "email": "emp-00235@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -4858,7 +4858,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-07T17:14:59.486795Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-08T19:52:31.256459Z"
   },
   {
     "id": "EMP-00236",
@@ -5206,6 +5206,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T18:06:06.349745Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00254",
+    "full_name": "Aaron Aguilar",
+    "email": "emp-00254@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-08T19:52:31.256459Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T19:52:31.256459Z",
     "terminated_at": null
   }
 ]
