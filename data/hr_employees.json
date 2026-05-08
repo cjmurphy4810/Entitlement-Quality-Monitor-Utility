@@ -3379,14 +3379,20 @@
     "id": "EMP-00161",
     "full_name": "Mr. Miguel Mendoza",
     "email": "emp-00161@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-05-02T17:12:32.139455Z",
+        "ended_at": "2026-05-08T10:20:28.276107Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-08T10:20:28.276107Z",
         "ended_at": null
       }
     ],
@@ -5031,7 +5037,7 @@
     "email": "emp-00245@example.com",
     "current_role": "customer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -5042,7 +5048,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T05:17:04.283017Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-08T10:20:28.276107Z"
   },
   {
     "id": "EMP-00246",
@@ -5080,6 +5086,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T07:04:06.648303Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00248",
+    "full_name": "Cameron King",
+    "email": "emp-00248@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-08T10:20:28.276107Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T10:20:28.276107Z",
     "terminated_at": null
   }
 ]
