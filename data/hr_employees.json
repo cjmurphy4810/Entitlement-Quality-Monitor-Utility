@@ -5169,5 +5169,24 @@
     "manager_id": null,
     "hired_at": "2026-05-08T13:18:11.356827Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00252",
+    "full_name": "Mark White",
+    "email": "emp-00252@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-08T15:06:55.422692Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-08T15:06:55.422692Z",
+    "terminated_at": null
   }
 ]

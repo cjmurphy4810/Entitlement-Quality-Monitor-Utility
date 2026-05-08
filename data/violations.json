@@ -23588,5 +23588,76 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-00963",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T15:06:55.455945Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00483",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00054",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00027",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00964",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T15:06:55.499063Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00483",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00054",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00027",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-00965",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-08T15:06:55.499257Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00484",
+    "explanation": "Employee division 'hr' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00125",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00005",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
