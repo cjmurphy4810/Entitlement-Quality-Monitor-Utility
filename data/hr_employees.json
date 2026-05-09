@@ -5321,5 +5321,43 @@
     "manager_id": null,
     "hired_at": "2026-05-08T23:51:40.707898Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00260",
+    "full_name": "Jose Duncan",
+    "email": "emp-00260@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-05-09T02:14:22.444870Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T02:14:22.444870Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00261",
+    "full_name": "Caitlin Evans",
+    "email": "emp-00261@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-05-09T02:14:22.444870Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T02:14:22.444870Z",
+    "terminated_at": null
   }
 ]
