@@ -3644,7 +3644,7 @@
     "email": "emp-00172@example.com",
     "current_role": "business_user",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -3655,7 +3655,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-03T11:21:34.283398Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-09T23:40:43.306245Z"
   },
   {
     "id": "EMP-00173",
@@ -5609,6 +5609,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T22:36:34.220337Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00273",
+    "full_name": "Chelsea Marks",
+    "email": "emp-00273@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-09T23:40:43.306245Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T23:40:43.306245Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00274",
+    "full_name": "Jeremy Harris",
+    "email": "emp-00274@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-05-09T23:40:43.306245Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T23:40:43.306245Z",
     "terminated_at": null
   }
 ]
