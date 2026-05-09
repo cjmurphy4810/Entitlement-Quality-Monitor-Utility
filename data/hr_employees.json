@@ -4667,8 +4667,8 @@
     "id": "EMP-00225",
     "full_name": "Jennifer Hughes",
     "email": "emp-00225@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -4681,6 +4681,12 @@
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-05-07T15:11:59.693424Z",
+        "ended_at": "2026-05-09T16:44:46.641975Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-09T16:44:46.641975Z",
         "ended_at": null
       }
     ],
