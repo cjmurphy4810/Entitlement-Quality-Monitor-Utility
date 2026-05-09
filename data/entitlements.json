@@ -1404,5 +1404,21 @@
     "sod_tags": [],
     "created_at": "2026-05-09T15:43:56.082895Z",
     "updated_at": "2026-05-09T15:43:56.082895Z"
+  },
+  {
+    "id": "ENT-00083",
+    "name": "new entitlement ENT-00083",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00026"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-09T17:43:42.008907Z",
+    "updated_at": "2026-05-09T17:43:42.008907Z"
   }
 ]
