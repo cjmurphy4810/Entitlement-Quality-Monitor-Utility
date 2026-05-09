@@ -5572,5 +5572,43 @@
     "manager_id": null,
     "hired_at": "2026-05-09T21:37:36.765930Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00271",
+    "full_name": "Patrick Stevens",
+    "email": "emp-00271@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-09T22:36:34.220337Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T22:36:34.220337Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00272",
+    "full_name": "Erin Norris",
+    "email": "emp-00272@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-09T22:36:34.220337Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T22:36:34.220337Z",
+    "terminated_at": null
   }
 ]
