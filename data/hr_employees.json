@@ -5415,5 +5415,43 @@
     "manager_id": null,
     "hired_at": "2026-05-09T14:33:12.449736Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00264",
+    "full_name": "Debbie Browning",
+    "email": "emp-00264@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-09T15:43:56.082895Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T15:43:56.082895Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00265",
+    "full_name": "Michelle Morgan",
+    "email": "emp-00265@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-09T15:43:56.082895Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T15:43:56.082895Z",
+    "terminated_at": null
   }
 ]
