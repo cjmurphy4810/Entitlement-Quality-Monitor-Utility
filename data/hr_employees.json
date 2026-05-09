@@ -5396,5 +5396,24 @@
     "manager_id": null,
     "hired_at": "2026-05-09T13:02:18.836422Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00263",
+    "full_name": "Denise Barnes",
+    "email": "emp-00263@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-05-09T14:33:12.449736Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-09T14:33:12.449736Z",
+    "terminated_at": null
   }
 ]
