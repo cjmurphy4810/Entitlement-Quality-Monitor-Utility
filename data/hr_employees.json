@@ -3707,7 +3707,7 @@
     "email": "emp-00175@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -3724,7 +3724,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-03T15:40:41.336574Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-10T11:50:15.135742Z"
   },
   {
     "id": "EMP-00176",
@@ -5767,6 +5767,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T09:51:33.871472Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00281",
+    "full_name": "Keith Hernandez",
+    "email": "emp-00281@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-10T11:50:15.135742Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T11:50:15.135742Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00282",
+    "full_name": "Dalton Gordon",
+    "email": "emp-00282@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-10T11:50:15.135742Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T11:50:15.135742Z",
     "terminated_at": null
   }
 ]
