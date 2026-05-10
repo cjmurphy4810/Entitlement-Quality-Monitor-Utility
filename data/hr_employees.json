@@ -5844,5 +5844,24 @@
     "manager_id": null,
     "hired_at": "2026-05-10T14:34:58.218426Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00285",
+    "full_name": "Randall Jacobs",
+    "email": "emp-00285@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-10T15:45:32.582719Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T15:45:32.582719Z",
+    "terminated_at": null
   }
 ]
