@@ -1231,7 +1231,7 @@
     "email": "user00057@example.com",
     "current_role": "operations",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -1248,7 +1248,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-11-04T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-10T13:04:08.519807Z"
   },
   {
     "id": "EMP-00058",
@@ -5805,6 +5805,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T11:50:15.135742Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00283",
+    "full_name": "Tracy Richardson",
+    "email": "emp-00283@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-10T13:04:08.519807Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T13:04:08.519807Z",
     "terminated_at": null
   }
 ]
