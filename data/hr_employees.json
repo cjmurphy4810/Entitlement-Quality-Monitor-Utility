@@ -5825,5 +5825,24 @@
     "manager_id": null,
     "hired_at": "2026-05-10T13:04:08.519807Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00284",
+    "full_name": "Cody Bennett",
+    "email": "emp-00284@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-05-10T14:34:58.218426Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T14:34:58.218426Z",
+    "terminated_at": null
   }
 ]

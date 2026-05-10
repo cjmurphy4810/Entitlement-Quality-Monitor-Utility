@@ -27116,5 +27116,197 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01105",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-05-10T14:34:58.232029Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00087",
+    "explanation": "Entitlement Tier-3 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 3,
+      "offending_resources": [
+        {
+          "id": "RES-00030",
+          "criticality": "high"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01106",
+    "rule_id": "ENT-Q-01",
+    "rule_name": "PBL completeness",
+    "severity": "low",
+    "detected_at": "2026-05-10T14:34:58.232211Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00087",
+    "explanation": "PBL description fails completeness check: banned phrase: 'admin access'",
+    "evidence": {
+      "pbl_description": "admin access for whoever needs it",
+      "reasons": [
+        "banned phrase: 'admin access'"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 please rewrite this description to clearly state what access is granted, on which system, and to whom.]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01107",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-10T14:34:58.261008Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00550",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer', 'business_analyst', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00040",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00048",
+      "acceptable_roles": [
+        "customer",
+        "business_analyst",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01108",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-10T14:34:58.261194Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00552",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00011",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00033",
+      "acceptable_roles": [
+        "developer",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01109",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-10T14:34:58.323596Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00550",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00040",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00048",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01110",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-10T14:34:58.323838Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00552",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00011",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00033",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01111",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-10T14:34:58.332246Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00550",
+    "explanation": "Terminated employee EMP-00040 (Joyce Hickman) still holds active assignment ASN-00550.",
+    "evidence": {
+      "employee_id": "EMP-00040",
+      "terminated_at": "2026-04-28T21:02:37.338583+00:00",
+      "entitlement_id": "ENT-00048"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01112",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-10T14:34:58.332331Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00552",
+    "explanation": "Terminated employee EMP-00011 (Michael Brown) still holds active assignment ASN-00552.",
+    "evidence": {
+      "employee_id": "EMP-00011",
+      "terminated_at": "2026-05-03T12:04:14.385666+00:00",
+      "entitlement_id": "ENT-00033"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
