@@ -5926,5 +5926,43 @@
     "manager_id": null,
     "hired_at": "2026-05-10T20:41:33.150204Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00289",
+    "full_name": "Lindsey Bailey",
+    "email": "emp-00289@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-05-10T23:44:13.045867Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T23:44:13.045867Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00290",
+    "full_name": "David Rosario",
+    "email": "emp-00290@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-05-10T23:44:13.045867Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T23:44:13.045867Z",
+    "terminated_at": null
   }
 ]
