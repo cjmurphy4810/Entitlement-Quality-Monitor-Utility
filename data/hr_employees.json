@@ -5888,5 +5888,24 @@
     "manager_id": null,
     "hired_at": "2026-05-10T16:45:13.813177Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00287",
+    "full_name": "Paul Miller",
+    "email": "emp-00287@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-05-10T19:55:33.338390Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T19:55:33.338390Z",
+    "terminated_at": null
   }
 ]
