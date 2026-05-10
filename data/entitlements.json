@@ -1482,5 +1482,21 @@
     "sod_tags": [],
     "created_at": "2026-05-10T14:34:58.218426Z",
     "updated_at": "2026-05-10T14:34:58.218426Z"
+  },
+  {
+    "id": "ENT-00088",
+    "name": "new entitlement ENT-00088",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00011"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-10T16:45:13.813177Z",
+    "updated_at": "2026-05-10T16:45:13.813177Z"
   }
 ]

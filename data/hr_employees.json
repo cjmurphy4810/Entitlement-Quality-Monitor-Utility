@@ -1646,7 +1646,7 @@
     "email": "user00076@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -1663,7 +1663,7 @@
     ],
     "manager_id": null,
     "hired_at": "2025-04-05T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-10T16:45:13.813177Z"
   },
   {
     "id": "EMP-00077",
@@ -5862,6 +5862,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T15:45:32.582719Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00286",
+    "full_name": "Michael Munoz",
+    "email": "emp-00286@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-10T16:45:13.813177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T16:45:13.813177Z",
     "terminated_at": null
   }
 ]
