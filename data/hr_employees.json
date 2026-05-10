@@ -5648,5 +5648,43 @@
     "manager_id": null,
     "hired_at": "2026-05-09T23:40:43.306245Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00275",
+    "full_name": "Jessica Miranda",
+    "email": "emp-00275@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-10T05:48:41.294132Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T05:48:41.294132Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00276",
+    "full_name": "Cynthia House",
+    "email": "emp-00276@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-05-10T05:48:41.294132Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T05:48:41.294132Z",
+    "terminated_at": null
   }
 ]
