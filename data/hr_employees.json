@@ -5351,7 +5351,7 @@
     "email": "emp-00259@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -5362,7 +5362,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T23:51:40.707898Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-10T08:01:11.496212Z"
   },
   {
     "id": "EMP-00260",
@@ -5685,6 +5685,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T05:48:41.294132Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00277",
+    "full_name": "James Hoover",
+    "email": "emp-00277@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-05-10T08:01:11.496212Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T08:01:11.496212Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00278",
+    "full_name": "Mr. Rick Murphy DDS",
+    "email": "emp-00278@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-05-10T08:01:11.496212Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T08:01:11.496212Z",
     "terminated_at": null
   }
 ]
