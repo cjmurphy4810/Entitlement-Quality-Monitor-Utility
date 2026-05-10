@@ -5907,5 +5907,24 @@
     "manager_id": null,
     "hired_at": "2026-05-10T19:55:33.338390Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00288",
+    "full_name": "John Becker",
+    "email": "emp-00288@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-10T20:41:33.150204Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-10T20:41:33.150204Z",
+    "terminated_at": null
   }
 ]
