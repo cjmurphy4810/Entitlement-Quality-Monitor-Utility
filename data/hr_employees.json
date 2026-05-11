@@ -2584,7 +2584,7 @@
     "email": "emp-00120@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -2595,7 +2595,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-29T20:38:15.420041Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-11T13:42:03.838203Z"
   },
   {
     "id": "EMP-00121",
@@ -4355,8 +4355,8 @@
     "id": "EMP-00207",
     "full_name": "Terry Ramirez",
     "email": "emp-00207@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -4369,6 +4369,12 @@
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-05-08T07:04:06.648303Z",
+        "ended_at": "2026-05-11T13:42:03.838203Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-11T13:42:03.838203Z",
         "ended_at": null
       }
     ],
@@ -6051,6 +6057,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-11T10:32:28.592190Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00295",
+    "full_name": "Jean Andrade",
+    "email": "emp-00295@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-05-11T13:42:03.838203Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T13:42:03.838203Z",
     "terminated_at": null
   }
 ]
