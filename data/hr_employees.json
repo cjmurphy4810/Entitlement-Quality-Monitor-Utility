@@ -6083,5 +6083,43 @@
     "manager_id": null,
     "hired_at": "2026-05-11T13:42:03.838203Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00296",
+    "full_name": "Ellen Shaffer",
+    "email": "emp-00296@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-05-11T22:48:26.041258Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T22:48:26.041258Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00297",
+    "full_name": "Tammy Ross",
+    "email": "emp-00297@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-11T22:48:26.041258Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T22:48:26.041258Z",
+    "terminated_at": null
   }
 ]
