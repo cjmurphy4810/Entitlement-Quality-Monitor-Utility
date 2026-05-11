@@ -6014,5 +6014,43 @@
     "manager_id": null,
     "hired_at": "2026-05-11T06:32:58.543904Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00293",
+    "full_name": "Amanda Henderson",
+    "email": "emp-00293@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-11T10:32:28.592190Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T10:32:28.592190Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00294",
+    "full_name": "Angela Martinez",
+    "email": "emp-00294@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-11T10:32:28.592190Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T10:32:28.592190Z",
+    "terminated_at": null
   }
 ]
