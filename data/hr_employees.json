@@ -6121,5 +6121,43 @@
     "manager_id": null,
     "hired_at": "2026-05-11T22:48:26.041258Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00298",
+    "full_name": "Hector Simmons",
+    "email": "emp-00298@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-05-11T23:52:32.002568Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T23:52:32.002568Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00299",
+    "full_name": "Todd Richards",
+    "email": "emp-00299@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-05-11T23:52:32.002568Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T23:52:32.002568Z",
+    "terminated_at": null
   }
 ]
