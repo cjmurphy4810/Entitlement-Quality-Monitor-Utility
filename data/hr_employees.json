@@ -4153,14 +4153,20 @@
     "id": "EMP-00197",
     "full_name": "Sarah Williams",
     "email": "emp-00197@example.com",
-    "current_role": "business_user",
-    "current_division": "hr",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "hr",
         "started_at": "2026-05-04T23:47:30.972959Z",
+        "ended_at": "2026-05-11T02:34:43.932416Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-05-11T02:34:43.932416Z",
         "ended_at": null
       }
     ],
@@ -5963,6 +5969,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T23:44:13.045867Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00291",
+    "full_name": "Ann Burnett",
+    "email": "emp-00291@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-05-11T02:34:43.932416Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-11T02:34:43.932416Z",
     "terminated_at": null
   }
 ]
