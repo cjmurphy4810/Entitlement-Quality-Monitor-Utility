@@ -3820,7 +3820,7 @@
     "email": "emp-00180@example.com",
     "current_role": "business_analyst",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -3831,7 +3831,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-03T21:36:15.663075Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-11T16:27:35.462627Z"
   },
   {
     "id": "EMP-00181",
