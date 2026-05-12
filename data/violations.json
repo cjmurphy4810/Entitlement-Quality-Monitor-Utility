@@ -30905,5 +30905,97 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01259",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-12T22:54:30.122584Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00607",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00243",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00032",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01260",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-12T22:54:30.191156Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00607",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00243",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00032",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01261",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-12T22:54:30.192153Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00032",
+    "explanation": "Terminated employee EMP-00080 (Melissa Bentley) still holds active assignment ASN-00032.",
+    "evidence": {
+      "employee_id": "EMP-00080",
+      "terminated_at": "2026-05-12T22:54:30.073409+00:00",
+      "entitlement_id": "ENT-00017"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01262",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-12T22:54:30.193835Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00209",
+    "explanation": "Terminated employee EMP-00080 (Melissa Bentley) still holds active assignment ASN-00209.",
+    "evidence": {
+      "employee_id": "EMP-00080",
+      "terminated_at": "2026-05-12T22:54:30.073409+00:00",
+      "entitlement_id": "ENT-00014"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
