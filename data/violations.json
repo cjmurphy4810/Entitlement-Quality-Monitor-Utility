@@ -30997,5 +30997,76 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01263",
+    "rule_id": "ENT-Q-01",
+    "rule_name": "PBL completeness",
+    "severity": "low",
+    "detected_at": "2026-05-12T23:54:41.253841Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00096",
+    "explanation": "PBL description fails completeness check: banned phrase: 'admin access'",
+    "evidence": {
+      "pbl_description": "admin access for whoever needs it",
+      "reasons": [
+        "banned phrase: 'admin access'"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 please rewrite this description to clearly state what access is granted, on which system, and to whom.]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01264",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-12T23:54:41.287647Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00608",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00025",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00064",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01265",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-12T23:54:41.356629Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00608",
+    "explanation": "Employee division 'hr' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00025",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00064",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
