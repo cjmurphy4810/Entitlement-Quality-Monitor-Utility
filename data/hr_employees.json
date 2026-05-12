@@ -6215,5 +6215,43 @@
     "manager_id": null,
     "hired_at": "2026-05-12T05:52:00.732097Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00302",
+    "full_name": "Shelly Farmer",
+    "email": "emp-00302@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-05-12T11:15:29.477911Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-12T11:15:29.477911Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00303",
+    "full_name": "John Frazier",
+    "email": "emp-00303@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-12T11:15:29.477911Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-12T11:15:29.477911Z",
+    "terminated_at": null
   }
 ]
