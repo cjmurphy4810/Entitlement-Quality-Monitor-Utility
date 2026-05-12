@@ -3539,14 +3539,20 @@
     "id": "EMP-00165",
     "full_name": "Rachel Edwards",
     "email": "emp-00165@example.com",
-    "current_role": "operations",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "legal_compliance",
         "started_at": "2026-05-02T20:35:08.756262Z",
+        "ended_at": "2026-05-12T20:13:30.701954Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-05-12T20:13:30.701954Z",
         "ended_at": null
       }
     ],
@@ -6139,7 +6145,7 @@
     "email": "emp-00297@example.com",
     "current_role": "developer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -6150,7 +6156,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-11T22:48:26.041258Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-12T20:13:30.701954Z"
   },
   {
     "id": "EMP-00298",
@@ -6321,6 +6327,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-12T18:01:37.915127Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00307",
+    "full_name": "Robert Cooper",
+    "email": "emp-00307@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-05-12T20:13:30.701954Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-12T20:13:30.701954Z",
     "terminated_at": null
   }
 ]
