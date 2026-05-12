@@ -2972,14 +2972,20 @@
     "id": "EMP-00138",
     "full_name": "Christie Parks",
     "email": "emp-00138@example.com",
-    "current_role": "operations",
-    "current_division": "tech_ops",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_ops",
         "started_at": "2026-05-01T02:30:44.751160Z",
+        "ended_at": "2026-05-12T18:01:37.915127Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-05-12T18:01:37.915127Z",
         "ended_at": null
       }
     ],
@@ -6277,6 +6283,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-12T13:19:01.711371Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00305",
+    "full_name": "Darrell Taylor",
+    "email": "emp-00305@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-05-12T18:01:37.915127Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-12T18:01:37.915127Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00306",
+    "full_name": "Nathan Thomas",
+    "email": "emp-00306@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-05-12T18:01:37.915127Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-12T18:01:37.915127Z",
     "terminated_at": null
   }
 ]
