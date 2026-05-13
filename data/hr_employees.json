@@ -280,14 +280,20 @@
     "id": "EMP-00014",
     "full_name": "Miranda Khan",
     "email": "user00014@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2024-04-12T04:52:59.501678Z",
+        "ended_at": "2026-05-13T06:21:57.858300Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-05-13T06:21:57.858300Z",
         "ended_at": null
       }
     ],
@@ -6409,6 +6415,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-13T02:34:46.308828Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00311",
+    "full_name": "Gregory Carter",
+    "email": "emp-00311@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-13T06:21:57.858300Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-13T06:21:57.858300Z",
     "terminated_at": null
   }
 ]
