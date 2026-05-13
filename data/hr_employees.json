@@ -6391,5 +6391,24 @@
     "manager_id": null,
     "hired_at": "2026-05-12T21:47:19.148929Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00310",
+    "full_name": "Karl Atkinson",
+    "email": "emp-00310@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-05-13T02:34:46.308828Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-13T02:34:46.308828Z",
+    "terminated_at": null
   }
 ]
