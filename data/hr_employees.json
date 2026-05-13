@@ -1588,7 +1588,7 @@
     "email": "user00072@example.com",
     "current_role": "business_analyst",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -1599,7 +1599,7 @@
     ],
     "manager_id": null,
     "hired_at": "2025-10-16T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-13T21:52:32.427549Z"
   },
   {
     "id": "EMP-00073",
@@ -3292,14 +3292,20 @@
     "id": "EMP-00152",
     "full_name": "Abigail Jimenez",
     "email": "emp-00152@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "business_analyst",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-05-02T08:05:08.869730Z",
+        "ended_at": "2026-05-13T21:52:32.427549Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-05-13T21:52:32.427549Z",
         "ended_at": null
       }
     ],
@@ -6484,6 +6490,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-13T11:39:17.251895Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00314",
+    "full_name": "Angela Soto",
+    "email": "emp-00314@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-05-13T21:52:32.427549Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-13T21:52:32.427549Z",
     "terminated_at": null
   }
 ]
