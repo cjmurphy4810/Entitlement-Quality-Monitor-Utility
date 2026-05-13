@@ -31286,5 +31286,94 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01275",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-13T11:39:17.381726Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00614",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00101",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00011",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01276",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-13T11:39:17.383161Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00120",
+    "explanation": "Terminated employee EMP-00051 (Kathy King) still holds active assignment ASN-00120.",
+    "evidence": {
+      "employee_id": "EMP-00051",
+      "terminated_at": "2026-05-13T11:39:17.251895+00:00",
+      "entitlement_id": "ENT-00020"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01277",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-13T11:39:17.383520Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00147",
+    "explanation": "Terminated employee EMP-00051 (Kathy King) still holds active assignment ASN-00147.",
+    "evidence": {
+      "employee_id": "EMP-00051",
+      "terminated_at": "2026-05-13T11:39:17.251895+00:00",
+      "entitlement_id": "ENT-00009"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01278",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-13T11:39:17.392140Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00556",
+    "explanation": "Terminated employee EMP-00051 (Kathy King) still holds active assignment ASN-00556.",
+    "evidence": {
+      "employee_id": "EMP-00051",
+      "terminated_at": "2026-05-13T11:39:17.251895+00:00",
+      "entitlement_id": "ENT-00061"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

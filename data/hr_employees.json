@@ -1117,7 +1117,7 @@
     "email": "user00051@example.com",
     "current_role": "operations",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -1128,7 +1128,7 @@
     ],
     "manager_id": null,
     "hired_at": "2025-08-31T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-13T11:39:17.251895Z"
   },
   {
     "id": "EMP-00052",
@@ -6459,6 +6459,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-13T09:24:03.021183Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00313",
+    "full_name": "Courtney Schroeder",
+    "email": "emp-00313@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-05-13T11:39:17.251895Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-13T11:39:17.251895Z",
     "terminated_at": null
   }
 ]
