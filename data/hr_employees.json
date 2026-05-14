@@ -6573,5 +6573,24 @@
     "manager_id": null,
     "hired_at": "2026-05-14T08:06:16.723649Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00318",
+    "full_name": "Shelley Haas",
+    "email": "emp-00318@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-14T10:41:13.978133Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-14T10:41:13.978133Z",
+    "terminated_at": null
   }
 ]
