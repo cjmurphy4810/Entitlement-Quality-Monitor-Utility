@@ -6680,5 +6680,24 @@
     "manager_id": null,
     "hired_at": "2026-05-14T17:17:24.814190Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00323",
+    "full_name": "Nicholas Odom",
+    "email": "emp-00323@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-05-14T20:51:00.183400Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-14T20:51:00.183400Z",
+    "terminated_at": null
   }
 ]
