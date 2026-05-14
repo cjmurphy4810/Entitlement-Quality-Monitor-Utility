@@ -6510,5 +6510,43 @@
     "manager_id": null,
     "hired_at": "2026-05-13T21:52:32.427549Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00315",
+    "full_name": "Krystal Smith",
+    "email": "emp-00315@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-05-14T01:24:16.044252Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-14T01:24:16.044252Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00316",
+    "full_name": "Jay Webb",
+    "email": "emp-00316@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-14T01:24:16.044252Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-14T01:24:16.044252Z",
+    "terminated_at": null
   }
 ]
