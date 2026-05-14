@@ -1485,8 +1485,8 @@
     "id": "EMP-00067",
     "full_name": "Christopher Haynes",
     "email": "user00067@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -1505,6 +1505,12 @@
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-05-07T21:51:27.225102Z",
+        "ended_at": "2026-05-14T12:22:52.241804Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-14T12:22:52.241804Z",
         "ended_at": null
       }
     ],
@@ -6591,6 +6597,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-14T10:41:13.978133Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00319",
+    "full_name": "Mary Harris",
+    "email": "emp-00319@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-14T12:22:52.241804Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-14T12:22:52.241804Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00320",
+    "full_name": "Veronica Shields",
+    "email": "emp-00320@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-05-14T12:22:52.241804Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-14T12:22:52.241804Z",
     "terminated_at": null
   }
 ]
