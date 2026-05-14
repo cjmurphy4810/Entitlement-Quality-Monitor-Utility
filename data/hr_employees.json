@@ -4429,7 +4429,7 @@
     "email": "emp-00207@example.com",
     "current_role": "business_user",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -4452,7 +4452,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T18:51:41.597879Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-14T15:04:07.548952Z"
   },
   {
     "id": "EMP-00208",

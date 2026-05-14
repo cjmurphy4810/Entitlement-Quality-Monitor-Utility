@@ -32675,5 +32675,27 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01332",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-14T15:04:07.697200Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00600",
+    "explanation": "Terminated employee EMP-00207 (Terry Ramirez) still holds active assignment ASN-00600.",
+    "evidence": {
+      "employee_id": "EMP-00207",
+      "terminated_at": "2026-05-14T15:04:07.548952+00:00",
+      "entitlement_id": "ENT-00075"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
