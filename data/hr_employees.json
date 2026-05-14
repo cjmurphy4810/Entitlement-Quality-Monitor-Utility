@@ -6554,5 +6554,24 @@
     "manager_id": null,
     "hired_at": "2026-05-14T01:24:16.044252Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00317",
+    "full_name": "Mark Hernandez",
+    "email": "emp-00317@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-14T08:06:16.723649Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-14T08:06:16.723649Z",
+    "terminated_at": null
   }
 ]
