@@ -3312,7 +3312,7 @@
     "email": "emp-00152@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -3329,7 +3329,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T08:05:08.869730Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-15T01:21:11.492814Z"
   },
   {
     "id": "EMP-00153",
@@ -5444,14 +5444,20 @@
     "id": "EMP-00258",
     "full_name": "Michael Armstrong",
     "email": "emp-00258@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_ops",
         "started_at": "2026-05-08T22:51:17.113442Z",
+        "ended_at": "2026-05-15T01:21:11.492814Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-05-15T01:21:11.492814Z",
         "ended_at": null
       }
     ],
@@ -6780,6 +6786,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-14T23:27:36.307920Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00328",
+    "full_name": "Shelley Glover",
+    "email": "emp-00328@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-15T01:21:11.492814Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T01:21:11.492814Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00329",
+    "full_name": "Patrick Neal",
+    "email": "emp-00329@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-15T01:21:11.492814Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T01:21:11.492814Z",
     "terminated_at": null
   }
 ]
