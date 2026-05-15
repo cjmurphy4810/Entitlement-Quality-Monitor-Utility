@@ -4274,14 +4274,20 @@
     "id": "EMP-00198",
     "full_name": "Nathan Love",
     "email": "emp-00198@example.com",
-    "current_role": "customer",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_dev",
         "started_at": "2026-05-05T02:10:40.568338Z",
+        "ended_at": "2026-05-15T20:38:42.735111Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-05-15T20:38:42.735111Z",
         "ended_at": null
       }
     ],
@@ -6950,6 +6956,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-15T19:02:47.878530Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00336",
+    "full_name": "Tammy Gonzalez",
+    "email": "emp-00336@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-15T20:38:42.735111Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T20:38:42.735111Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00337",
+    "full_name": "Troy Bishop",
+    "email": "emp-00337@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-15T20:38:42.735111Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T20:38:42.735111Z",
     "terminated_at": null
   }
 ]
