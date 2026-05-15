@@ -5591,7 +5591,7 @@
     "email": "emp-00265@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -5602,7 +5602,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T15:43:56.082895Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-15T15:01:11.431628Z"
   },
   {
     "id": "EMP-00266",
@@ -6906,6 +6906,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-15T08:20:50.979042Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00334",
+    "full_name": "Maurice James",
+    "email": "emp-00334@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-05-15T15:01:11.431628Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T15:01:11.431628Z",
     "terminated_at": null
   }
 ]
