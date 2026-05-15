@@ -7033,5 +7033,24 @@
     "manager_id": null,
     "hired_at": "2026-05-15T21:53:50.973823Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00340",
+    "full_name": "Sarah Gardner",
+    "email": "emp-00340@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-05-15T23:50:41.368023Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T23:50:41.368023Z",
+    "terminated_at": null
   }
 ]
