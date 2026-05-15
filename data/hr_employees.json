@@ -6863,5 +6863,43 @@
     "manager_id": null,
     "hired_at": "2026-05-15T05:08:35.441617Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00332",
+    "full_name": "Amy Jenkins",
+    "email": "emp-00332@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-15T08:20:50.979042Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T08:20:50.979042Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00333",
+    "full_name": "Ronnie Leblanc",
+    "email": "emp-00333@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-15T08:20:50.979042Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T08:20:50.979042Z",
+    "terminated_at": null
   }
 ]
