@@ -6995,5 +6995,43 @@
     "manager_id": null,
     "hired_at": "2026-05-15T20:38:42.735111Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00338",
+    "full_name": "Jessica White",
+    "email": "emp-00338@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-05-15T21:53:50.973823Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T21:53:50.973823Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00339",
+    "full_name": "Michelle Adams",
+    "email": "emp-00339@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-15T21:53:50.973823Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T21:53:50.973823Z",
+    "terminated_at": null
   }
 ]
