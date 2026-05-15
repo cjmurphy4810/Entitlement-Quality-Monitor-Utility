@@ -6825,5 +6825,43 @@
     "manager_id": null,
     "hired_at": "2026-05-15T01:21:11.492814Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00330",
+    "full_name": "Joshua Butler",
+    "email": "emp-00330@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-15T05:08:35.441617Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T05:08:35.441617Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00331",
+    "full_name": "Ms. Andrea Brown DDS",
+    "email": "emp-00331@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-15T05:08:35.441617Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-15T05:08:35.441617Z",
+    "terminated_at": null
   }
 ]
