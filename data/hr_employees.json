@@ -7190,5 +7190,43 @@
     "manager_id": null,
     "hired_at": "2026-05-16T11:44:49.648524Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00347",
+    "full_name": "Andrew Smith",
+    "email": "emp-00347@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-16T13:08:14.615000Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T13:08:14.615000Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00348",
+    "full_name": "Matthew Duffy",
+    "email": "emp-00348@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-16T13:08:14.615000Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T13:08:14.615000Z",
+    "terminated_at": null
   }
 ]
