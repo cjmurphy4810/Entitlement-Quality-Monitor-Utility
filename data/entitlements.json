@@ -1748,5 +1748,21 @@
     "sod_tags": [],
     "created_at": "2026-05-15T17:07:34.382302Z",
     "updated_at": "2026-05-15T23:50:41.368023Z"
+  },
+  {
+    "id": "ENT-00105",
+    "name": "new entitlement ENT-00105",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00019"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-16T02:25:25.902311Z",
+    "updated_at": "2026-05-16T02:25:25.902311Z"
   }
 ]
