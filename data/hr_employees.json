@@ -6305,7 +6305,7 @@
     "email": "emp-00301@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -6316,7 +6316,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-12T05:52:00.732097Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-16T14:38:04.856518Z"
   },
   {
     "id": "EMP-00302",
@@ -7227,6 +7227,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T13:08:14.615000Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00349",
+    "full_name": "Jessica Larsen",
+    "email": "emp-00349@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-16T14:38:04.856518Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T14:38:04.856518Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00350",
+    "full_name": "Ashley Harvey",
+    "email": "emp-00350@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-16T14:38:04.856518Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T14:38:04.856518Z",
     "terminated_at": null
   }
 ]
