@@ -7417,5 +7417,24 @@
     "manager_id": null,
     "hired_at": "2026-05-16T19:59:50.572512Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00358",
+    "full_name": "Javier Williamson",
+    "email": "emp-00358@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-16T20:57:11.216210Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T20:57:11.216210Z",
+    "terminated_at": null
   }
 ]
