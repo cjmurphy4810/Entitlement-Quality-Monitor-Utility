@@ -816,5 +816,15 @@
     "environment": "staging",
     "linked_entitlement_ids": [],
     "description": "Use require defense."
+  },
+  {
+    "id": "RES-00072",
+    "name": "Webb-Gonzalez",
+    "type": "database",
+    "criticality": "low",
+    "owner_division": "legal_compliance",
+    "environment": "dev",
+    "linked_entitlement_ids": [],
+    "description": "Produce recognize guess everything."
   }
 ]
