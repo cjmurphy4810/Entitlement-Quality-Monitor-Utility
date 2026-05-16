@@ -7379,5 +7379,43 @@
     "manager_id": null,
     "hired_at": "2026-05-16T18:55:18.749474Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00356",
+    "full_name": "James Paul",
+    "email": "emp-00356@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-16T19:59:50.572512Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T19:59:50.572512Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00357",
+    "full_name": "Belinda Bell",
+    "email": "emp-00357@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-05-16T19:59:50.572512Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T19:59:50.572512Z",
+    "terminated_at": null
   }
 ]
