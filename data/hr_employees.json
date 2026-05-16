@@ -7083,5 +7083,24 @@
     "manager_id": null,
     "hired_at": "2026-05-16T05:39:18.991233Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00342",
+    "full_name": "Matthew Clark",
+    "email": "emp-00342@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-16T07:54:49.447022Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-16T07:54:49.447022Z",
+    "terminated_at": null
   }
 ]
