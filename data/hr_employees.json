@@ -7270,14 +7270,20 @@
     "id": "EMP-00350",
     "full_name": "Ashley Harvey",
     "email": "emp-00350@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-05-16T14:38:04.856518Z",
+        "ended_at": "2026-05-16T21:48:06.138897Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-16T21:48:06.138897Z",
         "ended_at": null
       }
     ],
