@@ -7540,14 +7540,20 @@
     "id": "EMP-00362",
     "full_name": "Sandra Taylor",
     "email": "emp-00362@example.com",
-    "current_role": "operations",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_ops",
         "started_at": "2026-05-17T06:16:58.069998Z",
+        "ended_at": "2026-05-17T21:13:29.974143Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-17T21:13:29.974143Z",
         "ended_at": null
       }
     ],
@@ -7800,6 +7806,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T18:59:40.965214Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00376",
+    "full_name": "Jacob Robbins DDS",
+    "email": "emp-00376@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-17T21:13:29.974143Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T21:13:29.974143Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00377",
+    "full_name": "Donald Jackson",
+    "email": "emp-00377@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-05-17T21:13:29.974143Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T21:13:29.974143Z",
     "terminated_at": null
   }
 ]
