@@ -4311,14 +4311,20 @@
     "id": "EMP-00199",
     "full_name": "James Hurst",
     "email": "emp-00199@example.com",
-    "current_role": "business_analyst",
-    "current_division": "hr",
+    "current_role": "developer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "hr",
         "started_at": "2026-05-05T02:10:40.568338Z",
+        "ended_at": "2026-05-17T08:36:18.749025Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-17T08:36:18.749025Z",
         "ended_at": null
       }
     ],
@@ -7057,7 +7063,7 @@
     "email": "emp-00339@example.com",
     "current_role": "developer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7068,7 +7074,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-15T21:53:50.973823Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-17T08:36:18.749025Z"
   },
   {
     "id": "EMP-00340",
@@ -7517,6 +7523,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T06:16:58.069998Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00363",
+    "full_name": "Amanda Young",
+    "email": "emp-00363@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-05-17T08:36:18.749025Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T08:36:18.749025Z",
     "terminated_at": null
   }
 ]
