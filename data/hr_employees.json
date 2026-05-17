@@ -7700,5 +7700,43 @@
     "manager_id": null,
     "hired_at": "2026-05-17T15:53:46.524847Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00371",
+    "full_name": "Vincent Hunt",
+    "email": "emp-00371@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-17T16:50:45.361060Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T16:50:45.361060Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00372",
+    "full_name": "Mr. Daniel Smith",
+    "email": "emp-00372@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-05-17T16:50:45.361060Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T16:50:45.361060Z",
+    "terminated_at": null
   }
 ]
