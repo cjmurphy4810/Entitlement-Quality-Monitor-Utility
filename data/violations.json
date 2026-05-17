@@ -38043,5 +38043,116 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01556",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-17T20:06:29.703486Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00729",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00123",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00095",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01557",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-17T20:06:29.707694Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00287",
+    "explanation": "Terminated employee EMP-00003 (Vanessa Patel) still holds active assignment ASN-00287.",
+    "evidence": {
+      "employee_id": "EMP-00003",
+      "terminated_at": "2026-05-17T20:06:29.569699+00:00",
+      "entitlement_id": "ENT-00058"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01558",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-17T20:06:29.709017Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00350",
+    "explanation": "Terminated employee EMP-00003 (Vanessa Patel) still holds active assignment ASN-00350.",
+    "evidence": {
+      "employee_id": "EMP-00003",
+      "terminated_at": "2026-05-17T20:06:29.569699+00:00",
+      "entitlement_id": "ENT-00010"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01559",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-17T20:06:29.710510Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00414",
+    "explanation": "Terminated employee EMP-00003 (Vanessa Patel) still holds active assignment ASN-00414.",
+    "evidence": {
+      "employee_id": "EMP-00003",
+      "terminated_at": "2026-05-17T20:06:29.569699+00:00",
+      "entitlement_id": "ENT-00018"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01560",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-17T20:06:29.714139Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00564",
+    "explanation": "Terminated employee EMP-00003 (Vanessa Patel) still holds active assignment ASN-00564.",
+    "evidence": {
+      "employee_id": "EMP-00003",
+      "terminated_at": "2026-05-17T20:06:29.569699+00:00",
+      "entitlement_id": "ENT-00023"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
