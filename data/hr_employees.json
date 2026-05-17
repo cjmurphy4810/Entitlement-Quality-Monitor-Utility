@@ -7480,5 +7480,43 @@
     "manager_id": null,
     "hired_at": "2026-05-17T02:32:25.463670Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00361",
+    "full_name": "Maria Sanchez",
+    "email": "emp-00361@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-17T06:16:58.069998Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T06:16:58.069998Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00362",
+    "full_name": "Sandra Taylor",
+    "email": "emp-00362@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-05-17T06:16:58.069998Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T06:16:58.069998Z",
+    "terminated_at": null
   }
 ]
