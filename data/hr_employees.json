@@ -7763,5 +7763,43 @@
     "manager_id": null,
     "hired_at": "2026-05-17T17:53:16.819998Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00374",
+    "full_name": "William Walker",
+    "email": "emp-00374@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-05-17T18:59:40.965214Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T18:59:40.965214Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00375",
+    "full_name": "Caitlyn Rhodes",
+    "email": "emp-00375@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-17T18:59:40.965214Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T18:59:40.965214Z",
+    "terminated_at": null
   }
 ]

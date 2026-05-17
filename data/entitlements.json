@@ -1922,5 +1922,21 @@
     "sod_tags": [],
     "created_at": "2026-05-17T17:53:16.819998Z",
     "updated_at": "2026-05-17T17:53:16.819998Z"
+  },
+  {
+    "id": "ENT-00116",
+    "name": "new entitlement ENT-00116",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00054"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-17T18:59:40.965214Z",
+    "updated_at": "2026-05-17T18:59:40.965214Z"
   }
 ]
