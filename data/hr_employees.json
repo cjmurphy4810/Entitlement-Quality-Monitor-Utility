@@ -7543,5 +7543,43 @@
     "manager_id": null,
     "hired_at": "2026-05-17T08:36:18.749025Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00364",
+    "full_name": "Gina Joseph",
+    "email": "emp-00364@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-17T10:19:14.295164Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T10:19:14.295164Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00365",
+    "full_name": "Sara Lin",
+    "email": "emp-00365@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-17T10:19:14.295164Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T10:19:14.295164Z",
+    "terminated_at": null
   }
 ]
