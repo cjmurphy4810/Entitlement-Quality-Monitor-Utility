@@ -37571,5 +37571,97 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01536",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-17T15:53:46.601513Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00723",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00259",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00053",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01537",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-17T15:53:46.717632Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00723",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00259",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00053",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01538",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-17T15:53:46.736072Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00693",
+    "explanation": "Terminated employee EMP-00325 (Jason Torres) still holds active assignment ASN-00693.",
+    "evidence": {
+      "employee_id": "EMP-00325",
+      "terminated_at": "2026-05-17T15:53:46.524847+00:00",
+      "entitlement_id": "ENT-00057"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01539",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-17T15:53:46.736885Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00723",
+    "explanation": "Terminated employee EMP-00259 (Ryan Sanford) still holds active assignment ASN-00723.",
+    "evidence": {
+      "employee_id": "EMP-00259",
+      "terminated_at": "2026-05-10T08:01:11.496212+00:00",
+      "entitlement_id": "ENT-00053"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
