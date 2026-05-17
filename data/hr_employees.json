@@ -4595,14 +4595,20 @@
     "id": "EMP-00213",
     "full_name": "James Mcbride",
     "email": "emp-00213@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-05-05T23:42:45.495455Z",
+        "ended_at": "2026-05-17T11:37:13.877949Z"
+      },
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-05-17T11:37:13.877949Z",
         "ended_at": null
       }
     ],
@@ -7580,6 +7586,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T10:19:14.295164Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00366",
+    "full_name": "Mrs. Cassandra Lin",
+    "email": "emp-00366@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-17T11:37:13.877949Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T11:37:13.877949Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00367",
+    "full_name": "Andrew Ortega",
+    "email": "emp-00367@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-17T11:37:13.877949Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-17T11:37:13.877949Z",
     "terminated_at": null
   }
 ]
