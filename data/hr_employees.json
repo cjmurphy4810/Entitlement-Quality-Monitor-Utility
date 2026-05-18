@@ -7939,5 +7939,24 @@
     "manager_id": null,
     "hired_at": "2026-05-18T01:28:13.530392Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00382",
+    "full_name": "Jesse Flores",
+    "email": "emp-00382@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-05-18T16:44:37.483613Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-18T16:44:37.483613Z",
+    "terminated_at": null
   }
 ]

@@ -1970,5 +1970,21 @@
     "sod_tags": [],
     "created_at": "2026-05-18T13:40:27.337640Z",
     "updated_at": "2026-05-18T13:40:27.337640Z"
+  },
+  {
+    "id": "ENT-00119",
+    "name": "new entitlement ENT-00119",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00033"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-18T16:44:37.483613Z",
+    "updated_at": "2026-05-18T16:44:37.483613Z"
   }
 ]
