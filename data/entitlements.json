@@ -1954,5 +1954,21 @@
     "sod_tags": [],
     "created_at": "2026-05-18T01:28:13.530392Z",
     "updated_at": "2026-05-18T01:28:13.530392Z"
+  },
+  {
+    "id": "ENT-00118",
+    "name": "new entitlement ENT-00118",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00013"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-18T13:40:27.337640Z",
+    "updated_at": "2026-05-18T13:40:27.337640Z"
   }
 ]
