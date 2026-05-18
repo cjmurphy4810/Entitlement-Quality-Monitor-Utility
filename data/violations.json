@@ -38547,5 +38547,100 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01577",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-05-18T01:28:13.549657Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00117",
+    "explanation": "Entitlement Tier-3 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 3,
+      "offending_resources": [
+        {
+          "id": "RES-00069",
+          "criticality": "high"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01578",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-18T01:28:13.608449Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00739",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00106",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01579",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-18T01:28:13.734583Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00441",
+    "explanation": "Terminated employee EMP-00103 (Mr. Kurt Rogers) still holds active assignment ASN-00441.",
+    "evidence": {
+      "employee_id": "EMP-00103",
+      "terminated_at": "2026-05-18T01:28:13.530392+00:00",
+      "entitlement_id": "ENT-00073"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01580",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-18T01:28:13.737119Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00533",
+    "explanation": "Terminated employee EMP-00103 (Mr. Kurt Rogers) still holds active assignment ASN-00533.",
+    "evidence": {
+      "employee_id": "EMP-00103",
+      "terminated_at": "2026-05-18T01:28:13.530392+00:00",
+      "entitlement_id": "ENT-00026"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

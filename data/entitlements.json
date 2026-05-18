@@ -1938,5 +1938,21 @@
     "sod_tags": [],
     "created_at": "2026-05-17T18:59:40.965214Z",
     "updated_at": "2026-05-17T18:59:40.965214Z"
+  },
+  {
+    "id": "ENT-00117",
+    "name": "new entitlement ENT-00117",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00069"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-18T01:28:13.530392Z",
+    "updated_at": "2026-05-18T01:28:13.530392Z"
   }
 ]
