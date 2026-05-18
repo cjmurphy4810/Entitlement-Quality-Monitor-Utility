@@ -3032,8 +3032,8 @@
     "id": "EMP-00138",
     "full_name": "Christie Parks",
     "email": "emp-00138@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -3046,6 +3046,12 @@
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-05-12T18:01:37.915127Z",
+        "ended_at": "2026-05-18T05:44:47.563553Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-18T05:44:47.563553Z",
         "ended_at": null
       }
     ],
