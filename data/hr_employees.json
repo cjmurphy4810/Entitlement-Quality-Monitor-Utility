@@ -3738,7 +3738,7 @@
     "email": "emp-00170@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -3749,7 +3749,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-03T10:30:05.972794Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-19T23:57:58.884581Z"
   },
   {
     "id": "EMP-00171",
@@ -8216,6 +8216,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-19T22:43:08.267444Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00396",
+    "full_name": "Benjamin Griffin",
+    "email": "emp-00396@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-05-19T23:57:58.884581Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T23:57:58.884581Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00397",
+    "full_name": "Deborah Hammond",
+    "email": "emp-00397@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-19T23:57:58.884581Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T23:57:58.884581Z",
     "terminated_at": null
   }
 ]
