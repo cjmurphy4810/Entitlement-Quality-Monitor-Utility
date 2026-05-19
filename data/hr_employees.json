@@ -1681,7 +1681,7 @@
     "email": "user00075@example.com",
     "current_role": "operations",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -1698,7 +1698,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-06-22T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-19T00:00:10.332037Z"
   },
   {
     "id": "EMP-00076",
@@ -7963,6 +7963,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-18T16:44:37.483613Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00383",
+    "full_name": "David Richard",
+    "email": "emp-00383@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-19T00:00:10.332037Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T00:00:10.332037Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00384",
+    "full_name": "Elizabeth Hernandez",
+    "email": "emp-00384@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-19T00:00:10.332037Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T00:00:10.332037Z",
     "terminated_at": null
   }
 ]
