@@ -2028,5 +2028,19 @@
     "sod_tags": [],
     "created_at": "2026-05-19T08:01:39.040099Z",
     "updated_at": "2026-05-19T08:01:39.040099Z"
+  },
+  {
+    "id": "ENT-00123",
+    "name": "new entitlement ENT-00123",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-19T21:14:15.833660Z",
+    "updated_at": "2026-05-19T21:14:15.833660Z"
   }
 ]

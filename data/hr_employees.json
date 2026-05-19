@@ -8141,5 +8141,43 @@
     "manager_id": null,
     "hired_at": "2026-05-19T19:45:20.500250Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00392",
+    "full_name": "Sara Lee",
+    "email": "emp-00392@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-05-19T21:14:15.833660Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T21:14:15.833660Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00393",
+    "full_name": "Ruth Watts",
+    "email": "emp-00393@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-05-19T21:14:15.833660Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T21:14:15.833660Z",
+    "terminated_at": null
   }
 ]
