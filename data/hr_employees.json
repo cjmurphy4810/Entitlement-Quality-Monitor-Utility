@@ -1154,7 +1154,7 @@
     "email": "user00052@example.com",
     "current_role": "business_analyst",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -1171,7 +1171,7 @@
     ],
     "manager_id": null,
     "hired_at": "2023-08-11T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-19T11:37:36.069970Z"
   },
   {
     "id": "EMP-00053",
@@ -8058,6 +8058,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-19T08:01:39.040099Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00388",
+    "full_name": "Tyrone Carr",
+    "email": "emp-00388@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-19T11:37:36.069970Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T11:37:36.069970Z",
     "terminated_at": null
   }
 ]

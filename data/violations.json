@@ -40082,5 +40082,190 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01639",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-19T11:37:36.155668Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00764",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00300",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00006",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01640",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-19T11:37:36.155935Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00765",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst', 'business_user', 'customer'].",
+    "evidence": {
+      "employee_id": "EMP-00092",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00041",
+      "acceptable_roles": [
+        "business_analyst",
+        "business_user",
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01641",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-19T11:37:36.282509Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00765",
+    "explanation": "Employee division 'finance' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00092",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00041",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01642",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-19T11:37:36.284067Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00073",
+    "explanation": "Terminated employee EMP-00052 (Amber Walters) still holds active assignment ASN-00073.",
+    "evidence": {
+      "employee_id": "EMP-00052",
+      "terminated_at": "2026-05-19T11:37:36.069970+00:00",
+      "entitlement_id": "ENT-00028"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01643",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-19T11:37:36.296104Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00516",
+    "explanation": "Terminated employee EMP-00052 (Amber Walters) still holds active assignment ASN-00516.",
+    "evidence": {
+      "employee_id": "EMP-00052",
+      "terminated_at": "2026-05-19T11:37:36.069970+00:00",
+      "entitlement_id": "ENT-00055"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01644",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-19T11:37:36.297737Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00553",
+    "explanation": "Terminated employee EMP-00052 (Amber Walters) still holds active assignment ASN-00553.",
+    "evidence": {
+      "employee_id": "EMP-00052",
+      "terminated_at": "2026-05-19T11:37:36.069970+00:00",
+      "entitlement_id": "ENT-00014"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01645",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-19T11:37:36.299851Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00613",
+    "explanation": "Terminated employee EMP-00052 (Amber Walters) still holds active assignment ASN-00613.",
+    "evidence": {
+      "employee_id": "EMP-00052",
+      "terminated_at": "2026-05-19T11:37:36.069970+00:00",
+      "entitlement_id": "ENT-00024"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01646",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-19T11:37:36.300129Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00625",
+    "explanation": "Terminated employee EMP-00052 (Amber Walters) still holds active assignment ASN-00625.",
+    "evidence": {
+      "employee_id": "EMP-00052",
+      "terminated_at": "2026-05-19T11:37:36.069970+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
