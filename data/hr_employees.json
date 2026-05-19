@@ -8040,5 +8040,24 @@
     "manager_id": null,
     "hired_at": "2026-05-19T04:11:54.530168Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00387",
+    "full_name": "Eric Baker",
+    "email": "emp-00387@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-19T08:01:39.040099Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T08:01:39.040099Z",
+    "terminated_at": null
   }
 ]
