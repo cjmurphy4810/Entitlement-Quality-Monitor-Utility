@@ -4558,7 +4558,7 @@
     "email": "emp-00210@example.com",
     "current_role": "customer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -4569,7 +4569,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T21:33:46.241781Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-19T04:11:54.530168Z"
   },
   {
     "id": "EMP-00211",
@@ -8001,6 +8001,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-19T00:00:10.332037Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00385",
+    "full_name": "Jason Taylor",
+    "email": "emp-00385@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-05-19T04:11:54.530168Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T04:11:54.530168Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00386",
+    "full_name": "Karen Greer",
+    "email": "emp-00386@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-19T04:11:54.530168Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T04:11:54.530168Z",
     "terminated_at": null
   }
 ]
