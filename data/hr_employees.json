@@ -8078,5 +8078,24 @@
     "manager_id": null,
     "hired_at": "2026-05-19T11:37:36.069970Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00389",
+    "full_name": "Kyle Mendez",
+    "email": "emp-00389@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-05-19T17:35:09.131867Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T17:35:09.131867Z",
+    "terminated_at": null
   }
 ]
