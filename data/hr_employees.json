@@ -5562,7 +5562,7 @@
     "email": "emp-00260@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -5573,7 +5573,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T02:14:22.444870Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-19T22:43:08.267444Z"
   },
   {
     "id": "EMP-00261",
@@ -8178,6 +8178,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-19T21:14:15.833660Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00394",
+    "full_name": "Cindy Perez",
+    "email": "emp-00394@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-19T22:43:08.267444Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T22:43:08.267444Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00395",
+    "full_name": "Sharon Adkins",
+    "email": "emp-00395@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-19T22:43:08.267444Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-19T22:43:08.267444Z",
     "terminated_at": null
   }
 ]
