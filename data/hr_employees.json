@@ -1486,7 +1486,7 @@
     "email": "user00066@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -1497,7 +1497,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-10-04T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-20T16:49:05.293079Z"
   },
   {
     "id": "EMP-00067",
@@ -8380,6 +8380,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-20T13:35:38.532153Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00404",
+    "full_name": "Troy Buck",
+    "email": "emp-00404@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-05-20T16:49:05.293079Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-20T16:49:05.293079Z",
     "terminated_at": null
   }
 ]

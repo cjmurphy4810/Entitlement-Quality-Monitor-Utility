@@ -41527,5 +41527,187 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01700",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-20T16:49:05.379317Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00791",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00191",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00080",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01701",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-20T16:49:05.495940Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00789",
+    "explanation": "Employee division 'finance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00315",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00026",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01702",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-20T16:49:05.496256Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00790",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00301",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00027",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01703",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-20T16:49:05.496582Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00791",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00191",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00080",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01704",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-20T16:49:05.499880Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00195",
+    "explanation": "Terminated employee EMP-00066 (Michael Moss) still holds active assignment ASN-00195.",
+    "evidence": {
+      "employee_id": "EMP-00066",
+      "terminated_at": "2026-05-20T16:49:05.293079+00:00",
+      "entitlement_id": "ENT-00026"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01705",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-20T16:49:05.500209Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00210",
+    "explanation": "Terminated employee EMP-00066 (Michael Moss) still holds active assignment ASN-00210.",
+    "evidence": {
+      "employee_id": "EMP-00066",
+      "terminated_at": "2026-05-20T16:49:05.293079+00:00",
+      "entitlement_id": "ENT-00049"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01706",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-20T16:49:05.503336Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00327",
+    "explanation": "Terminated employee EMP-00066 (Michael Moss) still holds active assignment ASN-00327.",
+    "evidence": {
+      "employee_id": "EMP-00066",
+      "terminated_at": "2026-05-20T16:49:05.293079+00:00",
+      "entitlement_id": "ENT-00014"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01707",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-20T16:49:05.518435Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00790",
+    "explanation": "Terminated employee EMP-00301 (Dr. Crystal Camacho) still holds active assignment ASN-00790.",
+    "evidence": {
+      "employee_id": "EMP-00301",
+      "terminated_at": "2026-05-16T14:38:04.856518+00:00",
+      "entitlement_id": "ENT-00027"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
