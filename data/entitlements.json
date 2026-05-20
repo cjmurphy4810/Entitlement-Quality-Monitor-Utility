@@ -902,7 +902,7 @@
     "id": "ENT-00050",
     "name": "business_dev read_write 50",
     "pbl_description": "Allows authorized users to read and write business records in Herrera-Dudley Api.",
-    "access_tier": 2,
+    "access_tier": 4,
     "acceptable_roles": [
       "business_user"
     ],
@@ -913,7 +913,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-03-28T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-20T21:17:27.082338Z"
   },
   {
     "id": "ENT-00051",
