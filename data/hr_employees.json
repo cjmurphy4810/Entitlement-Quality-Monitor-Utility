@@ -4663,14 +4663,20 @@
     "id": "EMP-00215",
     "full_name": "Lisa Hoffman",
     "email": "emp-00215@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-05-06T02:11:31.792538Z",
+        "ended_at": "2026-05-20T13:35:38.532153Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-05-20T13:35:38.532153Z",
         "ended_at": null
       }
     ],
@@ -5638,7 +5644,7 @@
     "email": "emp-00264@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -5649,7 +5655,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T15:43:56.082895Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-20T13:35:38.532153Z"
   },
   {
     "id": "EMP-00265",
@@ -8336,6 +8342,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-20T10:45:06.700474Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00402",
+    "full_name": "Rachel Mitchell MD",
+    "email": "emp-00402@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-20T13:35:38.532153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-20T13:35:38.532153Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00403",
+    "full_name": "Cynthia Miller",
+    "email": "emp-00403@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-05-20T13:35:38.532153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-20T13:35:38.532153Z",
     "terminated_at": null
   }
 ]
