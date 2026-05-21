@@ -8652,5 +8652,43 @@
     "manager_id": null,
     "hired_at": "2026-05-21T22:47:26.417333Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00417",
+    "full_name": "Eric Preston",
+    "email": "emp-00417@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-21T23:56:04.997240Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T23:56:04.997240Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00418",
+    "full_name": "Brian Rosario",
+    "email": "emp-00418@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-21T23:56:04.997240Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T23:56:04.997240Z",
+    "terminated_at": null
   }
 ]
