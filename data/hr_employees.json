@@ -1233,8 +1233,8 @@
     "id": "EMP-00055",
     "full_name": "Michael Hoffman",
     "email": "user00055@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -1247,6 +1247,12 @@
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-05-05T05:26:47.983207Z",
+        "ended_at": "2026-05-21T11:47:54.123803Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-05-21T11:47:54.123803Z",
         "ended_at": null
       }
     ],
@@ -6256,7 +6262,7 @@
     "email": "emp-00294@example.com",
     "current_role": "developer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -6267,7 +6273,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-11T10:32:28.592190Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-21T11:47:54.123803Z"
   },
   {
     "id": "EMP-00295",
@@ -8544,6 +8550,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-21T08:29:11.767071Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00412",
+    "full_name": "Gabriel Lee",
+    "email": "emp-00412@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-05-21T11:47:54.123803Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T11:47:54.123803Z",
     "terminated_at": null
   }
 ]
