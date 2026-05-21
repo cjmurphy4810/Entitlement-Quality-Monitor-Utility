@@ -4393,7 +4393,7 @@
     "email": "emp-00201@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -4404,7 +4404,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T05:26:47.983207Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-21T04:51:14.127901Z"
   },
   {
     "id": "EMP-00202",
@@ -8506,6 +8506,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-21T00:02:07.743411Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00410",
+    "full_name": "Jenna Mcdonald",
+    "email": "emp-00410@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-21T04:51:14.127901Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T04:51:14.127901Z",
     "terminated_at": null
   }
 ]
