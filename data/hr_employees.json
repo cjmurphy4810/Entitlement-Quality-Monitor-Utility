@@ -8488,5 +8488,24 @@
     "manager_id": null,
     "hired_at": "2026-05-20T22:49:54.881994Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00409",
+    "full_name": "Timothy Bennett DDS",
+    "email": "emp-00409@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-05-21T00:02:07.743411Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T00:02:07.743411Z",
+    "terminated_at": null
   }
 ]
