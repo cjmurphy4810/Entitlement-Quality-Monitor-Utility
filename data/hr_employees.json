@@ -8595,5 +8595,24 @@
     "manager_id": null,
     "hired_at": "2026-05-21T17:27:50.231506Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00414",
+    "full_name": "Aaron Barker",
+    "email": "emp-00414@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-05-21T21:11:10.558398Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T21:11:10.558398Z",
+    "terminated_at": null
   }
 ]
