@@ -8570,5 +8570,24 @@
     "manager_id": null,
     "hired_at": "2026-05-21T11:47:54.123803Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00413",
+    "full_name": "Amanda Fisher",
+    "email": "emp-00413@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-05-21T17:27:50.231506Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T17:27:50.231506Z",
+    "terminated_at": null
   }
 ]
