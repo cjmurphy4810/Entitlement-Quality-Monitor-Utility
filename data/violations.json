@@ -42872,5 +42872,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01756",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-21T14:50:56.414664Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00812",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00312",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00012",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01757",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-21T14:50:56.438382Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00812",
+    "explanation": "Terminated employee EMP-00312 (Kimberly Rasmussen) still holds active assignment ASN-00812.",
+    "evidence": {
+      "employee_id": "EMP-00312",
+      "terminated_at": "2026-05-14T05:03:31.794732+00:00",
+      "entitlement_id": "ENT-00012"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
