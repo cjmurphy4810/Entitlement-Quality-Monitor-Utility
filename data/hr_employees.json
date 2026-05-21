@@ -7834,14 +7834,20 @@
     "id": "EMP-00374",
     "full_name": "William Walker",
     "email": "emp-00374@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-05-17T18:59:40.965214Z",
+        "ended_at": "2026-05-21T19:26:32.363530Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-21T19:26:32.363530Z",
         "ended_at": null
       }
     ],
