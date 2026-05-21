@@ -8614,5 +8614,43 @@
     "manager_id": null,
     "hired_at": "2026-05-21T21:11:10.558398Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00415",
+    "full_name": "Gabriela Manning",
+    "email": "emp-00415@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-05-21T22:47:26.417333Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T22:47:26.417333Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00416",
+    "full_name": "Shelby Salazar",
+    "email": "emp-00416@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-05-21T22:47:26.417333Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T22:47:26.417333Z",
+    "terminated_at": null
   }
 ]
