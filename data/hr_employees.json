@@ -7868,7 +7868,7 @@
     "email": "emp-00376@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -7879,7 +7879,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T21:13:29.974143Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-21T08:29:11.767071Z"
   },
   {
     "id": "EMP-00377",
@@ -8525,6 +8525,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-21T04:51:14.127901Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00411",
+    "full_name": "Lori Villa",
+    "email": "emp-00411@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-05-21T08:29:11.767071Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-21T08:29:11.767071Z",
     "terminated_at": null
   }
 ]

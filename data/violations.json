@@ -42583,5 +42583,143 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01744",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-21T08:29:11.853516Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00807",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00020",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00074",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01745",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-21T08:29:11.975261Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00806",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00248",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00048",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01746",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-21T08:29:11.975589Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00807",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00020",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00074",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01747",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-21T08:29:11.975926Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00808",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00325",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00047",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01748",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-21T08:29:11.998825Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00807",
+    "explanation": "Terminated employee EMP-00020 (Corey Herrera) still holds active assignment ASN-00807.",
+    "evidence": {
+      "employee_id": "EMP-00020",
+      "terminated_at": "2026-05-06T21:38:22.009427+00:00",
+      "entitlement_id": "ENT-00074"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01749",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-21T08:29:11.998970Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00808",
+    "explanation": "Terminated employee EMP-00325 (Jason Torres) still holds active assignment ASN-00808.",
+    "evidence": {
+      "employee_id": "EMP-00325",
+      "terminated_at": "2026-05-17T15:53:46.524847+00:00",
+      "entitlement_id": "ENT-00047"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
