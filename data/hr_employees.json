@@ -8841,5 +8841,43 @@
     "manager_id": null,
     "hired_at": "2026-05-22T22:03:04.647129Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00426",
+    "full_name": "Amanda Graves",
+    "email": "emp-00426@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-05-22T23:37:46.064536Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-22T23:37:46.064536Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00427",
+    "full_name": "Tiffany Rowe",
+    "email": "emp-00427@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-22T23:37:46.064536Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-22T23:37:46.064536Z",
+    "terminated_at": null
   }
 ]
