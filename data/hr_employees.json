@@ -5167,8 +5167,8 @@
     "id": "EMP-00239",
     "full_name": "Natalie Mccoy",
     "email": "emp-00239@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -5181,6 +5181,12 @@
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-05-07T20:46:46.443533Z",
+        "ended_at": "2026-05-22T06:44:26.775132Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-22T06:44:26.775132Z",
         "ended_at": null
       }
     ],
