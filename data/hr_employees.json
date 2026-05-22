@@ -8803,5 +8803,43 @@
     "manager_id": null,
     "hired_at": "2026-05-22T20:54:11.877987Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00424",
+    "full_name": "Rachel Hensley",
+    "email": "emp-00424@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-05-22T22:03:04.647129Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-22T22:03:04.647129Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00425",
+    "full_name": "Ryan Mora",
+    "email": "emp-00425@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-22T22:03:04.647129Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-22T22:03:04.647129Z",
+    "terminated_at": null
   }
 ]
