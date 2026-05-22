@@ -8765,5 +8765,43 @@
     "manager_id": null,
     "hired_at": "2026-05-22T10:20:40.593623Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00422",
+    "full_name": "Donna Lee",
+    "email": "emp-00422@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-05-22T20:54:11.877987Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-22T20:54:11.877987Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00423",
+    "full_name": "Samuel Stevenson",
+    "email": "emp-00423@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-05-22T20:54:11.877987Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-22T20:54:11.877987Z",
+    "terminated_at": null
   }
 ]
