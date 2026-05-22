@@ -8740,5 +8740,24 @@
     "manager_id": null,
     "hired_at": "2026-05-22T02:54:04.031683Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00421",
+    "full_name": "Diane Kemp DDS",
+    "email": "emp-00421@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-22T10:20:40.593623Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-22T10:20:40.593623Z",
+    "terminated_at": null
   }
 ]
