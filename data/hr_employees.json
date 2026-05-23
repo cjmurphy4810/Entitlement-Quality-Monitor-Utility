@@ -1643,7 +1643,7 @@
     "email": "user00073@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -1660,7 +1660,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-11-09T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-23T14:46:57.722936Z"
   },
   {
     "id": "EMP-00074",
@@ -8979,6 +8979,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-23T11:40:19.361697Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00433",
+    "full_name": "Sarah Molina",
+    "email": "emp-00433@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-23T14:46:57.722936Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T14:46:57.722936Z",
     "terminated_at": null
   }
 ]
