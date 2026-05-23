@@ -7484,14 +7484,20 @@
     "id": "EMP-00354",
     "full_name": "Melissa Jackson",
     "email": "emp-00354@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-05-16T18:55:18.749474Z",
+        "ended_at": "2026-05-23T21:48:00.617079Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-05-23T21:48:00.617079Z",
         "ended_at": null
       }
     ],
