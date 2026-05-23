@@ -9087,5 +9087,24 @@
     "manager_id": null,
     "hired_at": "2026-05-23T19:43:25.442207Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00438",
+    "full_name": "Gordon Long",
+    "email": "emp-00438@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-05-23T20:41:38.461919Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T20:41:38.461919Z",
+    "terminated_at": null
   }
 ]
