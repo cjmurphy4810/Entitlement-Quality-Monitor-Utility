@@ -8449,7 +8449,7 @@
     "email": "emp-00405@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -8460,7 +8460,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-20T21:17:27.082338Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-23T11:40:19.361697Z"
   },
   {
     "id": "EMP-00406",
@@ -8935,6 +8935,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-23T05:53:14.393415Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00431",
+    "full_name": "Mr. Richard Torres DDS",
+    "email": "emp-00431@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-05-23T11:40:19.361697Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T11:40:19.361697Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00432",
+    "full_name": "Chad Simon",
+    "email": "emp-00432@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-05-23T11:40:19.361697Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T11:40:19.361697Z",
     "terminated_at": null
   }
 ]
