@@ -9112,5 +9112,43 @@
     "manager_id": null,
     "hired_at": "2026-05-23T20:41:38.461919Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00439",
+    "full_name": "Carrie Jimenez",
+    "email": "emp-00439@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-05-23T22:45:26.181998Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T22:45:26.181998Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00440",
+    "full_name": "Derek Evans",
+    "email": "emp-00440@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-23T22:45:26.181998Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T22:45:26.181998Z",
+    "terminated_at": null
   }
 ]
