@@ -8917,5 +8917,24 @@
     "manager_id": null,
     "hired_at": "2026-05-23T02:29:51.926610Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00430",
+    "full_name": "Melissa Harvey",
+    "email": "emp-00430@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-23T05:53:14.393415Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T05:53:14.393415Z",
+    "terminated_at": null
   }
 ]
