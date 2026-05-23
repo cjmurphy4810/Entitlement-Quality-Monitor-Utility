@@ -9005,5 +9005,43 @@
     "manager_id": null,
     "hired_at": "2026-05-23T14:46:57.722936Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00434",
+    "full_name": "Antonio Gonzales",
+    "email": "emp-00434@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-05-23T17:02:09.673746Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T17:02:09.673746Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00435",
+    "full_name": "Mr. Stephen Harris",
+    "email": "emp-00435@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-23T17:02:09.673746Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T17:02:09.673746Z",
+    "terminated_at": null
   }
 ]
