@@ -5248,14 +5248,20 @@
     "id": "EMP-00242",
     "full_name": "Gary Jacobson",
     "email": "emp-00242@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-05-07T23:51:01.259891Z",
+        "ended_at": "2026-05-23T15:58:29.323512Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-23T15:58:29.323512Z",
         "ended_at": null
       }
     ],
