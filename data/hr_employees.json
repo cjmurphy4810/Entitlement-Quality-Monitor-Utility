@@ -7366,7 +7366,7 @@
     "email": "emp-00348@example.com",
     "current_role": "developer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7377,7 +7377,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T13:08:14.615000Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-23T19:43:25.442207Z"
   },
   {
     "id": "EMP-00349",
@@ -9048,6 +9048,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-23T17:02:09.673746Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00436",
+    "full_name": "Jeffrey Williams",
+    "email": "emp-00436@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-23T19:43:25.442207Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T19:43:25.442207Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00437",
+    "full_name": "Jason Hanson",
+    "email": "emp-00437@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-23T19:43:25.442207Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-23T19:43:25.442207Z",
     "terminated_at": null
   }
 ]
