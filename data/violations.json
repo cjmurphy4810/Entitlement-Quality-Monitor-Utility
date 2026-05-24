@@ -46475,5 +46475,163 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-01906",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-24T10:52:58.524215Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00877",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00316",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00072",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01907",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-24T10:52:58.673432Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00877",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00316",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00072",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01908",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-24T10:52:58.690964Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00628",
+    "explanation": "Terminated employee EMP-00274 (Jeremy Harris) still holds active assignment ASN-00628.",
+    "evidence": {
+      "employee_id": "EMP-00274",
+      "terminated_at": "2026-05-24T10:52:58.424428+00:00",
+      "entitlement_id": "ENT-00064"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01909",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-24T10:52:58.694212Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00716",
+    "explanation": "Terminated employee EMP-00274 (Jeremy Harris) still holds active assignment ASN-00716.",
+    "evidence": {
+      "employee_id": "EMP-00274",
+      "terminated_at": "2026-05-24T10:52:58.424428+00:00",
+      "entitlement_id": "ENT-00010"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01910",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-24T10:52:58.695620Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00745",
+    "explanation": "Terminated employee EMP-00274 (Jeremy Harris) still holds active assignment ASN-00745.",
+    "evidence": {
+      "employee_id": "EMP-00274",
+      "terminated_at": "2026-05-24T10:52:58.424428+00:00",
+      "entitlement_id": "ENT-00069"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01911",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-24T10:52:58.696304Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00766",
+    "explanation": "Terminated employee EMP-00274 (Jeremy Harris) still holds active assignment ASN-00766.",
+    "evidence": {
+      "employee_id": "EMP-00274",
+      "terminated_at": "2026-05-24T10:52:58.424428+00:00",
+      "entitlement_id": "ENT-00048"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-01912",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-24T10:52:58.698474Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00798",
+    "explanation": "Terminated employee EMP-00274 (Jeremy Harris) still holds active assignment ASN-00798.",
+    "evidence": {
+      "employee_id": "EMP-00274",
+      "terminated_at": "2026-05-24T10:52:58.424428+00:00",
+      "entitlement_id": "ENT-00092"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

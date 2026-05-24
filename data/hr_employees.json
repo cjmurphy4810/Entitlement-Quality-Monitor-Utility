@@ -5912,7 +5912,7 @@
     "email": "emp-00274@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -5923,7 +5923,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T23:40:43.306245Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-24T10:52:58.424428Z"
   },
   {
     "id": "EMP-00275",
@@ -9237,6 +9237,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-24T09:17:14.202391Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00445",
+    "full_name": "Rebecca Bailey",
+    "email": "emp-00445@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-24T10:52:58.424428Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-24T10:52:58.424428Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00446",
+    "full_name": "James Bradley",
+    "email": "emp-00446@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-05-24T10:52:58.424428Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-24T10:52:58.424428Z",
     "terminated_at": null
   }
 ]
