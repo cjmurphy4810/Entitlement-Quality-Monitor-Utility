@@ -4235,7 +4235,7 @@
     "email": "emp-00193@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -4258,7 +4258,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-04T16:28:16.244890Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-24T21:26:43.730678Z"
   },
   {
     "id": "EMP-00194",
@@ -9420,6 +9420,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-24T18:41:16.802604Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00454",
+    "full_name": "Michele Flores",
+    "email": "emp-00454@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-24T21:26:43.730678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-24T21:26:43.730678Z",
     "terminated_at": null
   }
 ]
