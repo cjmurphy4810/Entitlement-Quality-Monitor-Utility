@@ -9219,5 +9219,24 @@
     "manager_id": null,
     "hired_at": "2026-05-24T02:39:59.272632Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00444",
+    "full_name": "Daniel Huber",
+    "email": "emp-00444@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-05-24T09:17:14.202391Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-24T09:17:14.202391Z",
+    "terminated_at": null
   }
 ]
