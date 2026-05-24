@@ -6329,7 +6329,7 @@
     "email": "emp-00295@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -6340,7 +6340,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-11T13:42:03.838203Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-24T22:29:02.977177Z"
   },
   {
     "id": "EMP-00296",
@@ -9439,6 +9439,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-24T21:26:43.730678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00455",
+    "full_name": "Lisa Turner",
+    "email": "emp-00455@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-24T22:29:02.977177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-24T22:29:02.977177Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00456",
+    "full_name": "Richard Cook",
+    "email": "emp-00456@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-05-24T22:29:02.977177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-24T22:29:02.977177Z",
     "terminated_at": null
   }
 ]

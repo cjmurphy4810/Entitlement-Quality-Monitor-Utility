@@ -2256,5 +2256,19 @@
     "sod_tags": [],
     "created_at": "2026-05-24T17:30:09.438308Z",
     "updated_at": "2026-05-24T17:30:09.438308Z"
+  },
+  {
+    "id": "ENT-00138",
+    "name": "new entitlement ENT-00138",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-24T22:29:02.977177Z",
+    "updated_at": "2026-05-24T22:29:02.977177Z"
   }
 ]
