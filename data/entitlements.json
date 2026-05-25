@@ -2209,7 +2209,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-05-24T02:39:59.272632Z",
-    "updated_at": "2026-05-24T02:39:59.272632Z"
+    "updated_at": "2026-05-25T11:34:23.143865Z"
   },
   {
     "id": "ENT-00135",
@@ -2300,5 +2300,21 @@
     "sod_tags": [],
     "created_at": "2026-05-25T07:08:42.148326Z",
     "updated_at": "2026-05-25T07:08:42.148326Z"
+  },
+  {
+    "id": "ENT-00141",
+    "name": "new entitlement ENT-00141",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00036"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-25T11:34:23.143865Z",
+    "updated_at": "2026-05-25T11:34:23.143865Z"
   }
 ]
