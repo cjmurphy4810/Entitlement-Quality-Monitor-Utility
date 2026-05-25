@@ -48724,5 +48724,28 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02000",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-25T22:54:32.316043Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00914",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00189",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00089",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

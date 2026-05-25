@@ -9628,5 +9628,24 @@
     "manager_id": null,
     "hired_at": "2026-05-25T20:23:01.713409Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00463",
+    "full_name": "Judy Warren",
+    "email": "emp-00463@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-05-25T22:54:32.031336Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-25T22:54:32.031336Z",
+    "terminated_at": null
   }
 ]
