@@ -9027,14 +9027,20 @@
     "id": "EMP-00433",
     "full_name": "Sarah Molina",
     "email": "emp-00433@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-05-23T14:46:57.722936Z",
+        "ended_at": "2026-05-25T02:48:50.993019Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-25T02:48:50.993019Z",
         "ended_at": null
       }
     ],
