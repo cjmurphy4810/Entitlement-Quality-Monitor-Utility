@@ -2470,8 +2470,8 @@
     "id": "EMP-00110",
     "full_name": "Kimberly Marshall",
     "email": "emp-00110@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
@@ -2496,6 +2496,12 @@
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-05-02T16:07:24.214507Z",
+        "ended_at": "2026-05-25T17:03:06.415725Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-05-25T17:03:06.415725Z",
         "ended_at": null
       }
     ],
@@ -9533,6 +9539,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-25T14:42:15.413386Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00459",
+    "full_name": "Michael Larsen",
+    "email": "emp-00459@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-25T17:03:06.415725Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-25T17:03:06.415725Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00460",
+    "full_name": "Brian Carroll",
+    "email": "emp-00460@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-05-25T17:03:06.415725Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-25T17:03:06.415725Z",
     "terminated_at": null
   }
 ]
