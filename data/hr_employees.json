@@ -2822,8 +2822,8 @@
     "id": "EMP-00126",
     "full_name": "Joseph Frey",
     "email": "emp-00126@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "customer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -2836,6 +2836,12 @@
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-05-18T20:13:16.629774Z",
+        "ended_at": "2026-05-25T20:23:01.713409Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-05-25T20:23:01.713409Z",
         "ended_at": null
       }
     ],
@@ -9602,6 +9608,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-25T18:57:36.580977Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00462",
+    "full_name": "Michael Conner",
+    "email": "emp-00462@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-05-25T20:23:01.713409Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-25T20:23:01.713409Z",
     "terminated_at": null
   }
 ]
