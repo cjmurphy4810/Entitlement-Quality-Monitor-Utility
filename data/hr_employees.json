@@ -9716,5 +9716,24 @@
     "manager_id": null,
     "hired_at": "2026-05-26T17:53:44.326825Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00467",
+    "full_name": "Garrett Wallace",
+    "email": "emp-00467@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-05-26T23:37:49.605432Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-26T23:37:49.605432Z",
+    "terminated_at": null
   }
 ]
