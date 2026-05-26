@@ -9672,5 +9672,43 @@
     "manager_id": null,
     "hired_at": "2026-05-26T00:00:19.539601Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00465",
+    "full_name": "Emily Young",
+    "email": "emp-00465@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-05-26T17:53:44.326825Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-26T17:53:44.326825Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00466",
+    "full_name": "Amy Ferguson MD",
+    "email": "emp-00466@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-26T17:53:44.326825Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-26T17:53:44.326825Z",
+    "terminated_at": null
   }
 ]
