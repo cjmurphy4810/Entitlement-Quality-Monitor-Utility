@@ -6718,14 +6718,20 @@
     "id": "EMP-00314",
     "full_name": "Angela Soto",
     "email": "emp-00314@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-05-13T21:52:32.427549Z",
+        "ended_at": "2026-05-26T22:01:40.039356Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-05-26T22:01:40.039356Z",
         "ended_at": null
       }
     ],
