@@ -2513,8 +2513,8 @@
     "id": "EMP-00111",
     "full_name": "Renee Mitchell",
     "email": "emp-00111@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -2527,6 +2527,12 @@
         "role": "developer",
         "division": "hr",
         "started_at": "2026-05-20T21:17:27.082338Z",
+        "ended_at": "2026-05-27T23:42:44.430619Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-05-27T23:42:44.430619Z",
         "ended_at": null
       }
     ],
@@ -9929,6 +9935,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-27T17:40:51.499698Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00477",
+    "full_name": "William Smith",
+    "email": "emp-00477@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-27T23:42:44.430619Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-27T23:42:44.430619Z",
     "terminated_at": null
   }
 ]
