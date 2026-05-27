@@ -1391,7 +1391,7 @@
     "email": "user00061@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -1402,7 +1402,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-09-25T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-27T17:40:51.499698Z"
   },
   {
     "id": "EMP-00062",
@@ -9879,6 +9879,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-27T14:27:23.174162Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00475",
+    "full_name": "Danielle Wilson",
+    "email": "emp-00475@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-05-27T17:40:51.499698Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-27T17:40:51.499698Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00476",
+    "full_name": "Monica Mullins",
+    "email": "emp-00476@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-27T17:40:51.499698Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-27T17:40:51.499698Z",
     "terminated_at": null
   }
 ]

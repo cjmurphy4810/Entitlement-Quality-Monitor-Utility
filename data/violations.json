@@ -50267,5 +50267,309 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02065",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-27T17:40:51.618094Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00940",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user', 'developer'].",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00034",
+      "acceptable_roles": [
+        "business_user",
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02066",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-27T17:40:51.618392Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00941",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00289",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00045",
+      "acceptable_roles": [
+        "developer",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02067",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-27T17:40:51.803001Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00940",
+    "explanation": "Employee division 'finance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00034",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02068",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-05-27T17:40:51.803417Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00941",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00289",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00045",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02069",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.804819Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00047",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00047.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00002"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02070",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.805107Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00069",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00069.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00029"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02071",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.806033Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00130",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00130.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00029"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02072",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.806188Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00136",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00136.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00033"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02073",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.807823Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00214",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00214.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00050"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02074",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.811921Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00330",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00330.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00004"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02075",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.815598Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00411",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00411.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00050"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02076",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.858087Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00932",
+    "explanation": "Terminated employee EMP-00061 (Heather Castro) still holds active assignment ASN-00932.",
+    "evidence": {
+      "employee_id": "EMP-00061",
+      "terminated_at": "2026-05-27T17:40:51.499698+00:00",
+      "entitlement_id": "ENT-00047"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02077",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-05-27T17:40:51.864315Z",
+    "target_type": "employee",
+    "target_id": "EMP-00289",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00004.",
+    "evidence": {
+      "resource_id": "RES-00004",
+      "developer_admin_entitlements": [
+        "ENT-00045"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00045"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
