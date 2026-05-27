@@ -9817,5 +9817,24 @@
     "manager_id": null,
     "hired_at": "2026-05-27T06:59:17.180909Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00472",
+    "full_name": "Devin Sheppard",
+    "email": "emp-00472@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-27T10:57:50.740858Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-27T10:57:50.740858Z",
+    "terminated_at": null
   }
 ]
