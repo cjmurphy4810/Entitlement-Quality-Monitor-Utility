@@ -7727,14 +7727,20 @@
     "id": "EMP-00363",
     "full_name": "Amanda Young",
     "email": "emp-00363@example.com",
-    "current_role": "business_user",
-    "current_division": "cyber_tech",
+    "current_role": "operations",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "cyber_tech",
         "started_at": "2026-05-17T08:36:18.749025Z",
+        "ended_at": "2026-05-27T14:27:23.174162Z"
+      },
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-05-27T14:27:23.174162Z",
         "ended_at": null
       }
     ],
@@ -9835,6 +9841,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-27T10:57:50.740858Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00473",
+    "full_name": "Joseph Weber",
+    "email": "emp-00473@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-27T14:27:23.174162Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-27T14:27:23.174162Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00474",
+    "full_name": "Ryan Raymond",
+    "email": "emp-00474@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-05-27T14:27:23.174162Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-27T14:27:23.174162Z",
     "terminated_at": null
   }
 ]
