@@ -10113,5 +10113,24 @@
     "manager_id": null,
     "hired_at": "2026-05-28T20:32:04.760621Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00486",
+    "full_name": "Lonnie Sosa",
+    "email": "emp-00486@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-28T22:29:06.360504Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T22:29:06.360504Z",
+    "terminated_at": null
   }
 ]
