@@ -10132,5 +10132,43 @@
     "manager_id": null,
     "hired_at": "2026-05-28T22:29:06.360504Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00487",
+    "full_name": "Joseph Davies",
+    "email": "emp-00487@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-05-28T23:50:40.214670Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T23:50:40.214670Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00488",
+    "full_name": "James Carter",
+    "email": "emp-00488@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-05-28T23:50:40.214670Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T23:50:40.214670Z",
+    "terminated_at": null
   }
 ]
