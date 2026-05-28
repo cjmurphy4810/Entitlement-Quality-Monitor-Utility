@@ -9999,5 +9999,43 @@
     "manager_id": null,
     "hired_at": "2026-05-28T02:34:57.297721Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00480",
+    "full_name": "Tyler Hebert",
+    "email": "emp-00480@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-05-28T10:51:07.214425Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T10:51:07.214425Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00481",
+    "full_name": "Joyce Moody",
+    "email": "emp-00481@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-05-28T10:51:07.214425Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T10:51:07.214425Z",
+    "terminated_at": null
   }
 ]
