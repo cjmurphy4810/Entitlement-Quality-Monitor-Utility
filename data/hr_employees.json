@@ -3527,7 +3527,7 @@
     "email": "emp-00157@example.com",
     "current_role": "operations",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -3538,7 +3538,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T14:09:22.989234Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-28T20:32:04.760621Z"
   },
   {
     "id": "EMP-00158",
@@ -10093,6 +10093,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-28T18:00:00.754582Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00485",
+    "full_name": "Joan Cannon",
+    "email": "emp-00485@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-05-28T20:32:04.760621Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T20:32:04.760621Z",
     "terminated_at": null
   }
 ]
