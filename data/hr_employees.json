@@ -10037,5 +10037,43 @@
     "manager_id": null,
     "hired_at": "2026-05-28T10:51:07.214425Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00482",
+    "full_name": "Paige Colon",
+    "email": "emp-00482@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-05-28T14:33:42.970659Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T14:33:42.970659Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00483",
+    "full_name": "Tyler Medina",
+    "email": "emp-00483@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-28T14:33:42.970659Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T14:33:42.970659Z",
+    "terminated_at": null
   }
 ]
