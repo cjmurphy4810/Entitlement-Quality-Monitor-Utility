@@ -9955,5 +9955,43 @@
     "manager_id": null,
     "hired_at": "2026-05-27T23:42:44.430619Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00478",
+    "full_name": "Charles Russell",
+    "email": "emp-00478@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-05-28T02:34:57.297721Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T02:34:57.297721Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00479",
+    "full_name": "Donna Johnson",
+    "email": "emp-00479@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-05-28T02:34:57.297721Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T02:34:57.297721Z",
+    "terminated_at": null
   }
 ]
