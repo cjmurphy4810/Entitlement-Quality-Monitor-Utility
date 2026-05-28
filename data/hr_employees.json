@@ -10075,5 +10075,24 @@
     "manager_id": null,
     "hired_at": "2026-05-28T14:33:42.970659Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00484",
+    "full_name": "Roger Roberson",
+    "email": "emp-00484@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-28T18:00:00.754582Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-28T18:00:00.754582Z",
+    "terminated_at": null
   }
 ]
