@@ -10170,5 +10170,24 @@
     "manager_id": null,
     "hired_at": "2026-05-28T23:50:40.214670Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00489",
+    "full_name": "Nicholas Wright",
+    "email": "emp-00489@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-05-29T02:38:42.290188Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-29T02:38:42.290188Z",
+    "terminated_at": null
   }
 ]
