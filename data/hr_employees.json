@@ -8917,7 +8917,7 @@
     "email": "emp-00423@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -8928,7 +8928,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-22T20:54:11.877987Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-29T19:53:33.666455Z"
   },
   {
     "id": "EMP-00424",
@@ -10269,6 +10269,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-29T17:29:37.176571Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00493",
+    "full_name": "Steven Robinson PhD",
+    "email": "emp-00493@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-05-29T19:53:33.666455Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-29T19:53:33.666455Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00494",
+    "full_name": "Randy Michael",
+    "email": "emp-00494@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-05-29T19:53:33.666455Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-29T19:53:33.666455Z",
     "terminated_at": null
   }
 ]
