@@ -4382,8 +4382,8 @@
     "id": "EMP-00198",
     "full_name": "Nathan Love",
     "email": "emp-00198@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -4396,6 +4396,12 @@
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-05-15T20:38:42.735111Z",
+        "ended_at": "2026-05-29T10:40:27.910200Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-05-29T10:40:27.910200Z",
         "ended_at": null
       }
     ],
@@ -10194,6 +10200,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-29T02:38:42.290188Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00490",
+    "full_name": "Michael Mullins",
+    "email": "emp-00490@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-29T10:40:27.910200Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-29T10:40:27.910200Z",
     "terminated_at": null
   }
 ]
