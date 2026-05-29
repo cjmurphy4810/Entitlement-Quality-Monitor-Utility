@@ -10308,5 +10308,24 @@
     "manager_id": null,
     "hired_at": "2026-05-29T19:53:33.666455Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00495",
+    "full_name": "Shawn Mann",
+    "email": "emp-00495@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-05-29T21:48:52.161983Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-29T21:48:52.161983Z",
+    "terminated_at": null
   }
 ]
