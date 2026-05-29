@@ -10327,5 +10327,24 @@
     "manager_id": null,
     "hired_at": "2026-05-29T21:48:52.161983Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00496",
+    "full_name": "Holly Callahan",
+    "email": "emp-00496@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-29T23:07:45.148520Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-29T23:07:45.148520Z",
+    "terminated_at": null
   }
 ]
