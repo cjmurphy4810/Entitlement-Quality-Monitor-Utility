@@ -2452,5 +2452,21 @@
     "sod_tags": [],
     "created_at": "2026-05-29T19:53:33.666455Z",
     "updated_at": "2026-05-29T19:53:33.666455Z"
+  },
+  {
+    "id": "ENT-00151",
+    "name": "new entitlement ENT-00151",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00047"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-30T08:01:10.966670Z",
+    "updated_at": "2026-05-30T08:01:10.966670Z"
   }
 ]

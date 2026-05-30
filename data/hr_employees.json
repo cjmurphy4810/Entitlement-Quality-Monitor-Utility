@@ -10390,5 +10390,24 @@
     "manager_id": null,
     "hired_at": "2026-05-30T05:08:40.511044Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00499",
+    "full_name": "Linda Barr",
+    "email": "emp-00499@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-05-30T08:01:10.966670Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T08:01:10.966670Z",
+    "terminated_at": null
   }
 ]
