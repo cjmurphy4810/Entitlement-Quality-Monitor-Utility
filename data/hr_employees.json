@@ -6856,7 +6856,7 @@
     "email": "emp-00318@example.com",
     "current_role": "operations",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -6867,7 +6867,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-14T10:41:13.978133Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-30T19:04:07.475153Z"
   },
   {
     "id": "EMP-00319",
@@ -10521,6 +10521,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-30T13:13:11.404126Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00505",
+    "full_name": "Sarah Smith",
+    "email": "emp-00505@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-05-30T19:04:07.475153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T19:04:07.475153Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00506",
+    "full_name": "Scott Fleming",
+    "email": "emp-00506@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-30T19:04:07.475153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T19:04:07.475153Z",
     "terminated_at": null
   }
 ]
