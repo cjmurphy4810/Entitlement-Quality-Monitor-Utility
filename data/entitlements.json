@@ -2500,5 +2500,21 @@
     "sod_tags": [],
     "created_at": "2026-05-30T11:51:00.442139Z",
     "updated_at": "2026-05-30T11:51:00.442139Z"
+  },
+  {
+    "id": "ENT-00154",
+    "name": "new entitlement ENT-00154",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00022"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-30T14:50:55.010053Z",
+    "updated_at": "2026-05-30T14:50:55.010053Z"
   }
 ]
