@@ -10560,5 +10560,43 @@
     "manager_id": null,
     "hired_at": "2026-05-30T19:04:07.475153Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00507",
+    "full_name": "Cheryl Stevenson",
+    "email": "emp-00507@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-05-30T21:55:08.903507Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T21:55:08.903507Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00508",
+    "full_name": "Rhonda Floyd",
+    "email": "emp-00508@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-05-30T21:55:08.903507Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T21:55:08.903507Z",
+    "terminated_at": null
   }
 ]
