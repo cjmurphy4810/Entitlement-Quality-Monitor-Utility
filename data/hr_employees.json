@@ -10478,5 +10478,43 @@
     "manager_id": null,
     "hired_at": "2026-05-30T11:51:00.442139Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00503",
+    "full_name": "Carol Hughes",
+    "email": "emp-00503@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-05-30T13:13:11.404126Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T13:13:11.404126Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00504",
+    "full_name": "Brandon Pierce",
+    "email": "emp-00504@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-05-30T13:13:11.404126Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T13:13:11.404126Z",
+    "terminated_at": null
   }
 ]
