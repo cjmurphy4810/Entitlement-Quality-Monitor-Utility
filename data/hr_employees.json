@@ -10642,5 +10642,24 @@
     "manager_id": null,
     "hired_at": "2026-05-30T22:53:03.145506Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00511",
+    "full_name": "Chad Molina",
+    "email": "emp-00511@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-30T23:56:47.249957Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-30T23:56:47.249957Z",
+    "terminated_at": null
   }
 ]
