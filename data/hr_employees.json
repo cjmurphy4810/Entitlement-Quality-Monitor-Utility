@@ -7137,14 +7137,20 @@
     "id": "EMP-00331",
     "full_name": "Ms. Andrea Brown DDS",
     "email": "emp-00331@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "developer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-05-15T05:08:35.441617Z",
+        "ended_at": "2026-05-31T07:39:47.716384Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-05-31T07:39:47.716384Z",
         "ended_at": null
       }
     ],
@@ -10685,6 +10691,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T03:36:49.143139Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00513",
+    "full_name": "Elizabeth Ford",
+    "email": "emp-00513@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-31T07:39:47.716384Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T07:39:47.716384Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00514",
+    "full_name": "Antonio Scott",
+    "email": "emp-00514@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-05-31T07:39:47.716384Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T07:39:47.716384Z",
     "terminated_at": null
   }
 ]
