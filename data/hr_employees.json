@@ -3123,14 +3123,20 @@
     "id": "EMP-00139",
     "full_name": "Janice Todd",
     "email": "emp-00139@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-05-01T06:10:36.182711Z",
+        "ended_at": "2026-05-31T19:06:57.117956Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-05-31T19:06:57.117956Z",
         "ended_at": null
       }
     ],
@@ -10886,6 +10892,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T17:35:56.415438Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00522",
+    "full_name": "Theresa Bryant",
+    "email": "emp-00522@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-05-31T19:06:57.117956Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T19:06:57.117956Z",
     "terminated_at": null
   }
 ]
