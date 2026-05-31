@@ -5541,14 +5541,20 @@
     "id": "EMP-00253",
     "full_name": "Kelly Dyer",
     "email": "emp-00253@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2026-05-08T18:06:06.349745Z",
+        "ended_at": "2026-05-31T14:59:08.583728Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-05-31T14:59:08.583728Z",
         "ended_at": null
       }
     ],
@@ -10817,6 +10823,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T13:23:26.488768Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00519",
+    "full_name": "Natalie Brown",
+    "email": "emp-00519@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-05-31T14:59:08.583728Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T14:59:08.583728Z",
     "terminated_at": null
   }
 ]
