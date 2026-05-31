@@ -10799,5 +10799,24 @@
     "manager_id": null,
     "hired_at": "2026-05-31T11:55:13.272618Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00518",
+    "full_name": "Garrett Chen",
+    "email": "emp-00518@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-05-31T13:23:26.488768Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T13:23:26.488768Z",
+    "terminated_at": null
   }
 ]
