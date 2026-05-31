@@ -5573,14 +5573,20 @@
     "id": "EMP-00255",
     "full_name": "Gregory Bates",
     "email": "emp-00255@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-05-08T21:54:26.786088Z",
+        "ended_at": "2026-05-31T03:36:49.143139Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-05-31T03:36:49.143139Z",
         "ended_at": null
       }
     ],
@@ -5959,7 +5965,7 @@
     "email": "emp-00273@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -5976,7 +5982,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T23:40:43.306245Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-31T03:36:49.143139Z"
   },
   {
     "id": "EMP-00274",
@@ -10660,6 +10666,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-30T23:56:47.249957Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00512",
+    "full_name": "Victoria Le",
+    "email": "emp-00512@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-05-31T03:36:49.143139Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T03:36:49.143139Z",
     "terminated_at": null
   }
 ]
