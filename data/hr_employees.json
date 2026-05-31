@@ -10868,5 +10868,24 @@
     "manager_id": null,
     "hired_at": "2026-05-31T16:14:16.119143Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00521",
+    "full_name": "Melissa Wise",
+    "email": "emp-00521@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-05-31T17:35:56.415438Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T17:35:56.415438Z",
+    "terminated_at": null
   }
 ]
