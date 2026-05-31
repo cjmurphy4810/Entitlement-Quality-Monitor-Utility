@@ -8342,8 +8342,8 @@
     "id": "EMP-00390",
     "full_name": "Susan Kim",
     "email": "emp-00390@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -8356,6 +8356,12 @@
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-05-31T10:09:52.968366Z",
+        "ended_at": "2026-05-31T20:36:06.743550Z"
+      },
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-05-31T20:36:06.743550Z",
         "ended_at": null
       }
     ],
@@ -8559,7 +8565,7 @@
     "email": "emp-00401@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -8570,7 +8576,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-20T10:45:06.700474Z",
-    "terminated_at": null
+    "terminated_at": "2026-05-31T20:36:06.743550Z"
   },
   {
     "id": "EMP-00402",
@@ -10911,6 +10917,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T19:06:57.117956Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00523",
+    "full_name": "Desiree Padilla",
+    "email": "emp-00523@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-05-31T20:36:06.743550Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-05-31T20:36:06.743550Z",
     "terminated_at": null
   }
 ]
