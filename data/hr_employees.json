@@ -5252,7 +5252,7 @@
     "email": "emp-00238@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -5263,7 +5263,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-07T19:12:41.189292Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-01T16:33:42.984966Z"
   },
   {
     "id": "EMP-00239",
@@ -6239,14 +6239,20 @@
     "id": "EMP-00285",
     "full_name": "Randall Jacobs",
     "email": "emp-00285@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-05-10T15:45:32.582719Z",
+        "ended_at": "2026-06-01T16:33:42.984966Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-06-01T16:33:42.984966Z",
         "ended_at": null
       }
     ],

@@ -56022,5 +56022,165 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02299",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-01T16:33:43.127082Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01042",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00096",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00032",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02300",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-01T16:33:43.368307Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01040",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00334",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00065",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02301",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-01T16:33:43.368792Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01041",
+    "explanation": "Employee division 'hr' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00429",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00108",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02302",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-01T16:33:43.369255Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01042",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00096",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00032",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02303",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-01T16:33:43.417625Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00821",
+    "explanation": "Terminated employee EMP-00238 (Joel Lawson) still holds active assignment ASN-00821.",
+    "evidence": {
+      "employee_id": "EMP-00238",
+      "terminated_at": "2026-06-01T16:33:42.984966+00:00",
+      "entitlement_id": "ENT-00019"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02304",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-01T16:33:43.429053Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01023",
+    "explanation": "Terminated employee EMP-00238 (Joel Lawson) still holds active assignment ASN-01023.",
+    "evidence": {
+      "employee_id": "EMP-00238",
+      "terminated_at": "2026-06-01T16:33:42.984966+00:00",
+      "entitlement_id": "ENT-00083"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02305",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-01T16:33:43.430112Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01040",
+    "explanation": "Terminated employee EMP-00334 (Maurice James) still holds active assignment ASN-01040.",
+    "evidence": {
+      "employee_id": "EMP-00334",
+      "terminated_at": "2026-05-17T23:28:15.853940+00:00",
+      "entitlement_id": "ENT-00065"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
