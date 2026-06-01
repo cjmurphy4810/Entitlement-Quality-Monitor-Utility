@@ -11012,5 +11012,24 @@
     "manager_id": null,
     "hired_at": "2026-06-01T00:01:56.533656Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00527",
+    "full_name": "Breanna Mullins",
+    "email": "emp-00527@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-06-01T10:36:40.105471Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-01T10:36:40.105471Z",
+    "terminated_at": null
   }
 ]
