@@ -11106,5 +11106,43 @@
     "manager_id": null,
     "hired_at": "2026-06-02T00:16:13.736418Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00531",
+    "full_name": "Karl White",
+    "email": "emp-00531@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-06-02T05:08:34.867747Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-02T05:08:34.867747Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00532",
+    "full_name": "Ms. Michelle Townsend",
+    "email": "emp-00532@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-02T05:08:34.867747Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-02T05:08:34.867747Z",
+    "terminated_at": null
   }
 ]
