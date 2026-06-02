@@ -322,7 +322,7 @@
     "id": "ENT-00018",
     "name": "cyber_tech admin 18",
     "pbl_description": "Grants administrator access and full configuration rights to the Cole LLC Api system.",
-    "access_tier": 1,
+    "access_tier": 4,
     "acceptable_roles": [
       "developer"
     ],
@@ -332,7 +332,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-08-25T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-06-02T00:16:13.736418Z"
   },
   {
     "id": "ENT-00019",
@@ -2580,5 +2580,21 @@
     "sod_tags": [],
     "created_at": "2026-06-01T20:52:15.396965Z",
     "updated_at": "2026-06-01T20:52:15.396965Z"
+  },
+  {
+    "id": "ENT-00159",
+    "name": "new entitlement ENT-00159",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00108"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-02T00:16:13.736418Z",
+    "updated_at": "2026-06-02T00:16:13.736418Z"
   }
 ]

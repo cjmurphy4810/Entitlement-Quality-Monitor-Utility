@@ -11087,5 +11087,24 @@
     "manager_id": null,
     "hired_at": "2026-06-01T22:58:42.623109Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00530",
+    "full_name": "James Robinson",
+    "email": "emp-00530@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-06-02T00:16:13.736418Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-02T00:16:13.736418Z",
+    "terminated_at": null
   }
 ]
