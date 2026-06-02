@@ -11144,5 +11144,43 @@
     "manager_id": null,
     "hired_at": "2026-06-02T05:08:34.867747Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00533",
+    "full_name": "Victoria Gonzalez",
+    "email": "emp-00533@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-02T09:46:34.241489Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-02T09:46:34.241489Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00534",
+    "full_name": "Michael Ward",
+    "email": "emp-00534@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-06-02T09:46:34.241489Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-02T09:46:34.241489Z",
+    "terminated_at": null
   }
 ]
