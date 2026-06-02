@@ -57052,5 +57052,142 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02343",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-02T23:16:17.899291Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01062",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00070",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00050",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02344",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-02T23:16:18.147689Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01061",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00273",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00029",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02345",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-02T23:16:18.148177Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01062",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00070",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00050",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02346",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-02T23:16:18.192864Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00995",
+    "explanation": "Terminated employee EMP-00288 (John Becker) still holds active assignment ASN-00995.",
+    "evidence": {
+      "employee_id": "EMP-00288",
+      "terminated_at": "2026-06-02T23:16:17.749647+00:00",
+      "entitlement_id": "ENT-00055"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02347",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-02T23:16:18.196253Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01061",
+    "explanation": "Terminated employee EMP-00273 (Chelsea Marks) still holds active assignment ASN-01061.",
+    "evidence": {
+      "employee_id": "EMP-00273",
+      "terminated_at": "2026-05-31T03:36:49.143139+00:00",
+      "entitlement_id": "ENT-00029"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02348",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-02T23:16:18.196462Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01062",
+    "explanation": "Terminated employee EMP-00070 (Shelby Walker) still holds active assignment ASN-01062.",
+    "evidence": {
+      "employee_id": "EMP-00070",
+      "terminated_at": "2026-05-05T02:10:40.568338+00:00",
+      "entitlement_id": "ENT-00050"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
