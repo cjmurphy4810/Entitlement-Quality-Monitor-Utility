@@ -11182,5 +11182,24 @@
     "manager_id": null,
     "hired_at": "2026-06-02T09:46:34.241489Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00535",
+    "full_name": "Amy Sims",
+    "email": "emp-00535@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-06-02T21:28:48.707565Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-02T21:28:48.707565Z",
+    "terminated_at": null
   }
 ]
