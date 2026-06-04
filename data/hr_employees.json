@@ -10966,7 +10966,7 @@
     "email": "emp-00522@example.com",
     "current_role": "business_analyst",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -10977,7 +10977,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T19:06:57.117956Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-04T21:10:09.341640Z"
   },
   {
     "id": "EMP-00523",
@@ -11414,6 +11414,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-04T19:18:43.080243Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00546",
+    "full_name": "Charlotte Moran",
+    "email": "emp-00546@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-06-04T21:10:09.341640Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T21:10:09.341640Z",
     "terminated_at": null
   }
 ]
