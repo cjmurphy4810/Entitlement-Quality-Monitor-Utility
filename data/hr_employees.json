@@ -8670,7 +8670,7 @@
     "email": "emp-00404@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -8681,7 +8681,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-20T16:49:05.293079Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-04T13:55:18.999805Z"
   },
   {
     "id": "EMP-00405",
@@ -11300,6 +11300,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-04T06:37:51.251344Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00540",
+    "full_name": "Anthony Mcconnell",
+    "email": "emp-00540@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-06-04T13:55:18.999805Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T13:55:18.999805Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00541",
+    "full_name": "Miss Lauren Williams",
+    "email": "emp-00541@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-04T13:55:18.999805Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T13:55:18.999805Z",
     "terminated_at": null
   }
 ]
