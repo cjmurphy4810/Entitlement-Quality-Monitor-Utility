@@ -11377,5 +11377,43 @@
     "manager_id": null,
     "hired_at": "2026-06-04T16:49:06.773401Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00544",
+    "full_name": "Bruce Berry",
+    "email": "emp-00544@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-06-04T19:18:43.080243Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T19:18:43.080243Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00545",
+    "full_name": "Billy Fields",
+    "email": "emp-00545@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-06-04T19:18:43.080243Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T19:18:43.080243Z",
+    "terminated_at": null
   }
 ]
