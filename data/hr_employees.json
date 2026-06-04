@@ -11251,5 +11251,24 @@
     "manager_id": null,
     "hired_at": "2026-06-03T23:00:15.485177Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00538",
+    "full_name": "Susan Marsh",
+    "email": "emp-00538@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-06-04T01:45:33.375441Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T01:45:33.375441Z",
+    "terminated_at": null
   }
 ]
