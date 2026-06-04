@@ -8497,14 +8497,20 @@
     "id": "EMP-00395",
     "full_name": "Sharon Adkins",
     "email": "emp-00395@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2026-05-19T22:43:08.267444Z",
+        "ended_at": "2026-06-04T22:52:11.030795Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-06-04T22:52:11.030795Z",
         "ended_at": null
       }
     ],
