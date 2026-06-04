@@ -11339,5 +11339,43 @@
     "manager_id": null,
     "hired_at": "2026-06-04T13:55:18.999805Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00542",
+    "full_name": "Michael Hunt",
+    "email": "emp-00542@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-06-04T16:49:06.773401Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T16:49:06.773401Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00543",
+    "full_name": "John Brown",
+    "email": "emp-00543@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-06-04T16:49:06.773401Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-04T16:49:06.773401Z",
+    "terminated_at": null
   }
 ]
