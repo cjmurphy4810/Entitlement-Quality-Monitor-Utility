@@ -59481,5 +59481,140 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02444",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-05T21:06:42.167158Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01107",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00387",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00061",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02445",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-05T21:06:42.414580Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00061",
+    "explanation": "Terminated employee EMP-00032 (John Calhoun) still holds active assignment ASN-00061.",
+    "evidence": {
+      "employee_id": "EMP-00032",
+      "terminated_at": "2026-06-05T21:06:42.020569+00:00",
+      "entitlement_id": "ENT-00009"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02446",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-05T21:06:42.415338Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00119",
+    "explanation": "Terminated employee EMP-00032 (John Calhoun) still holds active assignment ASN-00119.",
+    "evidence": {
+      "employee_id": "EMP-00032",
+      "terminated_at": "2026-06-05T21:06:42.020569+00:00",
+      "entitlement_id": "ENT-00028"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02447",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-05T21:06:42.417809Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00230",
+    "explanation": "Terminated employee EMP-00032 (John Calhoun) still holds active assignment ASN-00230.",
+    "evidence": {
+      "employee_id": "EMP-00032",
+      "terminated_at": "2026-06-05T21:06:42.020569+00:00",
+      "entitlement_id": "ENT-00028"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02448",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-05T21:06:42.420399Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00304",
+    "explanation": "Terminated employee EMP-00032 (John Calhoun) still holds active assignment ASN-00304.",
+    "evidence": {
+      "employee_id": "EMP-00032",
+      "terminated_at": "2026-06-05T21:06:42.020569+00:00",
+      "entitlement_id": "ENT-00059"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02449",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-05T21:06:42.430282Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00547",
+    "explanation": "Terminated employee EMP-00032 (John Calhoun) still holds active assignment ASN-00547.",
+    "evidence": {
+      "employee_id": "EMP-00032",
+      "terminated_at": "2026-06-05T21:06:42.020569+00:00",
+      "entitlement_id": "ENT-00078"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
