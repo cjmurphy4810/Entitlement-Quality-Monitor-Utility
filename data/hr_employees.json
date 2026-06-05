@@ -4005,7 +4005,7 @@
     "email": "emp-00179@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -4016,7 +4016,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-03T21:36:15.663075Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-05T17:10:09.262948Z"
   },
   {
     "id": "EMP-00180",
@@ -11572,6 +11572,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-05T14:51:12.161297Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00554",
+    "full_name": "Larry Moore",
+    "email": "emp-00554@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-06-05T17:10:09.262948Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-05T17:10:09.262948Z",
     "terminated_at": null
   }
 ]
