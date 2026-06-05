@@ -7376,7 +7376,7 @@
     "email": "emp-00340@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -7387,7 +7387,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-15T23:50:41.368023Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-05T00:00:47.691817Z"
   },
   {
     "id": "EMP-00341",
@@ -11439,6 +11439,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-04T21:10:09.341640Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00547",
+    "full_name": "Mr. Gregory Lopez",
+    "email": "emp-00547@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-06-05T00:00:47.691817Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-05T00:00:47.691817Z",
     "terminated_at": null
   }
 ]
