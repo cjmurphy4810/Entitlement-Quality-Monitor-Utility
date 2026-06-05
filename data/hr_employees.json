@@ -11516,5 +11516,24 @@
     "manager_id": null,
     "hired_at": "2026-06-05T08:40:18.130254Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00551",
+    "full_name": "Jesse Adams",
+    "email": "emp-00551@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-06-05T11:57:42.443184Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-05T11:57:42.443184Z",
+    "terminated_at": null
   }
 ]
