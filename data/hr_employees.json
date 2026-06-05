@@ -10301,7 +10301,7 @@
     "email": "emp-00487@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -10312,7 +10312,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-28T23:50:40.214670Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-05T14:51:12.161297Z"
   },
   {
     "id": "EMP-00488",
@@ -11534,6 +11534,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-05T11:57:42.443184Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00552",
+    "full_name": "Donna Russell",
+    "email": "emp-00552@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-06-05T14:51:12.161297Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-05T14:51:12.161297Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00553",
+    "full_name": "Christian Hayes",
+    "email": "emp-00553@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-05T14:51:12.161297Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-05T14:51:12.161297Z",
     "terminated_at": null
   }
 ]
