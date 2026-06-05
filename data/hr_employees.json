@@ -11459,5 +11459,24 @@
     "manager_id": null,
     "hired_at": "2026-06-05T00:00:47.691817Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00548",
+    "full_name": "William Adams",
+    "email": "emp-00548@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-06-05T04:54:19.814232Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-05T04:54:19.814232Z",
+    "terminated_at": null
   }
 ]
