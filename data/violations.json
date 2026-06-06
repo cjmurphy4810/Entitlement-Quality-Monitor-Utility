@@ -59750,5 +59750,120 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02456",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-06-06T04:34:06.228442Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00032",
+    "explanation": "Tier-4 PBL must mention 'read-only'",
+    "evidence": {
+      "access_tier": 4,
+      "pbl_description": "Grants administrator access and full configuration rights to the Johnson-Davis Share_drive system."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-4 template (read-only + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02457",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-06T04:34:06.585775Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01110",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00284",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00119",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02458",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-06-06T04:34:06.586790Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00405",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_analyst'. Last role change was 2026-05-07T02:13:45.045266+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00115",
+      "current_role": "business_analyst",
+      "prior_roles": [
+        "operations"
+      ],
+      "last_role_change_at": "2026-05-07T02:13:45.045266+00:00",
+      "granted_at": "2026-05-05T17:02:21.581394+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02459",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-06T04:34:06.605835Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00580",
+    "explanation": "Terminated employee EMP-00280 (Lawrence Wilkinson) still holds active assignment ASN-00580.",
+    "evidence": {
+      "employee_id": "EMP-00280",
+      "terminated_at": "2026-06-06T04:34:06.198707+00:00",
+      "entitlement_id": "ENT-00076"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02460",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-06T04:34:06.615718Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00772",
+    "explanation": "Terminated employee EMP-00280 (Lawrence Wilkinson) still holds active assignment ASN-00772.",
+    "evidence": {
+      "employee_id": "EMP-00280",
+      "terminated_at": "2026-06-06T04:34:06.198707+00:00",
+      "entitlement_id": "ENT-00093"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
