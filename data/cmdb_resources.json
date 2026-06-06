@@ -1256,5 +1256,15 @@
     "environment": "staging",
     "linked_entitlement_ids": [],
     "description": "Table maintain road generation expect size."
+  },
+  {
+    "id": "RES-00116",
+    "name": "Taylor-Pacheco",
+    "type": "database",
+    "criticality": "medium",
+    "owner_division": "business_ops",
+    "environment": "dev",
+    "linked_entitlement_ids": [],
+    "description": "Range character play community."
   }
 ]
