@@ -11686,5 +11686,24 @@
     "manager_id": null,
     "hired_at": "2026-06-06T12:50:49.501450Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00559",
+    "full_name": "Jennifer Smith",
+    "email": "emp-00559@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-06T14:26:21.697930Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-06T14:26:21.697930Z",
+    "terminated_at": null
   }
 ]

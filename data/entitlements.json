@@ -2730,5 +2730,21 @@
     "sod_tags": [],
     "created_at": "2026-06-06T11:27:37.859564Z",
     "updated_at": "2026-06-06T11:27:37.859564Z"
+  },
+  {
+    "id": "ENT-00169",
+    "name": "new entitlement ENT-00169",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00024"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-06T14:26:21.697930Z",
+    "updated_at": "2026-06-06T14:26:21.697930Z"
   }
 ]
