@@ -1696,14 +1696,20 @@
     "id": "EMP-00074",
     "full_name": "Alexander Wiley",
     "email": "user00074@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_dev",
         "started_at": "2022-06-18T04:52:59.501678Z",
+        "ended_at": "2026-06-06T21:35:44.231575Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-06-06T21:35:44.231575Z",
         "ended_at": null
       }
     ],
@@ -7047,7 +7053,7 @@
     "email": "emp-00323@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7058,7 +7064,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-14T20:51:00.183400Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-06T21:35:44.231575Z"
   },
   {
     "id": "EMP-00324",
