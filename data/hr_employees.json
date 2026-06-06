@@ -11623,5 +11623,43 @@
     "manager_id": null,
     "hired_at": "2026-06-06T00:01:43.128671Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00556",
+    "full_name": "Kathleen Hart",
+    "email": "emp-00556@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-06-06T07:43:03.537061Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-06T07:43:03.537061Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00557",
+    "full_name": "Melissa Guerra",
+    "email": "emp-00557@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-06-06T07:43:03.537061Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-06T07:43:03.537061Z",
+    "terminated_at": null
   }
 ]
