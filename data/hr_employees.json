@@ -11705,5 +11705,24 @@
     "manager_id": null,
     "hired_at": "2026-06-06T14:26:21.697930Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00560",
+    "full_name": "Sean Humphrey",
+    "email": "emp-00560@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-06-06T17:04:01.595639Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-06T17:04:01.595639Z",
+    "terminated_at": null
   }
 ]
