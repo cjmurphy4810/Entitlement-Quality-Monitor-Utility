@@ -2797,7 +2797,7 @@
     "email": "emp-00123@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -2808,7 +2808,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-30T02:26:12.415806Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-07T00:04:45.713305Z"
   },
   {
     "id": "EMP-00124",

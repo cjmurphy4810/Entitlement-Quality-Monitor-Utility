@@ -61492,5 +61492,186 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02525",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-07T00:04:45.878095Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01135",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00146",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00072",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02526",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-07T00:04:46.158948Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01135",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00146",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00072",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02527",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-07T00:04:46.159477Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01136",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00096",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00070",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02528",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-07T00:04:46.173846Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00420",
+    "explanation": "Terminated employee EMP-00123 (Dean Mora) still holds active assignment ASN-00420.",
+    "evidence": {
+      "employee_id": "EMP-00123",
+      "terminated_at": "2026-06-07T00:04:45.713305+00:00",
+      "entitlement_id": "ENT-00062"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02529",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-07T00:04:46.190420Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00729",
+    "explanation": "Terminated employee EMP-00123 (Dean Mora) still holds active assignment ASN-00729.",
+    "evidence": {
+      "employee_id": "EMP-00123",
+      "terminated_at": "2026-06-07T00:04:45.713305+00:00",
+      "entitlement_id": "ENT-00095"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02530",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-07T00:04:46.191646Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00747",
+    "explanation": "Terminated employee EMP-00123 (Dean Mora) still holds active assignment ASN-00747.",
+    "evidence": {
+      "employee_id": "EMP-00123",
+      "terminated_at": "2026-06-07T00:04:45.713305+00:00",
+      "entitlement_id": "ENT-00109"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02531",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-07T00:04:46.215230Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01086",
+    "explanation": "Terminated employee EMP-00123 (Dean Mora) still holds active assignment ASN-01086.",
+    "evidence": {
+      "employee_id": "EMP-00123",
+      "terminated_at": "2026-06-07T00:04:45.713305+00:00",
+      "entitlement_id": "ENT-00082"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02532",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-07T00:04:46.216428Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01135",
+    "explanation": "Terminated employee EMP-00146 (Lisa Johnson) still holds active assignment ASN-01135.",
+    "evidence": {
+      "employee_id": "EMP-00146",
+      "terminated_at": "2026-05-24T20:01:01.258238+00:00",
+      "entitlement_id": "ENT-00072"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
