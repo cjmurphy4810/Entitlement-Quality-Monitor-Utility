@@ -6289,7 +6289,7 @@
     "email": "emp-00285@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -6306,7 +6306,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T15:45:32.582719Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-07T14:53:25.940057Z"
   },
   {
     "id": "EMP-00286",
@@ -11930,6 +11930,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-07T12:57:54.559621Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00570",
+    "full_name": "Mary Hernandez",
+    "email": "emp-00570@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-06-07T14:53:25.940057Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-07T14:53:25.940057Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00571",
+    "full_name": "Melissa Warren",
+    "email": "emp-00571@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-06-07T14:53:25.940057Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-07T14:53:25.940057Z",
     "terminated_at": null
   }
 ]
