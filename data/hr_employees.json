@@ -7933,14 +7933,20 @@
     "id": "EMP-00365",
     "full_name": "Sara Lin",
     "email": "emp-00365@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-05-17T10:19:14.295164Z",
+        "ended_at": "2026-06-07T05:04:38.000190Z"
+      },
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-07T05:04:38.000190Z",
         "ended_at": null
       }
     ],
