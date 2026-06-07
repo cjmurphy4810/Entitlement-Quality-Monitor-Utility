@@ -2806,5 +2806,21 @@
     "sod_tags": [],
     "created_at": "2026-06-07T08:33:35.617153Z",
     "updated_at": "2026-06-07T08:33:35.617153Z"
+  },
+  {
+    "id": "ENT-00174",
+    "name": "new entitlement ENT-00174",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00101"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-07T19:11:30.680682Z",
+    "updated_at": "2026-06-07T19:11:30.680682Z"
   }
 ]

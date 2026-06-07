@@ -12032,5 +12032,24 @@
     "manager_id": null,
     "hired_at": "2026-06-07T17:45:55.274529Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00575",
+    "full_name": "Raymond James",
+    "email": "emp-00575@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-06-07T19:11:30.680682Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-07T19:11:30.680682Z",
+    "terminated_at": null
   }
 ]
