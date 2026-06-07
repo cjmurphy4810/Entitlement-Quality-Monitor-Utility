@@ -10531,14 +10531,20 @@
     "id": "EMP-00497",
     "full_name": "Jose Harrison",
     "email": "emp-00497@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-05-30T01:26:34.622786Z",
+        "ended_at": "2026-06-07T08:33:35.617153Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-06-07T08:33:35.617153Z",
         "ended_at": null
       }
     ],
@@ -11848,6 +11854,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-06T22:58:07.035320Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00566",
+    "full_name": "Dennis Sutton",
+    "email": "emp-00566@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-06-07T08:33:35.617153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-07T08:33:35.617153Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00567",
+    "full_name": "Deborah Robinson",
+    "email": "emp-00567@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-06-07T08:33:35.617153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-07T08:33:35.617153Z",
     "terminated_at": null
   }
 ]
