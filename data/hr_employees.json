@@ -6125,7 +6125,7 @@
     "email": "emp-00277@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -6136,7 +6136,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T08:01:11.496212Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-07T20:43:57.750480Z"
   },
   {
     "id": "EMP-00278",
@@ -12050,6 +12050,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-07T19:11:30.680682Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00576",
+    "full_name": "Samuel Shaw",
+    "email": "emp-00576@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-06-07T20:43:57.750480Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-07T20:43:57.750480Z",
     "terminated_at": null
   }
 ]
