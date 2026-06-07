@@ -12070,5 +12070,24 @@
     "manager_id": null,
     "hired_at": "2026-06-07T20:43:57.750480Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00577",
+    "full_name": "Tonya Allen",
+    "email": "emp-00577@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-06-07T23:11:04.544063Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-07T23:11:04.544063Z",
+    "terminated_at": null
   }
 ]
