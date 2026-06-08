@@ -12202,5 +12202,24 @@
     "manager_id": null,
     "hired_at": "2026-06-08T18:21:08.087386Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00583",
+    "full_name": "Christopher Ray",
+    "email": "emp-00583@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-06-08T20:38:21.897636Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-08T20:38:21.897636Z",
+    "terminated_at": null
   }
 ]
