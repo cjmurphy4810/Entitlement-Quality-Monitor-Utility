@@ -12133,5 +12133,24 @@
     "manager_id": null,
     "hired_at": "2026-06-08T06:37:20.941042Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00580",
+    "full_name": "Terry Huang",
+    "email": "emp-00580@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-06-08T11:51:47.592822Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-08T11:51:47.592822Z",
+    "terminated_at": null
   }
 ]
