@@ -12089,5 +12089,24 @@
     "manager_id": null,
     "hired_at": "2026-06-07T23:11:04.544063Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00578",
+    "full_name": "Gina Allison",
+    "email": "emp-00578@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-06-08T01:39:00.404912Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-08T01:39:00.404912Z",
+    "terminated_at": null
   }
 ]
