@@ -12290,5 +12290,43 @@
     "manager_id": null,
     "hired_at": "2026-06-09T02:33:19.661190Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00587",
+    "full_name": "William Simpson",
+    "email": "emp-00587@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-06-09T13:40:53.766524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-09T13:40:53.766524Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00588",
+    "full_name": "Cody Williams",
+    "email": "emp-00588@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-06-09T13:40:53.766524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-09T13:40:53.766524Z",
+    "terminated_at": null
   }
 ]
