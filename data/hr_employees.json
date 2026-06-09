@@ -12271,5 +12271,24 @@
     "manager_id": null,
     "hired_at": "2026-06-08T22:21:29.892870Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00586",
+    "full_name": "Jason Goodwin",
+    "email": "emp-00586@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-06-09T02:33:19.661190Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-09T02:33:19.661190Z",
+    "terminated_at": null
   }
 ]
