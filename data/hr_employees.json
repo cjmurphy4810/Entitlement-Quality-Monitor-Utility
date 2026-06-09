@@ -1905,7 +1905,7 @@
     "email": "user00083@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -1922,7 +1922,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-03-27T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-09T18:30:19.924905Z"
   },
   {
     "id": "EMP-00084",
@@ -12333,6 +12333,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-09T13:40:53.766524Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00589",
+    "full_name": "Heather Wilson",
+    "email": "emp-00589@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-06-09T18:30:19.924905Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-09T18:30:19.924905Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00590",
+    "full_name": "Pedro Berry",
+    "email": "emp-00590@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-06-09T18:30:19.924905Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-09T18:30:19.924905Z",
     "terminated_at": null
   }
 ]
