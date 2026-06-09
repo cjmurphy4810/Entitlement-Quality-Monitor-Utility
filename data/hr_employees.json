@@ -12372,5 +12372,43 @@
     "manager_id": null,
     "hired_at": "2026-06-09T18:30:19.924905Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00591",
+    "full_name": "Christine Kramer",
+    "email": "emp-00591@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-06-09T20:30:26.580236Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-09T20:30:26.580236Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00592",
+    "full_name": "Carla Spencer",
+    "email": "emp-00592@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-06-09T20:30:26.580236Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-09T20:30:26.580236Z",
+    "terminated_at": null
   }
 ]
