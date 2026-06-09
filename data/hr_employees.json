@@ -5596,7 +5596,7 @@
     "email": "emp-00252@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -5607,7 +5607,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T15:06:55.422692Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-09T23:49:27.740930Z"
   },
   {
     "id": "EMP-00253",
@@ -6652,14 +6652,20 @@
     "id": "EMP-00302",
     "full_name": "Shelly Farmer",
     "email": "emp-00302@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-05-12T11:15:29.477911Z",
+        "ended_at": "2026-06-09T23:49:27.740930Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-06-09T23:49:27.740930Z",
         "ended_at": null
       }
     ],

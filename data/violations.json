@@ -38930,8 +38930,17 @@
     "suggested_fix": {
       "access_tier": 2
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-06-09T23:49:28.153387Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -64972,6 +64981,216 @@
       "employee_division": "legal_compliance",
       "entitlement_id": "ENT-00010",
       "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02671",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-06-09T23:49:27.767077Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00117",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "Provides standard access to a system for authorized users."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02672",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-06-09T23:49:27.767362Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00117",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['customer']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "customer"
+      ],
+      "forbidden_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": []
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02673",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-09T23:49:27.876756Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01191",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations', 'developer'].",
+    "evidence": {
+      "employee_id": "EMP-00188",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00038",
+      "acceptable_roles": [
+        "operations",
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02674",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-09T23:49:27.877026Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01192",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00406",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00072",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02675",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-09T23:49:28.098562Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01191",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00188",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00038",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02676",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-09T23:49:28.098940Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01192",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00406",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00072",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02677",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-09T23:49:28.113746Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00534",
+    "explanation": "Terminated employee EMP-00252 (Mark White) still holds active assignment ASN-00534.",
+    "evidence": {
+      "employee_id": "EMP-00252",
+      "terminated_at": "2026-06-09T23:49:27.740930+00:00",
+      "entitlement_id": "ENT-00058"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02678",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-09T23:49:28.118749Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00640",
+    "explanation": "Terminated employee EMP-00252 (Mark White) still holds active assignment ASN-00640.",
+    "evidence": {
+      "employee_id": "EMP-00252",
+      "terminated_at": "2026-06-09T23:49:27.740930+00:00",
+      "entitlement_id": "ENT-00042"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02679",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-09T23:49:28.142010Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01128",
+    "explanation": "Terminated employee EMP-00252 (Mark White) still holds active assignment ASN-01128.",
+    "evidence": {
+      "employee_id": "EMP-00252",
+      "terminated_at": "2026-06-09T23:49:27.740930+00:00",
+      "entitlement_id": "ENT-00079"
     },
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
