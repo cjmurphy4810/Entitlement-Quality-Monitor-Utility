@@ -3775,14 +3775,20 @@
     "id": "EMP-00167",
     "full_name": "Jennifer Fitzgerald",
     "email": "emp-00167@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-05-02T23:37:09.791455Z",
+        "ended_at": "2026-06-09T16:28:10.723897Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-06-09T16:28:10.723897Z",
         "ended_at": null
       }
     ],
