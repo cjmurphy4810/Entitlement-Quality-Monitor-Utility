@@ -12498,5 +12498,24 @@
     "manager_id": null,
     "hired_at": "2026-06-10T07:04:39.389034Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00597",
+    "full_name": "Marc Gibson",
+    "email": "emp-00597@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-06-10T11:07:28.683467Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-10T11:07:28.683467Z",
+    "terminated_at": null
   }
 ]
