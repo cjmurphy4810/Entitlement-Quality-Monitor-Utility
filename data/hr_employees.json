@@ -12460,5 +12460,43 @@
     "manager_id": null,
     "hired_at": "2026-06-10T02:47:24.946871Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00595",
+    "full_name": "Randy Jones",
+    "email": "emp-00595@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-10T07:04:39.389034Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-10T07:04:39.389034Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00596",
+    "full_name": "Laura Davies MD",
+    "email": "emp-00596@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-10T07:04:39.389034Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-10T07:04:39.389034Z",
+    "terminated_at": null
   }
 ]
