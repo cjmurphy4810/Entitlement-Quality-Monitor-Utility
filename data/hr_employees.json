@@ -2514,7 +2514,7 @@
     "email": "emp-00110@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -2549,7 +2549,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-28T22:30:05.879492Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-10T20:20:58.489510Z"
   },
   {
     "id": "EMP-00111",
@@ -12541,6 +12541,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-10T14:33:51.349339Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00599",
+    "full_name": "Travis Mcdonald",
+    "email": "emp-00599@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-06-10T20:20:58.489510Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-10T20:20:58.489510Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00600",
+    "full_name": "Emily Stewart",
+    "email": "emp-00600@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-06-10T20:20:58.489510Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-10T20:20:58.489510Z",
     "terminated_at": null
   }
 ]

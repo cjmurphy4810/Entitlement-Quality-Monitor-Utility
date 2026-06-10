@@ -65700,5 +65700,118 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02701",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-10T20:20:58.669133Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01203",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00438",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00039",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02702",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-10T20:20:58.976878Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00395",
+    "explanation": "Terminated employee EMP-00110 (Kimberly Marshall) still holds active assignment ASN-00395.",
+    "evidence": {
+      "employee_id": "EMP-00110",
+      "terminated_at": "2026-06-10T20:20:58.489510+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02703",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-10T20:20:58.991567Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00669",
+    "explanation": "Terminated employee EMP-00110 (Kimberly Marshall) still holds active assignment ASN-00669.",
+    "evidence": {
+      "employee_id": "EMP-00110",
+      "terminated_at": "2026-06-10T20:20:58.489510+00:00",
+      "entitlement_id": "ENT-00072"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02704",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-10T20:20:59.004052Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00861",
+    "explanation": "Terminated employee EMP-00110 (Kimberly Marshall) still holds active assignment ASN-00861.",
+    "evidence": {
+      "employee_id": "EMP-00110",
+      "terminated_at": "2026-06-10T20:20:58.489510+00:00",
+      "entitlement_id": "ENT-00064"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02705",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-10T20:20:59.019820Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01077",
+    "explanation": "Terminated employee EMP-00110 (Kimberly Marshall) still holds active assignment ASN-01077.",
+    "evidence": {
+      "employee_id": "EMP-00110",
+      "terminated_at": "2026-06-10T20:20:58.489510+00:00",
+      "entitlement_id": "ENT-00063"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
