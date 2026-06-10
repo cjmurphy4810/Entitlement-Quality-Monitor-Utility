@@ -5921,8 +5921,8 @@
     "id": "EMP-00267",
     "full_name": "Alexander Evans",
     "email": "emp-00267@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -5935,6 +5935,12 @@
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-05-27T02:47:45.201819Z",
+        "ended_at": "2026-06-10T14:33:51.349339Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-06-10T14:33:51.349339Z",
         "ended_at": null
       }
     ],
@@ -12516,6 +12522,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-10T11:07:28.683467Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00598",
+    "full_name": "Daniel Carlson",
+    "email": "emp-00598@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-06-10T14:33:51.349339Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-10T14:33:51.349339Z",
     "terminated_at": null
   }
 ]
