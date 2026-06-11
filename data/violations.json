@@ -66725,5 +66725,79 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02743",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-11T23:04:49.769845Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00618",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00240",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00017",
+      "acceptable_roles": [
+        "business_analyst",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02744",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-11T23:04:49.895209Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01221",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00553",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00176",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02745",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-11T23:04:50.218829Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01221",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00553",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00176",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

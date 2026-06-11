@@ -5366,14 +5366,20 @@
     "id": "EMP-00240",
     "full_name": "Chelsea Lee",
     "email": "emp-00240@example.com",
-    "current_role": "business_analyst",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "hr",
         "started_at": "2026-05-07T21:51:27.225102Z",
+        "ended_at": "2026-06-11T23:04:49.696852Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-06-11T23:04:49.696852Z",
         "ended_at": null
       }
     ],
@@ -12737,6 +12743,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-11T21:14:55.579401Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00609",
+    "full_name": "Danielle Alvarez",
+    "email": "emp-00609@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-06-11T23:04:49.696852Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T23:04:49.696852Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00610",
+    "full_name": "Madison Mahoney",
+    "email": "emp-00610@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-06-11T23:04:49.696852Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T23:04:49.696852Z",
     "terminated_at": null
   }
 ]
