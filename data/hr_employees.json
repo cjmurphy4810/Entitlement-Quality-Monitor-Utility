@@ -12624,5 +12624,43 @@
     "manager_id": null,
     "hired_at": "2026-06-11T11:55:28.946695Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00603",
+    "full_name": "Brittany English",
+    "email": "emp-00603@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-11T15:42:59.723983Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T15:42:59.723983Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00604",
+    "full_name": "James Anderson",
+    "email": "emp-00604@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-06-11T15:42:59.723983Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T15:42:59.723983Z",
+    "terminated_at": null
   }
 ]
