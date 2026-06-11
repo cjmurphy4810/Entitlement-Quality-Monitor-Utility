@@ -10118,7 +10118,7 @@
     "email": "emp-00472@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -10129,7 +10129,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-27T10:57:50.740858Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-11T21:14:55.579401Z"
   },
   {
     "id": "EMP-00473",
@@ -12699,6 +12699,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-11T18:43:28.280528Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00607",
+    "full_name": "Roberto Jones",
+    "email": "emp-00607@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-06-11T21:14:55.579401Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T21:14:55.579401Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00608",
+    "full_name": "Amanda Compton",
+    "email": "emp-00608@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-06-11T21:14:55.579401Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T21:14:55.579401Z",
     "terminated_at": null
   }
 ]
