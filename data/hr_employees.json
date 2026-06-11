@@ -12662,5 +12662,43 @@
     "manager_id": null,
     "hired_at": "2026-06-11T15:42:59.723983Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00605",
+    "full_name": "Robert Wolf",
+    "email": "emp-00605@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-06-11T18:43:28.280528Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T18:43:28.280528Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00606",
+    "full_name": "Katie Jacobs",
+    "email": "emp-00606@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-06-11T18:43:28.280528Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-11T18:43:28.280528Z",
+    "terminated_at": null
   }
 ]
