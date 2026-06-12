@@ -12352,7 +12352,7 @@
     "email": "emp-00588@example.com",
     "current_role": "developer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -12363,7 +12363,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-09T13:40:53.766524Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-12T01:42:43.418803Z"
   },
   {
     "id": "EMP-00589",
@@ -12781,6 +12781,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-11T23:04:49.696852Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00611",
+    "full_name": "Ms. Tara Jacobs",
+    "email": "emp-00611@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-06-12T01:42:43.418803Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-12T01:42:43.418803Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00612",
+    "full_name": "Melissa Johnson",
+    "email": "emp-00612@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-12T01:42:43.418803Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-12T01:42:43.418803Z",
     "terminated_at": null
   }
 ]
