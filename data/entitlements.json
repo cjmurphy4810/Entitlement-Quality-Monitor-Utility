@@ -826,7 +826,7 @@
     "id": "ENT-00046",
     "name": "tech_dev admin 46",
     "pbl_description": "Grants administrator access and full configuration rights to the Rodriguez, Figueroa and Sanchez Application system.",
-    "access_tier": 1,
+    "access_tier": 4,
     "acceptable_roles": [
       "developer",
       "operations"
@@ -839,7 +839,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-02-25T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-06-13T19:15:22.317740Z"
   },
   {
     "id": "ENT-00047",
@@ -3050,5 +3050,19 @@
     "sod_tags": [],
     "created_at": "2026-06-13T14:35:44.648168Z",
     "updated_at": "2026-06-13T14:35:44.648168Z"
+  },
+  {
+    "id": "ENT-00190",
+    "name": "new entitlement ENT-00190",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-13T19:15:22.317740Z",
+    "updated_at": "2026-06-13T19:15:22.317740Z"
   }
 ]
