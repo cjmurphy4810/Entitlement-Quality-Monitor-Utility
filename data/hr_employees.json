@@ -12425,7 +12425,7 @@
     "email": "emp-00589@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -12436,7 +12436,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-09T18:30:19.924905Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-13T23:06:42.042787Z"
   },
   {
     "id": "EMP-00590",
@@ -13101,6 +13101,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-13T20:46:36.310241Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00625",
+    "full_name": "Devin Norton",
+    "email": "emp-00625@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-06-13T23:06:42.042787Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-13T23:06:42.042787Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00626",
+    "full_name": "Allison Leonard",
+    "email": "emp-00626@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-06-13T23:06:42.042787Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-13T23:06:42.042787Z",
     "terminated_at": null
   }
 ]
