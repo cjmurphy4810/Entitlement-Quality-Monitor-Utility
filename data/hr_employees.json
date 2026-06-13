@@ -11664,14 +11664,20 @@
     "id": "EMP-00550",
     "full_name": "Lee Haley",
     "email": "emp-00550@example.com",
-    "current_role": "operations",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "legal_compliance",
         "started_at": "2026-06-05T08:40:18.130254Z",
+        "ended_at": "2026-06-13T21:58:17.680069Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-06-13T21:58:17.680069Z",
         "ended_at": null
       }
     ],
