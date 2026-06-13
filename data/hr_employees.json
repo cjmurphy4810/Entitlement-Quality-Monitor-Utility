@@ -12951,5 +12951,24 @@
     "manager_id": null,
     "hired_at": "2026-06-13T10:43:49.051839Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00618",
+    "full_name": "Allison Nichols",
+    "email": "emp-00618@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-06-13T12:21:29.147526Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-13T12:21:29.147526Z",
+    "terminated_at": null
   }
 ]
