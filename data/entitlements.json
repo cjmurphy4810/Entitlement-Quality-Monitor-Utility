@@ -3036,5 +3036,19 @@
     "sod_tags": [],
     "created_at": "2026-06-13T12:21:29.147526Z",
     "updated_at": "2026-06-13T12:21:29.147526Z"
+  },
+  {
+    "id": "ENT-00189",
+    "name": "new entitlement ENT-00189",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-13T14:35:44.648168Z",
+    "updated_at": "2026-06-13T14:35:44.648168Z"
   }
 ]
