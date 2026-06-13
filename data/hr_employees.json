@@ -13014,5 +13014,43 @@
     "manager_id": null,
     "hired_at": "2026-06-13T16:10:14.934766Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00621",
+    "full_name": "Amanda Phillips",
+    "email": "emp-00621@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-06-13T17:51:29.456560Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-13T17:51:29.456560Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00622",
+    "full_name": "Juan Kennedy",
+    "email": "emp-00622@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-06-13T17:51:29.456560Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-13T17:51:29.456560Z",
+    "terminated_at": null
   }
 ]
