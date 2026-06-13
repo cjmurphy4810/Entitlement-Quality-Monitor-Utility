@@ -67637,5 +67637,28 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02781",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-13T00:15:08.139531Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01239",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00592",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00130",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
