@@ -13058,5 +13058,43 @@
     "manager_id": null,
     "hired_at": "2026-06-13T17:51:29.456560Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00623",
+    "full_name": "Matthew Roy",
+    "email": "emp-00623@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-06-13T20:46:36.310241Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-13T20:46:36.310241Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00624",
+    "full_name": "Brian Allison",
+    "email": "emp-00624@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-06-13T20:46:36.310241Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-13T20:46:36.310241Z",
+    "terminated_at": null
   }
 ]
