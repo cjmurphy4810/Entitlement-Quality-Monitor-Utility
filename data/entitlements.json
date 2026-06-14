@@ -3080,5 +3080,19 @@
     "sod_tags": [],
     "created_at": "2026-06-13T21:58:17.680069Z",
     "updated_at": "2026-06-13T21:58:17.680069Z"
+  },
+  {
+    "id": "ENT-00192",
+    "name": "new entitlement ENT-00192",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-14T10:03:33.895432Z",
+    "updated_at": "2026-06-14T10:03:33.895432Z"
   }
 ]
