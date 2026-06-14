@@ -13140,5 +13140,43 @@
     "manager_id": null,
     "hired_at": "2026-06-13T23:06:42.042787Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00627",
+    "full_name": "Robert Miller",
+    "email": "emp-00627@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-06-14T06:28:19.014499Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-14T06:28:19.014499Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00628",
+    "full_name": "Anthony Carey",
+    "email": "emp-00628@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-06-14T06:28:19.014499Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-14T06:28:19.014499Z",
+    "terminated_at": null
   }
 ]
