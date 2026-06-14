@@ -69870,5 +69870,142 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02872",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-14T19:15:37.888341Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01278",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00100",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00142",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02873",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-14T19:15:38.188920Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01277",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00587",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00160",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02874",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-14T19:15:38.189426Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01278",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00100",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00142",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02875",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-14T19:15:38.199030Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00312",
+    "explanation": "Terminated employee EMP-00142 (David Douglas) still holds active assignment ASN-00312.",
+    "evidence": {
+      "employee_id": "EMP-00142",
+      "terminated_at": "2026-06-14T19:15:37.674351+00:00",
+      "entitlement_id": "ENT-00016"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02876",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-14T19:15:38.204917Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00434",
+    "explanation": "Terminated employee EMP-00142 (David Douglas) still holds active assignment ASN-00434.",
+    "evidence": {
+      "employee_id": "EMP-00142",
+      "terminated_at": "2026-06-14T19:15:37.674351+00:00",
+      "entitlement_id": "ENT-00054"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02877",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-14T19:15:38.214886Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00616",
+    "explanation": "Terminated employee EMP-00142 (David Douglas) still holds active assignment ASN-00616.",
+    "evidence": {
+      "employee_id": "EMP-00142",
+      "terminated_at": "2026-06-14T19:15:37.674351+00:00",
+      "entitlement_id": "ENT-00006"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
