@@ -13398,5 +13398,24 @@
     "manager_id": null,
     "hired_at": "2026-06-15T03:30:57.457119Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00639",
+    "full_name": "Claudia Mcdonald",
+    "email": "emp-00639@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-15T19:40:27.744416Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-15T19:40:27.744416Z",
+    "terminated_at": null
   }
 ]
