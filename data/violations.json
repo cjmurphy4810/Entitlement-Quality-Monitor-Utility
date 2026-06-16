@@ -71196,5 +71196,138 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-02926",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-16T05:43:04.201963Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01299",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00224",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00001",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02927",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-16T05:43:04.219728Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00465",
+    "explanation": "Terminated employee EMP-00177 (Ariana Taylor) still holds active assignment ASN-00465.",
+    "evidence": {
+      "employee_id": "EMP-00177",
+      "terminated_at": "2026-06-16T05:43:03.626730+00:00",
+      "entitlement_id": "ENT-00042"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02928",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-16T05:43:04.221026Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00496",
+    "explanation": "Terminated employee EMP-00177 (Ariana Taylor) still holds active assignment ASN-00496.",
+    "evidence": {
+      "employee_id": "EMP-00177",
+      "terminated_at": "2026-06-16T05:43:03.626730+00:00",
+      "entitlement_id": "ENT-00056"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02929",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-16T05:43:04.234711Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00689",
+    "explanation": "Terminated employee EMP-00177 (Ariana Taylor) still holds active assignment ASN-00689.",
+    "evidence": {
+      "employee_id": "EMP-00177",
+      "terminated_at": "2026-06-16T05:43:03.626730+00:00",
+      "entitlement_id": "ENT-00085"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02930",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-16T05:43:04.238494Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00738",
+    "explanation": "Terminated employee EMP-00177 (Ariana Taylor) still holds active assignment ASN-00738.",
+    "evidence": {
+      "employee_id": "EMP-00177",
+      "terminated_at": "2026-06-16T05:43:03.626730+00:00",
+      "entitlement_id": "ENT-00104"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-02931",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-16T05:43:04.278204Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01299",
+    "explanation": "Terminated employee EMP-00224 (Stephanie Sanders) still holds active assignment ASN-01299.",
+    "evidence": {
+      "employee_id": "EMP-00224",
+      "terminated_at": "2026-05-18T20:13:16.629774+00:00",
+      "entitlement_id": "ENT-00001"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
