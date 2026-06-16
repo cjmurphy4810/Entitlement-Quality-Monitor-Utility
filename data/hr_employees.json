@@ -13461,5 +13461,24 @@
     "manager_id": null,
     "hired_at": "2026-06-16T10:59:29.759628Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00642",
+    "full_name": "Matthew Ray",
+    "email": "emp-00642@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-06-16T16:00:06.467010Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-16T16:00:06.467010Z",
+    "terminated_at": null
   }
 ]
