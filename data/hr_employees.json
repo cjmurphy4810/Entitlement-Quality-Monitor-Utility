@@ -13088,7 +13088,7 @@
     "email": "emp-00622@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -13099,7 +13099,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-13T17:51:29.456560Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-16T10:59:29.759628Z"
   },
   {
     "id": "EMP-00623",
@@ -13441,6 +13441,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-16T00:08:22.862958Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00641",
+    "full_name": "Louis Spencer",
+    "email": "emp-00641@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-06-16T10:59:29.759628Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-16T10:59:29.759628Z",
     "terminated_at": null
   }
 ]
