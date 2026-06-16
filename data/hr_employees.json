@@ -12183,7 +12183,7 @@
     "email": "emp-00575@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -12194,7 +12194,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-07T19:11:30.680682Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-16T19:41:45.834868Z"
   },
   {
     "id": "EMP-00576",
@@ -13479,6 +13479,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-16T16:00:06.467010Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00643",
+    "full_name": "Howard Middleton",
+    "email": "emp-00643@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-06-16T19:41:45.834868Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-16T19:41:45.834868Z",
     "terminated_at": null
   }
 ]
