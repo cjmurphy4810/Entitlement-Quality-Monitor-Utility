@@ -11617,14 +11617,20 @@
     "id": "EMP-00545",
     "full_name": "Billy Fields",
     "email": "emp-00545@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-06-04T19:18:43.080243Z",
+        "ended_at": "2026-06-17T19:20:57.242364Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-17T19:20:57.242364Z",
         "ended_at": null
       }
     ],
@@ -13573,6 +13579,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-17T16:34:18.834532Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00647",
+    "full_name": "Darlene Turner",
+    "email": "emp-00647@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-17T19:20:57.242364Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-17T19:20:57.242364Z",
     "terminated_at": null
   }
 ]
