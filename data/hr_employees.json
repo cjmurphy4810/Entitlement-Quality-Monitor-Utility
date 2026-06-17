@@ -13555,5 +13555,24 @@
     "manager_id": null,
     "hired_at": "2026-06-17T12:47:23.420317Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00646",
+    "full_name": "Jeffrey Wallace",
+    "email": "emp-00646@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-17T16:34:18.834532Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-17T16:34:18.834532Z",
+    "terminated_at": null
   }
 ]
