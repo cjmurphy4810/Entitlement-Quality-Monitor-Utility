@@ -13599,5 +13599,43 @@
     "manager_id": null,
     "hired_at": "2026-06-17T19:20:57.242364Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00648",
+    "full_name": "Natasha Richard",
+    "email": "emp-00648@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-06-17T21:26:52.447568Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-17T21:26:52.447568Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00649",
+    "full_name": "Ryan Barber MD",
+    "email": "emp-00649@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-06-17T21:26:52.447568Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-17T21:26:52.447568Z",
+    "terminated_at": null
   }
 ]
