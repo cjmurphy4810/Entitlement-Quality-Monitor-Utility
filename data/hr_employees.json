@@ -9741,14 +9741,20 @@
     "id": "EMP-00451",
     "full_name": "Walter Washington",
     "email": "emp-00451@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-05-24T17:30:09.438308Z",
+        "ended_at": "2026-06-17T12:47:23.420317Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-06-17T12:47:23.420317Z",
         "ended_at": null
       }
     ],
@@ -13529,6 +13535,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-16T22:06:40.563055Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00645",
+    "full_name": "Dana Santiago",
+    "email": "emp-00645@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-06-17T12:47:23.420317Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-17T12:47:23.420317Z",
     "terminated_at": null
   }
 ]
