@@ -3172,5 +3172,19 @@
     "sod_tags": [],
     "created_at": "2026-06-17T19:20:57.242364Z",
     "updated_at": "2026-06-17T19:20:57.242364Z"
+  },
+  {
+    "id": "ENT-00198",
+    "name": "new entitlement ENT-00198",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-18T00:14:26.757895Z",
+    "updated_at": "2026-06-18T00:14:26.757895Z"
   }
 ]
