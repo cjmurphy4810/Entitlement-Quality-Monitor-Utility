@@ -13719,5 +13719,24 @@
     "manager_id": null,
     "hired_at": "2026-06-18T09:51:13.512243Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00654",
+    "full_name": "Belinda Fuentes",
+    "email": "emp-00654@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-06-18T18:40:18.285833Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-18T18:40:18.285833Z",
+    "terminated_at": null
   }
 ]
