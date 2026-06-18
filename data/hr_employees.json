@@ -4920,7 +4920,7 @@
     "email": "emp-00218@example.com",
     "current_role": "developer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -4931,7 +4931,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T05:42:13.536854Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-18T05:13:31.134417Z"
   },
   {
     "id": "EMP-00219",
@@ -5655,8 +5655,8 @@
     "id": "EMP-00253",
     "full_name": "Kelly Dyer",
     "email": "emp-00253@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -5675,6 +5675,12 @@
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-06-06T20:05:47.963304Z",
+        "ended_at": "2026-06-18T05:13:31.134417Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-06-18T05:13:31.134417Z",
         "ended_at": null
       }
     ],
@@ -13636,6 +13642,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-17T21:26:52.447568Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00650",
+    "full_name": "Sandra Winters",
+    "email": "emp-00650@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-06-18T05:13:31.134417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-18T05:13:31.134417Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00651",
+    "full_name": "Yvonne Brown",
+    "email": "emp-00651@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-06-18T05:13:31.134417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-18T05:13:31.134417Z",
     "terminated_at": null
   }
 ]
