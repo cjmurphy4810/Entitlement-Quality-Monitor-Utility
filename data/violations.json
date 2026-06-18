@@ -73235,5 +73235,182 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03010",
+    "rule_id": "CMDB-01",
+    "rule_name": "Orphan entitlement",
+    "severity": "low",
+    "detected_at": "2026-06-18T16:23:13.213582Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00200",
+    "explanation": "Entitlement is not linked to any valid CMDB resource.",
+    "evidence": {
+      "declared_links": [],
+      "valid_links": []
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "_action": "link_to_resource",
+      "_note": "Owner should add at least one valid resource id."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03011",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-18T16:23:13.802481Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01331",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00302",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00020",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03012",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-18T16:23:13.805572Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00014",
+    "explanation": "Terminated employee EMP-00030 (Mr. Daniel Brown) still holds active assignment ASN-00014.",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "terminated_at": "2026-06-18T16:23:13.178630+00:00",
+      "entitlement_id": "ENT-00048"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03013",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-18T16:23:13.805694Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00031",
+    "explanation": "Terminated employee EMP-00030 (Mr. Daniel Brown) still holds active assignment ASN-00031.",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "terminated_at": "2026-06-18T16:23:13.178630+00:00",
+      "entitlement_id": "ENT-00039"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03014",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-18T16:23:13.806185Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00063",
+    "explanation": "Terminated employee EMP-00030 (Mr. Daniel Brown) still holds active assignment ASN-00063.",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "terminated_at": "2026-06-18T16:23:13.178630+00:00",
+      "entitlement_id": "ENT-00022"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03015",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-18T16:23:13.842533Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00758",
+    "explanation": "Terminated employee EMP-00030 (Mr. Daniel Brown) still holds active assignment ASN-00758.",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "terminated_at": "2026-06-18T16:23:13.178630+00:00",
+      "entitlement_id": "ENT-00055"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03016",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-18T16:23:13.857730Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00940",
+    "explanation": "Terminated employee EMP-00030 (Mr. Daniel Brown) still holds active assignment ASN-00940.",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "terminated_at": "2026-06-18T16:23:13.178630+00:00",
+      "entitlement_id": "ENT-00034"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03017",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-18T16:23:13.872187Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01153",
+    "explanation": "Terminated employee EMP-00030 (Mr. Daniel Brown) still holds active assignment ASN-01153.",
+    "evidence": {
+      "employee_id": "EMP-00030",
+      "terminated_at": "2026-06-18T16:23:13.178630+00:00",
+      "entitlement_id": "ENT-00138"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
