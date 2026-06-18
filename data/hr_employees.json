@@ -13757,5 +13757,24 @@
     "manager_id": null,
     "hired_at": "2026-06-18T21:19:01.773834Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00656",
+    "full_name": "Brian Jackson",
+    "email": "emp-00656@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-06-18T23:15:41.643437Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-18T23:15:41.643437Z",
+    "terminated_at": null
   }
 ]
