@@ -13738,5 +13738,24 @@
     "manager_id": null,
     "hired_at": "2026-06-18T18:40:18.285833Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00655",
+    "full_name": "Alyssa Scott",
+    "email": "emp-00655@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-06-18T21:19:01.773834Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-18T21:19:01.773834Z",
+    "terminated_at": null
   }
 ]

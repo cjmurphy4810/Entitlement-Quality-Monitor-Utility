@@ -73482,5 +73482,104 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03021",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-18T21:19:02.019864Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01333",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00105",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00017",
+      "acceptable_roles": [
+        "business_analyst",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03022",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-18T21:19:02.370652Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01333",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00105",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00017",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03023",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-06-18T21:19:02.372445Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00537",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-05-19T19:45:20.500250+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00094",
+      "current_role": "operations",
+      "prior_roles": [
+        "developer",
+        "business_analyst"
+      ],
+      "last_role_change_at": "2026-05-19T19:45:20.500250+00:00",
+      "granted_at": "2026-05-10T08:01:11.496212+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03024",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-18T21:19:02.449581Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01333",
+    "explanation": "Terminated employee EMP-00105 (John Olson) still holds active assignment ASN-01333.",
+    "evidence": {
+      "employee_id": "EMP-00105",
+      "terminated_at": "2026-05-02T21:34:24.344050+00:00",
+      "entitlement_id": "ENT-00017"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
