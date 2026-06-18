@@ -13498,7 +13498,7 @@
     "email": "emp-00642@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -13509,7 +13509,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-16T16:00:06.467010Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-18T09:51:13.512243Z"
   },
   {
     "id": "EMP-00643",
@@ -13680,6 +13680,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-18T05:13:31.134417Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00652",
+    "full_name": "Sharon Alvarez",
+    "email": "emp-00652@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-06-18T09:51:13.512243Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-18T09:51:13.512243Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00653",
+    "full_name": "Matthew Mullen",
+    "email": "emp-00653@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-18T09:51:13.512243Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-18T09:51:13.512243Z",
     "terminated_at": null
   }
 ]
