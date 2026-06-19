@@ -13776,5 +13776,24 @@
     "manager_id": null,
     "hired_at": "2026-06-18T23:15:41.643437Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00657",
+    "full_name": "Cheryl Gonzalez",
+    "email": "emp-00657@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-19T02:14:05.765873Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-19T02:14:05.765873Z",
+    "terminated_at": null
   }
 ]
