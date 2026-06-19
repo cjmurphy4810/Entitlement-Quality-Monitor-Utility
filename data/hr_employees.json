@@ -1484,7 +1484,7 @@
     "email": "user00064@example.com",
     "current_role": "developer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -1501,7 +1501,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-08-10T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-19T21:03:17.462261Z"
   },
   {
     "id": "EMP-00065",
@@ -13863,6 +13863,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-19T17:50:11.938270Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00661",
+    "full_name": "Joshua Roberts",
+    "email": "emp-00661@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-06-19T21:03:17.462261Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-19T21:03:17.462261Z",
     "terminated_at": null
   }
 ]
