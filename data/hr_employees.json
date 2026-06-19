@@ -13801,5 +13801,24 @@
     "manager_id": null,
     "hired_at": "2026-06-19T02:14:05.765873Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00658",
+    "full_name": "Anthony Smith",
+    "email": "emp-00658@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-06-19T12:00:52.971728Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-19T12:00:52.971728Z",
+    "terminated_at": null
   }
 ]

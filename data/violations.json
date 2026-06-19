@@ -73837,5 +73837,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03036",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-19T12:00:53.596224Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01340",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00104",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00037",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03037",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-19T12:00:53.677702Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01340",
+    "explanation": "Terminated employee EMP-00104 (Jason Perry) still holds active assignment ASN-01340.",
+    "evidence": {
+      "employee_id": "EMP-00104",
+      "terminated_at": "2026-05-04T18:01:42.209527+00:00",
+      "entitlement_id": "ENT-00037"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
