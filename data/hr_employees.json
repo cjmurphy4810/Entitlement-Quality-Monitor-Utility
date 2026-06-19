@@ -13889,5 +13889,43 @@
     "manager_id": null,
     "hired_at": "2026-06-19T21:03:17.462261Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00662",
+    "full_name": "Timothy Obrien",
+    "email": "emp-00662@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-19T23:37:47.480429Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-19T23:37:47.480429Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00663",
+    "full_name": "Kayla Munoz",
+    "email": "emp-00663@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-06-19T23:37:47.480429Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-19T23:37:47.480429Z",
+    "terminated_at": null
   }
 ]
