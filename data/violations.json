@@ -73882,5 +73882,32 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03038",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-06-19T15:46:32.822902Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00486",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'developer'. Last role change was 2026-05-20T13:35:38.532153+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00215",
+      "current_role": "developer",
+      "prior_roles": [
+        "business_analyst"
+      ],
+      "last_role_change_at": "2026-05-20T13:35:38.532153+00:00",
+      "granted_at": "2026-05-08T16:49:43.619625+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

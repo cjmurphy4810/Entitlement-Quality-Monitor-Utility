@@ -13820,5 +13820,24 @@
     "manager_id": null,
     "hired_at": "2026-06-19T12:00:52.971728Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00659",
+    "full_name": "Frank Berry",
+    "email": "emp-00659@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-06-19T15:46:32.206768Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-19T15:46:32.206768Z",
+    "terminated_at": null
   }
 ]
