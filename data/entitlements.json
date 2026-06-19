@@ -3274,5 +3274,21 @@
     "sod_tags": [],
     "created_at": "2026-06-19T21:03:17.462261Z",
     "updated_at": "2026-06-19T21:03:17.462261Z"
+  },
+  {
+    "id": "ENT-00205",
+    "name": "new entitlement ENT-00205",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00071"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-19T22:29:35.341172Z",
+    "updated_at": "2026-06-19T22:29:35.341172Z"
   }
 ]
