@@ -13839,5 +13839,24 @@
     "manager_id": null,
     "hired_at": "2026-06-19T15:46:32.206768Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00660",
+    "full_name": "Brianna Edwards",
+    "email": "emp-00660@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-06-19T17:50:11.938270Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-19T17:50:11.938270Z",
+    "terminated_at": null
   }
 ]
