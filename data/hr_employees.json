@@ -14009,5 +14009,24 @@
     "manager_id": null,
     "hired_at": "2026-06-20T10:08:01.671791Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00668",
+    "full_name": "Robert Hudson",
+    "email": "emp-00668@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-06-20T14:38:49.574046Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-20T14:38:49.574046Z",
+    "terminated_at": null
   }
 ]
