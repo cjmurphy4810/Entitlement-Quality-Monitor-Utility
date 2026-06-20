@@ -13952,5 +13952,43 @@
     "manager_id": null,
     "hired_at": "2026-06-20T02:44:56.066917Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00665",
+    "full_name": "Justin Lee",
+    "email": "emp-00665@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-06-20T06:57:09.231317Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-20T06:57:09.231317Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00666",
+    "full_name": "Jill Rios",
+    "email": "emp-00666@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-06-20T06:57:09.231317Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-20T06:57:09.231317Z",
+    "terminated_at": null
   }
 ]
