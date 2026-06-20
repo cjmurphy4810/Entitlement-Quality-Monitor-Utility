@@ -74682,5 +74682,99 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03072",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-20T10:08:01.899028Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01354",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00609",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00160",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03073",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-20T10:08:02.219957Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01352",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00437",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00011",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03074",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-20T10:08:02.220473Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01353",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00497",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00074",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03075",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-20T10:08:02.220994Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01354",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00609",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00160",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

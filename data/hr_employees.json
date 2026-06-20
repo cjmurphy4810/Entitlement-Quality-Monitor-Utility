@@ -13990,5 +13990,24 @@
     "manager_id": null,
     "hired_at": "2026-06-20T06:57:09.231317Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00667",
+    "full_name": "Jennifer Cruz",
+    "email": "emp-00667@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-20T10:08:01.671791Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-20T10:08:01.671791Z",
+    "terminated_at": null
   }
 ]
