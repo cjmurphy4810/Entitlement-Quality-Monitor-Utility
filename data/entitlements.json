@@ -3304,5 +3304,19 @@
     "sod_tags": [],
     "created_at": "2026-06-20T12:13:24.111484Z",
     "updated_at": "2026-06-20T12:13:24.111484Z"
+  },
+  {
+    "id": "ENT-00207",
+    "name": "new entitlement ENT-00207",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-20T19:14:52.720545Z",
+    "updated_at": "2026-06-20T19:14:52.720545Z"
   }
 ]
