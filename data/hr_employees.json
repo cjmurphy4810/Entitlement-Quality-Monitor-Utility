@@ -4637,7 +4637,7 @@
     "email": "emp-00205@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -4648,7 +4648,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T12:44:45.168107Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-20T17:52:52.724588Z"
   },
   {
     "id": "EMP-00206",
@@ -11919,14 +11919,20 @@
     "id": "EMP-00559",
     "full_name": "Jennifer Smith",
     "email": "emp-00559@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-06-06T14:26:21.697930Z",
+        "ended_at": "2026-06-20T17:52:52.724588Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-06-20T17:52:52.724588Z",
         "ended_at": null
       }
     ],
