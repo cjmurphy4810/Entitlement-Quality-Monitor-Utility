@@ -75223,5 +75223,259 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03094",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-20T16:13:07.079062Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01361",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00336",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00030",
+      "acceptable_roles": [
+        "developer",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03095",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.462853Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00263",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00263.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00016"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03096",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.474282Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00490",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00490.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00027"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03097",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.475075Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00506",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00506.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00069"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03098",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.477250Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00539",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00539.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00071"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03099",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.481171Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00589",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00589.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00034"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03100",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.490813Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00713",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00713.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00054"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03101",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.491539Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00721",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00721.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00106"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03102",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.493397Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00740",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00740.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00020"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03103",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.502079Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00832",
+    "explanation": "Terminated employee EMP-00062 (Valerie Brady) still holds active assignment ASN-00832.",
+    "evidence": {
+      "employee_id": "EMP-00062",
+      "terminated_at": "2026-06-20T16:13:06.829619+00:00",
+      "entitlement_id": "ENT-00112"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03104",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-06-20T16:13:07.547197Z",
+    "target_type": "employee",
+    "target_id": "EMP-00336",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00012.",
+    "evidence": {
+      "resource_id": "RES-00012",
+      "developer_admin_entitlements": [
+        "ENT-00030"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00030"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

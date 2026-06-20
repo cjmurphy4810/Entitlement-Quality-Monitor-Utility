@@ -1440,7 +1440,7 @@
     "email": "user00062@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -1457,7 +1457,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-11-23T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-20T16:13:06.829619Z"
   },
   {
     "id": "EMP-00063",
@@ -14027,6 +14027,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-20T14:38:49.574046Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00669",
+    "full_name": "Luke Callahan",
+    "email": "emp-00669@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-06-20T16:13:06.829619Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-20T16:13:06.829619Z",
     "terminated_at": null
   }
 ]
