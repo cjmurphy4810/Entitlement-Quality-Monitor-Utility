@@ -8440,14 +8440,20 @@
     "id": "EMP-00386",
     "full_name": "Karen Greer",
     "email": "emp-00386@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-05-19T04:11:54.530168Z",
+        "ended_at": "2026-06-20T02:44:56.066917Z"
+      },
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-06-20T02:44:56.066917Z",
         "ended_at": null
       }
     ],
@@ -13926,6 +13932,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-19T23:37:47.480429Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00664",
+    "full_name": "Jane Dawson",
+    "email": "emp-00664@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-06-20T02:44:56.066917Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-20T02:44:56.066917Z",
     "terminated_at": null
   }
 ]
