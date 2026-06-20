@@ -13319,7 +13319,7 @@
     "email": "emp-00631@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -13330,7 +13330,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-14T12:21:04.710579Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-20T23:42:27.491389Z"
   },
   {
     "id": "EMP-00632",
@@ -14058,6 +14058,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-20T16:13:06.829619Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00670",
+    "full_name": "Bonnie Ruiz",
+    "email": "emp-00670@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-06-20T23:42:27.491389Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-20T23:42:27.491389Z",
     "terminated_at": null
   }
 ]
