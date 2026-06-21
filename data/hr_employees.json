@@ -14236,5 +14236,24 @@
     "manager_id": null,
     "hired_at": "2026-06-21T20:10:56.074247Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00679",
+    "full_name": "Alyssa Villa",
+    "email": "emp-00679@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-06-21T21:51:39.406110Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T21:51:39.406110Z",
+    "terminated_at": null
   }
 ]
