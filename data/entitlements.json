@@ -3334,5 +3334,21 @@
     "sod_tags": [],
     "created_at": "2026-06-21T08:14:27.347444Z",
     "updated_at": "2026-06-21T08:14:27.347444Z"
+  },
+  {
+    "id": "ENT-00209",
+    "name": "new entitlement ENT-00209",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-21T15:21:48.965220Z",
+    "updated_at": "2026-06-21T15:21:48.965220Z"
   }
 ]

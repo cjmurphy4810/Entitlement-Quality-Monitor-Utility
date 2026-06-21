@@ -14179,5 +14179,43 @@
     "manager_id": null,
     "hired_at": "2026-06-21T13:21:39.035103Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00676",
+    "full_name": "William Morgan",
+    "email": "emp-00676@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-06-21T15:21:48.965220Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T15:21:48.965220Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00677",
+    "full_name": "Samantha Henderson",
+    "email": "emp-00677@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-06-21T15:21:48.965220Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T15:21:48.965220Z",
+    "terminated_at": null
   }
 ]
