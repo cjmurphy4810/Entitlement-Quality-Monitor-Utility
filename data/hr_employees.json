@@ -11630,7 +11630,7 @@
     "email": "emp-00544@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -11641,7 +11641,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-04T19:18:43.080243Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-21T23:05:14.255028Z"
   },
   {
     "id": "EMP-00545",
@@ -14254,6 +14254,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T21:51:39.406110Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00680",
+    "full_name": "Mrs. Wanda Clark",
+    "email": "emp-00680@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-06-21T23:05:14.255028Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T23:05:14.255028Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00681",
+    "full_name": "Crystal Watts",
+    "email": "emp-00681@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-21T23:05:14.255028Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T23:05:14.255028Z",
     "terminated_at": null
   }
 ]
