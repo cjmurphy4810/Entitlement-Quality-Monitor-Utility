@@ -14217,5 +14217,24 @@
     "manager_id": null,
     "hired_at": "2026-06-21T15:21:48.965220Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00678",
+    "full_name": "Kevin Smith",
+    "email": "emp-00678@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-21T20:10:56.074247Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T20:10:56.074247Z",
+    "terminated_at": null
   }
 ]
