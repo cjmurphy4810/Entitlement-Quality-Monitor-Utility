@@ -8846,7 +8846,7 @@
     "email": "emp-00406@example.com",
     "current_role": "developer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -8857,7 +8857,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-20T21:17:27.082338Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-21T08:14:27.347444Z"
   },
   {
     "id": "EMP-00407",
@@ -14115,6 +14115,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T03:26:50.286450Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00673",
+    "full_name": "Brian Freeman",
+    "email": "emp-00673@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-06-21T08:14:27.347444Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T08:14:27.347444Z",
     "terminated_at": null
   }
 ]
