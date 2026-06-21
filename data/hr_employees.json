@@ -10289,8 +10289,8 @@
     "id": "EMP-00477",
     "full_name": "William Smith",
     "email": "emp-00477@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -10303,6 +10303,12 @@
         "role": "operations",
         "division": "hr",
         "started_at": "2026-05-30T10:21:55.202138Z",
+        "ended_at": "2026-06-21T13:21:39.035103Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-06-21T13:21:39.035103Z",
         "ended_at": null
       }
     ],
@@ -14153,6 +14159,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T11:27:43.451259Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00675",
+    "full_name": "Daniel Smith",
+    "email": "emp-00675@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-06-21T13:21:39.035103Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T13:21:39.035103Z",
     "terminated_at": null
   }
 ]
