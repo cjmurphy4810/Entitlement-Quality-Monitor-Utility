@@ -14078,5 +14078,43 @@
     "manager_id": null,
     "hired_at": "2026-06-20T23:42:27.491389Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00671",
+    "full_name": "Mark Jones",
+    "email": "emp-00671@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-21T03:26:50.286450Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T03:26:50.286450Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00672",
+    "full_name": "Tyler Taylor",
+    "email": "emp-00672@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-21T03:26:50.286450Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T03:26:50.286450Z",
+    "terminated_at": null
   }
 ]
