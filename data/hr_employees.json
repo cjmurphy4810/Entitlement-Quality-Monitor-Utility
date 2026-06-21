@@ -14135,5 +14135,24 @@
     "manager_id": null,
     "hired_at": "2026-06-21T08:14:27.347444Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00674",
+    "full_name": "Melissa Hicks",
+    "email": "emp-00674@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-06-21T11:27:43.451259Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-21T11:27:43.451259Z",
+    "terminated_at": null
   }
 ]

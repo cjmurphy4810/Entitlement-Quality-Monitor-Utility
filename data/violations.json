@@ -76240,5 +76240,77 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03137",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-21T11:27:43.716031Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01375",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['customer', 'business_analyst', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00631",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00048",
+      "acceptable_roles": [
+        "customer",
+        "business_analyst",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03138",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-21T11:27:44.106634Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01375",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00631",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00048",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03139",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-21T11:27:44.196876Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01375",
+    "explanation": "Terminated employee EMP-00631 (Monica Stokes) still holds active assignment ASN-01375.",
+    "evidence": {
+      "employee_id": "EMP-00631",
+      "terminated_at": "2026-06-20T23:42:27.491389+00:00",
+      "entitlement_id": "ENT-00048"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
