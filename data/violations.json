@@ -77392,5 +77392,57 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03186",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-22T13:29:10.282544Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01396",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00286",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00213",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03187",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-06-22T13:29:10.284221Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00466",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_analyst'. Last role change was 2026-05-23T13:09:46.423454+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00147",
+      "current_role": "business_analyst",
+      "prior_roles": [
+        "operations",
+        "business_analyst",
+        "business_user"
+      ],
+      "last_role_change_at": "2026-05-23T13:09:46.423454+00:00",
+      "granted_at": "2026-05-07T23:51:01.259891+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
