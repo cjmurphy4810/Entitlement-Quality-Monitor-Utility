@@ -14356,5 +14356,24 @@
     "manager_id": null,
     "hired_at": "2026-06-22T13:29:09.668689Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00685",
+    "full_name": "Christian Ramos",
+    "email": "emp-00685@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-22T18:04:37.295039Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-22T18:04:37.295039Z",
+    "terminated_at": null
   }
 ]
