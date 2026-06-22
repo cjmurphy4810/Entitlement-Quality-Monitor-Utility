@@ -8593,7 +8593,7 @@
     "email": "emp-00393@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -8604,7 +8604,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-19T21:14:15.833660Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-22T22:59:49.312778Z"
   },
   {
     "id": "EMP-00394",
@@ -9090,14 +9090,20 @@
     "id": "EMP-00418",
     "full_name": "Brian Rosario",
     "email": "emp-00418@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-05-21T23:56:04.997240Z",
+        "ended_at": "2026-06-22T22:59:49.312778Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-06-22T22:59:49.312778Z",
         "ended_at": null
       }
     ],
@@ -14399,6 +14405,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-22T21:18:38.299134Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00687",
+    "full_name": "Danielle Jones",
+    "email": "emp-00687@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-06-22T22:59:49.312778Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-22T22:59:49.312778Z",
     "terminated_at": null
   }
 ]
