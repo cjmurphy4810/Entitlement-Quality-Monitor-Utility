@@ -14293,5 +14293,43 @@
     "manager_id": null,
     "hired_at": "2026-06-21T23:05:14.255028Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00682",
+    "full_name": "Ricky Garcia",
+    "email": "emp-00682@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-06-22T07:31:41.100927Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-22T07:31:41.100927Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00683",
+    "full_name": "Monica Waters",
+    "email": "emp-00683@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-06-22T07:31:41.100927Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-22T07:31:41.100927Z",
+    "terminated_at": null
   }
 ]
