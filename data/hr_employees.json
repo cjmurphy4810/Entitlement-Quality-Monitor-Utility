@@ -3120,14 +3120,20 @@
     "id": "EMP-00136",
     "full_name": "Emily Vargas",
     "email": "emp-00136@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-04-30T23:45:42.282107Z",
+        "ended_at": "2026-06-23T22:44:37.831420Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-06-23T22:44:37.831420Z",
         "ended_at": null
       }
     ],
@@ -14537,6 +14543,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-23T21:12:19.094982Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00693",
+    "full_name": "Adrian Braun",
+    "email": "emp-00693@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-06-23T22:44:37.831420Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-23T22:44:37.831420Z",
     "terminated_at": null
   }
 ]
