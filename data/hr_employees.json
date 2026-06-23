@@ -14481,5 +14481,24 @@
     "manager_id": null,
     "hired_at": "2026-06-23T04:38:23.289998Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00690",
+    "full_name": "William Stewart",
+    "email": "emp-00690@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-06-23T17:12:14.883831Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-23T17:12:14.883831Z",
+    "terminated_at": null
   }
 ]
