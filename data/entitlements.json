@@ -3428,5 +3428,21 @@
     "sod_tags": [],
     "created_at": "2026-06-23T08:25:35.645613Z",
     "updated_at": "2026-06-23T08:25:35.645613Z"
+  },
+  {
+    "id": "ENT-00215",
+    "name": "new entitlement ENT-00215",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00041"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-23T11:37:12.229652Z",
+    "updated_at": "2026-06-23T11:37:12.229652Z"
   }
 ]
