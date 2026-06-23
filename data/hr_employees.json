@@ -7702,8 +7702,8 @@
     "id": "EMP-00350",
     "full_name": "Ashley Harvey",
     "email": "emp-00350@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -7716,6 +7716,12 @@
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-05-16T21:48:06.138897Z",
+        "ended_at": "2026-06-23T00:12:41.725303Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-06-23T00:12:41.725303Z",
         "ended_at": null
       }
     ],
@@ -14424,6 +14430,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-22T22:59:49.312778Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00688",
+    "full_name": "Kayla Gutierrez",
+    "email": "emp-00688@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-06-23T00:12:41.725303Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-23T00:12:41.725303Z",
     "terminated_at": null
   }
 ]
