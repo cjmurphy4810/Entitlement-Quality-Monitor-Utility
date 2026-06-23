@@ -2235,8 +2235,8 @@
     "id": "EMP-00097",
     "full_name": "Laura Higgins",
     "email": "user00097@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -2249,6 +2249,12 @@
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-05-10T18:52:59.101872Z",
+        "ended_at": "2026-06-23T04:38:23.289998Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-23T04:38:23.289998Z",
         "ended_at": null
       }
     ],
@@ -13356,7 +13362,7 @@
     "email": "emp-00632@example.com",
     "current_role": "developer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -13367,7 +13373,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-14T16:17:35.129427Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-23T04:38:23.289998Z"
   },
   {
     "id": "EMP-00633",
@@ -14449,6 +14455,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-23T00:12:41.725303Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00689",
+    "full_name": "Michael Cochran",
+    "email": "emp-00689@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-06-23T04:38:23.289998Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-23T04:38:23.289998Z",
     "terminated_at": null
   }
 ]
