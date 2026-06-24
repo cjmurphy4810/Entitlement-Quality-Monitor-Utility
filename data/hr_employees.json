@@ -1238,8 +1238,8 @@
     "id": "EMP-00054",
     "full_name": "William Martin",
     "email": "user00054@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -1264,6 +1264,12 @@
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-05-24T17:30:09.438308Z",
+        "ended_at": "2026-06-24T12:32:31.358886Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-06-24T12:32:31.358886Z",
         "ended_at": null
       }
     ],
@@ -7368,7 +7374,7 @@
     "email": "emp-00332@example.com",
     "current_role": "developer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7379,7 +7385,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-15T08:20:50.979042Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-24T12:32:31.358886Z"
   },
   {
     "id": "EMP-00333",
@@ -14694,6 +14700,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-24T10:16:45.124668Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00700",
+    "full_name": "Briana Willis",
+    "email": "emp-00700@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-06-24T12:32:31.358886Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T12:32:31.358886Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00701",
+    "full_name": "Laura Smith",
+    "email": "emp-00701@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-06-24T12:32:31.358886Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T12:32:31.358886Z",
     "terminated_at": null
   }
 ]

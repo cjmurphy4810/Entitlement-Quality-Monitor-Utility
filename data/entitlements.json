@@ -3476,5 +3476,21 @@
     "sod_tags": [],
     "created_at": "2026-06-24T06:40:42.836974Z",
     "updated_at": "2026-06-24T06:40:42.836974Z"
+  },
+  {
+    "id": "ENT-00218",
+    "name": "new entitlement ENT-00218",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00117"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-24T12:32:31.358886Z",
+    "updated_at": "2026-06-24T12:32:31.358886Z"
   }
 ]
