@@ -14739,5 +14739,43 @@
     "manager_id": null,
     "hired_at": "2026-06-24T12:32:31.358886Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00702",
+    "full_name": "Julie Greene",
+    "email": "emp-00702@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-06-24T17:28:19.178935Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T17:28:19.178935Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00703",
+    "full_name": "Diane Velazquez",
+    "email": "emp-00703@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-24T17:28:19.178935Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T17:28:19.178935Z",
+    "terminated_at": null
   }
 ]
