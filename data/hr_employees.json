@@ -14657,5 +14657,43 @@
     "manager_id": null,
     "hired_at": "2026-06-24T06:40:42.836974Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00698",
+    "full_name": "Tasha Buchanan",
+    "email": "emp-00698@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-06-24T10:16:45.124668Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T10:16:45.124668Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00699",
+    "full_name": "Dakota Pham",
+    "email": "emp-00699@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-06-24T10:16:45.124668Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T10:16:45.124668Z",
+    "terminated_at": null
   }
 ]

@@ -79094,5 +79094,109 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03255",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-24T10:16:45.401939Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01425",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00599",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00202",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03256",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-24T10:16:45.402401Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01426",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00071",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00111",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03257",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-24T10:16:45.816793Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01425",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00599",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00202",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03258",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-06-24T10:16:45.922851Z",
+    "target_type": "employee",
+    "target_id": "EMP-00071",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_dev', 'legal_compliance', 'tech_dev']",
+    "evidence": {
+      "divisions": [
+        "business_dev",
+        "legal_compliance",
+        "tech_dev"
+      ],
+      "entitlement_ids": [
+        "ENT-00002",
+        "ENT-00007",
+        "ENT-00085",
+        "ENT-00111"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
