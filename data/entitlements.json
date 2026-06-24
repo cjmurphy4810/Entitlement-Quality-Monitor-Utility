@@ -3460,5 +3460,21 @@
     "sod_tags": [],
     "created_at": "2026-06-23T23:51:57.783467Z",
     "updated_at": "2026-06-23T23:51:57.783467Z"
+  },
+  {
+    "id": "ENT-00217",
+    "name": "new entitlement ENT-00217",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00076"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-24T06:40:42.836974Z",
+    "updated_at": "2026-06-24T06:40:42.836974Z"
   }
 ]

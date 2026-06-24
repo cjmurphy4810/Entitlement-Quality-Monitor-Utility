@@ -8390,7 +8390,7 @@
     "email": "emp-00382@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -8401,7 +8401,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-18T16:44:37.483613Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-24T06:40:42.836974Z"
   },
   {
     "id": "EMP-00383",
@@ -13909,14 +13909,20 @@
     "id": "EMP-00659",
     "full_name": "Frank Berry",
     "email": "emp-00659@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-06-19T15:46:32.206768Z",
+        "ended_at": "2026-06-24T06:40:42.836974Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-06-24T06:40:42.836974Z",
         "ended_at": null
       }
     ],
@@ -14631,6 +14637,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-24T02:39:19.238710Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00697",
+    "full_name": "Megan Davis",
+    "email": "emp-00697@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-06-24T06:40:42.836974Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T06:40:42.836974Z",
     "terminated_at": null
   }
 ]
