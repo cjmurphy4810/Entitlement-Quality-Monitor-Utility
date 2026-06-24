@@ -14815,5 +14815,24 @@
     "manager_id": null,
     "hired_at": "2026-06-24T21:08:19.631954Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00706",
+    "full_name": "Charles Boyd",
+    "email": "emp-00706@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-06-24T22:44:34.324278Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T22:44:34.324278Z",
+    "terminated_at": null
   }
 ]
