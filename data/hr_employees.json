@@ -6902,7 +6902,7 @@
     "email": "emp-00310@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -6913,7 +6913,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-13T02:34:46.308828Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-24T21:08:19.631954Z"
   },
   {
     "id": "EMP-00311",
@@ -14776,6 +14776,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-24T17:28:19.178935Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00704",
+    "full_name": "Daniel Gomez",
+    "email": "emp-00704@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-06-24T21:08:19.631954Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T21:08:19.631954Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00705",
+    "full_name": "Lori Berger",
+    "email": "emp-00705@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-06-24T21:08:19.631954Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-24T21:08:19.631954Z",
     "terminated_at": null
   }
 ]
