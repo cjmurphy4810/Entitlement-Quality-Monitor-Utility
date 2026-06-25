@@ -80081,5 +80081,52 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03295",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-25T00:02:56.477020Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01440",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00278",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00060",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03296",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-25T00:02:57.006139Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01440",
+    "explanation": "Terminated employee EMP-00278 (Mr. Rick Murphy DDS) still holds active assignment ASN-01440.",
+    "evidence": {
+      "employee_id": "EMP-00278",
+      "terminated_at": "2026-05-25T07:08:42.148326+00:00",
+      "entitlement_id": "ENT-00060"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

@@ -14834,5 +14834,24 @@
     "manager_id": null,
     "hired_at": "2026-06-24T22:44:34.324278Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00707",
+    "full_name": "Lisa Little",
+    "email": "emp-00707@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-06-25T00:02:56.195511Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-25T00:02:56.195511Z",
+    "terminated_at": null
   }
 ]
