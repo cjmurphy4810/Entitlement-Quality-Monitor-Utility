@@ -7958,14 +7958,20 @@
     "id": "EMP-00360",
     "full_name": "Anthony Abbott",
     "email": "emp-00360@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-05-17T02:32:25.463670Z",
+        "ended_at": "2026-06-25T23:50:21.140249Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-06-25T23:50:21.140249Z",
         "ended_at": null
       }
     ],
@@ -13442,7 +13448,7 @@
     "email": "emp-00634@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -13453,7 +13459,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-14T19:15:37.674351Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-25T23:50:21.140249Z"
   },
   {
     "id": "EMP-00635",
@@ -15053,6 +15059,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-25T22:17:29.957343Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00717",
+    "full_name": "Emily Peters",
+    "email": "emp-00717@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-06-25T23:50:21.140249Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-25T23:50:21.140249Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00718",
+    "full_name": "Sara Leach",
+    "email": "emp-00718@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-25T23:50:21.140249Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-25T23:50:21.140249Z",
     "terminated_at": null
   }
 ]
