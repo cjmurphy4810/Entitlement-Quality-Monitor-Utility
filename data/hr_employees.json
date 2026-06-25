@@ -14947,5 +14947,43 @@
     "manager_id": null,
     "hired_at": "2026-06-25T13:33:22.596496Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00712",
+    "full_name": "Mrs. Jacqueline Winters MD",
+    "email": "emp-00712@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-06-25T16:18:32.578814Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-25T16:18:32.578814Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00713",
+    "full_name": "Jessica Perkins",
+    "email": "emp-00713@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-06-25T16:18:32.578814Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-25T16:18:32.578814Z",
+    "terminated_at": null
   }
 ]
