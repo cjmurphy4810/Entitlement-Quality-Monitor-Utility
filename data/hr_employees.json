@@ -11936,7 +11936,7 @@
     "email": "emp-00556@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -11947,7 +11947,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-06T07:43:03.537061Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-26T02:43:56.542508Z"
   },
   {
     "id": "EMP-00557",
@@ -15097,6 +15097,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-25T23:50:21.140249Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00719",
+    "full_name": "Karen Smith",
+    "email": "emp-00719@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-06-26T02:43:56.542508Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-26T02:43:56.542508Z",
     "terminated_at": null
   }
 ]
