@@ -15280,5 +15280,24 @@
     "manager_id": null,
     "hired_at": "2026-06-26T17:14:08.544505Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00727",
+    "full_name": "Sarah Wilson",
+    "email": "emp-00727@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-06-26T21:03:40.175445Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-26T21:03:40.175445Z",
+    "terminated_at": null
   }
 ]
