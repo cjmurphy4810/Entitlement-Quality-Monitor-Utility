@@ -4514,8 +4514,8 @@
     "id": "EMP-00198",
     "full_name": "Nathan Love",
     "email": "emp-00198@example.com",
-    "current_role": "customer",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -4534,6 +4534,12 @@
         "role": "customer",
         "division": "tech_dev",
         "started_at": "2026-05-29T10:40:27.910200Z",
+        "ended_at": "2026-06-26T17:14:08.544505Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-06-26T17:14:08.544505Z",
         "ended_at": null
       }
     ],
@@ -11929,7 +11935,7 @@
     "email": "emp-00555@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -11940,7 +11946,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-06T00:01:43.128671Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-26T17:14:08.544505Z"
   },
   {
     "id": "EMP-00556",
@@ -15248,6 +15254,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T15:12:40.279808Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00726",
+    "full_name": "Jerry Joyce",
+    "email": "emp-00726@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-06-26T17:14:08.544505Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-26T17:14:08.544505Z",
     "terminated_at": null
   }
 ]
