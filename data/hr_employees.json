@@ -10222,14 +10222,20 @@
     "id": "EMP-00470",
     "full_name": "Marcus Thomas",
     "email": "emp-00470@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-05-27T06:59:17.180909Z",
+        "ended_at": "2026-06-26T10:18:10.526547Z"
+      },
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-06-26T10:18:10.526547Z",
         "ended_at": null
       }
     ],
@@ -15154,6 +15160,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T06:48:57.186062Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00722",
+    "full_name": "Daniel Morrison",
+    "email": "emp-00722@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-06-26T10:18:10.526547Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-26T10:18:10.526547Z",
     "terminated_at": null
   }
 ]
