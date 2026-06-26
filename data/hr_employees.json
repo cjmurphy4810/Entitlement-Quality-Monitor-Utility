@@ -4803,14 +4803,20 @@
     "id": "EMP-00211",
     "full_name": "Brent Phillips",
     "email": "emp-00211@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-05-05T22:51:04.117843Z",
+        "ended_at": "2026-06-26T15:12:40.279808Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-06-26T15:12:40.279808Z",
         "ended_at": null
       }
     ],
@@ -15204,6 +15210,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T12:30:14.552347Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00724",
+    "full_name": "Antonio Jenkins",
+    "email": "emp-00724@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-06-26T15:12:40.279808Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-26T15:12:40.279808Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00725",
+    "full_name": "Jaime Pace",
+    "email": "emp-00725@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-06-26T15:12:40.279808Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-26T15:12:40.279808Z",
     "terminated_at": null
   }
 ]
