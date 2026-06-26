@@ -993,8 +993,8 @@
     "id": "EMP-00043",
     "full_name": "Brandi Bailey",
     "email": "user00043@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
@@ -1013,6 +1013,12 @@
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-05-09T21:37:36.765930Z",
+        "ended_at": "2026-06-26T19:15:47.193264Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-06-26T19:15:47.193264Z",
         "ended_at": null
       }
     ],
@@ -14522,7 +14528,7 @@
     "email": "emp-00688@example.com",
     "current_role": "operations",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -14533,7 +14539,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-23T00:12:41.725303Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-26T19:15:47.193264Z"
   },
   {
     "id": "EMP-00689",
