@@ -5658,14 +5658,20 @@
     "id": "EMP-00250",
     "full_name": "Ms. Kristina Duffy MD",
     "email": "emp-00250@example.com",
-    "current_role": "operations",
-    "current_division": "legal_compliance",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "legal_compliance",
         "started_at": "2026-05-08T11:51:39.622492Z",
+        "ended_at": "2026-06-26T22:42:33.544619Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-06-26T22:42:33.544619Z",
         "ended_at": null
       }
     ],
@@ -15298,6 +15304,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T21:03:40.175445Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00728",
+    "full_name": "Chase Stewart",
+    "email": "emp-00728@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-06-26T22:42:33.544619Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-26T22:42:33.544619Z",
     "terminated_at": null
   }
 ]
