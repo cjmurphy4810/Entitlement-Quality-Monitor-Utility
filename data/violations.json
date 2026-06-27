@@ -83446,5 +83446,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03435",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-27T17:02:37.018603Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01490",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00077",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00213",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03436",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T17:02:37.119153Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01490",
+    "explanation": "Terminated employee EMP-00077 (Jessica Joyce) still holds active assignment ASN-01490.",
+    "evidence": {
+      "employee_id": "EMP-00077",
+      "terminated_at": "2026-03-31T04:52:59.501678+00:00",
+      "entitlement_id": "ENT-00213"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
