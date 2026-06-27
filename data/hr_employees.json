@@ -3334,7 +3334,7 @@
     "email": "emp-00144@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -3357,7 +3357,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T14:35:41.999879Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-27T12:50:29.785491Z"
   },
   {
     "id": "EMP-00145",
@@ -15424,6 +15424,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-27T11:09:36.818948Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00734",
+    "full_name": "Patricia Mayo",
+    "email": "emp-00734@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-06-27T12:50:29.785491Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T12:50:29.785491Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00735",
+    "full_name": "Jason Thomas",
+    "email": "emp-00735@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-06-27T12:50:29.785491Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T12:50:29.785491Z",
     "terminated_at": null
   }
 ]
