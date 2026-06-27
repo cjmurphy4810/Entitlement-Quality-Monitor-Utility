@@ -6118,7 +6118,7 @@
     "email": "emp-00270@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -6129,7 +6129,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T21:37:36.765930Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-27T03:49:18.264778Z"
   },
   {
     "id": "EMP-00271",
@@ -15342,6 +15342,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T23:58:59.477978Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00730",
+    "full_name": "Ashley Hopkins",
+    "email": "emp-00730@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-27T03:49:18.264778Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T03:49:18.264778Z",
     "terminated_at": null
   }
 ]
