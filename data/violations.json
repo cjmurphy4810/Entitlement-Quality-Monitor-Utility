@@ -82968,5 +82968,207 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03414",
+    "rule_id": "CMDB-01",
+    "rule_name": "Orphan entitlement",
+    "severity": "low",
+    "detected_at": "2026-06-27T11:09:36.859118Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00228",
+    "explanation": "Entitlement is not linked to any valid CMDB resource.",
+    "evidence": {
+      "declared_links": [],
+      "valid_links": []
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "_action": "link_to_resource",
+      "_note": "Owner should add at least one valid resource id."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03415",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-27T11:09:37.129995Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01485",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00694",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00210",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03416",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-27T11:09:37.585467Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01485",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00694",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00210",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03417",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T11:09:37.596423Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00301",
+    "explanation": "Terminated employee EMP-00148 (Grace Hodge) still holds active assignment ASN-00301.",
+    "evidence": {
+      "employee_id": "EMP-00148",
+      "terminated_at": "2026-06-27T11:09:36.818948+00:00",
+      "entitlement_id": "ENT-00019"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03418",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T11:09:37.603738Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00435",
+    "explanation": "Terminated employee EMP-00148 (Grace Hodge) still holds active assignment ASN-00435.",
+    "evidence": {
+      "employee_id": "EMP-00148",
+      "terminated_at": "2026-06-27T11:09:36.818948+00:00",
+      "entitlement_id": "ENT-00044"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03419",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T11:09:37.611481Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00548",
+    "explanation": "Terminated employee EMP-00148 (Grace Hodge) still holds active assignment ASN-00548.",
+    "evidence": {
+      "employee_id": "EMP-00148",
+      "terminated_at": "2026-06-27T11:09:36.818948+00:00",
+      "entitlement_id": "ENT-00046"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03420",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T11:09:37.622723Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00684",
+    "explanation": "Terminated employee EMP-00148 (Grace Hodge) still holds active assignment ASN-00684.",
+    "evidence": {
+      "employee_id": "EMP-00148",
+      "terminated_at": "2026-06-27T11:09:36.818948+00:00",
+      "entitlement_id": "ENT-00079"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03421",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T11:09:37.628644Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00743",
+    "explanation": "Terminated employee EMP-00148 (Grace Hodge) still holds active assignment ASN-00743.",
+    "evidence": {
+      "employee_id": "EMP-00148",
+      "terminated_at": "2026-06-27T11:09:36.818948+00:00",
+      "entitlement_id": "ENT-00051"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03422",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T11:09:37.656173Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01022",
+    "explanation": "Terminated employee EMP-00148 (Grace Hodge) still holds active assignment ASN-01022.",
+    "evidence": {
+      "employee_id": "EMP-00148",
+      "terminated_at": "2026-06-27T11:09:36.818948+00:00",
+      "entitlement_id": "ENT-00093"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
