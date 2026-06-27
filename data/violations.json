@@ -83306,5 +83306,97 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03429",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-27T14:24:08.626655Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01487",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00112",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00108",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03430",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-27T14:24:09.100590Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01487",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00112",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00108",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03431",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T14:24:09.184574Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01157",
+    "explanation": "Terminated employee EMP-00504 (Brandon Pierce) still holds active assignment ASN-01157.",
+    "evidence": {
+      "employee_id": "EMP-00504",
+      "terminated_at": "2026-06-27T14:24:08.308094+00:00",
+      "entitlement_id": "ENT-00145"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03432",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-27T14:24:09.214087Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01487",
+    "explanation": "Terminated employee EMP-00112 (Jackie Ramirez) still holds active assignment ASN-01487.",
+    "evidence": {
+      "employee_id": "EMP-00112",
+      "terminated_at": "2026-05-02T08:05:08.869730+00:00",
+      "entitlement_id": "ENT-00108"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
