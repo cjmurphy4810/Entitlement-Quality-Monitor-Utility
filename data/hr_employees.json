@@ -9340,7 +9340,7 @@
     "email": "emp-00426@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -9351,7 +9351,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-22T23:37:46.064536Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-27T15:47:27.993016Z"
   },
   {
     "id": "EMP-00427",
@@ -15462,6 +15462,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-27T12:50:29.785491Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00736",
+    "full_name": "Ryan Mendez",
+    "email": "emp-00736@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-06-27T15:47:27.993016Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T15:47:27.993016Z",
     "terminated_at": null
   }
 ]
