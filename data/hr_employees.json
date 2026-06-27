@@ -15557,5 +15557,43 @@
     "manager_id": null,
     "hired_at": "2026-06-27T21:36:16.850118Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00740",
+    "full_name": "Andrea Scott",
+    "email": "emp-00740@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-06-27T22:57:40.827931Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T22:57:40.827931Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00741",
+    "full_name": "Kevin Burgess",
+    "email": "emp-00741@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-06-27T22:57:40.827931Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T22:57:40.827931Z",
+    "terminated_at": null
   }
 ]
