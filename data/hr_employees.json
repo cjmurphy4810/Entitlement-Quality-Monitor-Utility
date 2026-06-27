@@ -15538,5 +15538,24 @@
     "manager_id": null,
     "hired_at": "2026-06-27T20:05:17.943629Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00739",
+    "full_name": "Angela Roth",
+    "email": "emp-00739@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-06-27T21:36:16.850118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T21:36:16.850118Z",
+    "terminated_at": null
   }
 ]
