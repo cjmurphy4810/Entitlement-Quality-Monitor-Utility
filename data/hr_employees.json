@@ -14601,14 +14601,20 @@
     "id": "EMP-00691",
     "full_name": "Adam Johnson",
     "email": "emp-00691@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-06-23T19:23:55.379762Z",
+        "ended_at": "2026-06-27T18:42:47.139332Z"
+      },
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-06-27T18:42:47.139332Z",
         "ended_at": null
       }
     ],
@@ -15487,6 +15493,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-27T15:47:27.993016Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00737",
+    "full_name": "Michael Johnson",
+    "email": "emp-00737@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-06-27T18:42:47.139332Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T18:42:47.139332Z",
     "terminated_at": null
   }
 ]
