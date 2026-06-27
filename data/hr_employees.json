@@ -11669,7 +11669,7 @@
     "email": "emp-00541@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -11680,7 +11680,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-04T13:55:18.999805Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-27T09:25:27.595493Z"
   },
   {
     "id": "EMP-00542",
@@ -15361,6 +15361,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-27T03:49:18.264778Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00731",
+    "full_name": "Kyle Cannon",
+    "email": "emp-00731@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-06-27T09:25:27.595493Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-27T09:25:27.595493Z",
     "terminated_at": null
   }
 ]
