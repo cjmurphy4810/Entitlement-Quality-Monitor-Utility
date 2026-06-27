@@ -82849,5 +82849,54 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03409",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-27T06:48:19.564260Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01483",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_analyst', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00355",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00017",
+      "acceptable_roles": [
+        "business_analyst",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03410",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-27T06:48:20.032797Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01483",
+    "explanation": "Employee division 'hr' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00355",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00017",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
