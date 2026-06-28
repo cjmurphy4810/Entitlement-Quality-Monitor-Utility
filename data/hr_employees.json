@@ -11826,7 +11826,7 @@
     "email": "emp-00548@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -11837,7 +11837,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-05T04:54:19.814232Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-28T17:02:13.043839Z"
   },
   {
     "id": "EMP-00549",
@@ -15726,6 +15726,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-28T15:47:05.662570Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00748",
+    "full_name": "Erica Wolf",
+    "email": "emp-00748@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-06-28T17:02:13.043839Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-28T17:02:13.043839Z",
     "terminated_at": null
   }
 ]
