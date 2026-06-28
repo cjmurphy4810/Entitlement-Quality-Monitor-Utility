@@ -5053,14 +5053,20 @@
     "id": "EMP-00221",
     "full_name": "Douglas Russo",
     "email": "emp-00221@example.com",
-    "current_role": "customer",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "finance",
         "started_at": "2026-05-06T16:59:20.769169Z",
+        "ended_at": "2026-06-28T08:22:14.926856Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-06-28T08:22:14.926856Z",
         "ended_at": null
       }
     ],
@@ -15638,6 +15644,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-28T00:02:21.508886Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00744",
+    "full_name": "Roy Garcia",
+    "email": "emp-00744@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-28T08:22:14.926856Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-28T08:22:14.926856Z",
     "terminated_at": null
   }
 ]
