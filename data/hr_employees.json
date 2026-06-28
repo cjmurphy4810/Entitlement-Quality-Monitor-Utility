@@ -11313,14 +11313,20 @@
     "id": "EMP-00523",
     "full_name": "Desiree Padilla",
     "email": "emp-00523@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-05-31T20:36:06.743550Z",
+        "ended_at": "2026-06-28T15:47:05.662570Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-06-28T15:47:05.662570Z",
         "ended_at": null
       }
     ],
@@ -15701,6 +15707,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-28T10:38:31.919104Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00747",
+    "full_name": "Jacob Smith",
+    "email": "emp-00747@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-06-28T15:47:05.662570Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-28T15:47:05.662570Z",
     "terminated_at": null
   }
 ]
