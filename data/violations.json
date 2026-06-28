@@ -84367,5 +84367,233 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03474",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-28T10:38:32.231986Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01510",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00579",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00108",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03475",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-28T10:38:32.232495Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01511",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00618",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00144",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03476",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-28T10:38:32.695675Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01510",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00579",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00108",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03477",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-28T10:38:32.696336Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01511",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00618",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00144",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03478",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-28T10:38:32.710435Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00352",
+    "explanation": "Terminated employee EMP-00126 (Joseph Frey) still holds active assignment ASN-00352.",
+    "evidence": {
+      "employee_id": "EMP-00126",
+      "terminated_at": "2026-06-28T10:38:31.919104+00:00",
+      "entitlement_id": "ENT-00013"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03479",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-28T10:38:32.713216Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00407",
+    "explanation": "Terminated employee EMP-00126 (Joseph Frey) still holds active assignment ASN-00407.",
+    "evidence": {
+      "employee_id": "EMP-00126",
+      "terminated_at": "2026-06-28T10:38:31.919104+00:00",
+      "entitlement_id": "ENT-00049"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03480",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-28T10:38:32.728807Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00622",
+    "explanation": "Terminated employee EMP-00126 (Joseph Frey) still holds active assignment ASN-00622.",
+    "evidence": {
+      "employee_id": "EMP-00126",
+      "terminated_at": "2026-06-28T10:38:31.919104+00:00",
+      "entitlement_id": "ENT-00071"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03481",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-28T10:38:32.729644Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00629",
+    "explanation": "Terminated employee EMP-00126 (Joseph Frey) still holds active assignment ASN-00629.",
+    "evidence": {
+      "employee_id": "EMP-00126",
+      "terminated_at": "2026-06-28T10:38:31.919104+00:00",
+      "entitlement_id": "ENT-00063"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03482",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-28T10:38:32.749111Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00822",
+    "explanation": "Terminated employee EMP-00126 (Joseph Frey) still holds active assignment ASN-00822.",
+    "evidence": {
+      "employee_id": "EMP-00126",
+      "terminated_at": "2026-06-28T10:38:31.919104+00:00",
+      "entitlement_id": "ENT-00079"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03483",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-28T10:38:32.762936Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00964",
+    "explanation": "Terminated employee EMP-00126 (Joseph Frey) still holds active assignment ASN-00964.",
+    "evidence": {
+      "employee_id": "EMP-00126",
+      "terminated_at": "2026-06-28T10:38:31.919104+00:00",
+      "entitlement_id": "ENT-00115"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
