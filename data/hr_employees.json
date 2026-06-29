@@ -15954,5 +15954,43 @@
     "manager_id": null,
     "hired_at": "2026-06-29T19:48:08.605543Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00759",
+    "full_name": "Brandy Beck",
+    "email": "emp-00759@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-06-29T21:19:31.816702Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-29T21:19:31.816702Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00760",
+    "full_name": "Joanna Lewis",
+    "email": "emp-00760@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-06-29T21:19:31.816702Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-29T21:19:31.816702Z",
+    "terminated_at": null
   }
 ]
