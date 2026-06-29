@@ -85486,5 +85486,145 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03522",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-29T00:08:46.462191Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01525",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00433",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00115",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03523",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-29T00:08:46.462697Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01526",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00641",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00208",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03524",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-29T00:08:46.941005Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01525",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00433",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00115",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03525",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-29T00:08:46.941697Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01526",
+    "explanation": "Employee division 'finance' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00641",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00208",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03526",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-29T00:08:47.028340Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01173",
+    "explanation": "Terminated employee EMP-00293 (Amanda Henderson) still holds active assignment ASN-01173.",
+    "evidence": {
+      "employee_id": "EMP-00293",
+      "terminated_at": "2026-06-29T00:08:46.138248+00:00",
+      "entitlement_id": "ENT-00149"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03527",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-29T00:08:47.058989Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01502",
+    "explanation": "Terminated employee EMP-00293 (Amanda Henderson) still holds active assignment ASN-01502.",
+    "evidence": {
+      "employee_id": "EMP-00293",
+      "terminated_at": "2026-06-29T00:08:46.138248+00:00",
+      "entitlement_id": "ENT-00120"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
