@@ -85811,5 +85811,80 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03536",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-29T14:32:28.223300Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01531",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00316",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00193",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03537",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-29T14:32:28.718837Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01531",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00316",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00193",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03538",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-06-29T14:32:28.719697Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00187",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-05-30T11:51:00.442139+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "current_role": "operations",
+      "prior_roles": [
+        "business_analyst"
+      ],
+      "last_role_change_at": "2026-05-30T11:51:00.442139+00:00",
+      "granted_at": "2025-10-12T04:52:59.501678+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
