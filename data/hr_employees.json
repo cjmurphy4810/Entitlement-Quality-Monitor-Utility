@@ -11251,7 +11251,7 @@
     "email": "emp-00519@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -11262,7 +11262,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T14:59:08.583728Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-29T10:06:17.283231Z"
   },
   {
     "id": "EMP-00520",
@@ -15852,6 +15852,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-29T00:08:46.138248Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00754",
+    "full_name": "Crystal Williams",
+    "email": "emp-00754@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-06-29T10:06:17.283231Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-29T10:06:17.283231Z",
     "terminated_at": null
   }
 ]

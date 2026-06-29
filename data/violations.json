@@ -85764,5 +85764,52 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03534",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-29T10:06:17.615923Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01530",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00170",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00139",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03535",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-29T10:06:18.234600Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01530",
+    "explanation": "Terminated employee EMP-00170 (Megan Matthews) still holds active assignment ASN-01530.",
+    "evidence": {
+      "employee_id": "EMP-00170",
+      "terminated_at": "2026-05-19T23:57:58.884581+00:00",
+      "entitlement_id": "ENT-00139"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
