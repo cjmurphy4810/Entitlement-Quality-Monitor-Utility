@@ -7939,7 +7939,7 @@
     "email": "emp-00357@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -7950,7 +7950,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T19:59:50.572512Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-30T10:51:08.228338Z"
   },
   {
     "id": "EMP-00358",
@@ -16016,6 +16016,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-30T03:37:05.523264Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00762",
+    "full_name": "Alicia Johnson",
+    "email": "emp-00762@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-06-30T10:51:08.228338Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-30T10:51:08.228338Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00763",
+    "full_name": "Cristian Rodriguez",
+    "email": "emp-00763@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-06-30T10:51:08.228338Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-30T10:51:08.228338Z",
     "terminated_at": null
   }
 ]
