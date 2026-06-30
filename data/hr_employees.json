@@ -14417,7 +14417,7 @@
     "email": "emp-00679@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -14428,7 +14428,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T21:51:39.406110Z",
-    "terminated_at": null
+    "terminated_at": "2026-06-30T15:59:59.154443Z"
   },
   {
     "id": "EMP-00680",
@@ -16060,6 +16060,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-30T10:51:08.228338Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00764",
+    "full_name": "Cory Livingston",
+    "email": "emp-00764@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-06-30T15:59:59.154443Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-30T15:59:59.154443Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00765",
+    "full_name": "Paul Weaver",
+    "email": "emp-00765@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-06-30T15:59:59.154443Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-06-30T15:59:59.154443Z",
     "terminated_at": null
   }
 ]

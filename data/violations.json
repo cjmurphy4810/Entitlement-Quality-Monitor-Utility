@@ -86902,5 +86902,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03582",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-06-30T15:59:59.882505Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01550",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00101",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00040",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03583",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-06-30T15:59:59.988604Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01550",
+    "explanation": "Terminated employee EMP-00101 (Donna Garcia) still holds active assignment ASN-01550.",
+    "evidence": {
+      "employee_id": "EMP-00101",
+      "terminated_at": "2026-06-14T16:17:35.129427+00:00",
+      "entitlement_id": "ENT-00040"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
