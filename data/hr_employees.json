@@ -10498,7 +10498,7 @@
     "email": "emp-00480@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -10509,7 +10509,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-28T10:51:07.214425Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-01T20:21:24.570900Z"
   },
   {
     "id": "EMP-00481",
@@ -16242,6 +16242,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-01T18:22:29.887334Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00772",
+    "full_name": "Heather Gordon",
+    "email": "emp-00772@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-01T20:21:24.570900Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-01T20:21:24.570900Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00773",
+    "full_name": "Andrew Hernandez",
+    "email": "emp-00773@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-01T20:21:24.570900Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-01T20:21:24.570900Z",
     "terminated_at": null
   }
 ]
