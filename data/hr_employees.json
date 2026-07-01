@@ -14125,7 +14125,7 @@
     "email": "emp-00663@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -14136,7 +14136,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-19T23:37:47.480429Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-01T13:16:41.373463Z"
   },
   {
     "id": "EMP-00664",
@@ -15299,14 +15299,20 @@
     "id": "EMP-00723",
     "full_name": "Jillian Randolph",
     "email": "emp-00723@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_dev",
+    "current_role": "developer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_dev",
         "started_at": "2026-06-26T12:30:14.552347Z",
+        "ended_at": "2026-07-01T13:16:41.373463Z"
+      },
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-01T13:16:41.373463Z",
         "ended_at": null
       }
     ],
@@ -16192,6 +16198,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-01T10:27:45.801578Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00770",
+    "full_name": "John Lambert",
+    "email": "emp-00770@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-01T13:16:41.373463Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-01T13:16:41.373463Z",
     "terminated_at": null
   }
 ]
