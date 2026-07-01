@@ -16155,5 +16155,43 @@
     "manager_id": null,
     "hired_at": "2026-07-01T06:19:44.126899Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00768",
+    "full_name": "Raymond Walker",
+    "email": "emp-00768@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-01T10:27:45.801578Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-01T10:27:45.801578Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00769",
+    "full_name": "Christopher Smith",
+    "email": "emp-00769@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-01T10:27:45.801578Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-01T10:27:45.801578Z",
+    "terminated_at": null
   }
 ]
