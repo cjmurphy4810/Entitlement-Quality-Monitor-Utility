@@ -7794,7 +7794,7 @@
     "email": "emp-00350@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -7817,7 +7817,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T14:38:04.856518Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-01T06:19:44.126899Z"
   },
   {
     "id": "EMP-00351",
@@ -16116,6 +16116,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-30T15:59:59.154443Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00766",
+    "full_name": "Steven Martinez",
+    "email": "emp-00766@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-01T06:19:44.126899Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-01T06:19:44.126899Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00767",
+    "full_name": "Sean Cain",
+    "email": "emp-00767@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-01T06:19:44.126899Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-01T06:19:44.126899Z",
     "terminated_at": null
   }
 ]
