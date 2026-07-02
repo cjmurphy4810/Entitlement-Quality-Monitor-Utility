@@ -16293,5 +16293,24 @@
     "manager_id": null,
     "hired_at": "2026-07-01T20:21:24.570900Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00774",
+    "full_name": "Laura Yang",
+    "email": "emp-00774@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-02T01:30:11.292964Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-02T01:30:11.292964Z",
+    "terminated_at": null
   }
 ]

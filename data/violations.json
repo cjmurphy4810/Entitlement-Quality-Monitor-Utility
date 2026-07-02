@@ -88651,5 +88651,102 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03653",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-07-02T01:30:11.353441Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00241",
+    "explanation": "Entitlement Tier-3 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 3,
+      "offending_resources": [
+        {
+          "id": "RES-00096",
+          "criticality": "critical"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03654",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-02T01:30:11.637916Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01582",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00198",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00033",
+      "acceptable_roles": [
+        "developer",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03655",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-02T01:30:12.160833Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01583",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00285",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00036",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03656",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-02T01:30:12.287218Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01583",
+    "explanation": "Terminated employee EMP-00285 (Randall Jacobs) still holds active assignment ASN-01583.",
+    "evidence": {
+      "employee_id": "EMP-00285",
+      "terminated_at": "2026-06-07T14:53:25.940057+00:00",
+      "entitlement_id": "ENT-00036"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
