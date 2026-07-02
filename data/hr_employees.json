@@ -16331,5 +16331,43 @@
     "manager_id": null,
     "hired_at": "2026-07-02T08:45:38.467682Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00776",
+    "full_name": "Michael Snow",
+    "email": "emp-00776@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-07-02T13:17:26.217806Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-02T13:17:26.217806Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00777",
+    "full_name": "Nathan Jackson",
+    "email": "emp-00777@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-02T13:17:26.217806Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-02T13:17:26.217806Z",
+    "terminated_at": null
   }
 ]
