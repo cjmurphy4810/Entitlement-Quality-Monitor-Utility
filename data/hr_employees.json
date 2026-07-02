@@ -16432,5 +16432,24 @@
     "manager_id": null,
     "hired_at": "2026-07-02T19:14:48.417096Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00781",
+    "full_name": "Danny Thomas",
+    "email": "emp-00781@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-02T20:42:35.494570Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-02T20:42:35.494570Z",
+    "terminated_at": null
   }
 ]
