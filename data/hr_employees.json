@@ -16312,5 +16312,24 @@
     "manager_id": null,
     "hired_at": "2026-07-02T01:30:11.292964Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00775",
+    "full_name": "Kelly Compton",
+    "email": "emp-00775@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-02T08:45:38.467682Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-02T08:45:38.467682Z",
+    "terminated_at": null
   }
 ]
