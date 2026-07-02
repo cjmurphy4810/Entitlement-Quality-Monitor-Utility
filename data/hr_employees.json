@@ -16369,5 +16369,24 @@
     "manager_id": null,
     "hired_at": "2026-07-02T13:17:26.217806Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00778",
+    "full_name": "John Richardson",
+    "email": "emp-00778@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-02T15:38:24.895602Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-02T15:38:24.895602Z",
+    "terminated_at": null
   }
 ]
