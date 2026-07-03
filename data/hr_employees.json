@@ -16691,5 +16691,43 @@
     "manager_id": null,
     "hired_at": "2026-07-03T20:36:14.411248Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00794",
+    "full_name": "Jason Simon",
+    "email": "emp-00794@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-03T22:00:05.150763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T22:00:05.150763Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00795",
+    "full_name": "William Miller",
+    "email": "emp-00795@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-07-03T22:00:05.150763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T22:00:05.150763Z",
+    "terminated_at": null
   }
 ]
