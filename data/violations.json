@@ -90335,5 +90335,185 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03724",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-03T14:38:47.597865Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01612",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00053",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00094",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03725",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-03T14:38:47.831764Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01612",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00053",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00094",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03726",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-03T14:38:47.837991Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00313",
+    "explanation": "Terminated employee EMP-00094 (Eric Drake) still holds active assignment ASN-00313.",
+    "evidence": {
+      "employee_id": "EMP-00094",
+      "terminated_at": "2026-07-03T14:38:47.423037+00:00",
+      "entitlement_id": "ENT-00014"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03727",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-03T14:38:47.839334Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00366",
+    "explanation": "Terminated employee EMP-00094 (Eric Drake) still holds active assignment ASN-00366.",
+    "evidence": {
+      "employee_id": "EMP-00094",
+      "terminated_at": "2026-07-03T14:38:47.423037+00:00",
+      "entitlement_id": "ENT-00064"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03728",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-03T14:38:47.844119Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00537",
+    "explanation": "Terminated employee EMP-00094 (Eric Drake) still holds active assignment ASN-00537.",
+    "evidence": {
+      "employee_id": "EMP-00094",
+      "terminated_at": "2026-07-03T14:38:47.423037+00:00",
+      "entitlement_id": "ENT-00015"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03729",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-03T14:38:47.872931Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01186",
+    "explanation": "Terminated employee EMP-00094 (Eric Drake) still holds active assignment ASN-01186.",
+    "evidence": {
+      "employee_id": "EMP-00094",
+      "terminated_at": "2026-07-03T14:38:47.423037+00:00",
+      "entitlement_id": "ENT-00142"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03730",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-03T14:38:47.878033Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01303",
+    "explanation": "Terminated employee EMP-00094 (Eric Drake) still holds active assignment ASN-01303.",
+    "evidence": {
+      "employee_id": "EMP-00094",
+      "terminated_at": "2026-07-03T14:38:47.423037+00:00",
+      "entitlement_id": "ENT-00031"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03731",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-03T14:38:47.891548Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01612",
+    "explanation": "Terminated employee EMP-00053 (Amanda Cook) still holds active assignment ASN-01612.",
+    "evidence": {
+      "employee_id": "EMP-00053",
+      "terminated_at": "2026-04-30T10:23:20.581415+00:00",
+      "entitlement_id": "ENT-00094"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
