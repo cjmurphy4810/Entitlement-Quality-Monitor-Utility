@@ -7636,7 +7636,7 @@
     "email": "emp-00342@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7647,7 +7647,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T07:54:49.447022Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-03T12:04:34.269349Z"
   },
   {
     "id": "EMP-00343",
@@ -16570,6 +16570,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-03T09:40:32.687667Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00788",
+    "full_name": "Dawn Singh",
+    "email": "emp-00788@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-03T12:04:34.269349Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T12:04:34.269349Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00789",
+    "full_name": "Alexandria Freeman",
+    "email": "emp-00789@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-03T12:04:34.269349Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T12:04:34.269349Z",
     "terminated_at": null
   }
 ]
