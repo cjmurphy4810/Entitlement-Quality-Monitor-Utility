@@ -16514,5 +16514,24 @@
     "manager_id": null,
     "hired_at": "2026-07-03T02:21:37.001957Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00785",
+    "full_name": "Sandra Vega",
+    "email": "emp-00785@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-03T06:07:22.750491Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T06:07:22.750491Z",
+    "terminated_at": null
   }
 ]
