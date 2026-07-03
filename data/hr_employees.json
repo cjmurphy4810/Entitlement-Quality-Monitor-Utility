@@ -16615,5 +16615,43 @@
     "manager_id": null,
     "hired_at": "2026-07-03T12:04:34.269349Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00790",
+    "full_name": "Katie Murray",
+    "email": "emp-00790@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-03T17:55:11.059983Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T17:55:11.059983Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00791",
+    "full_name": "Dr. Cindy Lewis DDS",
+    "email": "emp-00791@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-03T17:55:11.059983Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T17:55:11.059983Z",
+    "terminated_at": null
   }
 ]
