@@ -16653,5 +16653,24 @@
     "manager_id": null,
     "hired_at": "2026-07-03T17:55:11.059983Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00792",
+    "full_name": "Debra Maldonado",
+    "email": "emp-00792@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-03T19:08:43.161382Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T19:08:43.161382Z",
+    "terminated_at": null
   }
 ]
