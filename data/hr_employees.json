@@ -16672,5 +16672,24 @@
     "manager_id": null,
     "hired_at": "2026-07-03T19:08:43.161382Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00793",
+    "full_name": "Chelsea Kelly",
+    "email": "emp-00793@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-03T20:36:14.411248Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T20:36:14.411248Z",
+    "terminated_at": null
   }
 ]
