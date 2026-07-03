@@ -3940,5 +3940,21 @@
     "sod_tags": [],
     "created_at": "2026-07-02T23:34:45.159701Z",
     "updated_at": "2026-07-02T23:34:45.159701Z"
+  },
+  {
+    "id": "ENT-00248",
+    "name": "new entitlement ENT-00248",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00059"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-03T09:40:32.687667Z",
+    "updated_at": "2026-07-03T09:40:32.687667Z"
   }
 ]

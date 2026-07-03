@@ -16533,5 +16533,43 @@
     "manager_id": null,
     "hired_at": "2026-07-03T06:07:22.750491Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00786",
+    "full_name": "Abigail Phillips",
+    "email": "emp-00786@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-03T09:40:32.687667Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T09:40:32.687667Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00787",
+    "full_name": "Pam Austin",
+    "email": "emp-00787@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-07-03T09:40:32.687667Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T09:40:32.687667Z",
+    "terminated_at": null
   }
 ]
