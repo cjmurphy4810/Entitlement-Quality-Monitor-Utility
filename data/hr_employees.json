@@ -16729,5 +16729,24 @@
     "manager_id": null,
     "hired_at": "2026-07-03T22:00:05.150763Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00796",
+    "full_name": "Stephanie Johnson",
+    "email": "emp-00796@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-07-03T23:11:44.027389Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-03T23:11:44.027389Z",
+    "terminated_at": null
   }
 ]
