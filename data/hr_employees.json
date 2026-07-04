@@ -13200,7 +13200,7 @@
     "email": "emp-00614@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -13211,7 +13211,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-12T16:47:05.729303Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-04T23:31:46.550918Z"
   },
   {
     "id": "EMP-00615",
@@ -17113,6 +17113,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-04T22:28:38.190739Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00815",
+    "full_name": "Ernest Daugherty",
+    "email": "emp-00815@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-04T23:31:46.550918Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T23:31:46.550918Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00816",
+    "full_name": "Krystal Myers",
+    "email": "emp-00816@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-04T23:31:46.550918Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T23:31:46.550918Z",
     "terminated_at": null
   }
 ]
