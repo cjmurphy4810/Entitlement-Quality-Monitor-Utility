@@ -11316,14 +11316,20 @@
     "id": "EMP-00520",
     "full_name": "Dawn Small",
     "email": "emp-00520@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "customer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-05-31T16:14:16.119143Z",
+        "ended_at": "2026-07-04T20:28:17.542615Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-04T20:28:17.542615Z",
         "ended_at": null
       }
     ],
@@ -17050,6 +17056,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-04T19:24:20.860358Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00812",
+    "full_name": "Miss Ariel Henderson DVM",
+    "email": "emp-00812@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-07-04T20:28:17.542615Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T20:28:17.542615Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00813",
+    "full_name": "Lisa King",
+    "email": "emp-00813@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-04T20:28:17.542615Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T20:28:17.542615Z",
     "terminated_at": null
   }
 ]
