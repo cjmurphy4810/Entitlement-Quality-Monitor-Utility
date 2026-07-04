@@ -15287,7 +15287,7 @@
     "email": "emp-00721@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -15298,7 +15298,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T06:48:57.186062Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-04T14:07:19.182902Z"
   },
   {
     "id": "EMP-00722",
@@ -16905,6 +16905,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-04T12:02:35.851278Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00805",
+    "full_name": "Amanda Black",
+    "email": "emp-00805@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-04T14:07:19.182902Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T14:07:19.182902Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00806",
+    "full_name": "Aaron Wise",
+    "email": "emp-00806@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-04T14:07:19.182902Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T14:07:19.182902Z",
     "terminated_at": null
   }
 ]
