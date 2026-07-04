@@ -3986,5 +3986,21 @@
     "sod_tags": [],
     "created_at": "2026-07-03T22:00:05.150763Z",
     "updated_at": "2026-07-03T22:00:05.150763Z"
+  },
+  {
+    "id": "ENT-00251",
+    "name": "new entitlement ENT-00251",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00040"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-04T16:57:10.470337Z",
+    "updated_at": "2026-07-04T16:57:10.470337Z"
   }
 ]

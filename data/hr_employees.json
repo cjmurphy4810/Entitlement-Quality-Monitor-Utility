@@ -9300,7 +9300,7 @@
     "email": "emp-00422@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -9317,7 +9317,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-22T20:54:11.877987Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-04T16:57:10.470337Z"
   },
   {
     "id": "EMP-00423",
@@ -15266,14 +15266,20 @@
     "id": "EMP-00720",
     "full_name": "Jeffrey Guerra",
     "email": "emp-00720@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-06-26T06:48:57.186062Z",
+        "ended_at": "2026-07-04T16:57:10.470337Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-04T16:57:10.470337Z",
         "ended_at": null
       }
     ],
