@@ -17013,5 +17013,43 @@
     "manager_id": null,
     "hired_at": "2026-07-04T18:00:18.803104Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00810",
+    "full_name": "Christina Gomez",
+    "email": "emp-00810@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-07-04T19:24:20.860358Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T19:24:20.860358Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00811",
+    "full_name": "Dalton Young",
+    "email": "emp-00811@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-04T19:24:20.860358Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T19:24:20.860358Z",
+    "terminated_at": null
   }
 ]
