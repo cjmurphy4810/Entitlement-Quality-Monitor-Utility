@@ -17095,5 +17095,24 @@
     "manager_id": null,
     "hired_at": "2026-07-04T20:28:17.542615Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00814",
+    "full_name": "Jamie Garcia",
+    "email": "emp-00814@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-04T22:28:38.190739Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T22:28:38.190739Z",
+    "terminated_at": null
   }
 ]
