@@ -5034,8 +5034,8 @@
     "id": "EMP-00220",
     "full_name": "James Peck",
     "email": "emp-00220@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "customer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -5060,6 +5060,12 @@
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-06-10T02:47:24.946871Z",
+        "ended_at": "2026-07-04T18:00:18.803104Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-04T18:00:18.803104Z",
         "ended_at": null
       }
     ],
@@ -16987,6 +16993,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-04T15:39:44.340689Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00809",
+    "full_name": "Sara Ellis",
+    "email": "emp-00809@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-04T18:00:18.803104Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T18:00:18.803104Z",
     "terminated_at": null
   }
 ]
