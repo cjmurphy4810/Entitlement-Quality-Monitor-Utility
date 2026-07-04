@@ -16944,5 +16944,43 @@
     "manager_id": null,
     "hired_at": "2026-07-04T14:07:19.182902Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00807",
+    "full_name": "Jillian Gomez",
+    "email": "emp-00807@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-07-04T15:39:44.340689Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T15:39:44.340689Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00808",
+    "full_name": "Katie Owen",
+    "email": "emp-00808@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-04T15:39:44.340689Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-04T15:39:44.340689Z",
+    "terminated_at": null
   }
 ]
