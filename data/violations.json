@@ -288,8 +288,17 @@
     "suggested_fix": {
       "access_tier": 2
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-07-05T06:24:10.108955Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -93044,6 +93053,899 @@
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
       "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03837",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-07-05T06:24:09.217840Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00043",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "Provides general read-only visibility into Peterson, Carter and Moore Api for reporting and review purposes."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03838",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-07-05T06:24:09.218845Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00043",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['business_user']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "operations",
+        "business_analyst",
+        "business_user",
+        "developer"
+      ],
+      "forbidden_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": [
+        "operations",
+        "business_analyst",
+        "developer"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03839",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-05T06:24:09.487670Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01653",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00127",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00126",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03840",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-05T06:24:09.878555Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01491",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00486",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00155",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03841",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-05T06:24:09.965563Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01653",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00127",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00126",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03842",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.006113Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00744",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-00744.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00061"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03843",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.015761Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00847",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-00847.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00043"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03844",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.019020Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00875",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-00875.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00108"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03845",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.023551Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00925",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-00925.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00066"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03846",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.039752Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01088",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-01088.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00154"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03847",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.051757Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01237",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-01237.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00130"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03848",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.053315Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01251",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-01251.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00114"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03849",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.074362Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01482",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-01482.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00142"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03850",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.085338Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01603",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-01603.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00245"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03851",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.092453Z",
+    "target_type": "employee",
+    "target_id": "EMP-00093",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03852",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.092973Z",
+    "target_type": "employee",
+    "target_id": "EMP-00086",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03853",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.093597Z",
+    "target_type": "employee",
+    "target_id": "EMP-00039",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03854",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.093927Z",
+    "target_type": "employee",
+    "target_id": "EMP-00115",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03855",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.095658Z",
+    "target_type": "employee",
+    "target_id": "EMP-00147",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03856",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.096330Z",
+    "target_type": "employee",
+    "target_id": "EMP-00104",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03857",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.096886Z",
+    "target_type": "employee",
+    "target_id": "EMP-00006",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03858",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.097089Z",
+    "target_type": "employee",
+    "target_id": "EMP-00068",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03859",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.097515Z",
+    "target_type": "employee",
+    "target_id": "EMP-00362",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03860",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.098500Z",
+    "target_type": "employee",
+    "target_id": "EMP-00327",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03861",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.098940Z",
+    "target_type": "employee",
+    "target_id": "EMP-00316",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03862",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.100001Z",
+    "target_type": "employee",
+    "target_id": "EMP-00196",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03863",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.100497Z",
+    "target_type": "employee",
+    "target_id": "EMP-00305",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03864",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.100860Z",
+    "target_type": "employee",
+    "target_id": "EMP-00157",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03865",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-05T06:24:10.103796Z",
+    "target_type": "employee",
+    "target_id": "EMP-00315",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00009.",
+    "evidence": {
+      "resource_id": "RES-00009",
+      "developer_admin_entitlements": [
+        "ENT-00043"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00043"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03866",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-07-05T06:24:10.104570Z",
+    "target_type": "employee",
+    "target_id": "EMP-00041",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['finance', 'tech_dev', 'tech_ops']",
+    "evidence": {
+      "divisions": [
+        "finance",
+        "tech_dev",
+        "tech_ops"
+      ],
+      "entitlement_ids": [
+        "ENT-00007",
+        "ENT-00043",
+        "ENT-00122"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03867",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-07-05T06:24:10.104607Z",
+    "target_type": "employee",
+    "target_id": "EMP-00006",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['finance', 'legal_compliance', 'tech_dev']",
+    "evidence": {
+      "divisions": [
+        "finance",
+        "legal_compliance",
+        "tech_dev"
+      ],
+      "entitlement_ids": [
+        "ENT-00043",
+        "ENT-00111",
+        "ENT-00218"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03868",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-07-05T06:24:10.104619Z",
+    "target_type": "employee",
+    "target_id": "EMP-00362",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_dev', 'finance', 'legal_compliance']",
+    "evidence": {
+      "divisions": [
+        "business_dev",
+        "finance",
+        "legal_compliance"
+      ],
+      "entitlement_ids": [
+        "ENT-00043",
+        "ENT-00108",
+        "ENT-00142"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03869",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-07-05T06:24:10.104632Z",
+    "target_type": "employee",
+    "target_id": "EMP-00305",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['finance', 'hr', 'tech_ops']",
+    "evidence": {
+      "divisions": [
+        "finance",
+        "hr",
+        "tech_ops"
+      ],
+      "entitlement_ids": [
+        "ENT-00043",
+        "ENT-00060",
+        "ENT-00090"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
     },
     "workflow_state": "open",
     "workflow_history": [],
