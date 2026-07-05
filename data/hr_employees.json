@@ -11532,7 +11532,7 @@
     "email": "emp-00530@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -11543,7 +11543,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-02T00:16:13.736418Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-05T18:35:01.729898Z"
   },
   {
     "id": "EMP-00531",
@@ -17277,6 +17277,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-05T17:01:04.000788Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00823",
+    "full_name": "Ariel Benson",
+    "email": "emp-00823@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-07-05T18:35:01.729898Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-05T18:35:01.729898Z",
     "terminated_at": null
   }
 ]
