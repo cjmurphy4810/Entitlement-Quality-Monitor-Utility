@@ -5123,7 +5123,7 @@
     "email": "emp-00223@example.com",
     "current_role": "business_analyst",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -5134,7 +5134,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T18:21:54.534333Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-05T14:26:35.025215Z"
   },
   {
     "id": "EMP-00224",
@@ -17195,6 +17195,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-05T11:16:46.142735Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00819",
+    "full_name": "Holly Flores",
+    "email": "emp-00819@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-05T14:26:35.025215Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-05T14:26:35.025215Z",
     "terminated_at": null
   }
 ]

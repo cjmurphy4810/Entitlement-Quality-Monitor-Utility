@@ -94669,5 +94669,81 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03897",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-05T14:26:36.005679Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01661",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00102",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00218",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03898",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-05T14:26:36.006439Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01662",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00326",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00242",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03899",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-07-05T14:26:36.179613Z",
+    "target_type": "employee",
+    "target_id": "EMP-00102",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_sales', 'tech_dev', 'tech_ops']",
+    "evidence": {
+      "divisions": [
+        "business_sales",
+        "tech_dev",
+        "tech_ops"
+      ],
+      "entitlement_ids": [
+        "ENT-00009",
+        "ENT-00122",
+        "ENT-00218"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
