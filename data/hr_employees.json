@@ -14589,14 +14589,20 @@
     "id": "EMP-00685",
     "full_name": "Christian Ramos",
     "email": "emp-00685@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-06-22T18:04:37.295039Z",
+        "ended_at": "2026-07-05T17:01:04.000788Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-05T17:01:04.000788Z",
         "ended_at": null
       }
     ],
@@ -17252,6 +17258,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-05T15:45:34.023424Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00822",
+    "full_name": "Stephanie Wilcox",
+    "email": "emp-00822@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-05T17:01:04.000788Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-05T17:01:04.000788Z",
     "terminated_at": null
   }
 ]
