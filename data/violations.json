@@ -94934,5 +94934,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-03908",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-05T20:08:46.657665Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01667",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00044",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-03909",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-05T20:08:46.806769Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01667",
+    "explanation": "Terminated employee EMP-00362 (Sandra Taylor) still holds active assignment ASN-01667.",
+    "evidence": {
+      "employee_id": "EMP-00362",
+      "terminated_at": "2026-07-05T06:24:09.154388+00:00",
+      "entitlement_id": "ENT-00044"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
