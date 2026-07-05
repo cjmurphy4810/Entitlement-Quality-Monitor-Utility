@@ -17158,5 +17158,43 @@
     "manager_id": null,
     "hired_at": "2026-07-04T23:31:46.550918Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00817",
+    "full_name": "Robert Mills",
+    "email": "emp-00817@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-05T11:16:46.142735Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-05T11:16:46.142735Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00818",
+    "full_name": "Brian Vargas",
+    "email": "emp-00818@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-05T11:16:46.142735Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-05T11:16:46.142735Z",
+    "terminated_at": null
   }
 ]
