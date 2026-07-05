@@ -17215,5 +17215,43 @@
     "manager_id": null,
     "hired_at": "2026-07-05T14:26:35.025215Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00820",
+    "full_name": "Ryan Evans",
+    "email": "emp-00820@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-05T15:45:34.023424Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-05T15:45:34.023424Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00821",
+    "full_name": "Timothy Williams",
+    "email": "emp-00821@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-07-05T15:45:34.023424Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-05T15:45:34.023424Z",
+    "terminated_at": null
   }
 ]
