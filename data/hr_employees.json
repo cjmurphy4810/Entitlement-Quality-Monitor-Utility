@@ -11429,8 +11429,8 @@
     "id": "EMP-00525",
     "full_name": "Kelly Kelley",
     "email": "emp-00525@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -11443,6 +11443,12 @@
         "role": "operations",
         "division": "finance",
         "started_at": "2026-06-14T22:04:16.609664Z",
+        "ended_at": "2026-07-06T00:02:02.766383Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-07-06T00:02:02.766383Z",
         "ended_at": null
       }
     ],
@@ -17334,6 +17340,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-05T20:08:45.663814Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00826",
+    "full_name": "Jenna Mitchell",
+    "email": "emp-00826@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-06T00:02:02.766383Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T00:02:02.766383Z",
     "terminated_at": null
   }
 ]
