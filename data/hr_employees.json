@@ -17423,5 +17423,43 @@
     "manager_id": null,
     "hired_at": "2026-07-06T08:56:04.319248Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00830",
+    "full_name": "Omar Smith",
+    "email": "emp-00830@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-06T12:42:10.381804Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T12:42:10.381804Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00831",
+    "full_name": "Erin Garcia",
+    "email": "emp-00831@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-06T12:42:10.381804Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T12:42:10.381804Z",
+    "terminated_at": null
   }
 ]

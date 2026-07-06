@@ -20,7 +20,7 @@
     "id": "ENT-00002",
     "name": "tech_dev elevated_ro 2",
     "pbl_description": "Provides elevated read access in Johnson-Davis Share_drive with limited write capability for approved exceptions.",
-    "access_tier": 1,
+    "access_tier": 2,
     "acceptable_roles": [
       "operations",
       "customer",
@@ -35,7 +35,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-01-06T04:52:59.501678Z",
-    "updated_at": "2026-05-08T21:54:26.786088Z"
+    "updated_at": "2026-07-06T12:42:10.381804Z"
   },
   {
     "id": "ENT-00003",
