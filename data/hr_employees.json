@@ -17562,5 +17562,24 @@
     "manager_id": null,
     "hired_at": "2026-07-06T21:53:39.157668Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00837",
+    "full_name": "Katie Church",
+    "email": "emp-00837@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-06T23:00:47.961488Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T23:00:47.961488Z",
+    "terminated_at": null
   }
 ]
