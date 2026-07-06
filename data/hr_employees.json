@@ -16744,14 +16744,20 @@
     "id": "EMP-00794",
     "full_name": "Jason Simon",
     "email": "emp-00794@example.com",
-    "current_role": "customer",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_dev",
         "started_at": "2026-07-03T22:00:05.150763Z",
+        "ended_at": "2026-07-06T18:24:14.033058Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-07-06T18:24:14.033058Z",
         "ended_at": null
       }
     ],
@@ -17479,6 +17485,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-06T16:14:49.484927Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00833",
+    "full_name": "Steve Sanders",
+    "email": "emp-00833@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-06T18:24:14.033058Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T18:24:14.033058Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00834",
+    "full_name": "Michael Walton",
+    "email": "emp-00834@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-06T18:24:14.033058Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T18:24:14.033058Z",
     "terminated_at": null
   }
 ]
