@@ -17404,5 +17404,24 @@
     "manager_id": null,
     "hired_at": "2026-07-06T04:48:59.621213Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00829",
+    "full_name": "Phillip Randall",
+    "email": "emp-00829@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-06T08:56:04.319248Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T08:56:04.319248Z",
+    "terminated_at": null
   }
 ]
