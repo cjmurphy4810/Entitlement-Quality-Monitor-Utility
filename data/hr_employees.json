@@ -17524,5 +17524,43 @@
     "manager_id": null,
     "hired_at": "2026-07-06T18:24:14.033058Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00835",
+    "full_name": "Mark Nguyen",
+    "email": "emp-00835@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-06T21:53:39.157668Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T21:53:39.157668Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00836",
+    "full_name": "Sabrina Edwards",
+    "email": "emp-00836@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-06T21:53:39.157668Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-06T21:53:39.157668Z",
+    "terminated_at": null
   }
 ]
