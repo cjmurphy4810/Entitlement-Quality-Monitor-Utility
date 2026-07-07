@@ -17619,5 +17619,24 @@
     "manager_id": null,
     "hired_at": "2026-07-07T01:14:24.626814Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00840",
+    "full_name": "Ryan Bender",
+    "email": "emp-00840@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-07T05:30:07.451654Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-07T05:30:07.451654Z",
+    "terminated_at": null
   }
 ]
