@@ -16085,14 +16085,20 @@
     "id": "EMP-00759",
     "full_name": "Brandy Beck",
     "email": "emp-00759@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-06-29T21:19:31.816702Z",
+        "ended_at": "2026-07-07T14:14:33.393335Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-07T14:14:33.393335Z",
         "ended_at": null
       }
     ],
@@ -17662,6 +17668,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-07T08:50:29.287552Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00842",
+    "full_name": "Carolyn Fuller",
+    "email": "emp-00842@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-07T14:14:33.393335Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-07T14:14:33.393335Z",
     "terminated_at": null
   }
 ]
