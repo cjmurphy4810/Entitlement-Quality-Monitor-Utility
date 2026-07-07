@@ -14234,14 +14234,20 @@
     "id": "EMP-00666",
     "full_name": "Jill Rios",
     "email": "emp-00666@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-06-20T06:57:09.231317Z",
+        "ended_at": "2026-07-07T18:56:40.175162Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-07T18:56:40.175162Z",
         "ended_at": null
       }
     ],
