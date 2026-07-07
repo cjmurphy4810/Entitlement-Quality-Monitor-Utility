@@ -16605,7 +16605,7 @@
     "email": "emp-00785@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -16616,7 +16616,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-03T06:07:22.750491Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-07T23:28:02.965457Z"
   },
   {
     "id": "EMP-00786",
@@ -17483,14 +17483,20 @@
     "id": "EMP-00831",
     "full_name": "Erin Garcia",
     "email": "emp-00831@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_ops",
         "started_at": "2026-07-06T12:42:10.381804Z",
+        "ended_at": "2026-07-07T23:28:02.965457Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-07T23:28:02.965457Z",
         "ended_at": null
       }
     ],
