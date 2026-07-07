@@ -14865,14 +14865,20 @@
     "id": "EMP-00697",
     "full_name": "Megan Davis",
     "email": "emp-00697@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-06-24T06:40:42.836974Z",
+        "ended_at": "2026-07-07T22:06:58.299770Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-07T22:06:58.299770Z",
         "ended_at": null
       }
     ],
@@ -17756,6 +17762,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-07T20:47:50.741173Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00846",
+    "full_name": "Timothy Acosta",
+    "email": "emp-00846@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-07T22:06:58.299770Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-07T22:06:58.299770Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00847",
+    "full_name": "Taylor Bender",
+    "email": "emp-00847@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-07T22:06:58.299770Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-07T22:06:58.299770Z",
     "terminated_at": null
   }
 ]
