@@ -17738,5 +17738,24 @@
     "manager_id": null,
     "hired_at": "2026-07-07T16:43:51.168014Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00845",
+    "full_name": "Anthony Gonzalez",
+    "email": "emp-00845@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-07T20:47:50.741173Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-07T20:47:50.741173Z",
+    "terminated_at": null
   }
 ]
