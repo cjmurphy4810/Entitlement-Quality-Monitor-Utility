@@ -11290,14 +11290,20 @@
     "id": "EMP-00518",
     "full_name": "Garrett Chen",
     "email": "emp-00518@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-05-31T13:23:26.488768Z",
+        "ended_at": "2026-07-08T11:21:25.373256Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-08T11:21:25.373256Z",
         "ended_at": null
       }
     ],
@@ -17932,6 +17938,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-08T09:22:12.723873Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00854",
+    "full_name": "Sara Johnson",
+    "email": "emp-00854@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-08T11:21:25.373256Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-08T11:21:25.373256Z",
     "terminated_at": null
   }
 ]
