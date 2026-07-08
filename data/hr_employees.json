@@ -18046,5 +18046,24 @@
     "manager_id": null,
     "hired_at": "2026-07-08T18:13:50.789802Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00859",
+    "full_name": "Alyssa Jones",
+    "email": "emp-00859@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-08T22:57:58.918399Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-08T22:57:58.918399Z",
+    "terminated_at": null
   }
 ]
