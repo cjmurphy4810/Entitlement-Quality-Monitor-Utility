@@ -14443,7 +14443,7 @@
     "email": "emp-00675@example.com",
     "current_role": "operations",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -14454,7 +14454,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T13:21:39.035103Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-08T18:13:50.789802Z"
   },
   {
     "id": "EMP-00676",
@@ -18026,6 +18026,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-08T16:55:20.711083Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00858",
+    "full_name": "Thomas Craig",
+    "email": "emp-00858@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-08T18:13:50.789802Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-08T18:13:50.789802Z",
     "terminated_at": null
   }
 ]
