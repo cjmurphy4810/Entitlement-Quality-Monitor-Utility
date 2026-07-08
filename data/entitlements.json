@@ -4154,5 +4154,21 @@
     "sod_tags": [],
     "created_at": "2026-07-07T14:14:33.393335Z",
     "updated_at": "2026-07-07T14:14:33.393335Z"
+  },
+  {
+    "id": "ENT-00262",
+    "name": "new entitlement ENT-00262",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00059"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-08T12:58:25.137657Z",
+    "updated_at": "2026-07-08T12:58:25.137657Z"
   }
 ]
