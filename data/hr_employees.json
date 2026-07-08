@@ -3471,7 +3471,7 @@
     "email": "emp-00149@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -3488,7 +3488,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T23:13:43.951053Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-08T21:38:27.030872Z"
   },
   {
     "id": "EMP-00150",
