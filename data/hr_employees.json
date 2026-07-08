@@ -2127,14 +2127,20 @@
     "id": "EMP-00091",
     "full_name": "Toni Fitzgerald",
     "email": "user00091@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2025-08-01T04:52:59.501678Z",
+        "ended_at": "2026-07-08T15:23:02.986292Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-08T15:23:02.986292Z",
         "ended_at": null
       }
     ],
@@ -17957,6 +17963,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-08T11:21:25.373256Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00855",
+    "full_name": "Janice Gallagher",
+    "email": "emp-00855@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-08T15:23:02.986292Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-08T15:23:02.986292Z",
     "terminated_at": null
   }
 ]
