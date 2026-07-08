@@ -16862,14 +16862,20 @@
     "id": "EMP-00798",
     "full_name": "Elizabeth Waller",
     "email": "emp-00798@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-07-04T01:06:17.691153Z",
+        "ended_at": "2026-07-08T04:17:47.506060Z"
+      },
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-08T04:17:47.506060Z",
         "ended_at": null
       }
     ],
@@ -17850,6 +17856,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-08T00:59:26.635941Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00850",
+    "full_name": "Sara Turner",
+    "email": "emp-00850@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-08T04:17:47.506060Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-08T04:17:47.506060Z",
     "terminated_at": null
   }
 ]
