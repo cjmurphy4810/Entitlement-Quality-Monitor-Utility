@@ -98107,5 +98107,146 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04033",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-08T09:22:13.137103Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01715",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00515",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00223",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04034",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-08T09:22:13.137701Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01716",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_analyst', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00177",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00017",
+      "acceptable_roles": [
+        "business_analyst",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04035",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-08T09:22:13.754733Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01715",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00515",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00223",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04036",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-08T09:22:13.755521Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01716",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00177",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00017",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04037",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-08T09:22:13.915485Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01715",
+    "explanation": "Terminated employee EMP-00515 (Jody Green) still holds active assignment ASN-01715.",
+    "evidence": {
+      "employee_id": "EMP-00515",
+      "terminated_at": "2026-06-02T13:55:47.113930+00:00",
+      "entitlement_id": "ENT-00223"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04038",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-08T09:22:13.915876Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01716",
+    "explanation": "Terminated employee EMP-00177 (Ariana Taylor) still holds active assignment ASN-01716.",
+    "evidence": {
+      "employee_id": "EMP-00177",
+      "terminated_at": "2026-06-16T05:43:03.626730+00:00",
+      "entitlement_id": "ENT-00017"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

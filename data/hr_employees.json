@@ -17914,5 +17914,24 @@
     "manager_id": null,
     "hired_at": "2026-07-08T06:44:09.924821Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00853",
+    "full_name": "Rodney Gordon",
+    "email": "emp-00853@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-07-08T09:22:12.723873Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-08T09:22:12.723873Z",
+    "terminated_at": null
   }
 ]
