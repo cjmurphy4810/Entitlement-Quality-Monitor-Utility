@@ -18065,5 +18065,24 @@
     "manager_id": null,
     "hired_at": "2026-07-08T22:57:58.918399Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00860",
+    "full_name": "Daniel Norton",
+    "email": "emp-00860@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-07-09T00:10:03.221517Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-09T00:10:03.221517Z",
+    "terminated_at": null
   }
 ]
