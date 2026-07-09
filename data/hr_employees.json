@@ -10206,7 +10206,7 @@
     "email": "emp-00464@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -10217,7 +10217,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-26T00:00:19.539601Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-09T11:08:11.786754Z"
   },
   {
     "id": "EMP-00465",
@@ -18121,6 +18121,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-09T07:59:25.378118Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00863",
+    "full_name": "Melissa Hunt",
+    "email": "emp-00863@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-09T11:08:11.786754Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-09T11:08:11.786754Z",
     "terminated_at": null
   }
 ]
