@@ -18166,5 +18166,24 @@
     "manager_id": null,
     "hired_at": "2026-07-09T18:51:47.100491Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00865",
+    "full_name": "Cynthia Mosley",
+    "email": "emp-00865@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-09T23:43:46.405377Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-09T23:43:46.405377Z",
+    "terminated_at": null
   }
 ]
