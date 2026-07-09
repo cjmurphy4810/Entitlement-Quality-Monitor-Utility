@@ -18084,5 +18084,43 @@
     "manager_id": null,
     "hired_at": "2026-07-09T00:10:03.221517Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00861",
+    "full_name": "Natalie Taylor",
+    "email": "emp-00861@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-07-09T07:59:25.378118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-09T07:59:25.378118Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00862",
+    "full_name": "Chelsea Thompson",
+    "email": "emp-00862@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-07-09T07:59:25.378118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-09T07:59:25.378118Z",
+    "terminated_at": null
   }
 ]
