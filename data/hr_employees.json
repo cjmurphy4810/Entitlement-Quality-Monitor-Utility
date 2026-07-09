@@ -11492,7 +11492,7 @@
     "email": "emp-00526@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -11503,7 +11503,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-01T00:01:56.533656Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-09T18:51:47.100491Z"
   },
   {
     "id": "EMP-00527",
@@ -18146,6 +18146,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-09T11:08:11.786754Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00864",
+    "full_name": "Jasmine Sanchez",
+    "email": "emp-00864@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-09T18:51:47.100491Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-09T18:51:47.100491Z",
     "terminated_at": null
   }
 ]
