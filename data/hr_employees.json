@@ -12432,7 +12432,7 @@
     "email": "emp-00572@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -12443,7 +12443,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-07T16:09:39.447828Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-10T22:54:48.832571Z"
   },
   {
     "id": "EMP-00573",
@@ -18462,6 +18462,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-10T21:32:50.613774Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00880",
+    "full_name": "Michael Hudson",
+    "email": "emp-00880@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-10T22:54:48.832571Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T22:54:48.832571Z",
     "terminated_at": null
   }
 ]
