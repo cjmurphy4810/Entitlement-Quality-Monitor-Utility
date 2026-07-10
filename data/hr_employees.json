@@ -18242,5 +18242,43 @@
     "manager_id": null,
     "hired_at": "2026-07-10T06:24:40.966659Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00869",
+    "full_name": "Lisa Odonnell",
+    "email": "emp-00869@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-10T09:58:11.744042Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T09:58:11.744042Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00870",
+    "full_name": "Jacob Carter",
+    "email": "emp-00870@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-10T09:58:11.744042Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T09:58:11.744042Z",
+    "terminated_at": null
   }
 ]
