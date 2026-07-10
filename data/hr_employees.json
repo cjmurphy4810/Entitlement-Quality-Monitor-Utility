@@ -15048,7 +15048,7 @@
     "email": "emp-00704@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -15059,7 +15059,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-24T21:08:19.631954Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-10T02:22:57.038345Z"
   },
   {
     "id": "EMP-00705",
@@ -18184,6 +18184,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-09T23:43:46.405377Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00866",
+    "full_name": "Lindsay Brown",
+    "email": "emp-00866@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-10T02:22:57.038345Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T02:22:57.038345Z",
     "terminated_at": null
   }
 ]
