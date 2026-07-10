@@ -101469,5 +101469,185 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04173",
+    "rule_id": "ENT-Q-01",
+    "rule_name": "PBL completeness",
+    "severity": "low",
+    "detected_at": "2026-07-10T18:56:35.830764Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00271",
+    "explanation": "PBL description fails completeness check: banned phrase: 'do things'",
+    "evidence": {
+      "pbl_description": "Lets the user do things in the system.",
+      "reasons": [
+        "banned phrase: 'do things'"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 please rewrite this description to clearly state what access is granted, on which system, and to whom.]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04174",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-07-10T18:56:35.831735Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00271",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "Lets the user do things in the system."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04175",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-10T18:56:36.086055Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01772",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00403",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00236",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04176",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-10T18:56:36.506458Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01772",
+    "explanation": "Employee division 'finance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00403",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00236",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04177",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T18:56:36.545889Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00828",
+    "explanation": "Terminated employee EMP-00282 (Dalton Gordon) still holds active assignment ASN-00828.",
+    "evidence": {
+      "employee_id": "EMP-00282",
+      "terminated_at": "2026-07-10T18:56:35.762953+00:00",
+      "entitlement_id": "ENT-00044"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04178",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T18:56:36.578190Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01267",
+    "explanation": "Terminated employee EMP-00282 (Dalton Gordon) still holds active assignment ASN-01267.",
+    "evidence": {
+      "employee_id": "EMP-00282",
+      "terminated_at": "2026-07-10T18:56:35.762953+00:00",
+      "entitlement_id": "ENT-00098"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04179",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T18:56:36.592893Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01459",
+    "explanation": "Terminated employee EMP-00282 (Dalton Gordon) still holds active assignment ASN-01459.",
+    "evidence": {
+      "employee_id": "EMP-00282",
+      "terminated_at": "2026-07-10T18:56:35.762953+00:00",
+      "entitlement_id": "ENT-00050"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04180",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T18:56:36.617816Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01772",
+    "explanation": "Terminated employee EMP-00403 (Cynthia Miller) still holds active assignment ASN-01772.",
+    "evidence": {
+      "employee_id": "EMP-00403",
+      "terminated_at": "2026-07-02T22:01:42.676056+00:00",
+      "entitlement_id": "ENT-00236"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

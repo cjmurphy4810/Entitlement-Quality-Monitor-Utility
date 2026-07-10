@@ -6418,7 +6418,7 @@
     "email": "emp-00282@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -6435,7 +6435,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T11:50:15.135742Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-10T18:56:35.762953Z"
   },
   {
     "id": "EMP-00283",
@@ -18361,6 +18361,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-10T17:15:24.453841Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00875",
+    "full_name": "Emily Lynch",
+    "email": "emp-00875@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-10T18:56:35.762953Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T18:56:35.762953Z",
     "terminated_at": null
   }
 ]
