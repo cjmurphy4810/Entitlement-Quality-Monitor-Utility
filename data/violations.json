@@ -101329,5 +101329,145 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04167",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-07-10T17:15:24.523208Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00270",
+    "explanation": "Entitlement Tier-4 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 4,
+      "offending_resources": [
+        {
+          "id": "RES-00083",
+          "criticality": "critical"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04168",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-10T17:15:24.842484Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01770",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00856",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00220",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04169",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-10T17:15:25.391751Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01770",
+    "explanation": "Employee division 'finance' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00856",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00220",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04170",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T17:15:25.439523Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00801",
+    "explanation": "Terminated employee EMP-00367 (Andrew Ortega) still holds active assignment ASN-00801.",
+    "evidence": {
+      "employee_id": "EMP-00367",
+      "terminated_at": "2026-07-10T17:15:24.453841+00:00",
+      "entitlement_id": "ENT-00089"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04171",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T17:15:25.493652Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01365",
+    "explanation": "Terminated employee EMP-00367 (Andrew Ortega) still holds active assignment ASN-01365.",
+    "evidence": {
+      "employee_id": "EMP-00367",
+      "terminated_at": "2026-07-10T17:15:24.453841+00:00",
+      "entitlement_id": "ENT-00187"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04172",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T17:15:25.533518Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01771",
+    "explanation": "Terminated employee EMP-00144 (Scott Smith) still holds active assignment ASN-01771.",
+    "evidence": {
+      "employee_id": "EMP-00144",
+      "terminated_at": "2026-06-27T12:50:29.785491+00:00",
+      "entitlement_id": "ENT-00036"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

@@ -8207,7 +8207,7 @@
     "email": "emp-00367@example.com",
     "current_role": "business_analyst",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -8218,7 +8218,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T11:37:13.877949Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-10T17:15:24.453841Z"
   },
   {
     "id": "EMP-00368",
@@ -18342,6 +18342,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-10T15:10:02.831921Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00874",
+    "full_name": "Bryan Valentine",
+    "email": "emp-00874@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-10T17:15:24.453841Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T17:15:24.453841Z",
     "terminated_at": null
   }
 ]
