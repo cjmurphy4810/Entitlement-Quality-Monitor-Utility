@@ -6916,7 +6916,7 @@
     "email": "emp-00306@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -6927,7 +6927,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-12T18:01:37.915127Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-10T06:24:40.966659Z"
   },
   {
     "id": "EMP-00307",
@@ -18203,6 +18203,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-10T02:22:57.038345Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00867",
+    "full_name": "Gerald Graves",
+    "email": "emp-00867@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-07-10T06:24:40.966659Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T06:24:40.966659Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00868",
+    "full_name": "James Beltran",
+    "email": "emp-00868@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-10T06:24:40.966659Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T06:24:40.966659Z",
     "terminated_at": null
   }
 ]
