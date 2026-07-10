@@ -18425,5 +18425,43 @@
     "manager_id": null,
     "hired_at": "2026-07-10T20:19:36.809978Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00878",
+    "full_name": "Dr. Allison Lozano",
+    "email": "emp-00878@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-10T21:32:50.613774Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T21:32:50.613774Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00879",
+    "full_name": "Douglas Houston",
+    "email": "emp-00879@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-07-10T21:32:50.613774Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-10T21:32:50.613774Z",
+    "terminated_at": null
   }
 ]

@@ -101719,5 +101719,120 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04184",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-10T21:32:50.985076Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01774",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00011",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00159",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04185",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-10T21:32:51.515971Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01774",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00011",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00159",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04186",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-10T21:32:51.516606Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01775",
+    "explanation": "Employee division 'finance' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00134",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00014",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04187",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T21:32:51.655605Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01774",
+    "explanation": "Terminated employee EMP-00011 (Michael Brown) still holds active assignment ASN-01774.",
+    "evidence": {
+      "employee_id": "EMP-00011",
+      "terminated_at": "2026-05-03T12:04:14.385666+00:00",
+      "entitlement_id": "ENT-00159"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04188",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-10T21:32:51.655939Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01775",
+    "explanation": "Terminated employee EMP-00134 (Ashley Lozano) still holds active assignment ASN-01775.",
+    "evidence": {
+      "employee_id": "EMP-00134",
+      "terminated_at": "2026-06-14T17:55:20.110488+00:00",
+      "entitlement_id": "ENT-00014"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
