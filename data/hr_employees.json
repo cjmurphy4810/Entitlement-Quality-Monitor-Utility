@@ -8521,8 +8521,8 @@
     "id": "EMP-00383",
     "full_name": "David Richard",
     "email": "emp-00383@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -8535,6 +8535,12 @@
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-05-27T20:06:06.547426Z",
+        "ended_at": "2026-07-11T13:03:05.662515Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-07-11T13:03:05.662515Z",
         "ended_at": null
       }
     ],
