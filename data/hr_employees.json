@@ -582,7 +582,7 @@
     "email": "user00026@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -599,7 +599,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-08-11T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-11T15:48:21.584986Z"
   },
   {
     "id": "EMP-00027",
@@ -18664,6 +18664,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T14:34:02.986145Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00890",
+    "full_name": "Lindsey Mitchell",
+    "email": "emp-00890@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-11T15:48:21.584986Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T15:48:21.584986Z",
     "terminated_at": null
   }
 ]
