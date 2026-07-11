@@ -9311,7 +9311,7 @@
     "email": "emp-00421@example.com",
     "current_role": "operations",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -9322,7 +9322,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-22T10:20:40.593623Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-11T10:39:40.101408Z"
   },
   {
     "id": "EMP-00422",
@@ -18563,6 +18563,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T09:05:48.073397Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00885",
+    "full_name": "Nicole Myers",
+    "email": "emp-00885@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-11T10:39:40.101408Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T10:39:40.101408Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00886",
+    "full_name": "Carolyn Martin",
+    "email": "emp-00886@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-11T10:39:40.101408Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T10:39:40.101408Z",
     "terminated_at": null
   }
 ]
