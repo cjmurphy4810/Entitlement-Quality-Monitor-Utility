@@ -4434,7 +4434,7 @@
     "email": "emp-00194@example.com",
     "current_role": "developer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -4451,7 +4451,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-04T20:00:52.262554Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-11T09:05:48.073397Z"
   },
   {
     "id": "EMP-00195",
@@ -18544,6 +18544,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T07:22:33.077564Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00884",
+    "full_name": "Stephanie Whitehead",
+    "email": "emp-00884@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-11T09:05:48.073397Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T09:05:48.073397Z",
     "terminated_at": null
   }
 ]
