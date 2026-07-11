@@ -18646,5 +18646,24 @@
     "manager_id": null,
     "hired_at": "2026-07-11T11:46:47.546731Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00889",
+    "full_name": "Elizabeth Harrell",
+    "email": "emp-00889@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-11T14:34:02.986145Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T14:34:02.986145Z",
+    "terminated_at": null
   }
 ]
