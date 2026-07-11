@@ -18684,5 +18684,43 @@
     "manager_id": null,
     "hired_at": "2026-07-11T15:48:21.584986Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00891",
+    "full_name": "Mary White",
+    "email": "emp-00891@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-11T16:47:59.814727Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T16:47:59.814727Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00892",
+    "full_name": "Joseph Moyer",
+    "email": "emp-00892@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-07-11T16:47:59.814727Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T16:47:59.814727Z",
+    "terminated_at": null
   }
 ]
