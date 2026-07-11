@@ -9292,7 +9292,7 @@
     "email": "emp-00420@example.com",
     "current_role": "customer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -9303,7 +9303,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-22T02:54:04.031683Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-11T07:22:33.077564Z"
   },
   {
     "id": "EMP-00421",
@@ -18506,6 +18506,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T05:24:58.632400Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00882",
+    "full_name": "David Zimmerman",
+    "email": "emp-00882@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-11T07:22:33.077564Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T07:22:33.077564Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00883",
+    "full_name": "Thomas Donovan",
+    "email": "emp-00883@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-11T07:22:33.077564Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T07:22:33.077564Z",
     "terminated_at": null
   }
 ]
