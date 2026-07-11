@@ -18785,5 +18785,43 @@
     "manager_id": null,
     "hired_at": "2026-07-11T22:12:06.366743Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00896",
+    "full_name": "Sheila Schmidt",
+    "email": "emp-00896@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-11T23:23:33.275282Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T23:23:33.275282Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00897",
+    "full_name": "Donald Mitchell",
+    "email": "emp-00897@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-07-11T23:23:33.275282Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T23:23:33.275282Z",
+    "terminated_at": null
   }
 ]
