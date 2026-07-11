@@ -274,7 +274,7 @@
     "email": "user00012@example.com",
     "current_role": "business_user",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -285,7 +285,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-09-06T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-11T20:01:38.486315Z"
   },
   {
     "id": "EMP-00013",
@@ -18721,6 +18721,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T16:47:59.814727Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00893",
+    "full_name": "Ashley West",
+    "email": "emp-00893@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-11T20:01:38.486315Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-11T20:01:38.486315Z",
     "terminated_at": null
   }
 ]
