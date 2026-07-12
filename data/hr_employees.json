@@ -10840,8 +10840,8 @@
     "id": "EMP-00494",
     "full_name": "Randy Michael",
     "email": "emp-00494@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
@@ -10854,6 +10854,12 @@
         "role": "developer",
         "division": "finance",
         "started_at": "2026-07-02T23:34:45.159701Z",
+        "ended_at": "2026-07-12T13:04:11.095435Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-12T13:04:11.095435Z",
         "ended_at": null
       }
     ],
@@ -18954,6 +18960,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-12T11:53:27.509764Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00904",
+    "full_name": "Daniel Lamb",
+    "email": "emp-00904@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-07-12T13:04:11.095435Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T13:04:11.095435Z",
     "terminated_at": null
   }
 ]
