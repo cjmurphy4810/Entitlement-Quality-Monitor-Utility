@@ -16308,14 +16308,20 @@
     "id": "EMP-00766",
     "full_name": "Steven Martinez",
     "email": "emp-00766@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-07-01T06:19:44.126899Z",
+        "ended_at": "2026-07-12T09:24:58.323570Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-12T09:24:58.323570Z",
         "ended_at": null
       }
     ],
