@@ -19200,5 +19200,43 @@
     "manager_id": null,
     "hired_at": "2026-07-12T22:12:59.363773Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00915",
+    "full_name": "Isaac Mercado",
+    "email": "emp-00915@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-12T23:23:32.238923Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T23:23:32.238923Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00916",
+    "full_name": "Anna Rogers",
+    "email": "emp-00916@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-12T23:23:32.238923Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T23:23:32.238923Z",
+    "terminated_at": null
   }
 ]
