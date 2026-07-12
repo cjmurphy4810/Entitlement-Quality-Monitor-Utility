@@ -12100,14 +12100,20 @@
     "id": "EMP-00554",
     "full_name": "Larry Moore",
     "email": "emp-00554@example.com",
-    "current_role": "business_user",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_ops",
         "started_at": "2026-06-05T17:10:09.262948Z",
+        "ended_at": "2026-07-12T18:56:00.294997Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-07-12T18:56:00.294997Z",
         "ended_at": null
       }
     ],
@@ -19105,6 +19111,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-12T17:54:45.214776Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00911",
+    "full_name": "Nicole Anderson",
+    "email": "emp-00911@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-07-12T18:56:00.294997Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T18:56:00.294997Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00912",
+    "full_name": "Pamela Collins",
+    "email": "emp-00912@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-07-12T18:56:00.294997Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T18:56:00.294997Z",
     "terminated_at": null
   }
 ]
