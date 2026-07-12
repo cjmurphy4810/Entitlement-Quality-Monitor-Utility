@@ -4180,14 +4180,20 @@
     "id": "EMP-00182",
     "full_name": "Nancy Perez",
     "email": "emp-00182@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-05-03T22:34:37.830667Z",
+        "ended_at": "2026-07-12T17:54:45.214776Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-12T17:54:45.214776Z",
         "ended_at": null
       }
     ],
@@ -19080,6 +19086,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-12T16:51:55.649714Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00910",
+    "full_name": "Tracy King",
+    "email": "emp-00910@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-12T17:54:45.214776Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T17:54:45.214776Z",
     "terminated_at": null
   }
 ]
