@@ -16177,7 +16177,7 @@
     "email": "emp-00759@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -16194,7 +16194,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-29T21:19:31.816702Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-12T11:53:27.509764Z"
   },
   {
     "id": "EMP-00760",
@@ -18916,6 +18916,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-12T10:51:40.328828Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00902",
+    "full_name": "Benjamin Thomas",
+    "email": "emp-00902@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-07-12T11:53:27.509764Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T11:53:27.509764Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00903",
+    "full_name": "Juan Jennings",
+    "email": "emp-00903@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-12T11:53:27.509764Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T11:53:27.509764Z",
     "terminated_at": null
   }
 ]
