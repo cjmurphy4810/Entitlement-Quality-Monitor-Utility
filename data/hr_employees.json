@@ -18823,5 +18823,24 @@
     "manager_id": null,
     "hired_at": "2026-07-11T23:23:33.275282Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00898",
+    "full_name": "Robert Anderson",
+    "email": "emp-00898@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-12T01:02:16.978475Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T01:02:16.978475Z",
+    "terminated_at": null
   }
 ]

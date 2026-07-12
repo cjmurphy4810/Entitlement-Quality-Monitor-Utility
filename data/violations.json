@@ -104246,5 +104246,101 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04291",
+    "rule_id": "ENT-Q-01",
+    "rule_name": "PBL completeness",
+    "severity": "low",
+    "detected_at": "2026-07-12T01:02:17.045556Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00276",
+    "explanation": "PBL description fails completeness check: banned phrase: 'access stuff'",
+    "evidence": {
+      "pbl_description": "This entitlement gives access stuff for users.",
+      "reasons": [
+        "banned phrase: 'access stuff'"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 please rewrite this description to clearly state what access is granted, on which system, and to whom.]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04292",
+    "rule_id": "ENT-Q-04",
+    "rule_name": "Division-resource coherence",
+    "severity": "high",
+    "detected_at": "2026-07-12T01:02:17.048171Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00276",
+    "explanation": "HR division entitlement cannot include 'developer' role",
+    "evidence": {
+      "division": "hr",
+      "access_tier": 2,
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "review_with_compliance",
+      "_note": "HR division entitlement cannot include 'developer' role"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04293",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-12T01:02:17.452318Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01816",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00764",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00055",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04294",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-12T01:02:18.150991Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01816",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00764",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00055",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
