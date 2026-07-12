@@ -4402,5 +4402,21 @@
     "sod_tags": [],
     "created_at": "2026-07-12T04:48:03.466245Z",
     "updated_at": "2026-07-12T04:48:03.466245Z"
+  },
+  {
+    "id": "ENT-00278",
+    "name": "new entitlement ENT-00278",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00048"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-12T16:51:55.649714Z",
+    "updated_at": "2026-07-12T16:51:55.649714Z"
   }
 ]

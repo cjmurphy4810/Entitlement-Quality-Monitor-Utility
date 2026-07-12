@@ -19043,5 +19043,43 @@
     "manager_id": null,
     "hired_at": "2026-07-12T15:53:20.474662Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00908",
+    "full_name": "Keith Church",
+    "email": "emp-00908@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-12T16:51:55.649714Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T16:51:55.649714Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00909",
+    "full_name": "Donald Ramirez",
+    "email": "emp-00909@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-07-12T16:51:55.649714Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-12T16:51:55.649714Z",
+    "terminated_at": null
   }
 ]
