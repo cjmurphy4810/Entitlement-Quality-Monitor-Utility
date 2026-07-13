@@ -1738,8 +1738,8 @@
     "id": "EMP-00074",
     "full_name": "Alexander Wiley",
     "email": "user00074@example.com",
-    "current_role": "customer",
-    "current_division": "finance",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -1752,6 +1752,12 @@
         "role": "customer",
         "division": "finance",
         "started_at": "2026-06-06T21:35:44.231575Z",
+        "ended_at": "2026-07-13T20:57:39.734614Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-13T20:57:39.734614Z",
         "ended_at": null
       }
     ],
@@ -18016,7 +18022,7 @@
     "email": "emp-00852@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -18027,7 +18033,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-08T06:44:09.924821Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-13T20:57:39.734614Z"
   },
   {
     "id": "EMP-00853",
@@ -19357,6 +19363,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-13T18:28:07.982853Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00923",
+    "full_name": "Ashley Beck",
+    "email": "emp-00923@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-13T20:57:39.734614Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-13T20:57:39.734614Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00924",
+    "full_name": "Jason White",
+    "email": "emp-00924@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-13T20:57:39.734614Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-13T20:57:39.734614Z",
     "terminated_at": null
   }
 ]
