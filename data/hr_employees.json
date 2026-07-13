@@ -19244,5 +19244,43 @@
     "manager_id": null,
     "hired_at": "2026-07-12T23:23:32.238923Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00917",
+    "full_name": "Robert Chang",
+    "email": "emp-00917@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-13T08:11:57.876546Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-13T08:11:57.876546Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00918",
+    "full_name": "Jill Jimenez",
+    "email": "emp-00918@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-13T08:11:57.876546Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-13T08:11:57.876546Z",
+    "terminated_at": null
   }
 ]
