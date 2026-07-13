@@ -1289,7 +1289,7 @@
     "email": "user00055@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -1312,7 +1312,7 @@
     ],
     "manager_id": null,
     "hired_at": "2025-05-23T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-13T23:47:10.404711Z"
   },
   {
     "id": "EMP-00056",
@@ -19407,6 +19407,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-13T20:57:39.734614Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00925",
+    "full_name": "Nancy Hart",
+    "email": "emp-00925@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-13T23:47:10.404711Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-13T23:47:10.404711Z",
     "terminated_at": null
   }
 ]
