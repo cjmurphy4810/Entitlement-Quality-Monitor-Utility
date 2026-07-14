@@ -19730,5 +19730,24 @@
     "manager_id": null,
     "hired_at": "2026-07-14T21:52:08.326204Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00941",
+    "full_name": "Melissa Bean",
+    "email": "emp-00941@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-14T23:45:31.073354Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T23:45:31.073354Z",
+    "terminated_at": null
   }
 ]
