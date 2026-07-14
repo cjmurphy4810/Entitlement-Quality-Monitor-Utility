@@ -19635,5 +19635,43 @@
     "manager_id": null,
     "hired_at": "2026-07-14T17:39:09.598151Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00936",
+    "full_name": "Ryan Dixon",
+    "email": "emp-00936@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-07-14T19:08:39.452462Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T19:08:39.452462Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00937",
+    "full_name": "Leah Quinn",
+    "email": "emp-00937@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-07-14T19:08:39.452462Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T19:08:39.452462Z",
+    "terminated_at": null
   }
 ]
