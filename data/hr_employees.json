@@ -19433,5 +19433,24 @@
     "manager_id": null,
     "hired_at": "2026-07-13T23:47:10.404711Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00926",
+    "full_name": "Amy Chapman",
+    "email": "emp-00926@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-14T04:45:44.022148Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T04:45:44.022148Z",
+    "terminated_at": null
   }
 ]
