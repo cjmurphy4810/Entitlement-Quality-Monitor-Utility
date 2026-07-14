@@ -6984,7 +6984,7 @@
     "email": "emp-00308@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -6995,7 +6995,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-12T21:47:19.148929Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-14T20:36:08.217952Z"
   },
   {
     "id": "EMP-00309",
@@ -19672,6 +19672,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-14T19:08:39.452462Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00938",
+    "full_name": "Misty Morales",
+    "email": "emp-00938@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-14T20:36:08.217952Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T20:36:08.217952Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00939",
+    "full_name": "Kristin Atkinson",
+    "email": "emp-00939@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-14T20:36:08.217952Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T20:36:08.217952Z",
     "terminated_at": null
   }
 ]
