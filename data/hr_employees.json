@@ -18667,7 +18667,7 @@
     "email": "emp-00885@example.com",
     "current_role": "business_user",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -18678,7 +18678,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T10:39:40.101408Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-14T12:45:45.044524Z"
   },
   {
     "id": "EMP-00886",
@@ -19514,6 +19514,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-14T11:03:51.472648Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00930",
+    "full_name": "Michele Sanchez",
+    "email": "emp-00930@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-14T12:45:45.044524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T12:45:45.044524Z",
     "terminated_at": null
   }
 ]
