@@ -8212,7 +8212,7 @@
     "email": "emp-00366@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -8223,7 +8223,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T11:37:13.877949Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-14T09:22:16.113880Z"
   },
   {
     "id": "EMP-00367",
@@ -19470,6 +19470,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-14T07:06:54.824347Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00928",
+    "full_name": "Melanie Gonzalez",
+    "email": "emp-00928@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-14T09:22:16.113880Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T09:22:16.113880Z",
     "terminated_at": null
   }
 ]
