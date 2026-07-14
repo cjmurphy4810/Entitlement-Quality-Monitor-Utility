@@ -1089,7 +1089,7 @@
     "email": "user00047@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -1100,7 +1100,7 @@
     ],
     "manager_id": null,
     "hired_at": "2025-09-05T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-14T16:09:47.976692Z"
   },
   {
     "id": "EMP-00048",
@@ -19571,6 +19571,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-14T14:44:04.603551Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00933",
+    "full_name": "Raymond Hill",
+    "email": "emp-00933@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-14T16:09:47.976692Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T16:09:47.976692Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00934",
+    "full_name": "Diana Gibson",
+    "email": "emp-00934@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-14T16:09:47.976692Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T16:09:47.976692Z",
     "terminated_at": null
   }
 ]
