@@ -6631,7 +6631,7 @@
     "email": "emp-00291@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -6648,7 +6648,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-11T02:34:43.932416Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-14T07:06:54.824347Z"
   },
   {
     "id": "EMP-00292",
@@ -19451,6 +19451,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-14T04:45:44.022148Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00927",
+    "full_name": "Carla Salinas",
+    "email": "emp-00927@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-07-14T07:06:54.824347Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-14T07:06:54.824347Z",
     "terminated_at": null
   }
 ]
