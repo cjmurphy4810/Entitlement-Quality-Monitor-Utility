@@ -19825,5 +19825,43 @@
     "manager_id": null,
     "hired_at": "2026-07-15T07:09:45.005009Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00946",
+    "full_name": "Daniel Walls",
+    "email": "emp-00946@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-07-15T09:26:58.205678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-15T09:26:58.205678Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00947",
+    "full_name": "Mariah Barber",
+    "email": "emp-00947@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-15T09:26:58.205678Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-15T09:26:58.205678Z",
+    "terminated_at": null
   }
 ]
