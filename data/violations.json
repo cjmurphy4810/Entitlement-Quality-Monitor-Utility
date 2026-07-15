@@ -109943,5 +109943,96 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04521",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-15T16:15:00.159163Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01905",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00820",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00064",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04522",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-15T16:15:00.665163Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00563",
+    "explanation": "Terminated employee EMP-00199 (James Hurst) still holds active assignment ASN-00563.",
+    "evidence": {
+      "employee_id": "EMP-00199",
+      "terminated_at": "2026-07-15T16:14:59.814459+00:00",
+      "entitlement_id": "ENT-00068"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04523",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-15T16:15:00.681154Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00773",
+    "explanation": "Terminated employee EMP-00199 (James Hurst) still holds active assignment ASN-00773.",
+    "evidence": {
+      "employee_id": "EMP-00199",
+      "terminated_at": "2026-07-15T16:14:59.814459+00:00",
+      "entitlement_id": "ENT-00114"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04524",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-15T16:15:00.700874Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01006",
+    "explanation": "Terminated employee EMP-00199 (James Hurst) still holds active assignment ASN-01006.",
+    "evidence": {
+      "employee_id": "EMP-00199",
+      "terminated_at": "2026-07-15T16:14:59.814459+00:00",
+      "entitlement_id": "ENT-00012"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
