@@ -110562,5 +110562,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04547",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-15T23:53:24.436728Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01914",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00430",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00111",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04548",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-15T23:53:24.612596Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01709",
+    "explanation": "Terminated employee EMP-00740 (Andrea Scott) still holds active assignment ASN-01709.",
+    "evidence": {
+      "employee_id": "EMP-00740",
+      "terminated_at": "2026-07-15T23:53:23.180233+00:00",
+      "entitlement_id": "ENT-00098"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
