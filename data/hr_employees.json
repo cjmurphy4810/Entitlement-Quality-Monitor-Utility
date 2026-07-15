@@ -19749,5 +19749,24 @@
     "manager_id": null,
     "hired_at": "2026-07-14T23:45:31.073354Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00942",
+    "full_name": "Scott Burns",
+    "email": "emp-00942@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-07-15T01:49:00.777670Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-15T01:49:00.777670Z",
+    "terminated_at": null
   }
 ]
