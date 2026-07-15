@@ -20039,5 +20039,43 @@
     "manager_id": null,
     "hired_at": "2026-07-15T20:30:22.019897Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00956",
+    "full_name": "Brenda Gomez",
+    "email": "emp-00956@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-15T22:52:54.922426Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-15T22:52:54.922426Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00957",
+    "full_name": "Ruth Gomez",
+    "email": "emp-00957@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-15T22:52:54.922426Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-15T22:52:54.922426Z",
+    "terminated_at": null
   }
 ]
