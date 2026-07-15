@@ -19863,5 +19863,43 @@
     "manager_id": null,
     "hired_at": "2026-07-15T09:26:58.205678Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00948",
+    "full_name": "Caleb Quinn",
+    "email": "emp-00948@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-15T11:08:04.046970Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-15T11:08:04.046970Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00949",
+    "full_name": "Dennis Acevedo",
+    "email": "emp-00949@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-15T11:08:04.046970Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-15T11:08:04.046970Z",
+    "terminated_at": null
   }
 ]

@@ -109757,5 +109757,76 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04513",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-15T11:08:04.486031Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01902",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00249",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00003",
+      "acceptable_roles": [
+        "developer",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04514",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-15T11:08:05.108237Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01902",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00249",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00003",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04515",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-15T11:08:05.277216Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01902",
+    "explanation": "Terminated employee EMP-00249 (Patrick Roberts) still holds active assignment ASN-01902.",
+    "evidence": {
+      "employee_id": "EMP-00249",
+      "terminated_at": "2026-06-05T08:40:18.130254+00:00",
+      "entitlement_id": "ENT-00003"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
