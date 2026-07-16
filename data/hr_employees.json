@@ -12361,14 +12361,20 @@
     "id": "EMP-00563",
     "full_name": "Heather Collins",
     "email": "emp-00563@example.com",
-    "current_role": "customer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "hr",
         "started_at": "2026-06-06T20:05:47.963304Z",
+        "ended_at": "2026-07-16T20:24:51.788946Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-07-16T20:24:51.788946Z",
         "ended_at": null
       }
     ],
@@ -20328,6 +20334,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-16T19:22:10.123329Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00970",
+    "full_name": "Tiffany Patterson",
+    "email": "emp-00970@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-16T20:24:51.788946Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T20:24:51.788946Z",
     "terminated_at": null
   }
 ]
