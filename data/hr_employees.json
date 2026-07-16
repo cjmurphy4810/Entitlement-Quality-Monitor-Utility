@@ -5015,7 +5015,7 @@
     "email": "emp-00217@example.com",
     "current_role": "business_user",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -5032,7 +5032,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T05:42:13.536854Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-16T19:22:10.123329Z"
   },
   {
     "id": "EMP-00218",
@@ -20290,6 +20290,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-16T18:00:18.283951Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00968",
+    "full_name": "Shannon Combs",
+    "email": "emp-00968@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-16T19:22:10.123329Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T19:22:10.123329Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00969",
+    "full_name": "Laurie Miller",
+    "email": "emp-00969@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-16T19:22:10.123329Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T19:22:10.123329Z",
     "terminated_at": null
   }
 ]

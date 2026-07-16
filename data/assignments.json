@@ -4847,7 +4847,7 @@
     "entitlement_id": "ENT-00071",
     "granted_at": "2026-05-10T08:01:11.496212Z",
     "granted_by": "system",
-    "last_certified_at": "2026-05-15T10:43:51.702670Z",
+    "last_certified_at": "2026-07-16T19:22:10.123329Z",
     "active": true
   },
   {
@@ -8708,7 +8708,7 @@
     "entitlement_id": "ENT-00115",
     "granted_at": "2026-05-29T10:40:27.910200Z",
     "granted_by": "system",
-    "last_certified_at": "2026-07-07T08:50:29.287552Z",
+    "last_certified_at": "2026-07-16T19:22:10.123329Z",
     "active": true
   },
   {
@@ -16988,7 +16988,7 @@
     "entitlement_id": "ENT-00139",
     "granted_at": "2026-07-14T20:36:08.217952Z",
     "granted_by": "system",
-    "last_certified_at": null,
+    "last_certified_at": "2026-07-16T19:22:10.123329Z",
     "active": true
   },
   {
@@ -17392,6 +17392,24 @@
     "employee_id": "EMP-00884",
     "entitlement_id": "ENT-00115",
     "granted_at": "2026-07-16T18:00:18.283951Z",
+    "granted_by": "system",
+    "last_certified_at": null,
+    "active": true
+  },
+  {
+    "id": "ASN-01934",
+    "employee_id": "EMP-00341",
+    "entitlement_id": "ENT-00194",
+    "granted_at": "2026-07-16T19:22:10.123329Z",
+    "granted_by": "system",
+    "last_certified_at": null,
+    "active": true
+  },
+  {
+    "id": "ASN-01935",
+    "employee_id": "EMP-00328",
+    "entitlement_id": "ENT-00243",
+    "granted_at": "2026-07-16T19:22:10.123329Z",
     "granted_by": "system",
     "last_certified_at": null,
     "active": true
