@@ -7847,7 +7847,7 @@
     "email": "emp-00349@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -7864,7 +7864,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T14:38:04.856518Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-16T15:28:31.129502Z"
   },
   {
     "id": "EMP-00350",
@@ -10843,14 +10843,20 @@
     "id": "EMP-00491",
     "full_name": "Mark Bautista",
     "email": "emp-00491@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-05-29T13:54:40.307751Z",
+        "ended_at": "2026-07-16T15:28:31.129502Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-16T15:28:31.129502Z",
         "ended_at": null
       }
     ],
@@ -20170,6 +20176,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-16T10:01:23.468968Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00962",
+    "full_name": "Olivia Ramirez",
+    "email": "emp-00962@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-07-16T15:28:31.129502Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T15:28:31.129502Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00963",
+    "full_name": "Christian Zhang",
+    "email": "emp-00963@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-07-16T15:28:31.129502Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T15:28:31.129502Z",
     "terminated_at": null
   }
 ]
