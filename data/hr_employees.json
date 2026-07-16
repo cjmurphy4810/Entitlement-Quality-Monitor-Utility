@@ -20215,5 +20215,43 @@
     "manager_id": null,
     "hired_at": "2026-07-16T15:28:31.129502Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00964",
+    "full_name": "Carrie Aguirre",
+    "email": "emp-00964@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-16T16:49:02.193629Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T16:49:02.193629Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00965",
+    "full_name": "Alison Wilson",
+    "email": "emp-00965@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-16T16:49:02.193629Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T16:49:02.193629Z",
+    "terminated_at": null
   }
 ]
