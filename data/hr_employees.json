@@ -5352,14 +5352,20 @@
     "id": "EMP-00232",
     "full_name": "Brianna Moreno",
     "email": "emp-00232@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_dev",
         "started_at": "2026-05-07T12:26:38.475252Z",
+        "ended_at": "2026-07-16T10:01:23.468968Z"
+      },
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-16T10:01:23.468968Z",
         "ended_at": null
       }
     ],
@@ -11444,7 +11450,7 @@
     "email": "emp-00520@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -11461,7 +11467,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T16:14:16.119143Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-16T10:01:23.468968Z"
   },
   {
     "id": "EMP-00521",
@@ -20126,6 +20132,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-16T01:59:19.836446Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00960",
+    "full_name": "Matthew Schroeder MD",
+    "email": "emp-00960@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-16T10:01:23.468968Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T10:01:23.468968Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00961",
+    "full_name": "Joseph Gilbert",
+    "email": "emp-00961@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-16T10:01:23.468968Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T10:01:23.468968Z",
     "terminated_at": null
   }
 ]
