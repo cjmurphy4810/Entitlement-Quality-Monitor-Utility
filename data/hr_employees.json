@@ -20379,5 +20379,43 @@
     "manager_id": null,
     "hired_at": "2026-07-16T21:30:50.339602Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00972",
+    "full_name": "Connor Sanders",
+    "email": "emp-00972@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-16T23:52:48.664601Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T23:52:48.664601Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00973",
+    "full_name": "Shannon Li",
+    "email": "emp-00973@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-16T23:52:48.664601Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T23:52:48.664601Z",
+    "terminated_at": null
   }
 ]
