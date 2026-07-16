@@ -7580,14 +7580,20 @@
     "id": "EMP-00336",
     "full_name": "Tammy Gonzalez",
     "email": "emp-00336@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-05-15T20:38:42.735111Z",
+        "ended_at": "2026-07-16T22:51:43.831693Z"
+      },
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-16T22:51:43.831693Z",
         "ended_at": null
       }
     ],
