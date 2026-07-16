@@ -20253,5 +20253,43 @@
     "manager_id": null,
     "hired_at": "2026-07-16T16:49:02.193629Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00966",
+    "full_name": "Michelle Keller",
+    "email": "emp-00966@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-16T18:00:18.283951Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T18:00:18.283951Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00967",
+    "full_name": "John Roach",
+    "email": "emp-00967@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-16T18:00:18.283951Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T18:00:18.283951Z",
+    "terminated_at": null
   }
 ]

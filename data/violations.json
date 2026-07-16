@@ -111704,5 +111704,180 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04595",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-16T18:00:18.581625Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01931",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00708",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00064",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04596",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-16T18:00:18.581988Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01932",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['operations', 'developer'].",
+    "evidence": {
+      "employee_id": "EMP-00911",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00016",
+      "acceptable_roles": [
+        "operations",
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04597",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-16T18:00:18.582346Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01933",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00884",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00115",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04598",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-16T18:00:19.001774Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01931",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00708",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00064",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04599",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-16T18:00:19.002250Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01932",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00911",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00016",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04600",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-16T18:00:19.002722Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01933",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00884",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00115",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04601",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-07-16T18:00:19.127965Z",
+    "target_type": "employee",
+    "target_id": "EMP-00911",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00004.",
+    "evidence": {
+      "resource_id": "RES-00004",
+      "developer_admin_entitlements": [
+        "ENT-00016"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00016"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
