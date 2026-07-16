@@ -8808,14 +8808,20 @@
     "id": "EMP-00394",
     "full_name": "Cindy Perez",
     "email": "emp-00394@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-05-19T22:43:08.267444Z",
+        "ended_at": "2026-07-16T01:59:19.836446Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-16T01:59:19.836446Z",
         "ended_at": null
       }
     ],
@@ -20095,6 +20101,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-15T23:53:23.180233Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00959",
+    "full_name": "Jackie Wilkins",
+    "email": "emp-00959@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-16T01:59:19.836446Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-16T01:59:19.836446Z",
     "terminated_at": null
   }
 ]
