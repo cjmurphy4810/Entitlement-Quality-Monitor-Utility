@@ -4704,5 +4704,21 @@
     "sod_tags": [],
     "created_at": "2026-07-17T15:54:41.510532Z",
     "updated_at": "2026-07-17T15:54:41.510532Z"
+  },
+  {
+    "id": "ENT-00298",
+    "name": "new entitlement ENT-00298",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00079"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-17T17:05:13.949453Z",
+    "updated_at": "2026-07-17T17:05:13.949453Z"
   }
 ]
