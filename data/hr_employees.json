@@ -20549,5 +20549,43 @@
     "manager_id": null,
     "hired_at": "2026-07-17T09:50:48.849086Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00980",
+    "full_name": "Daniel Morris",
+    "email": "emp-00980@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-07-17T11:17:26.876754Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T11:17:26.876754Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00981",
+    "full_name": "Luke Singh",
+    "email": "emp-00981@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-17T11:17:26.876754Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T11:17:26.876754Z",
+    "terminated_at": null
   }
 ]
