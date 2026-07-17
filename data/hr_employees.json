@@ -16908,14 +16908,20 @@
     "id": "EMP-00790",
     "full_name": "Katie Murray",
     "email": "emp-00790@example.com",
-    "current_role": "customer",
-    "current_division": "business_dev",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_dev",
         "started_at": "2026-07-03T17:55:11.059983Z",
+        "ended_at": "2026-07-17T18:32:24.285976Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-17T18:32:24.285976Z",
         "ended_at": null
       }
     ],
@@ -20655,6 +20661,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-17T17:05:13.949453Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00985",
+    "full_name": "Nicole Adams",
+    "email": "emp-00985@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-17T18:32:24.285976Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T18:32:24.285976Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00986",
+    "full_name": "Mary Vasquez",
+    "email": "emp-00986@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-17T18:32:24.285976Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T18:32:24.285976Z",
     "terminated_at": null
   }
 ]
