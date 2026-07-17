@@ -11525,7 +11525,7 @@
     "email": "emp-00523@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -11542,7 +11542,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T20:36:06.743550Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-17T20:00:44.449629Z"
   },
   {
     "id": "EMP-00524",
@@ -20699,6 +20699,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-17T18:32:24.285976Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00987",
+    "full_name": "Kathleen Hernandez",
+    "email": "emp-00987@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-17T20:00:44.449629Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T20:00:44.449629Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00988",
+    "full_name": "Christian Nixon",
+    "email": "emp-00988@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-17T20:00:44.449629Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T20:00:44.449629Z",
     "terminated_at": null
   }
 ]
