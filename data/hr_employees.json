@@ -20486,5 +20486,24 @@
     "manager_id": null,
     "hired_at": "2026-07-17T05:25:38.532734Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00977",
+    "full_name": "Caitlyn Gomez",
+    "email": "emp-00977@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-07-17T07:32:05.739357Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T07:32:05.739357Z",
+    "terminated_at": null
   }
 ]
