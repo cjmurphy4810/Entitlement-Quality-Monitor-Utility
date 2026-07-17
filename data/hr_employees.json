@@ -16442,7 +16442,7 @@
     "email": "emp-00766@example.com",
     "current_role": "developer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -16459,7 +16459,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-01T06:19:44.126899Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-17T15:54:41.510532Z"
   },
   {
     "id": "EMP-00767",
@@ -20592,6 +20592,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-17T11:17:26.876754Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00982",
+    "full_name": "Gregory West",
+    "email": "emp-00982@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-17T15:54:41.510532Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-17T15:54:41.510532Z",
     "terminated_at": null
   }
 ]
