@@ -20901,5 +20901,24 @@
     "manager_id": null,
     "hired_at": "2026-07-18T09:37:49.506242Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00996",
+    "full_name": "Becky Dawson",
+    "email": "emp-00996@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-18T10:56:45.754738Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T10:56:45.754738Z",
+    "terminated_at": null
   }
 ]
