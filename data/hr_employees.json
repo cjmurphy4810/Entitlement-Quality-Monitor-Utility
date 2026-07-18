@@ -20838,5 +20838,24 @@
     "manager_id": null,
     "hired_at": "2026-07-18T03:50:21.587194Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00993",
+    "full_name": "Jack Hansen",
+    "email": "emp-00993@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-07-18T07:59:26.670807Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T07:59:26.670807Z",
+    "terminated_at": null
   }
 ]
