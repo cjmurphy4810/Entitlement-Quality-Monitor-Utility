@@ -15264,14 +15264,20 @@
     "id": "EMP-00706",
     "full_name": "Charles Boyd",
     "email": "emp-00706@example.com",
-    "current_role": "customer",
-    "current_division": "finance",
+    "current_role": "business_user",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "finance",
         "started_at": "2026-06-24T22:44:34.324278Z",
+        "ended_at": "2026-07-18T17:28:48.766954Z"
+      },
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-07-18T17:28:48.766954Z",
         "ended_at": null
       }
     ],
@@ -17643,7 +17649,7 @@
     "email": "emp-00827@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -17654,7 +17660,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-06T04:48:59.621213Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-18T17:28:48.766954Z"
   },
   {
     "id": "EMP-00828",
@@ -21001,6 +21007,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T16:26:40.262235Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01001",
+    "full_name": "Stephen Mills",
+    "email": "emp-01001@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-18T17:28:48.766954Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T17:28:48.766954Z",
     "terminated_at": null
   }
 ]
