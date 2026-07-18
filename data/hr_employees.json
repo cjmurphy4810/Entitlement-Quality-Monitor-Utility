@@ -20920,5 +20920,24 @@
     "manager_id": null,
     "hired_at": "2026-07-18T10:56:45.754738Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-00997",
+    "full_name": "Terry Dominguez",
+    "email": "emp-00997@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-07-18T12:59:10.458420Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T12:59:10.458420Z",
+    "terminated_at": null
   }
 ]
