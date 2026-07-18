@@ -109803,8 +109803,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-07-18T05:59:32.202016Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -113891,6 +113900,112 @@
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
       "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04686",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-18T05:59:31.140837Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01967",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00621",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00259",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04687",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-18T05:59:31.954539Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01967",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00621",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00259",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04688",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-07-18T05:59:31.959028Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00944",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-06-18T05:13:31.134417+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00253",
+      "current_role": "business_user",
+      "prior_roles": [
+        "business_analyst",
+        "customer",
+        "developer"
+      ],
+      "last_role_change_at": "2026-06-18T05:13:31.134417+00:00",
+      "granted_at": "2026-05-27T22:15:30.814296+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04689",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-07-18T05:59:31.959299Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01121",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-06-18T05:13:31.134417+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00253",
+      "current_role": "business_user",
+      "prior_roles": [
+        "business_analyst",
+        "customer",
+        "developer"
+      ],
+      "last_role_change_at": "2026-06-18T05:13:31.134417+00:00",
+      "granted_at": "2026-06-06T15:49:58.602684+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
     },
     "workflow_state": "open",
     "workflow_history": [],
