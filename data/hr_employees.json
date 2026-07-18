@@ -8198,7 +8198,7 @@
     "email": "emp-00364@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -8209,7 +8209,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T10:19:14.295164Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-18T18:27:50.259118Z"
   },
   {
     "id": "EMP-00365",
@@ -13320,14 +13320,20 @@
     "id": "EMP-00610",
     "full_name": "Madison Mahoney",
     "email": "emp-00610@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-06-11T23:04:49.696852Z",
+        "ended_at": "2026-07-18T18:27:50.259118Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-18T18:27:50.259118Z",
         "ended_at": null
       }
     ],
@@ -21026,6 +21032,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T17:28:48.766954Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01002",
+    "full_name": "Brian Jones",
+    "email": "emp-01002@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-18T18:27:50.259118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T18:27:50.259118Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01003",
+    "full_name": "John Lyons",
+    "email": "emp-01003@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-18T18:27:50.259118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T18:27:50.259118Z",
     "terminated_at": null
   }
 ]
