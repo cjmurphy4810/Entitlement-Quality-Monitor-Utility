@@ -4858,5 +4858,21 @@
     "sod_tags": [],
     "created_at": "2026-07-18T15:28:08.249190Z",
     "updated_at": "2026-07-18T15:28:08.249190Z"
+  },
+  {
+    "id": "ENT-00308",
+    "name": "new entitlement ENT-00308",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00186"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-18T16:26:40.262235Z",
+    "updated_at": "2026-07-18T16:26:40.262235Z"
   }
 ]

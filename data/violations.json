@@ -114721,5 +114721,102 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04718",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-07-18T16:26:40.341077Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00308",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['business_user']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "business_user"
+      ],
+      "forbidden_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": []
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04719",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-18T16:26:40.803499Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01980",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00321",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00089",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04720",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-18T16:26:41.598797Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01980",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00321",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00089",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04721",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-18T16:26:41.599667Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01981",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00650",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00229",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

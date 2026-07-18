@@ -20983,5 +20983,24 @@
     "manager_id": null,
     "hired_at": "2026-07-18T14:21:07.192469Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01000",
+    "full_name": "Omar Joseph",
+    "email": "emp-01000@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-18T16:26:40.262235Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T16:26:40.262235Z",
+    "terminated_at": null
   }
 ]
