@@ -21147,5 +21147,43 @@
     "manager_id": null,
     "hired_at": "2026-07-18T20:39:42.491747Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01008",
+    "full_name": "Susan Mclean",
+    "email": "emp-01008@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-18T22:41:23.911426Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T22:41:23.911426Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01009",
+    "full_name": "Sara Ali",
+    "email": "emp-01009@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-18T22:41:23.911426Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T22:41:23.911426Z",
+    "terminated_at": null
   }
 ]
