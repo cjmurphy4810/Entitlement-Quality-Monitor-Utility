@@ -291,8 +291,8 @@
     "id": "EMP-00013",
     "full_name": "Diana Washington",
     "email": "user00013@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -305,6 +305,12 @@
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-06-06T18:46:19.892729Z",
+        "ended_at": "2026-07-18T14:21:07.192469Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-18T14:21:07.192469Z",
         "ended_at": null
       }
     ],
@@ -10384,7 +10390,7 @@
     "email": "emp-00468@example.com",
     "current_role": "developer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -10395,7 +10401,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-27T02:47:45.201819Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-18T14:21:07.192469Z"
   },
   {
     "id": "EMP-00469",
@@ -20938,6 +20944,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T12:59:10.458420Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00998",
+    "full_name": "Nancy Rogers",
+    "email": "emp-00998@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-18T14:21:07.192469Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T14:21:07.192469Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-00999",
+    "full_name": "Adam Rogers",
+    "email": "emp-00999@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-07-18T14:21:07.192469Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T14:21:07.192469Z",
     "terminated_at": null
   }
 ]
