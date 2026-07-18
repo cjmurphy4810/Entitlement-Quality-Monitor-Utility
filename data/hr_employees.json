@@ -12709,7 +12709,7 @@
     "email": "emp-00579@example.com",
     "current_role": "business_user",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -12720,7 +12720,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-08T06:37:20.941042Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-18T20:39:42.491747Z"
   },
   {
     "id": "EMP-00580",
@@ -21108,6 +21108,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T19:41:51.907470Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01006",
+    "full_name": "Lisa Bowman",
+    "email": "emp-01006@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-18T20:39:42.491747Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T20:39:42.491747Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01007",
+    "full_name": "Michael Leblanc",
+    "email": "emp-01007@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-18T20:39:42.491747Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T20:39:42.491747Z",
     "terminated_at": null
   }
 ]
