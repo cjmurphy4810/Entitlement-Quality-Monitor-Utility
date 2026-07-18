@@ -21185,5 +21185,24 @@
     "manager_id": null,
     "hired_at": "2026-07-18T22:41:23.911426Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01010",
+    "full_name": "Heidi Phillips",
+    "email": "emp-01010@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-18T23:45:57.313772Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-18T23:45:57.313772Z",
+    "terminated_at": null
   }
 ]
