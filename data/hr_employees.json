@@ -3650,14 +3650,20 @@
     "id": "EMP-00156",
     "full_name": "Jonathan Hoffman",
     "email": "emp-00156@example.com",
-    "current_role": "developer",
-    "current_division": "business_ops",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_ops",
         "started_at": "2026-05-02T14:09:22.989234Z",
+        "ended_at": "2026-07-19T18:57:41.052103Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-19T18:57:41.052103Z",
         "ended_at": null
       }
     ],
@@ -18957,7 +18963,7 @@
     "email": "emp-00893@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -18968,7 +18974,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T20:01:38.486315Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-19T18:57:41.052103Z"
   },
   {
     "id": "EMP-00894",
@@ -21398,6 +21404,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-19T17:53:08.720159Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01020",
+    "full_name": "Joel Clay",
+    "email": "emp-01020@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-19T18:57:41.052103Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T18:57:41.052103Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01021",
+    "full_name": "Emily Anderson",
+    "email": "emp-01021@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-19T18:57:41.052103Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T18:57:41.052103Z",
     "terminated_at": null
   }
 ]
