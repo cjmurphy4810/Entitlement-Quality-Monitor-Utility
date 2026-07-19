@@ -21380,5 +21380,24 @@
     "manager_id": null,
     "hired_at": "2026-07-19T16:50:39.904240Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01019",
+    "full_name": "Carla Martin",
+    "email": "emp-01019@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-19T17:53:08.720159Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T17:53:08.720159Z",
+    "terminated_at": null
   }
 ]
