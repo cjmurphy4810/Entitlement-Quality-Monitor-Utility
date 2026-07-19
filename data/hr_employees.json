@@ -21525,5 +21525,43 @@
     "manager_id": null,
     "hired_at": "2026-07-19T21:13:22.136390Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01026",
+    "full_name": "Crystal Hughes",
+    "email": "emp-01026@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-19T23:26:00.712560Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T23:26:00.712560Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01027",
+    "full_name": "Jessica Johnson",
+    "email": "emp-01027@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-07-19T23:26:00.712560Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T23:26:00.712560Z",
+    "terminated_at": null
   }
 ]
