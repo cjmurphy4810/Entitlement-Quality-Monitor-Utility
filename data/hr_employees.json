@@ -15612,7 +15612,7 @@
     "email": "emp-00722@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -15623,7 +15623,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T10:18:10.526547Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-19T20:05:33.496031Z"
   },
   {
     "id": "EMP-00723",
@@ -21442,6 +21442,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-19T18:57:41.052103Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01022",
+    "full_name": "Juan Stein",
+    "email": "emp-01022@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-19T20:05:33.496031Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T20:05:33.496031Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01023",
+    "full_name": "Jessica Williams",
+    "email": "emp-01023@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-19T20:05:33.496031Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T20:05:33.496031Z",
     "terminated_at": null
   }
 ]
