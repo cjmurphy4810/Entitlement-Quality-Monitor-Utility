@@ -21267,5 +21267,24 @@
     "manager_id": null,
     "hired_at": "2026-07-19T08:05:23.075020Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01014",
+    "full_name": "Bryan Elliott",
+    "email": "emp-01014@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-07-19T10:05:21.543943Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T10:05:21.543943Z",
+    "terminated_at": null
   }
 ]
