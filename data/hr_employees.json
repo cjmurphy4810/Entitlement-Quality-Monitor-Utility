@@ -21286,5 +21286,24 @@
     "manager_id": null,
     "hired_at": "2026-07-19T10:05:21.543943Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01015",
+    "full_name": "Joshua Santiago II",
+    "email": "emp-01015@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-19T11:34:37.253556Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T11:34:37.253556Z",
+    "terminated_at": null
   }
 ]
