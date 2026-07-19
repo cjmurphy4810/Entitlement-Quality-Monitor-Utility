@@ -19989,7 +19989,7 @@
     "email": "emp-00947@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -20000,7 +20000,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-15T09:26:58.205678Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-19T08:05:23.075020Z"
   },
   {
     "id": "EMP-00948",
@@ -21228,6 +21228,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-19T02:03:01.739632Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01012",
+    "full_name": "Lisa Williams",
+    "email": "emp-01012@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-07-19T08:05:23.075020Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T08:05:23.075020Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01013",
+    "full_name": "Troy Wade",
+    "email": "emp-01013@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-19T08:05:23.075020Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T08:05:23.075020Z",
     "terminated_at": null
   }
 ]
