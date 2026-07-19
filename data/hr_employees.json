@@ -21481,5 +21481,43 @@
     "manager_id": null,
     "hired_at": "2026-07-19T20:05:33.496031Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01024",
+    "full_name": "Ethan Davis",
+    "email": "emp-01024@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-19T21:13:22.136390Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T21:13:22.136390Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01025",
+    "full_name": "Deborah Martinez",
+    "email": "emp-01025@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-19T21:13:22.136390Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T21:13:22.136390Z",
+    "terminated_at": null
   }
 ]
