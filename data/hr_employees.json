@@ -15775,14 +15775,20 @@
     "id": "EMP-00731",
     "full_name": "Kyle Cannon",
     "email": "emp-00731@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-06-27T09:25:27.595493Z",
+        "ended_at": "2026-07-19T02:03:01.739632Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-19T02:03:01.739632Z",
         "ended_at": null
       }
     ],
@@ -21203,6 +21209,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T23:45:57.313772Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01011",
+    "full_name": "Michele Fernandez",
+    "email": "emp-01011@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-19T02:03:01.739632Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T02:03:01.739632Z",
     "terminated_at": null
   }
 ]
