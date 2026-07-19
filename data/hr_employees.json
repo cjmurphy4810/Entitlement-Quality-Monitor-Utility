@@ -21361,5 +21361,24 @@
     "manager_id": null,
     "hired_at": "2026-07-19T15:51:22.108695Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01018",
+    "full_name": "Karen Long",
+    "email": "emp-01018@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-19T16:50:39.904240Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-19T16:50:39.904240Z",
+    "terminated_at": null
   }
 ]
