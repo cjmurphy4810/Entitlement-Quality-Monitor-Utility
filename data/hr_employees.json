@@ -12422,14 +12422,20 @@
     "id": "EMP-00564",
     "full_name": "Mckenzie Higgins",
     "email": "emp-00564@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-06-06T20:05:47.963304Z",
+        "ended_at": "2026-07-20T18:49:05.225414Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-07-20T18:49:05.225414Z",
         "ended_at": null
       }
     ],
