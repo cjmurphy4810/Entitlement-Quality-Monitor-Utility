@@ -15070,7 +15070,7 @@
     "email": "emp-00696@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -15081,7 +15081,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-24T02:39:19.238710Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-20T01:02:18.514304Z"
   },
   {
     "id": "EMP-00697",
@@ -21562,6 +21562,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-19T23:26:00.712560Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01028",
+    "full_name": "Stephanie Pope",
+    "email": "emp-01028@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-20T01:02:18.514304Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T01:02:18.514304Z",
     "terminated_at": null
   }
 ]

@@ -4936,5 +4936,19 @@
     "sod_tags": [],
     "created_at": "2026-07-19T20:05:33.496031Z",
     "updated_at": "2026-07-19T20:05:33.496031Z"
+  },
+  {
+    "id": "ENT-00313",
+    "name": "new entitlement ENT-00313",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-20T01:02:18.514304Z",
+    "updated_at": "2026-07-20T01:02:18.514304Z"
   }
 ]
