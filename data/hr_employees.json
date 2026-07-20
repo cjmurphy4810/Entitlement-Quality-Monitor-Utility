@@ -21645,5 +21645,43 @@
     "manager_id": null,
     "hired_at": "2026-07-20T08:21:52.142783Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01032",
+    "full_name": "Steven Brewer",
+    "email": "emp-01032@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-20T11:19:58.860343Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T11:19:58.860343Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01033",
+    "full_name": "James Ruiz",
+    "email": "emp-01033@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-07-20T11:19:58.860343Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T11:19:58.860343Z",
+    "terminated_at": null
   }
 ]

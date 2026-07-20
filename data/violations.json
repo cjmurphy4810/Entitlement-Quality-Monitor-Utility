@@ -117972,5 +117972,97 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04850",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T11:19:59.366718Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02038",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00552",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00127",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04851",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T11:20:00.102826Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02039",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00180",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00040",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04852",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-20T11:20:00.299291Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02039",
+    "explanation": "Terminated employee EMP-00180 (Darren Green) still holds active assignment ASN-02039.",
+    "evidence": {
+      "employee_id": "EMP-00180",
+      "terminated_at": "2026-05-11T16:27:35.462627+00:00",
+      "entitlement_id": "ENT-00040"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04853",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-20T11:20:00.299681Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02040",
+    "explanation": "Terminated employee EMP-00744 (Roy Garcia) still holds active assignment ASN-02040.",
+    "evidence": {
+      "employee_id": "EMP-00744",
+      "terminated_at": "2026-07-15T12:49:23.141925+00:00",
+      "entitlement_id": "ENT-00251"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
