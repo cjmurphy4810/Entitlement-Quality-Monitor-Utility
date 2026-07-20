@@ -21607,5 +21607,43 @@
     "manager_id": null,
     "hired_at": "2026-07-20T05:01:58.729888Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01030",
+    "full_name": "Benjamin Torres",
+    "email": "emp-01030@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-20T08:21:52.142783Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T08:21:52.142783Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01031",
+    "full_name": "Karina Thomas",
+    "email": "emp-01031@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-07-20T08:21:52.142783Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T08:21:52.142783Z",
+    "terminated_at": null
   }
 ]
