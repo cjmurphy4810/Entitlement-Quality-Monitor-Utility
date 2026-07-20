@@ -117731,5 +117731,198 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04840",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T05:01:59.312489Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02034",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00183",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00073",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04841",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T05:01:59.313199Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02035",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00502",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00226",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04842",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T05:01:59.313930Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02036",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00990",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00189",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04843",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T05:02:00.066770Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01905",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00820",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00064",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04844",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T05:02:00.165401Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02035",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00502",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00226",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04845",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-20T05:02:00.166315Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02036",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00990",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00189",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04846",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-07-20T05:02:00.169790Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00818",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-06-20T02:44:56.066917+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00386",
+      "current_role": "operations",
+      "prior_roles": [
+        "developer"
+      ],
+      "last_role_change_at": "2026-06-20T02:44:56.066917+00:00",
+      "granted_at": "2026-05-21T22:47:26.417333+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04847",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-20T05:02:00.398316Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02034",
+    "explanation": "Terminated employee EMP-00183 (Shane Moore) still holds active assignment ASN-02034.",
+    "evidence": {
+      "employee_id": "EMP-00183",
+      "terminated_at": "2026-07-11T05:24:58.632400+00:00",
+      "entitlement_id": "ENT-00073"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
