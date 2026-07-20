@@ -21796,5 +21796,24 @@
     "manager_id": null,
     "hired_at": "2026-07-20T20:16:12.068037Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01039",
+    "full_name": "Diana Curry",
+    "email": "emp-01039@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-20T21:39:23.707953Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T21:39:23.707953Z",
+    "terminated_at": null
   }
 ]
