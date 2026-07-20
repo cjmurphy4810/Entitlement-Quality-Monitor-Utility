@@ -15769,7 +15769,7 @@
     "email": "emp-00729@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -15780,7 +15780,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T23:58:59.477978Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-20T23:51:48.732186Z"
   },
   {
     "id": "EMP-00730",
@@ -21852,6 +21852,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-20T22:52:23.851332Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01042",
+    "full_name": "Randy Robinson",
+    "email": "emp-01042@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-20T23:51:48.732186Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T23:51:48.732186Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01043",
+    "full_name": "Stacy Nelson",
+    "email": "emp-01043@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-20T23:51:48.732186Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T23:51:48.732186Z",
     "terminated_at": null
   }
 ]
