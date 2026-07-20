@@ -21815,5 +21815,43 @@
     "manager_id": null,
     "hired_at": "2026-07-20T21:39:23.707953Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01040",
+    "full_name": "Steve Clark",
+    "email": "emp-01040@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-20T22:52:23.851332Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T22:52:23.851332Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01041",
+    "full_name": "Matthew Williams",
+    "email": "emp-01041@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-07-20T22:52:23.851332Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T22:52:23.851332Z",
+    "terminated_at": null
   }
 ]
