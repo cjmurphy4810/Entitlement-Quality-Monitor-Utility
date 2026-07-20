@@ -17021,7 +17021,7 @@
     "email": "emp-00793@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -17032,7 +17032,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-03T20:36:14.411248Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-20T15:26:17.525919Z"
   },
   {
     "id": "EMP-00794",
@@ -21682,6 +21682,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-20T11:19:58.860343Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01034",
+    "full_name": "Ryan Liu",
+    "email": "emp-01034@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-20T15:26:17.525919Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T15:26:17.525919Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01035",
+    "full_name": "Andrea Wells",
+    "email": "emp-01035@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-20T15:26:17.525919Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-20T15:26:17.525919Z",
     "terminated_at": null
   }
 ]
