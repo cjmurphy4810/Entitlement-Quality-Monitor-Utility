@@ -22073,5 +22073,43 @@
     "manager_id": null,
     "hired_at": "2026-07-21T16:18:13.936694Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01052",
+    "full_name": "Jose Norris",
+    "email": "emp-01052@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-21T17:51:33.624728Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T17:51:33.624728Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01053",
+    "full_name": "Krista Hernandez",
+    "email": "emp-01053@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-21T17:51:33.624728Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T17:51:33.624728Z",
+    "terminated_at": null
   }
 ]
