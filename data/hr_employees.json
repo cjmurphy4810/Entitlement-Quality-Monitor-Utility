@@ -22149,5 +22149,24 @@
     "manager_id": null,
     "hired_at": "2026-07-21T19:08:33.330088Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01056",
+    "full_name": "Anita Lee",
+    "email": "emp-01056@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-21T20:41:53.844177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T20:41:53.844177Z",
+    "terminated_at": null
   }
 ]
