@@ -19587,7 +19587,7 @@
     "email": "emp-00923@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -19598,7 +19598,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-13T20:57:39.734614Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-21T19:08:33.330088Z"
   },
   {
     "id": "EMP-00924",
@@ -22110,6 +22110,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T17:51:33.624728Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01054",
+    "full_name": "Jennifer Smith",
+    "email": "emp-01054@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-21T19:08:33.330088Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T19:08:33.330088Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01055",
+    "full_name": "Jennifer Robinson",
+    "email": "emp-01055@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-07-21T19:08:33.330088Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T19:08:33.330088Z",
     "terminated_at": null
   }
 ]
