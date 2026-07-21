@@ -21891,5 +21891,24 @@
     "manager_id": null,
     "hired_at": "2026-07-20T23:51:48.732186Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01044",
+    "full_name": "James Mason",
+    "email": "emp-01044@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-21T02:02:02.235515Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T02:02:02.235515Z",
+    "terminated_at": null
   }
 ]
