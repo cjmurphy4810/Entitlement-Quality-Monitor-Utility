@@ -21916,5 +21916,43 @@
     "manager_id": null,
     "hired_at": "2026-07-21T02:02:02.235515Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01045",
+    "full_name": "Kristi Marshall",
+    "email": "emp-01045@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-07-21T08:13:43.407688Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T08:13:43.407688Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01046",
+    "full_name": "Jim Jones",
+    "email": "emp-01046@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-21T08:13:43.407688Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T08:13:43.407688Z",
+    "terminated_at": null
   }
 ]
