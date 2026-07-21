@@ -15766,8 +15766,8 @@
     "id": "EMP-00728",
     "full_name": "Chase Stewart",
     "email": "emp-00728@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -15780,6 +15780,12 @@
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-07-01T18:22:29.887334Z",
+        "ended_at": "2026-07-21T23:01:02.843406Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-21T23:01:02.843406Z",
         "ended_at": null
       }
     ],
@@ -22211,6 +22217,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T21:59:09.378933Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01059",
+    "full_name": "John Travis",
+    "email": "emp-01059@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-21T23:01:02.843406Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T23:01:02.843406Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01060",
+    "full_name": "Jason Dixon",
+    "email": "emp-01060@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-21T23:01:02.843406Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T23:01:02.843406Z",
     "terminated_at": null
   }
 ]
