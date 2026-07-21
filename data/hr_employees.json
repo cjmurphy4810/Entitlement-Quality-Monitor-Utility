@@ -962,8 +962,8 @@
     "id": "EMP-00042",
     "full_name": "Ariel Medina",
     "email": "user00042@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -988,6 +988,12 @@
         "role": "business_analyst",
         "division": "tech_ops",
         "started_at": "2026-05-05T11:15:00.316942Z",
+        "ended_at": "2026-07-21T05:33:38.259055Z"
+      },
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-07-21T05:33:38.259055Z",
         "ended_at": null
       }
     ],
