@@ -20167,14 +20167,20 @@
     "id": "EMP-00953",
     "full_name": "Wesley Daniels",
     "email": "emp-00953@example.com",
-    "current_role": "business_analyst",
-    "current_division": "hr",
+    "current_role": "customer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "hr",
         "started_at": "2026-07-15T19:00:30.129337Z",
+        "ended_at": "2026-07-21T14:32:04.134966Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-21T14:32:04.134966Z",
         "ended_at": null
       }
     ],
@@ -21984,6 +21990,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T12:20:34.334681Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01048",
+    "full_name": "Joanna Stone",
+    "email": "emp-01048@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-21T14:32:04.134966Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T14:32:04.134966Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01049",
+    "full_name": "Mrs. Tina Gonzalez",
+    "email": "emp-01049@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-21T14:32:04.134966Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T14:32:04.134966Z",
     "terminated_at": null
   }
 ]
