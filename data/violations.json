@@ -119669,5 +119669,145 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04921",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-21T10:36:20.701888Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02068",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00409",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00251",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04922",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-21T10:36:20.702276Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02069",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00581",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00271",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04923",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-21T10:36:21.178535Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02068",
+    "explanation": "Employee division 'hr' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00409",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00251",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04924",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-21T10:36:21.179035Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02069",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00581",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00271",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04925",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-21T10:36:21.269576Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01561",
+    "explanation": "Terminated employee EMP-00738 (John English) still holds active assignment ASN-01561.",
+    "evidence": {
+      "employee_id": "EMP-00738",
+      "terminated_at": "2026-07-21T10:36:20.363791+00:00",
+      "entitlement_id": "ENT-00212"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-04926",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-21T10:36:21.301083Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01950",
+    "explanation": "Terminated employee EMP-00738 (John English) still holds active assignment ASN-01950.",
+    "evidence": {
+      "employee_id": "EMP-00738",
+      "terminated_at": "2026-07-21T10:36:20.363791+00:00",
+      "entitlement_id": "ENT-00230"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

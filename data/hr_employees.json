@@ -15964,7 +15964,7 @@
     "email": "emp-00738@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -15975,7 +15975,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-27T20:05:17.943629Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-21T10:36:20.363791Z"
   },
   {
     "id": "EMP-00739",
@@ -16594,14 +16594,20 @@
     "id": "EMP-00770",
     "full_name": "John Lambert",
     "email": "emp-00770@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-07-01T13:16:41.373463Z",
+        "ended_at": "2026-07-21T10:36:20.363791Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-07-21T10:36:20.363791Z",
         "ended_at": null
       }
     ],
