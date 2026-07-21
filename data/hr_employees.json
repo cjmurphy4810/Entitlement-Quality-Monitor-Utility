@@ -2753,14 +2753,20 @@
     "id": "EMP-00117",
     "full_name": "Jamie Nixon",
     "email": "emp-00117@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-04-29T11:58:30.968763Z",
+        "ended_at": "2026-07-21T12:20:34.334681Z"
+      },
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-21T12:20:34.334681Z",
         "ended_at": null
       }
     ],
@@ -8544,7 +8550,7 @@
     "email": "emp-00380@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -8555,7 +8561,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-18T01:28:13.530392Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-21T12:20:34.334681Z"
   },
   {
     "id": "EMP-00381",
@@ -21959,6 +21965,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T08:13:43.407688Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01047",
+    "full_name": "Amy Pham",
+    "email": "emp-01047@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-21T12:20:34.334681Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-21T12:20:34.334681Z",
     "terminated_at": null
   }
 ]
