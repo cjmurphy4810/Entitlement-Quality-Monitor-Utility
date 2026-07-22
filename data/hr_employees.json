@@ -17597,14 +17597,20 @@
     "id": "EMP-00819",
     "full_name": "Holly Flores",
     "email": "emp-00819@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-07-05T14:26:35.025215Z",
+        "ended_at": "2026-07-22T22:00:01.038198Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-22T22:00:01.038198Z",
         "ended_at": null
       }
     ],
@@ -22500,6 +22506,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T19:02:45.857037Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01072",
+    "full_name": "Jennifer Wagner",
+    "email": "emp-01072@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-22T22:00:01.038198Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T22:00:01.038198Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01073",
+    "full_name": "Nicholas Shah",
+    "email": "emp-01073@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-22T22:00:01.038198Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T22:00:01.038198Z",
     "terminated_at": null
   }
 ]
