@@ -20185,7 +20185,7 @@
     "email": "emp-00951@example.com",
     "current_role": "developer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -20196,7 +20196,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-15T17:44:29.726398Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-22T23:09:39.722601Z"
   },
   {
     "id": "EMP-00952",
@@ -22544,6 +22544,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T22:00:01.038198Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01074",
+    "full_name": "Robert Faulkner",
+    "email": "emp-01074@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-22T23:09:39.722601Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T23:09:39.722601Z",
     "terminated_at": null
   }
 ]
