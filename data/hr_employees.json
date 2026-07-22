@@ -21577,14 +21577,20 @@
     "id": "EMP-01025",
     "full_name": "Deborah Martinez",
     "email": "emp-01025@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-07-19T21:13:22.136390Z",
+        "ended_at": "2026-07-22T03:55:32.433546Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-22T03:55:32.433546Z",
         "ended_at": null
       }
     ],
@@ -22035,7 +22041,7 @@
     "email": "emp-01049@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -22046,7 +22052,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T14:32:04.134966Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-22T03:55:32.433546Z"
   },
   {
     "id": "EMP-01050",
@@ -22274,6 +22280,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T00:14:02.929955Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01062",
+    "full_name": "Maureen Garcia",
+    "email": "emp-01062@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-22T03:55:32.433546Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T03:55:32.433546Z",
     "terminated_at": null
   }
 ]
