@@ -19148,14 +19148,20 @@
     "id": "EMP-00900",
     "full_name": "Kim Gutierrez",
     "email": "emp-00900@example.com",
-    "current_role": "customer",
-    "current_division": "business_dev",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_dev",
         "started_at": "2026-07-12T10:51:40.328828Z",
+        "ended_at": "2026-07-22T09:06:21.739476Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-22T09:06:21.739476Z",
         "ended_at": null
       }
     ],
@@ -22299,6 +22305,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T03:55:32.433546Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01063",
+    "full_name": "Ashley Mclaughlin",
+    "email": "emp-01063@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-22T09:06:21.739476Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T09:06:21.739476Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01064",
+    "full_name": "Carly Bennett",
+    "email": "emp-01064@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-22T09:06:21.739476Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T09:06:21.739476Z",
     "terminated_at": null
   }
 ]
