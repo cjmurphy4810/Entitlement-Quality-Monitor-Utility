@@ -22482,5 +22482,24 @@
     "manager_id": null,
     "hired_at": "2026-07-22T17:47:31.669868Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01071",
+    "full_name": "Kathryn Porter",
+    "email": "emp-01071@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-22T19:02:45.857037Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T19:02:45.857037Z",
+    "terminated_at": null
   }
 ]
