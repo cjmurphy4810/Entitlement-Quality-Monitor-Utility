@@ -3914,8 +3914,8 @@
     "id": "EMP-00168",
     "full_name": "Amy Hogan",
     "email": "emp-00168@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -3934,6 +3934,12 @@
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2026-05-09T10:31:29.911217Z",
+        "ended_at": "2026-07-22T12:54:29.727561Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-22T12:54:29.727561Z",
         "ended_at": null
       }
     ],
@@ -22368,6 +22374,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T11:23:47.272131Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01066",
+    "full_name": "Robert Parker",
+    "email": "emp-01066@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-07-22T12:54:29.727561Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T12:54:29.727561Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01067",
+    "full_name": "Tara Weaver",
+    "email": "emp-01067@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-07-22T12:54:29.727561Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T12:54:29.727561Z",
     "terminated_at": null
   }
 ]
