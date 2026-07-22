@@ -5231,8 +5231,8 @@
     "id": "EMP-00225",
     "full_name": "Jennifer Hughes",
     "email": "emp-00225@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -5251,6 +5251,12 @@
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-05-09T16:44:46.641975Z",
+        "ended_at": "2026-07-22T11:23:47.272131Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-22T11:23:47.272131Z",
         "ended_at": null
       }
     ],
@@ -22343,6 +22349,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T09:06:21.739476Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01065",
+    "full_name": "Anthony Vega",
+    "email": "emp-01065@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-22T11:23:47.272131Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T11:23:47.272131Z",
     "terminated_at": null
   }
 ]
