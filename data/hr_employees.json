@@ -17167,14 +17167,20 @@
     "id": "EMP-00797",
     "full_name": "Thomas Nguyen",
     "email": "emp-00797@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-07-04T01:06:17.691153Z",
+        "ended_at": "2026-07-22T16:21:22.709523Z"
+      },
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-07-22T16:21:22.709523Z",
         "ended_at": null
       }
     ],
@@ -22437,6 +22443,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T14:59:14.135287Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01069",
+    "full_name": "Angela Humphrey",
+    "email": "emp-01069@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-07-22T16:21:22.709523Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T16:21:22.709523Z",
     "terminated_at": null
   }
 ]
