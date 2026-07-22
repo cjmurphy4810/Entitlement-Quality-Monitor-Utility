@@ -22256,5 +22256,24 @@
     "manager_id": null,
     "hired_at": "2026-07-21T23:01:02.843406Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01061",
+    "full_name": "Jennifer Wilkerson",
+    "email": "emp-01061@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-22T00:14:02.929955Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T00:14:02.929955Z",
+    "terminated_at": null
   }
 ]

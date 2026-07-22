@@ -5042,5 +5042,21 @@
     "sod_tags": [],
     "created_at": "2026-07-21T23:01:02.843406Z",
     "updated_at": "2026-07-21T23:01:02.843406Z"
+  },
+  {
+    "id": "ENT-00320",
+    "name": "new entitlement ENT-00320",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00001"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-22T00:14:02.929955Z",
+    "updated_at": "2026-07-22T00:14:02.929955Z"
   }
 ]
