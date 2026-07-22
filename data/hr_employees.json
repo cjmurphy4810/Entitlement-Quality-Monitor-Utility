@@ -22463,5 +22463,24 @@
     "manager_id": null,
     "hired_at": "2026-07-22T16:21:22.709523Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01070",
+    "full_name": "Jeffrey Mccoy",
+    "email": "emp-01070@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-07-22T17:47:31.669868Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-22T17:47:31.669868Z",
+    "terminated_at": null
   }
 ]

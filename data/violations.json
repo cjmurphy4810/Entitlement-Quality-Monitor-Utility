@@ -121604,5 +121604,27 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-04999",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-22T17:47:33.157887Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02098",
+    "explanation": "Terminated employee EMP-00799 (Darlene Alvarez) still holds active assignment ASN-02098.",
+    "evidence": {
+      "employee_id": "EMP-00799",
+      "terminated_at": "2026-07-07T16:43:51.168014+00:00",
+      "entitlement_id": "ENT-00298"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
