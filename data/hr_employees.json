@@ -15685,7 +15685,7 @@
     "email": "emp-00723@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -15702,7 +15702,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T12:30:14.552347Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-23T07:02:41.901329Z"
   },
   {
     "id": "EMP-00724",
@@ -22626,6 +22626,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T04:16:06.641195Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01078",
+    "full_name": "Misty Dawson",
+    "email": "emp-01078@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-23T07:02:41.901329Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T07:02:41.901329Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01079",
+    "full_name": "Patricia Thomas",
+    "email": "emp-01079@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-23T07:02:41.901329Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T07:02:41.901329Z",
     "terminated_at": null
   }
 ]
