@@ -5350,14 +5350,20 @@
     "id": "EMP-00230",
     "full_name": "Mr. Rodney Sanders MD",
     "email": "emp-00230@example.com",
-    "current_role": "developer",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_ops",
         "started_at": "2026-05-07T05:44:53.660497Z",
+        "ended_at": "2026-07-23T23:54:17.595153Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-23T23:54:17.595153Z",
         "ended_at": null
       }
     ],
@@ -22828,6 +22834,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T18:43:03.440004Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01088",
+    "full_name": "Kristin Huber",
+    "email": "emp-01088@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-23T23:54:17.595153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T23:54:17.595153Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01089",
+    "full_name": "Cesar Wilson",
+    "email": "emp-01089@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-07-23T23:54:17.595153Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T23:54:17.595153Z",
     "terminated_at": null
   }
 ]
