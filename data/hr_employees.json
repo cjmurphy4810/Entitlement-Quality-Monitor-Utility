@@ -22734,5 +22734,24 @@
     "manager_id": null,
     "hired_at": "2026-07-23T11:46:42.845161Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01083",
+    "full_name": "Robert Turner",
+    "email": "emp-01083@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-23T13:40:33.542470Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T13:40:33.542470Z",
+    "terminated_at": null
   }
 ]
