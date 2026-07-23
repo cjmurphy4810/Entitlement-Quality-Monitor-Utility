@@ -122232,5 +122232,145 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05025",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-23T04:16:07.276634Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02108",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00306",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00102",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05026",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-23T04:16:07.277378Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02109",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00517",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00265",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05027",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-23T04:16:08.204338Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02108",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00306",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00102",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05028",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-23T04:16:08.205305Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02109",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00517",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00265",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05029",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-23T04:16:08.456042Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02108",
+    "explanation": "Terminated employee EMP-00306 (Nathan Thomas) still holds active assignment ASN-02108.",
+    "evidence": {
+      "employee_id": "EMP-00306",
+      "terminated_at": "2026-07-10T06:24:40.966659+00:00",
+      "entitlement_id": "ENT-00102"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05030",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-23T04:16:08.456549Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02109",
+    "explanation": "Terminated employee EMP-00517 (Eric Sandoval) still holds active assignment ASN-02109.",
+    "evidence": {
+      "employee_id": "EMP-00517",
+      "terminated_at": "2026-06-04T10:35:47.066004+00:00",
+      "entitlement_id": "ENT-00265"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

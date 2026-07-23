@@ -21309,14 +21309,20 @@
     "id": "EMP-01009",
     "full_name": "Sara Ali",
     "email": "emp-01009@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-07-18T22:41:23.911426Z",
+        "ended_at": "2026-07-23T04:16:06.641195Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-23T04:16:06.641195Z",
         "ended_at": null
       }
     ],
@@ -22582,6 +22588,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T00:58:33.432088Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01076",
+    "full_name": "Dana Williams",
+    "email": "emp-01076@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-23T04:16:06.641195Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T04:16:06.641195Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01077",
+    "full_name": "Brenda Guerrero",
+    "email": "emp-01077@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-23T04:16:06.641195Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T04:16:06.641195Z",
     "terminated_at": null
   }
 ]
