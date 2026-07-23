@@ -22564,5 +22564,24 @@
     "manager_id": null,
     "hired_at": "2026-07-22T23:09:39.722601Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01075",
+    "full_name": "Lisa Gonzales",
+    "email": "emp-01075@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-07-23T00:58:33.432088Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T00:58:33.432088Z",
+    "terminated_at": null
   }
 ]

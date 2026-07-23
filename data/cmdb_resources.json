@@ -2296,5 +2296,15 @@
     "environment": "prod",
     "linked_entitlement_ids": [],
     "description": "Personal usually some system later stuff security."
+  },
+  {
+    "id": "RES-00220",
+    "name": "Gomez-Quinn",
+    "type": "website",
+    "criticality": "low",
+    "owner_division": "legal_compliance",
+    "environment": "staging",
+    "linked_entitlement_ids": [],
+    "description": "Still American personal."
   }
 ]
