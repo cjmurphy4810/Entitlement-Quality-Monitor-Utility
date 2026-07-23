@@ -21777,14 +21777,20 @@
     "id": "EMP-01033",
     "full_name": "James Ruiz",
     "email": "emp-01033@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-07-20T11:19:58.860343Z",
+        "ended_at": "2026-07-23T11:46:42.845161Z"
+      },
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-23T11:46:42.845161Z",
         "ended_at": null
       }
     ],
@@ -22689,6 +22695,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T09:53:55.343095Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01081",
+    "full_name": "Lauren Lester",
+    "email": "emp-01081@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-07-23T11:46:42.845161Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T11:46:42.845161Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01082",
+    "full_name": "Kelly Smith",
+    "email": "emp-01082@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-23T11:46:42.845161Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T11:46:42.845161Z",
     "terminated_at": null
   }
 ]
