@@ -22290,14 +22290,20 @@
     "id": "EMP-01060",
     "full_name": "Jason Dixon",
     "email": "emp-01060@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-07-21T23:01:02.843406Z",
+        "ended_at": "2026-07-23T09:53:55.343095Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-23T09:53:55.343095Z",
         "ended_at": null
       }
     ],
@@ -22664,6 +22670,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T07:02:41.901329Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01080",
+    "full_name": "Tracey Sanchez",
+    "email": "emp-01080@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-23T09:53:55.343095Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-23T09:53:55.343095Z",
     "terminated_at": null
   }
 ]

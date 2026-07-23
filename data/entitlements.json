@@ -5104,5 +5104,21 @@
     "sod_tags": [],
     "created_at": "2026-07-23T00:58:33.432088Z",
     "updated_at": "2026-07-23T00:58:33.432088Z"
+  },
+  {
+    "id": "ENT-00324",
+    "name": "new entitlement ENT-00324",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00175"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-23T09:53:55.343095Z",
+    "updated_at": "2026-07-23T09:53:55.343095Z"
   }
 ]
