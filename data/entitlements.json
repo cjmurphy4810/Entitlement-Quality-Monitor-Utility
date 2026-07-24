@@ -5208,5 +5208,21 @@
     "sod_tags": [],
     "created_at": "2026-07-24T17:23:21.603072Z",
     "updated_at": "2026-07-24T17:23:21.603072Z"
+  },
+  {
+    "id": "ENT-00331",
+    "name": "new entitlement ENT-00331",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00039"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-24T18:54:49.687616Z",
+    "updated_at": "2026-07-24T18:54:49.687616Z"
   }
 ]

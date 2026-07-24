@@ -23043,5 +23043,24 @@
     "manager_id": null,
     "hired_at": "2026-07-24T17:23:21.603072Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01098",
+    "full_name": "Sarah Banks DDS",
+    "email": "emp-01098@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-07-24T18:54:49.687616Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T18:54:49.687616Z",
+    "terminated_at": null
   }
 ]
