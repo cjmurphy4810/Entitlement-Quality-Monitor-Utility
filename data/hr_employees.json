@@ -22923,5 +22923,24 @@
     "manager_id": null,
     "hired_at": "2026-07-24T08:13:10.655165Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01092",
+    "full_name": "Alexa Anderson",
+    "email": "emp-01092@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-24T10:31:54.808884Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T10:31:54.808884Z",
+    "terminated_at": null
   }
 ]
