@@ -3286,8 +3286,8 @@
     "id": "EMP-00140",
     "full_name": "Maria Lewis",
     "email": "emp-00140@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -3300,6 +3300,12 @@
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-05-07T10:38:56.595201Z",
+        "ended_at": "2026-07-24T08:13:10.655165Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-24T08:13:10.655165Z",
         "ended_at": null
       }
     ],
@@ -13110,7 +13116,7 @@
     "email": "emp-00596@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -13127,7 +13133,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-10T07:04:39.389034Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-24T08:13:10.655165Z"
   },
   {
     "id": "EMP-00597",
@@ -22897,6 +22903,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-24T05:33:41.990552Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01091",
+    "full_name": "Linda Mitchell",
+    "email": "emp-01091@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-24T08:13:10.655165Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T08:13:10.655165Z",
     "terminated_at": null
   }
 ]
