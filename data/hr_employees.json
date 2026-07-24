@@ -18887,7 +18887,7 @@
     "email": "emp-00883@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -18898,7 +18898,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T07:22:33.077564Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-24T23:58:35.321231Z"
   },
   {
     "id": "EMP-00884",
@@ -23105,6 +23105,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-24T22:55:55.952283Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01101",
+    "full_name": "Paul Caldwell",
+    "email": "emp-01101@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-24T23:58:35.321231Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T23:58:35.321231Z",
     "terminated_at": null
   }
 ]
