@@ -22942,5 +22942,24 @@
     "manager_id": null,
     "hired_at": "2026-07-24T10:31:54.808884Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01093",
+    "full_name": "Renee Cooper",
+    "email": "emp-01093@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-24T12:15:18.187357Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T12:15:18.187357Z",
+    "terminated_at": null
   }
 ]
