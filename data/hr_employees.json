@@ -23068,5 +23068,43 @@
     "manager_id": null,
     "hired_at": "2026-07-24T18:54:49.687616Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01099",
+    "full_name": "Lisa Turner",
+    "email": "emp-01099@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-07-24T22:55:55.952283Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T22:55:55.952283Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01100",
+    "full_name": "David Freeman",
+    "email": "emp-01100@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-24T22:55:55.952283Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T22:55:55.952283Z",
+    "terminated_at": null
   }
 ]
