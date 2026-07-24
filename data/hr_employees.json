@@ -23024,5 +23024,24 @@
     "manager_id": null,
     "hired_at": "2026-07-24T15:52:06.635185Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01097",
+    "full_name": "Kenneth Lawrence",
+    "email": "emp-01097@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-07-24T17:23:21.603072Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T17:23:21.603072Z",
+    "terminated_at": null
   }
 ]

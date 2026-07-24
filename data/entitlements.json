@@ -5194,5 +5194,19 @@
     "sod_tags": [],
     "created_at": "2026-07-24T12:15:18.187357Z",
     "updated_at": "2026-07-24T12:15:18.187357Z"
+  },
+  {
+    "id": "ENT-00330",
+    "name": "new entitlement ENT-00330",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-24T17:23:21.603072Z",
+    "updated_at": "2026-07-24T17:23:21.603072Z"
   }
 ]
