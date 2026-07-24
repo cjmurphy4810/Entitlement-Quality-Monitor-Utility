@@ -22961,5 +22961,43 @@
     "manager_id": null,
     "hired_at": "2026-07-24T12:15:18.187357Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01094",
+    "full_name": "Elizabeth Robinson",
+    "email": "emp-01094@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-24T14:19:01.495588Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T14:19:01.495588Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01095",
+    "full_name": "Brian Jones",
+    "email": "emp-01095@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-24T14:19:01.495588Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-24T14:19:01.495588Z",
+    "terminated_at": null
   }
 ]
