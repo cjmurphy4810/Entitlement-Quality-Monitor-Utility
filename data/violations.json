@@ -125565,5 +125565,72 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05163",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-25T09:40:08.683615Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02164",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00015",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00114",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05164",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-25T09:40:08.754584Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00941",
+    "explanation": "Terminated employee EMP-00289 (Lindsey Bailey) still holds active assignment ASN-00941.",
+    "evidence": {
+      "employee_id": "EMP-00289",
+      "terminated_at": "2026-07-25T09:40:07.290156+00:00",
+      "entitlement_id": "ENT-00045"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05165",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-25T09:40:08.858044Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01805",
+    "explanation": "Terminated employee EMP-00289 (Lindsey Bailey) still holds active assignment ASN-01805.",
+    "evidence": {
+      "employee_id": "EMP-00289",
+      "terminated_at": "2026-07-25T09:40:07.290156+00:00",
+      "entitlement_id": "ENT-00111"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
