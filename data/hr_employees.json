@@ -23125,5 +23125,43 @@
     "manager_id": null,
     "hired_at": "2026-07-24T23:58:35.321231Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01102",
+    "full_name": "Regina Rogers",
+    "email": "emp-01102@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-25T02:49:25.284569Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T02:49:25.284569Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01103",
+    "full_name": "Kevin Edwards",
+    "email": "emp-01103@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-07-25T02:49:25.284569Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T02:49:25.284569Z",
+    "terminated_at": null
   }
 ]
