@@ -23409,5 +23409,24 @@
     "manager_id": null,
     "hired_at": "2026-07-25T22:25:07.977770Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01116",
+    "full_name": "David Diaz",
+    "email": "emp-01116@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "terminated",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-25T23:28:23.804123Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T23:28:23.804123Z",
+    "terminated_at": "2026-07-25T23:28:23.804123Z"
   }
 ]

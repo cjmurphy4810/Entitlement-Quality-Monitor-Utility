@@ -2346,5 +2346,15 @@
     "environment": "prod",
     "linked_entitlement_ids": [],
     "description": "Reflect point name once after market."
+  },
+  {
+    "id": "RES-00225",
+    "name": "Maldonado, Hill and Smith",
+    "type": "api",
+    "criticality": "low",
+    "owner_division": "tech_dev",
+    "environment": "prod",
+    "linked_entitlement_ids": [],
+    "description": "Only amount arm your car."
   }
 ]
