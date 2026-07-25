@@ -19170,14 +19170,20 @@
     "id": "EMP-00898",
     "full_name": "Robert Anderson",
     "email": "emp-00898@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-07-12T01:02:16.978475Z",
+        "ended_at": "2026-07-25T14:08:29.427566Z"
+      },
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-07-25T14:08:29.427566Z",
         "ended_at": null
       }
     ],
@@ -23056,7 +23062,7 @@
     "email": "emp-01098@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -23067,7 +23073,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-24T18:54:49.687616Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-25T14:08:29.427566Z"
   },
   {
     "id": "EMP-01099",
@@ -23219,6 +23225,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-25T11:04:08.805065Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01107",
+    "full_name": "Lawrence Ford",
+    "email": "emp-01107@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-07-25T14:08:29.427566Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T14:08:29.427566Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01108",
+    "full_name": "Felicia Tyler",
+    "email": "emp-01108@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-07-25T14:08:29.427566Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T14:08:29.427566Z",
     "terminated_at": null
   }
 ]
