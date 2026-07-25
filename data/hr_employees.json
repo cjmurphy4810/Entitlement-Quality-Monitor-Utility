@@ -22832,14 +22832,20 @@
     "id": "EMP-01086",
     "full_name": "Margaret Mccann",
     "email": "emp-01086@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-07-23T18:43:03.440004Z",
+        "ended_at": "2026-07-25T18:57:25.678784Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-07-25T18:57:25.678784Z",
         "ended_at": null
       }
     ],
