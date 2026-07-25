@@ -21910,7 +21910,7 @@
     "email": "emp-01038@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -21921,7 +21921,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-20T20:16:12.068037Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-25T05:37:06.309778Z"
   },
   {
     "id": "EMP-01039",
@@ -23162,6 +23162,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-25T02:49:25.284569Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01104",
+    "full_name": "Kathryn Buckley",
+    "email": "emp-01104@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-25T05:37:06.309778Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T05:37:06.309778Z",
     "terminated_at": null
   }
 ]
