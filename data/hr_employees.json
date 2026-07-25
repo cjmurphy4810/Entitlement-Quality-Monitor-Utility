@@ -23264,5 +23264,43 @@
     "manager_id": null,
     "hired_at": "2026-07-25T14:08:29.427566Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01109",
+    "full_name": "Carl Boyd",
+    "email": "emp-01109@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-25T16:50:28.756177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T16:50:28.756177Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01110",
+    "full_name": "Javier Walker",
+    "email": "emp-01110@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-25T16:50:28.756177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T16:50:28.756177Z",
+    "terminated_at": null
   }
 ]
