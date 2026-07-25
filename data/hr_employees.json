@@ -18849,7 +18849,7 @@
     "email": "emp-00881@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -18860,7 +18860,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T05:24:58.632400Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-25T11:04:08.805065Z"
   },
   {
     "id": "EMP-00882",
@@ -23181,6 +23181,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-25T05:37:06.309778Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01105",
+    "full_name": "Mrs. Tracey Hoover",
+    "email": "emp-01105@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-25T11:04:08.805065Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T11:04:08.805065Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01106",
+    "full_name": "Angela Knox",
+    "email": "emp-01106@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-25T11:04:08.805065Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T11:04:08.805065Z",
     "terminated_at": null
   }
 ]
