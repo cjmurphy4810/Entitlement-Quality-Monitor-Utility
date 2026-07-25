@@ -1143,14 +1143,20 @@
     "id": "EMP-00049",
     "full_name": "Brittney Campbell",
     "email": "user00049@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "hr",
         "started_at": "2025-07-13T04:52:59.501678Z",
+        "ended_at": "2026-07-25T22:25:07.977770Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-25T22:25:07.977770Z",
         "ended_at": null
       }
     ],
@@ -23383,6 +23389,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-25T20:09:54.481939Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01115",
+    "full_name": "Carolyn Robertson",
+    "email": "emp-01115@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-25T22:25:07.977770Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-25T22:25:07.977770Z",
     "terminated_at": null
   }
 ]
