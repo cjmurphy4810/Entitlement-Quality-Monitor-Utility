@@ -19226,8 +19226,8 @@
     "id": "EMP-00900",
     "full_name": "Kim Gutierrez",
     "email": "emp-00900@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "business_analyst",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -19240,6 +19240,12 @@
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-07-22T09:06:21.739476Z",
+        "ended_at": "2026-07-26T12:36:23.009163Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-07-26T12:36:23.009163Z",
         "ended_at": null
       }
     ],
@@ -20170,7 +20176,7 @@
     "email": "emp-00948@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -20181,7 +20187,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-15T11:08:04.046970Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-26T12:36:23.009163Z"
   },
   {
     "id": "EMP-00949",
