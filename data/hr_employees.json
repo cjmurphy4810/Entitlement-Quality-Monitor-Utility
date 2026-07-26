@@ -22368,8 +22368,8 @@
     "id": "EMP-01060",
     "full_name": "Jason Dixon",
     "email": "emp-01060@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -22382,6 +22382,12 @@
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-07-23T09:53:55.343095Z",
+        "ended_at": "2026-07-26T23:30:12.054020Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-26T23:30:12.054020Z",
         "ended_at": null
       }
     ],
