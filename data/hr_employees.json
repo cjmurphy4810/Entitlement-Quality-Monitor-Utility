@@ -23573,5 +23573,24 @@
     "manager_id": null,
     "hired_at": "2026-07-26T09:53:10.256959Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01124",
+    "full_name": "Kimberly Armstrong",
+    "email": "emp-01124@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-26T11:14:59.427426Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T11:14:59.427426Z",
+    "terminated_at": null
   }
 ]
