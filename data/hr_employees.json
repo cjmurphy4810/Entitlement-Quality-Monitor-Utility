@@ -5332,7 +5332,7 @@
     "email": "emp-00228@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -5343,7 +5343,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-07T02:13:45.045266Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-26T01:06:53.482104Z"
   },
   {
     "id": "EMP-00229",
@@ -23428,5 +23428,43 @@
     "manager_id": null,
     "hired_at": "2026-07-25T23:28:23.804123Z",
     "terminated_at": "2026-07-25T23:28:23.804123Z"
+  },
+  {
+    "id": "EMP-01117",
+    "full_name": "Jeffrey Hernandez",
+    "email": "emp-01117@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-26T01:06:53.482104Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T01:06:53.482104Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01118",
+    "full_name": "Chelsea Hill",
+    "email": "emp-01118@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-26T01:06:53.482104Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T01:06:53.482104Z",
+    "terminated_at": null
   }
 ]
