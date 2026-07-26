@@ -2376,5 +2376,15 @@
     "environment": "prod",
     "linked_entitlement_ids": [],
     "description": "Product small notice."
+  },
+  {
+    "id": "RES-00228",
+    "name": "Cowan-Martinez",
+    "type": "database",
+    "criticality": "critical",
+    "owner_division": "tech_ops",
+    "environment": "staging",
+    "linked_entitlement_ids": [],
+    "description": "Cell country even color."
   }
 ]
