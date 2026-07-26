@@ -10292,7 +10292,7 @@
     "email": "emp-00460@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -10309,7 +10309,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-25T17:03:06.415725Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-26T16:52:12.945388Z"
   },
   {
     "id": "EMP-00461",
@@ -14142,14 +14142,20 @@
     "id": "EMP-00646",
     "full_name": "Jeffrey Wallace",
     "email": "emp-00646@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2026-06-17T16:34:18.834532Z",
+        "ended_at": "2026-07-26T16:52:12.945388Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-07-26T16:52:12.945388Z",
         "ended_at": null
       }
     ],
@@ -23641,6 +23647,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-26T15:36:39.820552Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01127",
+    "full_name": "Kristie Montoya",
+    "email": "emp-01127@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-07-26T16:52:12.945388Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T16:52:12.945388Z",
     "terminated_at": null
   }
 ]
