@@ -23466,5 +23466,43 @@
     "manager_id": null,
     "hired_at": "2026-07-26T01:06:53.482104Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01119",
+    "full_name": "Glenn Williams",
+    "email": "emp-01119@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-26T04:53:48.574506Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T04:53:48.574506Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01120",
+    "full_name": "Benjamin Graham",
+    "email": "emp-01120@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-26T04:53:48.574506Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T04:53:48.574506Z",
+    "terminated_at": null
   }
 ]
