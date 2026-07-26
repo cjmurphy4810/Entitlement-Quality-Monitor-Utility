@@ -23197,14 +23197,20 @@
     "id": "EMP-01103",
     "full_name": "Kevin Edwards",
     "email": "emp-01103@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_dev",
         "started_at": "2026-07-25T02:49:25.284569Z",
+        "ended_at": "2026-07-26T19:06:03.646573Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-07-26T19:06:03.646573Z",
         "ended_at": null
       }
     ],
