@@ -22041,7 +22041,7 @@
     "email": "emp-01043@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -22052,7 +22052,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-20T23:51:48.732186Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-26T15:36:39.820552Z"
   },
   {
     "id": "EMP-01044",
@@ -23603,6 +23603,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-26T11:14:59.427426Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01125",
+    "full_name": "Zoe Jones",
+    "email": "emp-01125@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-26T15:36:39.820552Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T15:36:39.820552Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01126",
+    "full_name": "Caitlyn Alvarado",
+    "email": "emp-01126@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-07-26T15:36:39.820552Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T15:36:39.820552Z",
     "terminated_at": null
   }
 ]
