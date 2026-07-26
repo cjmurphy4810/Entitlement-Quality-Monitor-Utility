@@ -13416,8 +13416,8 @@
     "id": "EMP-00610",
     "full_name": "Madison Mahoney",
     "email": "emp-00610@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
@@ -13430,6 +13430,12 @@
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-07-18T18:27:50.259118Z",
+        "ended_at": "2026-07-26T07:32:13.262216Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-26T07:32:13.262216Z",
         "ended_at": null
       }
     ],
@@ -21277,7 +21283,7 @@
     "email": "emp-01005@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -21288,7 +21294,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T19:41:51.907470Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-26T07:32:13.262216Z"
   },
   {
     "id": "EMP-01006",
@@ -23503,6 +23509,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-26T04:53:48.574506Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01121",
+    "full_name": "Lisa Marshall",
+    "email": "emp-01121@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-26T07:32:13.262216Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T07:32:13.262216Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01122",
+    "full_name": "Sara Rush",
+    "email": "emp-01122@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-26T07:32:13.262216Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T07:32:13.262216Z",
     "terminated_at": null
   }
 ]
