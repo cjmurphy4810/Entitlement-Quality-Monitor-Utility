@@ -23667,5 +23667,43 @@
     "manager_id": null,
     "hired_at": "2026-07-26T16:52:12.945388Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01128",
+    "full_name": "James Webb",
+    "email": "emp-01128@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-07-26T17:56:46.453192Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T17:56:46.453192Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01129",
+    "full_name": "Elizabeth Mccormick",
+    "email": "emp-01129@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-26T17:56:46.453192Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-26T17:56:46.453192Z",
+    "terminated_at": null
   }
 ]

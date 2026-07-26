@@ -127732,5 +127732,137 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05252",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-26T17:56:47.111589Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02204",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00231",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00278",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05253",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-26T17:56:48.079279Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02204",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00231",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00278",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05254",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-07-26T17:56:48.081324Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00485",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-06-26T17:14:08.544505+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00198",
+      "current_role": "operations",
+      "prior_roles": [
+        "business_user",
+        "customer"
+      ],
+      "last_role_change_at": "2026-06-26T17:14:08.544505+00:00",
+      "granted_at": "2026-05-08T15:06:55.422692+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05255",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-07-26T17:56:48.082203Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00724",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-06-26T17:14:08.544505+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00198",
+      "current_role": "operations",
+      "prior_roles": [
+        "business_user",
+        "customer"
+      ],
+      "last_role_change_at": "2026-06-26T17:14:08.544505+00:00",
+      "granted_at": "2026-05-17T16:50:45.361060+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05256",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-07-26T17:56:48.083690Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01109",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-06-26T17:14:08.544505+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00198",
+      "current_role": "operations",
+      "prior_roles": [
+        "business_user",
+        "customer"
+      ],
+      "last_role_change_at": "2026-06-26T17:14:08.544505+00:00",
+      "granted_at": "2026-06-06T00:01:43.128671+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
