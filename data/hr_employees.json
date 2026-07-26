@@ -11852,14 +11852,20 @@
     "id": "EMP-00534",
     "full_name": "Michael Ward",
     "email": "emp-00534@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-06-02T09:46:34.241489Z",
+        "ended_at": "2026-07-26T14:25:45.687327Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-07-26T14:25:45.687327Z",
         "ended_at": null
       }
     ],
