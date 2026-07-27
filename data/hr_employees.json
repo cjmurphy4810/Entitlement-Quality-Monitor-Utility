@@ -23957,5 +23957,43 @@
     "manager_id": null,
     "hired_at": "2026-07-27T18:54:09.626082Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01142",
+    "full_name": "Jordan Parks",
+    "email": "emp-01142@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-07-27T21:36:02.307931Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T21:36:02.307931Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01143",
+    "full_name": "Travis Anderson",
+    "email": "emp-01143@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-27T21:36:02.307931Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T21:36:02.307931Z",
+    "terminated_at": null
   }
 ]
