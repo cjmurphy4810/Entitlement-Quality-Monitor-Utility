@@ -23938,5 +23938,24 @@
     "manager_id": null,
     "hired_at": "2026-07-27T17:16:02.461960Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01141",
+    "full_name": "Frank Rodriguez",
+    "email": "emp-01141@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-07-27T18:54:09.626082Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T18:54:09.626082Z",
+    "terminated_at": null
   }
 ]
