@@ -23919,5 +23919,24 @@
     "manager_id": null,
     "hired_at": "2026-07-27T15:21:41.434477Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01140",
+    "full_name": "Jamie Miller",
+    "email": "emp-01140@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-07-27T17:16:02.461960Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T17:16:02.461960Z",
+    "terminated_at": null
   }
 ]
