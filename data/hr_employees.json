@@ -23995,5 +23995,24 @@
     "manager_id": null,
     "hired_at": "2026-07-27T21:36:02.307931Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01144",
+    "full_name": "Susan Foster",
+    "email": "emp-01144@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-27T23:57:26.253727Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T23:57:26.253727Z",
+    "terminated_at": null
   }
 ]
