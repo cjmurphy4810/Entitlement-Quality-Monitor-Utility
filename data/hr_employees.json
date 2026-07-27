@@ -22589,14 +22589,20 @@
     "id": "EMP-01071",
     "full_name": "Kathryn Porter",
     "email": "emp-01071@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-07-22T19:02:45.857037Z",
+        "ended_at": "2026-07-27T05:05:36.859989Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-27T05:05:36.859989Z",
         "ended_at": null
       }
     ],
@@ -23798,6 +23804,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-27T01:10:26.762838Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01134",
+    "full_name": "Eric Santiago",
+    "email": "emp-01134@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-27T05:05:36.859989Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T05:05:36.859989Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01135",
+    "full_name": "Sharon Robinson",
+    "email": "emp-01135@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-07-27T05:05:36.859989Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T05:05:36.859989Z",
     "terminated_at": null
   }
 ]
