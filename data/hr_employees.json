@@ -16635,7 +16635,7 @@
     "email": "emp-00767@example.com",
     "current_role": "business_user",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -16646,7 +16646,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-01T06:19:44.126899Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-27T01:10:26.762838Z"
   },
   {
     "id": "EMP-00768",
@@ -23779,6 +23779,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-26T22:29:26.261874Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01133",
+    "full_name": "Jessica Barton",
+    "email": "emp-01133@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-07-27T01:10:26.762838Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T01:10:26.762838Z",
     "terminated_at": null
   }
 ]
