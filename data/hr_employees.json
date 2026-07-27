@@ -23843,5 +23843,43 @@
     "manager_id": null,
     "hired_at": "2026-07-27T05:05:36.859989Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01136",
+    "full_name": "Leonard Carlson",
+    "email": "emp-01136@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-27T12:15:06.640078Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T12:15:06.640078Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01137",
+    "full_name": "Dennis Ryan",
+    "email": "emp-01137@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-27T12:15:06.640078Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-27T12:15:06.640078Z",
+    "terminated_at": null
   }
 ]
