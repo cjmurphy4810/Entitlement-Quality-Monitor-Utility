@@ -130842,5 +130842,166 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05377",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-28T16:56:57.543191Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02256",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00288",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05378",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-28T16:56:57.543996Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02257",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00720",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00220",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05379",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-28T16:56:58.595882Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02257",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00720",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00220",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05380",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-28T16:56:58.786704Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01547",
+    "explanation": "Terminated employee EMP-00652 (Sharon Alvarez) still holds active assignment ASN-01547.",
+    "evidence": {
+      "employee_id": "EMP-00652",
+      "terminated_at": "2026-07-28T16:56:56.821510+00:00",
+      "entitlement_id": "ENT-00187"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05381",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-28T16:56:58.878026Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02144",
+    "explanation": "Terminated employee EMP-00652 (Sharon Alvarez) still holds active assignment ASN-02144.",
+    "evidence": {
+      "employee_id": "EMP-00652",
+      "terminated_at": "2026-07-28T16:56:56.821510+00:00",
+      "entitlement_id": "ENT-00229"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05382",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-28T16:56:58.892379Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02239",
+    "explanation": "Terminated employee EMP-00652 (Sharon Alvarez) still holds active assignment ASN-02239.",
+    "evidence": {
+      "employee_id": "EMP-00652",
+      "terminated_at": "2026-07-28T16:56:56.821510+00:00",
+      "entitlement_id": "ENT-00164"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05383",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-28T16:56:58.894988Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02256",
+    "explanation": "Terminated employee EMP-00098 (James Hernandez) still holds active assignment ASN-02256.",
+    "evidence": {
+      "employee_id": "EMP-00098",
+      "terminated_at": "2026-04-29T22:52:30.801368+00:00",
+      "entitlement_id": "ENT-00288"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

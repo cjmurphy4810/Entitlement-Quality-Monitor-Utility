@@ -14300,7 +14300,7 @@
     "email": "emp-00652@example.com",
     "current_role": "business_analyst",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -14311,7 +14311,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-18T09:51:13.512243Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-28T16:56:56.821510Z"
   },
   {
     "id": "EMP-00653",
@@ -24151,6 +24151,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-28T15:15:01.205925Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01151",
+    "full_name": "Roger Hubbard",
+    "email": "emp-01151@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-28T16:56:56.821510Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-28T16:56:56.821510Z",
     "terminated_at": null
   }
 ]
