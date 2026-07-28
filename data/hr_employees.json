@@ -24190,5 +24190,43 @@
     "manager_id": null,
     "hired_at": "2026-07-28T18:12:33.002580Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01153",
+    "full_name": "Melissa Jones",
+    "email": "emp-01153@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-07-28T19:59:07.137802Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-28T19:59:07.137802Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01154",
+    "full_name": "Susan Bautista",
+    "email": "emp-01154@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-07-28T19:59:07.137802Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-28T19:59:07.137802Z",
+    "terminated_at": null
   }
 ]
