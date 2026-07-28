@@ -24024,14 +24024,20 @@
     "id": "EMP-01144",
     "full_name": "Susan Foster",
     "email": "emp-01144@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-07-27T23:57:26.253727Z",
+        "ended_at": "2026-07-28T21:11:11.278806Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-07-28T21:11:11.278806Z",
         "ended_at": null
       }
     ],
