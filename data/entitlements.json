@@ -5380,5 +5380,21 @@
     "sod_tags": [],
     "created_at": "2026-07-28T02:27:45.820362Z",
     "updated_at": "2026-07-28T02:27:45.820362Z"
+  },
+  {
+    "id": "ENT-00342",
+    "name": "new entitlement ENT-00342",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00120"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-28T05:30:01.828364Z",
+    "updated_at": "2026-07-28T05:30:01.828364Z"
   }
 ]

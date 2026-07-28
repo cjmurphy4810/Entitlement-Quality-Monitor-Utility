@@ -11123,7 +11123,7 @@
     "email": "emp-00499@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -11134,7 +11134,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-30T08:01:10.966670Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-28T05:30:01.828364Z"
   },
   {
     "id": "EMP-00500",
@@ -24057,6 +24057,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-28T02:27:45.820362Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01147",
+    "full_name": "Victoria Cruz",
+    "email": "emp-01147@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-28T05:30:01.828364Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-28T05:30:01.828364Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01148",
+    "full_name": "Stephanie Coleman",
+    "email": "emp-01148@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-28T05:30:01.828364Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-28T05:30:01.828364Z",
     "terminated_at": null
   }
 ]
