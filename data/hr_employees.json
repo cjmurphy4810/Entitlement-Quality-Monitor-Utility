@@ -24171,5 +24171,24 @@
     "manager_id": null,
     "hired_at": "2026-07-28T16:56:56.821510Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01152",
+    "full_name": "Jasmin Forbes",
+    "email": "emp-01152@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-28T18:12:33.002580Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-28T18:12:33.002580Z",
+    "terminated_at": null
   }
 ]
