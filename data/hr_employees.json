@@ -24108,5 +24108,24 @@
     "manager_id": null,
     "hired_at": "2026-07-28T05:30:01.828364Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01149",
+    "full_name": "Kristen Ingram",
+    "email": "emp-01149@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-28T12:50:51.462459Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-28T12:50:51.462459Z",
+    "terminated_at": null
   }
 ]
