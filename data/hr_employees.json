@@ -7312,14 +7312,20 @@
     "id": "EMP-00320",
     "full_name": "Veronica Shields",
     "email": "emp-00320@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-05-14T12:22:52.241804Z",
+        "ended_at": "2026-07-28T10:56:11.240336Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-07-28T10:56:11.240336Z",
         "ended_at": null
       }
     ],
