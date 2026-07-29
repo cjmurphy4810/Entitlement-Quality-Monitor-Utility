@@ -22380,7 +22380,7 @@
     "email": "emp-01058@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -22391,7 +22391,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T21:59:09.378933Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-29T08:03:22.678317Z"
   },
   {
     "id": "EMP-01059",
@@ -24295,6 +24295,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-28T22:32:17.962436Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01157",
+    "full_name": "Casey Fernandez",
+    "email": "emp-01157@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-07-29T08:03:22.678317Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T08:03:22.678317Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01158",
+    "full_name": "Sharon Garrett",
+    "email": "emp-01158@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-29T08:03:22.678317Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T08:03:22.678317Z",
     "terminated_at": null
   }
 ]
