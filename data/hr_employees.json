@@ -10997,7 +10997,7 @@
     "email": "emp-00493@example.com",
     "current_role": "business_analyst",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -11014,7 +11014,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-29T19:53:33.666455Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-29T19:50:56.189371Z"
   },
   {
     "id": "EMP-00494",
@@ -24478,6 +24478,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-29T18:02:28.856249Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01166",
+    "full_name": "Rachel Zhang DVM",
+    "email": "emp-01166@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-29T19:50:56.189371Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T19:50:56.189371Z",
     "terminated_at": null
   }
 ]

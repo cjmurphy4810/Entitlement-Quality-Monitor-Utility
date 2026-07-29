@@ -445,7 +445,7 @@
     "id": "ENT-00025",
     "name": "tech_dev elevated_ro 25",
     "pbl_description": "Provides elevated read access in Foster-Rocha Database with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 4,
     "acceptable_roles": [
       "business_analyst"
     ],
@@ -457,7 +457,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-08-12T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-29T19:50:56.189371Z"
   },
   {
     "id": "ENT-00026",
@@ -5476,5 +5476,21 @@
     "sod_tags": [],
     "created_at": "2026-07-29T13:12:43.134798Z",
     "updated_at": "2026-07-29T13:12:43.134798Z"
+  },
+  {
+    "id": "ENT-00348",
+    "name": "new entitlement ENT-00348",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00073"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-29T19:50:56.189371Z",
+    "updated_at": "2026-07-29T19:50:56.189371Z"
   }
 ]
