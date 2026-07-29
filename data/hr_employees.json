@@ -21112,14 +21112,20 @@
     "id": "EMP-00992",
     "full_name": "Christopher Green",
     "email": "emp-00992@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-07-18T03:50:21.587194Z",
+        "ended_at": "2026-07-29T15:27:10.549079Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-29T15:27:10.549079Z",
         "ended_at": null
       }
     ],
@@ -24415,6 +24421,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-29T13:12:43.134798Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01163",
+    "full_name": "Joseph Sullivan",
+    "email": "emp-01163@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-29T15:27:10.549079Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T15:27:10.549079Z",
     "terminated_at": null
   }
 ]
