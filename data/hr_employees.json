@@ -24542,5 +24542,24 @@
     "manager_id": null,
     "hired_at": "2026-07-29T21:53:58.052070Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01169",
+    "full_name": "Christopher Owen",
+    "email": "emp-01169@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-07-29T23:56:11.807044Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T23:56:11.807044Z",
+    "terminated_at": null
   }
 ]
