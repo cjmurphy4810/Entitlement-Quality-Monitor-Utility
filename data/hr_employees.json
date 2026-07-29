@@ -21403,14 +21403,20 @@
     "id": "EMP-01007",
     "full_name": "Michael Leblanc",
     "email": "emp-01007@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "hr",
         "started_at": "2026-07-18T20:39:42.491747Z",
+        "ended_at": "2026-07-29T21:53:58.052070Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-07-29T21:53:58.052070Z",
         "ended_at": null
       }
     ],
@@ -24239,7 +24245,7 @@
     "email": "emp-01153@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -24250,7 +24256,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-28T19:59:07.137802Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-29T21:53:58.052070Z"
   },
   {
     "id": "EMP-01154",
@@ -24497,6 +24503,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-29T19:50:56.189371Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01167",
+    "full_name": "Michael Guzman",
+    "email": "emp-01167@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-07-29T21:53:58.052070Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T21:53:58.052070Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01168",
+    "full_name": "Donald Richardson",
+    "email": "emp-01168@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-07-29T21:53:58.052070Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T21:53:58.052070Z",
     "terminated_at": null
   }
 ]
