@@ -12093,7 +12093,7 @@
     "email": "emp-00545@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -12110,7 +12110,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-04T19:18:43.080243Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-29T01:58:53.764179Z"
   },
   {
     "id": "EMP-00546",
@@ -15011,14 +15011,20 @@
     "id": "EMP-00687",
     "full_name": "Danielle Jones",
     "email": "emp-00687@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_dev",
+    "current_role": "developer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_dev",
         "started_at": "2026-06-22T22:59:49.312778Z",
+        "ended_at": "2026-07-29T01:58:53.764179Z"
+      },
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-07-29T01:58:53.764179Z",
         "ended_at": null
       }
     ],
