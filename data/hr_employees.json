@@ -3060,8 +3060,8 @@
     "id": "EMP-00130",
     "full_name": "Theresa Spencer",
     "email": "emp-00130@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -3074,6 +3074,12 @@
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-07-01T01:37:46.807011Z",
+        "ended_at": "2026-07-29T05:24:07.000576Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-29T05:24:07.000576Z",
         "ended_at": null
       }
     ],
