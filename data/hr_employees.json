@@ -24460,5 +24460,24 @@
     "manager_id": null,
     "hired_at": "2026-07-29T16:48:48.096264Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01165",
+    "full_name": "Rebecca Holland",
+    "email": "emp-01165@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-07-29T18:02:28.856249Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T18:02:28.856249Z",
+    "terminated_at": null
   }
 ]
