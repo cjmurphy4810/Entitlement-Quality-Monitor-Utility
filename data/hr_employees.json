@@ -24441,5 +24441,24 @@
     "manager_id": null,
     "hired_at": "2026-07-29T15:27:10.549079Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01164",
+    "full_name": "Kathy Nelson",
+    "email": "emp-01164@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-07-29T16:48:48.096264Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-29T16:48:48.096264Z",
+    "terminated_at": null
   }
 ]
