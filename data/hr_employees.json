@@ -24712,5 +24712,43 @@
     "manager_id": null,
     "hired_at": "2026-07-30T14:39:54.512513Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01177",
+    "full_name": "John Lin",
+    "email": "emp-01177@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-07-30T16:21:44.643390Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T16:21:44.643390Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01178",
+    "full_name": "Carla Daniels",
+    "email": "emp-01178@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-30T16:21:44.643390Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T16:21:44.643390Z",
+    "terminated_at": null
   }
 ]
