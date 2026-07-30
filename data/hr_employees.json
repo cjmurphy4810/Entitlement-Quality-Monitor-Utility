@@ -24775,5 +24775,24 @@
     "manager_id": null,
     "hired_at": "2026-07-30T17:54:54.920062Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01180",
+    "full_name": "Brandon Brown",
+    "email": "emp-01180@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-07-30T19:14:56.390096Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T19:14:56.390096Z",
+    "terminated_at": null
   }
 ]
