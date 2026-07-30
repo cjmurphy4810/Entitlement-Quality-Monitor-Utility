@@ -24598,5 +24598,43 @@
     "manager_id": null,
     "hired_at": "2026-07-30T01:59:00.119616Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01171",
+    "full_name": "Daniel Moody",
+    "email": "emp-01171@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-07-30T10:17:41.201029Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T10:17:41.201029Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01172",
+    "full_name": "Elizabeth Bartlett",
+    "email": "emp-01172@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-07-30T10:17:41.201029Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T10:17:41.201029Z",
+    "terminated_at": null
   }
 ]
