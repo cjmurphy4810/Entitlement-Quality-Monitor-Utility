@@ -24636,5 +24636,43 @@
     "manager_id": null,
     "hired_at": "2026-07-30T10:17:41.201029Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01173",
+    "full_name": "Barbara Hardy",
+    "email": "emp-01173@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-07-30T12:10:24.116465Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T12:10:24.116465Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01174",
+    "full_name": "James Smith",
+    "email": "emp-01174@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-07-30T12:10:24.116465Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T12:10:24.116465Z",
+    "terminated_at": null
   }
 ]
