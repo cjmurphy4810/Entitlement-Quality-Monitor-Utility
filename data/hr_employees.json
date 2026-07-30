@@ -20853,14 +20853,20 @@
     "id": "EMP-00979",
     "full_name": "Angela Nelson",
     "email": "emp-00979@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-07-17T09:50:48.849086Z",
+        "ended_at": "2026-07-30T01:59:00.119616Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-07-30T01:59:00.119616Z",
         "ended_at": null
       }
     ],
@@ -21272,7 +21278,7 @@
     "email": "emp-01000@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -21283,7 +21289,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T16:26:40.262235Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-30T01:59:00.119616Z"
   },
   {
     "id": "EMP-01001",
@@ -24560,6 +24566,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-29T23:56:11.807044Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01170",
+    "full_name": "Joseph Moody",
+    "email": "emp-01170@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-07-30T01:59:00.119616Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T01:59:00.119616Z",
     "terminated_at": null
   }
 ]
