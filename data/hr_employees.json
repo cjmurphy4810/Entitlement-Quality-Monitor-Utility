@@ -14077,14 +14077,20 @@
     "id": "EMP-00641",
     "full_name": "Louis Spencer",
     "email": "emp-00641@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-06-16T10:59:29.759628Z",
+        "ended_at": "2026-07-30T05:12:08.171810Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-07-30T05:12:08.171810Z",
         "ended_at": null
       }
     ],
