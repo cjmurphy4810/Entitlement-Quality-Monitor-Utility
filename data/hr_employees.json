@@ -7534,7 +7534,7 @@
     "email": "emp-00330@example.com",
     "current_role": "business_analyst",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -7551,7 +7551,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-15T05:08:35.441617Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-30T23:30:21.651599Z"
   },
   {
     "id": "EMP-00331",
@@ -24818,6 +24818,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-30T20:39:59.434317Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01182",
+    "full_name": "Leslie Ho",
+    "email": "emp-01182@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-30T23:30:21.651599Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T23:30:21.651599Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01183",
+    "full_name": "Paul Sanders",
+    "email": "emp-01183@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-07-30T23:30:21.651599Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T23:30:21.651599Z",
     "terminated_at": null
   }
 ]
