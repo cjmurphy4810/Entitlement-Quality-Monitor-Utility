@@ -24794,5 +24794,24 @@
     "manager_id": null,
     "hired_at": "2026-07-30T19:14:56.390096Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01181",
+    "full_name": "Phillip Finley",
+    "email": "emp-01181@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-07-30T20:39:59.434317Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-30T20:39:59.434317Z",
+    "terminated_at": null
   }
 ]
