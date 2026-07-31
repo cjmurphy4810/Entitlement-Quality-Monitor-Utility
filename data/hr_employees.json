@@ -25028,5 +25028,24 @@
     "manager_id": null,
     "hired_at": "2026-07-31T18:51:00.760137Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01193",
+    "full_name": "Mrs. Suzanne Fowler",
+    "email": "emp-01193@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-07-31T21:35:44.579665Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T21:35:44.579665Z",
+    "terminated_at": null
   }
 ]
