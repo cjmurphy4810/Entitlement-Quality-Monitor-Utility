@@ -24541,7 +24541,7 @@
     "email": "emp-01167@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -24552,7 +24552,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-29T21:53:58.052070Z",
-    "terminated_at": null
+    "terminated_at": "2026-07-31T13:12:23.330974Z"
   },
   {
     "id": "EMP-01168",
@@ -24894,6 +24894,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-31T11:24:29.121113Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01186",
+    "full_name": "Nicholas Thomas",
+    "email": "emp-01186@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-07-31T13:12:23.330974Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T13:12:23.330974Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01187",
+    "full_name": "Kevin Kaufman",
+    "email": "emp-01187@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-07-31T13:12:23.330974Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T13:12:23.330974Z",
     "terminated_at": null
   }
 ]
