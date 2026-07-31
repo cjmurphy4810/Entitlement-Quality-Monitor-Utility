@@ -24876,5 +24876,24 @@
     "manager_id": null,
     "hired_at": "2026-07-31T02:07:56.690468Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01185",
+    "full_name": "Patricia Holt",
+    "email": "emp-01185@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-07-31T11:24:29.121113Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T11:24:29.121113Z",
+    "terminated_at": null
   }
 ]

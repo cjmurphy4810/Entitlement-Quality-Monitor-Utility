@@ -135477,5 +135477,121 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05565",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-31T11:24:29.886065Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02323",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01185",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00288",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05566",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-31T11:24:30.993603Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02323",
+    "explanation": "Employee division 'hr' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-01185",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00288",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05567",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-31T11:24:30.994652Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02324",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00776",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00190",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05568",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-07-31T11:24:30.995701Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02325",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00688",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00088",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05569",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-07-31T11:24:31.288406Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02325",
+    "explanation": "Terminated employee EMP-00688 (Kayla Gutierrez) still holds active assignment ASN-02325.",
+    "evidence": {
+      "employee_id": "EMP-00688",
+      "terminated_at": "2026-06-26T19:15:47.193264+00:00",
+      "entitlement_id": "ENT-00088"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
