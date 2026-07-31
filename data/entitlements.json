@@ -5540,5 +5540,21 @@
     "sod_tags": [],
     "created_at": "2026-07-30T23:30:21.651599Z",
     "updated_at": "2026-07-30T23:30:21.651599Z"
+  },
+  {
+    "id": "ENT-00352",
+    "name": "new entitlement ENT-00352",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00228"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-31T02:07:56.690468Z",
+    "updated_at": "2026-07-31T02:07:56.690468Z"
   }
 ]

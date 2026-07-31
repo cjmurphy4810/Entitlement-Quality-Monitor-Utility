@@ -24857,5 +24857,24 @@
     "manager_id": null,
     "hired_at": "2026-07-30T23:30:21.651599Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01184",
+    "full_name": "Dr. Eric Hill",
+    "email": "emp-01184@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-07-31T02:07:56.690468Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T02:07:56.690468Z",
+    "terminated_at": null
   }
 ]
