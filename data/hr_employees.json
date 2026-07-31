@@ -24933,5 +24933,24 @@
     "manager_id": null,
     "hired_at": "2026-07-31T13:12:23.330974Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01188",
+    "full_name": "Brian Thompson",
+    "email": "emp-01188@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-07-31T15:35:11.136491Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T15:35:11.136491Z",
+    "terminated_at": null
   }
 ]
