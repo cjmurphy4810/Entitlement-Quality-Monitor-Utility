@@ -24990,5 +24990,43 @@
     "manager_id": null,
     "hired_at": "2026-07-31T17:22:14.437999Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01191",
+    "full_name": "Kathleen Gonzalez",
+    "email": "emp-01191@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-07-31T18:51:00.760137Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T18:51:00.760137Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01192",
+    "full_name": "James Pierce",
+    "email": "emp-01192@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-07-31T18:51:00.760137Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-07-31T18:51:00.760137Z",
+    "terminated_at": null
   }
 ]
