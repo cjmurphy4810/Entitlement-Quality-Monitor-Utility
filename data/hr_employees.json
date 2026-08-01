@@ -25211,5 +25211,24 @@
     "manager_id": null,
     "hired_at": "2026-08-01T14:43:28.046389Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01202",
+    "full_name": "Bryce Watkins",
+    "email": "emp-01202@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-01T15:55:50.891540Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T15:55:50.891540Z",
+    "terminated_at": null
   }
 ]
