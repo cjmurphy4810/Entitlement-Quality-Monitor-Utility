@@ -25110,5 +25110,43 @@
     "manager_id": null,
     "hired_at": "2026-08-01T10:14:31.834973Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01197",
+    "full_name": "Robert Campbell",
+    "email": "emp-01197@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-01T11:39:49.863048Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T11:39:49.863048Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01198",
+    "full_name": "Melissa Bartlett",
+    "email": "emp-01198@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-01T11:39:49.863048Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T11:39:49.863048Z",
+    "terminated_at": null
   }
 ]
