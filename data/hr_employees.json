@@ -21288,7 +21288,7 @@
     "email": "emp-00998@example.com",
     "current_role": "developer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -21299,7 +21299,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T14:21:07.192469Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-01T22:26:36.336707Z"
   },
   {
     "id": "EMP-00999",
@@ -25412,6 +25412,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-01T21:22:59.917877Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01212",
+    "full_name": "Monica Sellers",
+    "email": "emp-01212@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-01T22:26:36.336707Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T22:26:36.336707Z",
     "terminated_at": null
   }
 ]
