@@ -137884,5 +137884,189 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05664",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T23:27:01.424363Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02366",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00473",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00131",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05665",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T23:27:01.425197Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02367",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00813",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00319",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05666",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T23:27:02.581357Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02366",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00473",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00131",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05667",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T23:27:02.582429Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02367",
+    "explanation": "Employee division 'finance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00813",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00319",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05668",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-01T23:27:02.610030Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00454",
+    "explanation": "Terminated employee EMP-00230 (Mr. Rodney Sanders MD) still holds active assignment ASN-00454.",
+    "evidence": {
+      "employee_id": "EMP-00230",
+      "terminated_at": "2026-08-01T23:27:00.627357+00:00",
+      "entitlement_id": "ENT-00039"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05669",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-01T23:27:02.693957Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01146",
+    "explanation": "Terminated employee EMP-00230 (Mr. Rodney Sanders MD) still holds active assignment ASN-01146.",
+    "evidence": {
+      "employee_id": "EMP-00230",
+      "terminated_at": "2026-08-01T23:27:00.627357+00:00",
+      "entitlement_id": "ENT-00010"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05670",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-01T23:27:02.705650Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01207",
+    "explanation": "Terminated employee EMP-00230 (Mr. Rodney Sanders MD) still holds active assignment ASN-01207.",
+    "evidence": {
+      "employee_id": "EMP-00230",
+      "terminated_at": "2026-08-01T23:27:00.627357+00:00",
+      "entitlement_id": "ENT-00120"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05671",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-01T23:27:02.744702Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01470",
+    "explanation": "Terminated employee EMP-00230 (Mr. Rodney Sanders MD) still holds active assignment ASN-01470.",
+    "evidence": {
+      "employee_id": "EMP-00230",
+      "terminated_at": "2026-08-01T23:27:00.627357+00:00",
+      "entitlement_id": "ENT-00220"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
