@@ -25312,5 +25312,43 @@
     "manager_id": null,
     "hired_at": "2026-08-01T17:55:50.980130Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01207",
+    "full_name": "Gary Zhang DVM",
+    "email": "emp-01207@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-01T19:00:57.900341Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T19:00:57.900341Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01208",
+    "full_name": "Bruce Macdonald",
+    "email": "emp-01208@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-01T19:00:57.900341Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T19:00:57.900341Z",
+    "terminated_at": null
   }
 ]
