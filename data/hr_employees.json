@@ -10433,14 +10433,20 @@
     "id": "EMP-00465",
     "full_name": "Emily Young",
     "email": "emp-00465@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-05-26T17:53:44.326825Z",
+        "ended_at": "2026-08-01T21:22:59.917877Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-01T21:22:59.917877Z",
         "ended_at": null
       }
     ],
@@ -12462,7 +12468,7 @@
     "email": "emp-00560@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -12473,7 +12479,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-06T17:04:01.595639Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-01T21:22:59.917877Z"
   },
   {
     "id": "EMP-00561",
@@ -25387,6 +25393,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-01T20:24:32.566914Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01211",
+    "full_name": "Devin Frank",
+    "email": "emp-01211@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-01T21:22:59.917877Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T21:22:59.917877Z",
     "terminated_at": null
   }
 ]

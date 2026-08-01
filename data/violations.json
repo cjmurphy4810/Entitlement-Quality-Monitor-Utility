@@ -137699,5 +137699,98 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05656",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T21:23:00.714907Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02364",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00391",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00098",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05657",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T21:23:01.025130Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01214",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00465",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00095",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05658",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T21:23:01.882939Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02364",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00391",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00098",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05659",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-01T21:23:02.127165Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01970",
+    "explanation": "Terminated employee EMP-00560 (Sean Humphrey) still holds active assignment ASN-01970.",
+    "evidence": {
+      "employee_id": "EMP-00560",
+      "terminated_at": "2026-08-01T21:22:59.917877+00:00",
+      "entitlement_id": "ENT-00040"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
