@@ -136415,5 +136415,171 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05605",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T02:14:04.544629Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02342",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00763",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00136",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05606",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T02:14:04.545165Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02343",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00711",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00323",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05607",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T02:14:04.545711Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02344",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00342",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00110",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05608",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T02:14:05.277773Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02342",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00763",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00136",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05609",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T02:14:05.278507Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02343",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00711",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00323",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05610",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T02:14:05.279202Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02344",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00342",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00110",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05611",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-01T02:14:05.475040Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02344",
+    "explanation": "Terminated employee EMP-00342 (Matthew Clark) still holds active assignment ASN-02344.",
+    "evidence": {
+      "employee_id": "EMP-00342",
+      "terminated_at": "2026-07-03T12:04:34.269349+00:00",
+      "entitlement_id": "ENT-00110"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
