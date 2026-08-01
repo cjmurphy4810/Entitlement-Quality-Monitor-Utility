@@ -25230,5 +25230,43 @@
     "manager_id": null,
     "hired_at": "2026-08-01T15:55:50.891540Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01203",
+    "full_name": "Veronica Noble",
+    "email": "emp-01203@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-01T16:53:54.740221Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T16:53:54.740221Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01204",
+    "full_name": "Michael Hahn",
+    "email": "emp-01204@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-01T16:53:54.740221Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T16:53:54.740221Z",
+    "terminated_at": null
   }
 ]
