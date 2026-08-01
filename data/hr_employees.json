@@ -25072,5 +25072,43 @@
     "manager_id": null,
     "hired_at": "2026-07-31T22:54:07.258961Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01195",
+    "full_name": "Mark Swanson",
+    "email": "emp-01195@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-01T10:14:31.834973Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T10:14:31.834973Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01196",
+    "full_name": "Donald Serrano",
+    "email": "emp-01196@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-01T10:14:31.834973Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T10:14:31.834973Z",
+    "terminated_at": null
   }
 ]
