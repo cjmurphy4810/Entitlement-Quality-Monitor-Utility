@@ -136581,5 +136581,84 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05612",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T05:39:40.999170Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02345",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-01002",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00045",
+      "acceptable_roles": [
+        "developer",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05613",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-01T05:39:41.605885Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02345",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-01002",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00045",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05614",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-08-01T05:39:41.782835Z",
+    "target_type": "employee",
+    "target_id": "EMP-01002",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00004.",
+    "evidence": {
+      "resource_id": "RES-00004",
+      "developer_admin_entitlements": [
+        "ENT-00045"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00045"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
