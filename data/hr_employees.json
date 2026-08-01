@@ -25173,5 +25173,43 @@
     "manager_id": null,
     "hired_at": "2026-08-01T13:03:46.655118Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01200",
+    "full_name": "Richard Johnson",
+    "email": "emp-01200@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-01T14:43:28.046389Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T14:43:28.046389Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01201",
+    "full_name": "Michael Villegas",
+    "email": "emp-01201@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-01T14:43:28.046389Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-01T14:43:28.046389Z",
+    "terminated_at": null
   }
 ]
