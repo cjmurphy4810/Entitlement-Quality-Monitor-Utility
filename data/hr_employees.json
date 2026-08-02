@@ -22019,14 +22019,20 @@
     "id": "EMP-01035",
     "full_name": "Andrea Wells",
     "email": "emp-01035@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-07-20T15:26:17.525919Z",
+        "ended_at": "2026-08-02T04:50:08.947488Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-02T04:50:08.947488Z",
         "ended_at": null
       }
     ],
@@ -25475,6 +25481,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-02T01:05:51.677346Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01215",
+    "full_name": "Derrick Elliott",
+    "email": "emp-01215@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-02T04:50:08.947488Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T04:50:08.947488Z",
     "terminated_at": null
   }
 ]

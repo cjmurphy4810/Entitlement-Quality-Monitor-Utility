@@ -41,7 +41,7 @@
     "id": "ENT-00003",
     "name": "cyber_tech elevated_ro 3",
     "pbl_description": "Provides elevated read access in Cole LLC Api with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "developer",
       "business_user"
@@ -53,7 +53,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-07-12T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-08-02T04:50:08.947488Z"
   },
   {
     "id": "ENT-00004",
