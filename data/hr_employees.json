@@ -17481,14 +17481,20 @@
     "id": "EMP-00805",
     "full_name": "Amanda Black",
     "email": "emp-00805@example.com",
-    "current_role": "developer",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_ops",
         "started_at": "2026-07-04T14:07:19.182902Z",
+        "ended_at": "2026-08-02T07:28:51.172514Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-02T07:28:51.172514Z",
         "ended_at": null
       }
     ],
