@@ -21981,8 +21981,8 @@
     "id": "EMP-01033",
     "full_name": "James Ruiz",
     "email": "emp-01033@example.com",
-    "current_role": "customer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
@@ -21995,6 +21995,12 @@
         "role": "customer",
         "division": "hr",
         "started_at": "2026-07-23T11:46:42.845161Z",
+        "ended_at": "2026-08-02T14:25:05.889271Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-02T14:25:05.889271Z",
         "ended_at": null
       }
     ],
