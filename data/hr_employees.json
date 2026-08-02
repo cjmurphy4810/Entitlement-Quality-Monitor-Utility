@@ -25438,5 +25438,43 @@
     "manager_id": null,
     "hired_at": "2026-08-01T22:26:36.336707Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01213",
+    "full_name": "Cynthia Blackwell",
+    "email": "emp-01213@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-02T01:05:51.677346Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T01:05:51.677346Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01214",
+    "full_name": "Angela Wilkinson",
+    "email": "emp-01214@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-02T01:05:51.677346Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T01:05:51.677346Z",
+    "terminated_at": null
   }
 ]
