@@ -25633,5 +25633,43 @@
     "manager_id": null,
     "hired_at": "2026-08-02T19:04:30.533451Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01222",
+    "full_name": "Derek Davila",
+    "email": "emp-01222@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-02T21:24:09.530826Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T21:24:09.530826Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01223",
+    "full_name": "Sarah Miller",
+    "email": "emp-01223@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-02T21:24:09.530826Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T21:24:09.530826Z",
+    "terminated_at": null
   }
 ]
