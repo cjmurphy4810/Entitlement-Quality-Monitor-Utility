@@ -5676,5 +5676,21 @@
     "sod_tags": [],
     "created_at": "2026-08-02T20:26:46.733534Z",
     "updated_at": "2026-08-02T20:26:46.733534Z"
+  },
+  {
+    "id": "ENT-00361",
+    "name": "new entitlement ENT-00361",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00217"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-02T23:27:38.828169Z",
+    "updated_at": "2026-08-02T23:27:38.828169Z"
   }
 ]

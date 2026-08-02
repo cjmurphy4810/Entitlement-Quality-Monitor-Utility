@@ -10397,7 +10397,7 @@
     "email": "emp-00463@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -10408,7 +10408,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-25T22:54:32.031336Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-02T23:27:38.828169Z"
   },
   {
     "id": "EMP-00464",
@@ -25670,6 +25670,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-02T21:24:09.530826Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01224",
+    "full_name": "Dustin Hunt",
+    "email": "emp-01224@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-02T23:27:38.828169Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T23:27:38.828169Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01225",
+    "full_name": "James Jarvis",
+    "email": "emp-01225@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-02T23:27:38.828169Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T23:27:38.828169Z",
     "terminated_at": null
   }
 ]
