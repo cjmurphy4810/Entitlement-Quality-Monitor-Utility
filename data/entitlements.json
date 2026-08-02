@@ -5646,5 +5646,19 @@
     "sod_tags": [],
     "created_at": "2026-08-02T15:36:13.854891Z",
     "updated_at": "2026-08-02T15:36:13.854891Z"
+  },
+  {
+    "id": "ENT-00359",
+    "name": "new entitlement ENT-00359",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-02T16:52:16.211714Z",
+    "updated_at": "2026-08-02T16:52:16.211714Z"
   }
 ]
