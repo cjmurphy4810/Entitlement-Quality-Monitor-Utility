@@ -139275,5 +139275,75 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05723",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-02T17:56:37.100121Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02391",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00120",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00359",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05724",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-02T17:56:38.239768Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02391",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00120",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00359",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05725",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-02T17:56:38.544038Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02391",
+    "explanation": "Terminated employee EMP-00120 (Dr. David Hopkins MD) still holds active assignment ASN-02391.",
+    "evidence": {
+      "employee_id": "EMP-00120",
+      "terminated_at": "2026-05-11T13:42:03.838203+00:00",
+      "entitlement_id": "ENT-00359"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

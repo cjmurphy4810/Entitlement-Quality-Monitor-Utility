@@ -19657,7 +19657,7 @@
     "email": "emp-00915@example.com",
     "current_role": "developer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -19668,7 +19668,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-12T23:23:32.238923Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-02T17:56:36.348456Z"
   },
   {
     "id": "EMP-00916",
@@ -25575,6 +25575,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-02T15:36:13.854891Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01219",
+    "full_name": "William Haynes",
+    "email": "emp-01219@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-02T17:56:36.348456Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T17:56:36.348456Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01220",
+    "full_name": "Gary Thompson",
+    "email": "emp-01220@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-02T17:56:36.348456Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T17:56:36.348456Z",
     "terminated_at": null
   }
 ]
