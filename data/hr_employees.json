@@ -25526,5 +25526,24 @@
     "manager_id": null,
     "hired_at": "2026-08-02T09:33:58.162844Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01217",
+    "full_name": "Emma Valdez",
+    "email": "emp-01217@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-02T12:34:04.525718Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T12:34:04.525718Z",
+    "terminated_at": null
   }
 ]

@@ -138633,5 +138633,198 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05696",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-02T12:34:05.338391Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02381",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00134",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00224",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05697",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-02T12:34:05.339265Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02382",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00252",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00212",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05698",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-02T12:34:06.510227Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02380",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00825",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00038",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05699",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-02T12:34:06.511303Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02381",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00134",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00224",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05700",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-02T12:34:06.512372Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02382",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00252",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00212",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05701",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-02T12:34:06.822488Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02381",
+    "explanation": "Terminated employee EMP-00134 (Ashley Lozano) still holds active assignment ASN-02381.",
+    "evidence": {
+      "employee_id": "EMP-00134",
+      "terminated_at": "2026-06-14T17:55:20.110488+00:00",
+      "entitlement_id": "ENT-00224"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05702",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-02T12:34:06.823044Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02382",
+    "explanation": "Terminated employee EMP-00252 (Mark White) still holds active assignment ASN-02382.",
+    "evidence": {
+      "employee_id": "EMP-00252",
+      "terminated_at": "2026-06-09T23:49:27.740930+00:00",
+      "entitlement_id": "ENT-00212"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05703",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-08-02T12:34:06.846583Z",
+    "target_type": "employee",
+    "target_id": "EMP-00134",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_dev', 'business_sales', 'tech_ops']",
+    "evidence": {
+      "divisions": [
+        "business_dev",
+        "business_sales",
+        "tech_ops"
+      ],
+      "entitlement_ids": [
+        "ENT-00004",
+        "ENT-00113",
+        "ENT-00224"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
