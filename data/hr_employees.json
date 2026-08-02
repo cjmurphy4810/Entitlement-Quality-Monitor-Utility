@@ -25551,5 +25551,24 @@
     "manager_id": null,
     "hired_at": "2026-08-02T12:34:04.525718Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01218",
+    "full_name": "Sharon Lopez",
+    "email": "emp-01218@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-02T15:36:13.854891Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T15:36:13.854891Z",
+    "terminated_at": null
   }
 ]
