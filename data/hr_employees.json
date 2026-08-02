@@ -25614,5 +25614,24 @@
     "manager_id": null,
     "hired_at": "2026-08-02T17:56:36.348456Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01221",
+    "full_name": "Natalie Dunn",
+    "email": "emp-01221@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-02T19:04:30.533451Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T19:04:30.533451Z",
+    "terminated_at": null
   }
 ]
