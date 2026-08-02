@@ -11228,7 +11228,7 @@
     "email": "emp-00502@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -11245,7 +11245,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-30T11:51:00.442139Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-02T09:33:58.162844Z"
   },
   {
     "id": "EMP-00503",
@@ -25506,6 +25506,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-02T04:50:08.947488Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01216",
+    "full_name": "Brittany Reed",
+    "email": "emp-01216@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-02T09:33:58.162844Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-02T09:33:58.162844Z",
     "terminated_at": null
   }
 ]
