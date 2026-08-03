@@ -25823,5 +25823,43 @@
     "manager_id": null,
     "hired_at": "2026-08-03T20:42:14.366267Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01232",
+    "full_name": "George Malone",
+    "email": "emp-01232@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-03T22:01:28.592499Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T22:01:28.592499Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01233",
+    "full_name": "Tina Gay",
+    "email": "emp-01233@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-03T22:01:28.592499Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T22:01:28.592499Z",
+    "terminated_at": null
   }
 ]
