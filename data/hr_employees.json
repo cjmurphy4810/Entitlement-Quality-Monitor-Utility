@@ -25709,5 +25709,43 @@
     "manager_id": null,
     "hired_at": "2026-08-02T23:27:38.828169Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01226",
+    "full_name": "Jessica Holt",
+    "email": "emp-01226@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-03T12:15:06.839482Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T12:15:06.839482Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01227",
+    "full_name": "Bryan Valdez",
+    "email": "emp-01227@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-03T12:15:06.839482Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T12:15:06.839482Z",
+    "terminated_at": null
   }
 ]
