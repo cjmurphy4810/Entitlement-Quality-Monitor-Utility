@@ -25861,5 +25861,43 @@
     "manager_id": null,
     "hired_at": "2026-08-03T22:01:28.592499Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01234",
+    "full_name": "Tara Thomas",
+    "email": "emp-01234@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-03T23:33:22.696080Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T23:33:22.696080Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01235",
+    "full_name": "Monica Hansen",
+    "email": "emp-01235@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-03T23:33:22.696080Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T23:33:22.696080Z",
+    "terminated_at": null
   }
 ]
