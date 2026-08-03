@@ -25785,5 +25785,43 @@
     "manager_id": null,
     "hired_at": "2026-08-03T17:23:19.246443Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01230",
+    "full_name": "Barbara Black",
+    "email": "emp-01230@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-03T20:42:14.366267Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T20:42:14.366267Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01231",
+    "full_name": "Jasmine Harper",
+    "email": "emp-01231@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-03T20:42:14.366267Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-03T20:42:14.366267Z",
+    "terminated_at": null
   }
 ]
