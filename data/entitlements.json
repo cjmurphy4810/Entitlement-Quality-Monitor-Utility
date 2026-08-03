@@ -5692,5 +5692,21 @@
     "sod_tags": [],
     "created_at": "2026-08-02T23:27:38.828169Z",
     "updated_at": "2026-08-02T23:27:38.828169Z"
+  },
+  {
+    "id": "ENT-00362",
+    "name": "new entitlement ENT-00362",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00226"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-03T04:59:07.038391Z",
+    "updated_at": "2026-08-03T04:59:07.038391Z"
   }
 ]
