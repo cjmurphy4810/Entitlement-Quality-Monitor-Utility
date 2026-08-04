@@ -10811,14 +10811,20 @@
     "id": "EMP-00483",
     "full_name": "Tyler Medina",
     "email": "emp-00483@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-05-28T14:33:42.970659Z",
+        "ended_at": "2026-08-04T14:58:57.567913Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-04T14:58:57.567913Z",
         "ended_at": null
       }
     ],
@@ -25961,6 +25967,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-04T07:39:54.572448Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01239",
+    "full_name": "William Miller",
+    "email": "emp-01239@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-04T14:58:57.567913Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T14:58:57.567913Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01240",
+    "full_name": "Andrea Lin",
+    "email": "emp-01240@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-04T14:58:57.567913Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T14:58:57.567913Z",
     "terminated_at": null
   }
 ]
