@@ -26132,5 +26132,24 @@
     "manager_id": null,
     "hired_at": "2026-08-04T20:07:39.537658Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01247",
+    "full_name": "Jermaine Walton",
+    "email": "emp-01247@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-04T21:46:19.733030Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T21:46:19.733030Z",
+    "terminated_at": null
   }
 ]
