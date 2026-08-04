@@ -26189,5 +26189,24 @@
     "manager_id": null,
     "hired_at": "2026-08-04T22:55:45.249503Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01250",
+    "full_name": "Christopher Taylor",
+    "email": "emp-01250@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-04T23:58:16.512705Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T23:58:16.512705Z",
+    "terminated_at": null
   }
 ]
