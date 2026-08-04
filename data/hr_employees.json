@@ -19598,14 +19598,20 @@
     "id": "EMP-00912",
     "full_name": "Pamela Collins",
     "email": "emp-00912@example.com",
-    "current_role": "operations",
-    "current_division": "legal_compliance",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "legal_compliance",
         "started_at": "2026-07-12T18:56:00.294997Z",
+        "ended_at": "2026-08-04T18:24:47.705304Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-04T18:24:47.705304Z",
         "ended_at": null
       }
     ],
@@ -22823,7 +22829,7 @@
     "email": "emp-01075@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -22834,7 +22840,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T00:58:33.432088Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-04T18:24:47.705304Z"
   },
   {
     "id": "EMP-01076",
@@ -26043,6 +26049,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-04T16:53:48.991860Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01243",
+    "full_name": "Dennis Perez",
+    "email": "emp-01243@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-04T18:24:47.705304Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T18:24:47.705304Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01244",
+    "full_name": "Cheryl Williamson",
+    "email": "emp-01244@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-04T18:24:47.705304Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T18:24:47.705304Z",
     "terminated_at": null
   }
 ]
