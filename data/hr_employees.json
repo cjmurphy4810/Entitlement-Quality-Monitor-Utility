@@ -18222,7 +18222,7 @@
     "email": "emp-00842@example.com",
     "current_role": "operations",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -18233,7 +18233,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-07T14:14:33.393335Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-04T12:26:39.293720Z"
   },
   {
     "id": "EMP-00843",
@@ -25771,14 +25771,20 @@
     "id": "EMP-01229",
     "full_name": "Shaun Hernandez",
     "email": "emp-01229@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-08-03T17:23:19.246443Z",
+        "ended_at": "2026-08-04T12:26:39.293720Z"
+      },
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-04T12:26:39.293720Z",
         "ended_at": null
       }
     ],
