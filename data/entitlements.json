@@ -5786,5 +5786,21 @@
     "sod_tags": [],
     "created_at": "2026-08-04T12:26:39.293720Z",
     "updated_at": "2026-08-04T12:26:39.293720Z"
+  },
+  {
+    "id": "ENT-00368",
+    "name": "new entitlement ENT-00368",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-04T20:07:39.537658Z",
+    "updated_at": "2026-08-04T20:07:39.537658Z"
   }
 ]
