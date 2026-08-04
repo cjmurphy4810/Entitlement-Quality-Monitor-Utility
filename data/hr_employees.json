@@ -9227,7 +9227,7 @@
     "email": "emp-00409@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -9238,7 +9238,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-21T00:02:07.743411Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-04T01:53:42.791398Z"
   },
   {
     "id": "EMP-00410",
@@ -25898,6 +25898,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-03T23:33:22.696080Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01236",
+    "full_name": "Michael Diaz",
+    "email": "emp-01236@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-04T01:53:42.791398Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T01:53:42.791398Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01237",
+    "full_name": "Ryan Peck",
+    "email": "emp-01237@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-04T01:53:42.791398Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T01:53:42.791398Z",
     "terminated_at": null
   }
 ]

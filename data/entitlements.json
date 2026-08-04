@@ -5754,5 +5754,21 @@
     "sod_tags": [],
     "created_at": "2026-08-03T19:03:17.084213Z",
     "updated_at": "2026-08-03T19:03:17.084213Z"
+  },
+  {
+    "id": "ENT-00366",
+    "name": "new entitlement ENT-00366",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00076"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-04T01:53:42.791398Z",
+    "updated_at": "2026-08-04T01:53:42.791398Z"
   }
 ]
