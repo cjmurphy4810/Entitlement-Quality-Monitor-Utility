@@ -22766,7 +22766,7 @@
     "email": "emp-01072@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -22777,7 +22777,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T22:00:01.038198Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-04T16:53:48.991860Z"
   },
   {
     "id": "EMP-01073",
@@ -26005,6 +26005,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-04T14:58:57.567913Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01241",
+    "full_name": "Laura Martin",
+    "email": "emp-01241@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-04T16:53:48.991860Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T16:53:48.991860Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01242",
+    "full_name": "Carl Carpenter",
+    "email": "emp-01242@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-04T16:53:48.991860Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T16:53:48.991860Z",
     "terminated_at": null
   }
 ]
