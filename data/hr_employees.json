@@ -25937,5 +25937,24 @@
     "manager_id": null,
     "hired_at": "2026-08-04T01:53:42.791398Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01238",
+    "full_name": "Alexander Pierce",
+    "email": "emp-01238@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-04T07:39:54.572448Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-04T07:39:54.572448Z",
+    "terminated_at": null
   }
 ]

@@ -141512,5 +141512,95 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05816",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-04T07:39:56.536521Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02429",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00393",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00136",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05817",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-04T07:39:56.537566Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02430",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00294",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00128",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05818",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-04T07:39:56.843110Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02429",
+    "explanation": "Terminated employee EMP-00393 (Ruth Watts) still holds active assignment ASN-02429.",
+    "evidence": {
+      "employee_id": "EMP-00393",
+      "terminated_at": "2026-06-22T22:59:49.312778+00:00",
+      "entitlement_id": "ENT-00136"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05819",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-04T07:39:56.843653Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02430",
+    "explanation": "Terminated employee EMP-00294 (Angela Martinez) still holds active assignment ASN-02430.",
+    "evidence": {
+      "employee_id": "EMP-00294",
+      "terminated_at": "2026-05-21T11:47:54.123803+00:00",
+      "entitlement_id": "ENT-00128"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
