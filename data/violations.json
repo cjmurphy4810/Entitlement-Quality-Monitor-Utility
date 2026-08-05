@@ -142820,5 +142820,124 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05871",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-08-05T05:39:46.586587Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00369",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['customer']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "customer"
+      ],
+      "forbidden_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": []
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05872",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-05T05:39:47.356029Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02452",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00108",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00086",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05873",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-05T05:39:48.599806Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02452",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00108",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00086",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05874",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-05T05:39:48.600913Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02453",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00201",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00325",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-05875",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-05T05:39:48.927940Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02453",
+    "explanation": "Terminated employee EMP-00201 (Cynthia Adams) still holds active assignment ASN-02453.",
+    "evidence": {
+      "employee_id": "EMP-00201",
+      "terminated_at": "2026-05-21T04:51:14.127901+00:00",
+      "entitlement_id": "ENT-00325"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
