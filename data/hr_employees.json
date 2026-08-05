@@ -26246,5 +26246,24 @@
     "manager_id": null,
     "hired_at": "2026-08-05T02:36:19.451873Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01253",
+    "full_name": "Tyler Foster",
+    "email": "emp-01253@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-05T08:24:52.319111Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-05T08:24:52.319111Z",
+    "terminated_at": null
   }
 ]
