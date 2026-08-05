@@ -10244,8 +10244,8 @@
     "id": "EMP-00456",
     "full_name": "Richard Cook",
     "email": "emp-00456@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -10258,6 +10258,12 @@
         "role": "business_analyst",
         "division": "tech_dev",
         "started_at": "2026-05-31T16:14:16.119143Z",
+        "ended_at": "2026-08-05T18:23:03.859634Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-05T18:23:03.859634Z",
         "ended_at": null
       }
     ],
@@ -26289,6 +26295,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-05T12:52:39.964669Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01255",
+    "full_name": "Robert Davila",
+    "email": "emp-01255@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-05T18:23:03.859634Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-05T18:23:03.859634Z",
     "terminated_at": null
   }
 ]
