@@ -15443,7 +15443,7 @@
     "email": "emp-00703@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -15460,7 +15460,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-24T17:28:19.178935Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-05T23:54:01.555353Z"
   },
   {
     "id": "EMP-00704",
@@ -26352,6 +26352,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-05T22:51:42.327284Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01258",
+    "full_name": "Steven Guzman",
+    "email": "emp-01258@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-05T23:54:01.555353Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-05T23:54:01.555353Z",
     "terminated_at": null
   }
 ]
