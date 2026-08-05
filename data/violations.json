@@ -143745,5 +143745,28 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-05910",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-05T22:51:44.118813Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02466",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00898",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00088",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

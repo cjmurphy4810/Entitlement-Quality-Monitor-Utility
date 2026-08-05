@@ -26334,5 +26334,24 @@
     "manager_id": null,
     "hired_at": "2026-08-05T20:04:56.386470Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01257",
+    "full_name": "Gary Callahan",
+    "email": "emp-01257@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-05T22:51:42.327284Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-05T22:51:42.327284Z",
+    "terminated_at": null
   }
 ]
