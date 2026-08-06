@@ -26523,5 +26523,24 @@
     "manager_id": null,
     "hired_at": "2026-08-06T12:52:53.217437Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01266",
+    "full_name": "Kimberly Shaw",
+    "email": "emp-01266@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-06T15:08:58.108357Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-06T15:08:58.108357Z",
+    "terminated_at": null
   }
 ]
