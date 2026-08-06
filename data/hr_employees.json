@@ -26416,5 +26416,24 @@
     "manager_id": null,
     "hired_at": "2026-08-06T01:56:25.654292Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01261",
+    "full_name": "Randall Phillips",
+    "email": "emp-01261@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-06T05:13:46.991086Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-06T05:13:46.991086Z",
+    "terminated_at": null
   }
 ]
