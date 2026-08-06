@@ -12900,14 +12900,20 @@
     "id": "EMP-00580",
     "full_name": "Terry Huang",
     "email": "emp-00580@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-06-08T11:51:47.592822Z",
+        "ended_at": "2026-08-06T10:43:00.902971Z"
+      },
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-06T10:43:00.902971Z",
         "ended_at": null
       }
     ],
@@ -21981,7 +21987,7 @@
     "email": "emp-01031@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -21992,7 +21998,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-20T08:21:52.142783Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-06T10:43:00.902971Z"
   },
   {
     "id": "EMP-01032",
@@ -26459,6 +26465,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-06T07:59:20.625387Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01263",
+    "full_name": "Christine Barnes",
+    "email": "emp-01263@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-06T10:43:00.902971Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-06T10:43:00.902971Z",
     "terminated_at": null
   }
 ]
