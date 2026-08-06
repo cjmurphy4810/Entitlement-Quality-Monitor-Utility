@@ -23022,14 +23022,20 @@
     "id": "EMP-01084",
     "full_name": "Carol Blankenship",
     "email": "emp-01084@example.com",
-    "current_role": "business_user",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "cyber_tech",
         "started_at": "2026-07-23T15:50:07.922555Z",
+        "ended_at": "2026-08-06T01:56:25.654292Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-06T01:56:25.654292Z",
         "ended_at": null
       }
     ],
@@ -26371,6 +26377,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-05T23:54:01.555353Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01259",
+    "full_name": "Scott Munoz",
+    "email": "emp-01259@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-06T01:56:25.654292Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-06T01:56:25.654292Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01260",
+    "full_name": "Theresa Robles",
+    "email": "emp-01260@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-06T01:56:25.654292Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-06T01:56:25.654292Z",
     "terminated_at": null
   }
 ]
