@@ -26751,5 +26751,43 @@
     "manager_id": null,
     "hired_at": "2026-08-07T11:21:18.036564Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01278",
+    "full_name": "Alexis Phillips",
+    "email": "emp-01278@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-07T12:06:21.681193Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T12:06:21.681193Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01279",
+    "full_name": "Adrienne Owen",
+    "email": "emp-01279@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-07T12:06:21.681193Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T12:06:21.681193Z",
+    "terminated_at": null
   }
 ]
