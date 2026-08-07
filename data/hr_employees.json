@@ -26618,5 +26618,43 @@
     "manager_id": null,
     "hired_at": "2026-08-07T03:44:24.889116Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01271",
+    "full_name": "Micheal Moore",
+    "email": "emp-01271@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-07T06:48:16.623187Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T06:48:16.623187Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01272",
+    "full_name": "Alisha Williams",
+    "email": "emp-01272@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-07T06:48:16.623187Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T06:48:16.623187Z",
+    "terminated_at": null
   }
 ]
