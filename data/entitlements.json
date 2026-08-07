@@ -5878,5 +5878,21 @@
     "sod_tags": [],
     "created_at": "2026-08-07T06:48:16.623187Z",
     "updated_at": "2026-08-07T06:48:16.623187Z"
+  },
+  {
+    "id": "ENT-00374",
+    "name": "new entitlement ENT-00374",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00112"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-07T08:09:14.208583Z",
+    "updated_at": "2026-08-07T08:09:14.208583Z"
   }
 ]

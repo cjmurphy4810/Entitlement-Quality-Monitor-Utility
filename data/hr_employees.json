@@ -7332,7 +7332,7 @@
     "email": "emp-00320@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -7349,7 +7349,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-14T12:22:52.241804Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-07T08:09:14.208583Z"
   },
   {
     "id": "EMP-00321",
@@ -26655,6 +26655,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-07T06:48:16.623187Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01273",
+    "full_name": "Jeremy Day",
+    "email": "emp-01273@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-07T08:09:14.208583Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T08:09:14.208583Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01274",
+    "full_name": "Anthony Walker",
+    "email": "emp-01274@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-07T08:09:14.208583Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T08:09:14.208583Z",
     "terminated_at": null
   }
 ]
