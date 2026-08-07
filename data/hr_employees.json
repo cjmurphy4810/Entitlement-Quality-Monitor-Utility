@@ -26542,5 +26542,43 @@
     "manager_id": null,
     "hired_at": "2026-08-06T15:08:58.108357Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01267",
+    "full_name": "Frank Jenkins DVM",
+    "email": "emp-01267@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-07T00:37:11.236269Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T00:37:11.236269Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01268",
+    "full_name": "Faith Jackson",
+    "email": "emp-01268@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-07T00:37:11.236269Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T00:37:11.236269Z",
+    "terminated_at": null
   }
 ]
