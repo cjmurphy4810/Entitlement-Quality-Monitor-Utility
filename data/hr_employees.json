@@ -26694,5 +26694,24 @@
     "manager_id": null,
     "hired_at": "2026-08-07T08:09:14.208583Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01275",
+    "full_name": "Terrence Cook",
+    "email": "emp-01275@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-07T10:27:23.699536Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T10:27:23.699536Z",
+    "terminated_at": null
   }
 ]
