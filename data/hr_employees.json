@@ -26827,5 +26827,24 @@
     "manager_id": null,
     "hired_at": "2026-08-07T13:47:09.660067Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01282",
+    "full_name": "Brooke Peterson",
+    "email": "emp-01282@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-07T15:49:05.262892Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T15:49:05.262892Z",
+    "terminated_at": null
   }
 ]
