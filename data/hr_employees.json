@@ -218,7 +218,7 @@
     "email": "user00010@example.com",
     "current_role": "operations",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -241,7 +241,7 @@
     ],
     "manager_id": null,
     "hired_at": "2025-03-22T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-07T17:42:36.715765Z"
   },
   {
     "id": "EMP-00011",
@@ -26883,6 +26883,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-07T16:45:07.199424Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01285",
+    "full_name": "Mary Myers",
+    "email": "emp-01285@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-07T17:42:36.715765Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T17:42:36.715765Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01286",
+    "full_name": "Tammy Robles",
+    "email": "emp-01286@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-07T17:42:36.715765Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T17:42:36.715765Z",
     "terminated_at": null
   }
 ]
