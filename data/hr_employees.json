@@ -26846,5 +26846,43 @@
     "manager_id": null,
     "hired_at": "2026-08-07T15:49:05.262892Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01283",
+    "full_name": "Diane Hardy",
+    "email": "emp-01283@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-07T16:45:07.199424Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T16:45:07.199424Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01284",
+    "full_name": "Joseph Turner",
+    "email": "emp-01284@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-07T16:45:07.199424Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T16:45:07.199424Z",
+    "terminated_at": null
   }
 ]
