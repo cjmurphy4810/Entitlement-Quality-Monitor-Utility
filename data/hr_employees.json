@@ -26713,5 +26713,43 @@
     "manager_id": null,
     "hired_at": "2026-08-07T10:27:23.699536Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01276",
+    "full_name": "Evelyn Russell",
+    "email": "emp-01276@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-07T11:21:18.036564Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T11:21:18.036564Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01277",
+    "full_name": "Laura Russell",
+    "email": "emp-01277@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-07T11:21:18.036564Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T11:21:18.036564Z",
+    "terminated_at": null
   }
 ]
