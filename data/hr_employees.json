@@ -26997,5 +26997,43 @@
     "manager_id": null,
     "hired_at": "2026-08-07T19:47:00.764236Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01290",
+    "full_name": "Emily Holloway",
+    "email": "emp-01290@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-07T22:27:38.817344Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T22:27:38.817344Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01291",
+    "full_name": "Mariah Macdonald",
+    "email": "emp-01291@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-07T22:27:38.817344Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T22:27:38.817344Z",
+    "terminated_at": null
   }
 ]
