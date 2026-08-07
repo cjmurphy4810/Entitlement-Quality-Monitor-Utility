@@ -26922,5 +26922,43 @@
     "manager_id": null,
     "hired_at": "2026-08-07T17:42:36.715765Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01287",
+    "full_name": "Ana Ross",
+    "email": "emp-01287@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-07T18:44:10.879441Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T18:44:10.879441Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01288",
+    "full_name": "Dr. Marcia Santana",
+    "email": "emp-01288@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-07T18:44:10.879441Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T18:44:10.879441Z",
+    "terminated_at": null
   }
 ]
