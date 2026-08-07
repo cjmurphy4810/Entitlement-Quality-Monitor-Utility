@@ -27035,5 +27035,24 @@
     "manager_id": null,
     "hired_at": "2026-08-07T22:27:38.817344Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01292",
+    "full_name": "Daniel Black",
+    "email": "emp-01292@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-07T23:56:21.106019Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T23:56:21.106019Z",
+    "terminated_at": null
   }
 ]
