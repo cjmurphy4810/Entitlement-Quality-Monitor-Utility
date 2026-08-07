@@ -19516,7 +19516,7 @@
     "email": "emp-00906@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -19527,7 +19527,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-12T15:53:20.474662Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-07T03:44:24.889116Z"
   },
   {
     "id": "EMP-00907",
@@ -26579,6 +26579,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-07T00:37:11.236269Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01269",
+    "full_name": "Lisa Johnson",
+    "email": "emp-01269@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-07T03:44:24.889116Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T03:44:24.889116Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01270",
+    "full_name": "April Alvarado",
+    "email": "emp-01270@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-07T03:44:24.889116Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-07T03:44:24.889116Z",
     "terminated_at": null
   }
 ]
