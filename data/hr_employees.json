@@ -12856,7 +12856,7 @@
     "email": "emp-00576@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -12867,7 +12867,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-07T20:43:57.750480Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T22:20:51.593070Z"
   },
   {
     "id": "EMP-00577",
@@ -27620,6 +27620,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T21:54:05.201693Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01320",
+    "full_name": "Lindsey Ford",
+    "email": "emp-01320@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-08T22:20:51.593070Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T22:20:51.593070Z",
     "terminated_at": null
   }
 ]
