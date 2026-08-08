@@ -23,6 +23,13 @@ from eqm.seed import SeedBundle
 from eqm.workflow import transition
 
 _REPAIR_LOCK = asyncio.Lock()
+_DATA_FILES = (
+    "entitlements.json",
+    "hr_employees.json",
+    "cmdb_resources.json",
+    "assignments.json",
+    "violations.json",
+)
 
 
 class StaleFindingError(LookupError):
@@ -255,6 +262,8 @@ async def execute_repair(
         raise ValueError("Repair actor is required.")
 
     async with _REPAIR_LOCK:
+        for name in _DATA_FILES:
+            store.invalidate(name)
         bundle, violations = await _load_current(store)
         matching = [item for item in violations if item.id == violation_id]
         if len(matching) != 1:

@@ -511,3 +511,46 @@ async def test_tox03_constrained_choice_clears_three_division_footprint(
     active = {item["id"]: item["active"] for item in assignments}
     assert active == {"ASN-1": True, "ASN-2": True, "ASN-3": False}
     assert receipt.rule_id == "TOX-03"
+
+
+@pytest.mark.asyncio
+async def test_second_store_instance_cannot_revert_an_earlier_repair(
+    tmp_path: Path,
+) -> None:
+    current = _bundle(
+        entitlements=[
+            _entitlement(id="ENT-1", name="Ledger reader one"),
+            _entitlement(id="ENT-2", name="Ledger reader two"),
+        ],
+        resources=[_resource(linked_entitlement_ids=["ENT-1", "ENT-2"])],
+    )
+    store_a, violations = await _seed_store(tmp_path, current)
+    store_b = JsonStore(tmp_path)
+    for name in DATA_FILES:
+        await store_b.read(name)
+    first = _finding(violations, "ENT-Q-01", "ENT-1")
+    second = _finding(violations, "ENT-Q-01", "ENT-2")
+    first_text = "Provides read-only Ledger API access for operations reporting one."
+    second_text = "Provides read-only Ledger API access for operations reporting two."
+
+    await execute_repair(
+        store_a,
+        first.id,
+        "demo-admin",
+        {"pbl_description": first_text},
+    )
+    await execute_repair(
+        store_b,
+        second.id,
+        "demo-admin",
+        {"pbl_description": second_text},
+    )
+
+    fresh_store = JsonStore(tmp_path)
+    entitlements = await fresh_store.read("entitlements.json")
+    assert isinstance(entitlements, list)
+    descriptions = {item["id"]: item["pbl_description"] for item in entitlements}
+    assert descriptions == {"ENT-1": first_text, "ENT-2": second_text}
+    reconciled = [Violation(**raw) for raw in await fresh_store.read("violations.json")]
+    for target_id in ("ENT-1", "ENT-2"):
+        assert _finding(reconciled, "ENT-Q-01", target_id).workflow_state == WorkflowState.RESOLVED
