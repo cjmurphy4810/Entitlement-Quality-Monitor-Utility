@@ -35,6 +35,7 @@
       this.pageSize = initialData.filters?.pageSize || 50;
       this.abortController = null;
       this.bindControls();
+      global.addEventListener?.("popstate", () => this.restoreFromLocation());
       this.render(initialData);
     }
 
@@ -86,30 +87,49 @@
       return params.toString();
     }
 
-    async refresh() {
+    restoreFromLocation() {
+      const params = new URLSearchParams(this.location.search);
+      FILTER_KEYS.forEach(dimension => {
+        this.filters.set(dimension, new Set(params.getAll(dimension)));
+      });
+      this.search = params.get("search")?.trim() || "";
+      const parsedPage = Number.parseInt(params.get("page") || "1", 10);
+      const parsedPageSize = Number.parseInt(params.get("pageSize") || "50", 10);
+      this.page = parsedPage > 0 ? parsedPage : 1;
+      this.pageSize = parsedPageSize > 0 ? parsedPageSize : 50;
+      const searchInput = document.querySelector("#finding-search");
+      if (searchInput) searchInput.value = this.search;
+      return this.refresh({ updateHistory: false });
+    }
+
+    async refresh({ updateHistory = true } = {}) {
       this.abortController?.abort();
-      this.abortController = new AbortController();
+      const requestController = new AbortController();
+      this.abortController = requestController;
       const query = this.queryString();
       const endpoint = `/ctadmin/api/dashboard?${query}`;
       this.root.setAttribute("aria-busy", "true");
       try {
         const response = await this.fetchImpl(endpoint, {
           headers: { Accept: "application/json" },
-          signal: this.abortController.signal,
+          signal: requestController.signal,
         });
         if (!response.ok) throw new Error(`Dashboard request failed with ${response.status}`);
         const payload = await response.json();
         this.data = payload;
         this.page = payload.pagination.page;
         this.render(payload);
-        this.history?.pushState?.({}, "", `/ctadmin/dashboard?${query}`);
+        if (updateHistory) this.history?.pushState?.({}, "", `/ctadmin/dashboard?${query}`);
         this.setError(false);
         return payload;
       } catch (error) {
         if (error.name !== "AbortError") this.setError(true);
         return null;
       } finally {
-        this.root.setAttribute("aria-busy", "false");
+        if (this.abortController === requestController) {
+          this.abortController = null;
+          this.root.setAttribute("aria-busy", "false");
+        }
       }
     }
 

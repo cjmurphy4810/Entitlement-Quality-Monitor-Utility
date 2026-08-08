@@ -10,28 +10,31 @@
     return element;
   }
 
-  function interactiveGroup(item, options, index) {
+  function segmentGroup(item, options, index) {
+    const interactive = Boolean(options.dimension && options.onSelect);
     const selected = options.selected?.has(item.key) ?? false;
     const group = svgElement("g", {
-      role: "button",
-      tabindex: "0",
-      "aria-label": `${item.label}: ${item.count} findings`,
-      "aria-pressed": String(selected),
-      "data-filter-dimension": options.dimension || "",
-      "data-filter-key": item.key,
+      role: interactive ? "button" : "group",
+      "aria-label": `${item.label}: ${item.count} ${options.unit || "findings"}`,
       class: selected ? "chart-segment is-selected" : "chart-segment",
     });
     group.style = `--segment-color: ${CHART_COLORS[index % CHART_COLORS.length]}`;
-    const activate = () => options.onSelect?.(options.dimension, item.key);
-    group.addEventListener("click", activate);
-    group.addEventListener("keydown", event => {
-      if (event.key === "Enter" || event.key === " " || event.key === "Spacebar") {
-        event.preventDefault();
-        activate();
-      }
-    });
+    if (interactive) {
+      group.setAttribute("tabindex", "0");
+      group.setAttribute("aria-pressed", String(selected));
+      group.setAttribute("data-filter-dimension", options.dimension);
+      group.setAttribute("data-filter-key", item.key);
+      const activate = () => options.onSelect(options.dimension, item.key);
+      group.addEventListener("click", activate);
+      group.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " " || event.key === "Spacebar") {
+          event.preventDefault();
+          activate();
+        }
+      });
+    }
     const title = svgElement("title");
-    title.textContent = `${item.label}: ${item.count} findings`;
+    title.textContent = `${item.label}: ${item.count} ${options.unit || "findings"}`;
     group.append(title);
     return group;
   }
@@ -59,7 +62,7 @@
     const height = Math.max(92, series.length * rowHeight + 20);
     const svg = svgElement("svg", {
       viewBox: `0 0 ${width} ${height}`,
-      role: "img",
+      role: "group",
       "aria-label": options.label || "Interactive findings bar chart",
       preserveAspectRatio: "xMinYMin meet",
     });
@@ -67,7 +70,7 @@
     series.forEach((item, index) => {
       const count = Math.max(0, Number(item.count) || 0);
       const y = index * rowHeight + 14;
-      const group = interactiveGroup({ ...item, count }, options, index);
+      const group = segmentGroup({ ...item, count }, options, index);
       const label = svgElement("text", { x: "0", y: String(y + 23), class: "chart-label" });
       label.textContent = item.label;
       const track = svgElement("rect", {
@@ -101,7 +104,7 @@
     const radius = 62;
     const circumference = 2 * Math.PI * radius;
     const svg = svgElement("svg", {
-      viewBox: "0 0 430 180", role: "img",
+      viewBox: "0 0 430 180", role: "group",
       "aria-label": options.label || "Entitlement coverage donut chart",
     });
     const track = svgElement("circle", {
@@ -113,7 +116,11 @@
     series.forEach((item, index) => {
       const count = Math.max(0, Number(item.count) || 0);
       const length = (count / geometryTotal) * circumference;
-      const group = interactiveGroup({ ...item, count }, options, index);
+      const group = segmentGroup(
+        { ...item, count },
+        { ...options, unit: options.unit || "entitlements" },
+        index,
+      );
       const segment = svgElement("circle", {
         cx: "90", cy: "90", r: String(radius), fill: "none", "stroke-width": "22",
         "stroke-dasharray": `${length} ${circumference - length}`,
