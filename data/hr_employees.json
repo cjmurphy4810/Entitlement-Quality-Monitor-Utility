@@ -23556,14 +23556,20 @@
     "id": "EMP-01108",
     "full_name": "Felicia Tyler",
     "email": "emp-01108@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_dev",
         "started_at": "2026-07-25T14:08:29.427566Z",
+        "ended_at": "2026-08-08T20:56:06.817569Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-08T20:56:06.817569Z",
         "ended_at": null
       }
     ],
@@ -27526,6 +27532,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T20:20:30.720688Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01316",
+    "full_name": "Paul Wyatt",
+    "email": "emp-01316@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-08T20:56:06.817569Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T20:56:06.817569Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01317",
+    "full_name": "Amber Thomas",
+    "email": "emp-01317@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-08T20:56:06.817569Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T20:56:06.817569Z",
     "terminated_at": null
   }
 ]
