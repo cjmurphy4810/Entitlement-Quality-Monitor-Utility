@@ -21,19 +21,18 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-body { margin: 0; background: var(--canvas); color: var(--signal-navy); font-family: var(--body-font); }
+html { color-scheme: light; }
+body { min-width: 20rem; margin: 0; background: var(--canvas); color: var(--signal-navy); font-family: var(--body-font); }
 button, input, select, textarea { font: inherit; }
 a { color: inherit; }
 :focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
 
 .app-header { min-height: 4.6rem; display: flex; align-items: center; gap: var(--space-3); padding: .8rem clamp(1rem, 4vw, 4rem); background: var(--signal-navy); color: white; }
-.brand { display: inline-flex; align-items: center; gap: .7rem; color: white; text-decoration: none; white-space: nowrap; }
-.brand strong { display: block; letter-spacing: .12em; font-family: var(--display-font); }
-.brand small { display: block; color: #b9d3dc; font-size: .71rem; letter-spacing: .04em; }
-.brand-mark { position: relative; display: inline-flex; width: 1.9rem; height: 1.65rem; align-items: center; gap: .18rem; }
-.brand-mark i { display: block; width: .34rem; height: .34rem; border: 2px solid var(--circuit-cyan); border-radius: 50%; }
-.brand-mark::before { position: absolute; top: .78rem; left: .14rem; width: 1.55rem; border-top: 2px solid var(--circuit-cyan); content: ""; }
-.brand-mark.large { width: 4rem; height: 3rem; transform: scale(1.45); transform-origin: left; margin-bottom: var(--space-2); }
+.brand { display: inline-flex; min-width: 0; align-items: center; gap: .8rem; color: white; text-decoration: none; }
+.brand-logo { display: block; flex: none; max-width: 100%; object-fit: contain; object-position: center; }
+.brand-logo-header { width: 3.25rem; height: 3.25rem; }
+.brand-logo-login { width: clamp(9rem, 18vw, 13rem); height: clamp(9rem, 18vw, 13rem); margin-bottom: var(--space-3); }
+.brand-product { max-width: 11rem; color: #d5e6eb; font: 800 .72rem/1.25 var(--mono-font); letter-spacing: .08em; text-transform: uppercase; }
 .primary-nav { display: flex; gap: var(--space-2); font-size: .86rem; font-weight: 700; letter-spacing: .04em; }
 .primary-nav a { padding: .65rem .35rem; color: #d5e6eb; text-decoration: none; border-bottom: 2px solid transparent; }
 .primary-nav a:hover, .primary-nav a:focus-visible { color: white; border-color: var(--circuit-cyan); }
@@ -231,11 +230,15 @@ tbody tr:hover { background: #f3f8fa; }
 .repair-outcome.is-success { border-left-color: var(--verified-green); background: #eaf6f1; color: #165c43; }
 
 @media (max-width: 760px) {
-  .app-header { flex-wrap: wrap; gap: var(--space-1); }
-  .primary-nav { order: 3; width: 100%; justify-content: space-between; }
-  .identity { margin-left: auto; }
+  .app-header { flex-wrap: wrap; gap: var(--space-1) var(--space-2); padding-block: .65rem; }
+  .brand { flex: 1 1 15rem; }
+  .brand-logo-header { width: 2.85rem; height: 2.85rem; }
+  .primary-nav { order: 3; width: 100%; justify-content: flex-start; gap: clamp(.7rem, 4vw, 1.5rem); overflow-x: auto; }
+  .primary-nav a { flex: 0 0 auto; }
+  .identity { margin-left: auto; flex-wrap: wrap; justify-content: flex-end; }
   .login-layout { grid-template-columns: 1fr; }
-  .login-ident { min-height: 18rem; padding: 3rem 2rem; }
+  .login-ident { min-height: 18rem; padding: 2.5rem 2rem 3.5rem; }
+  .brand-logo-login { width: 8rem; height: 8rem; margin-bottom: var(--space-2); }
   .login-card { margin: -1.5rem 1rem 2rem; }
   .dashboard-thesis { grid-template-columns: 1fr; gap: var(--space-2); }
   .persona-console, .persona-filters { grid-template-columns: 1fr; gap: var(--space-2); }
@@ -257,11 +260,78 @@ tbody tr:hover { background: #f3f8fa; }
   .finding-facts div:last-child { border-bottom: 0; }
   .evidence-list div { grid-template-columns: 1fr; gap: .3rem; }
   .history-list li > div { flex-direction: column; gap: .35rem; }
+  .repair-drawer { width: min(100%, 36rem); }
 }
 
 @media (min-width: 761px) and (max-width: 1050px) {
+  .app-header { flex-wrap: wrap; }
+  .primary-nav { order: 3; width: 100%; }
   .kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .queue-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+@media (max-width: 480px) {
+  .app-main { width: min(100% - 1rem, 1280px); margin-block: var(--space-3); }
+  .brand-product { max-width: 8.5rem; font-size: .65rem; }
+  .identity { width: 100%; justify-content: space-between; }
+  .persona { flex-basis: 100%; }
+  .search-control { grid-template-columns: 1fr; gap: .5rem; }
+  .search-control input { border-right: 1px solid var(--border); }
+  .search-control .primary-button { width: 100%; border-radius: var(--radius); }
+  .login-ident { padding-inline: 1.25rem; }
+  .login-ident h1 { font-size: 2.75rem; }
+  .login-card { margin-inline: .5rem; padding-inline: 1.25rem; }
+  .signal-rail { align-items: flex-start; flex-wrap: wrap; }
+  .signal-clear { margin-left: 0; }
+  .pagination { align-items: stretch; flex-direction: column; }
+  .pagination > div, .pagination .secondary-button { width: 100%; }
+  .drawer-actions { align-items: stretch; flex-direction: column-reverse; }
+  .drawer-actions .primary-button, .drawer-actions .secondary-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  :root { --focus-ring: Highlight; }
+  .app-header, .drawer-header, .evidence-code { border: 1px solid CanvasText; background: Canvas; color: CanvasText; }
+  .brand-product, .persona, .drawer-header .panel-code { color: CanvasText; }
+  .brand-logo { border: 1px solid CanvasText; forced-color-adjust: none; }
+  .signal-node, .filter-token::before { border-color: Highlight; box-shadow: none; }
+  .primary-button, .filter-token, .quiet-button, .icon-button, .secondary-button { border: 2px solid ButtonText; background: ButtonFace; color: ButtonText; }
+  .chart-track, .donut-track { fill: Canvas; stroke: CanvasText; }
+  .chart-bar { fill: Highlight; }
+  .donut-segment { stroke: Highlight; }
+  .donut-swatch { fill: Highlight; }
+  .chart-segment.is-selected .chart-bar, .chart-segment.is-selected .donut-segment,
+  .chart-segment:focus-visible .chart-bar, .chart-segment:focus-visible .donut-segment { stroke: CanvasText; }
+  .severity-critical, .severity-high, .state-complete { color: CanvasText; font-weight: 900; text-decoration: underline; }
+}
+
+@media print {
+  @page { margin: .6in; }
+  * { box-shadow: none !important; }
+  body { min-width: 0; background: white; color: black; font-size: 10pt; }
+  .app-header { min-height: 0; padding: 0 0 .2in; border-bottom: 2px solid black; background: white; color: black; }
+  .brand { color: black; }
+  .brand-logo-header { width: .7in; height: .7in; filter: grayscale(1); }
+  .brand-product { max-width: none; color: black; }
+  .primary-nav, .identity, .signal-rail, .dashboard-search, .queue-filters,
+  .pagination, .drawer-backdrop, .repair-drawer, .repair-trigger, .dashboard-error { display: none !important; }
+  .app-main { width: 100%; margin: .25in 0 0; }
+  .dashboard-thesis, .persona-console, .finding-grid, .chart-grid { display: block; }
+  .kpi-grid, .workflow-kpis, .persona-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .kpi-card, .chart-panel, .detail-panel, .results-panel { margin-bottom: .15in; break-inside: avoid; border-color: black; }
+  .chart-container { min-height: 0; overflow: visible; }
+  .chart-container svg { min-width: 0; }
+  .table-scroll { overflow: visible; }
+  table { min-width: 0; font-size: 7.5pt; }
+  th, td { padding: .05in; color: black; }
+  a { text-decoration: none; }
+}

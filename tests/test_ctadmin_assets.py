@@ -1,9 +1,121 @@
 import json
 import shutil
 import subprocess
+from html.parser import HTMLParser
 from pathlib import Path
 
 import pytest
+
+from eqm.config import get_settings
+from eqm.ctadmin.auth import SessionCodec
+
+
+class _AccessibilityAudit(HTMLParser):
+    """Collect user-agent-visible naming relationships from rendered CTADMIN HTML."""
+
+    def __init__(self):
+        super().__init__()
+        self.stack = []
+        self.images = []
+        self.chart_panels = []
+        self.tables = []
+        self.dialogs = []
+
+    def handle_starttag(self, tag, attributes):
+        attrs = dict(attributes)
+        node = {"tag": tag, "attrs": attrs}
+        self.stack.append(node)
+        if tag == "img":
+            self.images.append(attrs)
+        if tag == "article" and "chart-panel" in attrs.get("class", "").split():
+            node["chart_panel"] = {"heading": False, "charts": []}
+        if tag == "h2":
+            for ancestor in reversed(self.stack[:-1]):
+                if "chart_panel" in ancestor:
+                    ancestor["chart_panel"]["heading"] = True
+                    break
+        if "chart-container" in attrs.get("class", "").split():
+            for ancestor in reversed(self.stack[:-1]):
+                if "chart_panel" in ancestor:
+                    ancestor["chart_panel"]["charts"].append(attrs.get("aria-label"))
+                    break
+        if tag == "table":
+            labelled_region = any(
+                ancestor["attrs"].get("aria-label") or ancestor["attrs"].get("aria-labelledby")
+                for ancestor in self.stack[:-1]
+            )
+            node["table"] = {"caption": False, "labelled_region": labelled_region}
+        if tag == "caption":
+            for ancestor in reversed(self.stack[:-1]):
+                if "table" in ancestor:
+                    ancestor["table"]["caption"] = True
+                    break
+        if attrs.get("role") == "dialog":
+            self.dialogs.append(attrs)
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            node = self.stack[index]
+            if node["tag"] != tag:
+                continue
+            self.stack = self.stack[:index]
+            if "chart_panel" in node:
+                self.chart_panels.append(node["chart_panel"])
+            if "table" in node:
+                self.tables.append(node["table"])
+            break
+
+
+def _audit(markup):
+    audit = _AccessibilityAudit()
+    audit.feed(markup)
+    return audit
+
+
+def _login(client):
+    return client.post(
+        "/ctadmin/login",
+        data={
+            "username": "demo-admin",
+            "password": "correct-horse-battery-staple",
+        },
+        follow_redirects=False,
+    )
+
+
+def _csrf(client):
+    settings = get_settings()
+    token = client.cookies.get("ctadmin_session")
+    assert token is not None
+    return (
+        SessionCodec(
+            settings.ctadmin_session_secret.get_secret_value(),
+            settings.ctadmin_session_ttl_seconds,
+        )
+        .decode(token)
+        .csrf_token
+    )
+
+
+def _jpeg_dimensions(data):
+    """Read SOF dimensions without introducing an image-processing test dependency."""
+    assert data[:2] == b"\xff\xd8"
+    offset = 2
+    while offset + 9 < len(data):
+        if data[offset] != 0xFF:
+            offset += 1
+            continue
+        marker = data[offset + 1]
+        offset += 2
+        if marker in {0xD8, 0xD9}:
+            continue
+        length = int.from_bytes(data[offset : offset + 2], "big")
+        if marker in {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF}:
+            height = int.from_bytes(data[offset + 3 : offset + 5], "big")
+            width = int.from_bytes(data[offset + 5 : offset + 7], "big")
+            return width, height
+        offset += length
+    raise AssertionError("JPEG has no start-of-frame marker")
 
 
 def test_dashboard_javascript_assets_are_served_as_external_scripts(app_client):
@@ -15,6 +127,151 @@ def test_dashboard_javascript_assets_are_served_as_external_scripts(app_client):
 
         assert response.status_code == 200
         assert "javascript" in response.headers["content-type"]
+
+
+def test_supplied_ctadmin_logo_is_optimized_and_served_as_a_local_jpeg(app_client):
+    """Removing or distorting the supplied artwork breaks the product-brand contract."""
+    client, _ = app_client
+
+    response = client.get("/ctadmin/static/ctadmin-logo.jpg")
+
+    assert response.status_code == 200
+    assert response.headers["content-type"].startswith("image/jpeg")
+    assert response.content.endswith(b"\xff\xd9")
+    width, height = _jpeg_dimensions(response.content)
+    assert 0 < width <= 512
+    assert 0 < height <= 512
+    assert abs((width / height) - 1) < 0.02
+
+
+def test_login_and_every_operator_page_use_only_the_descriptive_ctadmin_brand(app_client):
+    """A text substitute, unnamed logo, or inherited third-party name breaks visible branding."""
+    client, _ = app_client
+    data_dir = get_settings().data_dir
+    (data_dir / "hr_employees.json").write_text(
+        json.dumps(
+            [
+                {
+                    "id": "EMP-1",
+                    "full_name": "Casey Example",
+                    "email": "casey@example.com",
+                    "current_role": "operations",
+                    "current_division": "tech_ops",
+                    "status": "active",
+                    "role_history": [],
+                    "manager_id": None,
+                    "hired_at": "2025-01-01T00:00:00+00:00",
+                    "terminated_at": None,
+                }
+            ]
+        )
+    )
+    (data_dir / "violations.json").write_text(
+        json.dumps(
+            [
+                {
+                    "id": "VIO-100",
+                    "rule_id": "ENT-Q-01",
+                    "rule_name": "PBL completeness",
+                    "severity": "high",
+                    "detected_at": "2026-08-07T12:00:00+00:00",
+                    "target_type": "entitlement",
+                    "target_id": "ENT-1",
+                    "explanation": "Description is too short.",
+                    "evidence": {"pbl_description": "bad"},
+                    "recommended_action": "update_entitlement_field",
+                    "suggested_fix": {"pbl_description": "Describe the approved business use."},
+                    "workflow_state": "open",
+                    "workflow_history": [],
+                    "appian_case_id": None,
+                }
+            ]
+        )
+    )
+
+    responses = [client.get("/ctadmin/login")]
+    assert _login(client).status_code == 303
+    client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    responses.extend(
+        client.get(path)
+        for path in [
+            "/ctadmin/dashboard",
+            "/ctadmin/remediation",
+            "/ctadmin/findings/VIO-100",
+            "/ctadmin/my-findings",
+        ]
+    )
+
+    for response in responses:
+        assert response.status_code == 200
+        audit = _audit(response.text)
+        assert any(
+            image.get("src") == "/ctadmin/static/ctadmin-logo.jpg"
+            and image.get("alt") == "CTADMIN Technology Administration"
+            for image in audit.images
+        )
+        rendered = response.text.casefold()
+        assert "appian" not in rendered
+        assert "wells fargo" not in rendered
+
+
+def test_rendered_data_surfaces_have_accessible_names_and_dialog_semantics(app_client):
+    """Unlabelled charts, tables, or the repair drawer hide critical workflow context."""
+    client, _ = app_client
+    data_dir = get_settings().data_dir
+    (data_dir / "hr_employees.json").write_text(
+        json.dumps(
+            [
+                {
+                    "id": "EMP-1",
+                    "full_name": "Casey Example",
+                    "email": "casey@example.com",
+                    "current_role": "operations",
+                    "current_division": "tech_ops",
+                    "status": "active",
+                    "role_history": [],
+                    "manager_id": None,
+                    "hired_at": "2025-01-01T00:00:00+00:00",
+                    "terminated_at": None,
+                }
+            ]
+        )
+    )
+    assert _login(client).status_code == 303
+    dashboard = client.get("/ctadmin/dashboard")
+    remediation = client.get("/ctadmin/remediation")
+    client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    my_findings = client.get("/ctadmin/my-findings")
+
+    for response, expected_chart_count, expected_table_count in [
+        (dashboard, 5, 1),
+        (remediation, 0, 1),
+        (my_findings, 2, 1),
+    ]:
+        assert response.status_code == 200
+        audit = _audit(response.text)
+        assert len(audit.chart_panels) == expected_chart_count
+        assert len(audit.tables) == expected_table_count
+        assert all(table["caption"] or table["labelled_region"] for table in audit.tables)
+        assert all(
+            panel["heading"] and panel["charts"] and all(panel["charts"])
+            for panel in audit.chart_panels
+        )
+
+    for response in [remediation, my_findings]:
+        dialog = _audit(response.text).dialogs
+        assert len(dialog) == 1
+        assert dialog[0]["aria-modal"] == "true"
+        assert dialog[0]["aria-labelledby"] == "repair-drawer-title"
+        assert dialog[0]["aria-describedby"] == "repair-drawer-description"
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
