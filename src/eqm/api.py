@@ -15,6 +15,8 @@ from pydantic import BaseModel
 from starlette.requests import Request
 
 from eqm.config import Settings, get_settings
+from eqm.ctadmin.routes import STATIC_DIR as CTADMIN_STATIC_DIR
+from eqm.ctadmin.routes import router as ctadmin_router
 from eqm.dashboard import STATIC_DIR, TEMPLATES_DIR
 from eqm.engine import run_engine
 from eqm.git_sync import GitSync
@@ -38,6 +40,8 @@ from eqm.workflow import LEGAL_TRANSITIONS, IllegalTransition, transition
 bearer_scheme = HTTPBearer(auto_error=False)
 app = FastAPI(title="EQM Utility", version="0.1.0")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+app.mount("/ctadmin/static", StaticFiles(directory=str(CTADMIN_STATIC_DIR)), name="ctadmin-static")
+app.include_router(ctadmin_router)
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 
 
