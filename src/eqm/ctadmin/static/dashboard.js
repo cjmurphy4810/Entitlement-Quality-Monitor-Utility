@@ -37,9 +37,9 @@
       this.previewEvidence = root.querySelector("#repair-preview-evidence");
       this.confirmButton = root.querySelector("#repair-confirm");
       this.fetchImpl = options.fetchImpl || global.fetch.bind(global);
-      this.onSuccess = options.onSuccess || (payload => {
+      this.onSuccess = options.onSuccess || (async payload => {
         if (global.ctadminDashboard?.refresh) {
-          global.ctadminDashboard.refresh();
+          await global.ctadminDashboard.refresh({ updateHistory: false });
         } else {
           global.setTimeout?.(() => global.location?.reload?.(), 900);
         }
@@ -406,6 +406,12 @@
         .map(([bucket]) => bucket));
     }
 
+    hasActiveFilters() {
+      return Boolean(this.search) || FILTER_KEYS.some(
+        dimension => (this.filters.get(dimension)?.size || 0) > 0,
+      );
+    }
+
     render(payload) {
       const kpis = {
         "#kpi-total": payload.kpis.totalFindings,
@@ -444,6 +450,10 @@
         { key: "withoutFindings", label: "Without findings", count: payload.coverage.withoutFindings },
       ], { label: "Entitlement coverage" });
       this.renderFilterSummary(payload);
+      const cleanState = document.querySelector("#persona-clean-state");
+      if (cleanState) {
+        cleanState.hidden = payload.pagination.total !== 0 || this.hasActiveFilters();
+      }
       this.renderRows(payload.rows, payload.pagination);
     }
 
@@ -492,7 +502,10 @@
       body.replaceChildren();
       if (rows.length === 0) {
         const row = createElement("tr", "empty-row");
-        const cell = createElement("td", "", "No findings match this signal. Clear a filter or broaden the search.");
+        const message = this.hasActiveFilters()
+          ? "No findings match this signal. Clear a filter or broaden the search."
+          : "No findings require action in this perspective.";
+        const cell = createElement("td", "", message);
         cell.colSpan = this.showRepairActions ? 8 : 7;
         row.append(cell);
         body.append(row);

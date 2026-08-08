@@ -8,7 +8,7 @@ import secrets
 import time
 from pathlib import Path
 from typing import Annotated
-from urllib.parse import quote, urlencode, urlsplit
+from urllib.parse import quote, unquote, urlencode, urlsplit
 
 from fastapi import APIRouter, Depends, Form, HTTPException, Request, status
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
@@ -70,11 +70,30 @@ def ctadmin_context(
 
 def _safe_next(next_path: str | None) -> str:
     """Return a CTADMIN-local return path, defaulting to the dashboard."""
+    fallback = "/ctadmin/dashboard"
     if not next_path or not next_path.startswith("/ctadmin/") or next_path.startswith("//"):
-        return "/ctadmin/dashboard"
+        return fallback
+    if any(ord(character) < 32 or ord(character) == 127 for character in next_path):
+        return fallback
     parsed = urlsplit(next_path)
     if parsed.scheme or parsed.netloc:
-        return "/ctadmin/dashboard"
+        return fallback
+
+    decoded_path = parsed.path
+    for _ in range(len(parsed.path) + 1):
+        next_decoded = unquote(decoded_path)
+        if next_decoded == decoded_path:
+            break
+        decoded_path = next_decoded
+    else:  # Defensive bound for an unexpectedly non-converging decoder.
+        return fallback
+    normalized_path = decoded_path.replace("\\", "/")
+    if not normalized_path.startswith("/ctadmin/") or normalized_path.startswith("//"):
+        return fallback
+    if any(segment in {".", ".."} for segment in normalized_path.split("/")):
+        return fallback
+    if any(ord(character) < 32 or ord(character) == 127 for character in normalized_path):
+        return fallback
     return next_path
 
 
@@ -637,6 +656,7 @@ async def my_findings(request: Request, settings: Annotated[Settings, Depends(ge
     selected_persona = next(
         (item for item in persona_options if item["id"] == principal.persona_id), None
     )
+    has_persona_selection = principal.persona_id != "ctadmin"
     payload = None
     if selected_persona is not None:
         payload = await _dashboard_request(
@@ -655,6 +675,7 @@ async def my_findings(request: Request, settings: Annotated[Settings, Depends(ge
             page_title="My Findings",
             persona_options=persona_options,
             selected_persona=selected_persona,
+            has_persona_selection=has_persona_selection,
             dashboard_payload=payload,
             csrf_token=principal.csrf_token,
         ),

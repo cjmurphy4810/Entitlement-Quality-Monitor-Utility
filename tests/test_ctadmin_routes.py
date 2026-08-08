@@ -290,6 +290,37 @@ def test_login_rejects_external_and_scheme_relative_next_paths(app_client):
         assert response.headers["location"] == "/ctadmin/dashboard"
 
 
+@pytest.mark.parametrize(
+    "next_path",
+    [
+        "/ctadmin/../outside",
+        "/ctadmin/%2e%2e/outside",
+        "/ctadmin/%252e%252e/outside",
+        "/ctadmin/..%2foutside",
+        "/ctadmin/%2e%2e%5coutside",
+        "/ctadmin/folder%5c..%5c..%5coutside",
+    ],
+)
+def test_login_rejects_dot_segment_and_backslash_ctadmin_next_paths(app_client, next_path):
+    """A CTADMIN-looking path must not escape its prefix after browser/server decoding."""
+    client, _ = app_client
+
+    response = _login(client, next_path=next_path)
+
+    assert response.status_code == 303
+    assert response.headers["location"] == "/ctadmin/dashboard"
+
+
+def test_login_preserves_a_legitimate_ctadmin_finding_next_path_and_query(app_client):
+    client, _ = app_client
+    next_path = "/ctadmin/findings/VIO-100?origin=%2Fctadmin%2Fmy-findings%3Fseverity%3Dhigh"
+
+    response = _login(client, next_path=next_path)
+
+    assert response.status_code == 303
+    assert response.headers["location"] == next_path
+
+
 def test_login_failure_re_renders_the_branded_form_without_a_session(app_client):
     """Changing credential failure into a successful session issuance must be caught."""
     client, _ = app_client
@@ -940,6 +971,65 @@ def test_persona_action_accepts_deliberate_clear_and_rejects_external_return(app
     assert "Choose an employee perspective" in client.get("/ctadmin/my-findings").text
 
 
+@pytest.mark.parametrize(
+    "return_to",
+    [
+        "/ctadmin/../outside",
+        "/ctadmin/%2e%2e/outside",
+        "/ctadmin/%252e%252e/outside",
+        "/ctadmin/folder%5c..%5c..%5coutside",
+    ],
+)
+def test_persona_action_rejects_decoded_traversal_return_paths(app_client, return_to):
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    _login(client)
+
+    response = client.post(
+        "/ctadmin/actions/persona",
+        data={
+            "persona_id": "EMP-1",
+            "csrf_token": _csrf(client),
+            "return_to": return_to,
+        },
+        follow_redirects=False,
+    )
+
+    assert response.status_code == 303
+    assert response.headers["location"] == "/ctadmin/dashboard"
+
+
+def test_stale_signed_persona_is_labeled_and_can_be_cleared(app_client):
+    """Removing an employee after selection must not trap the operator in a stale session."""
+    client, _ = app_client
+    data_dir = get_settings().data_dir
+    _seed_persona_route_data(data_dir)
+    _login(client)
+    client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    employees = json.loads((data_dir / "hr_employees.json").read_text())
+    employees[0]["status"] = "terminated"
+    employees[0]["terminated_at"] = "2026-08-08T00:00:00+00:00"
+    (data_dir / "hr_employees.json").write_text(json.dumps(employees))
+
+    page = client.get("/ctadmin/my-findings")
+
+    assert page.status_code == 200
+    assert "Selected perspective is no longer active" in page.text
+    assert "EMP-1" in page.text
+    assert "Clear employee perspective" in page.text
+    cleared = client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    assert cleared.status_code == 303
+    assert "Choose an employee perspective" in client.get("/ctadmin/my-findings").text
+
+
 def test_my_findings_api_scopes_exactly_and_include_all_controls_terminal_rows(app_client):
     """Persona JSON must not leak another employee and must expose terminal work deliberately."""
     client, _ = app_client
@@ -1034,3 +1124,46 @@ def test_selected_my_findings_renders_identity_charts_filters_table_and_repair(a
         "VIO-101",
         "VIO-103",
     }
+
+
+def test_selected_persona_with_zero_findings_renders_positive_clean_state(app_client):
+    """A true zero-result perspective is verified clean, not a failed or filtered dashboard."""
+    client, _ = app_client
+    data_dir = get_settings().data_dir
+    _seed_persona_route_data(data_dir)
+    employees = json.loads((data_dir / "hr_employees.json").read_text())
+    employees.append(
+        {
+            "id": "EMP-CLEAN",
+            "full_name": "Avery Clean",
+            "email": "avery@example.com",
+            "current_role": "auditor",
+            "current_division": "risk",
+            "status": "active",
+            "role_history": [],
+            "manager_id": None,
+            "hired_at": "2026-01-01T00:00:00+00:00",
+            "terminated_at": None,
+        }
+    )
+    (data_dir / "hr_employees.json").write_text(json.dumps(employees))
+    _login(client)
+    client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-CLEAN", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+
+    response = client.get("/ctadmin/my-findings")
+
+    assert response.status_code == 200
+    assert 'id="persona-clean-state"' in response.text
+    clean_tag = re.search(r'<section id="persona-clean-state"([^>]*)>', response.text)
+    assert clean_tag is not None
+    assert "hidden" not in clean_tag.group(1)
+    assert "No entitlement-quality findings in this perspective" in response.text
+
+    filtered = client.get("/ctadmin/my-findings", params={"severity": "high"})
+    filtered_tag = re.search(r'<section id="persona-clean-state"([^>]*)>', filtered.text)
+    assert filtered_tag is not None
+    assert "hidden" in filtered_tag.group(1)

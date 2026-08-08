@@ -4,7 +4,7 @@
   <section class="signal-rail dashboard-signal-rail" aria-label="My Findings scope">
     <span class="signal-node" aria-hidden="true"></span>
     <div id="filter-summary" class="filter-summary" aria-live="polite">
-      {% if selected_persona %}<span>Employee perspective / {{ selected_persona.fullName }} / {{ selected_persona.id }}</span>{% else %}<span>Employee perspective / no persona selected</span>{% endif %}
+      {% if selected_persona %}<span>Employee perspective / {{ selected_persona.fullName }} / {{ selected_persona.id }}</span>{% elif has_persona_selection %}<span>Employee perspective / stale selection / {{ persona_id }}</span>{% else %}<span>Employee perspective / no persona selected</span>{% endif %}
     </div>
     {% if dashboard_payload %}<button id="clear-filters" class="signal-clear" type="button" disabled>Clear signal</button>{% endif %}
   </section>
@@ -15,7 +15,7 @@
     <section class="persona-console" aria-labelledby="persona-heading">
       <div>
         <p class="eyebrow">DEMO PERSPECTIVE / SESSION SCOPE</p>
-        <h1 id="persona-heading">{% if selected_persona %}My findings{% else %}Choose an employee perspective{% endif %}</h1>
+        <h1 id="persona-heading">{% if selected_persona %}My findings{% elif has_persona_selection %}Selected perspective is no longer active{% else %}Choose an employee perspective{% endif %}</h1>
         <p>This visible demo control changes the employee lens; it does not impersonate authentication.</p>
       </div>
       <div class="persona-control-stack">
@@ -43,7 +43,7 @@
             {% for persona in persona_options %}<span><strong>{{ persona.fullName }}</strong> <code>{{ persona.id }}</code></span>{% else %}<span>No active employees are available.</span>{% endfor %}
           </div>
         </form>
-        {% if selected_persona %}
+        {% if has_persona_selection %}
           <form class="persona-clear-form" method="post" action="/ctadmin/actions/persona">
             <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
             <input type="hidden" name="persona_id" value="">
@@ -55,10 +55,10 @@
     </section>
 
     {% if not selected_persona %}
-      <section class="persona-empty" aria-labelledby="persona-empty-heading">
-        <p class="panel-code">PERSPECTIVE REQUIRED</p>
-        <h2 id="persona-empty-heading">Select a current employee to trace their entitlement signals.</h2>
-        <p>The scoped dashboard will include direct employee findings, active assignments, and entitlements held by those assignments.</p>
+      <section class="persona-empty{% if has_persona_selection %} persona-stale{% endif %}" aria-labelledby="persona-empty-heading">
+        <p class="panel-code">{% if has_persona_selection %}STALE PERSPECTIVE / {{ persona_id }}{% else %}PERSPECTIVE REQUIRED{% endif %}</p>
+        <h2 id="persona-empty-heading">{% if has_persona_selection %}Selected perspective is no longer active. Clear it or choose a current employee.{% else %}Select a current employee to trace their entitlement signals.{% endif %}</h2>
+        <p>{% if has_persona_selection %}The signed session is still valid, but this employee is no longer present in the active HR persona list.{% else %}The scoped dashboard will include direct employee findings, active assignments, and entitlements held by those assignments.{% endif %}</p>
       </section>
     {% else %}
       <section class="persona-identity" aria-label="Selected employee identity">
@@ -86,6 +86,13 @@
           <article class="kpi-card"><span class="kpi-label">Open</span><strong id="kpi-open" class="kpi-value">{{ dashboard_payload.kpis.openFindings }}</strong><small>Not started</small></article>
           <article class="kpi-card kpi-progress"><span class="kpi-label">Pending approval</span><strong id="kpi-pending-approval" class="kpi-value">{{ dashboard_payload.kpis.pendingApprovalFindings }}</strong><small>Awaiting authorization</small></article>
           <article class="kpi-card"><span class="kpi-label">Resolved</span><strong id="kpi-resolved" class="kpi-value">{{ dashboard_payload.kpis.resolvedFindings }}</strong><small>Verified complete</small></article>
+        </section>
+
+        {% set no_active_filters = not dashboard_payload.filters.state and not dashboard_payload.filters.severity and not dashboard_payload.filters.targetType and not dashboard_payload.filters.rule and not dashboard_payload.filters.search %}
+        <section id="persona-clean-state" class="persona-clean-state" aria-live="polite"{% if dashboard_payload.pagination.total != 0 or not no_active_filters %} hidden{% endif %}>
+          <p class="panel-code">VERIFIED CLEAN PERSPECTIVE</p>
+          <h2>No entitlement-quality findings in this perspective.</h2>
+          <p>Current employee, active assignment, and held-entitlement signals are clear.</p>
         </section>
 
         <section class="dashboard-thesis persona-filters" aria-labelledby="my-results-heading">

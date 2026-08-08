@@ -157,7 +157,7 @@ const selectors = {};
   '#kpi-critical', '#kpi-high', '#kpi-not-started', '#kpi-in-progress',
   '#chart-status', '#chart-severity', '#chart-target-type', '#chart-rule',
   '#chart-coverage', '#filter-summary', '#results-count', '#findings-results',
-  '#page-status',
+  '#page-status', '#persona-clean-state',
 ].forEach(selector => { selectors[selector] = new Element(); });
 
 const documentListeners = {};
@@ -325,11 +325,14 @@ const controller = new window.DashboardController(root, payload, {
   includeAll: true, showRepairActions: true,
 });
 await controller.toggleFilter('severity', 'high');
+const cleanStateAfterFilter = selectors['#persona-clean-state'].hidden;
 const row = selectors['#findings-results'].children[0];
 const repairButton = row.children[row.children.length - 1].children[0];
 repairButton.listeners.click();
-await controller.refresh();
-process.stdout.write(JSON.stringify({ requests, pushed, columns: row.children.length, opened }));
+window.ctadminDashboard = controller;
+const repairDrawer = new window.RepairDrawer(document);
+await repairDrawer.onSuccess({ violationId: 'VIO-100' });
+process.stdout.write(JSON.stringify({ requests, pushed, columns: row.children.length, opened, cleanStateAfterFilter }));
 """)
 
     assert result == {
@@ -339,11 +342,35 @@ process.stdout.write(JSON.stringify({ requests, pushed, columns: row.children.le
         ],
         "pushed": [
             "/ctadmin/my-findings?severity=high&page=1&pageSize=50&include_all=true",
-            "/ctadmin/my-findings?severity=high&page=1&pageSize=50&include_all=true",
         ],
         "columns": 8,
         "opened": [["VIO-100", "Repair"]],
+        "cleanStateAfterFilter": True,
     }
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
+def test_persona_clean_state_tracks_unfiltered_zero_results_only():
+    """A genuinely clean persona must not be confused with a filter that returns no rows."""
+    result = _run_dashboard_runtime(r"""
+const responses = [
+  makePayload({ severity: ['high'] }),
+  makePayload(),
+];
+const fetchImpl = async () => ({ ok: true, json: async () => responses.shift() });
+const controller = new window.DashboardController(root, makePayload(), {
+  fetchImpl, history, location,
+  endpoint: '/ctadmin/api/my-findings', pagePath: '/ctadmin/my-findings', includeAll: true,
+});
+const initialClean = !selectors['#persona-clean-state'].hidden;
+await controller.toggleFilter('severity', 'high');
+const filteredClean = !selectors['#persona-clean-state'].hidden;
+await controller.clearFilters();
+const clearedClean = !selectors['#persona-clean-state'].hidden;
+process.stdout.write(JSON.stringify({ initialClean, filteredClean, clearedClean }));
+""")
+
+    assert result == {"initialClean": True, "filteredClean": False, "clearedClean": True}
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
