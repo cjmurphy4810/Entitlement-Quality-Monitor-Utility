@@ -6062,5 +6062,21 @@
     "sod_tags": [],
     "created_at": "2026-08-08T23:21:21.944546Z",
     "updated_at": "2026-08-08T23:21:21.944546Z"
+  },
+  {
+    "id": "ENT-00386",
+    "name": "new entitlement ENT-00386",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00125"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-08T23:52:46.795752Z",
+    "updated_at": "2026-08-08T23:52:46.795752Z"
   }
 ]

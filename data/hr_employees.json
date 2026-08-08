@@ -8404,14 +8404,20 @@
     "id": "EMP-00368",
     "full_name": "Stephanie Pacheco",
     "email": "emp-00368@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-05-17T13:05:39.549874Z",
+        "ended_at": "2026-08-08T23:52:46.795752Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-08T23:52:46.795752Z",
         "ended_at": null
       }
     ],
@@ -27683,6 +27689,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T22:55:16.609126Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01323",
+    "full_name": "Joseph Bradley",
+    "email": "emp-01323@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-08T23:52:46.795752Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T23:52:46.795752Z",
     "terminated_at": null
   }
 ]
