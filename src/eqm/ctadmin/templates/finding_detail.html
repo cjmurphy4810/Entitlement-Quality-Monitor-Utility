@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block signal_rail %}
+  <section class="signal-rail" aria-label="Finding trace">
+    <span class="signal-node" aria-hidden="true"></span><span>{{ finding.ruleId }} / {{ finding.targetType }} / {{ finding.targetId }}</span>
+    <a class="signal-clear" href="{{ origin }}">Back to remediation</a>
+  </section>
+{% endblock %}
+
+{% block content %}
+  <article class="finding-detail">
+    <header class="finding-hero">
+      <div><p class="eyebrow">FINDING TRACE / {{ finding.violationId }}</p><h1 id="page-heading">{{ finding.ruleName }}</h1></div>
+      <div class="finding-state severity-{{ finding.severity | lower }}"><span>{{ finding.severity }}</span><strong>{{ finding.status }}</strong></div>
+    </header>
+    {% if not repairable %}<div class="repair-outcome is-success" role="status">Finding {{ finding.status | lower }}. Audit history remains available below.</div>{% endif %}
+
+    <section class="finding-facts" aria-label="Finding identifiers">
+      <div><span>Violation</span><strong>{{ finding.violationId }}</strong></div><div><span>Rule</span><strong>{{ finding.ruleId }}</strong></div>
+      <div><span>Detected</span><strong>{{ finding.detectedAt }}</strong></div><div><span>Target</span><strong>{{ finding.targetType }} / {{ finding.targetId }}</strong></div>
+    </section>
+
+    <div class="finding-grid">
+      <section class="detail-panel"><p class="panel-code">WHY IT FIRED</p><h2>Issue detail</h2><p>{{ finding.reason }}</p><h3>Recommended action</h3><p>{{ finding.recommendedAction | replace('_', ' ') | title }}</p></section>
+      <section class="detail-panel"><p class="panel-code">CURRENT RECORD</p><h2>Related context</h2>
+        {% if target %}<dl class="evidence-list">{% for key, value in target.items() %}<div><dt>{{ key | replace('_', ' ') | title }}</dt><dd>{{ value if value is string or value is number else value | tojson }}</dd></div>{% endfor %}</dl>{% else %}<p class="muted">The target record is no longer present.</p>{% endif %}
+        {% if related_employees %}<h3>Related employee{% if related_employees | length != 1 %}s{% endif %}</h3>{% for employee in related_employees %}<p>{{ employee.full_name }} <span class="mono-cell">{{ employee.id }}</span></p>{% endfor %}{% endif %}
+      </section>
+      <section class="detail-panel"><p class="panel-code">RULE INPUT</p><h2>Structured evidence</h2><dl class="evidence-list">{% for key, value in finding.evidence.items() %}<div><dt>{{ key }}</dt><dd>{{ value if value is string or value is number else value | tojson }}</dd></div>{% else %}<div><dd>No structured evidence was recorded.</dd></div>{% endfor %}</dl></section>
+      <section class="detail-panel"><p class="panel-code">PROPOSED OUTCOME</p><h2>Suggested fix</h2><dl class="evidence-list">{% for key, value in finding.suggestedFix.items() %}<div><dt>{{ key }}</dt><dd>{{ value if value is string or value is number else value | tojson }}</dd></div>{% else %}<div><dd>Use the verified rule-specific repair.</dd></div>{% endfor %}</dl>
+        {% if repairable %}<button class="repair-trigger primary-button" type="button" data-finding-id="{{ finding.violationId }}">Preview repair</button>{% endif %}
+      </section>
+    </div>
+
+    <section class="results-panel history-panel" aria-labelledby="history-heading"><header class="results-header"><div><p class="panel-code">AUDIT TRAIL</p><h2 id="history-heading">Workflow history</h2></div></header>
+      <ol class="history-list">{% for event in finding.workflowHistory %}<li><div><strong>{{ event.from_state | replace('_', ' ') | title }} → {{ event.to_state | replace('_', ' ') | title }}</strong><span>{{ event.timestamp }}</span></div><p>{{ event.actor }}{% if event.note %} · {{ event.note }}{% endif %}</p>{% if event.override_fix %}<pre class="evidence-code">{{ event.override_fix | tojson(indent=2) }}</pre>{% endif %}</li>{% else %}<li class="muted">No workflow transitions have been recorded.</li>{% endfor %}</ol>
+    </section>
+  </article>
+  {% include "_repair_drawer.html" %}
+  <script src="/ctadmin/static/dashboard.js" defer></script>
+{% endblock %}

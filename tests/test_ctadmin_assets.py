@@ -298,3 +298,120 @@ process.stdout.write(JSON.stringify({
 """)
 
     assert result == {"busyAfterAbort": "true", "busyAfterLatest": "false"}
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
+def test_repair_drawer_traps_focus_closes_with_escape_and_preserves_invalid_input():
+    """Keyboard containment and validation-state preservation are required dialog behavior."""
+    dashboard_path = Path("src/eqm/ctadmin/static/dashboard.js").resolve()
+    harness = r"""
+const fs = require('node:fs');
+const vm = require('node:vm');
+
+class Element {
+  constructor(tag = 'div') {
+    this.tagName = tag.toUpperCase(); this.attributes = {}; this.children = [];
+    this.listeners = {}; this.textContent = ''; this.value = ''; this.checked = false;
+    this.hidden = false; this.disabled = false; this.dataset = {}; this.name = '';
+    this.type = ''; this.focusCount = 0; this.className = '';
+    this.classList = { add() {}, remove() {}, toggle() {} };
+  }
+  append(...nodes) { this.children.push(...nodes); }
+  replaceChildren(...nodes) { this.children = nodes; }
+  setAttribute(name, value) { this.attributes[name] = String(value); }
+  removeAttribute(name) { delete this.attributes[name]; }
+  addEventListener(name, fn) { this.listeners[name] = fn; }
+  focus() { document.activeElement = this; this.focusCount += 1; }
+  querySelectorAll(selector) {
+    const result = [];
+    const visit = node => {
+      const named = selector === '[name]' && node.name;
+      const focusable = selector.includes('button') && ['BUTTON','INPUT','TEXTAREA','SELECT'].includes(node.tagName) && !node.disabled && !node.hidden;
+      if (named || focusable) result.push(node);
+      node.children.forEach(visit);
+    };
+    this.children.forEach(visit); return result;
+  }
+}
+
+const nodes = {};
+[
+  '#repair-drawer', '#repair-drawer-backdrop', '#repair-drawer-close', '#repair-cancel',
+  '#repair-form', '#repair-fields', '#repair-drawer-loading', '#repair-drawer-error',
+  '#repair-drawer-content', '#repair-outcome', '#repair-preview-id', '#repair-preview-reason',
+  '#repair-preview-evidence', '#repair-confirm',
+].forEach(key => nodes[key] = new Element(key.includes('form') ? 'form' : key.includes('confirm') || key.includes('close') || key.includes('cancel') ? 'button' : 'div'));
+nodes['#repair-drawer'].dataset.csrfToken = 'csrf-value';
+nodes['#repair-drawer'].append(nodes['#repair-drawer-close'], nodes['#repair-fields'], nodes['#repair-cancel'], nodes['#repair-confirm']);
+const document = {
+  activeElement: null,
+  createElement: tag => new Element(tag),
+  querySelector: selector => nodes[selector] || null,
+  querySelectorAll: () => [],
+  addEventListener() {},
+};
+const window = { window: null, document, addEventListener() {}, location: { reload() {} } };
+window.window = window;
+const context = { window, document, console, URLSearchParams, AbortController, Date, encodeURIComponent, setTimeout, clearTimeout };
+vm.createContext(context);
+vm.runInContext(fs.readFileSync(process.argv[2], 'utf8'), context);
+
+const trigger = new Element('button');
+const calls = [];
+const responses = [
+  { ok: true, status: 200, json: async () => ({
+    violationId: 'VIO-100', ruleId: 'ENT-Q-01', ruleName: 'PBL completeness',
+    kind: 'pbl_textarea', reason: 'Too short', evidence: { pbl_description: 'bad' },
+    fields: [{ name: 'pbl_description', type: 'textarea', label: 'New PBL description', value: 'starter', required: true }],
+    submission: { pbl_description: 'starter' }, confirmLabel: 'Confirm repair',
+  }) },
+  { ok: false, status: 422, json: async () => ({ type: 'validation_error', detail: 'Description is still too short.' }) },
+];
+const fetchImpl = async (url, options = {}) => { calls.push({ url, options }); return responses.shift(); };
+
+(async () => {
+  const controller = new window.RepairDrawer(document, { fetchImpl });
+  await controller.open('VIO-100', trigger);
+  const field = nodes['#repair-fields'].querySelectorAll('[name]')[0];
+  field.value = 'operator input survives';
+  const focusables = nodes['#repair-drawer'].querySelectorAll('button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled])');
+  focusables[focusables.length - 1].focus();
+  let tabPrevented = false;
+  nodes['#repair-drawer'].listeners.keydown({ key: 'Tab', shiftKey: false, preventDefault() { tabPrevented = true; } });
+  const wrappedToFirst = document.activeElement === focusables[0];
+  await nodes['#repair-form'].listeners.submit({ preventDefault() {} });
+  const valueAfterFailure = field.value;
+  const disabledAfterFailure = nodes['#repair-confirm'].disabled;
+  nodes['#repair-drawer'].listeners.keydown({ key: 'Escape', preventDefault() {} });
+  process.stdout.write(JSON.stringify({
+    openHidden: false,
+    tabPrevented,
+    wrappedToFirst,
+    valueAfterFailure,
+    disabledAfterFailure,
+    error: nodes['#repair-drawer-error'].textContent,
+    closed: nodes['#repair-drawer'].hidden && nodes['#repair-drawer'].attributes['aria-hidden'] === 'true',
+    restoredFocus: trigger.focusCount === 1,
+    postCsrf: calls[1].options.headers['X-CSRF-Token'],
+  }));
+})().catch(error => { console.error(error); process.exitCode = 1; });
+"""
+    result = subprocess.run(
+        ["node", "-", str(dashboard_path)],
+        input=harness,
+        text=True,
+        capture_output=True,
+        check=True,
+    )
+
+    assert json.loads(result.stdout) == {
+        "openHidden": False,
+        "tabPrevented": True,
+        "wrappedToFirst": True,
+        "valueAfterFailure": "operator input survives",
+        "disabledAfterFailure": False,
+        "error": "Description is still too short.",
+        "closed": True,
+        "restoredFocus": True,
+        "postCsrf": "csrf-value",
+    }

@@ -19,6 +19,241 @@
     return String(value).replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
   }
 
+  class RepairDrawer {
+    constructor(root = document, options = {}) {
+      this.root = root;
+      this.drawer = root.querySelector("#repair-drawer");
+      this.backdrop = root.querySelector("#repair-drawer-backdrop");
+      this.closeButton = root.querySelector("#repair-drawer-close");
+      this.cancelButton = root.querySelector("#repair-cancel");
+      this.form = root.querySelector("#repair-form");
+      this.fields = root.querySelector("#repair-fields");
+      this.loading = root.querySelector("#repair-drawer-loading");
+      this.error = root.querySelector("#repair-drawer-error");
+      this.content = root.querySelector("#repair-drawer-content");
+      this.outcome = root.querySelector("#repair-outcome");
+      this.previewId = root.querySelector("#repair-preview-id");
+      this.previewReason = root.querySelector("#repair-preview-reason");
+      this.previewEvidence = root.querySelector("#repair-preview-evidence");
+      this.confirmButton = root.querySelector("#repair-confirm");
+      this.fetchImpl = options.fetchImpl || global.fetch.bind(global);
+      this.onSuccess = options.onSuccess || (payload => {
+        if (global.ctadminDashboard?.refresh) {
+          global.ctadminDashboard.refresh();
+        } else {
+          global.setTimeout?.(() => global.location?.reload?.(), 900);
+        }
+        return payload;
+      });
+      this.findingId = null;
+      this.preview = null;
+      this.returnFocus = null;
+      if (!this.drawer) return;
+      this.closeButton?.addEventListener("click", () => this.close());
+      this.cancelButton?.addEventListener("click", () => this.close());
+      this.backdrop?.addEventListener("click", () => this.close());
+      this.form?.addEventListener("submit", event => this.submit(event));
+      this.drawer.addEventListener("keydown", event => this.handleKeydown(event));
+    }
+
+    focusableElements() {
+      return [...this.drawer.querySelectorAll(
+        'button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled])'
+      )].filter(element => !element.hidden);
+    }
+
+    handleKeydown(event) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        this.close();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const focusable = this.focusableElements();
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+
+    async open(findingId, trigger = document.activeElement) {
+      if (!this.drawer) return null;
+      this.findingId = findingId;
+      this.returnFocus = trigger;
+      this.preview = null;
+      this.drawer.hidden = false;
+      this.drawer.setAttribute("aria-hidden", "false");
+      if (this.backdrop) this.backdrop.hidden = false;
+      if (this.loading) this.loading.hidden = false;
+      if (this.content) this.content.hidden = true;
+      this.setError("");
+      this.setOutcome("");
+      this.closeButton?.focus();
+      try {
+        const response = await this.fetchImpl(
+          `/ctadmin/api/findings/${encodeURIComponent(findingId)}/repair-preview`,
+          { headers: { Accept: "application/json" } },
+        );
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.detail || "Repair preview could not be loaded.");
+        this.preview = payload;
+        this.renderPreview(payload);
+        if (this.loading) this.loading.hidden = true;
+        if (this.content) this.content.hidden = false;
+        this.focusableElements()[0]?.focus();
+        return payload;
+      } catch (error) {
+        if (this.loading) this.loading.hidden = true;
+        this.setError(error.message || "Repair preview could not be loaded.");
+        return null;
+      }
+    }
+
+    close() {
+      if (!this.drawer) return;
+      this.drawer.hidden = true;
+      this.drawer.setAttribute("aria-hidden", "true");
+      if (this.backdrop) this.backdrop.hidden = true;
+      this.returnFocus?.focus?.();
+    }
+
+    setError(message) {
+      if (!this.error) return;
+      this.error.textContent = message;
+      this.error.hidden = !message;
+    }
+
+    setOutcome(message, success = false) {
+      if (!this.outcome) return;
+      this.outcome.textContent = message;
+      this.outcome.classList.toggle("is-success", Boolean(message && success));
+      this.outcome.hidden = !message;
+    }
+
+    renderPreview(payload) {
+      if (this.previewId) this.previewId.textContent = `${payload.violationId} / ${payload.ruleId}`;
+      if (this.previewReason) this.previewReason.textContent = payload.reason;
+      if (this.previewEvidence) this.previewEvidence.textContent = JSON.stringify(payload.evidence, null, 2);
+      if (this.confirmButton) this.confirmButton.textContent = payload.confirmLabel || "Confirm repair";
+      this.fields?.replaceChildren();
+      (payload.fields || []).forEach(field => this.renderField(field));
+    }
+
+    renderField(field) {
+      if (!this.fields) return;
+      if (field.type === "radio") {
+        const group = createElement("fieldset", "repair-choice-group");
+        group.append(createElement("legend", "", field.label));
+        (field.options || []).forEach(option => {
+          const label = createElement("label", "repair-choice");
+          const input = createElement("input");
+          input.type = "radio"; input.name = field.name; input.value = option.value;
+          input.required = Boolean(field.required);
+          label.append(input, createElement("span", "", option.label));
+          group.append(label);
+        });
+        this.fields.append(group);
+        return;
+      }
+      if (field.type === "readonly") {
+        const panel = createElement("div", "repair-readonly");
+        panel.append(createElement("strong", "", field.label), createElement("p", "", field.value));
+        this.fields.append(panel);
+        return;
+      }
+      const label = createElement("label", "repair-field");
+      label.append(createElement("span", "", field.label));
+      let input;
+      if (field.type === "textarea") {
+        input = createElement("textarea");
+        input.rows = 6;
+        input.value = field.value || "";
+      } else if (field.type === "select" || field.type === "multiselect") {
+        input = createElement("select");
+        input.multiple = field.type === "multiselect";
+        if (!input.multiple) input.append(createElement("option", "", "Select a resource"));
+        (field.options || []).forEach(option => {
+          const element = createElement("option", "", option.label);
+          element.value = option.value;
+          input.append(element);
+        });
+      } else if (field.type === "checkbox") {
+        input = createElement("input");
+        input.type = "checkbox";
+        label.className = "repair-choice acknowledgement";
+      } else {
+        input = createElement("input");
+        input.type = field.type || "text";
+        input.value = field.value || "";
+      }
+      input.name = field.name;
+      input.required = Boolean(field.required);
+      label.append(input);
+      this.fields.append(label);
+    }
+
+    submission() {
+      const values = { ...(this.preview?.submission || {}) };
+      const named = this.fields ? [...this.fields.querySelectorAll("[name]")] : [];
+      named.forEach(input => {
+        if (input.type === "radio") {
+          if (input.checked) values[input.name] = input.value;
+        } else if (input.type === "checkbox") {
+          values[input.name] = Boolean(input.checked);
+        } else if (input.multiple) {
+          values[input.name] = [...input.selectedOptions].map(option => option.value);
+        } else {
+          values[input.name] = input.value;
+        }
+      });
+      return values;
+    }
+
+    async submit(event) {
+      event.preventDefault();
+      if (!this.preview || !this.findingId) return null;
+      this.setError("");
+      this.setOutcome("Applying repair and re-running all controls…");
+      if (this.confirmButton) this.confirmButton.disabled = true;
+      try {
+        const response = await this.fetchImpl(
+          `/ctadmin/actions/findings/${encodeURIComponent(this.findingId)}/repair`,
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              "X-CSRF-Token": this.drawer.dataset.csrfToken,
+            },
+            body: JSON.stringify(this.submission()),
+          },
+        );
+        const payload = await response.json();
+        if (!response.ok) {
+          this.setOutcome("");
+          this.setError(payload.detail || "Repair could not be completed.");
+          return null;
+        }
+        this.setOutcome(`Repair verified. ${payload.summary}`, true);
+        this.outcome?.focus?.();
+        await this.onSuccess(payload);
+        return payload;
+      } catch (_error) {
+        this.setOutcome("");
+        this.setError("Repair could not be completed. Check the connection and try again.");
+        return null;
+      } finally {
+        if (this.confirmButton) this.confirmButton.disabled = false;
+      }
+    }
+  }
+
   class DashboardController {
     constructor(root, initialData, options = {}) {
       this.root = root;
@@ -262,16 +497,25 @@
   }
 
   global.DashboardController = DashboardController;
+  global.RepairDrawer = RepairDrawer;
   document.addEventListener("DOMContentLoaded", () => {
     const root = document.querySelector("#dashboard");
     const dataScript = document.querySelector("#dashboard-data");
-    if (!root || !dataScript) return;
-    try {
-      const controller = new DashboardController(root, JSON.parse(dataScript.textContent));
-      global.ctadminDashboard = controller;
-    } catch (_error) {
-      const error = document.querySelector("#dashboard-error");
-      if (error) error.hidden = false;
+    if (root && dataScript) {
+      try {
+        const controller = new DashboardController(root, JSON.parse(dataScript.textContent));
+        global.ctadminDashboard = controller;
+      } catch (_error) {
+        const error = document.querySelector("#dashboard-error");
+        if (error) error.hidden = false;
+      }
     }
+    const drawerRoot = document.querySelector("#repair-drawer");
+    if (!drawerRoot) return;
+    const drawer = new RepairDrawer(document);
+    global.ctadminRepairDrawer = drawer;
+    document.querySelectorAll(".repair-trigger").forEach(trigger => {
+      trigger.addEventListener("click", () => drawer.open(trigger.dataset.findingId, trigger));
+    });
   });
 })(window);
