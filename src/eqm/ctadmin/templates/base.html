@@ -23,10 +23,12 @@
         <form action="/ctadmin/logout" method="post"><button class="quiet-button" type="submit">Log out</button></form>
       </div>
     </header>
-    <section class="signal-rail" aria-label="Active signal filters">
-      <span class="signal-node" aria-hidden="true"></span><span>Evaluation scope: all active records</span>
-      <span class="signal-clear">Clear signal</span>
-    </section>
+    {% block signal_rail %}
+      <section class="signal-rail" aria-label="Active signal filters">
+        <span class="signal-node" aria-hidden="true"></span><span>Evaluation scope: all active records</span>
+        <span class="signal-clear">Clear signal</span>
+      </section>
+    {% endblock %}
     <main class="app-main">
       {% block content %}
       <section class="page-intro" aria-labelledby="page-heading">

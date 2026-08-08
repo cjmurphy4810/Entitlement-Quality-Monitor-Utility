@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block signal_rail %}
+  <section class="signal-rail dashboard-signal-rail" aria-label="Active signal filters">
+    <span class="signal-node" aria-hidden="true"></span>
+    <div id="filter-summary" class="filter-summary" aria-live="polite">
+      <span>Evaluation scope: all active records</span>
+    </div>
+    <button id="clear-filters" class="signal-clear" type="button" disabled>Clear signal</button>
+  </section>
+{% endblock %}
+
+{% block content %}
+  <div id="dashboard" class="dashboard-shell" aria-busy="false">
+    <section class="dashboard-thesis" aria-labelledby="page-heading">
+      <div>
+        <p class="eyebrow">ENTITLEMENT CONTROL / LIVE EVALUATION</p>
+        <h1 id="page-heading">Access health, traced to action.</h1>
+        <p>Find the strongest entitlement-quality signal, narrow its scope, and open the evidence behind it.</p>
+      </div>
+      <form id="dashboard-search" class="dashboard-search" role="search">
+        <label for="finding-search">Search findings</label>
+        <div class="search-control">
+          <input id="finding-search" name="search" type="search" value="{{ dashboard_payload.filters.search }}" placeholder="User, rule, target, or finding ID">
+          <button class="primary-button" type="submit">Apply search</button>
+        </div>
+      </form>
+    </section>
+
+    <div id="dashboard-error" class="dashboard-error" role="alert" hidden>
+      Dashboard data could not be refreshed. Check the connection and try again.
+      <button id="retry-dashboard" type="button">Try again</button>
+    </div>
+
+    <section class="kpi-grid" aria-label="Finding health instruments">
+      <article class="kpi-card kpi-total">
+        <span class="kpi-label">Active findings</span>
+        <strong id="kpi-total" class="kpi-value">{{ dashboard_payload.kpis.totalFindings }}</strong>
+        <small>Current evaluation scope</small>
+      </article>
+      <article class="kpi-card kpi-fault">
+        <span class="kpi-label">Critical</span>
+        <strong id="kpi-critical" class="kpi-value">{{ dashboard_payload.kpis.criticalFindings }}</strong>
+        <small>Immediate control risk</small>
+      </article>
+      <article class="kpi-card">
+        <span class="kpi-label">High</span>
+        <strong id="kpi-high" class="kpi-value">{{ dashboard_payload.kpis.highFindings }}</strong>
+        <small>Priority review</small>
+      </article>
+      <article class="kpi-card">
+        <span class="kpi-label">Not started</span>
+        <strong id="kpi-not-started" class="kpi-value">{{ dashboard_payload.kpis.notStartedFindings }}</strong>
+        <small>Awaiting a repair path</small>
+      </article>
+      <article class="kpi-card kpi-progress">
+        <span class="kpi-label">In progress</span>
+        <strong id="kpi-in-progress" class="kpi-value">{{ dashboard_payload.kpis.inProgressFindings }}</strong>
+        <small>Moving through workflow</small>
+      </article>
+    </section>
+
+    <section class="chart-grid" aria-label="Interactive finding evidence">
+      <article class="chart-panel">
+        <header><p class="panel-code">SIGNAL 01</p><h2>Status</h2></header>
+        <div id="chart-status" class="chart-container" aria-label="Findings by workflow status"></div>
+      </article>
+      <article class="chart-panel">
+        <header><p class="panel-code">SIGNAL 02</p><h2>Severity</h2></header>
+        <div id="chart-severity" class="chart-container" aria-label="Findings by severity"></div>
+      </article>
+      <article class="chart-panel">
+        <header><p class="panel-code">SIGNAL 03</p><h2>Target type</h2></header>
+        <div id="chart-target-type" class="chart-container" aria-label="Findings by target type"></div>
+      </article>
+      <article class="chart-panel">
+        <header><p class="panel-code">COVERAGE</p><h2>Entitlement coverage</h2></header>
+        <div id="chart-coverage" class="chart-container donut-container" aria-label="Entitlements with and without findings"></div>
+      </article>
+      <article class="chart-panel chart-wide">
+        <header><p class="panel-code">SIGNAL 04</p><h2>Control rule</h2></header>
+        <div id="chart-rule" class="chart-container rule-chart" aria-label="Findings by control rule"></div>
+      </article>
+    </section>
+
+    <section class="results-panel" aria-labelledby="results-heading">
+      <header class="results-header">
+        <div><p class="panel-code">VERIFIED REPAIR PATH</p><h2 id="results-heading">Finding evidence</h2></div>
+        <p id="results-count" class="results-count" aria-live="polite"></p>
+      </header>
+      <div class="table-scroll" tabindex="0" aria-label="Scrollable finding results">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Finding</th><th scope="col">User</th><th scope="col">Rule</th>
+              <th scope="col">Severity</th><th scope="col">Status</th><th scope="col">Target</th>
+              <th scope="col">Detected</th>
+            </tr>
+          </thead>
+          <tbody id="findings-results"></tbody>
+        </table>
+      </div>
+      <nav class="pagination" aria-label="Finding result pages">
+        <button id="previous-page" class="secondary-button" type="button">Previous</button>
+        <span id="page-status" aria-live="polite"></span>
+        <button id="next-page" class="secondary-button" type="button">Next</button>
+      </nav>
+    </section>
+  </div>
+
+  <script id="dashboard-data" type="application/json">{{ dashboard_payload | tojson }}</script>
+  <script src="/ctadmin/static/charts.js" defer></script>
+  <script src="/ctadmin/static/dashboard.js" defer></script>
+{% endblock %}

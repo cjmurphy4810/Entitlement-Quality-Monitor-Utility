@@ -1,4 +1,10 @@
+import json
+import re
 from urllib.parse import parse_qs, urlparse
+
+import pytest
+
+from eqm.config import get_settings
 
 
 def _login(client, *, next_path: str | None = None):
@@ -149,3 +155,112 @@ def test_ctadmin_static_assets_do_not_replace_the_existing_static_mount(app_clie
 
     assert client.get("/ctadmin/static/ctadmin.css").status_code == 200
     assert client.get("/static/style.css").status_code == 200
+
+
+def test_authenticated_dashboard_renders_the_complete_operator_surface(app_client):
+    """Removing an instrument, chart, signal, table, or external asset breaks the page contract."""
+    client, _ = app_client
+    _login(client)
+
+    response = client.get("/ctadmin/dashboard")
+
+    assert response.status_code == 200
+    for hook in [
+        "kpi-total", "kpi-critical", "kpi-high", "kpi-not-started", "kpi-in-progress",
+        "chart-status", "chart-severity", "chart-target-type", "chart-rule", "chart-coverage",
+        "filter-summary", "clear-filters", "findings-results",
+    ]:
+        assert f'id="{hook}"' in response.text
+    assert 'src="/ctadmin/static/charts.js"' in response.text
+    assert 'src="/ctadmin/static/dashboard.js"' in response.text
+    assert "Appian" not in response.text
+    assert "ServiceNow" not in response.text
+
+    embedded = re.search(
+        r'<script id="dashboard-data" type="application/json">(.*?)</script>',
+        response.text,
+        re.DOTALL,
+    )
+    assert embedded is not None
+    payload = json.loads(embedded.group(1))
+    assert set(payload) == {"kpis", "coverage", "series", "rows", "filters", "pagination"}
+
+
+def test_authenticated_dashboard_api_returns_the_normalized_json_contract(app_client):
+    """Routing the concrete API request to the wildcard or changing its shape breaks all clients."""
+    client, _ = app_client
+    _login(client)
+
+    response = client.get("/ctadmin/api/dashboard")
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert set(payload) == {"kpis", "coverage", "series", "rows", "filters", "pagination"}
+    assert set(payload["series"]) == {"status", "severity", "targetType", "rule"}
+    assert payload["filters"] == {
+        "state": [],
+        "severity": [],
+        "targetType": [],
+        "rule": [],
+        "search": "",
+        "page": 1,
+        "pageSize": 50,
+    }
+
+
+def test_dashboard_api_preserves_repeated_filters_and_normalizes_public_values(app_client):
+    """Collapsing repeated values or sending chart buckets directly to the query loses selections."""
+    client, _ = app_client
+    data_dir = get_settings().data_dir
+    (data_dir / "violations.json").write_text(json.dumps([
+        {
+            "id": "VIO-1", "rule_id": "TOX-01", "rule_name": "Toxic access",
+            "severity": "high", "detected_at": "2026-01-01T00:00:00+00:00",
+            "target_type": "assignment", "target_id": "ASN-1", "explanation": "Conflict",
+            "evidence": {}, "recommended_action": "route_to_compliance", "suggested_fix": {},
+            "workflow_state": "pending_approval", "workflow_history": [], "appian_case_id": None,
+        }
+    ]))
+    _login(client)
+
+    response = client.get(
+        "/ctadmin/api/dashboard",
+        params=[
+            ("state", "in_progress"), ("state", "complete"),
+            ("severity", "HIGH"), ("targetType", "Assignment"),
+            ("rule", "TOX-01"), ("search", " Conflict "),
+            ("page", "2"), ("pageSize", "10"),
+        ],
+    )
+
+    assert response.status_code == 200
+    assert response.json()["filters"] == {
+        "state": ["in_progress", "complete"],
+        "severity": ["high"],
+        "targetType": ["assignment"],
+        "rule": ["tox-01"],
+        "search": "Conflict",
+        "page": 2,
+        "pageSize": 10,
+    }
+
+
+@pytest.mark.parametrize(
+    ("parameter", "value"),
+    [
+        ("state", "paused"),
+        ("severity", "urgent"),
+        ("targetType", "database"),
+        ("rule", "unknown-rule"),
+        ("page", "zero"),
+        ("pageSize", "0"),
+    ],
+)
+def test_dashboard_api_rejects_unsupported_filter_values(app_client, parameter, value):
+    """Silently accepting an unsupported filter produces an empty, misleading dashboard."""
+    client, _ = app_client
+    _login(client)
+
+    response = client.get("/ctadmin/api/dashboard", params={parameter: value})
+
+    assert response.status_code == 422

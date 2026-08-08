@@ -21,6 +21,8 @@ from eqm.ctadmin.auth import (
     login_throttle_key,
     validate_credentials,
 )
+from eqm.ctadmin.queries import FindingFilters, load_dashboard_query
+from eqm.persistence import JsonStore
 
 CTADMIN_DIR = Path(__file__).parent
 TEMPLATES_DIR = CTADMIN_DIR / "templates"
@@ -29,6 +31,15 @@ STATIC_DIR = CTADMIN_DIR / "static"
 router = APIRouter(prefix="/ctadmin")
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 login_throttle = LoginThrottle()
+
+STATE_BUCKETS = {
+    "not_started": frozenset({"open"}),
+    "in_progress": frozenset({"pending_approval", "approved", "manual_repair"}),
+    "complete": frozenset({"resolved", "rejected"}),
+}
+RAW_STATES = frozenset().union(*STATE_BUCKETS.values())
+SEVERITIES = frozenset({"critical", "high", "medium", "low"})
+TARGET_TYPES = frozenset({"employee", "assignment", "entitlement", "resource"})
 
 
 def ctadmin_context(
@@ -77,6 +88,107 @@ def _api_principal(request: Request, settings: Settings) -> SessionPrincipal:
     if principal is None:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required")
     return principal
+
+
+def _normalised_query_values(request: Request, name: str) -> list[str]:
+    values: list[str] = []
+    for raw_value in request.query_params.getlist(name):
+        value = raw_value.strip().lower()
+        if not value:
+            raise HTTPException(status_code=422, detail=f"Unsupported {name} value")
+        if value not in values:
+            values.append(value)
+    return values
+
+
+def _positive_query_int(request: Request, name: str, default: int) -> int:
+    raw_value = request.query_params.get(name)
+    if raw_value is None:
+        return default
+    try:
+        value = int(raw_value)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=f"{name} must be a positive integer") from exc
+    if value < 1 or (name == "pageSize" and value > 200):
+        raise HTTPException(status_code=422, detail=f"{name} must be a positive integer")
+    return value
+
+
+async def _dashboard_request(
+    request: Request, settings: Settings, principal: SessionPrincipal
+) -> dict[str, object]:
+    public_states = _normalised_query_values(request, "state")
+    severities = _normalised_query_values(request, "severity")
+    target_types = _normalised_query_values(request, "targetType")
+    rules = _normalised_query_values(request, "rule")
+    search = request.query_params.get("search", "").strip()
+    page = _positive_query_int(request, "page", 1)
+    page_size = _positive_query_int(request, "pageSize", 50)
+
+    unsupported_states = set(public_states) - (set(STATE_BUCKETS) | set(RAW_STATES))
+    unsupported_severities = set(severities) - set(SEVERITIES)
+    unsupported_targets = set(target_types) - set(TARGET_TYPES)
+    if unsupported_states:
+        raise HTTPException(status_code=422, detail="Unsupported state value")
+    if unsupported_severities:
+        raise HTTPException(status_code=422, detail="Unsupported severity value")
+    if unsupported_targets:
+        raise HTTPException(status_code=422, detail="Unsupported targetType value")
+
+    store = JsonStore(settings.data_dir)
+    raw_violations = await store.read("violations.json")
+    supported_rules = {
+        str(violation.get("rule_id", "")).strip().lower()
+        for violation in raw_violations if isinstance(violation, dict)
+    } if isinstance(raw_violations, list) else set()
+    if set(rules) - supported_rules:
+        raise HTTPException(status_code=422, detail="Unsupported rule value")
+
+    expanded_states: set[str] = set()
+    for state_value in public_states:
+        expanded_states.update(STATE_BUCKETS.get(state_value, frozenset({state_value})))
+    query_result = await load_dashboard_query(
+        store,
+        FindingFilters(
+            states=frozenset(expanded_states),
+            severities=frozenset(severities),
+            target_types=frozenset(target_types),
+            rules=frozenset(rules),
+            search=search,
+            page=page,
+            page_size=page_size,
+        ),
+        persona_id=None if principal.persona_id == "ctadmin" else principal.persona_id,
+    )
+    kpis = query_result.kpis
+    return {
+        "kpis": {
+            "totalFindings": kpis.total_findings,
+            "criticalFindings": kpis.critical_findings,
+            "highFindings": kpis.high_findings,
+            "notStartedFindings": kpis.not_started_findings,
+            "inProgressFindings": kpis.in_progress_findings,
+            "completeFindings": kpis.complete_findings,
+        },
+        "coverage": query_result.entitlement_coverage,
+        "series": {
+            "status": query_result.series["workflow"],
+            "severity": query_result.series["severity"],
+            "targetType": query_result.series["targetType"],
+            "rule": query_result.series["rule"],
+        },
+        "rows": query_result.rows,
+        "filters": {
+            "state": public_states,
+            "severity": severities,
+            "targetType": target_types,
+            "rule": rules,
+            "search": search,
+            "page": page,
+            "pageSize": page_size,
+        },
+        "pagination": query_result.pagination,
+    }
 
 
 @router.get("/login", response_class=HTMLResponse)
@@ -150,12 +262,22 @@ async def _render_placeholder(
 
 
 @router.get("/dashboard", response_class=HTMLResponse)
-async def dashboard_placeholder(
+async def dashboard(
     request: Request, settings: Annotated[Settings, Depends(get_settings)]
 ):
-    return await _render_placeholder(
-        request, settings, title="Dashboard", heading="Health dashboard",
-        description="A verified view of entitlement quality is loading.",
+    principal = _page_principal(request, settings)
+    if isinstance(principal, RedirectResponse):
+        return principal
+    payload = await _dashboard_request(request, settings, principal)
+    return templates.TemplateResponse(
+        request,
+        "dashboard.html",
+        ctadmin_context(
+            request,
+            principal,
+            page_title="Health dashboard",
+            dashboard_payload=payload,
+        ),
     )
 
 
@@ -187,6 +309,14 @@ async def my_findings_placeholder(
         request, settings, title="My Findings", heading="My findings",
         description="Persona-scoped findings will appear here.",
     )
+
+
+@router.get("/api/dashboard")
+async def dashboard_api(
+    request: Request, settings: Annotated[Settings, Depends(get_settings)]
+) -> dict[str, object]:
+    principal = _api_principal(request, settings)
+    return await _dashboard_request(request, settings, principal)
 
 
 @router.api_route("/api", methods=["GET", "POST", "PUT", "PATCH", "DELETE"])
