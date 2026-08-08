@@ -25,21 +25,32 @@ from eqm.simulator import drift_tick
 
 def _bundle_from_store(store: JsonStore) -> SeedBundle:
     async def load():
-        ents = [Entitlement(**x) for x in await store.read("entitlements.json")]
-        emps = [HREmployee(**x) for x in await store.read("hr_employees.json")]
-        ress = [CMDBResource(**x) for x in await store.read("cmdb_resources.json")]
-        asns = [Assignment(**x) for x in await store.read("assignments.json")]
-        return SeedBundle(entitlements=ents, hr_employees=emps,
-                          cmdb_resources=ress, assignments=asns)
+        async with store.transaction():
+            ents = [Entitlement(**x) for x in await store.read("entitlements.json")]
+            emps = [HREmployee(**x) for x in await store.read("hr_employees.json")]
+            ress = [CMDBResource(**x) for x in await store.read("cmdb_resources.json")]
+            asns = [Assignment(**x) for x in await store.read("assignments.json")]
+            return SeedBundle(entitlements=ents, hr_employees=emps,
+                              cmdb_resources=ress, assignments=asns)
     return asyncio.run(load())
 
 
 async def _save_bundle(store: JsonStore, b: SeedBundle, vios: list[Violation]) -> None:
-    await store.write("entitlements.json", [e.model_dump(mode="json") for e in b.entitlements])
-    await store.write("hr_employees.json", [e.model_dump(mode="json") for e in b.hr_employees])
-    await store.write("cmdb_resources.json", [e.model_dump(mode="json") for e in b.cmdb_resources])
-    await store.write("assignments.json", [e.model_dump(mode="json") for e in b.assignments])
-    await store.write("violations.json", [v.model_dump(mode="json") for v in vios])
+    await store.write_many({
+        "entitlements.json": [
+            e.model_dump(mode="json") for e in b.entitlements
+        ],
+        "hr_employees.json": [
+            e.model_dump(mode="json") for e in b.hr_employees
+        ],
+        "cmdb_resources.json": [
+            e.model_dump(mode="json") for e in b.cmdb_resources
+        ],
+        "assignments.json": [
+            e.model_dump(mode="json") for e in b.assignments
+        ],
+        "violations.json": [v.model_dump(mode="json") for v in vios],
+    })
 
 
 def _evaluate_and_save(store: JsonStore, b: SeedBundle) -> int:

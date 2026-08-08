@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page_title | default('CTADMIN') }} · CTADMIN</title>
+    <link rel="stylesheet" href="/ctadmin/static/ctadmin.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="/ctadmin/dashboard" aria-label="CTADMIN Entitlement Quality Monitor home">
+        <img
+          class="brand-logo brand-logo-header"
+          src="/ctadmin/static/ctadmin-logo.jpg"
+          alt="CTADMIN Technology Administration"
+        >
+        <span class="brand-product">Entitlement Quality Monitor</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="/ctadmin/dashboard"{% if active_nav == 'dashboard' %} aria-current="page"{% endif %}>Dashboard</a>
+        <a href="/ctadmin/remediation"{% if active_nav == 'remediation' %} aria-current="page"{% endif %}>Remediation</a>
+        <a href="/ctadmin/my-findings"{% if active_nav == 'my_findings' %} aria-current="page"{% endif %}>My Findings</a>
+      </nav>
+      <div class="identity">
+        {% if persona_id and persona_id != 'ctadmin' %}<span class="persona">Persona: {{ persona_id }}</span>{% endif %}
+        <span class="username">{{ username }}</span>
+        <form action="/ctadmin/logout" method="post">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+          <button class="quiet-button" type="submit">Log out</button>
+        </form>
+      </div>
+    </header>
+    {% block signal_rail %}
+      <section class="signal-rail" aria-label="Active signal filters">
+        <span class="signal-node" aria-hidden="true"></span><span>Evaluation scope: all active records</span>
+        <span class="signal-clear">Clear signal</span>
+      </section>
+    {% endblock %}
+    <main class="app-main">
+      {% block content %}
+      <section class="page-intro" aria-labelledby="page-heading">
+        <p class="eyebrow">CTADMIN CONTROL SURFACE</p>
+        <h1 id="page-heading">{{ page_heading }}</h1>
+        <p>{{ page_description }}</p>
+      </section>
+      {% endblock %}
+    </main>
+  </body>
+</html>

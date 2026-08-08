@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in · CTADMIN</title>
+    <link rel="stylesheet" href="/ctadmin/static/ctadmin.css">
+  </head>
+  <body class="login-body">
+    <main class="login-layout">
+      <section class="login-ident" aria-label="CTADMIN Entitlement Quality Monitor">
+        <img
+          class="brand-logo brand-logo-login"
+          src="/ctadmin/static/ctadmin-logo.jpg"
+          alt="CTADMIN Technology Administration"
+        >
+        <p class="eyebrow">CTADMIN CONTROL SURFACE</p>
+        <h1>Entitlement<br>Quality Monitor</h1>
+        <p>Signal, repair, and verification for access-quality operations.</p>
+      </section>
+      <section class="login-card" aria-labelledby="login-heading">
+        <p class="eyebrow">OPERATOR ACCESS</p>
+        <h2 id="login-heading">Sign in</h2>
+        <p class="muted">Use your CTADMIN operator credentials.</p>
+        {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+        <form action="/ctadmin/login" method="post">
+          <input type="hidden" name="next" value="{{ next_path }}">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required>
+          <button class="primary-button" type="submit">Sign in to CTADMIN</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

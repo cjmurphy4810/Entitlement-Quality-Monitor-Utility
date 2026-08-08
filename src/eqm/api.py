@@ -15,6 +15,8 @@ from pydantic import BaseModel
 from starlette.requests import Request
 
 from eqm.config import Settings, get_settings
+from eqm.ctadmin.routes import STATIC_DIR as CTADMIN_STATIC_DIR
+from eqm.ctadmin.routes import router as ctadmin_router
 from eqm.dashboard import STATIC_DIR, TEMPLATES_DIR
 from eqm.engine import run_engine
 from eqm.git_sync import GitSync
@@ -28,6 +30,7 @@ from eqm.models import (
     WorkflowState,
 )
 from eqm.persistence import JsonStore
+from eqm.projections import project_violation as _project_violation
 from eqm.rules.base import DataSnapshot
 from eqm.scenarios import SCENARIOS, run_scenario
 from eqm.seed import SeedBundle, SeedConfig, generate_seed
@@ -36,7 +39,25 @@ from eqm.workflow import LEGAL_TRANSITIONS, IllegalTransition, transition
 
 bearer_scheme = HTTPBearer(auto_error=False)
 app = FastAPI(title="EQM Utility", version="0.1.0")
+
+
+@app.middleware("http")
+async def prevent_ctadmin_response_storage(request: Request, call_next):
+    """Keep authenticated CTADMIN pages, data, and actions out of browser caches."""
+    response = await call_next(request)
+    path = request.url.path.rstrip("/")
+    if (
+        (path == "/ctadmin" or path.startswith("/ctadmin/"))
+        and path != "/ctadmin/login"
+        and not path.startswith("/ctadmin/static/")
+    ):
+        response.headers["Cache-Control"] = "no-store"
+    return response
+
+
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+app.mount("/ctadmin/static", StaticFiles(directory=str(CTADMIN_STATIC_DIR)), name="ctadmin-static")
+app.include_router(ctadmin_router)
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 
 
@@ -187,43 +208,6 @@ async def get_violation(vid: str, store: JsonStore = Depends(get_store)) -> Viol
     raise HTTPException(404, "Violation not found")
 
 
-def _project_violation(v: Violation, emp_by_id: dict, asn_by_id: dict,
-                       *, include_internal: bool = False) -> dict:
-    """Adapt a Violation to the Appian-friendly shape, resolving user context."""
-    emp_id, emp_name = "n/a", "n/a"
-    if v.target_type == "employee":
-        emp_id = v.target_id
-        emp = emp_by_id.get(v.target_id)
-        if emp:
-            emp_name = emp["full_name"]
-    elif v.target_type == "assignment":
-        asn = asn_by_id.get(v.target_id)
-        if asn:
-            emp_id = asn["employee_id"]
-            emp = emp_by_id.get(emp_id)
-            if emp:
-                emp_name = emp["full_name"]
-    out = {
-        "violationId": v.id,
-        "userId": emp_id,
-        "userName": emp_name,
-        "ruleId": v.rule_id,
-        "ruleName": v.rule_name,
-        "status": v.workflow_state.value.replace("_", " ").title(),
-        "severity": v.severity.value.title(),
-        "reason": v.explanation,
-        "targetType": v.target_type,
-        "targetId": v.target_id,
-        "recommendedAction": v.recommended_action.value,
-        "detectedAt": v.detected_at.isoformat(),
-    }
-    if include_internal:
-        out["evidence"] = v.evidence
-        out["suggestedFix"] = v.suggested_fix
-        out["workflowHistory"] = [h.model_dump(mode="json") for h in v.workflow_history]
-    return out
-
-
 @app.get("/api/flagged-records")
 async def get_flagged_records(
     state: str | None = None,
@@ -314,7 +298,7 @@ async def get_overview(store: JsonStore = Depends(get_store)) -> dict:  # noqa: 
 
 @app.get("/api/user-findings")
 async def get_user_findings(
-    userId: str,
+    userId: str,  # noqa: N803
     include_all: bool = False,
     store: JsonStore = Depends(get_store),  # noqa: B008
 ) -> dict:
@@ -372,20 +356,21 @@ RESOURCE_PATCHABLE = {"name", "type", "criticality", "owner_division",
 
 async def _patch_record(store: JsonStore, name: str, item_id: str,
                         patch: dict, allowed: set[str], model) -> dict:
-    raw = await _read_list(store, name)
-    for i, x in enumerate(raw):
-        if x.get("id") == item_id:
-            unknown = set(patch) - allowed
-            if unknown:
-                raise HTTPException(400, f"Cannot patch fields: {sorted(unknown)}")
-            x = {**x, **patch}
-            if "updated_at" in model.model_fields:
-                x["updated_at"] = datetime.now(UTC).isoformat()
-            validated = model(**x).model_dump(mode="json")
-            raw[i] = validated
-            await store.write(name, raw)
-            return validated
-    raise HTTPException(404, "Not found")
+    async with store.transaction():
+        raw = await _read_list(store, name)
+        for i, x in enumerate(raw):
+            if x.get("id") == item_id:
+                unknown = set(patch) - allowed
+                if unknown:
+                    raise HTTPException(400, f"Cannot patch fields: {sorted(unknown)}")
+                x = {**x, **patch}
+                if "updated_at" in model.model_fields:
+                    x["updated_at"] = datetime.now(UTC).isoformat()
+                validated = model(**x).model_dump(mode="json")
+                raw[i] = validated
+                await store.write(name, raw)
+                return validated
+        raise HTTPException(404, "Not found")
 
 
 @app.patch("/entitlements/{ent_id}", response_model=Entitlement,
@@ -418,14 +403,15 @@ async def patch_resource(res_id: str, patch: dict,
 @app.delete("/assignments/{asn_id}", dependencies=[Depends(require_token)])
 async def revoke_assignment(asn_id: str,
                             store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
-    raw = await _read_list(store, "assignments.json")
-    for i, x in enumerate(raw):
-        if x.get("id") == asn_id:
-            x["active"] = False
-            raw[i] = x
-            await store.write("assignments.json", raw)
-            return {"id": asn_id, "active": False}
-    raise HTTPException(404, "Assignment not found")
+    async with store.transaction():
+        raw = await _read_list(store, "assignments.json")
+        for i, x in enumerate(raw):
+            if x.get("id") == asn_id:
+                x["active"] = False
+                raw[i] = x
+                await store.write("assignments.json", raw)
+                return {"id": asn_id, "active": False}
+        raise HTTPException(404, "Assignment not found")
 
 
 class TransitionRequest(BaseModel):
@@ -444,47 +430,49 @@ class ReopenRequest(BaseModel):
           dependencies=[Depends(require_token)])
 async def violation_transition(vid: str, body: TransitionRequest,
                                store: JsonStore = Depends(get_store)) -> Violation:  # noqa: B008
-    raw = await _read_list(store, "violations.json")
-    for i, x in enumerate(raw):
-        if x.get("id") == vid:
-            v = Violation(**x)
-            try:
-                transition(v, to=body.to_state, actor=body.actor,
-                           note=body.note, override_fix=body.override_fix)
-            except IllegalTransition as e:
-                # Disambiguate: missing note vs disallowed transition.
-                if (body.to_state in LEGAL_TRANSITIONS[v.workflow_state]
-                    and body.to_state == WorkflowState.REJECTED
-                    and not body.note):
-                    raise HTTPException(400, "Rejection requires a note") from e
-                raise HTTPException(409, str(e)) from e
-            raw[i] = v.model_dump(mode="json")
-            await store.write("violations.json", raw)
-            return v
-    raise HTTPException(404, "Violation not found")
+    async with store.transaction():
+        raw = await _read_list(store, "violations.json")
+        for i, x in enumerate(raw):
+            if x.get("id") == vid:
+                v = Violation(**x)
+                try:
+                    transition(v, to=body.to_state, actor=body.actor,
+                               note=body.note, override_fix=body.override_fix)
+                except IllegalTransition as e:
+                    # Disambiguate: missing note vs disallowed transition.
+                    if (body.to_state in LEGAL_TRANSITIONS[v.workflow_state]
+                        and body.to_state == WorkflowState.REJECTED
+                        and not body.note):
+                        raise HTTPException(400, "Rejection requires a note") from e
+                    raise HTTPException(409, str(e)) from e
+                raw[i] = v.model_dump(mode="json")
+                await store.write("violations.json", raw)
+                return v
+        raise HTTPException(404, "Violation not found")
 
 
 @app.post("/violations/{vid}/reopen", response_model=Violation,
           dependencies=[Depends(require_token)])
 async def violation_reopen(vid: str, body: ReopenRequest,
                             store: JsonStore = Depends(get_store)) -> Violation:  # noqa: B008
-    raw = await _read_list(store, "violations.json")
-    for i, x in enumerate(raw):
-        if x.get("id") == vid:
-            v = Violation(**x)
-            if v.workflow_state != WorkflowState.REJECTED:
-                raise HTTPException(409,
-                    f"Reopen only valid from REJECTED; current={v.workflow_state.value}")
-            v.workflow_history.append(WorkflowHistoryEntry(
-                from_state=WorkflowState.REJECTED, to_state=WorkflowState.OPEN,
-                actor=body.actor, timestamp=datetime.now(UTC),
-                note=body.note,
-            ))
-            v.workflow_state = WorkflowState.OPEN
-            raw[i] = v.model_dump(mode="json")
-            await store.write("violations.json", raw)
-            return v
-    raise HTTPException(404, "Violation not found")
+    async with store.transaction():
+        raw = await _read_list(store, "violations.json")
+        for i, x in enumerate(raw):
+            if x.get("id") == vid:
+                v = Violation(**x)
+                if v.workflow_state != WorkflowState.REJECTED:
+                    raise HTTPException(409,
+                        f"Reopen only valid from REJECTED; current={v.workflow_state.value}")
+                v.workflow_history.append(WorkflowHistoryEntry(
+                    from_state=WorkflowState.REJECTED, to_state=WorkflowState.OPEN,
+                    actor=body.actor, timestamp=datetime.now(UTC),
+                    note=body.note,
+                ))
+                v.workflow_state = WorkflowState.OPEN
+                raw[i] = v.model_dump(mode="json")
+                await store.write("violations.json", raw)
+                return v
+        raise HTTPException(404, "Violation not found")
 
 
 class ResetRequest(BaseModel):
@@ -496,31 +484,40 @@ class ScenarioRequest(BaseModel):
 
 
 async def _load_bundle(store: JsonStore) -> SeedBundle:
-    return SeedBundle(
-        entitlements=[Entitlement(**x) for x in await _read_list(store, "entitlements.json")],
-        hr_employees=[HREmployee(**x) for x in await _read_list(store, "hr_employees.json")],
-        cmdb_resources=[CMDBResource(**x) for x in await _read_list(store, "cmdb_resources.json")],
-        assignments=[Assignment(**x) for x in await _read_list(store, "assignments.json")],
-    )
+    async with store.transaction():
+        return SeedBundle(
+            entitlements=[Entitlement(**x) for x in await _read_list(store, "entitlements.json")],
+            hr_employees=[HREmployee(**x) for x in await _read_list(store, "hr_employees.json")],
+            cmdb_resources=[CMDBResource(**x) for x in await _read_list(store, "cmdb_resources.json")],
+            assignments=[Assignment(**x) for x in await _read_list(store, "assignments.json")],
+        )
 
 
 async def _save_bundle_and_evaluate(store: JsonStore, bundle: SeedBundle) -> int:
-    await store.write("entitlements.json",
-                      [e.model_dump(mode="json") for e in bundle.entitlements])
-    await store.write("hr_employees.json",
-                      [e.model_dump(mode="json") for e in bundle.hr_employees])
-    await store.write("cmdb_resources.json",
-                      [e.model_dump(mode="json") for e in bundle.cmdb_resources])
-    await store.write("assignments.json",
-                      [e.model_dump(mode="json") for e in bundle.assignments])
-    snap = DataSnapshot(bundle.entitlements, bundle.hr_employees,
-                         bundle.cmdb_resources, bundle.assignments)
-    existing_raw = await _read_list(store, "violations.json")
-    existing = [Violation(**x) for x in existing_raw]
-    result = run_engine(snap, existing_violations=existing)
-    await store.write("violations.json",
-                      [v.model_dump(mode="json") for v in result.violations])
-    return result.new_count
+    async with store.transaction():
+        snap = DataSnapshot(bundle.entitlements, bundle.hr_employees,
+                            bundle.cmdb_resources, bundle.assignments)
+        existing_raw = await _read_list(store, "violations.json")
+        existing = [Violation(**x) for x in existing_raw]
+        result = run_engine(snap, existing_violations=existing)
+        await store.write_many({
+            "entitlements.json": [
+                e.model_dump(mode="json") for e in bundle.entitlements
+            ],
+            "hr_employees.json": [
+                e.model_dump(mode="json") for e in bundle.hr_employees
+            ],
+            "cmdb_resources.json": [
+                e.model_dump(mode="json") for e in bundle.cmdb_resources
+            ],
+            "assignments.json": [
+                e.model_dump(mode="json") for e in bundle.assignments
+            ],
+            "violations.json": [
+                v.model_dump(mode="json") for v in result.violations
+            ],
+        })
+        return result.new_count
 
 
 @app.post("/simulate/reset", dependencies=[Depends(require_token)])
@@ -540,12 +537,13 @@ async def simulate_reset(body: ResetRequest,
 
 @app.post("/simulate/tick", dependencies=[Depends(require_token)])
 async def simulate_tick(store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
-    bundle = await _load_bundle(store)
-    tick = int(datetime.now(UTC).timestamp()) // 60
-    summary = drift_tick(bundle, tick_number=tick)
-    new_count = await _save_bundle_and_evaluate(store, bundle)
-    return {"tick_number": tick, "changes": summary.changes,
-            "new_violations": new_count}
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        tick = int(datetime.now(UTC).timestamp()) // 60
+        summary = drift_tick(bundle, tick_number=tick)
+        new_count = await _save_bundle_and_evaluate(store, bundle)
+        return {"tick_number": tick, "changes": summary.changes,
+                "new_violations": new_count}
 
 
 @app.post("/simulate/scenario", dependencies=[Depends(require_token)])
@@ -553,10 +551,11 @@ async def simulate_scenario(body: ScenarioRequest,
                              store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
     if body.name not in SCENARIOS:
         raise HTTPException(400, f"Unknown scenario. Known: {sorted(SCENARIOS)}")
-    bundle = await _load_bundle(store)
-    run_scenario(body.name, bundle)
-    new_count = await _save_bundle_and_evaluate(store, bundle)
-    return {"scenario": body.name, "new_violations": new_count}
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        run_scenario(body.name, bundle)
+        new_count = await _save_bundle_and_evaluate(store, bundle)
+        return {"scenario": body.name, "new_violations": new_count}
 
 
 def get_git_sync(settings: Settings = Depends(get_settings)) -> GitSync:  # noqa: B008
@@ -570,14 +569,14 @@ def get_git_sync(settings: Settings = Depends(get_settings)) -> GitSync:  # noqa
 
 @app.post("/sync/push-now", dependencies=[Depends(require_token)])
 async def sync_push_now(git: GitSync = Depends(get_git_sync)) -> dict:  # noqa: B008
-    committed = git.commit_data("manual: push-now from API")
-    pushed = git.push_now() if committed else False
+    committed = await git.acommit_data("manual: push-now from API")
+    pushed = await git.apush_now() if committed else False
     return {"committed": committed, "pushed": pushed}
 
 
 @app.post("/sync/pull-now", dependencies=[Depends(require_token)])
 async def sync_pull_now(git: GitSync = Depends(get_git_sync)) -> dict:  # noqa: B008
-    return {"pulled": git.pull_now()}
+    return {"pulled": await git.apull_now()}
 
 
 def _scenarios_list() -> list[str]:
@@ -610,11 +609,12 @@ async def dashboard_overview(request: Request,
 
 @app.post("/dashboard/actions/tick", dependencies=[Depends(require_token)])
 async def dashboard_action_tick(store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
-    bundle = await _load_bundle(store)
-    tick = int(datetime.now(UTC).timestamp()) // 60
-    drift_tick(bundle, tick_number=tick)
-    await _save_bundle_and_evaluate(store, bundle)
-    return RedirectResponse("/", status_code=303)
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        tick = int(datetime.now(UTC).timestamp()) // 60
+        drift_tick(bundle, tick_number=tick)
+        await _save_bundle_and_evaluate(store, bundle)
+        return RedirectResponse("/", status_code=303)
 
 
 @app.post("/dashboard/actions/scenario", dependencies=[Depends(require_token)])
@@ -622,10 +622,11 @@ async def dashboard_action_scenario(name: Annotated[str, Form()],
                                       store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
     if name not in SCENARIOS:
         raise HTTPException(400, "Unknown scenario")
-    bundle = await _load_bundle(store)
-    run_scenario(name, bundle)
-    await _save_bundle_and_evaluate(store, bundle)
-    return RedirectResponse("/", status_code=303)
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        run_scenario(name, bundle)
+        await _save_bundle_and_evaluate(store, bundle)
+        return RedirectResponse("/", status_code=303)
 
 
 @app.post("/dashboard/actions/reset", dependencies=[Depends(require_token)])
