@@ -28,6 +28,7 @@ from eqm.models import (
     WorkflowState,
 )
 from eqm.persistence import JsonStore
+from eqm.projections import project_violation as _project_violation
 from eqm.rules.base import DataSnapshot
 from eqm.scenarios import SCENARIOS, run_scenario
 from eqm.seed import SeedBundle, SeedConfig, generate_seed
@@ -187,43 +188,6 @@ async def get_violation(vid: str, store: JsonStore = Depends(get_store)) -> Viol
     raise HTTPException(404, "Violation not found")
 
 
-def _project_violation(v: Violation, emp_by_id: dict, asn_by_id: dict,
-                       *, include_internal: bool = False) -> dict:
-    """Adapt a Violation to the Appian-friendly shape, resolving user context."""
-    emp_id, emp_name = "n/a", "n/a"
-    if v.target_type == "employee":
-        emp_id = v.target_id
-        emp = emp_by_id.get(v.target_id)
-        if emp:
-            emp_name = emp["full_name"]
-    elif v.target_type == "assignment":
-        asn = asn_by_id.get(v.target_id)
-        if asn:
-            emp_id = asn["employee_id"]
-            emp = emp_by_id.get(emp_id)
-            if emp:
-                emp_name = emp["full_name"]
-    out = {
-        "violationId": v.id,
-        "userId": emp_id,
-        "userName": emp_name,
-        "ruleId": v.rule_id,
-        "ruleName": v.rule_name,
-        "status": v.workflow_state.value.replace("_", " ").title(),
-        "severity": v.severity.value.title(),
-        "reason": v.explanation,
-        "targetType": v.target_type,
-        "targetId": v.target_id,
-        "recommendedAction": v.recommended_action.value,
-        "detectedAt": v.detected_at.isoformat(),
-    }
-    if include_internal:
-        out["evidence"] = v.evidence
-        out["suggestedFix"] = v.suggested_fix
-        out["workflowHistory"] = [h.model_dump(mode="json") for h in v.workflow_history]
-    return out
-
-
 @app.get("/api/flagged-records")
 async def get_flagged_records(
     state: str | None = None,
@@ -314,7 +278,7 @@ async def get_overview(store: JsonStore = Depends(get_store)) -> dict:  # noqa: 
 
 @app.get("/api/user-findings")
 async def get_user_findings(
-    userId: str,
+    userId: str,  # noqa: N803
     include_all: bool = False,
     store: JsonStore = Depends(get_store),  # noqa: B008
 ) -> dict:
