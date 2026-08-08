@@ -13006,14 +13006,20 @@
     "id": "EMP-00584",
     "full_name": "Jacqueline Morales",
     "email": "emp-00584@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_dev",
         "started_at": "2026-06-08T22:21:29.892870Z",
+        "ended_at": "2026-08-08T17:01:30.881806Z"
+      },
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-08T17:01:30.881806Z",
         "ended_at": null
       }
     ],
@@ -27375,6 +27381,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T16:24:35.666722Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01309",
+    "full_name": "Garrett Turner",
+    "email": "emp-01309@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-08T17:01:30.881806Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T17:01:30.881806Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01310",
+    "full_name": "Melanie Ray",
+    "email": "emp-01310@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-08T17:01:30.881806Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T17:01:30.881806Z",
     "terminated_at": null
   }
 ]
