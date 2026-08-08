@@ -95930,8 +95930,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-08-08T01:14:51.874145Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -147324,6 +147333,129 @@
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
       "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06056",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-08T01:14:50.454953Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02526",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00144",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00076",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06057",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-08T01:14:51.557252Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02526",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00144",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00076",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06058",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-08T01:14:51.558224Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02527",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-01142",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00020",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06059",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-08T01:14:51.846740Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02526",
+    "explanation": "Terminated employee EMP-00144 (Scott Smith) still holds active assignment ASN-02526.",
+    "evidence": {
+      "employee_id": "EMP-00144",
+      "terminated_at": "2026-06-27T12:50:29.785491+00:00",
+      "entitlement_id": "ENT-00076"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06060",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-08-08T01:14:51.866447Z",
+    "target_type": "employee",
+    "target_id": "EMP-01142",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00010.",
+    "evidence": {
+      "resource_id": "RES-00010",
+      "developer_admin_entitlements": [
+        "ENT-00020"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00020"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
     },
     "workflow_state": "open",
     "workflow_history": [],
