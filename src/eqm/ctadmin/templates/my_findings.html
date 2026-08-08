@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block signal_rail %}
+  <section class="signal-rail dashboard-signal-rail" aria-label="My Findings scope">
+    <span class="signal-node" aria-hidden="true"></span>
+    <div id="filter-summary" class="filter-summary" aria-live="polite">
+      {% if selected_persona %}<span>Employee perspective / {{ selected_persona.fullName }} / {{ selected_persona.id }}</span>{% else %}<span>Employee perspective / no persona selected</span>{% endif %}
+    </div>
+    {% if dashboard_payload %}<button id="clear-filters" class="signal-clear" type="button" disabled>Clear signal</button>{% endif %}
+  </section>
+{% endblock %}
+
+{% block content %}
+  <div class="my-findings-shell">
+    <section class="persona-console" aria-labelledby="persona-heading">
+      <div>
+        <p class="eyebrow">DEMO PERSPECTIVE / SESSION SCOPE</p>
+        <h1 id="persona-heading">{% if selected_persona %}My findings{% else %}Choose an employee perspective{% endif %}</h1>
+        <p>This visible demo control changes the employee lens; it does not impersonate authentication.</p>
+      </div>
+      <div class="persona-control-stack">
+        <form id="persona-selector" class="persona-selector" method="post" action="/ctadmin/actions/persona">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+          <input type="hidden" name="return_to" value="/ctadmin/my-findings">
+          <label for="persona-search">Demo perspective</label>
+          <div class="search-control">
+            <input
+              id="persona-search"
+              name="persona_id"
+              type="search"
+              list="persona-options"
+              value="{{ selected_persona.id if selected_persona else '' }}"
+              placeholder="Search employee name or ID"
+              autocomplete="off"
+              required
+            >
+            <datalist id="persona-options">
+              {% for persona in persona_options %}<option value="{{ persona.id }}">{{ persona.fullName }} · {{ persona.role | replace('_', ' ') | title }} · {{ persona.division | replace('_', ' ') | title }}</option>{% endfor %}
+            </datalist>
+            <button class="primary-button" type="submit">Apply persona</button>
+          </div>
+          <div class="persona-index" aria-label="Available employee personas">
+            {% for persona in persona_options %}<span><strong>{{ persona.fullName }}</strong> <code>{{ persona.id }}</code></span>{% else %}<span>No active employees are available.</span>{% endfor %}
+          </div>
+        </form>
+        {% if selected_persona %}
+          <form class="persona-clear-form" method="post" action="/ctadmin/actions/persona">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <input type="hidden" name="persona_id" value="">
+            <input type="hidden" name="return_to" value="/ctadmin/my-findings">
+            <button class="signal-clear" type="submit">Clear employee perspective</button>
+          </form>
+        {% endif %}
+      </div>
+    </section>
+
+    {% if not selected_persona %}
+      <section class="persona-empty" aria-labelledby="persona-empty-heading">
+        <p class="panel-code">PERSPECTIVE REQUIRED</p>
+        <h2 id="persona-empty-heading">Select a current employee to trace their entitlement signals.</h2>
+        <p>The scoped dashboard will include direct employee findings, active assignments, and entitlements held by those assignments.</p>
+      </section>
+    {% else %}
+      <section class="persona-identity" aria-label="Selected employee identity">
+        <div><span>Employee</span><strong>{{ selected_persona.fullName }}</strong></div>
+        <div><span>Employee ID</span><strong>{{ selected_persona.id }}</strong></div>
+        <div><span>Role</span><strong>{{ selected_persona.role | replace('_', ' ') }}</strong></div>
+        <div><span>Division</span><strong>{{ selected_persona.division | replace('_', ' ') }}</strong></div>
+      </section>
+
+      <div
+        id="dashboard"
+        class="dashboard-shell persona-dashboard"
+        aria-busy="false"
+        data-api-endpoint="/ctadmin/api/my-findings"
+        data-page-path="/ctadmin/my-findings"
+        data-include-all="true"
+        data-repair-actions="true"
+      >
+        <div id="dashboard-error" class="dashboard-error" role="alert" hidden>
+          Persona findings could not be refreshed. Check the connection and try again.
+          <button id="retry-dashboard" type="button">Try again</button>
+        </div>
+
+        <section class="kpi-grid persona-kpis" aria-label="Persona finding workflow totals">
+          <article class="kpi-card"><span class="kpi-label">Open</span><strong id="kpi-open" class="kpi-value">{{ dashboard_payload.kpis.openFindings }}</strong><small>Not started</small></article>
+          <article class="kpi-card kpi-progress"><span class="kpi-label">Pending approval</span><strong id="kpi-pending-approval" class="kpi-value">{{ dashboard_payload.kpis.pendingApprovalFindings }}</strong><small>Awaiting authorization</small></article>
+          <article class="kpi-card"><span class="kpi-label">Resolved</span><strong id="kpi-resolved" class="kpi-value">{{ dashboard_payload.kpis.resolvedFindings }}</strong><small>Verified complete</small></article>
+        </section>
+
+        <section class="dashboard-thesis persona-filters" aria-labelledby="my-results-heading">
+          <div><p class="eyebrow">PERSONA SIGNALS / CLICK A BAR TO FILTER</p><h2 id="my-results-heading">Assigned findings</h2></div>
+          <form id="dashboard-search" class="dashboard-search" role="search">
+            <label for="finding-search">Search this perspective</label>
+            <div class="search-control">
+              <input id="finding-search" name="search" type="search" value="{{ dashboard_payload.filters.search }}" placeholder="Rule, target, or finding ID">
+              <button class="primary-button" type="submit">Apply search</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="chart-grid" aria-label="Interactive persona finding evidence">
+          <article class="chart-panel"><header><p class="panel-code">PERSONA SIGNAL 01</p><h2>Severity</h2></header><div id="chart-severity" class="chart-container" aria-label="Persona findings by severity"></div></article>
+          <article class="chart-panel"><header><p class="panel-code">PERSONA SIGNAL 02</p><h2>Control rule</h2></header><div id="chart-rule" class="chart-container rule-chart" aria-label="Persona findings by control rule"></div></article>
+        </section>
+
+        <section class="results-panel" aria-labelledby="persona-results-heading">
+          <header class="results-header"><div><p class="panel-code">MY REMEDIATION PATH</p><h2 id="persona-results-heading">Findings in perspective</h2></div><p id="results-count" class="results-count" aria-live="polite"></p></header>
+          <div class="table-scroll" tabindex="0" aria-label="Scrollable persona finding results">
+            <table>
+              <thead><tr><th>Finding</th><th>User</th><th>Rule</th><th>Severity</th><th>Status</th><th>Target</th><th>Detected</th><th>Action</th></tr></thead>
+              <tbody id="findings-results"></tbody>
+            </table>
+          </div>
+          <nav class="pagination" aria-label="Persona finding result pages">
+            <button id="previous-page" class="secondary-button" type="button">Previous</button>
+            <span id="page-status" aria-live="polite"></span>
+            <button id="next-page" class="secondary-button" type="button">Next</button>
+          </nav>
+        </section>
+      </div>
+      {% include "_repair_drawer.html" %}
+      <script id="dashboard-data" type="application/json">{{ dashboard_payload | tojson }}</script>
+      <script src="/ctadmin/static/charts.js" defer></script>
+      <script src="/ctadmin/static/dashboard.js" defer></script>
+    {% endif %}
+  </div>
+{% endblock %}

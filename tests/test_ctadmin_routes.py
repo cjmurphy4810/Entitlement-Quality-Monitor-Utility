@@ -162,6 +162,90 @@ def _seed_route_data(data_dir):
     return records
 
 
+def _seed_persona_route_data(data_dir):
+    """Seed two visible personas plus active and terminal findings for exact scoping."""
+    records = _seed_route_data(data_dir)
+    employees = json.loads((data_dir / "hr_employees.json").read_text())
+    employees.append(
+        {
+            "id": "EMP-2",
+            "full_name": "Jordan Other",
+            "email": "jordan@example.com",
+            "current_role": "developer",
+            "current_division": "tech_dev",
+            "status": "active",
+            "role_history": [],
+            "manager_id": None,
+            "hired_at": "2025-01-01T00:00:00+00:00",
+            "terminated_at": None,
+        }
+    )
+    (data_dir / "hr_employees.json").write_text(json.dumps(employees))
+    entitlements = json.loads((data_dir / "entitlements.json").read_text())
+    entitlements.append(
+        {
+            "id": "ENT-2",
+            "name": "Build Console",
+            "pbl_description": "Build console access for approved development work.",
+            "access_tier": 3,
+            "acceptable_roles": ["developer"],
+            "division": "tech_dev",
+            "linked_resource_ids": [],
+            "sod_tags": [],
+            "created_at": "2026-01-01T00:00:00+00:00",
+            "updated_at": "2026-01-01T00:00:00+00:00",
+        }
+    )
+    (data_dir / "entitlements.json").write_text(json.dumps(entitlements))
+    assignments = json.loads((data_dir / "assignments.json").read_text())
+    assignments.append(
+        {
+            "id": "ASN-2",
+            "employee_id": "EMP-2",
+            "entitlement_id": "ENT-2",
+            "granted_at": "2026-01-01T00:00:00+00:00",
+            "granted_by": "system",
+            "last_certified_at": None,
+            "active": True,
+        }
+    )
+    (data_dir / "assignments.json").write_text(json.dumps(assignments))
+    records.extend(
+        [
+            _finding_record(
+                id="VIO-103",
+                rule_id="TOX-01",
+                rule_name="Maker-checker conflict",
+                severity="high",
+                target_type="employee",
+                target_id="EMP-1",
+                workflow_state="resolved",
+                explanation="Casey's conflict was resolved.",
+                evidence={},
+                workflow_history=[],
+                recommended_action="route_to_compliance",
+                suggested_fix={},
+            ),
+            _finding_record(
+                id="VIO-200",
+                rule_id="HR-01",
+                rule_name="Role mismatch",
+                severity="critical",
+                target_type="assignment",
+                target_id="ASN-2",
+                workflow_state="open",
+                explanation="Jordan's assignment is outside Casey's scope.",
+                evidence={},
+                workflow_history=[],
+                recommended_action="auto_revoke_assignment",
+                suggested_fix={},
+            ),
+        ]
+    )
+    (data_dir / "violations.json").write_text(json.dumps(records))
+    return records
+
+
 def test_unauthenticated_ctadmin_pages_redirect_to_login(app_client):
     """Removing the page guard must not expose any of the CTADMIN pages."""
     client, _ = app_client
@@ -727,3 +811,226 @@ def test_repair_action_hides_unexpected_server_details(app_client, monkeypatch, 
     assert "secret filesystem detail" not in caplog.text
     assert "RuntimeError" in caplog.text
     assert "correlation_id=" in caplog.text
+
+
+def test_my_findings_without_a_persona_prompts_with_visible_searchable_options(app_client):
+    """The demo perspective control must remain visible even before a persona is chosen."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    _login(client)
+
+    response = client.get("/ctadmin/my-findings")
+
+    assert response.status_code == 200
+    for expected in [
+        "Choose an employee perspective",
+        "Demo perspective",
+        "persona-selector",
+        "persona-search",
+        "Casey Example",
+        "Jordan Other",
+        "EMP-1",
+        "EMP-2",
+    ]:
+        assert expected in response.text
+    assert 'id="dashboard-data"' not in response.text
+    api_response = client.get("/ctadmin/api/my-findings")
+    assert api_response.status_code == 409
+    assert api_response.json() == {"detail": "Select a current active employee persona"}
+
+
+def test_persona_action_validates_csrf_route_shape_and_current_hr_data(app_client):
+    """Persona changes are authenticated mutations and may select only current active HR rows."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+
+    for suffix in ["", "/"]:
+        unauthenticated = client.post(
+            f"/ctadmin/actions/persona{suffix}",
+            data={"persona_id": "EMP-1", "csrf_token": "missing"},
+            follow_redirects=False,
+        )
+        assert unauthenticated.status_code == 401
+
+    _login(client)
+    for suffix in ["", "/"]:
+        missing_csrf = client.post(
+            f"/ctadmin/actions/persona{suffix}",
+            data={"persona_id": "EMP-1"},
+            follow_redirects=False,
+        )
+        assert missing_csrf.status_code == 403
+        assert client.get(f"/ctadmin/actions/persona{suffix}").status_code == 404
+
+    invalid = client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-MISSING", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    assert invalid.status_code == 422
+    assert invalid.json() == {"detail": "Select a current active employee persona"}
+
+
+def test_persona_selection_persists_signed_identity_scope_and_original_expiry(app_client):
+    """Changing perspective must retain the authenticated session's security identity and lifetime."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    _login(client)
+    settings = get_settings()
+    codec = SessionCodec(
+        settings.ctadmin_session_secret.get_secret_value(),
+        settings.ctadmin_session_ttl_seconds,
+    )
+    before = codec.decode(client.cookies.get("ctadmin_session"))
+
+    response = client.post(
+        "/ctadmin/actions/persona/",
+        data={
+            "persona_id": "EMP-1",
+            "csrf_token": before.csrf_token,
+            "return_to": "/ctadmin/my-findings?severity=high",
+        },
+        follow_redirects=False,
+    )
+
+    assert response.status_code == 303
+    assert response.headers["location"] == "/ctadmin/my-findings?severity=high"
+    after = codec.decode(client.cookies.get("ctadmin_session"))
+    assert after.username == before.username
+    assert after.csrf_token == before.csrf_token
+    assert after.nonce == before.nonce
+    assert after.persona_id == "EMP-1"
+    assert after.expires_at == before.expires_at
+
+    page = client.get("/ctadmin/my-findings")
+    assert "Casey Example" in page.text
+    assert "EMP-1" in page.text
+    assert "Persona: EMP-1" in client.get("/ctadmin/dashboard").text
+
+
+def test_persona_action_accepts_deliberate_clear_and_rejects_external_return(app_client):
+    """An empty submitted persona clears perspective without permitting an open redirect."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    _login(client)
+    selected = client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    assert selected.status_code == 303
+
+    cleared = client.post(
+        "/ctadmin/actions/persona",
+        data={
+            "persona_id": "",
+            "csrf_token": _csrf(client),
+            "return_to": "https://attacker.example/persona",
+        },
+        follow_redirects=False,
+    )
+
+    assert cleared.status_code == 303
+    assert cleared.headers["location"] == "/ctadmin/dashboard"
+    principal = SessionCodec(
+        get_settings().ctadmin_session_secret.get_secret_value(),
+        get_settings().ctadmin_session_ttl_seconds,
+    ).decode(client.cookies.get("ctadmin_session"))
+    assert principal.persona_id == "ctadmin"
+    assert "Choose an employee perspective" in client.get("/ctadmin/my-findings").text
+
+
+def test_my_findings_api_scopes_exactly_and_include_all_controls_terminal_rows(app_client):
+    """Persona JSON must not leak another employee and must expose terminal work deliberately."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    _login(client)
+    client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+
+    active = client.get("/ctadmin/api/my-findings")
+    complete = client.get("/ctadmin/api/my-findings/", params={"include_all": "true"})
+
+    assert active.status_code == 200
+    assert {row["violationId"] for row in active.json()["rows"]} == {"VIO-100", "VIO-101"}
+    assert active.json()["kpis"]["resolvedFindings"] == 0
+    assert complete.status_code == 200
+    assert {row["violationId"] for row in complete.json()["rows"]} == {
+        "VIO-100",
+        "VIO-101",
+        "VIO-103",
+    }
+    assert complete.json()["kpis"]["openFindings"] == 1
+    assert complete.json()["kpis"]["pendingApprovalFindings"] == 1
+    assert complete.json()["kpis"]["resolvedFindings"] == 1
+    assert "VIO-102" not in complete.text
+    assert "VIO-200" not in complete.text
+
+
+def test_my_findings_api_guards_both_slash_forms_methods_and_include_all_values(app_client):
+    """Concrete persona JSON routes may not fall through to redirects or wildcard semantics."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    for suffix in ["", "/"]:
+        unauthenticated = client.get(f"/ctadmin/api/my-findings{suffix}", follow_redirects=False)
+        assert unauthenticated.status_code == 401
+
+    _login(client)
+    client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    for suffix in ["", "/"]:
+        assert client.post(f"/ctadmin/api/my-findings{suffix}").status_code == 404
+    invalid = client.get("/ctadmin/api/my-findings", params={"include_all": "sometimes"})
+    assert invalid.status_code == 422
+
+
+def test_selected_my_findings_renders_identity_charts_filters_table_and_repair(app_client):
+    """The selected page must be a complete persona dashboard, not an identity-only shell."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    _login(client)
+    client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+
+    response = client.get("/ctadmin/my-findings")
+
+    assert response.status_code == 200
+    for expected in [
+        "Casey Example",
+        "operations",
+        "tech ops",
+        "Open",
+        "Pending approval",
+        "Resolved",
+        "chart-severity",
+        "chart-rule",
+        "finding-search",
+        "findings-results",
+        "repair-drawer",
+        'data-api-endpoint="/ctadmin/api/my-findings"',
+        'data-page-path="/ctadmin/my-findings"',
+        'data-include-all="true"',
+    ]:
+        assert expected in response.text
+    embedded = re.search(
+        r'<script id="dashboard-data" type="application/json">(.*?)</script>',
+        response.text,
+        re.DOTALL,
+    )
+    assert embedded is not None
+    payload = json.loads(embedded.group(1))
+    assert payload["kpis"]["resolvedFindings"] == 1
+    assert {row["violationId"] for row in payload["rows"]} == {
+        "VIO-100",
+        "VIO-101",
+        "VIO-103",
+    }

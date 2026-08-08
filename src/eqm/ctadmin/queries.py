@@ -48,7 +48,9 @@ class FindingFilters:
         object.__setattr__(self, "rules", _normalise_set(self.rules))
         object.__setattr__(self, "search", self.search.strip().casefold())
         object.__setattr__(self, "page", _normalise_positive(self.page, 1))
-        object.__setattr__(self, "page_size", _normalise_positive(self.page_size, DEFAULT_PAGE_SIZE))
+        object.__setattr__(
+            self, "page_size", _normalise_positive(self.page_size, DEFAULT_PAGE_SIZE)
+        )
 
 
 @dataclass(frozen=True, slots=True)
@@ -59,6 +61,9 @@ class DashboardKpis:
     not_started_findings: int
     in_progress_findings: int
     complete_findings: int
+    open_findings: int
+    pending_approval_findings: int
+    resolved_findings: int
 
 
 @dataclass(frozen=True, slots=True)
@@ -91,7 +96,11 @@ def _matches(row: dict, filters: FindingFilters, *, ignore: str | None = None) -
         return False
     if ignore != "severities" and filters.severities and severity not in filters.severities:
         return False
-    if ignore != "target_types" and filters.target_types and target_type not in filters.target_types:
+    if (
+        ignore != "target_types"
+        and filters.target_types
+        and target_type not in filters.target_types
+    ):
         return False
     if ignore != "rules" and filters.rules and rule not in filters.rules:
         return False
@@ -100,7 +109,15 @@ def _matches(row: dict, filters: FindingFilters, *, ignore: str | None = None) -
     if filters.search:
         searchable = " ".join(
             str(row[key])
-            for key in ("violationId", "userName", "ruleId", "ruleName", "reason", "targetType", "targetId")
+            for key in (
+                "violationId",
+                "userName",
+                "ruleId",
+                "ruleName",
+                "reason",
+                "targetType",
+                "targetId",
+            )
         ).casefold()
         if filters.search not in searchable:
             return False
@@ -159,7 +176,8 @@ def _persona_rows(rows: list[dict], assignments: list[dict], persona_id: str | N
     assignment_ids = {assignment["id"] for assignment in active_assignments}
     entitlement_ids = {assignment["entitlement_id"] for assignment in active_assignments}
     return [
-        row for row in rows
+        row
+        for row in rows
         if (row["targetType"] == "employee" and row["targetId"] == persona_id)
         or (row["targetType"] == "assignment" and row["targetId"] in assignment_ids)
         or (row["targetType"] == "entitlement" and row["targetId"] in entitlement_ids)
@@ -175,10 +193,7 @@ async def load_dashboard_query(
     raw_vios, employees, assignments, entitlements, _resources = await _load_dashboard_data(store)
     emp_by_id = {employee["id"]: employee for employee in employees}
     asn_by_id = {assignment["id"]: assignment for assignment in assignments}
-    projected = [
-        project_violation(Violation(**raw), emp_by_id, asn_by_id)
-        for raw in raw_vios
-    ]
+    projected = [project_violation(Violation(**raw), emp_by_id, asn_by_id) for raw in raw_vios]
     scoped = _persona_rows(projected, assignments, persona_id)
     filtered_rows = _sort_rows([row for row in scoped if _matches(row, filters)])
     severity_rows = [row for row in scoped if _matches(row, filters, ignore="severities")]
@@ -187,7 +202,7 @@ async def load_dashboard_query(
     workflow_rows = [row for row in scoped if _matches(row, filters, ignore="states")]
     total = len(filtered_rows)
     start = (filters.page - 1) * filters.page_size
-    rows = filtered_rows[start:start + filters.page_size]
+    rows = filtered_rows[start : start + filters.page_size]
 
     kpis = DashboardKpis(
         total_findings=total,
@@ -196,6 +211,9 @@ async def load_dashboard_query(
         not_started_findings=_workflow_count(filtered_rows, "not_started"),
         in_progress_findings=_workflow_count(filtered_rows, "in_progress"),
         complete_findings=_workflow_count(filtered_rows, "complete"),
+        open_findings=sum(row["status"] == "Open" for row in filtered_rows),
+        pending_approval_findings=sum(row["status"] == "Pending Approval" for row in filtered_rows),
+        resolved_findings=sum(row["status"] == "Resolved" for row in filtered_rows),
     )
     catalog_findings = [row for row in filtered_rows if row["targetType"] == "entitlement"]
     finding_entitlement_ids = {row["targetId"] for row in catalog_findings}
@@ -226,7 +244,9 @@ async def load_dashboard_query(
     )
 
 
-async def _load_dashboard_data(store: JsonStore) -> tuple[list[dict], list[dict], list[dict], list[dict], list[dict]]:
+async def _load_dashboard_data(
+    store: JsonStore,
+) -> tuple[list[dict], list[dict], list[dict], list[dict], list[dict]]:
     return (
         await _read_list(store, "violations.json"),
         await _read_list(store, "hr_employees.json"),

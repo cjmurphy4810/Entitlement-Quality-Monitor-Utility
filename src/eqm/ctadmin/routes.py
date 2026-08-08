@@ -25,7 +25,7 @@ from eqm.ctadmin.auth import (
     validate_credentials,
     validate_csrf,
 )
-from eqm.ctadmin.queries import FindingFilters, load_dashboard_query
+from eqm.ctadmin.queries import FindingFilters, load_dashboard_query, load_personas
 from eqm.ctadmin.repairs import REPAIR_BUILDERS, RepairValidationError
 from eqm.ctadmin.service import (
     RepairDidNotClearError,
@@ -131,6 +131,18 @@ def _positive_query_int(request: Request, name: str, default: int) -> int:
     return value
 
 
+def _boolean_query(request: Request, name: str, default: bool = False) -> bool:
+    raw_value = request.query_params.get(name)
+    if raw_value is None:
+        return default
+    normalized = raw_value.strip().lower()
+    if normalized in {"true", "1"}:
+        return True
+    if normalized in {"false", "0"}:
+        return False
+    raise HTTPException(status_code=422, detail=f"{name} must be true or false")
+
+
 async def _dashboard_request(
     request: Request,
     settings: Settings,
@@ -197,6 +209,9 @@ async def _dashboard_request(
             "notStartedFindings": kpis.not_started_findings,
             "inProgressFindings": kpis.in_progress_findings,
             "completeFindings": kpis.complete_findings,
+            "openFindings": kpis.open_findings,
+            "pendingApprovalFindings": kpis.pending_approval_findings,
+            "resolvedFindings": kpis.resolved_findings,
         },
         "coverage": query_result.entitlement_coverage,
         "series": {
@@ -222,6 +237,23 @@ async def _dashboard_request(
 async def _read_records(store: JsonStore, name: str) -> list[dict]:
     raw = await store.read(name)
     return [item for item in raw if isinstance(item, dict)] if isinstance(raw, list) else []
+
+
+def _decorate_repair_rows(payload: dict[str, object], origin: str) -> None:
+    rows = payload.get("rows", [])
+    if not isinstance(rows, list):
+        return
+    encoded_origin = quote(origin, safe="")
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        finding_id = quote(str(row.get("violationId", "")), safe="")
+        row["detailHref"] = f"/ctadmin/findings/{finding_id}?origin={encoded_origin}"
+        state = str(row.get("status", "")).lower().replace(" ", "_")
+        row["repairable"] = row.get("ruleId") in REPAIR_BUILDERS and state not in {
+            "resolved",
+            "rejected",
+        }
 
 
 async def _finding_context(store: JsonStore, violation_id: str) -> dict[str, object] | None:
@@ -484,25 +516,6 @@ async def logout() -> RedirectResponse:
     return response
 
 
-async def _render_placeholder(
-    request: Request, settings: Settings, *, title: str, heading: str, description: str
-) -> HTMLResponse | RedirectResponse:
-    principal = _page_principal(request, settings)
-    if isinstance(principal, RedirectResponse):
-        return principal
-    return templates.TemplateResponse(
-        request,
-        "base.html",
-        ctadmin_context(
-            request,
-            principal,
-            page_title=title,
-            page_heading=heading,
-            page_description=description,
-        ),
-    )
-
-
 @router.get("/dashboard", response_class=HTMLResponse)
 async def dashboard(request: Request, settings: Annotated[Settings, Depends(get_settings)]):
     principal = _page_principal(request, settings)
@@ -614,15 +627,37 @@ async def finding_detail(
 
 
 @router.get("/my-findings", response_class=HTMLResponse)
-async def my_findings_placeholder(
-    request: Request, settings: Annotated[Settings, Depends(get_settings)]
-):
-    return await _render_placeholder(
+@router.get("/my-findings/", response_class=HTMLResponse, include_in_schema=False)
+async def my_findings(request: Request, settings: Annotated[Settings, Depends(get_settings)]):
+    principal = _page_principal(request, settings)
+    if isinstance(principal, RedirectResponse):
+        return principal
+    store = JsonStore(settings.data_dir)
+    persona_options = await load_personas(store)
+    selected_persona = next(
+        (item for item in persona_options if item["id"] == principal.persona_id), None
+    )
+    payload = None
+    if selected_persona is not None:
+        payload = await _dashboard_request(
+            request, settings, principal, include_terminal_default=True
+        )
+        origin = request.url.path
+        if request.url.query:
+            origin = f"{origin}?{request.url.query}"
+        _decorate_repair_rows(payload, origin)
+    return templates.TemplateResponse(
         request,
-        settings,
-        title="My Findings",
-        heading="My findings",
-        description="Persona-scoped findings will appear here.",
+        "my_findings.html",
+        ctadmin_context(
+            request,
+            principal,
+            page_title="My Findings",
+            persona_options=persona_options,
+            selected_persona=selected_persona,
+            dashboard_payload=payload,
+            csrf_token=principal.csrf_token,
+        ),
     )
 
 
@@ -632,6 +667,34 @@ async def dashboard_api(
 ) -> dict[str, object]:
     principal = _api_principal(request, settings)
     return await _dashboard_request(request, settings, principal)
+
+
+@router.get("/api/my-findings")
+@router.get("/api/my-findings/", include_in_schema=False)
+async def my_findings_api(
+    request: Request, settings: Annotated[Settings, Depends(get_settings)]
+) -> dict[str, object]:
+    principal = _api_principal(request, settings)
+    store = JsonStore(settings.data_dir)
+    persona_options = await load_personas(store)
+    if principal.persona_id == "ctadmin" or not any(
+        item["id"] == principal.persona_id for item in persona_options
+    ):
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Select a current active employee persona",
+        )
+    payload = await _dashboard_request(
+        request,
+        settings,
+        principal,
+        include_terminal_default=_boolean_query(request, "include_all"),
+    )
+    origin = "/ctadmin/my-findings"
+    if request.url.query:
+        origin = f"{origin}?{request.url.query}"
+    _decorate_repair_rows(payload, origin)
+    return payload
 
 
 @router.get("/api/findings/{violation_id}/repair-preview")
@@ -727,6 +790,59 @@ async def repair_action(
             "workflowState": receipt.workflow_state.value,
         }
     )
+
+
+@router.post("/actions/persona")
+@router.post("/actions/persona/", include_in_schema=False)
+async def select_persona(
+    request: Request,
+    settings: Annotated[Settings, Depends(get_settings)],
+    persona_id: Annotated[str, Form()] = "",
+    return_to: Annotated[str | None, Form()] = None,
+) -> RedirectResponse:
+    principal = _api_principal(request, settings)
+    await validate_csrf(request, principal)
+    requested_persona = persona_id.strip()
+    if requested_persona:
+        personas = await load_personas(JsonStore(settings.data_dir))
+        if not any(item["id"] == requested_persona for item in personas):
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+                detail="Select a current active employee persona",
+            )
+    else:
+        requested_persona = "ctadmin"
+
+    codec = SessionCodec(
+        settings.ctadmin_session_secret.get_secret_value(),
+        settings.ctadmin_session_ttl_seconds,
+    )
+    token = codec.encode(
+        principal.username,
+        persona_id=requested_persona,
+        csrf_token=principal.csrf_token,
+        nonce=principal.nonce,
+        expires_at=principal.expires_at,
+    )
+    response = RedirectResponse(
+        _safe_next(return_to or "/ctadmin/my-findings"),
+        status_code=status.HTTP_303_SEE_OTHER,
+    )
+    remaining_seconds = (
+        max(1, principal.expires_at - int(time.time()))
+        if principal.expires_at is not None
+        else settings.ctadmin_session_ttl_seconds
+    )
+    response.set_cookie(
+        SESSION_COOKIE_NAME,
+        token,
+        max_age=remaining_seconds,
+        httponly=True,
+        secure=settings.ctadmin_secure_cookies,
+        samesite="lax",
+        path="/",
+    )
+    return response
 
 
 @router.api_route("/api", methods=["GET", "POST", "PUT", "PATCH", "DELETE"])

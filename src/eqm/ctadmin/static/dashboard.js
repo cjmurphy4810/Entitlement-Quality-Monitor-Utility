@@ -282,6 +282,10 @@
       this.fetchImpl = options.fetchImpl || global.fetch.bind(global);
       this.history = options.history || global.history;
       this.location = options.location || global.location;
+      this.endpoint = options.endpoint || root.dataset?.apiEndpoint || "/ctadmin/api/dashboard";
+      this.pagePath = options.pagePath || root.dataset?.pagePath || "/ctadmin/dashboard";
+      this.includeAll = options.includeAll ?? root.dataset?.includeAll === "true";
+      this.showRepairActions = options.showRepairActions ?? root.dataset?.repairActions === "true";
       this.filters = new Map();
       FILTER_KEYS.forEach(dimension => {
         this.filters.set(dimension, new Set(initialData.filters?.[dimension] || []));
@@ -340,6 +344,7 @@
       if (this.search) params.set("search", this.search);
       params.set("page", String(this.page));
       params.set("pageSize", String(this.pageSize));
+      if (this.includeAll) params.set("include_all", "true");
       return params.toString();
     }
 
@@ -363,7 +368,7 @@
       const requestController = new AbortController();
       this.abortController = requestController;
       const query = this.queryString();
-      const endpoint = `/ctadmin/api/dashboard?${query}`;
+      const endpoint = `${this.endpoint}?${query}`;
       this.root.setAttribute("aria-busy", "true");
       try {
         const response = await this.fetchImpl(endpoint, {
@@ -375,7 +380,7 @@
         this.data = payload;
         this.page = payload.pagination.page;
         this.render(payload);
-        if (updateHistory) this.history?.pushState?.({}, "", `/ctadmin/dashboard?${query}`);
+        if (updateHistory) this.history?.pushState?.({}, "", `${this.pagePath}?${query}`);
         this.setError(false);
         return payload;
       } catch (error) {
@@ -408,6 +413,9 @@
         "#kpi-high": payload.kpis.highFindings,
         "#kpi-not-started": payload.kpis.notStartedFindings,
         "#kpi-in-progress": payload.kpis.inProgressFindings,
+        "#kpi-open": payload.kpis.openFindings,
+        "#kpi-pending-approval": payload.kpis.pendingApprovalFindings,
+        "#kpi-resolved": payload.kpis.resolvedFindings,
       };
       Object.entries(kpis).forEach(([selector, value]) => {
         const target = document.querySelector(selector);
@@ -485,7 +493,7 @@
       if (rows.length === 0) {
         const row = createElement("tr", "empty-row");
         const cell = createElement("td", "", "No findings match this signal. Clear a filter or broaden the search.");
-        cell.colSpan = 7;
+        cell.colSpan = this.showRepairActions ? 8 : 7;
         row.append(cell);
         body.append(row);
       } else {
@@ -493,7 +501,7 @@
           const row = createElement("tr");
           const findingCell = createElement("td");
           const link = createElement("a", "finding-link", finding.violationId);
-          link.href = `/ctadmin/findings/${encodeURIComponent(finding.violationId)}`;
+          link.href = finding.detailHref || `/ctadmin/findings/${encodeURIComponent(finding.violationId)}`;
           findingCell.append(link);
           row.append(
             findingCell,
@@ -504,6 +512,22 @@
             createElement("td", "mono-cell", `${finding.targetType} / ${finding.targetId}`),
             createElement("td", "mono-cell", new Date(finding.detectedAt).toLocaleDateString()),
           );
+          if (this.showRepairActions) {
+            const actionCell = createElement("td");
+            if (finding.repairable) {
+              const repair = createElement("button", "repair-trigger secondary-button", "Repair");
+              repair.type = "button";
+              repair.setAttribute("data-finding-id", finding.violationId);
+              repair.setAttribute("data-dashboard-managed", "true");
+              repair.addEventListener("click", () => global.ctadminRepairDrawer?.open(
+                finding.violationId, repair,
+              ));
+              actionCell.append(repair);
+            } else {
+              actionCell.append(createElement("span", "state-complete", "Complete"));
+            }
+            row.append(actionCell);
+          }
           body.append(row);
         });
       }
@@ -535,7 +559,7 @@
     if (!drawerRoot) return;
     const drawer = new RepairDrawer(document);
     global.ctadminRepairDrawer = drawer;
-    document.querySelectorAll(".repair-trigger").forEach(trigger => {
+    document.querySelectorAll(".repair-trigger:not([data-dashboard-managed='true'])").forEach(trigger => {
       trigger.addEventListener("click", () => drawer.open(trigger.dataset.findingId, trigger));
     });
   });

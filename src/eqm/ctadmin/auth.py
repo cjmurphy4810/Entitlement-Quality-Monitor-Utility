@@ -31,6 +31,7 @@ class SessionPrincipal:
     csrf_token: str
     persona_id: str
     nonce: str
+    expires_at: int | None = None
 
     @property
     def subject(self) -> str:
@@ -68,11 +69,15 @@ class SessionCodec:
         persona_id: str = "ctadmin",
         csrf_token: str | None = None,
         nonce: str | None = None,
+        expires_at: int | None = None,
     ) -> str:
         issued_at = int(time.time()) if now is None else now
+        expiry = issued_at + self._ttl_seconds if expires_at is None else expires_at
+        if isinstance(expiry, bool) or not isinstance(expiry, int) or expiry <= issued_at:
+            raise InvalidSession
         payload = {
             "sub": username,
-            "exp": issued_at + self._ttl_seconds,
+            "exp": expiry,
             "csrf": csrf_token or secrets.token_urlsafe(32),
             "persona_id": persona_id,
             "nonce": nonce or secrets.token_urlsafe(16),
@@ -80,9 +85,7 @@ class SessionCodec:
         encoded_payload = _urlsafe_b64encode(
             json.dumps(payload, separators=(",", ":"), sort_keys=True).encode("utf-8")
         )
-        signature = hmac.new(
-            self._secret, encoded_payload.encode("ascii"), hashlib.sha256
-        ).digest()
+        signature = hmac.new(self._secret, encoded_payload.encode("ascii"), hashlib.sha256).digest()
         return f"{encoded_payload}.{_urlsafe_b64encode(signature)}"
 
     def decode(self, token: str, *, now: int | None = None) -> SessionPrincipal:
@@ -93,9 +96,7 @@ class SessionCodec:
         except (AttributeError, UnicodeEncodeError, ValueError, InvalidSession) as exc:
             raise InvalidSession from exc
 
-        expected_signature = hmac.new(
-            self._secret, encoded_payload_bytes, hashlib.sha256
-        ).digest()
+        expected_signature = hmac.new(self._secret, encoded_payload_bytes, hashlib.sha256).digest()
         if not hmac.compare_digest(supplied_signature, expected_signature):
             raise InvalidSession
 
@@ -112,7 +113,10 @@ class SessionCodec:
         persona_id = payload.get("persona_id")
         nonce = payload.get("nonce")
         if (
-            not all(isinstance(value, str) and value for value in (username, csrf_token, persona_id, nonce))
+            not all(
+                isinstance(value, str) and value
+                for value in (username, csrf_token, persona_id, nonce)
+            )
             or not isinstance(expires_at, int)
             or isinstance(expires_at, bool)
         ):
@@ -120,7 +124,7 @@ class SessionCodec:
         current_time = int(time.time()) if now is None else now
         if expires_at <= current_time:
             raise InvalidSession
-        return SessionPrincipal(username, csrf_token, persona_id, nonce)
+        return SessionPrincipal(username, csrf_token, persona_id, nonce, expires_at)
 
 
 def require_ctadmin_settings(settings: Settings) -> Settings:

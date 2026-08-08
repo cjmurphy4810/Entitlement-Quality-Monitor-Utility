@@ -301,6 +301,52 @@ process.stdout.write(JSON.stringify({
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
+def test_dashboard_controller_reuses_persona_endpoint_history_and_repair_refresh():
+    """My Findings must configure the shared controller and refresh it after a repair."""
+    result = _run_dashboard_runtime(r"""
+const requests = [];
+const payload = makePayload({}, 1);
+payload.rows = [{
+  violationId: 'VIO-100', userName: 'Casey Example', ruleId: 'ENT-Q-01',
+  severity: 'High', status: 'Open', targetType: 'entitlement', targetId: 'ENT-1',
+  detectedAt: '2026-08-07T00:00:00+00:00', repairable: true,
+  detailHref: '/ctadmin/findings/VIO-100?origin=%2Fctadmin%2Fmy-findings',
+}];
+payload.pagination.total = 1; payload.pagination.totalPages = 1;
+const fetchImpl = async url => {
+  requests.push(url);
+  return { ok: true, json: async () => payload };
+};
+const opened = [];
+window.ctadminRepairDrawer = { open: (id, trigger) => opened.push([id, trigger.textContent]) };
+const controller = new window.DashboardController(root, payload, {
+  fetchImpl, history, location,
+  endpoint: '/ctadmin/api/my-findings', pagePath: '/ctadmin/my-findings',
+  includeAll: true, showRepairActions: true,
+});
+await controller.toggleFilter('severity', 'high');
+const row = selectors['#findings-results'].children[0];
+const repairButton = row.children[row.children.length - 1].children[0];
+repairButton.listeners.click();
+await controller.refresh();
+process.stdout.write(JSON.stringify({ requests, pushed, columns: row.children.length, opened }));
+""")
+
+    assert result == {
+        "requests": [
+            "/ctadmin/api/my-findings?severity=high&page=1&pageSize=50&include_all=true",
+            "/ctadmin/api/my-findings?severity=high&page=1&pageSize=50&include_all=true",
+        ],
+        "pushed": [
+            "/ctadmin/my-findings?severity=high&page=1&pageSize=50&include_all=true",
+            "/ctadmin/my-findings?severity=high&page=1&pageSize=50&include_all=true",
+        ],
+        "columns": 8,
+        "opened": [["VIO-100", "Repair"]],
+    }
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
 def test_repair_drawer_traps_focus_closes_with_escape_and_preserves_invalid_input():
     """Keyboard containment and validation-state preservation are required dialog behavior."""
     dashboard_path = Path("src/eqm/ctadmin/static/dashboard.js").resolve()
