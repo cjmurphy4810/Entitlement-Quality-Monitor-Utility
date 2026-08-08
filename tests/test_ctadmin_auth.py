@@ -56,7 +56,7 @@ def test_ctadmin_settings_are_optional_by_default(monkeypatch):
     assert settings.ctadmin_secure_cookies is True
 
 
-@pytest.mark.parametrize("secret", ["", "short-secret"])
+@pytest.mark.parametrize("secret", ["", "short-secret", " " * 32])
 def test_settings_rejects_blank_or_short_ctadmin_session_secret(monkeypatch, secret):
     monkeypatch.setenv("EQM_BEARER_TOKEN", "test-token")
     monkeypatch.setenv("EQM_CTADMIN_SESSION_SECRET", secret)

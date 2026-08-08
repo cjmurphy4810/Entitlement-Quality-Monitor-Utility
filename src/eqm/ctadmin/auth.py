@@ -130,7 +130,7 @@ def require_ctadmin_settings(settings: Settings) -> Settings:
         not settings.ctadmin_username
         or settings.ctadmin_password is None
         or session_secret is None
-        or not session_secret.get_secret_value()
+        or not session_secret.get_secret_value().strip()
     ):
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,

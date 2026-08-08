@@ -3,7 +3,7 @@
 from functools import lru_cache
 from pathlib import Path
 
-from pydantic import Field, SecretStr
+from pydantic import Field, SecretStr, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -20,6 +20,13 @@ class Settings(BaseSettings):
     ctadmin_session_secret: SecretStr | None = Field(default=None, min_length=32)
     ctadmin_session_ttl_seconds: int = Field(default=28_800, ge=300, le=86_400)
     ctadmin_secure_cookies: bool = True
+
+    @field_validator("ctadmin_session_secret", mode="before")
+    @classmethod
+    def strip_ctadmin_session_secret(cls, value: object) -> object:
+        if isinstance(value, str):
+            return value.strip()
+        return value
 
     @property
     def entitlements_path(self) -> Path:
