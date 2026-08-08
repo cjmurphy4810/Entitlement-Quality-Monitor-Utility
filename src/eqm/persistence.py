@@ -110,8 +110,14 @@ class JsonStore:
                 temporary_file.write(payload)
                 temporary_file.flush()
                 os.fsync(temporary_file.fileno())
-        except Exception:
-            temporary_path.unlink(missing_ok=True)
+        except Exception as staging_error:
+            try:
+                temporary_path.unlink(missing_ok=True)
+            except Exception as cleanup_error:
+                raise ExceptionGroup(
+                    "staging failed and temporary cleanup failed",
+                    [staging_error, cleanup_error],
+                ) from staging_error
             raise
         return temporary_path
 

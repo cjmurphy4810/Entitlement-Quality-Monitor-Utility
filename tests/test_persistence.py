@@ -197,3 +197,49 @@ async def test_write_many_preserves_backup_and_both_errors_when_restore_fails(
     ]
     assert len(backup_paths) == 1
     assert json.loads(backup_paths[0].read_text()) == old_first
+
+
+async def test_write_many_removes_stage_when_fsync_fails(
+    tmp_store: JsonStore, tmp_path, monkeypatch
+):
+    def fail_fsync(_descriptor):
+        raise OSError("injected staging fsync failure")
+
+    monkeypatch.setattr(os, "fsync", fail_fsync)
+
+    with pytest.raises(OSError, match="injected staging fsync failure"):
+        await tmp_store.write_many({"first.json": {"value": "new-first"}})
+
+    assert list(tmp_path.iterdir()) == []
+    assert await tmp_store.read("first.json") == []
+
+
+async def test_write_many_surfaces_fsync_and_stage_cleanup_failures(
+    tmp_store: JsonStore, tmp_path, monkeypatch
+):
+    real_unlink = Path.unlink
+
+    def fail_fsync(_descriptor):
+        raise OSError("injected staging fsync failure")
+
+    def fail_stage_cleanup(path, *args, **kwargs):
+        if path.suffix == ".stage":
+            raise OSError("injected staging cleanup failure")
+        return real_unlink(path, *args, **kwargs)
+
+    monkeypatch.setattr(os, "fsync", fail_fsync)
+    monkeypatch.setattr(Path, "unlink", fail_stage_cleanup)
+
+    with pytest.raises(ExceptionGroup) as exc_info:
+        await tmp_store.write_many({"first.json": {"value": "new-first"}})
+
+    assert [str(error) for error in exc_info.value.exceptions] == [
+        "injected staging fsync failure",
+        "injected staging cleanup failure",
+    ]
+    stage_paths = [
+        path for path in tmp_path.iterdir() if path.suffix == ".stage"
+    ]
+    assert len(stage_paths) == 1
+    assert json.loads(stage_paths[0].read_text()) == {"value": "new-first"}
+    assert await tmp_store.read("first.json") == []
