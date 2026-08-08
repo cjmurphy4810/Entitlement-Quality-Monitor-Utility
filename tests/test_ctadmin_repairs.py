@@ -342,6 +342,28 @@ def test_ent_q_03_allows_only_exact_removal_of_evidence_forbidden_roles() -> Non
     )
 
 
+def test_ent_q_03_all_forbidden_roles_plans_an_exact_empty_list() -> None:
+    current = bundle(
+        entitlements=[
+            entitlement(acceptable_roles=[Role.CUSTOMER, Role.BUSINESS_USER])
+        ]
+    )
+    finding = violation(
+        "ENT-Q-03",
+        evidence={
+            "access_tier": 1,
+            "acceptable_roles": ["customer", "business_user"],
+            "forbidden_roles": ["customer", "business_user"],
+        },
+    )
+
+    plan = build_repair_plan(finding, current, {"acceptable_roles": []})
+
+    assert plan.mutations == (
+        RecordMutation("entitlements", "ENT-1", {"acceptable_roles": []}),
+    )
+
+
 def test_ent_q_04_hr_allows_only_removing_developer() -> None:
     current = bundle(
         entitlements=[
@@ -374,6 +396,31 @@ def test_ent_q_04_hr_allows_only_removing_developer() -> None:
             "ENT-1",
             {"acceptable_roles": ["operations", "business_user"]},
         ),
+    )
+
+
+def test_ent_q_04_hr_developer_only_plans_an_exact_empty_list() -> None:
+    current = bundle(
+        entitlements=[
+            entitlement(
+                division=Division.HR,
+                acceptable_roles=[Role.DEVELOPER],
+            )
+        ]
+    )
+    finding = violation(
+        "ENT-Q-04",
+        evidence={
+            "division": "hr",
+            "access_tier": 1,
+            "acceptable_roles": ["developer"],
+        },
+    )
+
+    plan = build_repair_plan(finding, current, {"acceptable_roles": []})
+
+    assert plan.mutations == (
+        RecordMutation("entitlements", "ENT-1", {"acceptable_roles": []}),
     )
 
 

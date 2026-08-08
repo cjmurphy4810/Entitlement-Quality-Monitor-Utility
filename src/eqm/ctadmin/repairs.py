@@ -118,10 +118,12 @@ def _pbl_text(submission: dict[str, object]) -> str:
     return text
 
 
-def _roles(submission: dict[str, object]) -> list[str]:
+def _roles(submission: dict[str, object], *, allow_empty: bool = False) -> list[str]:
     _submission_keys(submission, "acceptable_roles")
     raw = submission["acceptable_roles"]
-    if not isinstance(raw, list) or not raw or not all(isinstance(item, str) for item in raw):
+    if not isinstance(raw, list) or not all(isinstance(item, str) for item in raw):
+        raise RepairValidationError("acceptable_roles must be a list of roles.")
+    if not raw and not allow_empty:
         raise RepairValidationError("acceptable_roles must be a non-empty list of roles.")
     try:
         result = [Role(item).value for item in raw]
@@ -222,8 +224,8 @@ def _build_ent_q_03(
     _evidence(violation, "forbidden_roles", forbidden)
     if ent.access_tier != AccessTier.ADMIN or not forbidden:
         raise RepairValidationError("ENT-Q-03 is no longer present in current state.")
-    proposed = _roles(submission)
     expected = [role for role in current_roles if role not in forbidden]
+    proposed = _roles(submission, allow_empty=not expected)
     if proposed != expected:
         raise RepairValidationError(
             "ENT-Q-03 must remove exactly the evidence-identified forbidden roles."
@@ -245,8 +247,8 @@ def _build_ent_q_04(
     _evidence(violation, "access_tier", int(ent.access_tier))
     _evidence(violation, "acceptable_roles", current_roles)
     if ent.division == Division.HR and Role.DEVELOPER in ent.acceptable_roles:
-        proposed = _roles(submission)
         expected = [role for role in current_roles if role != Role.DEVELOPER.value]
+        proposed = _roles(submission, allow_empty=not expected)
         if proposed != expected:
             raise RepairValidationError("ENT-Q-04 must remove exactly the developer role.")
         return _plan(
