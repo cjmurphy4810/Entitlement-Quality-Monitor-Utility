@@ -1392,8 +1392,8 @@
     "id": "EMP-00058",
     "full_name": "Jessica Williams",
     "email": "user00058@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -1418,6 +1418,12 @@
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-07-13T04:55:07.965518Z",
+        "ended_at": "2026-08-08T19:07:29.208455Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-08T19:07:29.208455Z",
         "ended_at": null
       }
     ],
@@ -27457,6 +27463,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T18:26:56.260339Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01313",
+    "full_name": "Jaime Conrad",
+    "email": "emp-01313@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-08T19:07:29.208455Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T19:07:29.208455Z",
     "terminated_at": null
   }
 ]
