@@ -3,7 +3,7 @@
     "id": "ENT-00001",
     "name": "legal_compliance admin 1",
     "pbl_description": "Grants administrator access and full configuration rights to the Rodriguez, Figueroa and Sanchez Application system.",
-    "access_tier": 1,
+    "access_tier": 3,
     "acceptable_roles": [
       "operations",
       "developer"
@@ -14,13 +14,13 @@
     ],
     "sod_tags": [],
     "created_at": "2025-05-20T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-12T15:58:40.244681Z"
   },
   {
     "id": "ENT-00002",
     "name": "tech_dev elevated_ro 2",
     "pbl_description": "Provides elevated read access in Johnson-Davis Share_drive with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "operations",
       "customer",
@@ -35,13 +35,13 @@
     ],
     "sod_tags": [],
     "created_at": "2026-01-06T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-06T12:42:10.381804Z"
   },
   {
     "id": "ENT-00003",
     "name": "cyber_tech elevated_ro 3",
     "pbl_description": "Provides elevated read access in Cole LLC Api with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "developer",
       "business_user"
@@ -53,13 +53,13 @@
     ],
     "sod_tags": [],
     "created_at": "2025-07-12T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-08-02T04:50:08.947488Z"
   },
   {
     "id": "ENT-00004",
     "name": "business_dev elevated_ro 4",
     "pbl_description": "Provides elevated read access in Moore-Bernard Application with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 1,
     "acceptable_roles": [
       "business_analyst",
       "customer",
@@ -72,13 +72,13 @@
     ],
     "sod_tags": [],
     "created_at": "2025-07-27T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-12T13:04:11.095435Z"
   },
   {
     "id": "ENT-00005",
     "name": "legal_compliance elevated_ro 5",
     "pbl_description": "Provides elevated read access in Herrera-Dudley Api with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 4,
     "acceptable_roles": [
       "business_analyst",
       "business_user",
@@ -94,7 +94,7 @@
       "payment_initiate"
     ],
     "created_at": "2026-02-09T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-21T16:18:13.936694Z"
   },
   {
     "id": "ENT-00006",
@@ -111,7 +111,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-07-19T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-12T20:13:30.701954Z"
   },
   {
     "id": "ENT-00007",
@@ -171,7 +171,7 @@
     "id": "ENT-00010",
     "name": "business_dev admin 10",
     "pbl_description": "Grants administrator access and full configuration rights to the Foster-Rocha Database system.",
-    "access_tier": 1,
+    "access_tier": 2,
     "acceptable_roles": [
       "developer"
     ],
@@ -183,7 +183,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-07-30T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-11T22:48:26.041258Z"
   },
   {
     "id": "ENT-00011",
@@ -229,7 +229,7 @@
     "id": "ENT-00013",
     "name": "business_dev read_write 13",
     "pbl_description": "Allows authorized users to read and write business records in Peterson, Carter and Moore Api.",
-    "access_tier": 2,
+    "access_tier": 3,
     "acceptable_roles": [
       "developer"
     ],
@@ -241,7 +241,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-12T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-19T15:51:22.108695Z"
   },
   {
     "id": "ENT-00014",
@@ -269,7 +269,7 @@
     "id": "ENT-00015",
     "name": "legal_compliance general_ro 15",
     "pbl_description": "Provides general read-only visibility into George Group Share_drive for reporting and review purposes.",
-    "access_tier": 4,
+    "access_tier": 2,
     "acceptable_roles": [
       "developer",
       "customer"
@@ -282,7 +282,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-01T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-17T21:13:08.040543Z"
   },
   {
     "id": "ENT-00016",
@@ -322,7 +322,7 @@
     "id": "ENT-00018",
     "name": "cyber_tech admin 18",
     "pbl_description": "Grants administrator access and full configuration rights to the Cole LLC Api system.",
-    "access_tier": 1,
+    "access_tier": 4,
     "acceptable_roles": [
       "developer"
     ],
@@ -332,7 +332,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-08-25T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-06-02T00:16:13.736418Z"
   },
   {
     "id": "ENT-00019",
@@ -355,7 +355,7 @@
     "id": "ENT-00020",
     "name": "legal_compliance elevated_ro 20",
     "pbl_description": "Provides elevated read access in Herrera-Dudley Api with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 1,
     "acceptable_roles": [
       "business_analyst",
       "operations",
@@ -369,7 +369,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-03-28T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-30T12:10:24.116465Z"
   },
   {
     "id": "ENT-00021",
@@ -404,7 +404,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-07-11T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-20T07:38:13.712211Z"
   },
   {
     "id": "ENT-00023",
@@ -422,7 +422,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-12-16T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-15T15:01:11.431628Z"
   },
   {
     "id": "ENT-00024",
@@ -445,7 +445,7 @@
     "id": "ENT-00025",
     "name": "tech_dev elevated_ro 25",
     "pbl_description": "Provides elevated read access in Foster-Rocha Database with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 4,
     "acceptable_roles": [
       "business_analyst"
     ],
@@ -457,13 +457,13 @@
     ],
     "sod_tags": [],
     "created_at": "2025-08-12T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-29T19:50:56.189371Z"
   },
   {
     "id": "ENT-00026",
     "name": "tech_ops elevated_ro 26",
     "pbl_description": "Provides elevated read access in Robinson-Bright Api with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 1,
     "acceptable_roles": [
       "developer",
       "operations",
@@ -476,13 +476,13 @@
     ],
     "sod_tags": [],
     "created_at": "2025-05-03T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-05T09:26:21.006909Z"
   },
   {
     "id": "ENT-00027",
     "name": "hr elevated_ro 27",
     "pbl_description": "Provides elevated read access in James-Ferrell Database with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "customer"
     ],
@@ -493,13 +493,13 @@
     ],
     "sod_tags": [],
     "created_at": "2026-02-19T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-26T14:25:45.687327Z"
   },
   {
     "id": "ENT-00028",
     "name": "tech_dev elevated_ro 28",
     "pbl_description": "Provides elevated read access in Peterson, Carter and Moore Api with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "customer"
     ],
@@ -509,7 +509,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-01-11T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-02T09:39:01.060708Z"
   },
   {
     "id": "ENT-00029",
@@ -533,7 +533,7 @@
     "id": "ENT-00030",
     "name": "cyber_tech admin 30",
     "pbl_description": "Grants administrator access and full configuration rights to the George Group Share_drive system.",
-    "access_tier": 1,
+    "access_tier": 4,
     "acceptable_roles": [
       "developer",
       "operations"
@@ -544,13 +544,13 @@
     ],
     "sod_tags": [],
     "created_at": "2025-05-02T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-28T15:15:01.205925Z"
   },
   {
     "id": "ENT-00031",
     "name": "hr general_ro 31",
     "pbl_description": "Provides general read-only visibility into Rodriguez, Figueroa and Sanchez Application for reporting and review purposes.",
-    "access_tier": 4,
+    "access_tier": 3,
     "acceptable_roles": [
       "developer"
     ],
@@ -560,13 +560,13 @@
     ],
     "sod_tags": [],
     "created_at": "2026-02-11T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-02T17:12:32.139455Z"
   },
   {
     "id": "ENT-00032",
     "name": "business_sales admin 32",
     "pbl_description": "Grants administrator access and full configuration rights to the Johnson-Davis Share_drive system.",
-    "access_tier": 1,
+    "access_tier": 4,
     "acceptable_roles": [
       "operations"
     ],
@@ -576,7 +576,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-08T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-06-06T04:34:06.198707Z"
   },
   {
     "id": "ENT-00033",
@@ -635,7 +635,7 @@
     "id": "ENT-00036",
     "name": "business_sales general_ro 36",
     "pbl_description": "Provides general read-only visibility into Williams and Sons Api for reporting and review purposes.",
-    "access_tier": 4,
+    "access_tier": 3,
     "acceptable_roles": [
       "operations",
       "customer",
@@ -649,13 +649,13 @@
     ],
     "sod_tags": [],
     "created_at": "2026-03-24T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-02T01:30:11.292964Z"
   },
   {
     "id": "ENT-00037",
     "name": "business_sales elevated_ro 37",
     "pbl_description": "Provides elevated read access in Martin-Kelly Api with limited write capability for approved exceptions.",
-    "access_tier": 3,
+    "access_tier": 4,
     "acceptable_roles": [
       "business_analyst",
       "business_user",
@@ -669,13 +669,13 @@
     ],
     "sod_tags": [],
     "created_at": "2025-12-14T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-09T07:59:25.378118Z"
   },
   {
     "id": "ENT-00038",
     "name": "tech_dev admin 38",
     "pbl_description": "Grants administrator access and full configuration rights to the Martin Group Database system.",
-    "access_tier": 1,
+    "access_tier": 2,
     "acceptable_roles": [
       "operations",
       "developer"
@@ -687,7 +687,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-07-07T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-18T09:48:18.737135Z"
   },
   {
     "id": "ENT-00039",
@@ -768,7 +768,7 @@
     "id": "ENT-00043",
     "name": "finance general_ro 43",
     "pbl_description": "Provides general read-only visibility into Peterson, Carter and Moore Api for reporting and review purposes.",
-    "access_tier": 4,
+    "access_tier": 1,
     "acceptable_roles": [
       "operations",
       "business_analyst",
@@ -783,7 +783,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-06-15T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-07-30T19:14:56.390096Z"
   },
   {
     "id": "ENT-00044",
@@ -826,7 +826,7 @@
     "id": "ENT-00046",
     "name": "tech_dev admin 46",
     "pbl_description": "Grants administrator access and full configuration rights to the Rodriguez, Figueroa and Sanchez Application system.",
-    "access_tier": 1,
+    "access_tier": 4,
     "acceptable_roles": [
       "developer",
       "operations"
@@ -839,13 +839,13 @@
     ],
     "sod_tags": [],
     "created_at": "2026-02-25T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-06-13T19:15:22.317740Z"
   },
   {
     "id": "ENT-00047",
     "name": "tech_ops general_ro 47",
     "pbl_description": "Provides general read-only visibility into Johnson-Davis Share_drive for reporting and review purposes.",
-    "access_tier": 4,
+    "access_tier": 2,
     "acceptable_roles": [
       "customer",
       "business_user",
@@ -860,7 +860,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-09-10T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-06-03T02:05:38.735274Z"
   },
   {
     "id": "ENT-00048",
@@ -902,7 +902,7 @@
     "id": "ENT-00050",
     "name": "business_dev read_write 50",
     "pbl_description": "Allows authorized users to read and write business records in Herrera-Dudley Api.",
-    "access_tier": 2,
+    "access_tier": 4,
     "acceptable_roles": [
       "business_user"
     ],
@@ -913,7 +913,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-03-28T04:52:59.501678Z",
-    "updated_at": "2026-04-28T04:52:59.501678Z"
+    "updated_at": "2026-05-20T21:17:27.082338Z"
   },
   {
     "id": "ENT-00051",
@@ -933,7 +933,7 @@
     "id": "ENT-00052",
     "name": "new entitlement ENT-00052",
     "pbl_description": "Provides read-only access to a system for authorized users.",
-    "access_tier": 4,
+    "access_tier": 1,
     "acceptable_roles": [
       "business_analyst"
     ],
@@ -943,7 +943,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-29T02:25:02.906168Z",
-    "updated_at": "2026-04-29T02:25:02.906168Z"
+    "updated_at": "2026-05-10T09:51:33.871472Z"
   },
   {
     "id": "ENT-00053",
@@ -965,7 +965,7 @@
     "id": "ENT-00054",
     "name": "new entitlement ENT-00054",
     "pbl_description": "admin access for whoever needs it",
-    "access_tier": 1,
+    "access_tier": 2,
     "acceptable_roles": [
       "operations"
     ],
@@ -975,7 +975,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-29T20:38:15.420041Z",
-    "updated_at": "2026-04-29T20:38:15.420041Z"
+    "updated_at": "2026-07-04T22:28:38.190739Z"
   },
   {
     "id": "ENT-00055",
@@ -997,7 +997,7 @@
     "id": "ENT-00056",
     "name": "new entitlement ENT-00056",
     "pbl_description": "Provides standard access to a system for authorized users.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "business_user"
     ],
@@ -1005,13 +1005,13 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-04-29T23:49:41.106432Z",
-    "updated_at": "2026-04-29T23:49:41.106432Z"
+    "updated_at": "2026-06-07T17:45:55.274529Z"
   },
   {
     "id": "ENT-00057",
     "name": "new entitlement ENT-00057",
     "pbl_description": "Provides read-only access to a system for authorized users.",
-    "access_tier": 4,
+    "access_tier": 1,
     "acceptable_roles": [
       "business_analyst"
     ],
@@ -1021,7 +1021,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-30T05:43:36.530411Z",
-    "updated_at": "2026-04-30T05:43:36.530411Z"
+    "updated_at": "2026-05-13T02:34:46.308828Z"
   },
   {
     "id": "ENT-00058",
@@ -1041,7 +1041,7 @@
     "id": "ENT-00059",
     "name": "new entitlement ENT-00059",
     "pbl_description": "Lets the user do things in the system.",
-    "access_tier": 4,
+    "access_tier": 3,
     "acceptable_roles": [
       "business_user"
     ],
@@ -1051,7 +1051,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-30T15:44:52.927524Z",
-    "updated_at": "2026-04-30T15:44:52.927524Z"
+    "updated_at": "2026-05-02T21:34:24.344050Z"
   },
   {
     "id": "ENT-00060",
@@ -1073,7 +1073,7 @@
     "id": "ENT-00061",
     "name": "new entitlement ENT-00061",
     "pbl_description": "Provides read-only access to a system for authorized users.",
-    "access_tier": 4,
+    "access_tier": 3,
     "acceptable_roles": [
       "customer"
     ],
@@ -1083,13 +1083,13 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-30T21:31:47.115808Z",
-    "updated_at": "2026-04-30T21:31:47.115808Z"
+    "updated_at": "2026-07-14T19:08:39.452462Z"
   },
   {
     "id": "ENT-00062",
     "name": "new entitlement ENT-00062",
     "pbl_description": "Provides standard access to a system for authorized users.",
-    "access_tier": 3,
+    "access_tier": 4,
     "acceptable_roles": [
       "operations"
     ],
@@ -1097,7 +1097,7 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-04-30T22:46:19.590704Z",
-    "updated_at": "2026-04-30T22:46:19.590704Z"
+    "updated_at": "2026-07-15T19:00:30.129337Z"
   },
   {
     "id": "ENT-00063",
@@ -1117,7 +1117,7 @@
     "id": "ENT-00064",
     "name": "new entitlement ENT-00064",
     "pbl_description": "Provides standard access to a system for authorized users.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "customer"
     ],
@@ -1125,13 +1125,13 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-05-01T15:51:13.530939Z",
-    "updated_at": "2026-05-01T15:51:13.530939Z"
+    "updated_at": "2026-05-30T20:32:00.247574Z"
   },
   {
     "id": "ENT-00065",
     "name": "new entitlement ENT-00065",
     "pbl_description": "Provides administrator access to a system for authorized users.",
-    "access_tier": 1,
+    "access_tier": 3,
     "acceptable_roles": [
       "business_user"
     ],
@@ -1141,6 +1141,4912 @@
     ],
     "sod_tags": [],
     "created_at": "2026-05-02T00:11:03.015423Z",
-    "updated_at": "2026-05-02T00:11:03.015423Z"
+    "updated_at": "2026-06-03T07:20:22.990498Z"
+  },
+  {
+    "id": "ENT-00066",
+    "name": "new entitlement ENT-00066",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-02T03:58:02.974842Z",
+    "updated_at": "2026-08-08T20:20:30.720688Z"
+  },
+  {
+    "id": "ENT-00067",
+    "name": "new entitlement ENT-00067",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00029"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-02T06:07:51.207047Z",
+    "updated_at": "2026-05-10T11:50:15.135742Z"
+  },
+  {
+    "id": "ENT-00068",
+    "name": "new entitlement ENT-00068",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00017"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-02T10:44:33.344289Z",
+    "updated_at": "2026-05-02T10:44:33.344289Z"
+  },
+  {
+    "id": "ENT-00069",
+    "name": "new entitlement ENT-00069",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-02T12:56:05.819354Z",
+    "updated_at": "2026-05-02T12:56:05.819354Z"
+  },
+  {
+    "id": "ENT-00070",
+    "name": "new entitlement ENT-00070",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-02T18:07:23.936330Z",
+    "updated_at": "2026-05-02T18:07:23.936330Z"
+  },
+  {
+    "id": "ENT-00071",
+    "name": "new entitlement ENT-00071",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-02T21:34:24.344050Z",
+    "updated_at": "2026-05-10T19:55:33.338390Z"
+  },
+  {
+    "id": "ENT-00072",
+    "name": "new entitlement ENT-00072",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00021"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-03T05:42:40.037311Z",
+    "updated_at": "2026-05-03T05:42:40.037311Z"
+  },
+  {
+    "id": "ENT-00073",
+    "name": "new entitlement ENT-00073",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-03T16:41:11.847394Z",
+    "updated_at": "2026-05-17T16:50:45.361060Z"
+  },
+  {
+    "id": "ENT-00074",
+    "name": "new entitlement ENT-00074",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00032"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-03T19:50:52.403500Z",
+    "updated_at": "2026-05-03T19:50:52.403500Z"
+  },
+  {
+    "id": "ENT-00075",
+    "name": "new entitlement ENT-00075",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00038"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-04T05:48:14.930111Z",
+    "updated_at": "2026-05-04T05:48:14.930111Z"
+  },
+  {
+    "id": "ENT-00076",
+    "name": "new entitlement ENT-00076",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00029"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-05T23:42:45.495455Z",
+    "updated_at": "2026-05-05T23:42:45.495455Z"
+  },
+  {
+    "id": "ENT-00077",
+    "name": "new entitlement ENT-00077",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-06T12:25:04.893375Z",
+    "updated_at": "2026-05-06T12:25:04.893375Z"
+  },
+  {
+    "id": "ENT-00078",
+    "name": "new entitlement ENT-00078",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00013"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-07T20:46:46.443533Z",
+    "updated_at": "2026-05-07T20:46:46.443533Z"
+  },
+  {
+    "id": "ENT-00079",
+    "name": "new entitlement ENT-00079",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-08T19:52:31.256459Z",
+    "updated_at": "2026-05-08T19:52:31.256459Z"
+  },
+  {
+    "id": "ENT-00080",
+    "name": "new entitlement ENT-00080",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00006"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-09T05:33:54.586329Z",
+    "updated_at": "2026-05-16T23:44:38.386533Z"
+  },
+  {
+    "id": "ENT-00081",
+    "name": "new entitlement ENT-00081",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00008"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-09T14:33:12.449736Z",
+    "updated_at": "2026-06-24T22:44:34.324278Z"
+  },
+  {
+    "id": "ENT-00082",
+    "name": "new entitlement ENT-00082",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-09T15:43:56.082895Z",
+    "updated_at": "2026-05-09T15:43:56.082895Z"
+  },
+  {
+    "id": "ENT-00083",
+    "name": "new entitlement ENT-00083",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00026"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-09T17:43:42.008907Z",
+    "updated_at": "2026-06-24T17:28:19.178935Z"
+  },
+  {
+    "id": "ENT-00084",
+    "name": "new entitlement ENT-00084",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00017"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-09T21:37:36.765930Z",
+    "updated_at": "2026-05-09T21:37:36.765930Z"
+  },
+  {
+    "id": "ENT-00085",
+    "name": "new entitlement ENT-00085",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00042"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-10T11:50:15.135742Z",
+    "updated_at": "2026-05-30T11:51:00.442139Z"
+  },
+  {
+    "id": "ENT-00086",
+    "name": "new entitlement ENT-00086",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-10T13:04:08.519807Z",
+    "updated_at": "2026-08-07T23:05:42.586956Z"
+  },
+  {
+    "id": "ENT-00087",
+    "name": "new entitlement ENT-00087",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00030"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-10T14:34:58.218426Z",
+    "updated_at": "2026-05-10T14:34:58.218426Z"
+  },
+  {
+    "id": "ENT-00088",
+    "name": "new entitlement ENT-00088",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00011"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-10T16:45:13.813177Z",
+    "updated_at": "2026-05-10T16:45:13.813177Z"
+  },
+  {
+    "id": "ENT-00089",
+    "name": "new entitlement ENT-00089",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-10T18:52:59.101872Z",
+    "updated_at": "2026-05-10T18:52:59.101872Z"
+  },
+  {
+    "id": "ENT-00090",
+    "name": "new entitlement ENT-00090",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-10T23:44:13.045867Z",
+    "updated_at": "2026-05-10T23:44:13.045867Z"
+  },
+  {
+    "id": "ENT-00091",
+    "name": "new entitlement ENT-00091",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00059"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-11T20:13:48.353659Z",
+    "updated_at": "2026-05-13T09:24:03.021183Z"
+  },
+  {
+    "id": "ENT-00092",
+    "name": "new entitlement ENT-00092",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00017"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-12T02:27:57.220268Z",
+    "updated_at": "2026-05-12T02:27:57.220268Z"
+  },
+  {
+    "id": "ENT-00093",
+    "name": "new entitlement ENT-00093",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00057"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-12T05:52:00.732097Z",
+    "updated_at": "2026-05-12T05:52:00.732097Z"
+  },
+  {
+    "id": "ENT-00094",
+    "name": "new entitlement ENT-00094",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-12T13:19:01.711371Z",
+    "updated_at": "2026-05-12T13:19:01.711371Z"
+  },
+  {
+    "id": "ENT-00095",
+    "name": "new entitlement ENT-00095",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-12T18:01:37.915127Z",
+    "updated_at": "2026-05-12T18:01:37.915127Z"
+  },
+  {
+    "id": "ENT-00096",
+    "name": "new entitlement ENT-00096",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00057"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-12T23:54:41.237667Z",
+    "updated_at": "2026-05-12T23:54:41.237667Z"
+  },
+  {
+    "id": "ENT-00097",
+    "name": "new entitlement ENT-00097",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00034"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-14T01:24:16.044252Z",
+    "updated_at": "2026-05-29T02:38:42.290188Z"
+  },
+  {
+    "id": "ENT-00098",
+    "name": "new entitlement ENT-00098",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00041"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-14T17:17:24.814190Z",
+    "updated_at": "2026-05-14T17:17:24.814190Z"
+  },
+  {
+    "id": "ENT-00099",
+    "name": "new entitlement ENT-00099",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00018"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-14T22:04:16.813493Z",
+    "updated_at": "2026-05-14T22:04:16.813493Z"
+  },
+  {
+    "id": "ENT-00100",
+    "name": "new entitlement ENT-00100",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00052"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-14T23:27:36.307920Z",
+    "updated_at": "2026-05-14T23:27:36.307920Z"
+  },
+  {
+    "id": "ENT-00101",
+    "name": "new entitlement ENT-00101",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00004"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-15T10:43:51.702670Z",
+    "updated_at": "2026-05-15T10:43:51.702670Z"
+  },
+  {
+    "id": "ENT-00102",
+    "name": "new entitlement ENT-00102",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00021"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-15T12:28:24.792531Z",
+    "updated_at": "2026-05-15T12:28:24.792531Z"
+  },
+  {
+    "id": "ENT-00103",
+    "name": "new entitlement ENT-00103",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00023"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-15T15:01:11.431628Z",
+    "updated_at": "2026-06-03T23:00:15.485177Z"
+  },
+  {
+    "id": "ENT-00104",
+    "name": "new entitlement ENT-00104",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00051"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-15T17:07:34.382302Z",
+    "updated_at": "2026-05-15T23:50:41.368023Z"
+  },
+  {
+    "id": "ENT-00105",
+    "name": "new entitlement ENT-00105",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00019"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-16T02:25:25.902311Z",
+    "updated_at": "2026-07-04T01:06:17.691153Z"
+  },
+  {
+    "id": "ENT-00106",
+    "name": "new entitlement ENT-00106",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-16T05:39:18.991233Z",
+    "updated_at": "2026-05-16T05:39:18.991233Z"
+  },
+  {
+    "id": "ENT-00107",
+    "name": "new entitlement ENT-00107",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00030"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-16T10:43:43.903525Z",
+    "updated_at": "2026-05-16T10:43:43.903525Z"
+  },
+  {
+    "id": "ENT-00108",
+    "name": "new entitlement ENT-00108",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00066"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-16T17:51:44.507866Z",
+    "updated_at": "2026-05-16T17:51:44.507866Z"
+  },
+  {
+    "id": "ENT-00109",
+    "name": "new entitlement ENT-00109",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00013"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-16T18:55:18.749474Z",
+    "updated_at": "2026-05-18T21:44:39.077331Z"
+  },
+  {
+    "id": "ENT-00110",
+    "name": "new entitlement ENT-00110",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00046"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-16T20:57:11.216210Z",
+    "updated_at": "2026-05-16T20:57:11.216210Z"
+  },
+  {
+    "id": "ENT-00111",
+    "name": "new entitlement ENT-00111",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-16T21:48:06.138897Z",
+    "updated_at": "2026-06-19T15:46:32.206768Z"
+  },
+  {
+    "id": "ENT-00112",
+    "name": "new entitlement ENT-00112",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00043"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-17T02:32:25.463670Z",
+    "updated_at": "2026-05-17T02:32:25.463670Z"
+  },
+  {
+    "id": "ENT-00113",
+    "name": "new entitlement ENT-00113",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00033"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-17T08:36:18.749025Z",
+    "updated_at": "2026-06-04T10:35:47.066004Z"
+  },
+  {
+    "id": "ENT-00114",
+    "name": "new entitlement ENT-00114",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00048"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-17T16:50:45.361060Z",
+    "updated_at": "2026-05-17T16:50:45.361060Z"
+  },
+  {
+    "id": "ENT-00115",
+    "name": "new entitlement ENT-00115",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00069"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-17T17:53:16.819998Z",
+    "updated_at": "2026-08-03T23:33:22.696080Z"
+  },
+  {
+    "id": "ENT-00116",
+    "name": "new entitlement ENT-00116",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00054"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-17T18:59:40.965214Z",
+    "updated_at": "2026-08-04T18:24:47.705304Z"
+  },
+  {
+    "id": "ENT-00117",
+    "name": "new entitlement ENT-00117",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00069"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-18T01:28:13.530392Z",
+    "updated_at": "2026-06-09T23:49:27.740930Z"
+  },
+  {
+    "id": "ENT-00118",
+    "name": "new entitlement ENT-00118",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00013"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-18T13:40:27.337640Z",
+    "updated_at": "2026-07-19T08:05:23.075020Z"
+  },
+  {
+    "id": "ENT-00119",
+    "name": "new entitlement ENT-00119",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00033"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-18T16:44:37.483613Z",
+    "updated_at": "2026-05-18T16:44:37.483613Z"
+  },
+  {
+    "id": "ENT-00120",
+    "name": "new entitlement ENT-00120",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-18T18:28:04.495831Z",
+    "updated_at": "2026-05-18T18:28:04.495831Z"
+  },
+  {
+    "id": "ENT-00121",
+    "name": "new entitlement ENT-00121",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-19T04:11:54.530168Z",
+    "updated_at": "2026-06-24T10:16:45.124668Z"
+  },
+  {
+    "id": "ENT-00122",
+    "name": "new entitlement ENT-00122",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-19T08:01:39.040099Z",
+    "updated_at": "2026-05-19T08:01:39.040099Z"
+  },
+  {
+    "id": "ENT-00123",
+    "name": "new entitlement ENT-00123",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-19T21:14:15.833660Z",
+    "updated_at": "2026-05-19T21:14:15.833660Z"
+  },
+  {
+    "id": "ENT-00124",
+    "name": "new entitlement ENT-00124",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-21T00:02:07.743411Z",
+    "updated_at": "2026-05-21T00:02:07.743411Z"
+  },
+  {
+    "id": "ENT-00125",
+    "name": "new entitlement ENT-00125",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00028"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-21T19:26:32.363530Z",
+    "updated_at": "2026-05-21T19:26:32.363530Z"
+  },
+  {
+    "id": "ENT-00126",
+    "name": "new entitlement ENT-00126",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00006"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-21T21:11:10.558398Z",
+    "updated_at": "2026-07-01T21:57:49.191650Z"
+  },
+  {
+    "id": "ENT-00127",
+    "name": "new entitlement ENT-00127",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-22T15:46:08.291084Z",
+    "updated_at": "2026-05-22T15:46:08.291084Z"
+  },
+  {
+    "id": "ENT-00128",
+    "name": "new entitlement ENT-00128",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-22T17:47:11.687318Z",
+    "updated_at": "2026-05-30T16:00:22.722187Z"
+  },
+  {
+    "id": "ENT-00129",
+    "name": "new entitlement ENT-00129",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00055"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-22T22:03:04.647129Z",
+    "updated_at": "2026-05-22T22:03:04.647129Z"
+  },
+  {
+    "id": "ENT-00130",
+    "name": "new entitlement ENT-00130",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00062"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-23T05:53:14.393415Z",
+    "updated_at": "2026-07-15T22:52:54.922426Z"
+  },
+  {
+    "id": "ENT-00131",
+    "name": "new entitlement ENT-00131",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00061"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-23T10:10:53.870556Z",
+    "updated_at": "2026-05-23T10:10:53.870556Z"
+  },
+  {
+    "id": "ENT-00132",
+    "name": "new entitlement ENT-00132",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-23T13:09:46.423454Z",
+    "updated_at": "2026-06-09T06:43:14.934733Z"
+  },
+  {
+    "id": "ENT-00133",
+    "name": "new entitlement ENT-00133",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00037"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-23T15:58:29.323512Z",
+    "updated_at": "2026-05-27T14:27:23.174162Z"
+  },
+  {
+    "id": "ENT-00134",
+    "name": "new entitlement ENT-00134",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00091"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-24T02:39:59.272632Z",
+    "updated_at": "2026-05-25T11:34:23.143865Z"
+  },
+  {
+    "id": "ENT-00135",
+    "name": "new entitlement ENT-00135",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00041"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-24T11:58:40.087211Z",
+    "updated_at": "2026-05-24T11:58:40.087211Z"
+  },
+  {
+    "id": "ENT-00136",
+    "name": "new entitlement ENT-00136",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-24T14:58:06.220122Z",
+    "updated_at": "2026-05-24T14:58:06.220122Z"
+  },
+  {
+    "id": "ENT-00137",
+    "name": "new entitlement ENT-00137",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00075"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-24T17:30:09.438308Z",
+    "updated_at": "2026-05-24T17:30:09.438308Z"
+  },
+  {
+    "id": "ENT-00138",
+    "name": "new entitlement ENT-00138",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-24T22:29:02.977177Z",
+    "updated_at": "2026-07-01T16:02:56.567646Z"
+  },
+  {
+    "id": "ENT-00139",
+    "name": "new entitlement ENT-00139",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-25T02:48:50.993019Z",
+    "updated_at": "2026-06-06T18:46:19.892729Z"
+  },
+  {
+    "id": "ENT-00140",
+    "name": "new entitlement ENT-00140",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-25T07:08:42.148326Z",
+    "updated_at": "2026-05-25T07:08:42.148326Z"
+  },
+  {
+    "id": "ENT-00141",
+    "name": "new entitlement ENT-00141",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00036"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-25T11:34:23.143865Z",
+    "updated_at": "2026-05-25T11:34:23.143865Z"
+  },
+  {
+    "id": "ENT-00142",
+    "name": "new entitlement ENT-00142",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-25T21:42:55.171409Z",
+    "updated_at": "2026-05-25T21:42:55.171409Z"
+  },
+  {
+    "id": "ENT-00143",
+    "name": "new entitlement ENT-00143",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00002"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-26T17:53:44.326825Z",
+    "updated_at": "2026-05-26T17:53:44.326825Z"
+  },
+  {
+    "id": "ENT-00144",
+    "name": "new entitlement ENT-00144",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00073"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-27T06:59:17.180909Z",
+    "updated_at": "2026-05-27T06:59:17.180909Z"
+  },
+  {
+    "id": "ENT-00145",
+    "name": "new entitlement ENT-00145",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00068"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-27T10:57:50.740858Z",
+    "updated_at": "2026-05-27T10:57:50.740858Z"
+  },
+  {
+    "id": "ENT-00146",
+    "name": "new entitlement ENT-00146",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-28T14:33:42.970659Z",
+    "updated_at": "2026-05-28T14:33:42.970659Z"
+  },
+  {
+    "id": "ENT-00147",
+    "name": "new entitlement ENT-00147",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00050"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-28T20:32:04.760621Z",
+    "updated_at": "2026-05-28T20:32:04.760621Z"
+  },
+  {
+    "id": "ENT-00148",
+    "name": "new entitlement ENT-00148",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00090"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-28T22:29:06.360504Z",
+    "updated_at": "2026-07-04T05:04:07.810460Z"
+  },
+  {
+    "id": "ENT-00149",
+    "name": "new entitlement ENT-00149",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-29T06:49:01.219424Z",
+    "updated_at": "2026-05-29T06:49:01.219424Z"
+  },
+  {
+    "id": "ENT-00150",
+    "name": "new entitlement ENT-00150",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-05-29T19:53:33.666455Z",
+    "updated_at": "2026-05-29T19:53:33.666455Z"
+  },
+  {
+    "id": "ENT-00151",
+    "name": "new entitlement ENT-00151",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00047"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-30T08:01:10.966670Z",
+    "updated_at": "2026-05-30T19:04:07.475153Z"
+  },
+  {
+    "id": "ENT-00152",
+    "name": "new entitlement ENT-00152",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00026"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-30T10:21:55.202138Z",
+    "updated_at": "2026-06-17T03:24:52.335537Z"
+  },
+  {
+    "id": "ENT-00153",
+    "name": "new entitlement ENT-00153",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00070"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-30T11:51:00.442139Z",
+    "updated_at": "2026-05-30T11:51:00.442139Z"
+  },
+  {
+    "id": "ENT-00154",
+    "name": "new entitlement ENT-00154",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00022"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-30T14:50:55.010053Z",
+    "updated_at": "2026-05-30T14:50:55.010053Z"
+  },
+  {
+    "id": "ENT-00155",
+    "name": "new entitlement ENT-00155",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00080"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-31T03:36:49.143139Z",
+    "updated_at": "2026-05-31T03:36:49.143139Z"
+  },
+  {
+    "id": "ENT-00156",
+    "name": "new entitlement ENT-00156",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00020"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-05-31T20:36:06.743550Z",
+    "updated_at": "2026-05-31T20:36:06.743550Z"
+  },
+  {
+    "id": "ENT-00157",
+    "name": "new entitlement ENT-00157",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00055"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-01T00:01:56.533656Z",
+    "updated_at": "2026-06-01T00:01:56.533656Z"
+  },
+  {
+    "id": "ENT-00158",
+    "name": "new entitlement ENT-00158",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00058"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-01T20:52:15.396965Z",
+    "updated_at": "2026-06-01T20:52:15.396965Z"
+  },
+  {
+    "id": "ENT-00159",
+    "name": "new entitlement ENT-00159",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00108"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-02T00:16:13.736418Z",
+    "updated_at": "2026-06-02T00:16:13.736418Z"
+  },
+  {
+    "id": "ENT-00160",
+    "name": "new entitlement ENT-00160",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-02T13:55:47.113930Z",
+    "updated_at": "2026-06-29T14:32:27.891986Z"
+  },
+  {
+    "id": "ENT-00161",
+    "name": "new entitlement ENT-00161",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00028"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-03T02:05:38.735274Z",
+    "updated_at": "2026-06-03T02:05:38.735274Z"
+  },
+  {
+    "id": "ENT-00162",
+    "name": "new entitlement ENT-00162",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00022"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-03T17:25:12.079001Z",
+    "updated_at": "2026-06-08T15:36:47.077773Z"
+  },
+  {
+    "id": "ENT-00163",
+    "name": "new entitlement ENT-00163",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-03T23:00:15.485177Z",
+    "updated_at": "2026-06-22T22:59:49.312778Z"
+  },
+  {
+    "id": "ENT-00164",
+    "name": "new entitlement ENT-00164",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00048"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-04T10:35:47.066004Z",
+    "updated_at": "2026-06-04T10:35:47.066004Z"
+  },
+  {
+    "id": "ENT-00165",
+    "name": "new entitlement ENT-00165",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-04T13:55:18.999805Z",
+    "updated_at": "2026-06-04T13:55:18.999805Z"
+  },
+  {
+    "id": "ENT-00166",
+    "name": "new entitlement ENT-00166",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-04T16:49:06.773401Z",
+    "updated_at": "2026-07-21T20:41:53.844177Z"
+  },
+  {
+    "id": "ENT-00167",
+    "name": "new entitlement ENT-00167",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-04T19:18:43.080243Z",
+    "updated_at": "2026-06-04T19:18:43.080243Z"
+  },
+  {
+    "id": "ENT-00168",
+    "name": "new entitlement ENT-00168",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00091"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-06T11:27:37.859564Z",
+    "updated_at": "2026-06-06T11:27:37.859564Z"
+  },
+  {
+    "id": "ENT-00169",
+    "name": "new entitlement ENT-00169",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00024"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-06T14:26:21.697930Z",
+    "updated_at": "2026-06-06T14:26:21.697930Z"
+  },
+  {
+    "id": "ENT-00170",
+    "name": "new entitlement ENT-00170",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-06T15:49:58.602684Z",
+    "updated_at": "2026-06-06T15:49:58.602684Z"
+  },
+  {
+    "id": "ENT-00171",
+    "name": "new entitlement ENT-00171",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00018"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-06T17:04:01.595639Z",
+    "updated_at": "2026-06-06T17:04:01.595639Z"
+  },
+  {
+    "id": "ENT-00172",
+    "name": "new entitlement ENT-00172",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00101"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-06T21:35:44.231575Z",
+    "updated_at": "2026-07-04T10:31:28.805083Z"
+  },
+  {
+    "id": "ENT-00173",
+    "name": "new entitlement ENT-00173",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-07T08:33:35.617153Z",
+    "updated_at": "2026-06-07T08:33:35.617153Z"
+  },
+  {
+    "id": "ENT-00174",
+    "name": "new entitlement ENT-00174",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00101"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-07T19:11:30.680682Z",
+    "updated_at": "2026-06-07T19:11:30.680682Z"
+  },
+  {
+    "id": "ENT-00175",
+    "name": "new entitlement ENT-00175",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00064"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-08T01:39:00.404912Z",
+    "updated_at": "2026-06-08T01:39:00.404912Z"
+  },
+  {
+    "id": "ENT-00176",
+    "name": "new entitlement ENT-00176",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-08T06:37:20.941042Z",
+    "updated_at": "2026-06-08T06:37:20.941042Z"
+  },
+  {
+    "id": "ENT-00177",
+    "name": "new entitlement ENT-00177",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-08T20:38:21.897636Z",
+    "updated_at": "2026-06-08T20:38:21.897636Z"
+  },
+  {
+    "id": "ENT-00178",
+    "name": "new entitlement ENT-00178",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00036"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-08T22:21:29.892870Z",
+    "updated_at": "2026-06-08T22:21:29.892870Z"
+  },
+  {
+    "id": "ENT-00179",
+    "name": "new entitlement ENT-00179",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00061"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-09T18:30:19.924905Z",
+    "updated_at": "2026-07-12T18:56:00.294997Z"
+  },
+  {
+    "id": "ENT-00180",
+    "name": "new entitlement ENT-00180",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-09T20:30:26.580236Z",
+    "updated_at": "2026-06-09T20:30:26.580236Z"
+  },
+  {
+    "id": "ENT-00181",
+    "name": "new entitlement ENT-00181",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00034"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-11T02:56:50.157358Z",
+    "updated_at": "2026-06-11T02:56:50.157358Z"
+  },
+  {
+    "id": "ENT-00182",
+    "name": "new entitlement ENT-00182",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00117"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-11T07:28:37.346489Z",
+    "updated_at": "2026-06-11T07:28:37.346489Z"
+  },
+  {
+    "id": "ENT-00183",
+    "name": "new entitlement ENT-00183",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-11T18:43:28.280528Z",
+    "updated_at": "2026-07-22T22:00:01.038198Z"
+  },
+  {
+    "id": "ENT-00184",
+    "name": "new entitlement ENT-00184",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00044"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-11T21:14:55.579401Z",
+    "updated_at": "2026-06-11T21:14:55.579401Z"
+  },
+  {
+    "id": "ENT-00185",
+    "name": "new entitlement ENT-00185",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00024"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-12T10:49:09.816107Z",
+    "updated_at": "2026-06-12T10:49:09.816107Z"
+  },
+  {
+    "id": "ENT-00186",
+    "name": "new entitlement ENT-00186",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-12T19:00:17.398800Z",
+    "updated_at": "2026-06-12T19:00:17.398800Z"
+  },
+  {
+    "id": "ENT-00187",
+    "name": "new entitlement ENT-00187",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00096"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-12T22:54:48.992576Z",
+    "updated_at": "2026-06-12T22:54:48.992576Z"
+  },
+  {
+    "id": "ENT-00188",
+    "name": "new entitlement ENT-00188",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00083"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-13T12:21:29.147526Z",
+    "updated_at": "2026-06-13T12:21:29.147526Z"
+  },
+  {
+    "id": "ENT-00189",
+    "name": "new entitlement ENT-00189",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-13T14:35:44.648168Z",
+    "updated_at": "2026-06-13T14:35:44.648168Z"
+  },
+  {
+    "id": "ENT-00190",
+    "name": "new entitlement ENT-00190",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-13T19:15:22.317740Z",
+    "updated_at": "2026-07-27T22:54:35.142142Z"
+  },
+  {
+    "id": "ENT-00191",
+    "name": "new entitlement ENT-00191",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00090"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-13T21:58:17.680069Z",
+    "updated_at": "2026-07-15T21:30:59.695551Z"
+  },
+  {
+    "id": "ENT-00192",
+    "name": "new entitlement ENT-00192",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-14T10:03:33.895432Z",
+    "updated_at": "2026-06-14T10:03:33.895432Z"
+  },
+  {
+    "id": "ENT-00193",
+    "name": "new entitlement ENT-00193",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00021"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-14T23:43:43.461327Z",
+    "updated_at": "2026-06-14T23:43:43.461327Z"
+  },
+  {
+    "id": "ENT-00194",
+    "name": "new entitlement ENT-00194",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-16T16:00:06.467010Z",
+    "updated_at": "2026-06-16T16:00:06.467010Z"
+  },
+  {
+    "id": "ENT-00195",
+    "name": "new entitlement ENT-00195",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-17T08:39:55.961830Z",
+    "updated_at": "2026-06-17T08:39:55.961830Z"
+  },
+  {
+    "id": "ENT-00196",
+    "name": "new entitlement ENT-00196",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00117"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-17T16:34:18.834532Z",
+    "updated_at": "2026-08-01T11:39:49.863048Z"
+  },
+  {
+    "id": "ENT-00197",
+    "name": "new entitlement ENT-00197",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00023"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-17T19:20:57.242364Z",
+    "updated_at": "2026-06-17T19:20:57.242364Z"
+  },
+  {
+    "id": "ENT-00198",
+    "name": "new entitlement ENT-00198",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-18T00:14:26.757895Z",
+    "updated_at": "2026-06-18T00:14:26.757895Z"
+  },
+  {
+    "id": "ENT-00199",
+    "name": "new entitlement ENT-00199",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00060"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-18T09:51:13.512243Z",
+    "updated_at": "2026-06-18T09:51:13.512243Z"
+  },
+  {
+    "id": "ENT-00200",
+    "name": "new entitlement ENT-00200",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-18T16:23:13.178630Z",
+    "updated_at": "2026-06-18T16:23:13.178630Z"
+  },
+  {
+    "id": "ENT-00201",
+    "name": "new entitlement ENT-00201",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-19T02:14:05.765873Z",
+    "updated_at": "2026-06-19T02:14:05.765873Z"
+  },
+  {
+    "id": "ENT-00202",
+    "name": "new entitlement ENT-00202",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-19T07:36:29.912593Z",
+    "updated_at": "2026-06-19T07:36:29.912593Z"
+  },
+  {
+    "id": "ENT-00203",
+    "name": "new entitlement ENT-00203",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00034"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-19T19:40:13.868144Z",
+    "updated_at": "2026-06-19T19:40:13.868144Z"
+  },
+  {
+    "id": "ENT-00204",
+    "name": "new entitlement ENT-00204",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-19T21:03:17.462261Z",
+    "updated_at": "2026-06-19T21:03:17.462261Z"
+  },
+  {
+    "id": "ENT-00205",
+    "name": "new entitlement ENT-00205",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00071"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-19T22:29:35.341172Z",
+    "updated_at": "2026-06-19T22:29:35.341172Z"
+  },
+  {
+    "id": "ENT-00206",
+    "name": "new entitlement ENT-00206",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-20T12:13:24.111484Z",
+    "updated_at": "2026-06-20T12:13:24.111484Z"
+  },
+  {
+    "id": "ENT-00207",
+    "name": "new entitlement ENT-00207",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-20T19:14:52.720545Z",
+    "updated_at": "2026-06-20T19:14:52.720545Z"
+  },
+  {
+    "id": "ENT-00208",
+    "name": "new entitlement ENT-00208",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00012"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-21T08:14:27.347444Z",
+    "updated_at": "2026-06-21T08:14:27.347444Z"
+  },
+  {
+    "id": "ENT-00209",
+    "name": "new entitlement ENT-00209",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00014"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-21T15:21:48.965220Z",
+    "updated_at": "2026-06-21T15:21:48.965220Z"
+  },
+  {
+    "id": "ENT-00210",
+    "name": "new entitlement ENT-00210",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00087"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-21T17:00:13.569164Z",
+    "updated_at": "2026-06-21T17:00:13.569164Z"
+  },
+  {
+    "id": "ENT-00211",
+    "name": "new entitlement ENT-00211",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00120"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-21T20:10:56.074247Z",
+    "updated_at": "2026-06-21T20:10:56.074247Z"
+  },
+  {
+    "id": "ENT-00212",
+    "name": "new entitlement ENT-00212",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00116"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-21T21:51:39.406110Z",
+    "updated_at": "2026-06-21T21:51:39.406110Z"
+  },
+  {
+    "id": "ENT-00213",
+    "name": "new entitlement ENT-00213",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00081"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-22T07:31:41.100927Z",
+    "updated_at": "2026-06-22T07:31:41.100927Z"
+  },
+  {
+    "id": "ENT-00214",
+    "name": "new entitlement ENT-00214",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-23T08:25:35.645613Z",
+    "updated_at": "2026-06-23T08:25:35.645613Z"
+  },
+  {
+    "id": "ENT-00215",
+    "name": "new entitlement ENT-00215",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00041"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-23T11:37:12.229652Z",
+    "updated_at": "2026-06-23T11:37:12.229652Z"
+  },
+  {
+    "id": "ENT-00216",
+    "name": "new entitlement ENT-00216",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00045"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-23T23:51:57.783467Z",
+    "updated_at": "2026-06-23T23:51:57.783467Z"
+  },
+  {
+    "id": "ENT-00217",
+    "name": "new entitlement ENT-00217",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00076"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-24T06:40:42.836974Z",
+    "updated_at": "2026-07-03T22:00:05.150763Z"
+  },
+  {
+    "id": "ENT-00218",
+    "name": "new entitlement ENT-00218",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00117"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-24T12:32:31.358886Z",
+    "updated_at": "2026-06-24T12:32:31.358886Z"
+  },
+  {
+    "id": "ENT-00219",
+    "name": "new entitlement ENT-00219",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-24T15:30:01.629315Z",
+    "updated_at": "2026-06-24T15:30:01.629315Z"
+  },
+  {
+    "id": "ENT-00220",
+    "name": "new entitlement ENT-00220",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-24T21:08:19.631954Z",
+    "updated_at": "2026-06-24T21:08:19.631954Z"
+  },
+  {
+    "id": "ENT-00221",
+    "name": "new entitlement ENT-00221",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00125"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-25T16:18:32.578814Z",
+    "updated_at": "2026-06-25T16:18:32.578814Z"
+  },
+  {
+    "id": "ENT-00222",
+    "name": "new entitlement ENT-00222",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-25T20:52:24.992302Z",
+    "updated_at": "2026-06-25T20:52:24.992302Z"
+  },
+  {
+    "id": "ENT-00223",
+    "name": "new entitlement ENT-00223",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-26T12:30:14.552347Z",
+    "updated_at": "2026-06-26T12:30:14.552347Z"
+  },
+  {
+    "id": "ENT-00224",
+    "name": "new entitlement ENT-00224",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00008"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-26T15:12:40.279808Z",
+    "updated_at": "2026-06-26T15:12:40.279808Z"
+  },
+  {
+    "id": "ENT-00225",
+    "name": "new entitlement ENT-00225",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00006"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-26T17:14:08.544505Z",
+    "updated_at": "2026-07-13T21:56:27.246713Z"
+  },
+  {
+    "id": "ENT-00226",
+    "name": "new entitlement ENT-00226",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00017"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-26T19:15:47.193264Z",
+    "updated_at": "2026-06-26T19:15:47.193264Z"
+  },
+  {
+    "id": "ENT-00227",
+    "name": "new entitlement ENT-00227",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00019"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-27T09:25:27.595493Z",
+    "updated_at": "2026-06-27T09:25:27.595493Z"
+  },
+  {
+    "id": "ENT-00228",
+    "name": "new entitlement ENT-00228",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-27T11:09:36.818948Z",
+    "updated_at": "2026-06-27T11:09:36.818948Z"
+  },
+  {
+    "id": "ENT-00229",
+    "name": "new entitlement ENT-00229",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00107"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-27T15:47:27.993016Z",
+    "updated_at": "2026-06-27T15:47:27.993016Z"
+  },
+  {
+    "id": "ENT-00230",
+    "name": "new entitlement ENT-00230",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00003"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-28T08:22:14.926856Z",
+    "updated_at": "2026-06-28T08:22:14.926856Z"
+  },
+  {
+    "id": "ENT-00231",
+    "name": "new entitlement ENT-00231",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00153"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-28T12:13:15.633359Z",
+    "updated_at": "2026-06-28T12:13:15.633359Z"
+  },
+  {
+    "id": "ENT-00232",
+    "name": "new entitlement ENT-00232",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-06-28T20:08:45.598267Z",
+    "updated_at": "2026-06-28T20:08:45.598267Z"
+  },
+  {
+    "id": "ENT-00233",
+    "name": "new entitlement ENT-00233",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-29T21:19:31.816702Z",
+    "updated_at": "2026-06-29T21:19:31.816702Z"
+  },
+  {
+    "id": "ENT-00234",
+    "name": "new entitlement ENT-00234",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-29T22:34:55.417674Z",
+    "updated_at": "2026-06-29T23:57:32.887166Z"
+  },
+  {
+    "id": "ENT-00235",
+    "name": "new entitlement ENT-00235",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00025"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-29T23:57:32.887166Z",
+    "updated_at": "2026-06-29T23:57:32.887166Z"
+  },
+  {
+    "id": "ENT-00236",
+    "name": "new entitlement ENT-00236",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00101"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-30T07:44:54.203472Z",
+    "updated_at": "2026-06-30T07:44:54.203472Z"
+  },
+  {
+    "id": "ENT-00237",
+    "name": "new entitlement ENT-00237",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00038"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-30T10:51:08.228338Z",
+    "updated_at": "2026-06-30T10:51:08.228338Z"
+  },
+  {
+    "id": "ENT-00238",
+    "name": "new entitlement ENT-00238",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00074"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-06-30T15:59:59.154443Z",
+    "updated_at": "2026-06-30T15:59:59.154443Z"
+  },
+  {
+    "id": "ENT-00239",
+    "name": "new entitlement ENT-00239",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00009"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-01T16:02:56.567646Z",
+    "updated_at": "2026-07-01T16:02:56.567646Z"
+  },
+  {
+    "id": "ENT-00240",
+    "name": "new entitlement ENT-00240",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00097"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-01T23:16:06.685525Z",
+    "updated_at": "2026-07-09T22:16:09.176247Z"
+  },
+  {
+    "id": "ENT-00241",
+    "name": "new entitlement ENT-00241",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00096"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-02T01:30:11.292964Z",
+    "updated_at": "2026-07-02T01:30:11.292964Z"
+  },
+  {
+    "id": "ENT-00242",
+    "name": "new entitlement ENT-00242",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-02T08:45:38.467682Z",
+    "updated_at": "2026-07-02T08:45:38.467682Z"
+  },
+  {
+    "id": "ENT-00243",
+    "name": "new entitlement ENT-00243",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00134"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-02T13:17:26.217806Z",
+    "updated_at": "2026-07-02T13:17:26.217806Z"
+  },
+  {
+    "id": "ENT-00244",
+    "name": "new entitlement ENT-00244",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-02T15:38:24.895602Z",
+    "updated_at": "2026-07-11T15:48:21.584986Z"
+  },
+  {
+    "id": "ENT-00245",
+    "name": "new entitlement ENT-00245",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00096"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-02T19:14:48.417096Z",
+    "updated_at": "2026-07-02T19:14:48.417096Z"
+  },
+  {
+    "id": "ENT-00246",
+    "name": "new entitlement ENT-00246",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00009"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-02T22:01:42.676056Z",
+    "updated_at": "2026-07-02T22:01:42.676056Z"
+  },
+  {
+    "id": "ENT-00247",
+    "name": "new entitlement ENT-00247",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00027"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-02T23:34:45.159701Z",
+    "updated_at": "2026-07-02T23:34:45.159701Z"
+  },
+  {
+    "id": "ENT-00248",
+    "name": "new entitlement ENT-00248",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00059"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-03T09:40:32.687667Z",
+    "updated_at": "2026-07-03T09:40:32.687667Z"
+  },
+  {
+    "id": "ENT-00249",
+    "name": "new entitlement ENT-00249",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-03T17:55:11.059983Z",
+    "updated_at": "2026-07-03T17:55:11.059983Z"
+  },
+  {
+    "id": "ENT-00250",
+    "name": "new entitlement ENT-00250",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00147"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-03T22:00:05.150763Z",
+    "updated_at": "2026-07-03T22:00:05.150763Z"
+  },
+  {
+    "id": "ENT-00251",
+    "name": "new entitlement ENT-00251",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00040"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-04T16:57:10.470337Z",
+    "updated_at": "2026-07-04T16:57:10.470337Z"
+  },
+  {
+    "id": "ENT-00252",
+    "name": "new entitlement ENT-00252",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-04T20:28:17.542615Z",
+    "updated_at": "2026-07-04T20:28:17.542615Z"
+  },
+  {
+    "id": "ENT-00253",
+    "name": "new entitlement ENT-00253",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00005"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-04T21:28:47.887637Z",
+    "updated_at": "2026-07-04T21:28:47.887637Z"
+  },
+  {
+    "id": "ENT-00254",
+    "name": "new entitlement ENT-00254",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00091"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-05T02:29:10.503725Z",
+    "updated_at": "2026-07-05T02:29:10.503725Z"
+  },
+  {
+    "id": "ENT-00255",
+    "name": "new entitlement ENT-00255",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-06T00:02:02.766383Z",
+    "updated_at": "2026-07-06T00:02:02.766383Z"
+  },
+  {
+    "id": "ENT-00256",
+    "name": "new entitlement ENT-00256",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00139"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-06T08:56:04.319248Z",
+    "updated_at": "2026-07-06T08:56:04.319248Z"
+  },
+  {
+    "id": "ENT-00257",
+    "name": "new entitlement ENT-00257",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-06T18:24:14.033058Z",
+    "updated_at": "2026-07-10T22:54:48.832571Z"
+  },
+  {
+    "id": "ENT-00258",
+    "name": "new entitlement ENT-00258",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00083"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-06T20:20:46.536415Z",
+    "updated_at": "2026-07-06T20:20:46.536415Z"
+  },
+  {
+    "id": "ENT-00259",
+    "name": "new entitlement ENT-00259",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00161"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-06T23:00:47.961488Z",
+    "updated_at": "2026-07-06T23:00:47.961488Z"
+  },
+  {
+    "id": "ENT-00260",
+    "name": "new entitlement ENT-00260",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00064"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-07T01:14:24.626814Z",
+    "updated_at": "2026-07-07T01:14:24.626814Z"
+  },
+  {
+    "id": "ENT-00261",
+    "name": "new entitlement ENT-00261",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-07T14:14:33.393335Z",
+    "updated_at": "2026-07-07T14:14:33.393335Z"
+  },
+  {
+    "id": "ENT-00262",
+    "name": "new entitlement ENT-00262",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00059"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-08T12:58:25.137657Z",
+    "updated_at": "2026-07-08T12:58:25.137657Z"
+  },
+  {
+    "id": "ENT-00263",
+    "name": "new entitlement ENT-00263",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00125"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-08T15:23:02.986292Z",
+    "updated_at": "2026-07-08T15:23:02.986292Z"
+  },
+  {
+    "id": "ENT-00264",
+    "name": "new entitlement ENT-00264",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00172"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-08T22:57:58.918399Z",
+    "updated_at": "2026-07-08T22:57:58.918399Z"
+  },
+  {
+    "id": "ENT-00265",
+    "name": "new entitlement ENT-00265",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-09T00:10:03.221517Z",
+    "updated_at": "2026-07-09T00:10:03.221517Z"
+  },
+  {
+    "id": "ENT-00266",
+    "name": "new entitlement ENT-00266",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00131"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-09T07:59:25.378118Z",
+    "updated_at": "2026-07-09T07:59:25.378118Z"
+  },
+  {
+    "id": "ENT-00267",
+    "name": "new entitlement ENT-00267",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00119"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-09T11:08:11.786754Z",
+    "updated_at": "2026-07-09T11:08:11.786754Z"
+  },
+  {
+    "id": "ENT-00268",
+    "name": "new entitlement ENT-00268",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00119"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-10T06:24:40.966659Z",
+    "updated_at": "2026-07-10T06:24:40.966659Z"
+  },
+  {
+    "id": "ENT-00269",
+    "name": "new entitlement ENT-00269",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-10T12:25:39.364571Z",
+    "updated_at": "2026-07-10T12:25:39.364571Z"
+  },
+  {
+    "id": "ENT-00270",
+    "name": "new entitlement ENT-00270",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00083"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-10T17:15:24.453841Z",
+    "updated_at": "2026-07-10T17:15:24.453841Z"
+  },
+  {
+    "id": "ENT-00271",
+    "name": "new entitlement ENT-00271",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00117"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-10T18:56:35.762953Z",
+    "updated_at": "2026-07-10T18:56:35.762953Z"
+  },
+  {
+    "id": "ENT-00272",
+    "name": "new entitlement ENT-00272",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00129"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-10T22:54:48.832571Z",
+    "updated_at": "2026-07-10T22:54:48.832571Z"
+  },
+  {
+    "id": "ENT-00273",
+    "name": "new entitlement ENT-00273",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00055"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-10T23:53:44.426491Z",
+    "updated_at": "2026-07-10T23:53:44.426491Z"
+  },
+  {
+    "id": "ENT-00274",
+    "name": "new entitlement ENT-00274",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-11T14:34:02.986145Z",
+    "updated_at": "2026-07-11T14:34:02.986145Z"
+  },
+  {
+    "id": "ENT-00275",
+    "name": "new entitlement ENT-00275",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-11T21:12:53.027177Z",
+    "updated_at": "2026-07-11T21:12:53.027177Z"
+  },
+  {
+    "id": "ENT-00276",
+    "name": "new entitlement ENT-00276",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00135"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-12T01:02:16.978475Z",
+    "updated_at": "2026-07-12T01:02:16.978475Z"
+  },
+  {
+    "id": "ENT-00277",
+    "name": "new entitlement ENT-00277",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00069"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-12T04:48:03.466245Z",
+    "updated_at": "2026-07-13T04:55:07.965518Z"
+  },
+  {
+    "id": "ENT-00278",
+    "name": "new entitlement ENT-00278",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00048"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-12T16:51:55.649714Z",
+    "updated_at": "2026-07-12T16:51:55.649714Z"
+  },
+  {
+    "id": "ENT-00279",
+    "name": "new entitlement ENT-00279",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-12T17:54:45.214776Z",
+    "updated_at": "2026-08-08T21:24:40.133891Z"
+  },
+  {
+    "id": "ENT-00280",
+    "name": "new entitlement ENT-00280",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-13T04:55:07.965518Z",
+    "updated_at": "2026-07-13T04:55:07.965518Z"
+  },
+  {
+    "id": "ENT-00281",
+    "name": "new entitlement ENT-00281",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00041"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-13T11:36:03.733054Z",
+    "updated_at": "2026-07-13T11:36:03.733054Z"
+  },
+  {
+    "id": "ENT-00282",
+    "name": "new entitlement ENT-00282",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00019"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-13T14:16:39.269413Z",
+    "updated_at": "2026-07-13T14:16:39.269413Z"
+  },
+  {
+    "id": "ENT-00283",
+    "name": "new entitlement ENT-00283",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-13T16:53:56.291954Z",
+    "updated_at": "2026-07-13T16:53:56.291954Z"
+  },
+  {
+    "id": "ENT-00284",
+    "name": "new entitlement ENT-00284",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-13T18:28:07.982853Z",
+    "updated_at": "2026-07-13T18:28:07.982853Z"
+  },
+  {
+    "id": "ENT-00285",
+    "name": "new entitlement ENT-00285",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-13T22:53:01.396613Z",
+    "updated_at": "2026-07-13T22:53:01.396613Z"
+  },
+  {
+    "id": "ENT-00286",
+    "name": "new entitlement ENT-00286",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00038"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-14T07:06:54.824347Z",
+    "updated_at": "2026-07-14T07:06:54.824347Z"
+  },
+  {
+    "id": "ENT-00287",
+    "name": "new entitlement ENT-00287",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00167"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-14T14:44:04.603551Z",
+    "updated_at": "2026-07-14T14:44:04.603551Z"
+  },
+  {
+    "id": "ENT-00288",
+    "name": "new entitlement ENT-00288",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-14T21:52:08.326204Z",
+    "updated_at": "2026-07-14T21:52:08.326204Z"
+  },
+  {
+    "id": "ENT-00289",
+    "name": "new entitlement ENT-00289",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-15T07:09:45.005009Z",
+    "updated_at": "2026-07-26T07:32:13.262216Z"
+  },
+  {
+    "id": "ENT-00290",
+    "name": "new entitlement ENT-00290",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00140"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-15T12:49:23.141925Z",
+    "updated_at": "2026-07-15T12:49:23.141925Z"
+  },
+  {
+    "id": "ENT-00291",
+    "name": "new entitlement ENT-00291",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-15T20:30:22.019897Z",
+    "updated_at": "2026-07-15T20:30:22.019897Z"
+  },
+  {
+    "id": "ENT-00292",
+    "name": "new entitlement ENT-00292",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-15T22:52:54.922426Z",
+    "updated_at": "2026-07-15T22:52:54.922426Z"
+  },
+  {
+    "id": "ENT-00293",
+    "name": "new entitlement ENT-00293",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00133"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-16T05:14:48.471154Z",
+    "updated_at": "2026-07-16T05:14:48.471154Z"
+  },
+  {
+    "id": "ENT-00294",
+    "name": "new entitlement ENT-00294",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00157"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-16T23:52:48.664601Z",
+    "updated_at": "2026-07-16T23:52:48.664601Z"
+  },
+  {
+    "id": "ENT-00295",
+    "name": "new entitlement ENT-00295",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-17T05:25:38.532734Z",
+    "updated_at": "2026-07-17T05:25:38.532734Z"
+  },
+  {
+    "id": "ENT-00296",
+    "name": "new entitlement ENT-00296",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00159"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-17T14:27:11.030314Z",
+    "updated_at": "2026-07-17T14:27:11.030314Z"
+  },
+  {
+    "id": "ENT-00297",
+    "name": "new entitlement ENT-00297",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-17T15:54:41.510532Z",
+    "updated_at": "2026-07-17T15:54:41.510532Z"
+  },
+  {
+    "id": "ENT-00298",
+    "name": "new entitlement ENT-00298",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00079"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-17T17:05:13.949453Z",
+    "updated_at": "2026-07-17T17:05:13.949453Z"
+  },
+  {
+    "id": "ENT-00299",
+    "name": "new entitlement ENT-00299",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00182"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-17T18:32:24.285976Z",
+    "updated_at": "2026-07-17T18:32:24.285976Z"
+  },
+  {
+    "id": "ENT-00300",
+    "name": "new entitlement ENT-00300",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00042"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-17T20:00:44.449629Z",
+    "updated_at": "2026-07-17T20:00:44.449629Z"
+  },
+  {
+    "id": "ENT-00301",
+    "name": "new entitlement ENT-00301",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00154"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-17T21:13:08.040543Z",
+    "updated_at": "2026-07-17T21:13:08.040543Z"
+  },
+  {
+    "id": "ENT-00302",
+    "name": "new entitlement ENT-00302",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-18T00:52:36.243982Z",
+    "updated_at": "2026-07-18T00:52:36.243982Z"
+  },
+  {
+    "id": "ENT-00303",
+    "name": "new entitlement ENT-00303",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-18T03:50:21.587194Z",
+    "updated_at": "2026-07-18T03:50:21.587194Z"
+  },
+  {
+    "id": "ENT-00304",
+    "name": "new entitlement ENT-00304",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00196"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-18T05:59:30.590504Z",
+    "updated_at": "2026-07-18T05:59:30.590504Z"
+  },
+  {
+    "id": "ENT-00305",
+    "name": "new entitlement ENT-00305",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00129"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-18T10:56:45.754738Z",
+    "updated_at": "2026-07-18T10:56:45.754738Z"
+  },
+  {
+    "id": "ENT-00306",
+    "name": "new entitlement ENT-00306",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00174"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-18T14:21:07.192469Z",
+    "updated_at": "2026-07-18T14:21:07.192469Z"
+  },
+  {
+    "id": "ENT-00307",
+    "name": "new entitlement ENT-00307",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-18T15:28:08.249190Z",
+    "updated_at": "2026-07-18T15:28:08.249190Z"
+  },
+  {
+    "id": "ENT-00308",
+    "name": "new entitlement ENT-00308",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00186"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-18T16:26:40.262235Z",
+    "updated_at": "2026-07-18T16:26:40.262235Z"
+  },
+  {
+    "id": "ENT-00309",
+    "name": "new entitlement ENT-00309",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-19T08:05:23.075020Z",
+    "updated_at": "2026-07-19T08:05:23.075020Z"
+  },
+  {
+    "id": "ENT-00310",
+    "name": "new entitlement ENT-00310",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00031"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-19T11:34:37.253556Z",
+    "updated_at": "2026-07-19T11:34:37.253556Z"
+  },
+  {
+    "id": "ENT-00311",
+    "name": "new entitlement ENT-00311",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-19T13:01:32.563461Z",
+    "updated_at": "2026-08-05T18:23:03.859634Z"
+  },
+  {
+    "id": "ENT-00312",
+    "name": "new entitlement ENT-00312",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00016"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-19T20:05:33.496031Z",
+    "updated_at": "2026-07-19T20:05:33.496031Z"
+  },
+  {
+    "id": "ENT-00313",
+    "name": "new entitlement ENT-00313",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-20T01:02:18.514304Z",
+    "updated_at": "2026-07-20T01:02:18.514304Z"
+  },
+  {
+    "id": "ENT-00314",
+    "name": "new entitlement ENT-00314",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00114"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-20T15:26:17.525919Z",
+    "updated_at": "2026-07-20T15:26:17.525919Z"
+  },
+  {
+    "id": "ENT-00315",
+    "name": "new entitlement ENT-00315",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-20T20:16:12.068037Z",
+    "updated_at": "2026-07-20T20:16:12.068037Z"
+  },
+  {
+    "id": "ENT-00316",
+    "name": "new entitlement ENT-00316",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-21T02:02:02.235515Z",
+    "updated_at": "2026-07-21T02:02:02.235515Z"
+  },
+  {
+    "id": "ENT-00317",
+    "name": "new entitlement ENT-00317",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00047"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-21T05:33:38.259055Z",
+    "updated_at": "2026-07-21T05:33:38.259055Z"
+  },
+  {
+    "id": "ENT-00318",
+    "name": "new entitlement ENT-00318",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00114"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-21T19:08:33.330088Z",
+    "updated_at": "2026-07-21T19:08:33.330088Z"
+  },
+  {
+    "id": "ENT-00319",
+    "name": "new entitlement ENT-00319",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00177"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-21T23:01:02.843406Z",
+    "updated_at": "2026-07-21T23:01:02.843406Z"
+  },
+  {
+    "id": "ENT-00320",
+    "name": "new entitlement ENT-00320",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00001"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-22T00:14:02.929955Z",
+    "updated_at": "2026-07-22T00:14:02.929955Z"
+  },
+  {
+    "id": "ENT-00321",
+    "name": "new entitlement ENT-00321",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-22T03:55:32.433546Z",
+    "updated_at": "2026-07-22T03:55:32.433546Z"
+  },
+  {
+    "id": "ENT-00322",
+    "name": "new entitlement ENT-00322",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00201"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-22T14:59:14.135287Z",
+    "updated_at": "2026-07-22T14:59:14.135287Z"
+  },
+  {
+    "id": "ENT-00323",
+    "name": "new entitlement ENT-00323",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00106"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-23T00:58:33.432088Z",
+    "updated_at": "2026-07-23T00:58:33.432088Z"
+  },
+  {
+    "id": "ENT-00324",
+    "name": "new entitlement ENT-00324",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00175"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-23T09:53:55.343095Z",
+    "updated_at": "2026-07-23T09:53:55.343095Z"
+  },
+  {
+    "id": "ENT-00325",
+    "name": "new entitlement ENT-00325",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-23T11:46:42.845161Z",
+    "updated_at": "2026-07-23T11:46:42.845161Z"
+  },
+  {
+    "id": "ENT-00326",
+    "name": "new entitlement ENT-00326",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00059"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-23T15:50:07.922555Z",
+    "updated_at": "2026-07-23T15:50:07.922555Z"
+  },
+  {
+    "id": "ENT-00327",
+    "name": "new entitlement ENT-00327",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-23T21:33:13.377174Z",
+    "updated_at": "2026-07-23T21:33:13.377174Z"
+  },
+  {
+    "id": "ENT-00328",
+    "name": "new entitlement ENT-00328",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00046"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-24T10:31:54.808884Z",
+    "updated_at": "2026-07-24T10:31:54.808884Z"
+  },
+  {
+    "id": "ENT-00329",
+    "name": "new entitlement ENT-00329",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-24T12:15:18.187357Z",
+    "updated_at": "2026-07-24T12:15:18.187357Z"
+  },
+  {
+    "id": "ENT-00330",
+    "name": "new entitlement ENT-00330",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-24T17:23:21.603072Z",
+    "updated_at": "2026-07-29T22:54:48.052812Z"
+  },
+  {
+    "id": "ENT-00331",
+    "name": "new entitlement ENT-00331",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00039"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-24T18:54:49.687616Z",
+    "updated_at": "2026-07-24T18:54:49.687616Z"
+  },
+  {
+    "id": "ENT-00332",
+    "name": "new entitlement ENT-00332",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-24T22:55:55.952283Z",
+    "updated_at": "2026-07-29T21:53:58.052070Z"
+  },
+  {
+    "id": "ENT-00333",
+    "name": "new entitlement ENT-00333",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00005"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-25T20:09:54.481939Z",
+    "updated_at": "2026-07-25T20:09:54.481939Z"
+  },
+  {
+    "id": "ENT-00334",
+    "name": "new entitlement ENT-00334",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00025"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-25T22:25:07.977770Z",
+    "updated_at": "2026-07-25T22:25:07.977770Z"
+  },
+  {
+    "id": "ENT-00335",
+    "name": "new entitlement ENT-00335",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-26T09:53:10.256959Z",
+    "updated_at": "2026-07-26T09:53:10.256959Z"
+  },
+  {
+    "id": "ENT-00336",
+    "name": "new entitlement ENT-00336",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00189"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-26T14:25:45.687327Z",
+    "updated_at": "2026-07-26T14:25:45.687327Z"
+  },
+  {
+    "id": "ENT-00337",
+    "name": "new entitlement ENT-00337",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00046"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-26T20:28:23.416586Z",
+    "updated_at": "2026-07-26T20:28:23.416586Z"
+  },
+  {
+    "id": "ENT-00338",
+    "name": "new entitlement ENT-00338",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00167"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-27T01:10:26.762838Z",
+    "updated_at": "2026-07-27T01:10:26.762838Z"
+  },
+  {
+    "id": "ENT-00339",
+    "name": "new entitlement ENT-00339",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00054"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-27T08:52:39.923958Z",
+    "updated_at": "2026-08-08T10:24:20.209244Z"
+  },
+  {
+    "id": "ENT-00340",
+    "name": "new entitlement ENT-00340",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00149"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-27T22:54:35.142142Z",
+    "updated_at": "2026-07-27T22:54:35.142142Z"
+  },
+  {
+    "id": "ENT-00341",
+    "name": "new entitlement ENT-00341",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00191"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-28T02:27:45.820362Z",
+    "updated_at": "2026-07-28T02:27:45.820362Z"
+  },
+  {
+    "id": "ENT-00342",
+    "name": "new entitlement ENT-00342",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00120"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-28T05:30:01.828364Z",
+    "updated_at": "2026-07-28T05:30:01.828364Z"
+  },
+  {
+    "id": "ENT-00343",
+    "name": "new entitlement ENT-00343",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00142"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-28T18:12:33.002580Z",
+    "updated_at": "2026-08-08T11:31:15.591186Z"
+  },
+  {
+    "id": "ENT-00344",
+    "name": "new entitlement ENT-00344",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00087"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-28T19:59:07.137802Z",
+    "updated_at": "2026-07-28T19:59:07.137802Z"
+  },
+  {
+    "id": "ENT-00345",
+    "name": "new entitlement ENT-00345",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00049"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-28T21:11:11.278806Z",
+    "updated_at": "2026-07-28T21:11:11.278806Z"
+  },
+  {
+    "id": "ENT-00346",
+    "name": "new entitlement ENT-00346",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00113"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-29T01:58:53.764179Z",
+    "updated_at": "2026-07-29T01:58:53.764179Z"
+  },
+  {
+    "id": "ENT-00347",
+    "name": "new entitlement ENT-00347",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00227"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-29T13:12:43.134798Z",
+    "updated_at": "2026-07-29T13:12:43.134798Z"
+  },
+  {
+    "id": "ENT-00348",
+    "name": "new entitlement ENT-00348",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00073"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-29T19:50:56.189371Z",
+    "updated_at": "2026-07-29T19:50:56.189371Z"
+  },
+  {
+    "id": "ENT-00349",
+    "name": "new entitlement ENT-00349",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00146"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-29T20:46:04.394046Z",
+    "updated_at": "2026-07-29T20:46:04.394046Z"
+  },
+  {
+    "id": "ENT-00350",
+    "name": "new entitlement ENT-00350",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00197"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-29T23:56:11.807044Z",
+    "updated_at": "2026-07-29T23:56:11.807044Z"
+  },
+  {
+    "id": "ENT-00351",
+    "name": "new entitlement ENT-00351",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00068"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-30T23:30:21.651599Z",
+    "updated_at": "2026-07-30T23:30:21.651599Z"
+  },
+  {
+    "id": "ENT-00352",
+    "name": "new entitlement ENT-00352",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00228"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-07-31T02:07:56.690468Z",
+    "updated_at": "2026-07-31T02:07:56.690468Z"
+  },
+  {
+    "id": "ENT-00353",
+    "name": "new entitlement ENT-00353",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-31T21:35:44.579665Z",
+    "updated_at": "2026-07-31T21:35:44.579665Z"
+  },
+  {
+    "id": "ENT-00354",
+    "name": "new entitlement ENT-00354",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-07-31T22:54:07.258961Z",
+    "updated_at": "2026-07-31T22:54:07.258961Z"
+  },
+  {
+    "id": "ENT-00355",
+    "name": "new entitlement ENT-00355",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00135"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-01T21:22:59.917877Z",
+    "updated_at": "2026-08-01T21:22:59.917877Z"
+  },
+  {
+    "id": "ENT-00356",
+    "name": "new entitlement ENT-00356",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00111"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-01T22:26:36.336707Z",
+    "updated_at": "2026-08-01T22:26:36.336707Z"
+  },
+  {
+    "id": "ENT-00357",
+    "name": "new entitlement ENT-00357",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00185"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-02T14:25:05.889271Z",
+    "updated_at": "2026-08-02T14:25:05.889271Z"
+  },
+  {
+    "id": "ENT-00358",
+    "name": "new entitlement ENT-00358",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-02T15:36:13.854891Z",
+    "updated_at": "2026-08-02T15:36:13.854891Z"
+  },
+  {
+    "id": "ENT-00359",
+    "name": "new entitlement ENT-00359",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-02T16:52:16.211714Z",
+    "updated_at": "2026-08-02T16:52:16.211714Z"
+  },
+  {
+    "id": "ENT-00360",
+    "name": "new entitlement ENT-00360",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00213"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-02T20:26:46.733534Z",
+    "updated_at": "2026-08-02T20:26:46.733534Z"
+  },
+  {
+    "id": "ENT-00361",
+    "name": "new entitlement ENT-00361",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00217"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-02T23:27:38.828169Z",
+    "updated_at": "2026-08-02T23:27:38.828169Z"
+  },
+  {
+    "id": "ENT-00362",
+    "name": "new entitlement ENT-00362",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00226"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-03T04:59:07.038391Z",
+    "updated_at": "2026-08-03T04:59:07.038391Z"
+  },
+  {
+    "id": "ENT-00363",
+    "name": "new entitlement ENT-00363",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00150"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-03T08:32:23.199229Z",
+    "updated_at": "2026-08-03T08:32:23.199229Z"
+  },
+  {
+    "id": "ENT-00364",
+    "name": "new entitlement ENT-00364",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-03T12:15:06.839482Z",
+    "updated_at": "2026-08-03T12:15:06.839482Z"
+  },
+  {
+    "id": "ENT-00365",
+    "name": "new entitlement ENT-00365",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00172"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-03T19:03:17.084213Z",
+    "updated_at": "2026-08-03T19:03:17.084213Z"
+  },
+  {
+    "id": "ENT-00366",
+    "name": "new entitlement ENT-00366",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00076"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-04T01:53:42.791398Z",
+    "updated_at": "2026-08-04T01:53:42.791398Z"
+  },
+  {
+    "id": "ENT-00367",
+    "name": "new entitlement ENT-00367",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00123"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-04T12:26:39.293720Z",
+    "updated_at": "2026-08-04T12:26:39.293720Z"
+  },
+  {
+    "id": "ENT-00368",
+    "name": "new entitlement ENT-00368",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00127"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-04T20:07:39.537658Z",
+    "updated_at": "2026-08-04T20:07:39.537658Z"
+  },
+  {
+    "id": "ENT-00369",
+    "name": "new entitlement ENT-00369",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00110"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-05T05:39:46.489051Z",
+    "updated_at": "2026-08-05T05:39:46.489051Z"
+  },
+  {
+    "id": "ENT-00370",
+    "name": "new entitlement ENT-00370",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-05T12:52:39.964669Z",
+    "updated_at": "2026-08-05T12:52:39.964669Z"
+  },
+  {
+    "id": "ENT-00371",
+    "name": "new entitlement ENT-00371",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00211"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-05T18:23:03.859634Z",
+    "updated_at": "2026-08-05T18:23:03.859634Z"
+  },
+  {
+    "id": "ENT-00372",
+    "name": "new entitlement ENT-00372",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00005"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-06T15:08:58.108357Z",
+    "updated_at": "2026-08-06T15:08:58.108357Z"
+  },
+  {
+    "id": "ENT-00373",
+    "name": "new entitlement ENT-00373",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-07T06:48:16.623187Z",
+    "updated_at": "2026-08-07T06:48:16.623187Z"
+  },
+  {
+    "id": "ENT-00374",
+    "name": "new entitlement ENT-00374",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00112"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-07T08:09:14.208583Z",
+    "updated_at": "2026-08-07T08:09:14.208583Z"
+  },
+  {
+    "id": "ENT-00375",
+    "name": "new entitlement ENT-00375",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00032"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-07T09:30:04.558065Z",
+    "updated_at": "2026-08-07T09:30:04.558065Z"
+  },
+  {
+    "id": "ENT-00376",
+    "name": "new entitlement ENT-00376",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00109"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-07T10:27:23.699536Z",
+    "updated_at": "2026-08-07T10:27:23.699536Z"
+  },
+  {
+    "id": "ENT-00377",
+    "name": "new entitlement ENT-00377",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-07T12:06:21.681193Z",
+    "updated_at": "2026-08-07T12:06:21.681193Z"
+  },
+  {
+    "id": "ENT-00378",
+    "name": "new entitlement ENT-00378",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-07T18:44:10.879441Z",
+    "updated_at": "2026-08-07T18:44:10.879441Z"
+  },
+  {
+    "id": "ENT-00379",
+    "name": "new entitlement ENT-00379",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00034"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-08T03:06:11.600684Z",
+    "updated_at": "2026-08-08T03:06:11.600684Z"
+  },
+  {
+    "id": "ENT-00380",
+    "name": "new entitlement ENT-00380",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-08T11:31:15.591186Z",
+    "updated_at": "2026-08-08T11:31:15.591186Z"
+  },
+  {
+    "id": "ENT-00381",
+    "name": "new entitlement ENT-00381",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00060"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-08T18:26:56.260339Z",
+    "updated_at": "2026-08-08T18:26:56.260339Z"
+  },
+  {
+    "id": "ENT-00382",
+    "name": "new entitlement ENT-00382",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00239"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-08T19:07:29.208455Z",
+    "updated_at": "2026-08-08T19:07:29.208455Z"
+  },
+  {
+    "id": "ENT-00383",
+    "name": "new entitlement ENT-00383",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00154"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-08T21:54:05.201693Z",
+    "updated_at": "2026-08-08T21:54:05.201693Z"
+  },
+  {
+    "id": "ENT-00384",
+    "name": "new entitlement ENT-00384",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00178"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-08T22:55:16.609126Z",
+    "updated_at": "2026-08-08T22:55:16.609126Z"
   }
 ]
