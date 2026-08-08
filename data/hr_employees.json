@@ -3153,8 +3153,8 @@
     "id": "EMP-00133",
     "full_name": "Chloe Hendricks",
     "email": "emp-00133@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -3167,6 +3167,12 @@
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-05-14T17:17:24.814190Z",
+        "ended_at": "2026-08-08T21:24:40.133891Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-08T21:24:40.133891Z",
         "ended_at": null
       }
     ],
@@ -13846,7 +13852,7 @@
     "email": "emp-00624@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -13857,7 +13863,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-13T20:46:36.310241Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T21:24:40.133891Z"
   },
   {
     "id": "EMP-00625",
@@ -27570,6 +27576,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T20:56:06.817569Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01318",
+    "full_name": "Keith Jennings",
+    "email": "emp-01318@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-08T21:24:40.133891Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T21:24:40.133891Z",
     "terminated_at": null
   }
 ]
