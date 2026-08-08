@@ -127,8 +127,14 @@ def test_unauthenticated_ctadmin_api_and_action_roots_return_json_401(app_client
     for method, path in [
         (client.get, "/ctadmin/api"),
         (client.post, "/ctadmin/api"),
+        (client.put, "/ctadmin/api"),
+        (client.patch, "/ctadmin/api"),
+        (client.delete, "/ctadmin/api"),
         (client.get, "/ctadmin/actions"),
         (client.post, "/ctadmin/actions"),
+        (client.put, "/ctadmin/actions"),
+        (client.patch, "/ctadmin/actions"),
+        (client.delete, "/ctadmin/actions"),
     ]:
         response = method(path, follow_redirects=False)
 
