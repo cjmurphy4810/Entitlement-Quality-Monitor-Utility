@@ -22611,7 +22611,7 @@
     "email": "emp-01061@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -22622,7 +22622,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T00:14:02.929955Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T14:56:52.237900Z"
   },
   {
     "id": "EMP-01062",
@@ -27280,6 +27280,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T13:39:58.480630Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01304",
+    "full_name": "Julia Gaines",
+    "email": "emp-01304@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-08T14:56:52.237900Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T14:56:52.237900Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01305",
+    "full_name": "Daniel Oconnell",
+    "email": "emp-01305@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-08T14:56:52.237900Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T14:56:52.237900Z",
     "terminated_at": null
   }
 ]
