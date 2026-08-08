@@ -27079,5 +27079,24 @@
     "manager_id": null,
     "hired_at": "2026-08-08T01:14:49.681318Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01294",
+    "full_name": "Rebecca Powell",
+    "email": "emp-01294@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-08T03:06:11.600684Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T03:06:11.600684Z",
+    "terminated_at": null
   }
 ]
