@@ -240,3 +240,20 @@ def test_login_throttle_key_normalizes_username_and_uses_client_address():
     key = login_throttle_key("  DEMO-Admin  ", make_request())
 
     assert key == "demo-admin:203.0.113.7"
+
+
+def test_mutation_throttle_is_per_session_ip_and_memory_bounded():
+    """A hot mutation session must be rejected without growing the key store forever."""
+    from eqm.ctadmin.auth import MutationThrottle
+
+    throttle = MutationThrottle(limit=2, window_seconds=60, max_keys=2)
+    throttle.check_and_record("session-a:203.0.113.7", now=0.0)
+    throttle.check_and_record("session-a:203.0.113.7", now=1.0)
+
+    with pytest.raises(HTTPException) as exc_info:
+        throttle.check_and_record("session-a:203.0.113.7", now=2.0)
+
+    assert exc_info.value.status_code == 429
+    throttle.check_and_record("session-b:203.0.113.7", now=2.0)
+    throttle.check_and_record("session-c:203.0.113.7", now=2.0)
+    assert len(throttle.attempts) == 2

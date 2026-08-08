@@ -3,7 +3,7 @@
 {% block signal_rail %}
   <section class="signal-rail" aria-label="Finding trace">
     <span class="signal-node" aria-hidden="true"></span><span>{{ finding.ruleId }} / {{ finding.targetType }} / {{ finding.targetId }}</span>
-    <a class="signal-clear" href="{{ origin }}">Back to remediation</a>
+    <a class="signal-clear" href="{{ origin }}">Back to {{ origin_label }}</a>
   </section>
 {% endblock %}
 
@@ -14,6 +14,26 @@
       <div class="finding-state severity-{{ finding.severity | lower }}"><span>{{ finding.severity }}</span><strong>{{ finding.status }}</strong></div>
     </header>
     {% if not repairable %}<div class="repair-outcome is-success" role="status">Finding {{ finding.status | lower }}. Audit history remains available below.</div>{% endif %}
+
+    <section id="finding-repair-receipt" class="repair-receipt" aria-labelledby="repair-receipt-heading" aria-live="polite"{% if not repair_receipt %} hidden{% endif %}>
+      <h2 id="repair-receipt-heading">Repair receipt</h2>
+      <div class="receipt-content">
+        {% if repair_receipt %}
+          <p><strong>Evaluation:</strong> {% if repair_receipt.evaluation.cleared %}Cleared{% else %}Finding remains{% endif %} · {{ repair_receipt.evaluation.workflowState | replace('_', ' ') | title }}</p>
+          <p><strong>Record IDs:</strong> {{ repair_receipt.record_ids | join(', ') }}</p>
+          {% for change in repair_receipt.changes %}
+            <section class="receipt-change">
+              <h3>{{ change.collection | title }} / {{ change.record_id }}</h3>
+              <dl class="evidence-list">
+                {% for field, before in change['before'].items() %}
+                  <div><dt>{{ field | replace('_', ' ') }}</dt><dd><span class="receipt-before">{{ before if before is string or before is number else before | tojson }}</span> → <span class="receipt-after">{{ change['after'][field] if change['after'][field] is string or change['after'][field] is number else change['after'][field] | tojson }}</span></dd></div>
+                {% endfor %}
+              </dl>
+            </section>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </section>
 
     <section class="finding-facts" aria-label="Finding identifiers">
       <div><span>Violation</span><strong>{{ finding.violationId }}</strong></div><div><span>Rule</span><strong>{{ finding.ruleId }}</strong></div>

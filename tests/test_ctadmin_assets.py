@@ -1,5 +1,6 @@
 import hashlib
 import json
+import re
 import shutil
 import subprocess
 from html.parser import HTMLParser
@@ -342,6 +343,49 @@ def test_rendered_data_surfaces_have_accessible_names_and_dialog_semantics(app_c
         assert audit.references_resolve(dialog[0]["aria-describedby"])
 
 
+def test_active_navigation_and_dashboard_detail_origin_are_rendered(app_client):
+    """Each page exposes current location, and contextual detail preserves its dashboard back path."""
+    client, _ = app_client
+    _seed = get_settings().data_dir
+    _seed.joinpath("violations.json").write_text(
+        json.dumps(
+            [
+                {
+                    "id": "VIO-100",
+                    "rule_id": "ENT-Q-01",
+                    "rule_name": "PBL completeness",
+                    "severity": "high",
+                    "detected_at": "2026-08-07T12:00:00+00:00",
+                    "target_type": "entitlement",
+                    "target_id": "ENT-1",
+                    "explanation": "Description is too short.",
+                    "evidence": {},
+                    "recommended_action": "update_entitlement_field",
+                    "suggested_fix": {},
+                    "workflow_state": "open",
+                    "workflow_history": [],
+                    "appian_case_id": None,
+                }
+            ]
+        )
+    )
+    assert _login(client).status_code == 303
+
+    dashboard = client.get("/ctadmin/dashboard?severity=high")
+    assert '<a href="/ctadmin/dashboard" aria-current="page">Dashboard</a>' in dashboard.text
+    embedded = re.search(
+        r'<script id="dashboard-data" type="application/json">(.*?)</script>',
+        dashboard.text,
+        re.DOTALL,
+    )
+    row = json.loads(embedded.group(1))["rows"][0]
+    assert "origin=%2Fctadmin%2Fdashboard%3Fseverity%3Dhigh" in row["detailHref"]
+
+    detail = client.get(row["detailHref"])
+    assert '<a href="/ctadmin/dashboard" aria-current="page">Dashboard</a>' in detail.text
+    assert "Back to dashboard" in detail.text
+
+
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
 def test_chart_assets_render_accessible_interactive_svg_and_safe_zero_state():
     """Dropping SVG semantics, keyboard activation, or zero guards makes charts unusable."""
@@ -480,6 +524,8 @@ const selectors = {};
   '#clear-filters', '#retry-dashboard', '#previous-page', '#next-page',
   '#dashboard-search', '#finding-search', '#dashboard-error', '#kpi-total',
   '#kpi-critical', '#kpi-high', '#kpi-not-started', '#kpi-in-progress',
+  '#kpi-total-assignments', '#kpi-total-findings', '#kpi-high-critical',
+  '#kpi-catalog-findings', '#kpi-open',
   '#chart-status', '#chart-severity', '#chart-target-type', '#chart-rule',
   '#chart-coverage', '#filter-summary', '#results-count', '#findings-results',
   '#page-status', '#persona-clean-state',
@@ -522,7 +568,8 @@ function makePayload(filters = {}, page = 1) {
     series: { status: [], severity: [], targetType: [], rule: [] },
     rows: [],
     filters: {
-      state: [], severity: [], targetType: [], rule: [], search: '', page: 1, pageSize: 50,
+      state: [], severity: [], targetType: [], rule: [], assignmentStatus: [], coverage: [],
+      search: '', page: 1, pageSize: 50,
       ...filters,
     },
     pagination: { page, pageSize: filters.pageSize || 50, total: 0, totalPages: 4 },
@@ -675,6 +722,60 @@ process.stdout.write(JSON.stringify({ requests, pushed, columns: row.children.le
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
+def test_health_controller_renders_interactive_donuts_exact_rows_and_new_filter_dimensions():
+    """The DOM controller must expose both donut dimensions and the approved eight-cell row."""
+    result = _run_dashboard_runtime(r"""
+const payload = makePayload({}, 1);
+payload.kpis = {
+  ...payload.kpis, totalAssignments: 3, totalFindings: 1, openFindings: 1,
+  highCriticalFindings: 1, catalogFindings: 1,
+};
+payload.series.assignmentStatus = [
+  { key: 'clean', label: 'Clean', count: 2 },
+  { key: 'open', label: 'Open', count: 1 },
+  { key: 'pending_approval', label: 'Pending Approval', count: 0 },
+];
+payload.coverage = { total: 2, withFindings: 1, withoutFindings: 1 };
+payload.rows = [{
+  violationId: 'VIO-100', userName: 'Casey Example', ruleId: 'ENT-Q-01',
+  severity: 'High', status: 'Open', targetType: 'entitlement', targetId: 'ENT-1',
+  recommendedAction: 'update_entitlement_field', detailHref: '/ctadmin/findings/VIO-100?origin=dashboard',
+}];
+payload.pagination = { page: 1, pageSize: 50, total: 1, totalPages: 1 };
+new window.DashboardController(root, payload, { history, location });
+const statusGroups = selectors['#chart-status'].children[0].children.filter(node => node.tagName === 'g');
+const coverageGroups = selectors['#chart-coverage'].children[0].children.filter(node => node.tagName === 'g');
+const cells = selectors['#findings-results'].children[0].children;
+process.stdout.write(JSON.stringify({
+  statusDimensions: statusGroups.map(node => node.attributes['data-filter-dimension']),
+  statusKeys: statusGroups.map(node => node.attributes['data-filter-key']),
+  coverageDimensions: coverageGroups.map(node => node.attributes['data-filter-dimension']),
+  coverageKeys: coverageGroups.map(node => node.attributes['data-filter-key']),
+  cells: cells.map(cell => cell.textContent || cell.children[0]?.textContent),
+  detailHref: cells[0].children[0].href,
+}));
+""")
+
+    assert result == {
+        "statusDimensions": ["assignmentStatus", "assignmentStatus", "assignmentStatus"],
+        "statusKeys": ["clean", "open", "pending_approval"],
+        "coverageDimensions": ["coverage", "coverage"],
+        "coverageKeys": ["with_findings", "clean"],
+        "cells": [
+            "VIO-100",
+            "Casey Example",
+            "ENT-Q-01",
+            "Open",
+            "High",
+            "entitlement / ENT-1",
+            "Update Entitlement Field",
+            "View finding",
+        ],
+        "detailHref": "/ctadmin/findings/VIO-100?origin=dashboard",
+    }
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
 def test_persona_clean_state_tracks_unfiltered_zero_results_only():
     """A genuinely clean persona must not be confused with a filter that returns no rows."""
     result = _run_dashboard_runtime(r"""
@@ -738,6 +839,7 @@ const nodes = {};
   '#repair-form', '#repair-fields', '#repair-drawer-loading', '#repair-drawer-error',
   '#repair-drawer-content', '#repair-outcome', '#repair-preview-id', '#repair-preview-reason',
   '#repair-preview-evidence', '#repair-confirm',
+  '#finding-repair-receipt .receipt-content',
 ].forEach(key => nodes[key] = new Element(key.includes('form') ? 'form' : key.includes('confirm') || key.includes('close') || key.includes('cancel') ? 'button' : 'div'));
 nodes['#repair-drawer'].dataset.csrfToken = 'csrf-value';
 nodes['#repair-drawer'].append(nodes['#repair-drawer-close'], nodes['#repair-fields'], nodes['#repair-cancel'], nodes['#repair-confirm']);
@@ -862,6 +964,7 @@ const nodes = {};
   '#repair-form', '#repair-fields', '#repair-drawer-loading', '#repair-drawer-error',
   '#repair-drawer-content', '#repair-outcome', '#repair-preview-id', '#repair-preview-reason',
   '#repair-preview-evidence', '#repair-confirm',
+  '#finding-repair-receipt .receipt-content',
 ].forEach(key => nodes[key] = new Element(key.includes('form') ? 'form' : key.includes('confirm') || key.includes('close') || key.includes('cancel') ? 'button' : 'div'));
 nodes['#repair-drawer'].dataset.csrfToken = 'csrf-value';
 nodes['#repair-form'].append(nodes['#repair-fields'], nodes['#repair-cancel'], nodes['#repair-confirm']);
@@ -885,7 +988,9 @@ const calls = [];
 const fetchImpl = (url, options = {}) => {
   calls.push({ url, options });
   if (options.method === 'POST') return Promise.resolve({ ok: true, status: 200, json: async () => ({
-    violationId: 'B', cleared: true, summary: 'Linked B to RES-1.', changes: [],
+    violationId: 'B', ruleId: 'CMDB-01', cleared: true, summary: 'Linked B to RES-1.',
+    recordIds: ['ENT-1', 'RES-1'], evaluation: { cleared: true, workflowState: 'resolved' },
+    changes: [{ collection: 'entitlements', record_id: 'ENT-1', before: { linked_resource_ids: [] }, after: { linked_resource_ids: ['RES-1'] } }],
   }) });
   if (url.includes('/A/')) return new Promise(resolve => { resolveA = resolve; });
   if (url.includes('/B/')) return new Promise(resolve => { resolveB = resolve; });
@@ -942,6 +1047,8 @@ const previewB = {
     placeholderValue: placeholder.value,
     placeholderSelected: placeholder.selected,
     placeholderDisabled: placeholder.disabled,
+    drawerReceipt: nodes['#repair-outcome'].children.map(node => node.textContent),
+    detailReceipt: nodes['#finding-repair-receipt .receipt-content'].children.map(node => node.textContent),
   }));
 })().catch(error => { console.error(error); process.exitCode = 1; });
 """
@@ -967,4 +1074,15 @@ const previewB = {
         "placeholderValue": "",
         "placeholderSelected": True,
         "placeholderDisabled": True,
+        "drawerReceipt": [
+            "Repair receipt",
+            "Evaluation: Cleared · Resolved",
+            "Record IDs: ENT-1, RES-1",
+            "Entitlements / ENT-1",
+        ],
+        "detailReceipt": [
+            "Evaluation: Cleared · Resolved",
+            "Record IDs: ENT-1, RES-1",
+            "Entitlements / ENT-1",
+        ],
     }

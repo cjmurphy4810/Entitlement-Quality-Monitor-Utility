@@ -228,6 +228,11 @@ tbody tr:hover { background: #f3f8fa; }
 .repair-outcome { padding: .8rem; border-left: 4px solid var(--circuit-cyan); background: var(--instrument-ice); }
 .repair-outcome:empty { display: none; }
 .repair-outcome.is-success { border-left-color: var(--verified-green); background: #eaf6f1; color: #165c43; }
+.repair-receipt { margin: 1.25rem 0; padding: 1rem; border: 1px solid var(--verified-green); background: #eaf6f1; }
+.repair-receipt h2, .repair-receipt h3 { margin-top: 0; }
+.receipt-change { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid var(--border); }
+.receipt-before { color: var(--operational-slate); text-decoration: line-through; }
+.receipt-after { color: #165c43; font-weight: 800; }
 
 @media (max-width: 760px) {
   .app-header { flex-wrap: wrap; gap: var(--space-1) var(--space-2); padding-block: .65rem; }

@@ -8,7 +8,7 @@ import hmac
 import json
 import secrets
 import time
-from collections import defaultdict, deque
+from collections import OrderedDict, defaultdict, deque
 from dataclasses import dataclass
 
 from fastapi import HTTPException, status
@@ -228,3 +228,37 @@ def login_throttle_key(username: str, request: Request) -> str:
     """Return the normalized username and client address throttle key."""
     address = request.client.host if request.client else "unknown"
     return f"{username.strip().casefold()}:{address}"
+
+
+class MutationThrottle:
+    """Bound mutation attempts per signed session and client address in memory."""
+
+    def __init__(self, limit: int = 5, window_seconds: int = 60, max_keys: int = 2048) -> None:
+        self.limit = limit
+        self.window_seconds = window_seconds
+        self.max_keys = max_keys
+        self.attempts: OrderedDict[str, deque[float]] = OrderedDict()
+
+    def check_and_record(self, key: str, now: float) -> None:
+        recent = self.attempts.get(key)
+        if recent is None:
+            while len(self.attempts) >= self.max_keys:
+                self.attempts.popitem(last=False)
+            recent = deque()
+            self.attempts[key] = recent
+        else:
+            self.attempts.move_to_end(key)
+        while recent and recent[0] <= now - self.window_seconds:
+            recent.popleft()
+        if len(recent) >= self.limit:
+            raise HTTPException(
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                detail="Too many mutation attempts",
+            )
+        recent.append(now)
+
+
+def mutation_throttle_key(principal: SessionPrincipal, request: Request) -> str:
+    """Return a key tied to both a signed-session nonce and its client address."""
+    address = request.client.host if request.client else "unknown"
+    return f"{principal.nonce}:{address}"

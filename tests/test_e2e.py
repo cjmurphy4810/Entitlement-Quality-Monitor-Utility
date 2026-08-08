@@ -185,7 +185,10 @@ def test_ctadmin_persona_repair_updates_source_and_dashboard_totals(app_client):
     dashboard_before = client.get("/ctadmin/api/dashboard")
     assert dashboard_before.status_code == 200
     assert dashboard_before.json()["kpis"] == {
+        "totalAssignments": 1,
         "totalFindings": 1,
+        "highCriticalFindings": 0,
+        "catalogFindings": 1,
         "criticalFindings": 0,
         "highFindings": 0,
         "notStartedFindings": 1,

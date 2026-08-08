@@ -1,7 +1,7 @@
 (function dashboardApplication(global) {
   "use strict";
 
-  const FILTER_KEYS = ["state", "severity", "targetType", "rule"];
+  const FILTER_KEYS = ["state", "severity", "targetType", "rule", "assignmentStatus", "coverage"];
   const STATUS_BUCKETS = {
     not_started: new Set(["not_started", "open"]),
     in_progress: new Set(["in_progress", "pending_approval", "approved", "manual_repair"]),
@@ -17,6 +17,52 @@
 
   function titleCase(value) {
     return String(value).replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
+  }
+
+  function receiptValue(value) {
+    if (value === null || value === undefined) return "—";
+    return typeof value === "object" ? JSON.stringify(value) : String(value);
+  }
+
+  function renderRepairReceipt(container, payload, { heading = true } = {}) {
+    if (!container) return;
+    container.replaceChildren();
+    if (heading) container.append(createElement("h3", "", "Repair receipt"));
+    const evaluation = payload.evaluation || {
+      cleared: payload.cleared,
+      workflowState: payload.workflowState,
+    };
+    const outcome = evaluation.cleared ? "Cleared" : "Finding remains";
+    container.append(
+      createElement("p", "", `Evaluation: ${outcome} · ${titleCase(evaluation.workflowState || "evaluated")}`),
+      createElement("p", "", `Record IDs: ${(payload.recordIds || []).join(", ") || "None"}`),
+    );
+    (payload.changes || []).forEach(change => {
+      const section = createElement("section", "receipt-change");
+      const sectionTitle = `${titleCase(change.collection || "record")} / ${change.record_id || "unknown"}`;
+      section.textContent = sectionTitle;
+      const fields = createElement("dl", "evidence-list");
+      const fieldNames = new Set([
+        ...Object.keys(change.before || {}),
+        ...Object.keys(change.after || {}),
+      ]);
+      fieldNames.forEach(field => {
+        const row = createElement("div");
+        row.append(
+          createElement("dt", "", titleCase(field)),
+          createElement(
+            "dd",
+            "",
+            `${receiptValue(change.before?.[field])} → ${receiptValue(change.after?.[field])}`,
+          ),
+        );
+        fields.append(row);
+      });
+      section.append(fields);
+      container.append(section);
+    });
+    container.hidden = false;
+    container.classList?.toggle("is-success", Boolean(evaluation.cleared));
   }
 
   class RepairDrawer {
@@ -40,8 +86,6 @@
       this.onSuccess = options.onSuccess || (async payload => {
         if (global.ctadminDashboard?.refresh) {
           await global.ctadminDashboard.refresh({ updateHistory: false });
-        } else {
-          global.setTimeout?.(() => global.location?.reload?.(), 900);
         }
         return payload;
       });
@@ -261,7 +305,14 @@
           this.setError(payload.detail || "Repair could not be completed.");
           return null;
         }
-        this.setOutcome(`Repair verified. ${payload.summary}`, true);
+        renderRepairReceipt(this.outcome, payload);
+        renderRepairReceipt(
+          document.querySelector("#finding-repair-receipt .receipt-content"),
+          payload,
+          { heading: false },
+        );
+        const receiptPanel = document.querySelector("#finding-repair-receipt");
+        if (receiptPanel) receiptPanel.hidden = false;
         this.outcome?.focus?.();
         await this.onSuccess(payload);
         return payload;
@@ -415,6 +466,10 @@
     render(payload) {
       const kpis = {
         "#kpi-total": payload.kpis.totalFindings,
+        "#kpi-total-assignments": payload.kpis.totalAssignments,
+        "#kpi-total-findings": payload.kpis.totalFindings,
+        "#kpi-high-critical": payload.kpis.highCriticalFindings,
+        "#kpi-catalog-findings": payload.kpis.catalogFindings,
         "#kpi-critical": payload.kpis.criticalFindings,
         "#kpi-high": payload.kpis.highFindings,
         "#kpi-not-started": payload.kpis.notStartedFindings,
@@ -429,9 +484,9 @@
       });
 
       const onSelect = (dimension, key) => this.toggleFilter(dimension, key);
-      global.renderBarChart(document.querySelector("#chart-status"), payload.series.status, {
-        dimension: "state", selected: this.selectedStatusBuckets(), onSelect,
-        label: "Findings by workflow status",
+      global.renderDonutChart(document.querySelector("#chart-status"), payload.series.assignmentStatus || [], {
+        dimension: "assignmentStatus", selected: this.filters.get("assignmentStatus"), onSelect,
+        label: "Assignments by status", unit: "assignments",
       });
       global.renderBarChart(document.querySelector("#chart-severity"), payload.series.severity, {
         dimension: "severity", selected: this.filters.get("severity"), onSelect,
@@ -446,9 +501,12 @@
         label: "Findings by control rule",
       });
       global.renderDonutChart(document.querySelector("#chart-coverage"), [
-        { key: "withFindings", label: "With findings", count: payload.coverage.withFindings },
-        { key: "withoutFindings", label: "Without findings", count: payload.coverage.withoutFindings },
-      ], { label: "Entitlement coverage" });
+        { key: "with_findings", label: "With Findings", count: payload.coverage.withFindings },
+        { key: "clean", label: "Clean", count: payload.coverage.withoutFindings },
+      ], {
+        dimension: "coverage", selected: this.filters.get("coverage"), onSelect,
+        label: "Entitlement coverage",
+      });
       this.renderFilterSummary(payload);
       const cleanState = document.querySelector("#persona-clean-state");
       if (cleanState) {
@@ -506,7 +564,7 @@
           ? "No findings match this signal. Clear a filter or broaden the search."
           : "No findings require action in this perspective.";
         const cell = createElement("td", "", message);
-        cell.colSpan = this.showRepairActions ? 8 : 7;
+        cell.colSpan = 8;
         row.append(cell);
         body.append(row);
       } else {
@@ -520,27 +578,27 @@
             findingCell,
             createElement("td", "", finding.userName),
             createElement("td", "mono-cell", finding.ruleId),
-            createElement("td", `severity severity-${finding.severity.toLowerCase()}`, finding.severity),
             createElement("td", "", finding.status),
+            createElement("td", `severity severity-${finding.severity.toLowerCase()}`, finding.severity),
             createElement("td", "mono-cell", `${finding.targetType} / ${finding.targetId}`),
-            createElement("td", "mono-cell", new Date(finding.detectedAt).toLocaleDateString()),
+            createElement("td", "", titleCase(finding.recommendedAction || "Review finding")),
           );
-          if (this.showRepairActions) {
-            const actionCell = createElement("td");
-            if (finding.repairable) {
-              const repair = createElement("button", "repair-trigger secondary-button", "Repair");
-              repair.type = "button";
-              repair.setAttribute("data-finding-id", finding.violationId);
-              repair.setAttribute("data-dashboard-managed", "true");
-              repair.addEventListener("click", () => global.ctadminRepairDrawer?.open(
-                finding.violationId, repair,
-              ));
-              actionCell.append(repair);
-            } else {
-              actionCell.append(createElement("span", "state-complete", "Complete"));
-            }
-            row.append(actionCell);
+          const actionCell = createElement("td");
+          if (this.showRepairActions && finding.repairable) {
+            const repair = createElement("button", "repair-trigger secondary-button", "Repair");
+            repair.type = "button";
+            repair.setAttribute("data-finding-id", finding.violationId);
+            repair.setAttribute("data-dashboard-managed", "true");
+            repair.addEventListener("click", () => global.ctadminRepairDrawer?.open(
+              finding.violationId, repair,
+            ));
+            actionCell.append(repair);
+          } else {
+            const detail = createElement("a", "finding-link", "View finding");
+            detail.href = finding.detailHref || `/ctadmin/findings/${encodeURIComponent(finding.violationId)}`;
+            actionCell.append(detail);
           }
+          row.append(actionCell);
           body.append(row);
         });
       }

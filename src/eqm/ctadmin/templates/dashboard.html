@@ -6,7 +6,7 @@
     <div id="filter-summary" class="filter-summary" aria-live="polite">
       <span>Evaluation scope: all active records</span>
     </div>
-    <button id="clear-filters" class="signal-clear" type="button" disabled>Clear signal</button>
+    <button id="clear-filters" class="signal-clear" type="button" disabled>Clear Filters</button>
   </section>
 {% endblock %}
 
@@ -33,37 +33,37 @@
     </div>
 
     <section class="kpi-grid" aria-label="Finding health instruments">
+      <article class="kpi-card">
+        <span class="kpi-label">Total Assignments</span>
+        <strong id="kpi-total-assignments" class="kpi-value">{{ dashboard_payload.kpis.totalAssignments }}</strong>
+        <small>Current assignment population</small>
+      </article>
       <article class="kpi-card kpi-total">
-        <span class="kpi-label">Active findings</span>
-        <strong id="kpi-total" class="kpi-value">{{ dashboard_payload.kpis.totalFindings }}</strong>
+        <span class="kpi-label">Total Findings</span>
+        <strong id="kpi-total-findings" class="kpi-value">{{ dashboard_payload.kpis.totalFindings }}</strong>
         <small>Current evaluation scope</small>
       </article>
+      <article class="kpi-card">
+        <span class="kpi-label">Open</span>
+        <strong id="kpi-open" class="kpi-value">{{ dashboard_payload.kpis.openFindings }}</strong>
+        <small>Awaiting action</small>
+      </article>
       <article class="kpi-card kpi-fault">
-        <span class="kpi-label">Critical</span>
-        <strong id="kpi-critical" class="kpi-value">{{ dashboard_payload.kpis.criticalFindings }}</strong>
-        <small>Immediate control risk</small>
+        <span class="kpi-label">High/Critical Severity</span>
+        <strong id="kpi-high-critical" class="kpi-value">{{ dashboard_payload.kpis.highCriticalFindings }}</strong>
+        <small>Priority control risk</small>
       </article>
       <article class="kpi-card">
-        <span class="kpi-label">High</span>
-        <strong id="kpi-high" class="kpi-value">{{ dashboard_payload.kpis.highFindings }}</strong>
-        <small>Priority review</small>
-      </article>
-      <article class="kpi-card">
-        <span class="kpi-label">Not started</span>
-        <strong id="kpi-not-started" class="kpi-value">{{ dashboard_payload.kpis.notStartedFindings }}</strong>
-        <small>Awaiting a repair path</small>
-      </article>
-      <article class="kpi-card kpi-progress">
-        <span class="kpi-label">In progress</span>
-        <strong id="kpi-in-progress" class="kpi-value">{{ dashboard_payload.kpis.inProgressFindings }}</strong>
-        <small>Moving through workflow</small>
+        <span class="kpi-label">Catalog Findings</span>
+        <strong id="kpi-catalog-findings" class="kpi-value">{{ dashboard_payload.kpis.catalogFindings }}</strong>
+        <small>Entitlement catalog records</small>
       </article>
     </section>
 
     <section class="chart-grid" aria-label="Interactive finding evidence">
       <article class="chart-panel">
-        <header><p class="panel-code">SIGNAL 01</p><h2>Status</h2></header>
-        <div id="chart-status" class="chart-container" aria-label="Findings by workflow status"></div>
+        <header><p class="panel-code">SIGNAL 01</p><h2>Assignment status</h2></header>
+        <div id="chart-status" class="chart-container donut-container" aria-label="Assignments by status"></div>
       </article>
       <article class="chart-panel">
         <header><p class="panel-code">SIGNAL 02</p><h2>Severity</h2></header>
@@ -92,9 +92,9 @@
         <table>
           <thead>
             <tr>
-              <th scope="col">Finding</th><th scope="col">User</th><th scope="col">Rule</th>
-              <th scope="col">Severity</th><th scope="col">Status</th><th scope="col">Target</th>
-              <th scope="col">Detected</th>
+              <th scope="col">Violation</th><th scope="col">User</th><th scope="col">Rule</th>
+              <th scope="col">Status</th><th scope="col">Severity</th><th scope="col">Target</th>
+              <th scope="col">Recommended Action</th><th scope="col">Action</th>
             </tr>
           </thead>
           <tbody id="findings-results"></tbody>

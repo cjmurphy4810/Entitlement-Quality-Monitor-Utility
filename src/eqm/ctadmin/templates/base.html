@@ -17,14 +17,17 @@
         <span class="brand-product">Entitlement Quality Monitor</span>
       </a>
       <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="/ctadmin/dashboard">Dashboard</a>
-        <a href="/ctadmin/remediation">Remediation</a>
-        <a href="/ctadmin/my-findings">My Findings</a>
+        <a href="/ctadmin/dashboard"{% if active_nav == 'dashboard' %} aria-current="page"{% endif %}>Dashboard</a>
+        <a href="/ctadmin/remediation"{% if active_nav == 'remediation' %} aria-current="page"{% endif %}>Remediation</a>
+        <a href="/ctadmin/my-findings"{% if active_nav == 'my_findings' %} aria-current="page"{% endif %}>My Findings</a>
       </nav>
       <div class="identity">
         {% if persona_id and persona_id != 'ctadmin' %}<span class="persona">Persona: {{ persona_id }}</span>{% endif %}
         <span class="username">{{ username }}</span>
-        <form action="/ctadmin/logout" method="post"><button class="quiet-button" type="submit">Log out</button></form>
+        <form action="/ctadmin/logout" method="post">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+          <button class="quiet-button" type="submit">Log out</button>
+        </form>
       </div>
     </header>
     {% block signal_rail %}

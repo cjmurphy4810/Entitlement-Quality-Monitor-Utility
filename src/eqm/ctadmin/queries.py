@@ -18,6 +18,16 @@ WORKFLOW_BUCKETS = (
     ("in_progress", "In progress", frozenset({"pending_approval", "approved", "manual_repair"})),
     ("complete", "Complete", TERMINAL_STATES),
 )
+ASSIGNMENT_STATUS_ORDER = (
+    ("clean", "Clean"),
+    ("open", "Open"),
+    ("pending_approval", "Pending Approval"),
+    ("approved", "Approved"),
+    ("manual_repair", "Manual Repair"),
+)
+ASSIGNMENT_STATUS_PRIORITY = {
+    key: priority for priority, (key, _label) in enumerate(ASSIGNMENT_STATUS_ORDER)
+}
 
 
 def _normalise_set(values: frozenset[str]) -> frozenset[str]:
@@ -37,6 +47,8 @@ class FindingFilters:
     severities: frozenset[str] = frozenset()
     target_types: frozenset[str] = frozenset()
     rules: frozenset[str] = frozenset()
+    assignment_statuses: frozenset[str] = frozenset()
+    coverage: frozenset[str] = frozenset()
     search: str = ""
     page: int = 1
     page_size: int = DEFAULT_PAGE_SIZE
@@ -46,6 +58,8 @@ class FindingFilters:
         object.__setattr__(self, "severities", _normalise_set(self.severities))
         object.__setattr__(self, "target_types", _normalise_set(self.target_types))
         object.__setattr__(self, "rules", _normalise_set(self.rules))
+        object.__setattr__(self, "assignment_statuses", _normalise_set(self.assignment_statuses))
+        object.__setattr__(self, "coverage", _normalise_set(self.coverage))
         object.__setattr__(self, "search", self.search.strip().casefold())
         object.__setattr__(self, "page", _normalise_positive(self.page, 1))
         object.__setattr__(
@@ -55,7 +69,10 @@ class FindingFilters:
 
 @dataclass(frozen=True, slots=True)
 class DashboardKpis:
+    total_assignments: int
     total_findings: int
+    high_critical_findings: int
+    catalog_findings: int
     critical_findings: int
     high_findings: int
     not_started_findings: int
@@ -90,7 +107,16 @@ def _row_keys(row: dict) -> tuple[str, str, str, str]:
     )
 
 
-def _matches(row: dict, filters: FindingFilters, *, ignore: str | None = None) -> bool:
+def _matches(
+    row: dict,
+    filters: FindingFilters,
+    *,
+    row_assignment_ids: dict[str, frozenset[str]],
+    row_entitlement_ids: dict[str, frozenset[str]],
+    assignment_statuses: dict[str, str],
+    affected_entitlement_ids: frozenset[str],
+    ignore: str | None = None,
+) -> bool:
     state, severity, target_type, rule = _row_keys(row)
     if ignore != "states" and filters.states and state not in filters.states:
         return False
@@ -104,6 +130,20 @@ def _matches(row: dict, filters: FindingFilters, *, ignore: str | None = None) -
         return False
     if ignore != "rules" and filters.rules and rule not in filters.rules:
         return False
+    if ignore != "assignment_statuses" and filters.assignment_statuses:
+        selected_assignments = {
+            assignment_id
+            for assignment_id, assignment_status in assignment_statuses.items()
+            if assignment_status in filters.assignment_statuses
+        }
+        if not row_assignment_ids[row["violationId"]] & selected_assignments:
+            return False
+    if ignore != "coverage" and filters.coverage:
+        affects_covered_entitlement = bool(
+            row_entitlement_ids[row["violationId"]] & affected_entitlement_ids
+        )
+        if "with_findings" not in filters.coverage or not affects_covered_entitlement:
+            return False
     if not filters.states and ignore != "states" and state in TERMINAL_STATES:
         return False
     if filters.search:
@@ -122,6 +162,98 @@ def _matches(row: dict, filters: FindingFilters, *, ignore: str | None = None) -
         if filters.search not in searchable:
             return False
     return True
+
+
+def _relationships_by_row(
+    rows: list[dict],
+    assignments: list[dict],
+    entitlements: list[dict],
+    resources: list[dict],
+) -> tuple[dict[str, frozenset[str]], dict[str, frozenset[str]]]:
+    assignment_by_id = {str(item["id"]): item for item in assignments}
+    entitlement_ids = {str(item["id"]) for item in entitlements}
+    active_by_employee: dict[str, set[str]] = {}
+    active_by_entitlement: dict[str, set[str]] = {}
+    for assignment in assignments:
+        if not assignment.get("active", True):
+            continue
+        assignment_id = str(assignment["id"])
+        active_by_employee.setdefault(str(assignment["employee_id"]), set()).add(assignment_id)
+        active_by_entitlement.setdefault(str(assignment["entitlement_id"]), set()).add(
+            assignment_id
+        )
+
+    entitlements_by_resource: dict[str, set[str]] = {}
+    for entitlement in entitlements:
+        entitlement_id = str(entitlement["id"])
+        for resource_id in entitlement.get("linked_resource_ids", []):
+            entitlements_by_resource.setdefault(str(resource_id), set()).add(entitlement_id)
+    for resource in resources:
+        resource_id = str(resource["id"])
+        for entitlement_id in resource.get("linked_entitlement_ids", []):
+            normalized_id = str(entitlement_id)
+            if normalized_id in entitlement_ids:
+                entitlements_by_resource.setdefault(resource_id, set()).add(normalized_id)
+
+    row_assignment_ids: dict[str, frozenset[str]] = {}
+    row_entitlement_ids: dict[str, frozenset[str]] = {}
+    for row in rows:
+        target_type = row["targetType"]
+        target_id = row["targetId"]
+        related_assignments: set[str]
+        related_entitlements: set[str]
+        if target_type == "assignment":
+            assignment = assignment_by_id.get(target_id)
+            related_assignments = {target_id} if assignment is not None else set()
+            related_entitlements = (
+                {str(assignment["entitlement_id"])} if assignment is not None else set()
+            )
+        elif target_type == "employee":
+            related_assignments = set(active_by_employee.get(target_id, set()))
+            related_entitlements = {
+                str(assignment_by_id[assignment_id]["entitlement_id"])
+                for assignment_id in related_assignments
+            }
+        elif target_type == "entitlement":
+            related_entitlements = {target_id} if target_id in entitlement_ids else set()
+            related_assignments = set(active_by_entitlement.get(target_id, set()))
+        elif target_type == "resource":
+            related_entitlements = set(entitlements_by_resource.get(target_id, set()))
+            related_assignments = set().union(
+                *(active_by_entitlement.get(entitlement_id, set()) for entitlement_id in related_entitlements)
+            )
+        else:
+            related_assignments = set()
+            related_entitlements = set()
+        row_assignment_ids[row["violationId"]] = frozenset(related_assignments)
+        row_entitlement_ids[row["violationId"]] = frozenset(related_entitlements)
+    return row_assignment_ids, row_entitlement_ids
+
+
+def _assignment_status_map(
+    assignments: list[dict],
+    rows: list[dict],
+    row_assignment_ids: dict[str, frozenset[str]],
+) -> dict[str, str]:
+    status_by_assignment = {str(assignment["id"]): "clean" for assignment in assignments}
+    for row in rows:
+        state = row["status"].lower().replace(" ", "_")
+        if state not in ASSIGNMENT_STATUS_PRIORITY:
+            continue
+        for assignment_id in row_assignment_ids[row["violationId"]]:
+            current = status_by_assignment[assignment_id]
+            if ASSIGNMENT_STATUS_PRIORITY[state] > ASSIGNMENT_STATUS_PRIORITY[current]:
+                status_by_assignment[assignment_id] = state
+    return status_by_assignment
+
+
+def _assignment_status_series(statuses: dict[str, str]) -> list[dict]:
+    counts = Counter(statuses.values())
+    return [
+        {"key": key, "label": label, "count": counts[key]}
+        for key, label in ASSIGNMENT_STATUS_ORDER
+        if key in {"clean", "open", "pending_approval"} or counts[key]
+    ]
 
 
 def _sort_rows(rows: list[dict]) -> list[dict]:
@@ -190,22 +322,67 @@ async def load_dashboard_query(
     persona_id: str | None = None,
 ) -> DashboardQueryResult:
     """Load one normalized row set and derive all dashboard outputs from it."""
-    raw_vios, employees, assignments, entitlements, _resources = await _load_dashboard_data(store)
+    raw_vios, employees, assignments, entitlements, resources = await _load_dashboard_data(store)
     emp_by_id = {employee["id"]: employee for employee in employees}
     asn_by_id = {assignment["id"]: assignment for assignment in assignments}
     projected = [project_violation(Violation(**raw), emp_by_id, asn_by_id) for raw in raw_vios]
     scoped = _persona_rows(projected, assignments, persona_id)
-    filtered_rows = _sort_rows([row for row in scoped if _matches(row, filters)])
-    severity_rows = [row for row in scoped if _matches(row, filters, ignore="severities")]
-    target_type_rows = [row for row in scoped if _matches(row, filters, ignore="target_types")]
-    rule_rows = [row for row in scoped if _matches(row, filters, ignore="rules")]
-    workflow_rows = [row for row in scoped if _matches(row, filters, ignore="states")]
+    row_assignment_ids, row_entitlement_ids = _relationships_by_row(
+        scoped, assignments, entitlements, resources
+    )
+    active_scoped = [
+        row
+        for row in scoped
+        if row["status"].lower().replace(" ", "_") not in TERMINAL_STATES
+    ]
+    global_assignment_statuses = _assignment_status_map(
+        assignments, active_scoped, row_assignment_ids
+    )
+    affected_entitlement_ids = frozenset(
+        entitlement_id
+        for row in active_scoped
+        for entitlement_id in row_entitlement_ids[row["violationId"]]
+    )
+
+    def matches(row: dict, ignore: str | None = None) -> bool:
+        return _matches(
+            row,
+            filters,
+            row_assignment_ids=row_assignment_ids,
+            row_entitlement_ids=row_entitlement_ids,
+            assignment_statuses=global_assignment_statuses,
+            affected_entitlement_ids=affected_entitlement_ids,
+            ignore=ignore,
+        )
+
+    filtered_rows = _sort_rows([row for row in scoped if matches(row)])
+    severity_rows = [row for row in scoped if matches(row, "severities")]
+    target_type_rows = [row for row in scoped if matches(row, "target_types")]
+    rule_rows = [row for row in scoped if matches(row, "rules")]
+    workflow_rows = [row for row in scoped if matches(row, "states")]
+    assignment_status_rows = [row for row in scoped if matches(row, "assignment_statuses")]
+    assignment_statuses = _assignment_status_map(
+        assignments, assignment_status_rows, row_assignment_ids
+    )
+    coverage_rows = [row for row in scoped if matches(row, "coverage")]
     total = len(filtered_rows)
     start = (filters.page - 1) * filters.page_size
     rows = filtered_rows[start : start + filters.page_size]
 
     kpis = DashboardKpis(
+        total_assignments=(
+            sum(
+                assignment_status in filters.assignment_statuses
+                for assignment_status in assignment_statuses.values()
+            )
+            if filters.assignment_statuses
+            else len(assignments)
+        ),
         total_findings=total,
+        high_critical_findings=sum(
+            row["severity"] in {"Critical", "High"} for row in filtered_rows
+        ),
+        catalog_findings=sum(row["targetType"] == "entitlement" for row in filtered_rows),
         critical_findings=sum(row["severity"] == "Critical" for row in filtered_rows),
         high_findings=sum(row["severity"] == "High" for row in filtered_rows),
         not_started_findings=_workflow_count(filtered_rows, "not_started"),
@@ -216,7 +393,12 @@ async def load_dashboard_query(
         resolved_findings=sum(row["status"] == "Resolved" for row in filtered_rows),
     )
     catalog_findings = [row for row in filtered_rows if row["targetType"] == "entitlement"]
-    finding_entitlement_ids = {row["targetId"] for row in catalog_findings}
+    finding_entitlement_ids = {
+        entitlement_id
+        for row in coverage_rows
+        if row["status"].lower().replace(" ", "_") not in TERMINAL_STATES
+        for entitlement_id in row_entitlement_ids[row["violationId"]]
+    }
     entitlement_ids = {entitlement["id"] for entitlement in entitlements}
     with_findings = len(entitlement_ids & finding_entitlement_ids)
     entitlement_total = len(entitlement_ids)
@@ -227,6 +409,7 @@ async def load_dashboard_query(
             "targetType": _dimension_series(target_type_rows, "targetType"),
             "rule": _dimension_series(rule_rows, "rule"),
             "workflow": _dimension_series(workflow_rows, "workflow"),
+            "assignmentStatus": _assignment_status_series(assignment_statuses),
         },
         rows=rows,
         pagination={

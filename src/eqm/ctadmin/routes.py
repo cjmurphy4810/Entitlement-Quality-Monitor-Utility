@@ -18,10 +18,12 @@ from eqm.config import Settings, get_settings
 from eqm.ctadmin.auth import (
     SESSION_COOKIE_NAME,
     LoginThrottle,
+    MutationThrottle,
     SessionCodec,
     SessionPrincipal,
     get_principal,
     login_throttle_key,
+    mutation_throttle_key,
     validate_credentials,
     validate_csrf,
 )
@@ -43,6 +45,7 @@ STATIC_DIR = CTADMIN_DIR / "static"
 router = APIRouter(prefix="/ctadmin")
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 login_throttle = LoginThrottle()
+mutation_throttle = MutationThrottle()
 logger = logging.getLogger(__name__)
 
 STATE_BUCKETS = {
@@ -53,6 +56,10 @@ STATE_BUCKETS = {
 RAW_STATES = frozenset().union(*STATE_BUCKETS.values())
 SEVERITIES = frozenset({"critical", "high", "medium", "low"})
 TARGET_TYPES = frozenset({"employee", "assignment", "entitlement", "resource"})
+ASSIGNMENT_STATUSES = frozenset(
+    {"clean", "open", "pending_approval", "approved", "manual_repair"}
+)
+COVERAGE_VALUES = frozenset({"with_findings", "clean"})
 
 
 def ctadmin_context(
@@ -64,6 +71,7 @@ def ctadmin_context(
         "principal": principal,
         "username": principal.username,
         "persona_id": principal.persona_id,
+        "csrf_token": principal.csrf_token,
         **values,
     }
 
@@ -115,6 +123,19 @@ def _page_login_redirect(request: Request) -> RedirectResponse:
 def _page_principal(request: Request, settings: Settings) -> SessionPrincipal | RedirectResponse:
     principal = get_principal(request, settings)
     return principal if principal is not None else _page_login_redirect(request)
+
+
+def _detail_origin(origin: str | None) -> tuple[str, str, str]:
+    """Return a safe detail back-link, user-facing label, and active navigation key."""
+    safe_origin = _safe_next(origin) if origin else "/ctadmin/remediation"
+    path = urlsplit(safe_origin).path.rstrip("/")
+    if path == "/ctadmin/dashboard":
+        return safe_origin, "dashboard", "dashboard"
+    if path == "/ctadmin/my-findings":
+        return safe_origin, "My Findings", "my_findings"
+    if path == "/ctadmin/remediation":
+        return safe_origin, "remediation", "remediation"
+    return "/ctadmin/remediation", "remediation", "remediation"
 
 
 def _api_principal(request: Request, settings: Settings) -> SessionPrincipal:
@@ -173,6 +194,8 @@ async def _dashboard_request(
     severities = _normalised_query_values(request, "severity")
     target_types = _normalised_query_values(request, "targetType")
     rules = _normalised_query_values(request, "rule")
+    assignment_statuses = _normalised_query_values(request, "assignmentStatus")
+    coverage = _normalised_query_values(request, "coverage")
     search = request.query_params.get("search", "").strip()
     page = _positive_query_int(request, "page", 1)
     page_size = _positive_query_int(request, "pageSize", 50)
@@ -180,12 +203,18 @@ async def _dashboard_request(
     unsupported_states = set(public_states) - (set(STATE_BUCKETS) | set(RAW_STATES))
     unsupported_severities = set(severities) - set(SEVERITIES)
     unsupported_targets = set(target_types) - set(TARGET_TYPES)
+    unsupported_assignment_statuses = set(assignment_statuses) - set(ASSIGNMENT_STATUSES)
+    unsupported_coverage = set(coverage) - set(COVERAGE_VALUES)
     if unsupported_states:
         raise HTTPException(status_code=422, detail="Unsupported state value")
     if unsupported_severities:
         raise HTTPException(status_code=422, detail="Unsupported severity value")
     if unsupported_targets:
         raise HTTPException(status_code=422, detail="Unsupported targetType value")
+    if unsupported_assignment_statuses:
+        raise HTTPException(status_code=422, detail="Unsupported assignmentStatus value")
+    if unsupported_coverage:
+        raise HTTPException(status_code=422, detail="Unsupported coverage value")
 
     store = JsonStore(settings.data_dir)
     raw_violations = await store.read("violations.json")
@@ -213,6 +242,8 @@ async def _dashboard_request(
             severities=frozenset(severities),
             target_types=frozenset(target_types),
             rules=frozenset(rules),
+            assignment_statuses=frozenset(assignment_statuses),
+            coverage=frozenset(coverage),
             search=search,
             page=page,
             page_size=page_size,
@@ -222,7 +253,10 @@ async def _dashboard_request(
     kpis = query_result.kpis
     return {
         "kpis": {
+            "totalAssignments": kpis.total_assignments,
             "totalFindings": kpis.total_findings,
+            "highCriticalFindings": kpis.high_critical_findings,
+            "catalogFindings": kpis.catalog_findings,
             "criticalFindings": kpis.critical_findings,
             "highFindings": kpis.high_findings,
             "notStartedFindings": kpis.not_started_findings,
@@ -234,6 +268,7 @@ async def _dashboard_request(
         },
         "coverage": query_result.entitlement_coverage,
         "series": {
+            "assignmentStatus": query_result.series["assignmentStatus"],
             "status": query_result.series["workflow"],
             "severity": query_result.series["severity"],
             "targetType": query_result.series["targetType"],
@@ -245,6 +280,8 @@ async def _dashboard_request(
             "severity": severities,
             "targetType": target_types,
             "rule": rules,
+            "assignmentStatus": assignment_statuses,
+            "coverage": coverage,
             "search": search,
             "page": page,
             "pageSize": page_size,
@@ -314,6 +351,20 @@ async def _finding_context(store: JsonStore, violation_id: str) -> dict[str, obj
     projection = project_violation(
         violation, employee_by_id, assignment_by_id, include_internal=True
     )
+    repair_receipt = None
+    for event in reversed(violation.workflow_history):
+        candidate = event.override_fix
+        if isinstance(candidate, dict) and candidate.get("source") == "ctadmin":
+            repair_receipt = {
+                **candidate,
+                "violationId": violation.id,
+                "ruleId": violation.rule_id,
+                "evaluation": {
+                    "cleared": bool(candidate.get("cleared")),
+                    "workflowState": violation.workflow_state.value,
+                },
+            }
+            break
     return {
         "violation": violation,
         "finding": projection,
@@ -322,6 +373,7 @@ async def _finding_context(store: JsonStore, violation_id: str) -> dict[str, obj
         "entitlements": entitlements,
         "assignments": assignments,
         "resources": resources,
+        "repair_receipt": repair_receipt,
     }
 
 
@@ -529,7 +581,12 @@ async def login(
 
 
 @router.post("/logout")
-async def logout() -> RedirectResponse:
+async def logout(
+    request: Request,
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> RedirectResponse:
+    principal = _api_principal(request, settings)
+    await validate_csrf(request, principal)
     response = RedirectResponse("/ctadmin/login", status_code=status.HTTP_303_SEE_OTHER)
     response.delete_cookie(SESSION_COOKIE_NAME, path="/")
     return response
@@ -541,6 +598,10 @@ async def dashboard(request: Request, settings: Annotated[Settings, Depends(get_
     if isinstance(principal, RedirectResponse):
         return principal
     payload = await _dashboard_request(request, settings)
+    origin = request.url.path
+    if request.url.query:
+        origin = f"{origin}?{request.url.query}"
+    _decorate_repair_rows(payload, origin)
     return templates.TemplateResponse(
         request,
         "dashboard.html",
@@ -548,6 +609,7 @@ async def dashboard(request: Request, settings: Annotated[Settings, Depends(get_
             request,
             principal,
             page_title="Health dashboard",
+            active_nav="dashboard",
             dashboard_payload=payload,
         ),
     )
@@ -602,6 +664,7 @@ async def remediation(request: Request, settings: Annotated[Settings, Depends(ge
             request,
             principal,
             page_title="Remediation",
+            active_nav="remediation",
             remediation_payload=payload,
             rule_options=rule_options,
             csrf_token=principal.csrf_token,
@@ -629,7 +692,7 @@ async def finding_detail(
         WorkflowState.RESOLVED,
         WorkflowState.REJECTED,
     }
-    safe_origin = _safe_next(origin) if origin else "/ctadmin/remediation"
+    safe_origin, origin_label, active_nav = _detail_origin(origin)
     return templates.TemplateResponse(
         request,
         "finding_detail.html",
@@ -640,6 +703,8 @@ async def finding_detail(
             **context,
             repairable=repairable,
             origin=safe_origin,
+            origin_label=origin_label,
+            active_nav=active_nav,
             csrf_token=principal.csrf_token,
         ),
     )
@@ -676,6 +741,7 @@ async def my_findings(request: Request, settings: Annotated[Settings, Depends(ge
             request,
             principal,
             page_title="My Findings",
+            active_nav="my_findings",
             persona_options=persona_options,
             selected_persona=selected_persona,
             has_persona_selection=has_persona_selection,
@@ -751,6 +817,9 @@ async def repair_action(
 ) -> JSONResponse:
     principal = _api_principal(request, settings)
     await validate_csrf(request, principal)
+    mutation_throttle.check_and_record(
+        mutation_throttle_key(principal, request), now=time.time()
+    )
     try:
         submission = await request.json()
     except (json.JSONDecodeError, UnicodeDecodeError):
@@ -812,6 +881,10 @@ async def repair_action(
             "recordIds": list(receipt.record_ids),
             "changes": list(receipt.changes),
             "workflowState": receipt.workflow_state.value,
+            "evaluation": {
+                "cleared": receipt.cleared,
+                "workflowState": receipt.workflow_state.value,
+            },
         }
     )
 

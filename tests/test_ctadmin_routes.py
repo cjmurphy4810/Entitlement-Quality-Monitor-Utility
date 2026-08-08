@@ -6,6 +6,7 @@ import pytest
 
 from eqm.config import get_settings
 from eqm.ctadmin.auth import SessionCodec
+from eqm.ctadmin.repairs import RepairValidationError
 from eqm.ctadmin.service import RepairDidNotClearError, StaleFindingError
 from eqm.models import Violation
 
@@ -358,13 +359,23 @@ def test_authenticated_placeholder_pages_share_the_ctadmin_shell(app_client):
         assert "demo-admin" in response.text
 
 
-def test_logout_only_accepts_post_and_clears_the_session(app_client):
-    """Making logout GET-able or retaining its cookie would weaken session boundaries."""
+def test_logout_requires_signed_session_and_csrf_then_clears_the_session(app_client):
+    """Logout is a state-changing session action and must carry both protections."""
     client, _ = app_client
-    _login(client)
 
     assert client.get("/ctadmin/logout", follow_redirects=False).status_code == 405
-    response = client.post("/ctadmin/logout", follow_redirects=False)
+    assert client.post("/ctadmin/logout", follow_redirects=False).status_code == 401
+    _login(client)
+    assert client.post("/ctadmin/logout", follow_redirects=False).status_code == 403
+    dashboard = client.get("/ctadmin/dashboard")
+    assert 'action="/ctadmin/logout"' in dashboard.text
+    assert f'name="csrf_token" value="{_csrf(client)}"' in dashboard.text
+
+    response = client.post(
+        "/ctadmin/logout",
+        data={"csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
 
     assert response.status_code == 303
     assert response.headers["location"] == "/ctadmin/login"
@@ -427,11 +438,11 @@ def test_authenticated_dashboard_renders_the_complete_operator_surface(app_clien
 
     assert response.status_code == 200
     for hook in [
-        "kpi-total",
-        "kpi-critical",
-        "kpi-high",
-        "kpi-not-started",
-        "kpi-in-progress",
+        "kpi-total-assignments",
+        "kpi-total-findings",
+        "kpi-open",
+        "kpi-high-critical",
+        "kpi-catalog-findings",
         "chart-status",
         "chart-severity",
         "chart-target-type",
@@ -444,8 +455,20 @@ def test_authenticated_dashboard_renders_the_complete_operator_surface(app_clien
         assert f'id="{hook}"' in response.text
     assert 'src="/ctadmin/static/charts.js"' in response.text
     assert 'src="/ctadmin/static/dashboard.js"' in response.text
+    assert ">Clear Filters</button>" in response.text
     assert "Appian" not in response.text
     assert "ServiceNow" not in response.text
+    headings = re.findall(r"<th[^>]*>([^<]+)</th>", response.text)
+    assert headings == [
+        "Violation",
+        "User",
+        "Rule",
+        "Status",
+        "Severity",
+        "Target",
+        "Recommended Action",
+        "Action",
+    ]
 
     embedded = re.search(
         r'<script id="dashboard-data" type="application/json">(.*?)</script>',
@@ -467,12 +490,20 @@ def test_authenticated_dashboard_api_returns_the_normalized_json_contract(app_cl
     assert response.status_code == 200
     payload = response.json()
     assert set(payload) == {"kpis", "coverage", "series", "rows", "filters", "pagination"}
-    assert set(payload["series"]) == {"status", "severity", "targetType", "rule"}
+    assert set(payload["series"]) == {
+        "assignmentStatus",
+        "status",
+        "severity",
+        "targetType",
+        "rule",
+    }
     assert payload["filters"] == {
         "state": [],
         "severity": [],
         "targetType": [],
         "rule": [],
+        "assignmentStatus": [],
+        "coverage": [],
         "search": "",
         "page": 1,
         "pageSize": 50,
@@ -527,6 +558,8 @@ def test_dashboard_api_preserves_repeated_filters_and_normalizes_public_values(a
         "severity": ["high"],
         "targetType": ["assignment"],
         "rule": ["tox-01"],
+        "assignmentStatus": [],
+        "coverage": [],
         "search": "Conflict",
         "page": 2,
         "pageSize": 10,
@@ -540,6 +573,8 @@ def test_dashboard_api_preserves_repeated_filters_and_normalizes_public_values(a
         ("severity", "urgent"),
         ("targetType", "database"),
         ("rule", "unknown-rule"),
+        ("assignmentStatus", "unknown-status"),
+        ("coverage", "unknown-coverage"),
         ("page", "zero"),
         ("pageSize", "0"),
     ],
@@ -756,6 +791,72 @@ def test_repair_action_returns_a_verified_receipt(app_client):
     assert payload["workflowState"] == "resolved"
     assert payload["recordIds"] == ["ENT-1"]
     assert payload["changes"][0]["after"]["pbl_description"].startswith("Provides read-only")
+    assert payload["changes"][0]["before"] == {"pbl_description": "bad"}
+    assert payload["evaluation"] == {"cleared": True, "workflowState": "resolved"}
+
+    detail = client.get("/ctadmin/findings/VIO-100")
+    assert "Repair receipt" in detail.text
+    assert "ENT-1" in detail.text
+    assert "pbl description" in detail.text.lower()
+    assert "Provides read-only access" in detail.text
+    assert "Cleared" in detail.text
+
+
+def test_repair_confirmation_is_throttled_before_execution(app_client, monkeypatch):
+    """The over-budget confirm request returns 429 and never reaches repair evaluation."""
+    from eqm.ctadmin.auth import MutationThrottle
+
+    client, _ = app_client
+    _seed_route_data(get_settings().data_dir)
+    _login(client)
+    calls = 0
+
+    async def invalid(*_args, **_kwargs):
+        nonlocal calls
+        calls += 1
+        raise RepairValidationError("invalid")
+
+    monkeypatch.setattr("eqm.ctadmin.routes.execute_repair", invalid)
+    monkeypatch.setattr(
+        "eqm.ctadmin.routes.mutation_throttle",
+        MutationThrottle(limit=2, window_seconds=60, max_keys=10),
+    )
+    headers = {"X-CSRF-Token": _csrf(client)}
+    assert client.post("/ctadmin/actions/findings/VIO-100/repair", json={}, headers=headers).status_code == 422
+    assert client.post("/ctadmin/actions/findings/VIO-100/repair", json={}, headers=headers).status_code == 422
+
+    response = client.post(
+        "/ctadmin/actions/findings/VIO-100/repair",
+        json={},
+        headers=headers,
+    )
+
+    assert response.status_code == 429
+    assert response.json() == {"detail": "Too many mutation attempts"}
+    assert calls == 2
+
+
+def test_authenticated_ctadmin_responses_disable_browser_storage(app_client):
+    """Protected pages, JSON, redirects, and action responses may not be browser-cached."""
+    client, _ = app_client
+    _seed_route_data(get_settings().data_dir)
+    _login(client)
+
+    responses = [
+        client.get("/ctadmin/dashboard"),
+        client.get("/ctadmin/api/dashboard"),
+        client.get("/ctadmin/api/findings/VIO-100/repair-preview"),
+        client.post(
+            "/ctadmin/actions/persona",
+            data={"csrf_token": _csrf(client), "persona_id": "EMP-1"},
+            follow_redirects=False,
+        ),
+    ]
+    assert all(response.headers.get("cache-control") == "no-store" for response in responses)
+    assert "cache-control" not in client.get("/ctadmin/login").headers
+    assert "no-store" not in client.get("/ctadmin/static/dashboard.js").headers.get(
+        "cache-control", ""
+    )
 
 
 def test_repair_action_translates_typed_conflicts_and_validation(app_client, monkeypatch):

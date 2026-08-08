@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import asyncio
 from copy import deepcopy
 from dataclasses import dataclass
 from typing import Any
@@ -22,7 +21,6 @@ from eqm.rules.base import DataSnapshot
 from eqm.seed import SeedBundle
 from eqm.workflow import transition
 
-_REPAIR_LOCK = asyncio.Lock()
 _DATA_FILES = (
     "entitlements.json",
     "hr_employees.json",
@@ -73,13 +71,11 @@ async def _read_list(store: JsonStore, name: str) -> list[dict[str, Any]]:
 async def _load_current(
     store: JsonStore,
 ) -> tuple[SeedBundle, list[Violation]]:
-    entitlements, employees, resources, assignments, violations = await asyncio.gather(
-        _read_list(store, "entitlements.json"),
-        _read_list(store, "hr_employees.json"),
-        _read_list(store, "cmdb_resources.json"),
-        _read_list(store, "assignments.json"),
-        _read_list(store, "violations.json"),
-    )
+    entitlements = await _read_list(store, "entitlements.json")
+    employees = await _read_list(store, "hr_employees.json")
+    resources = await _read_list(store, "cmdb_resources.json")
+    assignments = await _read_list(store, "assignments.json")
+    violations = await _read_list(store, "violations.json")
     return (
         SeedBundle(
             entitlements=[Entitlement(**item) for item in entitlements],
@@ -131,8 +127,12 @@ def _change_audit(
 ) -> tuple[dict[str, object], ...]:
     changes: list[dict[str, object]] = []
     for mutation in plan.mutations:
-        old = next(item for item in _records(before, mutation.collection) if item.id == mutation.record_id)
-        new = next(item for item in _records(after, mutation.collection) if item.id == mutation.record_id)
+        old = next(
+            item for item in _records(before, mutation.collection) if item.id == mutation.record_id
+        )
+        new = next(
+            item for item in _records(after, mutation.collection) if item.id == mutation.record_id
+        )
         old_values = old.model_dump(mode="json")
         new_values = new.model_dump(mode="json")
         fields = mutation.changes.keys()
@@ -156,8 +156,7 @@ def _active_target(
             item
             for item in violations
             if (item.rule_id, item.target_type, item.target_id) == key
-            and item.workflow_state
-            not in {WorkflowState.RESOLVED, WorkflowState.REJECTED}
+            and item.workflow_state not in {WorkflowState.RESOLVED, WorkflowState.REJECTED}
         ),
         None,
     )
@@ -187,7 +186,14 @@ def _current_finding(bundle: SeedBundle, violation: Violation) -> Violation:
         raise StaleFindingError(
             f"Finding {violation.id} is stale and is not present in current source data."
         )
-    if detected.evidence != violation.evidence:
+    detected_evidence = deepcopy(detected.evidence)
+    stored_evidence = deepcopy(violation.evidence)
+    if violation.rule_id == "HR-03":
+        for evidence in (detected_evidence, stored_evidence):
+            prior_roles = evidence.get("prior_roles")
+            if isinstance(prior_roles, list):
+                evidence["prior_roles"] = sorted(prior_roles)
+    if detected_evidence != stored_evidence:
         raise StaleFindingError(f"Finding {violation.id} evidence is stale.")
     return detected
 
@@ -243,9 +249,7 @@ def _documents(bundle: SeedBundle, violations: list[Violation]) -> dict[str, lis
     return {
         "entitlements.json": [item.model_dump(mode="json") for item in bundle.entitlements],
         "hr_employees.json": [item.model_dump(mode="json") for item in bundle.hr_employees],
-        "cmdb_resources.json": [
-            item.model_dump(mode="json") for item in bundle.cmdb_resources
-        ],
+        "cmdb_resources.json": [item.model_dump(mode="json") for item in bundle.cmdb_resources],
         "assignments.json": [item.model_dump(mode="json") for item in bundle.assignments],
         "violations.json": [item.model_dump(mode="json") for item in violations],
     }
@@ -261,7 +265,7 @@ async def execute_repair(
     if not actor.strip():
         raise ValueError("Repair actor is required.")
 
-    async with _REPAIR_LOCK:
+    async with store.transaction():
         for name in _DATA_FILES:
             store.invalidate(name)
         bundle, violations = await _load_current(store)

@@ -155,6 +155,199 @@ async def test_dashboard_query_reports_workflow_coverage_catalog_and_empty_metad
 
 
 @pytest.mark.asyncio
+async def test_health_query_reports_contract_kpis_and_assignment_status_universe(store):
+    """Health instruments must describe assignments and combine high/critical risk."""
+    result = await load_dashboard_query(store, FindingFilters())
+
+    assert result.kpis.total_assignments == 3
+    assert result.kpis.high_critical_findings == 2
+    assert result.kpis.catalog_findings == 1
+    assert result.series["assignmentStatus"] == [
+        {"key": "clean", "label": "Clean", "count": 2},
+        {"key": "open", "label": "Open", "count": 0},
+        {"key": "pending_approval", "label": "Pending Approval", "count": 0},
+        {"key": "manual_repair", "label": "Manual Repair", "count": 1},
+    ]
+
+
+@pytest.mark.asyncio
+async def test_assignment_status_and_coverage_filters_are_or_within_and_self_faceted(store):
+    """Clean slices stay visible while selected portfolio dimensions narrow compatible rows."""
+    manual_assignments = await load_dashboard_query(
+        store,
+        FindingFilters(assignment_statuses=frozenset({"manual_repair"})),
+    )
+    assert {row["violationId"] for row in manual_assignments.rows} == {
+        "VIO-1",
+        "VIO-2",
+        "VIO-3",
+        "VIO-4",
+    }
+    assert manual_assignments.kpis.total_assignments == 1
+    assert manual_assignments.series["assignmentStatus"] == [
+        {"key": "clean", "label": "Clean", "count": 2},
+        {"key": "open", "label": "Open", "count": 0},
+        {"key": "pending_approval", "label": "Pending Approval", "count": 0},
+        {"key": "manual_repair", "label": "Manual Repair", "count": 1},
+    ]
+
+    clean_assignments = await load_dashboard_query(
+        store,
+        FindingFilters(assignment_statuses=frozenset({"clean"})),
+    )
+    assert clean_assignments.rows == []
+    assert clean_assignments.kpis.total_assignments == 2
+    assert clean_assignments.series["assignmentStatus"] == manual_assignments.series[
+        "assignmentStatus"
+    ]
+
+    catalog = await load_dashboard_query(
+        store,
+        FindingFilters(coverage=frozenset({"with_findings"})),
+    )
+    assert {row["violationId"] for row in catalog.rows} == {
+        "VIO-1",
+        "VIO-2",
+        "VIO-3",
+        "VIO-4",
+    }
+    assert catalog.entitlement_coverage == {
+        "total": 2,
+        "withFindings": 1,
+        "withoutFindings": 1,
+    }
+
+    clean_catalog = await load_dashboard_query(
+        store,
+        FindingFilters(coverage=frozenset({"clean"})),
+    )
+    assert clean_catalog.rows == []
+    assert clean_catalog.entitlement_coverage == catalog.entitlement_coverage
+
+
+@pytest.mark.asyncio
+async def test_assignment_and_coverage_relationships_span_all_target_types_and_cmdb_links(store):
+    """Every active target relationship must propagate to its assignment and catalog records."""
+    entitlements = await store.read("entitlements.json")
+    entitlements[1]["linked_resource_ids"] = ["RES-2"]
+    await store.write("entitlements.json", entitlements)
+    resources = await store.read("cmdb_resources.json")
+    resources.append(
+        {
+            "id": "RES-2",
+            "name": "Reporting API",
+            "type": "api",
+            "criticality": "high",
+            "owner_division": "tech_dev",
+            "environment": "prod",
+            "linked_entitlement_ids": [],
+            "description": "Reporting API.",
+        }
+    )
+    await store.write("cmdb_resources.json", resources)
+    await store.write(
+        "violations.json",
+        [
+            _violation(
+                "VIO-EMP",
+                "high",
+                "open",
+                "employee",
+                "EMP-1",
+                "HR-01",
+                "Holder finding",
+                "2026-02-01",
+            ),
+            _violation(
+                "VIO-ASN",
+                "medium",
+                "pending_approval",
+                "assignment",
+                "ASN-2",
+                "HR-02",
+                "Assignment finding",
+                "2026-02-02",
+            ),
+            _violation(
+                "VIO-ENT",
+                "low",
+                "approved",
+                "entitlement",
+                "ENT-1",
+                "ENT-Q-01",
+                "Entitlement finding",
+                "2026-02-03",
+            ),
+            _violation(
+                "VIO-RES",
+                "critical",
+                "manual_repair",
+                "resource",
+                "RES-2",
+                "CMDB-01",
+                "Linked resource finding",
+                "2026-02-04",
+            ),
+        ],
+    )
+
+    result = await load_dashboard_query(store, FindingFilters())
+
+    assert result.entitlement_coverage == {
+        "total": 2,
+        "withFindings": 2,
+        "withoutFindings": 0,
+    }
+    assert result.kpis.catalog_findings == 1
+    assert result.series["assignmentStatus"] == [
+        {"key": "clean", "label": "Clean", "count": 1},
+        {"key": "open", "label": "Open", "count": 0},
+        {"key": "pending_approval", "label": "Pending Approval", "count": 0},
+        {"key": "approved", "label": "Approved", "count": 1},
+        {"key": "manual_repair", "label": "Manual Repair", "count": 1},
+    ]
+
+    approved = await load_dashboard_query(
+        store,
+        FindingFilters(assignment_statuses=frozenset({"approved"})),
+    )
+    assert {row["violationId"] for row in approved.rows} == {"VIO-EMP", "VIO-ENT"}
+    assert approved.series["assignmentStatus"] == result.series["assignmentStatus"]
+
+    manual = await load_dashboard_query(
+        store,
+        FindingFilters(assignment_statuses=frozenset({"manual_repair"})),
+    )
+    assert {row["violationId"] for row in manual.rows} == {"VIO-ASN", "VIO-RES"}
+
+    covered = await load_dashboard_query(
+        store,
+        FindingFilters(coverage=frozenset({"with_findings"})),
+    )
+    assert {row["violationId"] for row in covered.rows} == {
+        "VIO-EMP",
+        "VIO-ASN",
+        "VIO-ENT",
+        "VIO-RES",
+    }
+    assert covered.entitlement_coverage == result.entitlement_coverage
+
+    clean_assignments = await load_dashboard_query(
+        store,
+        FindingFilters(assignment_statuses=frozenset({"clean"})),
+    )
+    assert clean_assignments.rows == []
+    assert clean_assignments.series["assignmentStatus"] == result.series["assignmentStatus"]
+
+    clean_coverage = await load_dashboard_query(
+        store,
+        FindingFilters(coverage=frozenset({"clean"})),
+    )
+    assert clean_coverage.rows == []
+    assert clean_coverage.entitlement_coverage == result.entitlement_coverage
+
+
+@pytest.mark.asyncio
 async def test_dashboard_query_paginates_sorted_rows_without_changing_aggregates(store):
     """Changing table pages must never change the aggregate findings population."""
     first = await load_dashboard_query(store, FindingFilters(page=1, page_size=2))

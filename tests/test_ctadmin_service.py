@@ -1,7 +1,8 @@
 from __future__ import annotations
 
+import asyncio
 import json
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pytest
@@ -24,6 +25,7 @@ from eqm.models import (
     HREmployee,
     ResourceType,
     Role,
+    RoleHistoryEntry,
     Violation,
     WorkflowState,
 )
@@ -134,9 +136,7 @@ async def _seed_store(tmp_path: Path, bundle: SeedBundle) -> tuple[JsonStore, li
         {
             "entitlements.json": [item.model_dump(mode="json") for item in bundle.entitlements],
             "hr_employees.json": [item.model_dump(mode="json") for item in bundle.hr_employees],
-            "cmdb_resources.json": [
-                item.model_dump(mode="json") for item in bundle.cmdb_resources
-            ],
+            "cmdb_resources.json": [item.model_dump(mode="json") for item in bundle.cmdb_resources],
             "assignments.json": [item.model_dump(mode="json") for item in bundle.assignments],
             "violations.json": [item.model_dump(mode="json") for item in result.violations],
         }
@@ -146,9 +146,7 @@ async def _seed_store(tmp_path: Path, bundle: SeedBundle) -> tuple[JsonStore, li
 
 def _finding(violations: list[Violation], rule_id: str, target_id: str) -> Violation:
     return next(
-        item
-        for item in violations
-        if item.rule_id == rule_id and item.target_id == target_id
+        item for item in violations if item.rule_id == rule_id and item.target_id == target_id
     )
 
 
@@ -252,9 +250,7 @@ async def test_inactive_assignment_is_rejected_without_changing_any_file(
     tmp_path: Path,
 ) -> None:
     current = _bundle(
-        employees=[
-            _employee(status=EmployeeStatus.TERMINATED, terminated_at=NOW)
-        ],
+        employees=[_employee(status=EmployeeStatus.TERMINATED, terminated_at=NOW)],
         assignments=[_assignment()],
     )
     store, violations = await _seed_store(tmp_path, current)
@@ -369,11 +365,7 @@ async def test_active_workflow_states_can_be_repaired(
         store,
         finding.id,
         "demo-admin",
-        {
-            "pbl_description": (
-                "Provides read-only access to Ledger API for operations reporting."
-            )
-        },
+        {"pbl_description": ("Provides read-only access to Ledger API for operations reporting.")},
     )
 
     assert receipt.workflow_state == WorkflowState.RESOLVED
@@ -382,9 +374,7 @@ async def test_active_workflow_states_can_be_repaired(
 @pytest.mark.asyncio
 async def test_assignment_revocation_is_executed_and_verified(tmp_path: Path) -> None:
     current = _bundle(
-        employees=[
-            _employee(status=EmployeeStatus.TERMINATED, terminated_at=NOW)
-        ],
+        employees=[_employee(status=EmployeeStatus.TERMINATED, terminated_at=NOW)],
         assignments=[_assignment()],
     )
     store, violations = await _seed_store(tmp_path, current)
@@ -398,6 +388,61 @@ async def test_assignment_revocation_is_executed_and_verified(tmp_path: Path) ->
     assert receipt.record_ids == ("ASN-1",)
     assert receipt.changes[0]["before"] == {"active": True}
     assert receipt.changes[0]["after"] == {"active": False}
+
+
+@pytest.mark.asyncio
+async def test_hr03_repair_accepts_reordered_multi_role_evidence(
+    tmp_path: Path,
+) -> None:
+    latest_change = NOW - timedelta(days=45)
+    earlier_change = latest_change - timedelta(days=60)
+    granted_at = earlier_change - timedelta(days=30)
+    current = _bundle(
+        entitlements=[
+            _entitlement(
+                pbl_description="Provides developer access to maintain Ledger API.",
+                acceptable_roles=[Role.DEVELOPER],
+            )
+        ],
+        employees=[
+            _employee(
+                current_role=Role.OPERATIONS,
+                role_history=[
+                    RoleHistoryEntry(
+                        role=Role.DEVELOPER,
+                        division=Division.TECH_DEV,
+                        started_at=granted_at - timedelta(days=30),
+                        ended_at=earlier_change,
+                    ),
+                    RoleHistoryEntry(
+                        role=Role.BUSINESS_ANALYST,
+                        division=Division.BUSINESS_OPS,
+                        started_at=earlier_change,
+                        ended_at=latest_change,
+                    ),
+                ],
+            )
+        ],
+        assignments=[_assignment(granted_at=granted_at)],
+    )
+    store, violations = await _seed_store(tmp_path, current)
+    finding = _finding(violations, "HR-03", "ASN-1")
+    generated_roles = finding.evidence["prior_roles"]
+    assert generated_roles == sorted(generated_roles)
+    finding.evidence["prior_roles"] = list(reversed(generated_roles))
+    await _replace_violations(store, violations)
+
+    receipt = await execute_repair(
+        store,
+        finding.id,
+        "demo-admin",
+        {"manager_confirmed": True},
+    )
+
+    assert receipt.rule_id == "HR-03"
+    assignments = await store.read("assignments.json")
+    assert isinstance(assignments, list)
+    assert assignments[0]["active"] is False
 
 
 @pytest.mark.asyncio
@@ -554,3 +599,57 @@ async def test_second_store_instance_cannot_revert_an_earlier_repair(
     reconciled = [Violation(**raw) for raw in await fresh_store.read("violations.json")]
     for target_id in ("ENT-1", "ENT-2"):
         assert _finding(reconciled, "ENT-Q-01", target_id).workflow_state == WorkflowState.RESOLVED
+
+
+@pytest.mark.asyncio
+async def test_repair_transaction_rejects_a_stale_bearer_write(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    repair_store, violations = await _seed_store(tmp_path, _bundle())
+    finding = _finding(violations, "ENT-Q-01", "ENT-1")
+    bearer_store = JsonStore(tmp_path)
+    stale_entitlements = await bearer_store.read("entitlements.json")
+    assert isinstance(stale_entitlements, list)
+    stale_entitlements[0]["name"] = "Bearer's stale update"
+
+    write_reached = asyncio.Event()
+    release_write = asyncio.Event()
+    actual_write_many = repair_store.write_many
+
+    async def pause_before_commit(
+        documents: dict[str, list[dict] | dict],
+    ) -> None:
+        write_reached.set()
+        await release_write.wait()
+        await actual_write_many(documents)
+
+    monkeypatch.setattr(repair_store, "write_many", pause_before_commit)
+    repaired_description = "Provides read-only access to Ledger API for operations reporting."
+    repair_task = asyncio.create_task(
+        execute_repair(
+            repair_store,
+            finding.id,
+            "demo-admin",
+            {"pbl_description": repaired_description},
+        )
+    )
+    await write_reached.wait()
+    bearer_task = asyncio.create_task(bearer_store.write("entitlements.json", stale_entitlements))
+    await asyncio.sleep(0)
+    bearer_waited = not bearer_task.done()
+
+    release_write.set()
+    receipt = await repair_task
+    if bearer_waited:
+        with pytest.raises(RuntimeError, match="changed since it was read"):
+            await bearer_task
+    else:
+        await bearer_task
+
+    assert bearer_waited
+    assert receipt.cleared is True
+    entitlements = await JsonStore(tmp_path).read("entitlements.json")
+    assert isinstance(entitlements, list)
+    assert entitlements[0]["name"] == "Ledger reader"
+    assert entitlements[0]["pbl_description"] == repaired_description
