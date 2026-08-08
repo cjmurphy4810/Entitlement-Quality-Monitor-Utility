@@ -24,6 +24,8 @@ class Settings(BaseSettings):
     @field_validator("ctadmin_session_secret", mode="before")
     @classmethod
     def strip_ctadmin_session_secret(cls, value: object) -> object:
+        if isinstance(value, SecretStr):
+            return value.get_secret_value().strip()
         if isinstance(value, str):
             return value.strip()
         return value

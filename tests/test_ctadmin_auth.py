@@ -2,7 +2,7 @@ import json
 
 import pytest
 from fastapi import HTTPException
-from pydantic import ValidationError
+from pydantic import SecretStr, ValidationError
 from starlette.requests import Request
 
 from eqm.config import Settings
@@ -63,6 +63,11 @@ def test_settings_rejects_blank_or_short_ctadmin_session_secret(monkeypatch, sec
 
     with pytest.raises(ValidationError):
         Settings()
+
+
+def test_settings_rejects_whitespace_only_secretstr_session_secret():
+    with pytest.raises(ValidationError):
+        Settings(bearer_token="test-token", ctadmin_session_secret=SecretStr(" " * 32))
 
 
 def test_session_codec_round_trips_signed_principal():
