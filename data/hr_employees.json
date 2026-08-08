@@ -27319,5 +27319,43 @@
     "manager_id": null,
     "hired_at": "2026-08-08T14:56:52.237900Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01306",
+    "full_name": "James Callahan",
+    "email": "emp-01306@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-08T15:55:16.185128Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T15:55:16.185128Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01307",
+    "full_name": "Riley Howell",
+    "email": "emp-01307@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-08T15:55:16.185128Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T15:55:16.185128Z",
+    "terminated_at": null
   }
 ]
