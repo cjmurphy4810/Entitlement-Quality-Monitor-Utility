@@ -27420,5 +27420,43 @@
     "manager_id": null,
     "hired_at": "2026-08-08T17:01:30.881806Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01311",
+    "full_name": "Andrew Jones",
+    "email": "emp-01311@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-08T18:26:56.260339Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T18:26:56.260339Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01312",
+    "full_name": "Nichole Hancock",
+    "email": "emp-01312@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-08T18:26:56.260339Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T18:26:56.260339Z",
+    "terminated_at": null
   }
 ]
