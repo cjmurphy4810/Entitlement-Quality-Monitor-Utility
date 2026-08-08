@@ -8565,7 +8565,7 @@
     "email": "emp-00377@example.com",
     "current_role": "customer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -8582,7 +8582,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-17T21:13:29.974143Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T12:32:57.249520Z"
   },
   {
     "id": "EMP-00378",
@@ -27230,6 +27230,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T11:31:15.591186Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01302",
+    "full_name": "Maria Hart",
+    "email": "emp-01302@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-08T12:32:57.249520Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T12:32:57.249520Z",
     "terminated_at": null
   }
 ]
