@@ -415,3 +415,158 @@ const fetchImpl = async (url, options = {}) => { calls.push({ url, options }); r
         "restoredFocus": True,
         "postCsrf": "csrf-value",
     }
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
+def test_repair_drawer_ignores_late_preview_and_constrains_loading_focus():
+    """A stale preview must not replace or submit against the currently open finding."""
+    dashboard_path = Path("src/eqm/ctadmin/static/dashboard.js").resolve()
+    harness = r"""
+const fs = require('node:fs');
+const vm = require('node:vm');
+
+class Element {
+  constructor(tag = 'div') {
+    this.tagName = tag.toUpperCase(); this.attributes = {}; this.children = [];
+    this.listeners = {}; this.textContent = ''; this.value = ''; this.checked = false;
+    this.hidden = false; this.disabled = false; this.dataset = {}; this.name = '';
+    this.type = ''; this.focusCount = 0; this.className = ''; this.parentNode = null;
+    this.selected = false; this.required = false; this.multiple = false;
+    this.classList = { add() {}, remove() {}, toggle() {} };
+  }
+  append(...nodes) { nodes.forEach(node => { node.parentNode = this; this.children.push(node); }); }
+  replaceChildren(...nodes) { this.children = []; this.append(...nodes); }
+  setAttribute(name, value) { this.attributes[name] = String(value); }
+  removeAttribute(name) { delete this.attributes[name]; }
+  addEventListener(name, fn) { this.listeners[name] = fn; }
+  focus() { document.activeElement = this; this.focusCount += 1; }
+  closest(selector) {
+    let node = this;
+    while (node) { if (selector === '[hidden]' && node.hidden) return node; node = node.parentNode; }
+    return null;
+  }
+  querySelectorAll(selector) {
+    const result = [];
+    const visit = node => {
+      const named = selector === '[name]' && node.name;
+      const focusable = selector.includes('button') && ['BUTTON','INPUT','TEXTAREA','SELECT'].includes(node.tagName) && !node.disabled && !node.hidden;
+      if (named || focusable) result.push(node);
+      node.children.forEach(visit);
+    };
+    this.children.forEach(visit); return result;
+  }
+  get selectedOptions() { return this.children.filter(option => option.selected); }
+}
+
+const nodes = {};
+[
+  '#repair-drawer', '#repair-drawer-backdrop', '#repair-drawer-close', '#repair-cancel',
+  '#repair-form', '#repair-fields', '#repair-drawer-loading', '#repair-drawer-error',
+  '#repair-drawer-content', '#repair-outcome', '#repair-preview-id', '#repair-preview-reason',
+  '#repair-preview-evidence', '#repair-confirm',
+].forEach(key => nodes[key] = new Element(key.includes('form') ? 'form' : key.includes('confirm') || key.includes('close') || key.includes('cancel') ? 'button' : 'div'));
+nodes['#repair-drawer'].dataset.csrfToken = 'csrf-value';
+nodes['#repair-form'].append(nodes['#repair-fields'], nodes['#repair-cancel'], nodes['#repair-confirm']);
+nodes['#repair-drawer-content'].append(nodes['#repair-form']);
+nodes['#repair-drawer'].append(nodes['#repair-drawer-close'], nodes['#repair-drawer-loading'], nodes['#repair-drawer-error'], nodes['#repair-drawer-content'], nodes['#repair-outcome']);
+const document = {
+  activeElement: null,
+  createElement: tag => new Element(tag),
+  querySelector: selector => nodes[selector] || null,
+  querySelectorAll: () => [],
+  addEventListener() {},
+};
+const window = { window: null, document, addEventListener() {}, location: { reload() {} }, setTimeout };
+window.window = window;
+const context = { window, document, console, URLSearchParams, AbortController, Date, encodeURIComponent, setTimeout, clearTimeout };
+vm.createContext(context);
+vm.runInContext(fs.readFileSync(process.argv[2], 'utf8'), context);
+
+let resolveA; let resolveB;
+const calls = [];
+const fetchImpl = (url, options = {}) => {
+  calls.push({ url, options });
+  if (options.method === 'POST') return Promise.resolve({ ok: true, status: 200, json: async () => ({
+    violationId: 'B', cleared: true, summary: 'Linked B to RES-1.', changes: [],
+  }) });
+  if (url.includes('/A/')) return new Promise(resolve => { resolveA = resolve; });
+  if (url.includes('/B/')) return new Promise(resolve => { resolveB = resolve; });
+  if (url.includes('/C/')) return Promise.resolve({ ok: false, status: 409, json: async () => ({ detail: 'Finding changed.' }) });
+  throw new Error(`Unexpected request ${url}`);
+};
+const response = payload => ({ ok: true, status: 200, json: async () => payload });
+const previewA = {
+  violationId: 'A', ruleId: 'ENT-Q-01', ruleName: 'PBL completeness', kind: 'pbl_textarea',
+  reason: 'A reason', evidence: {}, fields: [{ name: 'pbl_description', type: 'textarea', label: 'Description', value: 'A', required: true }],
+  submission: { pbl_description: 'A' }, confirmLabel: 'Confirm repair',
+};
+const previewB = {
+  violationId: 'B', ruleId: 'CMDB-01', ruleName: 'Orphan entitlement', kind: 'resource_select',
+  reason: 'B reason', evidence: {}, fields: [{ name: 'resource_id', type: 'select', label: 'Resource', required: true,
+    options: [{ value: 'RES-1', label: 'Ledger API · RES-1' }] }],
+  submission: { resource_id: '' }, confirmLabel: 'Confirm repair',
+};
+
+(async () => {
+  const controller = new window.RepairDrawer(document, { fetchImpl, onSuccess: async () => {} });
+  const triggerA = new Element('button'); const triggerB = new Element('button');
+  const openA = controller.open('A', triggerA);
+  const loadingFocusables = controller.focusableElements();
+  nodes['#repair-drawer-close'].focus();
+  let tabPrevented = false; let shiftTabPrevented = false;
+  nodes['#repair-drawer'].listeners.keydown({ key: 'Tab', shiftKey: false, preventDefault() { tabPrevented = true; } });
+  nodes['#repair-drawer'].listeners.keydown({ key: 'Tab', shiftKey: true, preventDefault() { shiftTabPrevented = true; } });
+  controller.close();
+  const openB = controller.open('B', triggerB);
+  resolveB(response(previewB));
+  await openB;
+  const select = nodes['#repair-fields'].querySelectorAll('[name]')[0];
+  const placeholder = select.children[0];
+  select.value = 'RES-1';
+  resolveA(response(previewA));
+  await openA;
+  await nodes['#repair-form'].listeners.submit({ preventDefault() {} });
+  const action = calls.find(call => call.options.method === 'POST');
+  const previewId = nodes['#repair-preview-id'].textContent;
+  const currentFinding = controller.findingId;
+  await controller.open('C', new Element('button'));
+  const errorFocusables = controller.focusableElements();
+  process.stdout.write(JSON.stringify({
+    loadingFocusableCount: loadingFocusables.length,
+    loadingFocusableIsClose: loadingFocusables[0] === nodes['#repair-drawer-close'],
+    tabPrevented, shiftTabPrevented,
+    errorFocusableCount: errorFocusables.length,
+    errorFocusableIsClose: errorFocusables[0] === nodes['#repair-drawer-close'],
+    previewId,
+    currentFinding,
+    actionUrl: action.url,
+    actionBody: JSON.parse(action.options.body),
+    placeholderValue: placeholder.value,
+    placeholderSelected: placeholder.selected,
+    placeholderDisabled: placeholder.disabled,
+  }));
+})().catch(error => { console.error(error); process.exitCode = 1; });
+"""
+    result = subprocess.run(
+        ["node", "-", str(dashboard_path)],
+        input=harness,
+        text=True,
+        capture_output=True,
+        check=True,
+    )
+
+    assert json.loads(result.stdout) == {
+        "loadingFocusableCount": 1,
+        "loadingFocusableIsClose": True,
+        "tabPrevented": True,
+        "shiftTabPrevented": True,
+        "errorFocusableCount": 1,
+        "errorFocusableIsClose": True,
+        "previewId": "B / CMDB-01",
+        "currentFinding": "B",
+        "actionUrl": "/ctadmin/actions/findings/B/repair",
+        "actionBody": {"resource_id": "RES-1"},
+        "placeholderValue": "",
+        "placeholderSelected": True,
+        "placeholderDisabled": True,
+    }

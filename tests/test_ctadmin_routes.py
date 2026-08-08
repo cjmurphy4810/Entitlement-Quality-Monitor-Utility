@@ -702,7 +702,7 @@ def test_terminal_finding_has_history_but_no_repair_trigger(app_client):
     assert preview.status_code == 409
 
 
-def test_repair_action_hides_unexpected_server_details(app_client, monkeypatch):
+def test_repair_action_hides_unexpected_server_details(app_client, monkeypatch, caplog):
     """An internal repair exception must be logged without exposing its detail to the client."""
     client, _ = app_client
     _seed_route_data(get_settings().data_dir)
@@ -724,3 +724,6 @@ def test_repair_action_hides_unexpected_server_details(app_client, monkeypatch):
         "detail": "The repair could not be completed.",
     }
     assert "secret filesystem detail" not in response.text
+    assert "secret filesystem detail" not in caplog.text
+    assert "RuntimeError" in caplog.text
+    assert "correlation_id=" in caplog.text

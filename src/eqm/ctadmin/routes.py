@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import secrets
 import time
 from pathlib import Path
 from typing import Annotated
@@ -544,11 +545,9 @@ async def remediation(request: Request, settings: Annotated[Settings, Depends(ge
                 f"/ctadmin/findings/{quote(str(row['violationId']), safe='')}"
                 f"?origin={quote(origin, safe='')}"
             )
-            row["repairable"] = (
-                row.get("ruleId") in REPAIR_BUILDERS
-                and row.get("status", "").lower().replace(" ", "_")
-                not in {"resolved", "rejected"}
-            )
+            row["repairable"] = row.get("ruleId") in REPAIR_BUILDERS and row.get(
+                "status", ""
+            ).lower().replace(" ", "_") not in {"resolved", "rejected"}
     pagination = payload["pagination"]
     if isinstance(pagination, dict):
         current_page = int(pagination["page"])
@@ -703,8 +702,13 @@ async def repair_action(
             },
             status_code=status.HTTP_409_CONFLICT,
         )
-    except Exception:
-        logger.exception("CTADMIN repair failed for finding %s", violation_id)
+    except Exception as exc:
+        correlation_id = secrets.token_hex(8)
+        logger.error(
+            "CTADMIN repair failed type=%s correlation_id=%s",
+            type(exc).__name__,
+            correlation_id,
+        )
         return JSONResponse(
             {"type": "server_error", "detail": "The repair could not be completed."},
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

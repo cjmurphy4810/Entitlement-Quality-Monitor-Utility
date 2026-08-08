@@ -48,6 +48,8 @@
       this.findingId = null;
       this.preview = null;
       this.returnFocus = null;
+      this.previewController = null;
+      this.previewGeneration = 0;
       if (!this.drawer) return;
       this.closeButton?.addEventListener("click", () => this.close());
       this.cancelButton?.addEventListener("click", () => this.close());
@@ -59,7 +61,7 @@
     focusableElements() {
       return [...this.drawer.querySelectorAll(
         'button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled])'
-      )].filter(element => !element.hidden);
+      )].filter(element => !element.hidden && !element.closest?.("[hidden]"));
     }
 
     handleKeydown(event) {
@@ -84,6 +86,10 @@
 
     async open(findingId, trigger = document.activeElement) {
       if (!this.drawer) return null;
+      this.previewController?.abort();
+      const requestController = new AbortController();
+      this.previewController = requestController;
+      const generation = ++this.previewGeneration;
       this.findingId = findingId;
       this.returnFocus = trigger;
       this.preview = null;
@@ -98,9 +104,10 @@
       try {
         const response = await this.fetchImpl(
           `/ctadmin/api/findings/${encodeURIComponent(findingId)}/repair-preview`,
-          { headers: { Accept: "application/json" } },
+          { headers: { Accept: "application/json" }, signal: requestController.signal },
         );
         const payload = await response.json();
+        if (generation !== this.previewGeneration || this.findingId !== findingId) return null;
         if (!response.ok) throw new Error(payload.detail || "Repair preview could not be loaded.");
         this.preview = payload;
         this.renderPreview(payload);
@@ -109,14 +116,22 @@
         this.focusableElements()[0]?.focus();
         return payload;
       } catch (error) {
+        if (generation !== this.previewGeneration || error.name === "AbortError") return null;
         if (this.loading) this.loading.hidden = true;
         this.setError(error.message || "Repair preview could not be loaded.");
         return null;
+      } finally {
+        if (this.previewController === requestController) this.previewController = null;
       }
     }
 
     close() {
       if (!this.drawer) return;
+      this.previewController?.abort();
+      this.previewController = null;
+      this.previewGeneration += 1;
+      this.preview = null;
+      this.findingId = null;
       this.drawer.hidden = true;
       this.drawer.setAttribute("aria-hidden", "true");
       if (this.backdrop) this.backdrop.hidden = true;
@@ -177,7 +192,13 @@
       } else if (field.type === "select" || field.type === "multiselect") {
         input = createElement("select");
         input.multiple = field.type === "multiselect";
-        if (!input.multiple) input.append(createElement("option", "", "Select a resource"));
+        if (!input.multiple) {
+          const placeholder = createElement("option", "", "Select a resource");
+          placeholder.value = "";
+          placeholder.selected = true;
+          placeholder.disabled = true;
+          input.append(placeholder);
+        }
         (field.options || []).forEach(option => {
           const element = createElement("option", "", option.label);
           element.value = option.value;
