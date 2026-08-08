@@ -27357,5 +27357,24 @@
     "manager_id": null,
     "hired_at": "2026-08-08T15:55:16.185128Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01308",
+    "full_name": "Kelly Foster",
+    "email": "emp-01308@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-08T16:24:35.666722Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T16:24:35.666722Z",
+    "terminated_at": null
   }
 ]
