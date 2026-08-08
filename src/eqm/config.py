@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     git_remote_url: str | None = None
     ctadmin_username: str | None = None
     ctadmin_password: SecretStr | None = None
-    ctadmin_session_secret: SecretStr | None = None
+    ctadmin_session_secret: SecretStr | None = Field(default=None, min_length=32)
     ctadmin_session_ttl_seconds: int = Field(default=28_800, ge=300, le=86_400)
     ctadmin_secure_cookies: bool = True
 

@@ -2,6 +2,7 @@ import json
 
 import pytest
 from fastapi import HTTPException
+from pydantic import ValidationError
 from starlette.requests import Request
 
 from eqm.config import Settings
@@ -53,6 +54,15 @@ def test_ctadmin_settings_are_optional_by_default(monkeypatch):
     assert settings.ctadmin_password is None
     assert settings.ctadmin_session_secret is None
     assert settings.ctadmin_secure_cookies is True
+
+
+@pytest.mark.parametrize("secret", ["", "short-secret"])
+def test_settings_rejects_blank_or_short_ctadmin_session_secret(monkeypatch, secret):
+    monkeypatch.setenv("EQM_BEARER_TOKEN", "test-token")
+    monkeypatch.setenv("EQM_CTADMIN_SESSION_SECRET", secret)
+
+    with pytest.raises(ValidationError):
+        Settings()
 
 
 def test_session_codec_round_trips_signed_principal():
@@ -164,6 +174,25 @@ async def test_validate_csrf_rejects_a_missing_form_token():
     assert exc_info.value.status_code == 403
 
 
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    ("headers", "body"),
+    [
+        ({"content-type": "application/json", "x-csrf-token": "tøkén"}, b"{}"),
+        ({"content-type": "application/x-www-form-urlencoded"}, b"csrf_token=t%C3%B8k%C3%A9n"),
+    ],
+)
+async def test_validate_csrf_rejects_non_ascii_submissions(headers, body):
+    from eqm.ctadmin.auth import SessionPrincipal, validate_csrf
+
+    principal = SessionPrincipal("demo-admin", "csrf-value", "ops", "nonce")
+
+    with pytest.raises(HTTPException) as exc_info:
+        await validate_csrf(make_request(headers=headers, body=body), principal)
+
+    assert exc_info.value.status_code == 403
+
+
 def test_validate_credentials_requires_both_configured_values(monkeypatch):
     from eqm.ctadmin.auth import validate_credentials
 
@@ -172,6 +201,15 @@ def test_validate_credentials_requires_both_configured_values(monkeypatch):
     assert validate_credentials("demo-admin", "correct-horse-battery-staple", settings) is True
     assert validate_credentials("demo-admin", "incorrect", settings) is False
     assert validate_credentials("other-admin", "correct-horse-battery-staple", settings) is False
+
+
+def test_validate_credentials_rejects_non_ascii_input(monkeypatch):
+    from eqm.ctadmin.auth import validate_credentials
+
+    settings = configured_settings(monkeypatch)
+
+    assert validate_credentials("démo-admin", "correct-horse-battery-staple", settings) is False
+    assert validate_credentials("demo-admin", "pässword", settings) is False
 
 
 def test_login_throttle_locks_out_sixth_attempt_and_clears_after_success():

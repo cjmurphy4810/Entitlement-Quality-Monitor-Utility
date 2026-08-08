@@ -125,10 +125,12 @@ class SessionCodec:
 
 def require_ctadmin_settings(settings: Settings) -> Settings:
     """Return configured settings or signal that CTADMIN is unavailable."""
+    session_secret = settings.ctadmin_session_secret
     if (
         not settings.ctadmin_username
         or settings.ctadmin_password is None
-        or settings.ctadmin_session_secret is None
+        or session_secret is None
+        or not session_secret.get_secret_value()
     ):
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
@@ -140,9 +142,11 @@ def require_ctadmin_settings(settings: Settings) -> Settings:
 def validate_credentials(username: str, password: str, settings: Settings) -> bool:
     """Compare submitted credentials without short-circuiting either comparison."""
     configured = require_ctadmin_settings(settings)
-    username_matches = hmac.compare_digest(username, configured.ctadmin_username)
+    username_matches = hmac.compare_digest(
+        username.encode("utf-8"), configured.ctadmin_username.encode("utf-8")
+    )
     password_matches = hmac.compare_digest(
-        password, configured.ctadmin_password.get_secret_value()
+        password.encode("utf-8"), configured.ctadmin_password.get_secret_value().encode("utf-8")
     )
     return username_matches and password_matches
 
@@ -186,7 +190,7 @@ async def validate_csrf(request: Request, principal: SessionPrincipal) -> None:
     else:
         submitted_token = (await request.form()).get("csrf_token")
     if not isinstance(submitted_token, str) or not hmac.compare_digest(
-        submitted_token, principal.csrf_token
+        submitted_token.encode("utf-8"), principal.csrf_token.encode("utf-8")
     ):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Invalid CSRF token")
 
