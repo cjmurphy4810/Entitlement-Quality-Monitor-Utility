@@ -2777,8 +2777,8 @@
     "id": "EMP-00117",
     "full_name": "Jamie Nixon",
     "email": "emp-00117@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -2791,6 +2791,12 @@
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-07-21T12:20:34.334681Z",
+        "ended_at": "2026-08-08T22:55:16.609126Z"
+      },
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-08T22:55:16.609126Z",
         "ended_at": null
       }
     ],
@@ -26121,7 +26127,7 @@
     "email": "emp-01241@example.com",
     "current_role": "operations",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -26132,7 +26138,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-04T16:53:48.991860Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T22:55:16.609126Z"
   },
   {
     "id": "EMP-01242",
@@ -27639,6 +27645,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T22:20:51.593070Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01321",
+    "full_name": "Louis Boyd",
+    "email": "emp-01321@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-08T22:55:16.609126Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T22:55:16.609126Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01322",
+    "full_name": "Kristina Taylor",
+    "email": "emp-01322@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-08T22:55:16.609126Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T22:55:16.609126Z",
     "terminated_at": null
   }
 ]
