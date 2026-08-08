@@ -1,3 +1,4 @@
+import hashlib
 import json
 import shutil
 import subprocess
@@ -8,6 +9,8 @@ import pytest
 
 from eqm.config import get_settings
 from eqm.ctadmin.auth import SessionCodec
+
+EXPECTED_CTADMIN_LOGO_SHA256 = "21b56b9174cb31e571ae77155039b7691c58c43dabfdbbb5bba9a404e06a5a7e"
 
 
 class _AccessibilityAudit(HTMLParser):
@@ -20,11 +23,18 @@ class _AccessibilityAudit(HTMLParser):
         self.chart_panels = []
         self.tables = []
         self.dialogs = []
+        self.ids = set()
+        self.id_references = []
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
         node = {"tag": tag, "attrs": attrs}
         self.stack.append(node)
+        if element_id := attrs.get("id"):
+            self.ids.add(element_id)
+        for attribute in ("aria-labelledby", "aria-describedby"):
+            if reference := attrs.get(attribute):
+                self.id_references.append((tag, attribute, reference))
         if tag == "img":
             self.images.append(attrs)
         if tag == "article" and "chart-panel" in attrs.get("class", "").split():
@@ -40,11 +50,20 @@ class _AccessibilityAudit(HTMLParser):
                     ancestor["chart_panel"]["charts"].append(attrs.get("aria-label"))
                     break
         if tag == "table":
-            labelled_region = any(
-                ancestor["attrs"].get("aria-label") or ancestor["attrs"].get("aria-labelledby")
-                for ancestor in self.stack[:-1]
+            labelled_region = next(
+                (
+                    ancestor["attrs"]
+                    for ancestor in reversed(self.stack[:-1])
+                    if ancestor["attrs"].get("aria-label")
+                    or ancestor["attrs"].get("aria-labelledby")
+                ),
+                {},
             )
-            node["table"] = {"caption": False, "labelled_region": labelled_region}
+            node["table"] = {
+                "caption": False,
+                "aria_label": labelled_region.get("aria-label"),
+                "aria_labelledby": labelled_region.get("aria-labelledby"),
+            }
         if tag == "caption":
             for ancestor in reversed(self.stack[:-1]):
                 if "table" in ancestor:
@@ -64,6 +83,17 @@ class _AccessibilityAudit(HTMLParser):
             if "table" in node:
                 self.tables.append(node["table"])
             break
+
+    def references_resolve(self, value):
+        return bool(value) and all(token in self.ids for token in value.split())
+
+    @property
+    def unresolved_references(self):
+        return [
+            (tag, attribute, reference)
+            for tag, attribute, reference in self.id_references
+            if not self.references_resolve(reference)
+        ]
 
 
 def _audit(markup):
@@ -138,6 +168,7 @@ def test_supplied_ctadmin_logo_is_optimized_and_served_as_a_local_jpeg(app_clien
     assert response.status_code == 200
     assert response.headers["content-type"].startswith("image/jpeg")
     assert response.content.endswith(b"\xff\xd9")
+    assert hashlib.sha256(response.content).hexdigest() == EXPECTED_CTADMIN_LOGO_SHA256
     width, height = _jpeg_dimensions(response.content)
     assert 0 < width <= 512
     assert 0 < height <= 512
@@ -260,7 +291,13 @@ def test_rendered_data_surfaces_have_accessible_names_and_dialog_semantics(app_c
         audit = _audit(response.text)
         assert len(audit.chart_panels) == expected_chart_count
         assert len(audit.tables) == expected_table_count
-        assert all(table["caption"] or table["labelled_region"] for table in audit.tables)
+        assert audit.unresolved_references == []
+        assert all(
+            table["caption"]
+            or table["aria_label"]
+            or audit.references_resolve(table["aria_labelledby"])
+            for table in audit.tables
+        )
         assert all(
             panel["heading"] and panel["charts"] and all(panel["charts"])
             for panel in audit.chart_panels
@@ -272,6 +309,8 @@ def test_rendered_data_surfaces_have_accessible_names_and_dialog_semantics(app_c
         assert dialog[0]["aria-modal"] == "true"
         assert dialog[0]["aria-labelledby"] == "repair-drawer-title"
         assert dialog[0]["aria-describedby"] == "repair-drawer-description"
+        assert audit.references_resolve(dialog[0]["aria-labelledby"])
+        assert audit.references_resolve(dialog[0]["aria-describedby"])
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node is required for browserless JS QA")
