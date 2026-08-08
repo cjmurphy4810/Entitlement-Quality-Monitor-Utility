@@ -21312,14 +21312,20 @@
     "id": "EMP-00994",
     "full_name": "Albert Mann",
     "email": "emp-00994@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2026-07-18T09:37:49.506242Z",
+        "ended_at": "2026-08-08T21:54:05.201693Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-08T21:54:05.201693Z",
         "ended_at": null
       }
     ],
@@ -27595,6 +27601,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T21:24:40.133891Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01319",
+    "full_name": "Cesar Blankenship",
+    "email": "emp-01319@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-08T21:54:05.201693Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T21:54:05.201693Z",
     "terminated_at": null
   }
 ]
