@@ -26533,14 +26533,20 @@
     "id": "EMP-01265",
     "full_name": "Jill Berry",
     "email": "emp-01265@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_dev",
         "started_at": "2026-08-06T12:52:53.217437Z",
+        "ended_at": "2026-08-08T13:39:58.480630Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-08T13:39:58.480630Z",
         "ended_at": null
       }
     ],
@@ -27249,6 +27255,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T12:32:57.249520Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01303",
+    "full_name": "Andrew Watts",
+    "email": "emp-01303@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-08T13:39:58.480630Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T13:39:58.480630Z",
     "terminated_at": null
   }
 ]
