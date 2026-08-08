@@ -1,5 +1,6 @@
 import asyncio
 import subprocess
+import threading
 from pathlib import Path
 
 import pytest
@@ -158,3 +159,129 @@ async def test_pull_waits_then_refreshes_cached_data(tmp_path: Path):
 
     assert pull_waited
     assert await store.read("entitlements.json") == [{"from": "peer"}]
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    ("method_name", "worker_name", "args"),
+    [
+        ("acommit_data", "_commit_data_locked", ("cancelled commit",)),
+        ("apush_now", "_push_now_locked", ()),
+    ],
+)
+async def test_cancelled_git_worker_keeps_store_locked_until_thread_finishes(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    method_name: str,
+    worker_name: str,
+    args: tuple[str, ...],
+):
+    remote = tmp_path / "remote.git"
+    local = tmp_path / "local"
+    _init_remote(remote)
+    _init_local(local, remote)
+    sync = GitSync(local, "data", None, True)
+    started = threading.Event()
+    release = threading.Event()
+    finished = threading.Event()
+    writer_started = asyncio.Event()
+
+    def blocking_worker(_sync: GitSync, *_args: str) -> bool:
+        started.set()
+        release.wait(timeout=5)
+        finished.set()
+        return True
+
+    monkeypatch.setattr(GitSync, worker_name, blocking_worker)
+    git_task = asyncio.create_task(getattr(sync, method_name)(*args))
+    assert await asyncio.to_thread(started.wait, 5)
+    git_task.cancel()
+
+    async def write_concurrently() -> None:
+        writer_started.set()
+        await JsonStore(local / "data").write(
+            "cancellation-marker.json", {"written": True}
+        )
+
+    writer_task = asyncio.create_task(write_concurrently())
+    await writer_started.wait()
+    await asyncio.sleep(0)
+    cancellation_waited = not git_task.done()
+    writer_waited = not writer_task.done()
+
+    release.set()
+    with pytest.raises(asyncio.CancelledError):
+        await git_task
+    await writer_task
+
+    assert cancellation_waited
+    assert writer_waited
+    assert finished.is_set()
+
+
+@pytest.mark.asyncio
+async def test_cancelled_pull_refreshes_cache_before_releasing_store_lock(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    remote = tmp_path / "remote.git"
+    local = tmp_path / "local"
+    _init_remote(remote)
+    _init_local(local, remote)
+    sync = GitSync(local, "data", None, True)
+    started = threading.Event()
+    release = threading.Event()
+    finished = threading.Event()
+    writer_started = asyncio.Event()
+    invalidated = False
+    refreshed: list[str] = []
+    original_invalidate = JsonStore.invalidate
+    original_read = JsonStore.read
+
+    def blocking_pull(_sync: GitSync) -> bool:
+        started.set()
+        release.wait(timeout=5)
+        (local / "data" / "entitlements.json").write_text('[{"pulled": true}]')
+        finished.set()
+        return True
+
+    def tracking_invalidate(store: JsonStore) -> None:
+        nonlocal invalidated
+        invalidated = True
+        original_invalidate(store)
+
+    async def tracking_read(store: JsonStore, name: str):
+        value = await original_read(store, name)
+        refreshed.append(name)
+        return value
+
+    monkeypatch.setattr(GitSync, "_pull_now_locked", blocking_pull)
+    monkeypatch.setattr(JsonStore, "invalidate", tracking_invalidate)
+    monkeypatch.setattr(JsonStore, "read", tracking_read)
+
+    pull_task = asyncio.create_task(sync.apull_now())
+    assert await asyncio.to_thread(started.wait, 5)
+    pull_task.cancel()
+
+    async def write_concurrently() -> None:
+        writer_started.set()
+        await JsonStore(local / "data").write(
+            "cancellation-marker.json", {"written": True}
+        )
+
+    writer_task = asyncio.create_task(write_concurrently())
+    await writer_started.wait()
+    await asyncio.sleep(0)
+    cancellation_waited = not pull_task.done()
+    writer_waited = not writer_task.done()
+
+    release.set()
+    with pytest.raises(asyncio.CancelledError):
+        await pull_task
+    await writer_task
+
+    assert cancellation_waited
+    assert writer_waited
+    assert finished.is_set()
+    assert invalidated
+    assert refreshed == list(CANONICAL_FILES)

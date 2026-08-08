@@ -213,11 +213,23 @@ class LoginThrottle:
         self.max_keys = max_keys
         self.failures: OrderedDict[str, deque[float]] = OrderedDict()
 
-    def _recent(self, key: str) -> deque[float]:
+    def _prune(self, now: float) -> None:
+        cutoff = now - self.window_seconds
+        for key, recent in tuple(self.failures.items()):
+            while recent and recent[0] <= cutoff:
+                recent.popleft()
+            if not recent:
+                self.failures.pop(key, None)
+
+    def _recent(self, key: str, now: float) -> deque[float]:
+        self._prune(now)
         recent = self.failures.get(key)
         if recent is None:
-            while len(self.failures) >= self.max_keys:
-                self.failures.popitem(last=False)
+            if len(self.failures) >= self.max_keys:
+                raise HTTPException(
+                    status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                    detail="Too many login attempts",
+                )
             recent = deque()
             self.failures[key] = recent
         else:
@@ -225,9 +237,7 @@ class LoginThrottle:
         return recent
 
     def check(self, key: str, now: float) -> None:
-        recent = self._recent(key)
-        while recent and recent[0] <= now - self.window_seconds:
-            recent.popleft()
+        recent = self._recent(key, now)
         if len(recent) >= self.limit:
             raise HTTPException(
                 status_code=status.HTTP_429_TOO_MANY_REQUESTS,
@@ -235,7 +245,7 @@ class LoginThrottle:
             )
 
     def record_failure(self, key: str, now: float) -> None:
-        self._recent(key).append(now)
+        self._recent(key, now).append(now)
 
     def clear(self, key: str) -> None:
         self.failures.pop(key, None)

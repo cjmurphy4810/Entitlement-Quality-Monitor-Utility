@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -17,6 +18,28 @@ CANONICAL_DATA_FILES = (
     "assignments.json",
     "violations.json",
 )
+
+
+async def _run_thread_to_completion(
+    function: Callable[..., bool], *args: object
+) -> tuple[bool, asyncio.CancelledError | None]:
+    """Keep a non-cancellable thread inside its transaction until it finishes."""
+    worker = asyncio.create_task(asyncio.to_thread(function, *args))
+    cancellation: asyncio.CancelledError | None = None
+    while True:
+        try:
+            result = await asyncio.shield(worker)
+            return result, cancellation
+        except asyncio.CancelledError as exc:
+            if cancellation is None:
+                cancellation = exc
+            current_task = asyncio.current_task()
+            if current_task is not None:
+                current_task.uncancel()
+        except BaseException as exc:
+            if cancellation is not None:
+                raise cancellation from exc
+            raise
 
 
 @dataclass(slots=True)
@@ -40,7 +63,12 @@ class GitSync:
     async def acommit_data(self, message: str) -> bool:
         store = JsonStore(self.repo_dir / self.data_subdir)
         async with store.transaction():
-            return await asyncio.to_thread(self._commit_data_locked, message)
+            committed, cancellation = await _run_thread_to_completion(
+                self._commit_data_locked, message
+            )
+            if cancellation is not None:
+                raise cancellation
+            return committed
 
     def _commit_data_locked(self, message: str) -> bool:
         repo = self._repo()
@@ -63,7 +91,10 @@ class GitSync:
     async def apush_now(self) -> bool:
         store = JsonStore(self.repo_dir / self.data_subdir)
         async with store.transaction():
-            return await asyncio.to_thread(self._push_now_locked)
+            pushed, cancellation = await _run_thread_to_completion(self._push_now_locked)
+            if cancellation is not None:
+                raise cancellation
+            return pushed
 
     def _push_now_locked(self) -> bool:
         repo = self._repo()
@@ -80,13 +111,14 @@ class GitSync:
     async def apull_now(self) -> bool:
         store = JsonStore(self.repo_dir / self.data_subdir)
         async with store.transaction():
-            pulled = await asyncio.to_thread(self._pull_now_locked)
-            if not pulled:
-                return False
-            store.invalidate()
-            for name in CANONICAL_DATA_FILES:
-                await store.read(name)
-            return True
+            pulled, cancellation = await _run_thread_to_completion(self._pull_now_locked)
+            if pulled:
+                store.invalidate()
+                for name in CANONICAL_DATA_FILES:
+                    await store.read(name)
+            if cancellation is not None:
+                raise cancellation
+            return pulled
 
     def _pull_now_locked(self) -> bool:
         repo = self._repo()
