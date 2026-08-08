@@ -189,12 +189,28 @@ async def my_findings_placeholder(
     )
 
 
+@router.api_route("/api", methods=["GET", "POST", "PUT", "PATCH", "DELETE"])
+async def protected_api_root(
+    request: Request, settings: Annotated[Settings, Depends(get_settings)]
+) -> None:
+    _api_principal(request, settings)
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="CTADMIN API resource not found")
+
+
 @router.api_route("/api/{resource:path}", methods=["GET", "POST", "PUT", "PATCH", "DELETE"])
 async def protected_api_placeholder(
     request: Request, resource: str, settings: Annotated[Settings, Depends(get_settings)]
 ) -> None:
     _api_principal(request, settings)
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="CTADMIN API resource not found")
+
+
+@router.api_route("/actions", methods=["GET", "POST", "PUT", "PATCH", "DELETE"])
+async def protected_action_root(
+    request: Request, settings: Annotated[Settings, Depends(get_settings)]
+) -> None:
+    _api_principal(request, settings)
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="CTADMIN action not found")
 
 
 @router.api_route("/actions/{resource:path}", methods=["GET", "POST", "PUT", "PATCH", "DELETE"])

@@ -120,6 +120,23 @@ def test_unauthenticated_ctadmin_data_and_action_paths_return_json_401(app_clien
         assert response.json() == {"detail": "Authentication required"}
 
 
+def test_unauthenticated_ctadmin_api_and_action_roots_return_json_401(app_client):
+    """Removing no-slash guards would leak FastAPI's 307 normalization redirects."""
+    client, _ = app_client
+
+    for method, path in [
+        (client.get, "/ctadmin/api"),
+        (client.post, "/ctadmin/api"),
+        (client.get, "/ctadmin/actions"),
+        (client.post, "/ctadmin/actions"),
+    ]:
+        response = method(path, follow_redirects=False)
+
+        assert response.status_code == 401
+        assert response.headers["content-type"].startswith("application/json")
+        assert response.json() == {"detail": "Authentication required"}
+
+
 def test_ctadmin_static_assets_do_not_replace_the_existing_static_mount(app_client):
     """A CTADMIN static mount collision would break the established dashboard asset route."""
     client, _ = app_client
