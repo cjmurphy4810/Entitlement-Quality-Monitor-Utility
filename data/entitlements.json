@@ -5411,7 +5411,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-07-28T18:12:33.002580Z",
-    "updated_at": "2026-07-28T18:12:33.002580Z"
+    "updated_at": "2026-08-08T11:31:15.591186Z"
   },
   {
     "id": "ENT-00344",
@@ -5970,5 +5970,19 @@
     "sod_tags": [],
     "created_at": "2026-08-08T03:06:11.600684Z",
     "updated_at": "2026-08-08T03:06:11.600684Z"
+  },
+  {
+    "id": "ENT-00380",
+    "name": "new entitlement ENT-00380",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-08T11:31:15.591186Z",
+    "updated_at": "2026-08-08T11:31:15.591186Z"
   }
 ]

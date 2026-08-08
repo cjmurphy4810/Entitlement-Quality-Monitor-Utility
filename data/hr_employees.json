@@ -27193,5 +27193,43 @@
     "manager_id": null,
     "hired_at": "2026-08-08T10:58:57.464932Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01300",
+    "full_name": "Mary Williams",
+    "email": "emp-01300@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-08T11:31:15.591186Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T11:31:15.591186Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01301",
+    "full_name": "Chad Howell II",
+    "email": "emp-01301@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-08T11:31:15.591186Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T11:31:15.591186Z",
+    "terminated_at": null
   }
 ]
