@@ -14,7 +14,7 @@ Confirmed repairs are not UI-only simulations. CTADMIN validates the proposed ch
 | Environment variable | Required | Default | Description |
 |---|---:|---|---|
 | `EQM_DATA_DIR` | no | `./data` | Directory containing the five JSON data files. |
-| `EQM_BEARER_TOKEN` | yes | none | Token for write, simulation, and sync API routes; it does not log a user into CTADMIN. |
+| `EQM_BEARER_TOKEN` | yes | none | Token for writes, simulation, and sync API routes; it does not log a user into CTADMIN. |
 | `EQM_CTADMIN_USERNAME` | for CTADMIN | none | Username checked by the server-side login route. |
 | `EQM_CTADMIN_PASSWORD` | for CTADMIN | none | Password checked by the server. Supply it through environment or platform secrets. |
 | `EQM_CTADMIN_SESSION_SECRET` | for CTADMIN | none | HMAC signing secret. It must contain at least 32 non-whitespace characters. |
@@ -25,6 +25,8 @@ Confirmed repairs are not UI-only simulations. CTADMIN validates the proposed ch
 | `EQM_GIT_REMOTE_URL` | if push enabled | none | Remote used by the synchronization flow. Avoid embedding credentials in checked-in configuration. |
 
 The login creates a signed, HTTP-only, SameSite=Lax session cookie. State-changing CTADMIN actions additionally require the CSRF token bound to that session. Changing the session secret invalidates all existing CTADMIN sessions.
+
+Read routes are unauthenticated unless the deployment is protected by an access gateway. Bearer authentication protects writes, simulation, and sync. CTADMIN page/API routes have their separate signed-session protection described above.
 
 ## Local demo setup
 
@@ -119,4 +121,26 @@ fly secrets set \
 
 Generate the session secret outside the repository and pass it directly to the platform secret manager. Do not put credentials in `fly.toml`, shell history, screenshots, test fixtures used outside tests, or commits.
 
-The Fly volume mounted at `/data` makes confirmed repairs persistent across machine restarts. Back up or copy that volume before a demo if you need an exact rollback point. The existing deployment helper configures API/Git synchronization secrets; CTADMIN credentials and the CTADMIN session secret must also be set before the dashboard login is used.
+The existing `scripts/deploy.sh` helper does not set CTADMIN secrets. Set all four CTADMIN values shown above before using the dashboard login.
+
+The container image intentionally omits sample data, and a newly created Fly volume is empty. After the first deploy, initialize the volume before the first CTADMIN visit with the authenticated `POST /simulate/reset` endpoint:
+
+```bash
+export EQM_FLY_APP='eqm-utility'
+printf 'EQM bearer token: '
+IFS= read -r -s EQM_DEPLOY_API_TOKEN
+printf '\n'
+
+curl --fail-with-body \
+  --request POST \
+  --header "Authorization: Bearer ${EQM_DEPLOY_API_TOKEN}" \
+  --header 'Content-Type: application/json' \
+  --data '{"small": false}' \
+  "https://${EQM_FLY_APP}.fly.dev/simulate/reset"
+
+unset EQM_DEPLOY_API_TOKEN
+```
+
+Enter the same bearer-token value stored in the Fly secret when prompted. A successful JSON response reports the generated record counts. This full reset creates all five JSON files in `/data`: entitlements, HR employees, CMDB resources, assignments, and evaluated violations. It is required for a fresh volume; without it, the first CTADMIN page has no data to render.
+
+The Fly volume mounted at `/data` makes initialized data and confirmed repairs persistent across machine restarts. Back up or copy that volume before a demo if you need an exact rollback point.

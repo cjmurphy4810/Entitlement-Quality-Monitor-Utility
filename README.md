@@ -82,7 +82,7 @@ Every transition appends an entry to `workflow_history` capturing the actor, tim
 
 ## API integration
 
-The existing bearer-authenticated API remains available for record generation and automation. Common endpoints include `GET /violations`, `POST /violations/{id}/transition`, `PATCH /entitlements/{id}`, `DELETE /assignments/{id}`, and the simulation routes. The additional CTADMIN dashboard is a direct product interface over the same data and does not require an external workflow platform.
+The existing API remains available for record generation and automation. Read routes are unauthenticated unless the deployment is protected by an access gateway. Bearer authentication protects writes, simulation, and sync; examples include `POST /violations/{id}/transition`, `PATCH /entitlements/{id}`, `DELETE /assignments/{id}`, and the simulation routes. The additional CTADMIN dashboard is a direct product interface over the same data and does not require an external workflow platform.
 
 ## Demo storyline (5 minutes)
 
