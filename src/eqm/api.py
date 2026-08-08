@@ -484,12 +484,13 @@ class ScenarioRequest(BaseModel):
 
 
 async def _load_bundle(store: JsonStore) -> SeedBundle:
-    return SeedBundle(
-        entitlements=[Entitlement(**x) for x in await _read_list(store, "entitlements.json")],
-        hr_employees=[HREmployee(**x) for x in await _read_list(store, "hr_employees.json")],
-        cmdb_resources=[CMDBResource(**x) for x in await _read_list(store, "cmdb_resources.json")],
-        assignments=[Assignment(**x) for x in await _read_list(store, "assignments.json")],
-    )
+    async with store.transaction():
+        return SeedBundle(
+            entitlements=[Entitlement(**x) for x in await _read_list(store, "entitlements.json")],
+            hr_employees=[HREmployee(**x) for x in await _read_list(store, "hr_employees.json")],
+            cmdb_resources=[CMDBResource(**x) for x in await _read_list(store, "cmdb_resources.json")],
+            assignments=[Assignment(**x) for x in await _read_list(store, "assignments.json")],
+        )
 
 
 async def _save_bundle_and_evaluate(store: JsonStore, bundle: SeedBundle) -> int:
@@ -536,12 +537,13 @@ async def simulate_reset(body: ResetRequest,
 
 @app.post("/simulate/tick", dependencies=[Depends(require_token)])
 async def simulate_tick(store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
-    bundle = await _load_bundle(store)
-    tick = int(datetime.now(UTC).timestamp()) // 60
-    summary = drift_tick(bundle, tick_number=tick)
-    new_count = await _save_bundle_and_evaluate(store, bundle)
-    return {"tick_number": tick, "changes": summary.changes,
-            "new_violations": new_count}
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        tick = int(datetime.now(UTC).timestamp()) // 60
+        summary = drift_tick(bundle, tick_number=tick)
+        new_count = await _save_bundle_and_evaluate(store, bundle)
+        return {"tick_number": tick, "changes": summary.changes,
+                "new_violations": new_count}
 
 
 @app.post("/simulate/scenario", dependencies=[Depends(require_token)])
@@ -549,10 +551,11 @@ async def simulate_scenario(body: ScenarioRequest,
                              store: JsonStore = Depends(get_store)) -> dict:  # noqa: B008
     if body.name not in SCENARIOS:
         raise HTTPException(400, f"Unknown scenario. Known: {sorted(SCENARIOS)}")
-    bundle = await _load_bundle(store)
-    run_scenario(body.name, bundle)
-    new_count = await _save_bundle_and_evaluate(store, bundle)
-    return {"scenario": body.name, "new_violations": new_count}
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        run_scenario(body.name, bundle)
+        new_count = await _save_bundle_and_evaluate(store, bundle)
+        return {"scenario": body.name, "new_violations": new_count}
 
 
 def get_git_sync(settings: Settings = Depends(get_settings)) -> GitSync:  # noqa: B008
@@ -566,14 +569,14 @@ def get_git_sync(settings: Settings = Depends(get_settings)) -> GitSync:  # noqa
 
 @app.post("/sync/push-now", dependencies=[Depends(require_token)])
 async def sync_push_now(git: GitSync = Depends(get_git_sync)) -> dict:  # noqa: B008
-    committed = git.commit_data("manual: push-now from API")
-    pushed = git.push_now() if committed else False
+    committed = await git.acommit_data("manual: push-now from API")
+    pushed = await git.apush_now() if committed else False
     return {"committed": committed, "pushed": pushed}
 
 
 @app.post("/sync/pull-now", dependencies=[Depends(require_token)])
 async def sync_pull_now(git: GitSync = Depends(get_git_sync)) -> dict:  # noqa: B008
-    return {"pulled": git.pull_now()}
+    return {"pulled": await git.apull_now()}
 
 
 def _scenarios_list() -> list[str]:
@@ -606,11 +609,12 @@ async def dashboard_overview(request: Request,
 
 @app.post("/dashboard/actions/tick", dependencies=[Depends(require_token)])
 async def dashboard_action_tick(store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
-    bundle = await _load_bundle(store)
-    tick = int(datetime.now(UTC).timestamp()) // 60
-    drift_tick(bundle, tick_number=tick)
-    await _save_bundle_and_evaluate(store, bundle)
-    return RedirectResponse("/", status_code=303)
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        tick = int(datetime.now(UTC).timestamp()) // 60
+        drift_tick(bundle, tick_number=tick)
+        await _save_bundle_and_evaluate(store, bundle)
+        return RedirectResponse("/", status_code=303)
 
 
 @app.post("/dashboard/actions/scenario", dependencies=[Depends(require_token)])
@@ -618,10 +622,11 @@ async def dashboard_action_scenario(name: Annotated[str, Form()],
                                       store: JsonStore = Depends(get_store)) -> RedirectResponse:  # noqa: B008
     if name not in SCENARIOS:
         raise HTTPException(400, "Unknown scenario")
-    bundle = await _load_bundle(store)
-    run_scenario(name, bundle)
-    await _save_bundle_and_evaluate(store, bundle)
-    return RedirectResponse("/", status_code=303)
+    async with store.transaction():
+        bundle = await _load_bundle(store)
+        run_scenario(name, bundle)
+        await _save_bundle_and_evaluate(store, bundle)
+        return RedirectResponse("/", status_code=303)
 
 
 @app.post("/dashboard/actions/reset", dependencies=[Depends(require_token)])

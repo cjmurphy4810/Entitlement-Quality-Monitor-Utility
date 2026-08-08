@@ -7,6 +7,7 @@ import pytest
 from eqm.api import (
     ReopenRequest,
     TransitionRequest,
+    _load_bundle,
     _patch_record,
     _save_bundle_and_evaluate,
     revoke_assignment,
@@ -208,6 +209,40 @@ async def test_bundle_save_is_one_five_file_transaction(tmp_path):
         "assignments.json",
         "violations.json",
     }
+
+
+@pytest.mark.asyncio
+async def test_load_bundle_cannot_return_hybrid_snapshot(tmp_path, monkeypatch):
+    _seed(tmp_path)
+    load_store = JsonStore(tmp_path)
+    writer = JsonStore(tmp_path)
+    assignments = await writer.read("assignments.json")
+    assignments[0]["active"] = False
+    actual_read = load_store.read
+    first_file_read = asyncio.Event()
+    release_load = asyncio.Event()
+
+    async def pause_after_entitlements(name):
+        data = await actual_read(name)
+        if name == "entitlements.json":
+            first_file_read.set()
+            await release_load.wait()
+        return data
+
+    monkeypatch.setattr(load_store, "read", pause_after_entitlements)
+    load_task = asyncio.create_task(_load_bundle(load_store))
+    await first_file_read.wait()
+    writer_task = asyncio.create_task(writer.write("assignments.json", assignments))
+    await asyncio.sleep(0)
+    writer_waited = not writer_task.done()
+
+    release_load.set()
+    bundle = await load_task
+    await writer_task
+
+    assert writer_waited
+    assert len(bundle.entitlements) == 1
+    assert bundle.assignments[0].active is True
 
 
 def test_patch_entitlement(app_client, tmp_path):

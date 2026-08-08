@@ -1,3 +1,4 @@
+import asyncio
 import json
 
 import pytest
@@ -393,3 +394,37 @@ async def test_personas_are_active_and_sorted_with_public_fields_only(store):
         {"id": "EMP-1", "fullName": "Ada Lovelace", "division": "tech_ops", "role": "operations"},
         {"id": "EMP-2", "fullName": "Grace Hopper", "division": "tech_dev", "role": "developer"},
     ]
+
+
+@pytest.mark.asyncio
+async def test_dashboard_query_cannot_mix_files_from_interleaved_commit(
+    store, monkeypatch
+):
+    writer = JsonStore(store.data_dir)
+    employees = await writer.read("hr_employees.json")
+    employees[0]["full_name"] = "Changed Mid-query"
+    actual_read = store.read
+    first_file_read = asyncio.Event()
+    release_query = asyncio.Event()
+
+    async def pause_after_violations(name):
+        data = await actual_read(name)
+        if name == "violations.json":
+            first_file_read.set()
+            await release_query.wait()
+        return data
+
+    monkeypatch.setattr(store, "read", pause_after_violations)
+    query_task = asyncio.create_task(load_dashboard_query(store, FindingFilters()))
+    await first_file_read.wait()
+
+    writer_task = asyncio.create_task(writer.write("hr_employees.json", employees))
+    await asyncio.sleep(0)
+    writer_waited = not writer_task.done()
+
+    release_query.set()
+    result = await query_task
+    await writer_task
+
+    assert writer_waited
+    assert result.rows[0]["userName"] != "Changed Mid-query"

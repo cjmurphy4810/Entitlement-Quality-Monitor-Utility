@@ -1,3 +1,4 @@
+import asyncio
 import json
 import re
 from urllib.parse import parse_qs, urlparse
@@ -7,8 +8,10 @@ import pytest
 from eqm.config import get_settings
 from eqm.ctadmin.auth import SessionCodec
 from eqm.ctadmin.repairs import RepairValidationError
+from eqm.ctadmin.routes import _finding_context
 from eqm.ctadmin.service import RepairDidNotClearError, StaleFindingError
 from eqm.models import Violation
+from eqm.persistence import JsonStore
 
 
 def _login(client, *, next_path: str | None = None):
@@ -245,6 +248,42 @@ def _seed_persona_route_data(data_dir):
     )
     (data_dir / "violations.json").write_text(json.dumps(records))
     return records
+
+
+@pytest.mark.asyncio
+async def test_finding_context_cannot_mix_interleaved_files(tmp_path, monkeypatch):
+    _seed_route_data(tmp_path)
+    context_store = JsonStore(tmp_path)
+    writer = JsonStore(tmp_path)
+    entitlements = await writer.read("entitlements.json")
+    entitlements[0]["name"] = "Changed Mid-context"
+    actual_read = context_store.read
+    first_file_read = asyncio.Event()
+    release_context = asyncio.Event()
+
+    async def pause_after_violations(name):
+        data = await actual_read(name)
+        if name == "violations.json":
+            first_file_read.set()
+            await release_context.wait()
+        return data
+
+    monkeypatch.setattr(context_store, "read", pause_after_violations)
+    context_task = asyncio.create_task(
+        _finding_context(context_store, "VIO-100")
+    )
+    await first_file_read.wait()
+    writer_task = asyncio.create_task(writer.write("entitlements.json", entitlements))
+    await asyncio.sleep(0)
+    writer_waited = not writer_task.done()
+
+    release_context.set()
+    context = await context_task
+    await writer_task
+
+    assert writer_waited
+    assert context is not None
+    assert context["target"]["name"] == "Ledger Reader"
 
 
 def test_unauthenticated_ctadmin_pages_redirect_to_login(app_client):

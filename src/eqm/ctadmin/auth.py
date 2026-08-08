@@ -8,7 +8,7 @@ import hmac
 import json
 import secrets
 import time
-from collections import OrderedDict, defaultdict, deque
+from collections import OrderedDict, deque
 from dataclasses import dataclass
 
 from fastapi import HTTPException, status
@@ -202,13 +202,30 @@ async def validate_csrf(request: Request, principal: SessionPrincipal) -> None:
 class LoginThrottle:
     """Bound repeated login failures in memory by normalized user and client address."""
 
-    def __init__(self, limit: int = 5, window_seconds: int = 300) -> None:
+    def __init__(
+        self,
+        limit: int = 5,
+        window_seconds: int = 300,
+        max_keys: int = 2048,
+    ) -> None:
         self.limit = limit
         self.window_seconds = window_seconds
-        self.failures: dict[str, deque[float]] = defaultdict(deque)
+        self.max_keys = max_keys
+        self.failures: OrderedDict[str, deque[float]] = OrderedDict()
+
+    def _recent(self, key: str) -> deque[float]:
+        recent = self.failures.get(key)
+        if recent is None:
+            while len(self.failures) >= self.max_keys:
+                self.failures.popitem(last=False)
+            recent = deque()
+            self.failures[key] = recent
+        else:
+            self.failures.move_to_end(key)
+        return recent
 
     def check(self, key: str, now: float) -> None:
-        recent = self.failures[key]
+        recent = self._recent(key)
         while recent and recent[0] <= now - self.window_seconds:
             recent.popleft()
         if len(recent) >= self.limit:
@@ -218,7 +235,7 @@ class LoginThrottle:
             )
 
     def record_failure(self, key: str, now: float) -> None:
-        self.failures[key].append(now)
+        self._recent(key).append(now)
 
     def clear(self, key: str) -> None:
         self.failures.pop(key, None)

@@ -321,6 +321,16 @@ async def load_dashboard_query(
     filters: FindingFilters,
     persona_id: str | None = None,
 ) -> DashboardQueryResult:
+    """Load a dashboard result from one coherent store snapshot."""
+    async with store.transaction():
+        return await _load_dashboard_query_locked(store, filters, persona_id)
+
+
+async def _load_dashboard_query_locked(
+    store: JsonStore,
+    filters: FindingFilters,
+    persona_id: str | None = None,
+) -> DashboardQueryResult:
     """Load one normalized row set and derive all dashboard outputs from it."""
     raw_vios, employees, assignments, entitlements, resources = await _load_dashboard_data(store)
     emp_by_id = {employee["id"]: employee for employee in employees}
@@ -430,13 +440,14 @@ async def load_dashboard_query(
 async def _load_dashboard_data(
     store: JsonStore,
 ) -> tuple[list[dict], list[dict], list[dict], list[dict], list[dict]]:
-    return (
-        await _read_list(store, "violations.json"),
-        await _read_list(store, "hr_employees.json"),
-        await _read_list(store, "assignments.json"),
-        await _read_list(store, "entitlements.json"),
-        await _read_list(store, "cmdb_resources.json"),
-    )
+    async with store.transaction():
+        return (
+            await _read_list(store, "violations.json"),
+            await _read_list(store, "hr_employees.json"),
+            await _read_list(store, "assignments.json"),
+            await _read_list(store, "entitlements.json"),
+            await _read_list(store, "cmdb_resources.json"),
+        )
 
 
 async def load_personas(store: JsonStore) -> list[dict]:

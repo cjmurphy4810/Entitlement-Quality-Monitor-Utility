@@ -234,6 +234,28 @@ def test_login_throttle_locks_out_sixth_attempt_and_clears_after_success():
     throttle.check(key, now=5.0)
 
 
+def test_login_throttle_bounds_arbitrary_username_keys_without_resetting_hot_key():
+    from eqm.ctadmin.auth import LoginThrottle
+
+    throttle = LoginThrottle(limit=2, window_seconds=300, max_keys=3)
+    hot_key = "demo-admin:203.0.113.7"
+    for now in (0.0, 1.0):
+        throttle.check(hot_key, now)
+        throttle.record_failure(hot_key, now)
+
+    for index in range(10):
+        with pytest.raises(HTTPException):
+            throttle.check(hot_key, now=2.0 + index)
+        sprayed_key = f"arbitrary-{index}:203.0.113.7"
+        throttle.check(sprayed_key, now=2.0 + index)
+        throttle.record_failure(sprayed_key, now=2.0 + index)
+
+    assert len(throttle.failures) == 3
+    with pytest.raises(HTTPException) as exc_info:
+        throttle.check(hot_key, now=20.0)
+    assert exc_info.value.status_code == 429
+
+
 def test_login_throttle_key_normalizes_username_and_uses_client_address():
     from eqm.ctadmin.auth import login_throttle_key
 

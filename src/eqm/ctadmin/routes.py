@@ -313,6 +313,13 @@ def _decorate_repair_rows(payload: dict[str, object], origin: str) -> None:
 
 
 async def _finding_context(store: JsonStore, violation_id: str) -> dict[str, object] | None:
+    async with store.transaction():
+        return await _finding_context_locked(store, violation_id)
+
+
+async def _finding_context_locked(
+    store: JsonStore, violation_id: str
+) -> dict[str, object] | None:
     violations = await _read_records(store, "violations.json")
     raw = next((item for item in violations if item.get("id") == violation_id), None)
     if raw is None:
