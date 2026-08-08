@@ -10258,7 +10258,7 @@
     "email": "emp-00456@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -10281,7 +10281,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-24T22:29:02.977177Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T06:38:57.171162Z"
   },
   {
     "id": "EMP-00457",
@@ -27135,6 +27135,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T04:33:32.377703Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01297",
+    "full_name": "Amanda Jefferson",
+    "email": "emp-01297@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-08T06:38:57.171162Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T06:38:57.171162Z",
     "terminated_at": null
   }
 ]
