@@ -165,9 +165,9 @@ def _boolean_query(request: Request, name: str, default: bool = False) -> bool:
 async def _dashboard_request(
     request: Request,
     settings: Settings,
-    principal: SessionPrincipal,
     *,
     include_terminal_default: bool = False,
+    persona_scope: str | None = None,
 ) -> dict[str, object]:
     public_states = _normalised_query_values(request, "state")
     severities = _normalised_query_values(request, "severity")
@@ -217,7 +217,7 @@ async def _dashboard_request(
             page=page,
             page_size=page_size,
         ),
-        persona_id=None if principal.persona_id == "ctadmin" else principal.persona_id,
+        persona_id=persona_scope,
     )
     kpis = query_result.kpis
     return {
@@ -540,7 +540,7 @@ async def dashboard(request: Request, settings: Annotated[Settings, Depends(get_
     principal = _page_principal(request, settings)
     if isinstance(principal, RedirectResponse):
         return principal
-    payload = await _dashboard_request(request, settings, principal)
+    payload = await _dashboard_request(request, settings)
     return templates.TemplateResponse(
         request,
         "dashboard.html",
@@ -558,7 +558,7 @@ async def remediation(request: Request, settings: Annotated[Settings, Depends(ge
     principal = _page_principal(request, settings)
     if isinstance(principal, RedirectResponse):
         return principal
-    payload = await _dashboard_request(request, settings, principal, include_terminal_default=True)
+    payload = await _dashboard_request(request, settings, include_terminal_default=True)
     store = JsonStore(settings.data_dir)
     raw_violations = await _read_records(store, "violations.json")
     rule_options = sorted(
@@ -660,7 +660,10 @@ async def my_findings(request: Request, settings: Annotated[Settings, Depends(ge
     payload = None
     if selected_persona is not None:
         payload = await _dashboard_request(
-            request, settings, principal, include_terminal_default=True
+            request,
+            settings,
+            include_terminal_default=True,
+            persona_scope=principal.persona_id,
         )
         origin = request.url.path
         if request.url.query:
@@ -686,8 +689,8 @@ async def my_findings(request: Request, settings: Annotated[Settings, Depends(ge
 async def dashboard_api(
     request: Request, settings: Annotated[Settings, Depends(get_settings)]
 ) -> dict[str, object]:
-    principal = _api_principal(request, settings)
-    return await _dashboard_request(request, settings, principal)
+    _api_principal(request, settings)
+    return await _dashboard_request(request, settings)
 
 
 @router.get("/api/my-findings")
@@ -708,8 +711,8 @@ async def my_findings_api(
     payload = await _dashboard_request(
         request,
         settings,
-        principal,
         include_terminal_default=_boolean_query(request, "include_all"),
+        persona_scope=principal.persona_id,
     )
     origin = "/ctadmin/my-findings"
     if request.url.query:

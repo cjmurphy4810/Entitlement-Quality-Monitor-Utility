@@ -1060,6 +1060,58 @@ def test_my_findings_api_scopes_exactly_and_include_all_controls_terminal_rows(a
     assert "VIO-200" not in complete.text
 
 
+def test_persona_selection_scopes_only_my_findings_not_portfolio_pages(app_client):
+    """A demo perspective must not silently narrow administrative portfolio surfaces."""
+    client, _ = app_client
+    _seed_persona_route_data(get_settings().data_dir)
+    _login(client)
+    selected = client.post(
+        "/ctadmin/actions/persona",
+        data={"persona_id": "EMP-1", "csrf_token": _csrf(client)},
+        follow_redirects=False,
+    )
+    assert selected.status_code == 303
+
+    dashboard_api = client.get("/ctadmin/api/dashboard")
+    assert dashboard_api.status_code == 200
+    assert dashboard_api.json()["kpis"]["totalFindings"] == 3
+    assert {row["violationId"] for row in dashboard_api.json()["rows"]} == {
+        "VIO-100",
+        "VIO-101",
+        "VIO-200",
+    }
+
+    dashboard_page = client.get("/ctadmin/dashboard")
+    assert dashboard_page.status_code == 200
+    embedded = re.search(
+        r'<script id="dashboard-data" type="application/json">(.*?)</script>',
+        dashboard_page.text,
+        re.DOTALL,
+    )
+    assert embedded is not None
+    dashboard_payload = json.loads(embedded.group(1))
+    assert dashboard_payload["kpis"]["totalFindings"] == 3
+    assert {row["violationId"] for row in dashboard_payload["rows"]} == {
+        "VIO-100",
+        "VIO-101",
+        "VIO-200",
+    }
+
+    remediation = client.get("/ctadmin/remediation")
+    assert remediation.status_code == 200
+    assert "Repair queue / 5 matching findings" in remediation.text
+    assert "VIO-200" in remediation.text
+    assert "VIO-102" in remediation.text
+
+    my_findings = client.get("/ctadmin/api/my-findings")
+    assert my_findings.status_code == 200
+    assert my_findings.json()["kpis"]["totalFindings"] == 2
+    assert {row["violationId"] for row in my_findings.json()["rows"]} == {
+        "VIO-100",
+        "VIO-101",
+    }
+
+
 def test_my_findings_api_guards_both_slash_forms_methods_and_include_all_values(app_client):
     """Concrete persona JSON routes may not fall through to redirects or wildcard semantics."""
     client, _ = app_client

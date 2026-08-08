@@ -1,6 +1,6 @@
-# Entitlement Quality Monitor Utility
+# CTADMIN Entitlement Quality Monitor Utility
 
-A simulated **Data Fabric** for entitlement governance, designed to be consumed by **Appian** as a Connected System. Generates and continuously mutates dummy entitlement / HR / CMDB records, runs a deterministic, fact-based **rules engine** over them, and emits violations with concrete suggested fixes — all gated by a human-in-the-loop workflow state machine.
+A CTADMIN product demo for entitlement governance. It generates and mutates simulated entitlement, HR, CMDB, and assignment records; runs a deterministic rules engine; and presents the resulting findings in a server-rendered operator dashboard with verified remediation.
 
 The rules engine is **strictly deterministic**: no LLM, no fuzzy matching. Every rule is a pure Python function with unit tests. That's the Model Risk Management posture this tool exists to demonstrate.
 
@@ -8,10 +8,11 @@ The rules engine is **strictly deterministic**: no LLM, no fuzzy matching. Every
 
 - **`data/`** — JSON files that ARE the data fabric (entitlements, HR, CMDB, assignments, violations). Version-controlled audit trail.
 - **`src/eqm/rules/`** — 13 deterministic rules across four categories.
-- **`src/eqm/engine.py`** — runs all rules; reconciles new findings against existing violations to preserve Appian-side workflow state.
+- **`src/eqm/engine.py`** — runs all rules and reconciles new findings against existing workflow state.
 - **`src/eqm/simulator.py`** — drift mode: random, mostly-realistic mutations every 30 min via GitHub Actions.
 - **`src/eqm/scenarios.py`** — seven on-cue demo scenarios (e.g. `terminated_user_with_admin`, `sod_payment_breach`).
-- **`src/eqm/api.py`** — FastAPI app with read/write/simulate/sync endpoints + an HTML dashboard at `/`.
+- **`src/eqm/api.py`** — FastAPI app with read/write/simulate/sync endpoints plus the existing API-support dashboard at `/`.
+- **`src/eqm/ctadmin/`** — authenticated CTADMIN Health Dashboard, Remediation, Finding Detail, and My Findings pages at `/ctadmin/*`.
 - **`fly.toml`, `Dockerfile`, `scripts/deploy.sh`** — Fly.io deployment.
 
 ## Quickstart (local)
@@ -22,14 +23,23 @@ pip install -e ".[dev]"
 
 export EQM_BEARER_TOKEN=demo-token
 export EQM_DATA_DIR=./data
+export EQM_CTADMIN_USERNAME=demo-admin
+export EQM_CTADMIN_PASSWORD='<set-a-local-demo-password>'
+export EQM_CTADMIN_SESSION_SECRET="$(python -c 'import secrets; print(secrets.token_urlsafe(48))')"
+export EQM_CTADMIN_SECURE_COOKIES=0
 
 python -m eqm seed --small
 python -m eqm drift
 python -m eqm scenario kitchen_sink
 
 uvicorn eqm.api:app --reload --port 8080
-# open http://localhost:8080
+# API-support dashboard: http://localhost:8080/
+# CTADMIN login: http://localhost:8080/ctadmin/login
 ```
+
+Use the password assigned to `EQM_CTADMIN_PASSWORD` to sign in. Local plain HTTP requires `EQM_CTADMIN_SECURE_COOKIES=0`; hosted HTTPS must use secure cookies. Confirmed repairs update JSON records under `EQM_DATA_DIR` and rerun the rules engine before the finding is resolved.
+
+See [docs/ctadmin-dashboard.md](docs/ctadmin-dashboard.md) for the full configuration reference, disposable-data demo workflow, reset procedure, and Fly.io checklist.
 
 ## Tests
 
@@ -70,33 +80,9 @@ REJECTED → OPEN  (only via POST /violations/{id}/reopen, compliance-driven)
 
 Every transition appends an entry to `workflow_history` capturing the actor, timestamp, note, and any `override_fix`.
 
-## Appian Connector setup
+## API integration
 
-Once deployed to Fly (or any HTTPS host), wire Appian like this:
-
-1. **Connected System** (HTTP, Bearer auth)
-   - Base URL: `https://eqm-utility.fly.dev`
-   - Auth: `Authorization: Bearer ${EQM_BEARER_TOKEN}`
-
-2. **Integrations** — create one per endpoint Appian needs:
-   - `GET /violations?state=open&severity=critical` — main poll
-   - `POST /violations/{id}/transition` — body: `{to_state, actor, note, override_fix?}`
-   - `PATCH /entitlements/{id}` — for "fix the entitlement" remediations
-   - `DELETE /assignments/{id}` — for "revoke the assignment" remediations
-   - `GET /hr/employees/{id}` — lookup
-   - `GET /entitlements/{id}` — lookup
-
-3. **Process model** (sketch)
-   - Timer every 60s → `GET /violations?state=open` → for each:
-     - First, transition to `pending_approval`: `POST /violations/{id}/transition` with `{to_state: "pending_approval", actor: "appian"}`
-     - Route by severity:
-       - `critical` → compliance review queue (human task)
-       - `high` → entitlement-owner queue
-       - `medium` / `low` → user-manager queue
-     - Human task screen surfaces `evidence` + `suggested_fix` with three buttons:
-       - **Approve** → call the appropriate write endpoint (PATCH/DELETE) using `suggested_fix` (or `override_fix` if the human modified it). Then transition to `approved` → `resolved`.
-       - **Reject** → transition to `rejected` with a required `note`.
-       - **Manual repair** → transition to `manual_repair` and surface in a separate queue for offline handling. When fixed, transition to `resolved`.
+The existing bearer-authenticated API remains available for record generation and automation. Common endpoints include `GET /violations`, `POST /violations/{id}/transition`, `PATCH /entitlements/{id}`, `DELETE /assignments/{id}`, and the simulation routes. The additional CTADMIN dashboard is a direct product interface over the same data and does not require an external workflow platform.
 
 ## Demo storyline (5 minutes)
 
@@ -121,6 +107,11 @@ Use `POST /sync/pull-now` if you need to pick up Actions-committed changes durin
 | `EQM_GIT_PUSH_ENABLED` | no | `false` | enable git commit + push from API |
 | `EQM_GIT_PUSH_TOKEN` | only if push enabled | — | GitHub PAT for HTTPS push |
 | `EQM_GIT_REMOTE_URL` | only if push enabled | — | remote URL incl. token |
+| `EQM_CTADMIN_USERNAME` | CTADMIN UI | — | server-side login username |
+| `EQM_CTADMIN_PASSWORD` | CTADMIN UI | — | server-side login password; provide as a secret |
+| `EQM_CTADMIN_SESSION_SECRET` | CTADMIN UI | — | signing secret, at least 32 characters |
+| `EQM_CTADMIN_SESSION_TTL_SECONDS` | no | `28800` | signed-session lifetime, 300–86400 seconds |
+| `EQM_CTADMIN_SECURE_COOKIES` | no | `true` | require HTTPS when sending the session cookie |
 
 ## License
 
