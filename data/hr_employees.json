@@ -11186,14 +11186,20 @@
     "id": "EMP-00498",
     "full_name": "Mary Oliver",
     "email": "emp-00498@example.com",
-    "current_role": "business_analyst",
-    "current_division": "hr",
+    "current_role": "operations",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "hr",
         "started_at": "2026-05-30T05:08:40.511044Z",
+        "ended_at": "2026-08-08T20:20:30.720688Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-08T20:20:30.720688Z",
         "ended_at": null
       }
     ],
@@ -17713,7 +17719,7 @@
     "email": "emp-00813@example.com",
     "current_role": "business_user",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -17724,7 +17730,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-04T20:28:17.542615Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T20:20:30.720688Z"
   },
   {
     "id": "EMP-00814",
@@ -27501,6 +27507,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T19:51:24.983024Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01315",
+    "full_name": "Sarah Estes",
+    "email": "emp-01315@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-08T20:20:30.720688Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T20:20:30.720688Z",
     "terminated_at": null
   }
 ]
