@@ -145,11 +145,44 @@ async def test_dashboard_query_reports_workflow_coverage_catalog_and_empty_metad
     ]
     assert result.entitlement_coverage == {"total": 2, "withFindings": 1, "withoutFindings": 1}
     assert [row["violationId"] for row in result.catalog_findings] == ["VIO-3"]
-    assert result.pagination == {"page": 1, "pageSize": 4, "total": 4, "totalPages": 1}
+    assert result.pagination == {"page": 1, "pageSize": 50, "total": 4, "totalPages": 1}
 
-    empty = await load_dashboard_query(store, FindingFilters(rules=frozenset({"missing"})))
+    empty = await load_dashboard_query(
+        store, FindingFilters(rules=frozenset({"missing"}), page_size=2),
+    )
     assert empty.rows == []
-    assert empty.pagination == {"page": 1, "pageSize": 0, "total": 0, "totalPages": 0}
+    assert empty.pagination == {"page": 1, "pageSize": 2, "total": 0, "totalPages": 0}
+
+
+@pytest.mark.asyncio
+async def test_dashboard_query_paginates_sorted_rows_without_changing_aggregates(store):
+    """Changing table pages must never change the aggregate findings population."""
+    first = await load_dashboard_query(store, FindingFilters(page=1, page_size=2))
+    second = await load_dashboard_query(store, FindingFilters(page=2, page_size=2))
+
+    assert [row["violationId"] for row in first.rows] == ["VIO-2", "VIO-1"]
+    assert [row["violationId"] for row in second.rows] == ["VIO-3", "VIO-4"]
+    assert first.kpis.total_findings == second.kpis.total_findings == 4
+    assert first.series == second.series
+    assert first.pagination == {"page": 1, "pageSize": 2, "total": 4, "totalPages": 2}
+    assert second.pagination == {"page": 2, "pageSize": 2, "total": 4, "totalPages": 2}
+
+
+@pytest.mark.asyncio
+async def test_dashboard_query_returns_empty_rows_for_a_page_past_the_last(store):
+    """An out-of-range page must retain useful total/page metadata rather than wrap."""
+    result = await load_dashboard_query(store, FindingFilters(page=3, page_size=2))
+
+    assert result.rows == []
+    assert result.pagination == {"page": 3, "pageSize": 2, "total": 4, "totalPages": 2}
+
+
+def test_finding_filters_normalize_invalid_pagination_inputs():
+    """Non-positive pagination input must not create negative or zero-size slices."""
+    filters = FindingFilters(page=0, page_size=0)
+
+    assert filters.page == 1
+    assert filters.page_size == 1
 
 
 @pytest.mark.asyncio

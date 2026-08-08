@@ -9,6 +9,7 @@ from eqm.models import Violation
 from eqm.persistence import JsonStore
 from eqm.projections import project_violation
 
+DEFAULT_PAGE_SIZE = 50
 TERMINAL_STATES = frozenset({"resolved", "rejected"})
 SEVERITY_ORDER = ("critical", "high", "medium", "low")
 TARGET_TYPE_ORDER = ("employee", "assignment", "entitlement", "resource")
@@ -23,6 +24,13 @@ def _normalise_set(values: frozenset[str]) -> frozenset[str]:
     return frozenset(str(value).strip().lower() for value in values if str(value).strip())
 
 
+def _normalise_positive(value: int, default: int) -> int:
+    try:
+        return max(1, int(value))
+    except (TypeError, ValueError):
+        return default
+
+
 @dataclass(frozen=True, slots=True)
 class FindingFilters:
     states: frozenset[str] = frozenset()
@@ -30,6 +38,8 @@ class FindingFilters:
     target_types: frozenset[str] = frozenset()
     rules: frozenset[str] = frozenset()
     search: str = ""
+    page: int = 1
+    page_size: int = DEFAULT_PAGE_SIZE
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "states", _normalise_set(self.states))
@@ -37,6 +47,8 @@ class FindingFilters:
         object.__setattr__(self, "target_types", _normalise_set(self.target_types))
         object.__setattr__(self, "rules", _normalise_set(self.rules))
         object.__setattr__(self, "search", self.search.strip().casefold())
+        object.__setattr__(self, "page", _normalise_positive(self.page, 1))
+        object.__setattr__(self, "page_size", _normalise_positive(self.page_size, DEFAULT_PAGE_SIZE))
 
 
 @dataclass(frozen=True, slots=True)
@@ -168,25 +180,28 @@ async def load_dashboard_query(
         for raw in raw_vios
     ]
     scoped = _persona_rows(projected, assignments, persona_id)
-    rows = _sort_rows([row for row in scoped if _matches(row, filters)])
+    filtered_rows = _sort_rows([row for row in scoped if _matches(row, filters)])
     severity_rows = [row for row in scoped if _matches(row, filters, ignore="severities")]
     target_type_rows = [row for row in scoped if _matches(row, filters, ignore="target_types")]
     rule_rows = [row for row in scoped if _matches(row, filters, ignore="rules")]
     workflow_rows = [row for row in scoped if _matches(row, filters, ignore="states")]
+    total = len(filtered_rows)
+    start = (filters.page - 1) * filters.page_size
+    rows = filtered_rows[start:start + filters.page_size]
 
     kpis = DashboardKpis(
-        total_findings=len(rows),
-        critical_findings=sum(row["severity"] == "Critical" for row in rows),
-        high_findings=sum(row["severity"] == "High" for row in rows),
-        not_started_findings=_workflow_count(rows, "not_started"),
-        in_progress_findings=_workflow_count(rows, "in_progress"),
-        complete_findings=_workflow_count(rows, "complete"),
+        total_findings=total,
+        critical_findings=sum(row["severity"] == "Critical" for row in filtered_rows),
+        high_findings=sum(row["severity"] == "High" for row in filtered_rows),
+        not_started_findings=_workflow_count(filtered_rows, "not_started"),
+        in_progress_findings=_workflow_count(filtered_rows, "in_progress"),
+        complete_findings=_workflow_count(filtered_rows, "complete"),
     )
-    catalog_findings = [row for row in rows if row["targetType"] == "entitlement"]
+    catalog_findings = [row for row in filtered_rows if row["targetType"] == "entitlement"]
     finding_entitlement_ids = {row["targetId"] for row in catalog_findings}
     entitlement_ids = {entitlement["id"] for entitlement in entitlements}
     with_findings = len(entitlement_ids & finding_entitlement_ids)
-    total = len(entitlement_ids)
+    entitlement_total = len(entitlement_ids)
     return DashboardQueryResult(
         kpis=kpis,
         series={
@@ -196,8 +211,17 @@ async def load_dashboard_query(
             "workflow": _dimension_series(workflow_rows, "workflow"),
         },
         rows=rows,
-        pagination={"page": 1, "pageSize": len(rows), "total": len(rows), "totalPages": 1 if rows else 0},
-        entitlement_coverage={"total": total, "withFindings": with_findings, "withoutFindings": total - with_findings},
+        pagination={
+            "page": filters.page,
+            "pageSize": filters.page_size,
+            "total": total,
+            "totalPages": (total + filters.page_size - 1) // filters.page_size,
+        },
+        entitlement_coverage={
+            "total": entitlement_total,
+            "withFindings": with_findings,
+            "withoutFindings": entitlement_total - with_findings,
+        },
         catalog_findings=catalog_findings,
     )
 
