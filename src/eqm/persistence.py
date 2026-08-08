@@ -49,6 +49,7 @@ class JsonStore:
         async with self._transaction_lock:
             staged: dict[str, Path] = {}
             backups: dict[str, Path] = {}
+            originals: dict[str, bytes | None] = {}
             replacement_started = False
 
             try:
@@ -60,22 +61,41 @@ class JsonStore:
                 for name in documents:
                     path = self.data_dir / name
                     if path.exists():
+                        originals[name] = path.read_bytes()
                         backups[name] = self._stage_bytes(
-                            path, path.read_bytes(), ".backup"
+                            path, originals[name], ".backup"
                         )
+                    else:
+                        originals[name] = None
 
                 replacement_started = True
                 for name in documents:
                     os.replace(staged[name], self.data_dir / name)
-            except Exception:
+
+                self._cleanup_artifacts((*staged.values(), *backups.values()))
+            except Exception as primary_error:
+                recovery_errors: list[Exception] = []
+                preserved_backups: set[Path] = set()
                 if replacement_started:
-                    self._restore_documents(documents, backups)
+                    rollback_errors, preserved_backups = self._restore_documents(
+                        documents, backups, originals
+                    )
+                    recovery_errors.extend(rollback_errors)
+
+                recovery_errors.extend(
+                    self._cleanup_after_failure(
+                        (*staged.values(), *backups.values()),
+                        preserved_backups,
+                    )
+                )
+                if recovery_errors:
+                    raise ExceptionGroup(
+                        "write_many failed and recovery was incomplete",
+                        [primary_error, *recovery_errors],
+                    ) from primary_error
                 raise
-            else:
-                self._cache.update(documents)
-            finally:
-                for artifact in (*staged.values(), *backups.values()):
-                    artifact.unlink(missing_ok=True)
+
+            self._cache.update(documents)
 
     @staticmethod
     def _stage_bytes(path: Path, payload: bytes, suffix: str) -> Path:
@@ -99,19 +119,46 @@ class JsonStore:
         self,
         documents: dict[str, list[dict] | dict],
         backups: dict[str, Path],
-    ) -> None:
-        rollback_error: OSError | None = None
+        originals: dict[str, bytes | None],
+    ) -> tuple[list[Exception], set[Path]]:
+        rollback_errors: list[Exception] = []
+        preserved_backups: set[Path] = set()
         for name in documents:
             path = self.data_dir / name
             try:
-                if name in backups:
-                    os.replace(backups[name], path)
+                original = originals[name]
+                if original is not None:
+                    backup = backups[name]
+                    if not backup.exists():
+                        backup = self._stage_bytes(path, original, ".backup")
+                        backups[name] = backup
+                    os.replace(backup, path)
                 else:
                     path.unlink(missing_ok=True)
-            except OSError as error:
-                rollback_error = rollback_error or error
-        if rollback_error is not None:
-            raise rollback_error
+            except Exception as error:
+                rollback_errors.append(error)
+                if name in backups and backups[name].exists():
+                    preserved_backups.add(backups[name])
+        return rollback_errors, preserved_backups
+
+    @staticmethod
+    def _cleanup_artifacts(artifacts: tuple[Path, ...]) -> None:
+        for artifact in artifacts:
+            artifact.unlink(missing_ok=True)
+
+    @staticmethod
+    def _cleanup_after_failure(
+        artifacts: tuple[Path, ...], preserved: set[Path]
+    ) -> list[Exception]:
+        cleanup_errors: list[Exception] = []
+        for artifact in artifacts:
+            if artifact in preserved:
+                continue
+            try:
+                artifact.unlink(missing_ok=True)
+            except Exception as error:
+                cleanup_errors.append(error)
+        return cleanup_errors
 
     def invalidate(self, name: str | None = None) -> None:
         if name is None:
