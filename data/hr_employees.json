@@ -22574,7 +22574,7 @@
     "email": "emp-01060@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -22597,7 +22597,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T23:01:02.843406Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T10:58:57.464932Z"
   },
   {
     "id": "EMP-01061",
@@ -27173,6 +27173,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T08:31:40.735748Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01299",
+    "full_name": "Chad Decker",
+    "email": "emp-01299@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-08T10:58:57.464932Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T10:58:57.464932Z",
     "terminated_at": null
   }
 ]
