@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass
+from datetime import timedelta
 from typing import Literal
 
 from eqm.models import (
@@ -16,7 +17,9 @@ from eqm.models import (
     Role,
     Violation,
 )
+from eqm.rules.base import now_utc
 from eqm.rules.entitlement_quality import BANNED_PHRASES
+from eqm.rules.hr_coherence import LEGACY_DAYS_THRESHOLD
 from eqm.rules.toxic_combinations import SOD_PAIRS
 from eqm.seed import SeedBundle
 
@@ -144,7 +147,17 @@ def _build_ent_q_01(
     violation: Violation, bundle: SeedBundle, submission: dict[str, object]
 ) -> RepairPlan:
     ent = _entitlement(violation, bundle)
+    current_description = (ent.pbl_description or "").strip().lower()
+    current_reasons: list[str] = []
+    if len(current_description) < 20:
+        current_reasons.append(f"length={len(current_description)} < 20")
+    for phrase in BANNED_PHRASES:
+        if phrase in current_description:
+            current_reasons.append(f"banned phrase: '{phrase}'")
     _evidence(violation, "pbl_description", ent.pbl_description)
+    _evidence(violation, "reasons", current_reasons)
+    if not current_reasons:
+        raise RepairValidationError("ENT-Q-01 is no longer present in current state.")
     text = _pbl_text(submission)
     lowered = text.lower()
     if len(lowered) < 20 or any(phrase in lowered for phrase in BANNED_PHRASES):
@@ -165,6 +178,17 @@ def _build_ent_q_02(
     ent = _entitlement(violation, bundle)
     _evidence(violation, "access_tier", int(ent.access_tier))
     _evidence(violation, "pbl_description", ent.pbl_description)
+    current_description = (ent.pbl_description or "").lower()
+    currently_violates = (
+        ent.access_tier == AccessTier.ADMIN
+        and "administrator" not in current_description
+    ) or (
+        ent.access_tier == AccessTier.GENERAL_RO
+        and "read-only" not in current_description
+        and "read only" not in current_description
+    )
+    if not currently_violates:
+        raise RepairValidationError("ENT-Q-02 is no longer present in current state.")
     text = _pbl_text(submission)
     lowered = text.lower()
     matches_tier = (
@@ -199,10 +223,11 @@ def _build_ent_q_03(
     if ent.access_tier != AccessTier.ADMIN or not forbidden:
         raise RepairValidationError("ENT-Q-03 is no longer present in current state.")
     proposed = _roles(submission)
-    if proposed == current_roles:
-        raise RepairValidationError("acceptable_roles is unchanged.")
-    if set(proposed) & {Role.CUSTOMER.value, Role.BUSINESS_USER.value}:
-        raise RepairValidationError("Proposed roles do not clear ENT-Q-03.")
+    expected = [role for role in current_roles if role not in forbidden]
+    if proposed != expected:
+        raise RepairValidationError(
+            "ENT-Q-03 must remove exactly the evidence-identified forbidden roles."
+        )
     return _plan(
         violation,
         submission,
@@ -221,10 +246,9 @@ def _build_ent_q_04(
     _evidence(violation, "acceptable_roles", current_roles)
     if ent.division == Division.HR and Role.DEVELOPER in ent.acceptable_roles:
         proposed = _roles(submission)
-        if proposed == current_roles:
-            raise RepairValidationError("acceptable_roles is unchanged.")
-        if Role.DEVELOPER.value in proposed:
-            raise RepairValidationError("Proposed roles do not clear ENT-Q-04.")
+        expected = [role for role in current_roles if role != Role.DEVELOPER.value]
+        if proposed != expected:
+            raise RepairValidationError("ENT-Q-04 must remove exactly the developer role.")
         return _plan(
             violation,
             submission,
@@ -246,10 +270,8 @@ def _build_ent_q_04(
         raise RepairValidationError("ENT-Q-04 is no longer present in current state.")
     _evidence(violation, "prod_resources", prod_ids)
     proposed_tier = _tier(submission)
-    if proposed_tier == int(ent.access_tier):
-        raise RepairValidationError("access_tier is unchanged.")
-    if proposed_tier == int(AccessTier.ADMIN):
-        raise RepairValidationError("Proposed tier does not clear ENT-Q-04.")
+    if proposed_tier != int(AccessTier.READ_WRITE):
+        raise RepairValidationError("ENT-Q-04 repair must set access_tier to Tier-2.")
     return _plan(
         violation,
         submission,
@@ -293,7 +315,8 @@ def _validate_assignment_evidence(
         _evidence(violation, "last_role_change_at", last_change.isoformat())
         _evidence(violation, "granted_at", item.granted_at.isoformat())
         if (
-            item.granted_at >= last_change
+            last_change > now_utc() - timedelta(days=LEGACY_DAYS_THRESHOLD)
+            or item.granted_at >= last_change
             or employee.current_role in ent.acceptable_roles
             or not ({role.value for role in ent.acceptable_roles} & prior_roles)
         ):
@@ -486,6 +509,8 @@ def _build_tox_03(
     )
     _evidence(violation, "entitlement_ids", current_entitlement_ids)
     _evidence(violation, "divisions", current_divisions)
+    if len(current_divisions) < 3:
+        raise RepairValidationError("TOX-03 is no longer present below three divisions.")
     eligible = {item.id: item for item in tier_one}
     if any(item_id not in eligible for item_id in raw_ids):
         raise RepairValidationError("TOX-03 selections must be evidence-derived assignments.")

@@ -264,6 +264,145 @@ def test_direct_edits_reject_placeholder_or_stale_evidence(
         )
 
 
+def test_ent_q_01_rejects_tampered_reasons_and_a_currently_clean_target() -> None:
+    clean_text = "Read-only access to Ledger API for finance analysts."
+    with pytest.raises(RepairValidationError, match="evidence|stale"):
+        build_repair_plan(
+            violation(
+                "ENT-Q-01",
+                evidence={"pbl_description": "bad", "reasons": ["length=4 < 20"]},
+            ),
+            bundle(entitlements=[entitlement(pbl_description="bad")]),
+            {"pbl_description": clean_text},
+        )
+
+    with pytest.raises(RepairValidationError, match="no longer|current state"):
+        build_repair_plan(
+            violation(
+                "ENT-Q-01",
+                evidence={"pbl_description": clean_text, "reasons": []},
+            ),
+            bundle(entitlements=[entitlement(pbl_description=clean_text)]),
+            {"pbl_description": "Read-only access to Ledger API for accounting reviewers."},
+        )
+
+
+def test_ent_q_02_rejects_tampered_evidence_and_a_currently_clean_target() -> None:
+    clean_text = "Administrator access to Ledger API for operations engineers."
+    with pytest.raises(RepairValidationError, match="evidence|stale"):
+        build_repair_plan(
+            violation(
+                "ENT-Q-02",
+                evidence={"access_tier": 1, "pbl_description": "tampered"},
+            ),
+            bundle(entitlements=[entitlement(pbl_description="Full control of Ledger API")]),
+            {"pbl_description": clean_text},
+        )
+
+    with pytest.raises(RepairValidationError, match="no longer|current state"):
+        build_repair_plan(
+            violation(
+                "ENT-Q-02",
+                evidence={"access_tier": 1, "pbl_description": clean_text},
+            ),
+            bundle(entitlements=[entitlement(pbl_description=clean_text)]),
+            {"pbl_description": "Administrator access to Ledger API for platform engineers."},
+        )
+
+
+def test_ent_q_03_allows_only_exact_removal_of_evidence_forbidden_roles() -> None:
+    current = bundle(
+        entitlements=[
+            entitlement(acceptable_roles=[Role.OPERATIONS, Role.CUSTOMER, Role.DEVELOPER])
+        ]
+    )
+    finding = violation(
+        "ENT-Q-03",
+        evidence={
+            "access_tier": 1,
+            "acceptable_roles": ["operations", "customer", "developer"],
+            "forbidden_roles": ["customer"],
+        },
+    )
+
+    with pytest.raises(RepairValidationError, match="exact|forbidden"):
+        build_repair_plan(finding, current, {"acceptable_roles": ["developer"]})
+
+    plan = build_repair_plan(
+        finding,
+        current,
+        {"acceptable_roles": ["operations", "developer"]},
+    )
+    assert plan.mutations == (
+        RecordMutation(
+            "entitlements",
+            "ENT-1",
+            {"acceptable_roles": ["operations", "developer"]},
+        ),
+    )
+
+
+def test_ent_q_04_hr_allows_only_removing_developer() -> None:
+    current = bundle(
+        entitlements=[
+            entitlement(
+                division=Division.HR,
+                acceptable_roles=[Role.OPERATIONS, Role.DEVELOPER, Role.BUSINESS_USER],
+            )
+        ]
+    )
+    finding = violation(
+        "ENT-Q-04",
+        evidence={
+            "division": "hr",
+            "access_tier": 1,
+            "acceptable_roles": ["operations", "developer", "business_user"],
+        },
+    )
+
+    with pytest.raises(RepairValidationError, match="exact|developer"):
+        build_repair_plan(finding, current, {"acceptable_roles": ["business_user"]})
+
+    plan = build_repair_plan(
+        finding,
+        current,
+        {"acceptable_roles": ["operations", "business_user"]},
+    )
+    assert plan.mutations == (
+        RecordMutation(
+            "entitlements",
+            "ENT-1",
+            {"acceptable_roles": ["operations", "business_user"]},
+        ),
+    )
+
+
+def test_ent_q_04_legal_requires_tier_two() -> None:
+    finding = violation(
+        "ENT-Q-04",
+        evidence={
+            "division": "legal_compliance",
+            "access_tier": 1,
+            "acceptable_roles": ["operations"],
+            "prod_resources": ["RES-1"],
+        },
+    )
+
+    with pytest.raises(RepairValidationError, match="Tier-2"):
+        build_repair_plan(
+            finding,
+            bundle(
+                entitlements=[
+                    entitlement(
+                        division=Division.LEGAL_COMPLIANCE,
+                        access_tier=AccessTier.ADMIN,
+                    )
+                ]
+            ),
+            {"access_tier": 3},
+        )
+
+
 @pytest.mark.parametrize("rule_id", ["HR-01", "HR-02", "HR-04"])
 def test_assignment_rules_revoke_only_the_target(rule_id: str) -> None:
     target = assignment()
@@ -361,6 +500,48 @@ def test_hr03_requires_manager_acknowledgement() -> None:
 
     plan = build_repair_plan(finding, current, {"manager_confirmed": True})
     assert plan.mutations == (RecordMutation("assignments", "ASN-1", {"active": False}),)
+
+
+def test_hr03_rejects_a_role_change_less_than_thirty_days_old() -> None:
+    changed_at = datetime.now(UTC) - timedelta(days=10)
+    granted_at = changed_at - timedelta(days=30)
+    current = bundle(
+        entitlements=[entitlement(acceptable_roles=[Role.DEVELOPER])],
+        employees=[
+            employee(
+                current_role=Role.OPERATIONS,
+                role_history=[
+                    RoleHistoryEntry(
+                        role=Role.DEVELOPER,
+                        division=Division.TECH_DEV,
+                        started_at=changed_at - timedelta(days=365),
+                        ended_at=changed_at,
+                    ),
+                    RoleHistoryEntry(
+                        role=Role.OPERATIONS,
+                        division=Division.TECH_OPS,
+                        started_at=changed_at,
+                    ),
+                ],
+            )
+        ],
+        assignments=[assignment(granted_at=granted_at)],
+    )
+    finding = violation(
+        "HR-03",
+        target_type="assignment",
+        target_id="ASN-1",
+        evidence={
+            "employee_id": "EMP-1",
+            "current_role": "operations",
+            "prior_roles": ["developer"],
+            "last_role_change_at": changed_at.isoformat(),
+            "granted_at": granted_at.isoformat(),
+        },
+    )
+
+    with pytest.raises(RepairValidationError, match="30|recent|no longer"):
+        build_repair_plan(finding, current, {"manager_confirmed": True})
 
 
 def test_assignment_repair_rejects_an_inactive_stale_target() -> None:
@@ -492,6 +673,31 @@ def test_tox03_accepts_only_evidence_assignments_that_leave_two_divisions() -> N
         build_repair_plan(finding, tox03_bundle(), {"assignment_ids": []})
     with pytest.raises(RepairValidationError, match="evidence"):
         build_repair_plan(finding, tox03_bundle(), {"assignment_ids": ["ASN-D"]})
+
+
+def test_tox03_rejects_a_current_footprint_of_only_two_divisions() -> None:
+    current = bundle(
+        entitlements=[
+            entitlement(id="ENT-1", division=Division.FINANCE),
+            entitlement(id="ENT-2", division=Division.HR),
+        ],
+        assignments=[
+            assignment(id="ASN-1", entitlement_id="ENT-1"),
+            assignment(id="ASN-2", entitlement_id="ENT-2"),
+        ],
+    )
+    finding = violation(
+        "TOX-03",
+        target_type="employee",
+        target_id="EMP-1",
+        evidence={
+            "divisions": ["finance", "hr"],
+            "entitlement_ids": ["ENT-1", "ENT-2"],
+        },
+    )
+
+    with pytest.raises(RepairValidationError, match="no longer|three|3"):
+        build_repair_plan(finding, current, {"assignment_ids": ["ASN-2"]})
 
 
 def test_toxic_repairs_reject_a_stale_evidence_entitlement() -> None:
