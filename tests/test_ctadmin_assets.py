@@ -33,8 +33,8 @@ class _AccessibilityAudit(HTMLParser):
         if element_id := attrs.get("id"):
             self.ids.add(element_id)
         for attribute in ("aria-labelledby", "aria-describedby"):
-            if reference := attrs.get(attribute):
-                self.id_references.append((tag, attribute, reference))
+            if attribute in attrs:
+                self.id_references.append((tag, attribute, attrs.get(attribute) or ""))
         if tag == "img":
             self.images.append(attrs)
         if tag == "article" and "chart-panel" in attrs.get("class", "").split():
@@ -85,7 +85,8 @@ class _AccessibilityAudit(HTMLParser):
             break
 
     def references_resolve(self, value):
-        return bool(value) and all(token in self.ids for token in value.split())
+        tokens = value.split() if value else []
+        return bool(tokens) and all(token in self.ids for token in tokens)
 
     @property
     def unresolved_references(self):
@@ -100,6 +101,34 @@ def _audit(markup):
     audit = _AccessibilityAudit()
     audit.feed(markup)
     return audit
+
+
+def test_accessibility_audit_rejects_missing_blank_and_empty_id_references():
+    """Empty IDREF lists and missing targets must not satisfy accessible-name contracts."""
+    audit = _audit(
+        """
+        <h2 id="valid-title">Repair finding</h2>
+        <p id="valid-description">Review the evidence.</p>
+        <section aria-labelledby="valid-title valid-description"></section>
+        <section aria-labelledby="missing-table-heading"><table></table></section>
+        <aside
+          role="dialog"
+          aria-labelledby="missing-dialog-title"
+          aria-describedby="missing-dialog-description"
+        ></aside>
+        <div aria-labelledby="   "></div>
+        <div aria-describedby=""></div>
+        """
+    )
+
+    assert audit.references_resolve("valid-title valid-description")
+    assert audit.unresolved_references == [
+        ("section", "aria-labelledby", "missing-table-heading"),
+        ("aside", "aria-labelledby", "missing-dialog-title"),
+        ("aside", "aria-describedby", "missing-dialog-description"),
+        ("div", "aria-labelledby", "   "),
+        ("div", "aria-describedby", ""),
+    ]
 
 
 def _login(client):
