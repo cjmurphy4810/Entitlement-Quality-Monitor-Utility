@@ -11805,7 +11805,7 @@
     "email": "emp-00527@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -11816,7 +11816,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-01T10:36:40.105471Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-08T19:51:24.983024Z"
   },
   {
     "id": "EMP-00528",
@@ -27482,6 +27482,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T19:07:29.208455Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01314",
+    "full_name": "Amanda Terry",
+    "email": "emp-01314@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-08T19:51:24.983024Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-08T19:51:24.983024Z",
     "terminated_at": null
   }
 ]
