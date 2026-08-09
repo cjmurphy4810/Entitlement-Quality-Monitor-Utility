@@ -2716,7 +2716,7 @@
     "email": "emp-00114@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -2727,7 +2727,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-29T08:06:32.478417Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T08:33:41.770276Z"
   },
   {
     "id": "EMP-00115",
@@ -27859,6 +27859,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T07:48:04.313926Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01331",
+    "full_name": "Kyle Mccullough",
+    "email": "emp-01331@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-09T08:33:41.770276Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T08:33:41.770276Z",
     "terminated_at": null
   }
 ]
