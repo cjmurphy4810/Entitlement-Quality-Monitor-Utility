@@ -28093,5 +28093,43 @@
     "manager_id": null,
     "hired_at": "2026-08-09T16:27:23.551228Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01342",
+    "full_name": "Robert Ortiz",
+    "email": "emp-01342@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-09T17:56:35.839581Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T17:56:35.839581Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01343",
+    "full_name": "Robert Silva MD",
+    "email": "emp-01343@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-09T17:56:35.839581Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T17:56:35.839581Z",
+    "terminated_at": null
   }
 ]
