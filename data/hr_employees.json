@@ -27999,5 +27999,43 @@
     "manager_id": null,
     "hired_at": "2026-08-09T12:35:54.686843Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01338",
+    "full_name": "Joanna Good",
+    "email": "emp-01338@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-09T13:43:00.872248Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T13:43:00.872248Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01339",
+    "full_name": "Elizabeth Vazquez",
+    "email": "emp-01339@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-09T13:43:00.872248Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T13:43:00.872248Z",
+    "terminated_at": null
   }
 ]
