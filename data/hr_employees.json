@@ -4790,7 +4790,7 @@
     "email": "emp-00202@example.com",
     "current_role": "developer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -4801,7 +4801,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-05T09:57:07.173716Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T19:56:35.415626Z"
   },
   {
     "id": "EMP-00203",
