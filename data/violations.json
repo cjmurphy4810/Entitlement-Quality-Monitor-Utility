@@ -30125,8 +30125,17 @@
     "suggested_fix": {
       "access_tier": 2
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-08-09T03:13:03.370611Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -151131,6 +151140,121 @@
       "employee_division": "cyber_tech",
       "entitlement_id": "ENT-00360",
       "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06214",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T03:13:01.560458Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02590",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01241",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00166",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06215",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T03:13:02.969166Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02590",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01241",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00166",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06216",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T03:13:02.970387Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02591",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00794",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00364",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06217",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T03:13:03.315952Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02449",
+    "explanation": "Terminated employee EMP-01221 (Natalie Dunn) still holds active assignment ASN-02449.",
+    "evidence": {
+      "employee_id": "EMP-01221",
+      "terminated_at": "2026-08-09T03:13:00.590434+00:00",
+      "entitlement_id": "ENT-00330"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06218",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T03:13:03.339598Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02590",
+    "explanation": "Terminated employee EMP-01241 (Laura Martin) still holds active assignment ASN-02590.",
+    "evidence": {
+      "employee_id": "EMP-01241",
+      "terminated_at": "2026-08-08T22:55:16.609126+00:00",
+      "entitlement_id": "ENT-00166"
     },
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
