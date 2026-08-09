@@ -11924,7 +11924,7 @@
     "email": "emp-00532@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -11935,7 +11935,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-02T05:08:34.867747Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T11:00:56.191456Z"
   },
   {
     "id": "EMP-00533",
@@ -27903,6 +27903,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T10:25:54.812535Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01333",
+    "full_name": "Lynn Ford",
+    "email": "emp-01333@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-09T11:00:56.191456Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T11:00:56.191456Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01334",
+    "full_name": "Paula Logan",
+    "email": "emp-01334@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-09T11:00:56.191456Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T11:00:56.191456Z",
     "terminated_at": null
   }
 ]

@@ -152124,5 +152124,144 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06255",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T11:00:56.908895Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02605",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00698",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00180",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06256",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T11:00:56.909668Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02606",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-01225",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00122",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06257",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T11:00:57.895962Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02606",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01225",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00122",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06258",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T11:00:57.991024Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01210",
+    "explanation": "Terminated employee EMP-00532 (Ms. Michelle Townsend) still holds active assignment ASN-01210.",
+    "evidence": {
+      "employee_id": "EMP-00532",
+      "terminated_at": "2026-08-09T11:00:56.191456+00:00",
+      "entitlement_id": "ENT-00055"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06259",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T11:00:57.991761Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01220",
+    "explanation": "Terminated employee EMP-00532 (Ms. Michelle Townsend) still holds active assignment ASN-01220.",
+    "evidence": {
+      "employee_id": "EMP-00532",
+      "terminated_at": "2026-08-09T11:00:56.191456+00:00",
+      "entitlement_id": "ENT-00143"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06260",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T11:00:58.026112Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01512",
+    "explanation": "Terminated employee EMP-00532 (Ms. Michelle Townsend) still holds active assignment ASN-01512.",
+    "evidence": {
+      "employee_id": "EMP-00532",
+      "terminated_at": "2026-08-09T11:00:56.191456+00:00",
+      "entitlement_id": "ENT-00195"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
