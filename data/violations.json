@@ -152818,5 +152818,150 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06284",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T15:55:43.145093Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02617",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00028",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00322",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06285",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T15:55:43.146058Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02618",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-01263",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00333",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06286",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T15:55:44.604755Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02617",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00028",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00322",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06287",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T15:55:44.606003Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02618",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-01263",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00333",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06288",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-09T15:55:44.611838Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01414",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-07-10T15:10:02.831921+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00296",
+      "current_role": "business_user",
+      "prior_roles": [
+        "developer"
+      ],
+      "last_role_change_at": "2026-07-10T15:10:02.831921+00:00",
+      "granted_at": "2026-06-23T19:23:55.379762+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06289",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T15:55:44.988979Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02617",
+    "explanation": "Terminated employee EMP-00028 (Dominique Horton) still holds active assignment ASN-02617.",
+    "evidence": {
+      "employee_id": "EMP-00028",
+      "terminated_at": "2026-05-16T11:44:49.648524+00:00",
+      "entitlement_id": "ENT-00322"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
