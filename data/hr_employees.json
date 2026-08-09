@@ -28068,5 +28068,24 @@
     "manager_id": null,
     "hired_at": "2026-08-09T14:27:45.514366Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01341",
+    "full_name": "Margaret Simmons",
+    "email": "emp-01341@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-09T16:27:23.551228Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T16:27:23.551228Z",
+    "terminated_at": null
   }
 ]

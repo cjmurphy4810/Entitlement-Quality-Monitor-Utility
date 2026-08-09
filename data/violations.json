@@ -152963,5 +152963,208 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06290",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T16:27:24.538902Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02619",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations', 'developer'].",
+    "evidence": {
+      "employee_id": "EMP-00737",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00007",
+      "acceptable_roles": [
+        "operations",
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06291",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T16:27:24.539877Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02620",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00280",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00343",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06292",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T16:27:24.540838Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02621",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-01118",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00182",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06293",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T16:27:25.964572Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02620",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00280",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00343",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06294",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T16:27:26.346066Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02619",
+    "explanation": "Terminated employee EMP-00737 (Michael Johnson) still holds active assignment ASN-02619.",
+    "evidence": {
+      "employee_id": "EMP-00737",
+      "terminated_at": "2026-07-15T20:30:22.019897+00:00",
+      "entitlement_id": "ENT-00007"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06295",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T16:27:26.346679Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02620",
+    "explanation": "Terminated employee EMP-00280 (Lawrence Wilkinson) still holds active assignment ASN-02620.",
+    "evidence": {
+      "employee_id": "EMP-00280",
+      "terminated_at": "2026-06-06T04:34:06.198707+00:00",
+      "entitlement_id": "ENT-00343"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06296",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-08-09T16:27:26.370317Z",
+    "target_type": "employee",
+    "target_id": "EMP-00737",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00003.",
+    "evidence": {
+      "resource_id": "RES-00003",
+      "developer_admin_entitlements": [
+        "ENT-00007"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00007"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06297",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-08-09T16:27:26.371577Z",
+    "target_type": "employee",
+    "target_id": "EMP-00280",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_ops', 'legal_compliance', 'tech_dev']",
+    "evidence": {
+      "divisions": [
+        "business_ops",
+        "legal_compliance",
+        "tech_dev"
+      ],
+      "entitlement_ids": [
+        "ENT-00052",
+        "ENT-00166",
+        "ENT-00343"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
