@@ -21124,7 +21124,7 @@
     "email": "emp-00984@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -21141,7 +21141,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-17T17:05:13.949453Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T07:48:04.313926Z"
   },
   {
     "id": "EMP-00985",
@@ -27821,6 +27821,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T06:42:53.192377Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01329",
+    "full_name": "Kyle Melendez",
+    "email": "emp-01329@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-09T07:48:04.313926Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T07:48:04.313926Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01330",
+    "full_name": "Dr. Bryan Warner",
+    "email": "emp-01330@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-09T07:48:04.313926Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T07:48:04.313926Z",
     "terminated_at": null
   }
 ]
