@@ -27942,5 +27942,43 @@
     "manager_id": null,
     "hired_at": "2026-08-09T11:00:56.191456Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01335",
+    "full_name": "Kristin Bass",
+    "email": "emp-01335@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-09T11:53:22.739508Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T11:53:22.739508Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01336",
+    "full_name": "Kelly Short",
+    "email": "emp-01336@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-09T11:53:22.739508Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T11:53:22.739508Z",
+    "terminated_at": null
   }
 ]
