@@ -7878,7 +7878,7 @@
     "email": "emp-00344@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7889,7 +7889,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T10:43:43.903525Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T04:43:33.813501Z"
   },
   {
     "id": "EMP-00345",
@@ -27758,6 +27758,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T01:10:32.433397Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01326",
+    "full_name": "Nathan Owen",
+    "email": "emp-01326@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-09T04:43:33.813501Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T04:43:33.813501Z",
     "terminated_at": null
   }
 ]
