@@ -6247,7 +6247,7 @@
     "email": "emp-00267@example.com",
     "current_role": "business_user",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -6270,7 +6270,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-09T19:53:46.288907Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T22:26:20.185092Z"
   },
   {
     "id": "EMP-00268",
