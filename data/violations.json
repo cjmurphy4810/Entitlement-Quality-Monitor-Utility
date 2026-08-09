@@ -153632,5 +153632,141 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06317",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T19:27:06.173968Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02630",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01052",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00337",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06318",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-09T19:27:07.624817Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02630",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01052",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00337",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06319",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T19:27:07.702335Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00844",
+    "explanation": "Terminated employee EMP-00307 (Robert Cooper) still holds active assignment ASN-00844.",
+    "evidence": {
+      "employee_id": "EMP-00307",
+      "terminated_at": "2026-08-09T19:27:05.144659+00:00",
+      "entitlement_id": "ENT-00034"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06320",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T19:27:07.778581Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01309",
+    "explanation": "Terminated employee EMP-00307 (Robert Cooper) still holds active assignment ASN-01309.",
+    "evidence": {
+      "employee_id": "EMP-00307",
+      "terminated_at": "2026-08-09T19:27:05.144659+00:00",
+      "entitlement_id": "ENT-00002"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06321",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T19:27:07.826318Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01588",
+    "explanation": "Terminated employee EMP-00307 (Robert Cooper) still holds active assignment ASN-01588.",
+    "evidence": {
+      "employee_id": "EMP-00307",
+      "terminated_at": "2026-08-09T19:27:05.144659+00:00",
+      "entitlement_id": "ENT-00154"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06322",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-09T19:27:07.906658Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02028",
+    "explanation": "Terminated employee EMP-00307 (Robert Cooper) still holds active assignment ASN-02028.",
+    "evidence": {
+      "employee_id": "EMP-00307",
+      "terminated_at": "2026-08-09T19:27:05.144659+00:00",
+      "entitlement_id": "ENT-00169"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
