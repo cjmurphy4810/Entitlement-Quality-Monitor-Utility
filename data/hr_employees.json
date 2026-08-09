@@ -14103,7 +14103,7 @@
     "email": "emp-00635@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -14114,7 +14114,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-14T22:04:16.609664Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T20:27:44.526778Z"
   },
   {
     "id": "EMP-00636",
@@ -25009,14 +25009,20 @@
     "id": "EMP-01181",
     "full_name": "Phillip Finley",
     "email": "emp-01181@example.com",
-    "current_role": "operations",
-    "current_division": "business_dev",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_dev",
         "started_at": "2026-07-30T20:39:59.434317Z",
+        "ended_at": "2026-08-09T20:27:44.526778Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-09T20:27:44.526778Z",
         "ended_at": null
       }
     ],
