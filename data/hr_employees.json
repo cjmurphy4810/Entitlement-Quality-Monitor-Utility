@@ -3791,14 +3791,20 @@
     "id": "EMP-00159",
     "full_name": "Nicholas Hamilton",
     "email": "emp-00159@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-05-02T16:07:24.214507Z",
+        "ended_at": "2026-08-09T14:27:45.514366Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-09T14:27:45.514366Z",
         "ended_at": null
       }
     ],
@@ -28036,6 +28042,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T13:43:00.872248Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01340",
+    "full_name": "Melissa Rosario",
+    "email": "emp-01340@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-09T14:27:45.514366Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T14:27:45.514366Z",
     "terminated_at": null
   }
 ]
