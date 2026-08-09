@@ -26321,14 +26321,20 @@
     "id": "EMP-01251",
     "full_name": "Patricia Baxter",
     "email": "emp-01251@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-08-05T02:36:19.451873Z",
+        "ended_at": "2026-08-09T01:10:32.433397Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-09T01:10:32.433397Z",
         "ended_at": null
       }
     ],
@@ -27708,6 +27714,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-08T23:52:46.795752Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01324",
+    "full_name": "Crystal Murphy",
+    "email": "emp-01324@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-09T01:10:32.433397Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T01:10:32.433397Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01325",
+    "full_name": "Calvin Ryan",
+    "email": "emp-01325@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-09T01:10:32.433397Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T01:10:32.433397Z",
     "terminated_at": null
   }
 ]

@@ -5775,7 +5775,7 @@
     "id": "ENT-00367",
     "name": "new entitlement ENT-00367",
     "pbl_description": "Lets the user do things in the system.",
-    "access_tier": 2,
+    "access_tier": 4,
     "acceptable_roles": [
       "business_user"
     ],
@@ -5785,7 +5785,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-08-04T12:26:39.293720Z",
-    "updated_at": "2026-08-04T12:26:39.293720Z"
+    "updated_at": "2026-08-09T01:10:32.433397Z"
   },
   {
     "id": "ENT-00368",
@@ -6078,5 +6078,21 @@
     "sod_tags": [],
     "created_at": "2026-08-08T23:52:46.795752Z",
     "updated_at": "2026-08-08T23:52:46.795752Z"
+  },
+  {
+    "id": "ENT-00387",
+    "name": "new entitlement ENT-00387",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00025"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-09T01:10:32.433397Z",
+    "updated_at": "2026-08-09T01:10:32.433397Z"
   }
 ]
