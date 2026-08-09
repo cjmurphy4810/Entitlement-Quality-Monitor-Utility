@@ -16164,7 +16164,7 @@
     "email": "emp-00734@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -16181,7 +16181,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-27T12:50:29.785491Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-09T12:35:54.686843Z"
   },
   {
     "id": "EMP-00735",
@@ -27979,6 +27979,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T11:53:22.739508Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01337",
+    "full_name": "Patricia Nguyen",
+    "email": "emp-01337@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-09T12:35:54.686843Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T12:35:54.686843Z",
     "terminated_at": null
   }
 ]
