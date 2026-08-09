@@ -26591,14 +26591,20 @@
     "id": "EMP-01263",
     "full_name": "Christine Barnes",
     "email": "emp-01263@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "business_user",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-08-06T10:43:00.902971Z",
+        "ended_at": "2026-08-09T18:34:59.343447Z"
+      },
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-09T18:34:59.343447Z",
         "ended_at": null
       }
     ],
@@ -28130,6 +28136,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T17:56:35.839581Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01344",
+    "full_name": "Rose Smith",
+    "email": "emp-01344@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-09T18:34:59.343447Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T18:34:59.343447Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01345",
+    "full_name": "Cynthia Martinez",
+    "email": "emp-01345@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-09T18:34:59.343447Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-09T18:34:59.343447Z",
     "terminated_at": null
   }
 ]
