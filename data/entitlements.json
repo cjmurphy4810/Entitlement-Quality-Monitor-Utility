@@ -6248,5 +6248,21 @@
     "sod_tags": [],
     "created_at": "2026-08-10T14:51:44.743215Z",
     "updated_at": "2026-08-10T14:51:44.743215Z"
+  },
+  {
+    "id": "ENT-00398",
+    "name": "new entitlement ENT-00398",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00075"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-10T15:53:37.979964Z",
+    "updated_at": "2026-08-10T15:53:37.979964Z"
   }
 ]
