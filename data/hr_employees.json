@@ -28445,5 +28445,24 @@
     "manager_id": null,
     "hired_at": "2026-08-10T05:03:54.545725Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01358",
+    "full_name": "Grace Phillips DDS",
+    "email": "emp-01358@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-10T08:22:47.142038Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T08:22:47.142038Z",
+    "terminated_at": null
   }
 ]
