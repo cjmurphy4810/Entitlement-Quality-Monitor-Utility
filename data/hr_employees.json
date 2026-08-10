@@ -16773,14 +16773,20 @@
     "id": "EMP-00763",
     "full_name": "Cristian Rodriguez",
     "email": "emp-00763@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-06-30T10:51:08.228338Z",
+        "ended_at": "2026-08-10T03:23:15.462779Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-10T03:23:15.462779Z",
         "ended_at": null
       }
     ],
@@ -28394,6 +28400,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-10T01:12:22.249252Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01356",
+    "full_name": "Gregory Pineda",
+    "email": "emp-01356@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-10T03:23:15.462779Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T03:23:15.462779Z",
     "terminated_at": null
   }
 ]
