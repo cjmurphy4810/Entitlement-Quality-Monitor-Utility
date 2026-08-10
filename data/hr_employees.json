@@ -28376,5 +28376,24 @@
     "manager_id": null,
     "hired_at": "2026-08-09T23:33:24.160257Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01355",
+    "full_name": "Henry Cannon",
+    "email": "emp-01355@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-10T01:12:22.249252Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T01:12:22.249252Z",
+    "terminated_at": null
   }
 ]
