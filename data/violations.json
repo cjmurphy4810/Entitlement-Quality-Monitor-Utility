@@ -124860,8 +124860,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-08-10T18:46:25.511424Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -150916,8 +150925,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-08-10T18:46:25.511766Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -156454,6 +156472,76 @@
       "employee_id": "EMP-00095",
       "terminated_at": "2026-04-30T08:10:40.974049+00:00",
       "entitlement_id": "ENT-00001"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06435",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T18:46:23.664053Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02667",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00057",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00053",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06436",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T18:46:25.086101Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02667",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00057",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00053",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06437",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T18:46:25.479656Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02667",
+    "explanation": "Terminated employee EMP-00057 (Andrew Wood) still holds active assignment ASN-02667.",
+    "evidence": {
+      "employee_id": "EMP-00057",
+      "terminated_at": "2026-05-10T13:04:08.519807+00:00",
+      "entitlement_id": "ENT-00053"
     },
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
