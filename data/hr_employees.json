@@ -16421,7 +16421,7 @@
     "email": "emp-00745@example.com",
     "current_role": "business_user",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -16432,7 +16432,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-28T10:38:31.919104Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-10T09:55:19.807423Z"
   },
   {
     "id": "EMP-00746",
@@ -28463,6 +28463,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-10T08:22:47.142038Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01359",
+    "full_name": "Mary Wolfe",
+    "email": "emp-01359@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-10T09:55:19.807423Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T09:55:19.807423Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01360",
+    "full_name": "Emily Cain",
+    "email": "emp-01360@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-10T09:55:19.807423Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T09:55:19.807423Z",
     "terminated_at": null
   }
 ]
