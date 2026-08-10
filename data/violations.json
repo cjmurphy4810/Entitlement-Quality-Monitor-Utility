@@ -156031,5 +156031,436 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06416",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T17:45:09.465077Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02664",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00125",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00215",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06417",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T17:45:09.466031Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02665",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00775",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00228",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06418",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T17:45:09.466996Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02666",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations', 'developer'].",
+    "evidence": {
+      "employee_id": "EMP-00095",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00001",
+      "acceptable_roles": [
+        "operations",
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06419",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T17:45:10.927967Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02664",
+    "explanation": "Employee division 'hr' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00125",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00215",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06420",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T17:45:10.929189Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02665",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00775",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00228",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06421",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T17:45:10.930451Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02666",
+    "explanation": "Employee division 'hr' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00095",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00001",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06422",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:10.937812Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00004",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00004.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00010"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06423",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:10.937856Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00010",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00010.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00006"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06424",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:10.938932Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00079",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00079.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00050"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06425",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:10.940090Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00125",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00125.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00005"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06426",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:10.942306Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00197",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00197.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00022"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06427",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:10.943139Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00216",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00216.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00051"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06428",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:10.976106Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00630",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00630.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00084"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06429",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:11.022857Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00962",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-00962.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00122"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06430",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:11.030002Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01002",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-01002.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00153"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06431",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:11.059919Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01190",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-01190.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00010"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06432",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:11.165243Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01785",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-01785.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00087"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06433",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:11.241527Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02198",
+    "explanation": "Terminated employee EMP-00084 (Mary Nguyen) still holds active assignment ASN-02198.",
+    "evidence": {
+      "employee_id": "EMP-00084",
+      "terminated_at": "2026-08-10T17:45:08.461851+00:00",
+      "entitlement_id": "ENT-00287"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06434",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T17:45:11.330083Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02666",
+    "explanation": "Terminated employee EMP-00095 (Angel Riggs) still holds active assignment ASN-02666.",
+    "evidence": {
+      "employee_id": "EMP-00095",
+      "terminated_at": "2026-04-30T08:10:40.974049+00:00",
+      "entitlement_id": "ENT-00001"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
