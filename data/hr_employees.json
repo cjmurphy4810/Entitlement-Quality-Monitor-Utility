@@ -28772,5 +28772,24 @@
     "manager_id": null,
     "hired_at": "2026-08-10T21:34:42.493862Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01373",
+    "full_name": "Gloria Thomas",
+    "email": "emp-01373@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-10T22:29:46.029618Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T22:29:46.029618Z",
+    "terminated_at": null
   }
 ]
