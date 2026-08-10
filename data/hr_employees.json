@@ -28502,5 +28502,24 @@
     "manager_id": null,
     "hired_at": "2026-08-10T09:55:19.807423Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01361",
+    "full_name": "Shannon Taylor",
+    "email": "emp-01361@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-10T12:06:27.235390Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T12:06:27.235390Z",
+    "terminated_at": null
   }
 ]
