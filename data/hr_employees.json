@@ -28420,5 +28420,24 @@
     "manager_id": null,
     "hired_at": "2026-08-10T03:23:15.462779Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01357",
+    "full_name": "George Dalton",
+    "email": "emp-01357@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-10T05:03:54.545725Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T05:03:54.545725Z",
+    "terminated_at": null
   }
 ]

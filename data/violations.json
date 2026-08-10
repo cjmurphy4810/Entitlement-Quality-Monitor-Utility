@@ -155158,5 +155158,80 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06381",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-10T05:03:57.016949Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02649",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00121",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00016",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06382",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-10T05:03:57.417805Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02649",
+    "explanation": "Terminated employee EMP-00121 (Jill Flores) still holds active assignment ASN-02649.",
+    "evidence": {
+      "employee_id": "EMP-00121",
+      "terminated_at": "2026-06-06T00:01:43.128671+00:00",
+      "entitlement_id": "ENT-00016"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06383",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-08-10T05:03:57.443176Z",
+    "target_type": "employee",
+    "target_id": "EMP-00121",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_sales', 'cyber_tech', 'finance']",
+    "evidence": {
+      "divisions": [
+        "business_sales",
+        "cyber_tech",
+        "finance"
+      ],
+      "entitlement_ids": [
+        "ENT-00016",
+        "ENT-00045",
+        "ENT-00057"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
