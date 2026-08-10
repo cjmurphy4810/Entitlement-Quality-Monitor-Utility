@@ -15763,14 +15763,20 @@
     "id": "EMP-00713",
     "full_name": "Jessica Perkins",
     "email": "emp-00713@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-06-25T16:18:32.578814Z",
+        "ended_at": "2026-08-10T13:51:49.916632Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-10T13:51:49.916632Z",
         "ended_at": null
       }
     ],
@@ -25104,7 +25110,7 @@
     "email": "emp-01184@example.com",
     "current_role": "operations",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -25115,7 +25121,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-31T02:07:56.690468Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-10T13:51:49.916632Z"
   },
   {
     "id": "EMP-01185",
@@ -28520,6 +28526,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-10T12:06:27.235390Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01362",
+    "full_name": "Cassidy Brown",
+    "email": "emp-01362@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-10T13:51:49.916632Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T13:51:49.916632Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01363",
+    "full_name": "Thomas Griffin",
+    "email": "emp-01363@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-10T13:51:49.916632Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-10T13:51:49.916632Z",
     "terminated_at": null
   }
 ]

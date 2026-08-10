@@ -6218,5 +6218,19 @@
     "sod_tags": [],
     "created_at": "2026-08-10T01:12:22.249252Z",
     "updated_at": "2026-08-10T01:12:22.249252Z"
+  },
+  {
+    "id": "ENT-00396",
+    "name": "new entitlement ENT-00396",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-10T13:51:49.916632Z",
+    "updated_at": "2026-08-10T13:51:49.916632Z"
   }
 ]
