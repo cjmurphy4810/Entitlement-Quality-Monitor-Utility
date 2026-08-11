@@ -28968,5 +28968,43 @@
     "manager_id": null,
     "hired_at": "2026-08-11T05:50:04.989974Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01383",
+    "full_name": "Lindsey Alexander",
+    "email": "emp-01383@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-11T06:54:51.523930Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T06:54:51.523930Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01384",
+    "full_name": "Haley Newton",
+    "email": "emp-01384@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-11T06:54:51.523930Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T06:54:51.523930Z",
+    "terminated_at": null
   }
 ]
