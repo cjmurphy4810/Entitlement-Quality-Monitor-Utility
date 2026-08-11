@@ -158517,5 +158517,218 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06522",
+    "rule_id": "CMDB-01",
+    "rule_name": "Orphan entitlement",
+    "severity": "low",
+    "detected_at": "2026-08-11T14:51:51.096165Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00407",
+    "explanation": "Entitlement is not linked to any valid CMDB resource.",
+    "evidence": {
+      "declared_links": [],
+      "valid_links": []
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "_action": "link_to_resource",
+      "_note": "Owner should add at least one valid resource id."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06523",
+    "rule_id": "ENT-Q-01",
+    "rule_name": "PBL completeness",
+    "severity": "low",
+    "detected_at": "2026-08-11T14:51:51.103613Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00407",
+    "explanation": "PBL description fails completeness check: banned phrase: 'do things'",
+    "evidence": {
+      "pbl_description": "Lets the user do things in the system.",
+      "reasons": [
+        "banned phrase: 'do things'"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 please rewrite this description to clearly state what access is granted, on which system, and to whom.]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06524",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-08-11T14:51:51.106923Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00407",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "Lets the user do things in the system."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06525",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-11T14:51:52.066891Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02699",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01147",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00184",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06526",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-11T14:51:53.571661Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02698",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00281",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00315",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06527",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-11T14:51:53.572956Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02699",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-01147",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00184",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06528",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-11T14:51:53.577036Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00795",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-07-12T14:39:29.631567+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00141",
+      "current_role": "business_user",
+      "prior_roles": [
+        "operations"
+      ],
+      "last_role_change_at": "2026-07-12T14:39:29.631567+00:00",
+      "granted_at": "2026-05-20T21:17:27.082338+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06529",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-11T14:51:53.577819Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00965",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-07-12T14:39:29.631567+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00141",
+      "current_role": "business_user",
+      "prior_roles": [
+        "operations"
+      ],
+      "last_role_change_at": "2026-07-12T14:39:29.631567+00:00",
+      "granted_at": "2026-05-29T02:38:42.290188+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06530",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T14:51:53.997236Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02698",
+    "explanation": "Terminated employee EMP-00281 (Keith Hernandez) still holds active assignment ASN-02698.",
+    "evidence": {
+      "employee_id": "EMP-00281",
+      "terminated_at": "2026-06-08T22:21:29.892870+00:00",
+      "entitlement_id": "ENT-00315"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

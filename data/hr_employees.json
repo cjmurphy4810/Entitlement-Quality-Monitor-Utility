@@ -19279,14 +19279,20 @@
     "id": "EMP-00887",
     "full_name": "Desiree Price",
     "email": "emp-00887@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2026-07-11T11:46:47.546731Z",
+        "ended_at": "2026-08-11T14:51:50.983227Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-11T14:51:50.983227Z",
         "ended_at": null
       }
     ],
@@ -29125,6 +29131,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-11T13:50:43.363185Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01391",
+    "full_name": "Melissa Flores",
+    "email": "emp-01391@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-11T14:51:50.983227Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T14:51:50.983227Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01392",
+    "full_name": "Ethan Osborne",
+    "email": "emp-01392@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-11T14:51:50.983227Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T14:51:50.983227Z",
     "terminated_at": null
   }
 ]
