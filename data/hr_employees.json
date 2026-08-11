@@ -17057,7 +17057,7 @@
     "email": "emp-00775@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -17068,7 +17068,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-02T08:45:38.467682Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-11T11:12:24.643002Z"
   },
   {
     "id": "EMP-00776",
@@ -29062,6 +29062,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-11T10:25:03.868212Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01388",
+    "full_name": "Jordan Graham",
+    "email": "emp-01388@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-11T11:12:24.643002Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T11:12:24.643002Z",
     "terminated_at": null
   }
 ]
