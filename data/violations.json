@@ -159232,5 +159232,346 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06551",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-08-11T20:40:34.275407Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00411",
+    "explanation": "Entitlement Tier-4 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 4,
+      "offending_resources": [
+        {
+          "id": "RES-00068",
+          "criticality": "critical"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06552",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-11T20:40:35.109461Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02708",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00199",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00358",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06553",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-11T20:40:35.110321Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02709",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00158",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00353",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06554",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-11T20:40:36.426960Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02709",
+    "explanation": "Employee division 'finance' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00158",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00353",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06555",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.434834Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00078",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-00078.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00045"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06556",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.436482Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00143",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-00143.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00036"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06557",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.436994Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00155",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-00155.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00033"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06558",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.438554Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00211",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-00211.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00050"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06559",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.447795Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00377",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-00377.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00040"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06560",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.448705Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00390",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-00390.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00034"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06561",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.456391Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00500",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-00500.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00049"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06562",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.648016Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01842",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-01842.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00098"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06563",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.676167Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02011",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-02011.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00050"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06564",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.718451Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02251",
+    "explanation": "Terminated employee EMP-00013 (Diana Washington) still holds active assignment ASN-02251.",
+    "evidence": {
+      "employee_id": "EMP-00013",
+      "terminated_at": "2026-08-11T20:40:34.181702+00:00",
+      "entitlement_id": "ENT-00117"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06565",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-11T20:40:36.798575Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02708",
+    "explanation": "Terminated employee EMP-00199 (James Hurst) still holds active assignment ASN-02708.",
+    "evidence": {
+      "employee_id": "EMP-00199",
+      "terminated_at": "2026-07-15T16:14:59.814459+00:00",
+      "entitlement_id": "ENT-00358"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
