@@ -6326,5 +6326,19 @@
     "sod_tags": [],
     "created_at": "2026-08-11T03:29:07.942622Z",
     "updated_at": "2026-08-11T03:29:07.942622Z"
+  },
+  {
+    "id": "ENT-00403",
+    "name": "new entitlement ENT-00403",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-11T05:50:04.989974Z",
+    "updated_at": "2026-08-11T05:50:04.989974Z"
   }
 ]
