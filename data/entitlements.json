@@ -6340,5 +6340,21 @@
     "sod_tags": [],
     "created_at": "2026-08-11T05:50:04.989974Z",
     "updated_at": "2026-08-11T05:50:04.989974Z"
+  },
+  {
+    "id": "ENT-00404",
+    "name": "new entitlement ENT-00404",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00091"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-11T10:25:03.868212Z",
+    "updated_at": "2026-08-11T10:25:03.868212Z"
   }
 ]

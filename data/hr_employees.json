@@ -29025,5 +29025,43 @@
     "manager_id": null,
     "hired_at": "2026-08-11T09:28:30.561720Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01386",
+    "full_name": "Elizabeth Perez",
+    "email": "emp-01386@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-11T10:25:03.868212Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T10:25:03.868212Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01387",
+    "full_name": "Jeffery Ryan",
+    "email": "emp-01387@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-11T10:25:03.868212Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T10:25:03.868212Z",
+    "terminated_at": null
   }
 ]
