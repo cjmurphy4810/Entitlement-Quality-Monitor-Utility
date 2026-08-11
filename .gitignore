@@ -8,3 +8,10 @@ __pycache__/
 dist/
 build/
 .DS_Store
+.worktrees/
+**/.jsonstore.lock
+**/.jsonstore-transaction.json
+**/.*.stage
+**/.*.backup
+**/.*.journal
+**/.*.tmp
