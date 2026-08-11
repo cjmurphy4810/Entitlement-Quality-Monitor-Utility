@@ -29239,5 +29239,43 @@
     "manager_id": null,
     "hired_at": "2026-08-11T16:51:53.472616Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01396",
+    "full_name": "Leslie Jones",
+    "email": "emp-01396@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-11T17:52:25.685976Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T17:52:25.685976Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01397",
+    "full_name": "Susan Butler",
+    "email": "emp-01397@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-11T17:52:25.685976Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T17:52:25.685976Z",
+    "terminated_at": null
   }
 ]
