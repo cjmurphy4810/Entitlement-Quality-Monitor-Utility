@@ -38,6 +38,17 @@ def _csrf(client) -> str:
     )
 
 
+def _enable_public_demo(monkeypatch) -> None:
+    monkeypatch.setenv("EQM_CTADMIN_LOGIN_REQUIRED", "false")
+    get_settings.cache_clear()
+
+
+def _rendered_csrf(response) -> str:
+    match = re.search(r'name="csrf_token" value="([^"]+)"', response.text)
+    assert match is not None
+    return match.group(1)
+
+
 def _finding_record(**changes):
     record = {
         "id": "VIO-100",
@@ -302,6 +313,52 @@ def test_unauthenticated_ctadmin_pages_redirect_to_login(app_client):
         parsed = urlparse(response.headers["location"])
         assert parsed.path == "/ctadmin/login"
         assert parse_qs(parsed.query) == {"next": [path]}
+
+
+def test_public_demo_mode_serves_dashboard_and_api_without_session(
+    app_client, monkeypatch
+):
+    client, _ = app_client
+    _enable_public_demo(monkeypatch)
+
+    page = client.get("/ctadmin/dashboard", follow_redirects=False)
+    api = client.get("/ctadmin/api/dashboard")
+
+    assert page.status_code == 200
+    assert api.status_code == 200
+    assert "Public demo" in page.text
+    assert 'action="/ctadmin/logout"' not in page.text
+
+
+def test_public_demo_login_redirects_to_dashboard(app_client, monkeypatch):
+    client, _ = app_client
+    _enable_public_demo(monkeypatch)
+
+    response = client.get("/ctadmin/login", follow_redirects=False)
+
+    assert response.status_code == 303
+    assert response.headers["location"] == "/ctadmin/dashboard"
+
+
+def test_public_demo_can_preview_and_execute_repair_without_session(
+    app_client, monkeypatch
+):
+    client, _ = app_client
+    _enable_public_demo(monkeypatch)
+    _seed_route_data(get_settings().data_dir)
+
+    page = client.get("/ctadmin/dashboard")
+    preview = client.get("/ctadmin/api/findings/VIO-100/repair-preview")
+    repair = client.post(
+        "/ctadmin/actions/findings/VIO-100/repair",
+        json={"pbl_description": "Provides read-only access for approved ledger operations."},
+        headers={"X-CSRF-Token": _rendered_csrf(page)},
+    )
+
+    assert page.status_code == 200
+    assert preview.status_code == 200
+    assert repair.status_code == 200
+    assert repair.json()["cleared"] is True
 
 
 def test_login_creates_a_safe_http_only_rotated_session(app_client):

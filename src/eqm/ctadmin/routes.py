@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import base64
+import hashlib
+import hmac
 import json
 import logging
 import secrets
@@ -60,6 +63,7 @@ ASSIGNMENT_STATUSES = frozenset(
     {"clean", "open", "pending_approval", "approved", "manual_repair"}
 )
 COVERAGE_VALUES = frozenset({"with_findings", "clean"})
+PUBLIC_DEMO_NONCE = "public-demo"
 
 
 def ctadmin_context(
@@ -72,6 +76,7 @@ def ctadmin_context(
         "username": principal.username,
         "persona_id": principal.persona_id,
         "csrf_token": principal.csrf_token,
+        "public_demo": principal.nonce == PUBLIC_DEMO_NONCE,
         **values,
     }
 
@@ -120,8 +125,31 @@ def _page_login_redirect(request: Request) -> RedirectResponse:
     )
 
 
+def _public_demo_principal(settings: Settings) -> SessionPrincipal:
+    secret = settings.ctadmin_session_secret
+    if secret is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="CTADMIN is not configured",
+        )
+    digest = hmac.new(
+        secret.get_secret_value().encode("utf-8"),
+        b"ctadmin-public-demo-csrf-v1",
+        hashlib.sha256,
+    ).digest()
+    csrf_token = base64.urlsafe_b64encode(digest).rstrip(b"=").decode("ascii")
+    return SessionPrincipal(
+        username="Public demo",
+        csrf_token=csrf_token,
+        persona_id="ctadmin",
+        nonce=PUBLIC_DEMO_NONCE,
+    )
+
+
 def _page_principal(request: Request, settings: Settings) -> SessionPrincipal | RedirectResponse:
     principal = get_principal(request, settings)
+    if principal is None and not settings.ctadmin_login_required:
+        return _public_demo_principal(settings)
     return principal if principal is not None else _page_login_redirect(request)
 
 
@@ -140,6 +168,8 @@ def _detail_origin(origin: str | None) -> tuple[str, str, str]:
 
 def _api_principal(request: Request, settings: Settings) -> SessionPrincipal:
     principal = get_principal(request, settings)
+    if principal is None and not settings.ctadmin_login_required:
+        return _public_demo_principal(settings)
     if principal is None:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication required"
@@ -544,7 +574,13 @@ def _repair_preview_payload(context: dict[str, object]) -> dict[str, object]:
 
 
 @router.get("/login", response_class=HTMLResponse)
-async def login_form(request: Request, next: str | None = None) -> HTMLResponse:
+async def login_form(
+    request: Request,
+    settings: Annotated[Settings, Depends(get_settings)],
+    next: str | None = None,
+) -> HTMLResponse:
+    if not settings.ctadmin_login_required:
+        return RedirectResponse("/ctadmin/dashboard", status_code=status.HTTP_303_SEE_OTHER)
     return templates.TemplateResponse(
         request, "login.html", _login_context(request, next_path=_safe_next(next))
     )

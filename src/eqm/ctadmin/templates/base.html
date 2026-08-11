@@ -23,11 +23,16 @@
       </nav>
       <div class="identity">
         {% if persona_id and persona_id != 'ctadmin' %}<span class="persona">Persona: {{ persona_id }}</span>{% endif %}
-        <span class="username">{{ username }}</span>
-        <form action="/ctadmin/logout" method="post">
+        {% if public_demo %}
+          <span class="username">Public demo</span>
           <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
-          <button class="quiet-button" type="submit">Log out</button>
-        </form>
+        {% else %}
+          <span class="username">{{ username }}</span>
+          <form action="/ctadmin/logout" method="post">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <button class="quiet-button" type="submit">Log out</button>
+          </form>
+        {% endif %}
       </div>
     </header>
     {% block signal_rail %}
