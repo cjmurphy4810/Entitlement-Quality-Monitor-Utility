@@ -1,6 +1,6 @@
 # CTADMIN dashboard demo runbook
 
-The CTADMIN Entitlement Quality Monitor is a server-rendered interface over the same deterministic JSON data and rules engine used by the EQMU API. Its four authenticated pages are:
+The CTADMIN Entitlement Quality Monitor is a server-rendered interface over the same deterministic JSON data and rules engine used by the EQMU API. Its four login-protected-by-default pages are:
 
 - **Health Dashboard** — portfolio KPIs, entitlement coverage, and filterable status, severity, target-type, and rule charts.
 - **Remediation** — filterable findings queue and repair drawer.

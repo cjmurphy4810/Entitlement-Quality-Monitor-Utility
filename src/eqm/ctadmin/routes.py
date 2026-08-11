@@ -148,6 +148,12 @@ def _public_demo_principal(settings: Settings) -> SessionPrincipal:
 
 def _page_principal(request: Request, settings: Settings) -> SessionPrincipal | RedirectResponse:
     principal = get_principal(request, settings)
+    if (
+        principal is not None
+        and settings.ctadmin_login_required
+        and principal.nonce == PUBLIC_DEMO_NONCE
+    ):
+        principal = None
     if principal is None and not settings.ctadmin_login_required:
         return _public_demo_principal(settings)
     return principal if principal is not None else _page_login_redirect(request)
@@ -168,6 +174,12 @@ def _detail_origin(origin: str | None) -> tuple[str, str, str]:
 
 def _api_principal(request: Request, settings: Settings) -> SessionPrincipal:
     principal = get_principal(request, settings)
+    if (
+        principal is not None
+        and settings.ctadmin_login_required
+        and principal.nonce == PUBLIC_DEMO_NONCE
+    ):
+        principal = None
     if principal is None and not settings.ctadmin_login_required:
         return _public_demo_principal(settings)
     if principal is None:

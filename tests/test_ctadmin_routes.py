@@ -361,6 +361,37 @@ def test_public_demo_can_preview_and_execute_repair_without_session(
     assert repair.json()["cleared"] is True
 
 
+def test_public_demo_persona_cookie_is_rejected_after_login_is_restored(
+    app_client, monkeypatch
+):
+    client, _ = app_client
+    _enable_public_demo(monkeypatch)
+    _seed_route_data(get_settings().data_dir)
+    page = client.get("/ctadmin/my-findings")
+
+    selected = client.post(
+        "/ctadmin/actions/persona",
+        data={
+            "persona_id": "EMP-1",
+            "return_to": "/ctadmin/my-findings",
+            "csrf_token": _rendered_csrf(page),
+        },
+        follow_redirects=False,
+    )
+    assert selected.status_code == 303
+    assert client.cookies.get("ctadmin_session") is not None
+
+    monkeypatch.setenv("EQM_CTADMIN_LOGIN_REQUIRED", "true")
+    get_settings.cache_clear()
+
+    page_after = client.get("/ctadmin/dashboard", follow_redirects=False)
+    api_after = client.get("/ctadmin/api/dashboard")
+
+    assert page_after.status_code == 303
+    assert urlparse(page_after.headers["location"]).path == "/ctadmin/login"
+    assert api_after.status_code == 401
+
+
 def test_login_creates_a_safe_http_only_rotated_session(app_client):
     """Dropping cookie rotation or safe relative redirects would be a session/security bug."""
     client, _ = app_client
