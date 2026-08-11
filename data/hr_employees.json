@@ -21321,7 +21321,7 @@
     "email": "emp-00989@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -21332,7 +21332,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-17T22:12:11.251178Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-11T03:29:07.942622Z"
   },
   {
     "id": "EMP-00990",
@@ -28866,6 +28866,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-11T01:50:56.461262Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01378",
+    "full_name": "Christopher Krause",
+    "email": "emp-01378@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-11T03:29:07.942622Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T03:29:07.942622Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01379",
+    "full_name": "Joseph Roberson",
+    "email": "emp-01379@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-11T03:29:07.942622Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T03:29:07.942622Z",
     "terminated_at": null
   }
 ]
