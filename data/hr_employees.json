@@ -28829,5 +28829,43 @@
     "manager_id": null,
     "hired_at": "2026-08-10T23:58:25.814505Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01376",
+    "full_name": "Melissa Ayala",
+    "email": "emp-01376@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-11T01:50:56.461262Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T01:50:56.461262Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01377",
+    "full_name": "Amanda Smith",
+    "email": "emp-01377@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-11T01:50:56.461262Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T01:50:56.461262Z",
+    "terminated_at": null
   }
 ]
