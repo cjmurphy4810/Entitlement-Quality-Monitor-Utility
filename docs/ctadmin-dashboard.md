@@ -20,11 +20,14 @@ Confirmed repairs are not UI-only simulations. CTADMIN validates the proposed ch
 | `EQM_CTADMIN_SESSION_SECRET` | for CTADMIN | none | HMAC signing secret. It must contain at least 32 non-whitespace characters. |
 | `EQM_CTADMIN_SESSION_TTL_SECONDS` | no | `28800` | Session lifetime in seconds; accepted range is 300 through 86400. |
 | `EQM_CTADMIN_SECURE_COOKIES` | no | `true` | Adds the cookie `Secure` flag. Set to `0` only for local HTTP. |
+| `EQM_CTADMIN_LOGIN_REQUIRED` | no | `true` | Requires a signed CTADMIN login. Set to `false` only for a fully public interactive demo. |
 | `EQM_GIT_PUSH_ENABLED` | no | `false` | Enables repository commit/push behavior in API synchronization flows. |
 | `EQM_GIT_PUSH_TOKEN` | if push enabled | none | Repository token. Never place it in source or this runbook. |
 | `EQM_GIT_REMOTE_URL` | if push enabled | none | Remote used by the synchronization flow. Avoid embedding credentials in checked-in configuration. |
 
 The login creates a signed, HTTP-only, SameSite=Lax session cookie. State-changing CTADMIN actions additionally require the CSRF token bound to that session. Changing the session secret invalidates all existing CTADMIN sessions.
+
+When `EQM_CTADMIN_LOGIN_REQUIRED=false`, anonymous visitors receive the public-demo experience without a login form. This includes the dashboard, JSON data, persona selection, repair previews, and repair confirmations. Anyone with the URL can persist repairs to the demo data while this mode is enabled. The setting does not expose bearer-protected non-CTADMIN API write routes.
 
 Read routes are unauthenticated unless the deployment is protected by an access gateway. Bearer authentication protects writes, simulation, and sync. CTADMIN page/API routes have their separate signed-session protection described above.
 
@@ -122,6 +125,29 @@ fly secrets set \
 Generate the session secret outside the repository and pass it directly to the platform secret manager. Do not put credentials in `fly.toml`, shell history, screenshots, test fixtures used outside tests, or commits.
 
 The existing `scripts/deploy.sh` helper does not set CTADMIN secrets. Set all four CTADMIN values shown above before using the dashboard login.
+
+### Toggle hosted-demo login
+
+Turn login off for a public interactive demo:
+
+```bash
+fly secrets set EQM_CTADMIN_LOGIN_REQUIRED=false --app eqm-utility
+```
+
+Restore login protection:
+
+```bash
+fly secrets set EQM_CTADMIN_LOGIN_REQUIRED=true --app eqm-utility
+```
+
+Fly restarts the application after either secret change. Keep the CTADMIN username, password, and session secret configured so protected mode can be restored immediately.
+
+The equivalent Codex chat requests are:
+
+```text
+Turn off login for the EQM CTADMIN demo and verify the public dashboard and repair flow.
+Turn login back on for the EQM CTADMIN demo and verify anonymous visitors are redirected to login.
+```
 
 The container image intentionally omits sample data, and a newly created Fly volume is empty. After the first deploy, initialize the volume before the first CTADMIN visit with the authenticated `POST /simulate/reset` endpoint:
 

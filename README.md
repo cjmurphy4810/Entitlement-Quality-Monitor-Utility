@@ -112,6 +112,16 @@ Use `POST /sync/pull-now` if you need to pick up Actions-committed changes durin
 | `EQM_CTADMIN_SESSION_SECRET` | CTADMIN UI | — | signing secret, at least 32 characters |
 | `EQM_CTADMIN_SESSION_TTL_SECONDS` | no | `28800` | signed-session lifetime, 300–86400 seconds |
 | `EQM_CTADMIN_SECURE_COOKIES` | no | `true` | require HTTPS when sending the session cookie |
+| `EQM_CTADMIN_LOGIN_REQUIRED` | no | `true` | require CTADMIN login; set `false` only for a fully public interactive demo |
+
+Public-demo mode exposes every CTADMIN page and action, including repairs that persist changes to `EQM_DATA_DIR`. Toggle the hosted demo with:
+
+```bash
+fly secrets set EQM_CTADMIN_LOGIN_REQUIRED=false --app eqm-utility
+fly secrets set EQM_CTADMIN_LOGIN_REQUIRED=true --app eqm-utility
+```
+
+You can also ask Codex: `Turn off login for the EQM CTADMIN demo and verify the public dashboard and repair flow.` To restore authentication, ask: `Turn login back on for the EQM CTADMIN demo and verify anonymous visitors are redirected to login.`
 
 ## License
 
