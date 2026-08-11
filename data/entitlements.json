@@ -6414,5 +6414,21 @@
     "sod_tags": [],
     "created_at": "2026-08-11T15:54:14.579464Z",
     "updated_at": "2026-08-11T15:54:14.579464Z"
+  },
+  {
+    "id": "ENT-00409",
+    "name": "new entitlement ENT-00409",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00036"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-11T16:51:53.472616Z",
+    "updated_at": "2026-08-11T16:51:53.472616Z"
   }
 ]

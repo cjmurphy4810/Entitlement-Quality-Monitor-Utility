@@ -23643,14 +23643,20 @@
     "id": "EMP-01105",
     "full_name": "Mrs. Tracey Hoover",
     "email": "emp-01105@example.com",
-    "current_role": "customer",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_dev",
         "started_at": "2026-07-25T11:04:08.805065Z",
+        "ended_at": "2026-08-11T16:51:53.472616Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-11T16:51:53.472616Z",
         "ended_at": null
       }
     ],
@@ -29194,6 +29200,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-11T15:54:14.579464Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01394",
+    "full_name": "Jennifer Smith",
+    "email": "emp-01394@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-11T16:51:53.472616Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T16:51:53.472616Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01395",
+    "full_name": "John Pollard",
+    "email": "emp-01395@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-11T16:51:53.472616Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T16:51:53.472616Z",
     "terminated_at": null
   }
 ]
