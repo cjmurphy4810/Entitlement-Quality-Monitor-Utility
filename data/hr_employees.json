@@ -29088,5 +29088,43 @@
     "manager_id": null,
     "hired_at": "2026-08-11T11:12:24.643002Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01389",
+    "full_name": "Robert Cortez",
+    "email": "emp-01389@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-11T13:50:43.363185Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T13:50:43.363185Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01390",
+    "full_name": "Brett Nelson",
+    "email": "emp-01390@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-11T13:50:43.363185Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T13:50:43.363185Z",
+    "terminated_at": null
   }
 ]
