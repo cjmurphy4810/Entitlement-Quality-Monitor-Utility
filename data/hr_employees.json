@@ -2835,7 +2835,7 @@
     "email": "emp-00119@example.com",
     "current_role": "operations",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -2846,7 +2846,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-29T20:38:15.420041Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-11T04:49:35.154817Z"
   },
   {
     "id": "EMP-00120",
@@ -28904,6 +28904,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-11T03:29:07.942622Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01380",
+    "full_name": "Brandy Duncan",
+    "email": "emp-01380@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-11T04:49:35.154817Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-11T04:49:35.154817Z",
     "terminated_at": null
   }
 ]
