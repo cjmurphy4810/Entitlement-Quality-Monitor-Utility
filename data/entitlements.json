@@ -6492,5 +6492,21 @@
     "sod_tags": [],
     "created_at": "2026-08-11T23:32:52.101879Z",
     "updated_at": "2026-08-11T23:32:52.101879Z"
+  },
+  {
+    "id": "ENT-00414",
+    "name": "new entitlement ENT-00414",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00252"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-12T01:18:44.425372Z",
+    "updated_at": "2026-08-12T01:18:44.425372Z"
   }
 ]

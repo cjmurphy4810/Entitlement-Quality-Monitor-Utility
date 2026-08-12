@@ -159861,5 +159861,145 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06578",
+    "rule_id": "ENT-Q-01",
+    "rule_name": "PBL completeness",
+    "severity": "low",
+    "detected_at": "2026-08-12T01:18:44.538218Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00414",
+    "explanation": "PBL description fails completeness check: banned phrase: 'access stuff'",
+    "evidence": {
+      "pbl_description": "This entitlement gives access stuff for users.",
+      "reasons": [
+        "banned phrase: 'access stuff'"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 please rewrite this description to clearly state what access is granted, on which system, and to whom.]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06579",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-08-12T01:18:44.541334Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00414",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "This entitlement gives access stuff for users."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06580",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-08-12T01:18:44.542137Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00414",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['business_user']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "business_user"
+      ],
+      "forbidden_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": []
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06581",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-12T01:18:45.361380Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02715",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00282",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00341",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06582",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-12T01:18:46.639814Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02715",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00282",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00341",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06583",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-12T01:18:47.000112Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02715",
+    "explanation": "Terminated employee EMP-00282 (Dalton Gordon) still holds active assignment ASN-02715.",
+    "evidence": {
+      "employee_id": "EMP-00282",
+      "terminated_at": "2026-07-10T18:56:35.762953+00:00",
+      "entitlement_id": "ENT-00341"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
