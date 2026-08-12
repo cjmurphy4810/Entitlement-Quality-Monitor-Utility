@@ -29750,5 +29750,43 @@
     "manager_id": null,
     "hired_at": "2026-08-12T17:26:19.399736Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01421",
+    "full_name": "Jill Jones",
+    "email": "emp-01421@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-12T18:24:36.669993Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T18:24:36.669993Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01422",
+    "full_name": "Ethan Brewer",
+    "email": "emp-01422@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-12T18:24:36.669993Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T18:24:36.669993Z",
+    "terminated_at": null
   }
 ]
