@@ -11066,7 +11066,7 @@
     "email": "emp-00490@example.com",
     "current_role": "operations",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -11077,7 +11077,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-29T10:40:27.910200Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-12T15:27:23.496503Z"
   },
   {
     "id": "EMP-00491",
@@ -19309,8 +19309,8 @@
     "id": "EMP-00887",
     "full_name": "Desiree Price",
     "email": "emp-00887@example.com",
-    "current_role": "business_analyst",
-    "current_division": "hr",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -19323,6 +19323,12 @@
         "role": "business_analyst",
         "division": "hr",
         "started_at": "2026-08-11T14:51:50.983227Z",
+        "ended_at": "2026-08-12T15:27:23.496503Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-12T15:27:23.496503Z",
         "ended_at": null
       }
     ],

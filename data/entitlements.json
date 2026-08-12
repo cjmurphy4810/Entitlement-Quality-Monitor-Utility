@@ -6554,5 +6554,19 @@
     "sod_tags": [],
     "created_at": "2026-08-12T14:16:50.618947Z",
     "updated_at": "2026-08-12T14:16:50.618947Z"
+  },
+  {
+    "id": "ENT-00418",
+    "name": "new entitlement ENT-00418",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-12T15:27:23.496503Z",
+    "updated_at": "2026-08-12T15:27:23.496503Z"
   }
 ]
