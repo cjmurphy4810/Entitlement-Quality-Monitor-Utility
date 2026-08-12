@@ -9857,8 +9857,8 @@
     "id": "EMP-00435",
     "full_name": "Mr. Stephen Harris",
     "email": "emp-00435@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -9871,6 +9871,12 @@
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-06-30T13:06:29.376258Z",
+        "ended_at": "2026-08-12T08:10:38.429006Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-12T08:10:38.429006Z",
         "ended_at": null
       }
     ],
@@ -14170,7 +14176,7 @@
     "email": "emp-00636@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -14181,7 +14187,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-14T23:43:43.461327Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-12T08:10:38.429006Z"
   },
   {
     "id": "EMP-00637",
@@ -29516,6 +29522,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-12T05:25:41.224326Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01410",
+    "full_name": "Danielle Smith",
+    "email": "emp-01410@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-12T08:10:38.429006Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T08:10:38.429006Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01411",
+    "full_name": "Chad Estrada",
+    "email": "emp-01411@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-12T08:10:38.429006Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T08:10:38.429006Z",
     "terminated_at": null
   }
 ]
