@@ -128,8 +128,8 @@
     "id": "EMP-00006",
     "full_name": "Tanya Campos",
     "email": "user00006@example.com",
-    "current_role": "operations",
-    "current_division": "business_dev",
+    "current_role": "developer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -142,6 +142,12 @@
         "role": "operations",
         "division": "business_dev",
         "started_at": "2026-05-30T11:51:00.442139Z",
+        "ended_at": "2026-08-12T09:38:03.194980Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-12T09:38:03.194980Z",
         "ended_at": null
       }
     ],
@@ -29560,6 +29566,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-12T08:10:38.429006Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01412",
+    "full_name": "Elizabeth Smith",
+    "email": "emp-01412@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-12T09:38:03.194980Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T09:38:03.194980Z",
     "terminated_at": null
   }
 ]

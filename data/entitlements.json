@@ -6508,5 +6508,19 @@
     "sod_tags": [],
     "created_at": "2026-08-12T01:18:44.425372Z",
     "updated_at": "2026-08-12T01:18:44.425372Z"
+  },
+  {
+    "id": "ENT-00415",
+    "name": "new entitlement ENT-00415",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-12T09:38:03.194980Z",
+    "updated_at": "2026-08-12T09:38:03.194980Z"
   }
 ]
