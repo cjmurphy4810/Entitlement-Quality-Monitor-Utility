@@ -29624,5 +29624,24 @@
     "manager_id": null,
     "hired_at": "2026-08-12T11:41:15.279323Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01415",
+    "full_name": "Paul Park",
+    "email": "emp-01415@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-12T12:53:05.328113Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T12:53:05.328113Z",
+    "terminated_at": null
   }
 ]
