@@ -25052,14 +25052,20 @@
     "id": "EMP-01176",
     "full_name": "Brent Vasquez",
     "email": "emp-01176@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-07-30T14:39:54.512513Z",
+        "ended_at": "2026-08-12T23:34:08.332146Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-12T23:34:08.332146Z",
         "ended_at": null
       }
     ],
