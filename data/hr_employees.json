@@ -29479,5 +29479,43 @@
     "manager_id": null,
     "hired_at": "2026-08-12T03:34:25.578956Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01408",
+    "full_name": "Marissa Simpson",
+    "email": "emp-01408@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-12T05:25:41.224326Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T05:25:41.224326Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01409",
+    "full_name": "Michael Martinez",
+    "email": "emp-01409@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-12T05:25:41.224326Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T05:25:41.224326Z",
+    "terminated_at": null
   }
 ]
