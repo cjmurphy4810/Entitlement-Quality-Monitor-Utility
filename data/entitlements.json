@@ -6584,5 +6584,21 @@
     "sod_tags": [],
     "created_at": "2026-08-12T16:24:56.010767Z",
     "updated_at": "2026-08-12T16:24:56.010767Z"
+  },
+  {
+    "id": "ENT-00420",
+    "name": "new entitlement ENT-00420",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00107"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-12T20:35:48.531446Z",
+    "updated_at": "2026-08-12T20:35:48.531446Z"
   }
 ]
