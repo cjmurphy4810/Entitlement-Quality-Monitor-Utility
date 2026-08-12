@@ -25301,7 +25301,7 @@
     "email": "emp-01189@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -25312,7 +25312,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-31T17:22:14.437999Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-12T16:24:56.010767Z"
   },
   {
     "id": "EMP-01190",
@@ -29673,6 +29673,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-12T14:16:50.618947Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01417",
+    "full_name": "Steven Sanchez",
+    "email": "emp-01417@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-12T16:24:56.010767Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T16:24:56.010767Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01418",
+    "full_name": "Amanda White",
+    "email": "emp-01418@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-12T16:24:56.010767Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T16:24:56.010767Z",
     "terminated_at": null
   }
 ]
