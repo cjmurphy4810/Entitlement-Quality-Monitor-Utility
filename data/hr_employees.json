@@ -29586,5 +29586,43 @@
     "manager_id": null,
     "hired_at": "2026-08-12T09:38:03.194980Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01413",
+    "full_name": "James Warner",
+    "email": "emp-01413@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-12T11:41:15.279323Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T11:41:15.279323Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01414",
+    "full_name": "Brian Randolph",
+    "email": "emp-01414@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-12T11:41:15.279323Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T11:41:15.279323Z",
+    "terminated_at": null
   }
 ]
