@@ -29441,5 +29441,43 @@
     "manager_id": null,
     "hired_at": "2026-08-12T01:18:44.425372Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01406",
+    "full_name": "Christopher King",
+    "email": "emp-01406@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-12T03:34:25.578956Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T03:34:25.578956Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01407",
+    "full_name": "Christopher Duran",
+    "email": "emp-01407@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-12T03:34:25.578956Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T03:34:25.578956Z",
+    "terminated_at": null
   }
 ]
