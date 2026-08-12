@@ -29712,5 +29712,43 @@
     "manager_id": null,
     "hired_at": "2026-08-12T16:24:56.010767Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01419",
+    "full_name": "Jose Hart",
+    "email": "emp-01419@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-12T17:26:19.399736Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T17:26:19.399736Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01420",
+    "full_name": "Megan Brown",
+    "email": "emp-01420@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-12T17:26:19.399736Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T17:26:19.399736Z",
+    "terminated_at": null
   }
 ]
