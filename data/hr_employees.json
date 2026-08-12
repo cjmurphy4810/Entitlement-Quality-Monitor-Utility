@@ -29788,5 +29788,24 @@
     "manager_id": null,
     "hired_at": "2026-08-12T18:24:36.669993Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01423",
+    "full_name": "Kimberly Myers",
+    "email": "emp-01423@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-12T19:34:54.482326Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-12T19:34:54.482326Z",
+    "terminated_at": null
   }
 ]
