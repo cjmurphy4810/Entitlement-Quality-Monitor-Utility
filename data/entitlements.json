@@ -6672,5 +6672,19 @@
     "sod_tags": [],
     "created_at": "2026-08-13T09:38:41.201513Z",
     "updated_at": "2026-08-13T09:38:41.201513Z"
+  },
+  {
+    "id": "ENT-00426",
+    "name": "new entitlement ENT-00426",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-13T12:54:19.854337Z",
+    "updated_at": "2026-08-13T12:54:19.854337Z"
   }
 ]

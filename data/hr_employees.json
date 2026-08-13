@@ -22726,7 +22726,7 @@
     "email": "emp-01056@example.com",
     "current_role": "customer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -22737,7 +22737,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T20:41:53.844177Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-13T12:54:19.854337Z"
   },
   {
     "id": "EMP-01057",
@@ -29988,6 +29988,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-13T11:41:35.353810Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01432",
+    "full_name": "John Hamilton",
+    "email": "emp-01432@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-13T12:54:19.854337Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T12:54:19.854337Z",
     "terminated_at": null
   }
 ]
