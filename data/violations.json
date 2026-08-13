@@ -162754,5 +162754,232 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06697",
+    "rule_id": "CMDB-01",
+    "rule_name": "Orphan entitlement",
+    "severity": "low",
+    "detected_at": "2026-08-13T08:18:28.387074Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00424",
+    "explanation": "Entitlement is not linked to any valid CMDB resource.",
+    "evidence": {
+      "declared_links": [],
+      "valid_links": []
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "_action": "link_to_resource",
+      "_note": "Owner should add at least one valid resource id."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06698",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-08-13T08:18:28.395211Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00049",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "Provides elevated read access in Moore-Bernard Application with limited write capability for approved exceptions."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06699",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-08-13T08:18:28.398506Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00049",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['business_user', 'customer']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "business_user",
+        "customer",
+        "business_analyst"
+      ],
+      "forbidden_roles": [
+        "business_user",
+        "customer"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06700",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-13T08:18:29.374945Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02761",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00246",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00125",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06701",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-13T08:18:30.928010Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02761",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00246",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00125",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06702",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-13T08:18:30.929238Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02762",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00499",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00062",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06703",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-13T08:18:31.366606Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02762",
+    "explanation": "Terminated employee EMP-00499 (Linda Barr) still holds active assignment ASN-02762.",
+    "evidence": {
+      "employee_id": "EMP-00499",
+      "terminated_at": "2026-07-28T05:30:01.828364+00:00",
+      "entitlement_id": "ENT-00062"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06704",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-08-13T08:18:31.392190Z",
+    "target_type": "employee",
+    "target_id": "EMP-00013",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_dev', 'finance', 'tech_ops']",
+    "evidence": {
+      "divisions": [
+        "business_dev",
+        "finance",
+        "tech_ops"
+      ],
+      "entitlement_ids": [
+        "ENT-00045",
+        "ENT-00049",
+        "ENT-00117"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06705",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-08-13T08:18:31.392588Z",
+    "target_type": "employee",
+    "target_id": "EMP-00574",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_dev', 'cyber_tech', 'tech_dev']",
+    "evidence": {
+      "divisions": [
+        "business_dev",
+        "cyber_tech",
+        "tech_dev"
+      ],
+      "entitlement_ids": [
+        "ENT-00049",
+        "ENT-00077",
+        "ENT-00309"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
