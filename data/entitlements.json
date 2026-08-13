@@ -6658,5 +6658,19 @@
     "sod_tags": [],
     "created_at": "2026-08-13T08:18:28.290564Z",
     "updated_at": "2026-08-13T08:18:28.290564Z"
+  },
+  {
+    "id": "ENT-00425",
+    "name": "new entitlement ENT-00425",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-13T09:38:41.201513Z",
+    "updated_at": "2026-08-13T09:38:41.201513Z"
   }
 ]
