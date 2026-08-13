@@ -30215,5 +30215,43 @@
     "manager_id": null,
     "hired_at": "2026-08-13T22:33:31.598131Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01442",
+    "full_name": "John Howard",
+    "email": "emp-01442@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-13T23:34:07.775898Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T23:34:07.775898Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01443",
+    "full_name": "Shane Garcia",
+    "email": "emp-01443@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-13T23:34:07.775898Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T23:34:07.775898Z",
+    "terminated_at": null
   }
 ]
