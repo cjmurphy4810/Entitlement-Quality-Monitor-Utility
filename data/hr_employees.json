@@ -11254,7 +11254,7 @@
     "email": "emp-00498@example.com",
     "current_role": "operations",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -11271,7 +11271,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-30T05:08:40.511044Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-13T17:26:49.624095Z"
   },
   {
     "id": "EMP-00499",
@@ -24386,14 +24386,20 @@
     "id": "EMP-01140",
     "full_name": "Jamie Miller",
     "email": "emp-01140@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-07-27T17:16:02.461960Z",
+        "ended_at": "2026-08-13T17:26:49.624095Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-13T17:26:49.624095Z",
         "ended_at": null
       }
     ],
@@ -30057,6 +30063,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-13T16:24:56.773707Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01435",
+    "full_name": "James Williams",
+    "email": "emp-01435@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-13T17:26:49.624095Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T17:26:49.624095Z",
     "terminated_at": null
   }
 ]
