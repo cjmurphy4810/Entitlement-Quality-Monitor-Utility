@@ -3481,7 +3481,7 @@
     "id": "ENT-00218",
     "name": "new entitlement ENT-00218",
     "pbl_description": "This entitlement gives access stuff for users.",
-    "access_tier": 1,
+    "access_tier": 3,
     "acceptable_roles": [
       "developer"
     ],
@@ -3491,7 +3491,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-06-24T12:32:31.358886Z",
-    "updated_at": "2026-06-24T12:32:31.358886Z"
+    "updated_at": "2026-08-13T03:37:38.924820Z"
   },
   {
     "id": "ENT-00219",
@@ -6614,5 +6614,21 @@
     "sod_tags": [],
     "created_at": "2026-08-12T23:34:08.332146Z",
     "updated_at": "2026-08-12T23:34:08.332146Z"
+  },
+  {
+    "id": "ENT-00422",
+    "name": "new entitlement ENT-00422",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00057"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-13T03:37:38.924820Z",
+    "updated_at": "2026-08-13T03:37:38.924820Z"
   }
 ]

@@ -15522,8 +15522,8 @@
     "id": "EMP-00700",
     "full_name": "Briana Willis",
     "email": "emp-00700@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -15536,6 +15536,12 @@
         "role": "operations",
         "division": "finance",
         "started_at": "2026-06-25T20:52:24.992302Z",
+        "ended_at": "2026-08-13T03:37:38.924820Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-13T03:37:38.924820Z",
         "ended_at": null
       }
     ],
@@ -22910,7 +22916,7 @@
     "email": "emp-01066@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -22921,7 +22927,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T12:54:29.727561Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-13T03:37:38.924820Z"
   },
   {
     "id": "EMP-01067",
