@@ -29876,5 +29876,43 @@
     "manager_id": null,
     "hired_at": "2026-08-12T22:33:08.275948Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01427",
+    "full_name": "Lisa Austin",
+    "email": "emp-01427@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-13T01:20:15.686080Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T01:20:15.686080Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01428",
+    "full_name": "Sherry Church",
+    "email": "emp-01428@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-13T01:20:15.686080Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T01:20:15.686080Z",
+    "terminated_at": null
   }
 ]
