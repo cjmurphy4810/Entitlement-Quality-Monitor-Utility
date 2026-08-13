@@ -30083,5 +30083,43 @@
     "manager_id": null,
     "hired_at": "2026-08-13T17:26:49.624095Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01436",
+    "full_name": "Cassandra Thomas",
+    "email": "emp-01436@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-13T18:25:56.260826Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T18:25:56.260826Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01437",
+    "full_name": "Carol Adams",
+    "email": "emp-01437@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-13T18:25:56.260826Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T18:25:56.260826Z",
+    "terminated_at": null
   }
 ]
