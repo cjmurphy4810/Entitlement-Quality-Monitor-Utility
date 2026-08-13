@@ -22694,7 +22694,7 @@
     "email": "emp-01054@example.com",
     "current_role": "operations",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -22705,7 +22705,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-21T19:08:33.330088Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-13T16:24:56.773707Z"
   },
   {
     "id": "EMP-01055",
@@ -25354,14 +25354,20 @@
     "id": "EMP-01190",
     "full_name": "Sara Berry",
     "email": "emp-01190@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2026-07-31T17:22:14.437999Z",
+        "ended_at": "2026-08-13T16:24:56.773707Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-13T16:24:56.773707Z",
         "ended_at": null
       }
     ],
@@ -30032,6 +30038,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-13T14:18:56.339497Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01434",
+    "full_name": "David Lara",
+    "email": "emp-01434@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-13T16:24:56.773707Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T16:24:56.773707Z",
     "terminated_at": null
   }
 ]
