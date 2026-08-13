@@ -162481,5 +162481,141 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06685",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-13T05:29:14.678537Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02758",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00917",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00186",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06686",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-13T05:29:16.237890Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02758",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00917",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00186",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06687",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-13T05:29:16.256173Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00294",
+    "explanation": "Terminated employee EMP-00092 (Diane Beck) still holds active assignment ASN-00294.",
+    "evidence": {
+      "employee_id": "EMP-00092",
+      "terminated_at": "2026-08-13T05:29:13.575001+00:00",
+      "entitlement_id": "ENT-00016"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06688",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-13T05:29:16.305968Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00765",
+    "explanation": "Terminated employee EMP-00092 (Diane Beck) still holds active assignment ASN-00765.",
+    "evidence": {
+      "employee_id": "EMP-00092",
+      "terminated_at": "2026-08-13T05:29:13.575001+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06689",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-13T05:29:16.539127Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02063",
+    "explanation": "Terminated employee EMP-00092 (Diane Beck) still holds active assignment ASN-02063.",
+    "evidence": {
+      "employee_id": "EMP-00092",
+      "terminated_at": "2026-08-13T05:29:13.575001+00:00",
+      "entitlement_id": "ENT-00157"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06690",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-13T05:29:16.630841Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02514",
+    "explanation": "Terminated employee EMP-00092 (Diane Beck) still holds active assignment ASN-02514.",
+    "evidence": {
+      "employee_id": "EMP-00092",
+      "terminated_at": "2026-08-13T05:29:13.575001+00:00",
+      "entitlement_id": "ENT-00325"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
