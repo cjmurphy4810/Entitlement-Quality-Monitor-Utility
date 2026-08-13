@@ -29853,14 +29853,20 @@
     "id": "EMP-01423",
     "full_name": "Kimberly Myers",
     "email": "emp-01423@example.com",
-    "current_role": "developer",
-    "current_division": "cyber_tech",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "cyber_tech",
         "started_at": "2026-08-12T19:34:54.482326Z",
+        "ended_at": "2026-08-13T22:33:31.598131Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-13T22:33:31.598131Z",
         "ended_at": null
       }
     ],
@@ -30170,6 +30176,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-13T21:37:47.610959Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01440",
+    "full_name": "Kylie Brown",
+    "email": "emp-01440@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-13T22:33:31.598131Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T22:33:31.598131Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01441",
+    "full_name": "Paul Johnson",
+    "email": "emp-01441@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-13T22:33:31.598131Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-13T22:33:31.598131Z",
     "terminated_at": null
   }
 ]
