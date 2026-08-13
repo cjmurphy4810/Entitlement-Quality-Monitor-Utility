@@ -6630,5 +6630,19 @@
     "sod_tags": [],
     "created_at": "2026-08-13T03:37:38.924820Z",
     "updated_at": "2026-08-13T03:37:38.924820Z"
+  },
+  {
+    "id": "ENT-00423",
+    "name": "new entitlement ENT-00423",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-13T06:56:58.847381Z",
+    "updated_at": "2026-08-13T06:56:58.847381Z"
   }
 ]
