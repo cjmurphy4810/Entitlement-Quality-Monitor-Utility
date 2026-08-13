@@ -163099,5 +163099,52 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06711",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-13T10:55:52.375736Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02765",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00370",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00347",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06712",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-13T10:55:54.345737Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02765",
+    "explanation": "Terminated employee EMP-00370 (Mr. Sean Rasmussen) still holds active assignment ASN-02765.",
+    "evidence": {
+      "employee_id": "EMP-00370",
+      "terminated_at": "2026-05-20T21:17:27.082338+00:00",
+      "entitlement_id": "ENT-00347"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
