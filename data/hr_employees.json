@@ -30442,5 +30442,43 @@
     "manager_id": null,
     "hired_at": "2026-08-14T14:11:17.134872Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01453",
+    "full_name": "Cameron Hoffman",
+    "email": "emp-01453@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-14T15:13:42.822372Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T15:13:42.822372Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01454",
+    "full_name": "Michelle Miller",
+    "email": "emp-01454@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-14T15:13:42.822372Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T15:13:42.822372Z",
+    "terminated_at": null
   }
 ]
