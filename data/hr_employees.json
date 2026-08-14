@@ -21837,8 +21837,8 @@
     "id": "EMP-01009",
     "full_name": "Sara Ali",
     "email": "emp-01009@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -21851,6 +21851,12 @@
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-07-23T04:16:06.641195Z",
+        "ended_at": "2026-08-14T20:02:10.808959Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-14T20:02:10.808959Z",
         "ended_at": null
       }
     ],
@@ -30542,6 +30548,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T19:26:16.458055Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01458",
+    "full_name": "Brittany Hampton",
+    "email": "emp-01458@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-14T20:02:10.808959Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T20:02:10.808959Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01459",
+    "full_name": "Tracy Summers",
+    "email": "emp-01459@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-14T20:02:10.808959Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T20:02:10.808959Z",
     "terminated_at": null
   }
 ]
