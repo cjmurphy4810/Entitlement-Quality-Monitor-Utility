@@ -5951,7 +5951,7 @@
     "email": "emp-00253@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -5980,7 +5980,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-08T18:06:06.349745Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-14T23:45:33.386576Z"
   },
   {
     "id": "EMP-00254",
@@ -30693,6 +30693,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T22:46:54.256415Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01465",
+    "full_name": "Mathew Ritter",
+    "email": "emp-01465@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-14T23:45:33.386576Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T23:45:33.386576Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01466",
+    "full_name": "Vincent Matthews",
+    "email": "emp-01466@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-14T23:45:33.386576Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T23:45:33.386576Z",
     "terminated_at": null
   }
 ]
