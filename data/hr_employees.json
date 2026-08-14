@@ -30480,5 +30480,43 @@
     "manager_id": null,
     "hired_at": "2026-08-14T15:13:42.822372Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01455",
+    "full_name": "Christopher Baker",
+    "email": "emp-01455@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-14T16:13:12.858950Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T16:13:12.858950Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01456",
+    "full_name": "Bryce Maldonado",
+    "email": "emp-01456@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-14T16:13:12.858950Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T16:13:12.858950Z",
+    "terminated_at": null
   }
 ]
