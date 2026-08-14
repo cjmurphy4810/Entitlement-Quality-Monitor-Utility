@@ -20044,8 +20044,8 @@
     "id": "EMP-00920",
     "full_name": "Timothy Vaughn",
     "email": "emp-00920@example.com",
-    "current_role": "business_user",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -20058,6 +20058,12 @@
         "role": "business_user",
         "division": "cyber_tech",
         "started_at": "2026-07-17T02:03:21.355865Z",
+        "ended_at": "2026-08-14T22:15:07.910711Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-14T22:15:07.910711Z",
         "ended_at": null
       }
     ],
@@ -30630,6 +30636,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T21:19:01.315754Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01462",
+    "full_name": "Beverly Wallace",
+    "email": "emp-01462@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-14T22:15:07.910711Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T22:15:07.910711Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01463",
+    "full_name": "Brian Cameron",
+    "email": "emp-01463@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-14T22:15:07.910711Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T22:15:07.910711Z",
     "terminated_at": null
   }
 ]
