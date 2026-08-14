@@ -30234,7 +30234,7 @@
     "email": "emp-01442@example.com",
     "current_role": "business_analyst",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -30245,7 +30245,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-13T23:34:07.775898Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-14T12:49:49.699956Z"
   },
   {
     "id": "EMP-01443",
@@ -30378,6 +30378,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T09:33:48.579869Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01450",
+    "full_name": "Susan Roberts",
+    "email": "emp-01450@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-14T12:49:49.699956Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T12:49:49.699956Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01451",
+    "full_name": "Megan Wiggins",
+    "email": "emp-01451@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-14T12:49:49.699956Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T12:49:49.699956Z",
     "terminated_at": null
   }
 ]
