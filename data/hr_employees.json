@@ -30587,5 +30587,24 @@
     "manager_id": null,
     "hired_at": "2026-08-14T20:02:10.808959Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01460",
+    "full_name": "Danielle Gomez",
+    "email": "emp-01460@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-14T20:53:51.152706Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T20:53:51.152706Z",
+    "terminated_at": null
   }
 ]
