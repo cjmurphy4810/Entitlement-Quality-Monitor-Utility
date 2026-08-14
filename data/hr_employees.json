@@ -30675,5 +30675,24 @@
     "manager_id": null,
     "hired_at": "2026-08-14T22:15:07.910711Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01464",
+    "full_name": "Carol Fritz",
+    "email": "emp-01464@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-14T22:46:54.256415Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T22:46:54.256415Z",
+    "terminated_at": null
   }
 ]
