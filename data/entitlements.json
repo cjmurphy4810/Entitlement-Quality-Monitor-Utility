@@ -6732,5 +6732,19 @@
     "sod_tags": [],
     "created_at": "2026-08-14T09:33:48.579869Z",
     "updated_at": "2026-08-14T09:33:48.579869Z"
+  },
+  {
+    "id": "ENT-00430",
+    "name": "new entitlement ENT-00430",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-14T10:52:09.040902Z",
+    "updated_at": "2026-08-14T10:52:09.040902Z"
   }
 ]
