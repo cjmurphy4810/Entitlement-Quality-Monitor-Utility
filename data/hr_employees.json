@@ -30524,5 +30524,24 @@
     "manager_id": null,
     "hired_at": "2026-08-14T16:13:12.858950Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01457",
+    "full_name": "Chase Cunningham",
+    "email": "emp-01457@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-14T19:26:16.458055Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T19:26:16.458055Z",
+    "terminated_at": null
   }
 ]
