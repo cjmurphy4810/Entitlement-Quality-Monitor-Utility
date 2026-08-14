@@ -25421,14 +25421,20 @@
     "id": "EMP-01191",
     "full_name": "Kathleen Gonzalez",
     "email": "emp-01191@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-07-31T18:51:00.760137Z",
+        "ended_at": "2026-08-14T21:19:01.315754Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-14T21:19:01.315754Z",
         "ended_at": null
       }
     ],
@@ -30605,6 +30611,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T20:53:51.152706Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01461",
+    "full_name": "John Mann",
+    "email": "emp-01461@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-14T21:19:01.315754Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T21:19:01.315754Z",
     "terminated_at": null
   }
 ]
