@@ -165278,5 +165278,298 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06803",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-14T09:33:49.675048Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02800",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-01354",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00059",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06804",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-14T09:33:49.676028Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02801",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00335",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00379",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06805",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-14T09:33:51.235394Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02801",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00335",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00379",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06806",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.243650Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00021",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00021.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00015"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06807",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.244402Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00065",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00065.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00009"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06808",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.245097Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00098",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00098.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00037"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06809",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.245819Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00123",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00123.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00016"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06810",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.247849Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00174",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00174.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00009"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06811",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.250069Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00229",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00229.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00009"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06812",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.252531Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00272",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00272.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00017"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06813",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.275566Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00549",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00549.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00022"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06814",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.281146Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00599",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00599.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00067"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06815",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-14T09:33:51.327634Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00905",
+    "explanation": "Terminated employee EMP-00019 (Nicholas Mcbride) still holds active assignment ASN-00905.",
+    "evidence": {
+      "employee_id": "EMP-00019",
+      "terminated_at": "2026-08-14T09:33:48.579869+00:00",
+      "entitlement_id": "ENT-00001"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

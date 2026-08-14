@@ -443,7 +443,7 @@
     "email": "user00019@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -460,7 +460,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-11-05T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-14T09:33:48.579869Z"
   },
   {
     "id": "EMP-00020",
@@ -29517,14 +29517,20 @@
     "id": "EMP-01405",
     "full_name": "Michael Yang",
     "email": "emp-01405@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-08-12T01:18:44.425372Z",
+        "ended_at": "2026-08-14T09:33:48.579869Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-14T09:33:48.579869Z",
         "ended_at": null
       }
     ],
@@ -30353,6 +30359,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T08:08:52.864458Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01449",
+    "full_name": "Javier Perry",
+    "email": "emp-01449@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-14T09:33:48.579869Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T09:33:48.579869Z",
     "terminated_at": null
   }
 ]
