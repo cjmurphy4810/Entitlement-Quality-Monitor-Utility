@@ -17740,14 +17740,20 @@
     "id": "EMP-00806",
     "full_name": "Aaron Wise",
     "email": "emp-00806@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-07-04T14:07:19.182902Z",
+        "ended_at": "2026-08-14T17:25:10.981013Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-14T17:25:10.981013Z",
         "ended_at": null
       }
     ],
@@ -29683,7 +29689,7 @@
     "email": "emp-01413@example.com",
     "current_role": "business_user",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -29694,7 +29700,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-12T11:41:15.279323Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-14T17:25:10.981013Z"
   },
   {
     "id": "EMP-01414",
