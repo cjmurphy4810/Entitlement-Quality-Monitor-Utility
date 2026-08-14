@@ -30335,5 +30335,24 @@
     "manager_id": null,
     "hired_at": "2026-08-14T03:35:42.146134Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01448",
+    "full_name": "Christopher Kennedy",
+    "email": "emp-01448@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-14T08:08:52.864458Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-14T08:08:52.864458Z",
+    "terminated_at": null
   }
 ]

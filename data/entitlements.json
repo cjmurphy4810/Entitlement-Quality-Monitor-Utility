@@ -6700,5 +6700,21 @@
     "sod_tags": [],
     "created_at": "2026-08-14T03:35:42.146134Z",
     "updated_at": "2026-08-14T03:35:42.146134Z"
+  },
+  {
+    "id": "ENT-00428",
+    "name": "new entitlement ENT-00428",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00100"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-14T08:08:52.864458Z",
+    "updated_at": "2026-08-14T08:08:52.864458Z"
   }
 ]
