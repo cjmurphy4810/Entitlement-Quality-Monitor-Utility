@@ -15381,8 +15381,8 @@
     "id": "EMP-00691",
     "full_name": "Adam Johnson",
     "email": "emp-00691@example.com",
-    "current_role": "customer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -15395,6 +15395,12 @@
         "role": "customer",
         "division": "hr",
         "started_at": "2026-06-27T18:42:47.139332Z",
+        "ended_at": "2026-08-15T23:13:37.221353Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-15T23:13:37.221353Z",
         "ended_at": null
       }
     ],
@@ -31631,6 +31637,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T22:45:09.379438Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01509",
+    "full_name": "Rebecca King",
+    "email": "emp-01509@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-15T23:13:37.221353Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T23:13:37.221353Z",
     "terminated_at": null
   }
 ]
