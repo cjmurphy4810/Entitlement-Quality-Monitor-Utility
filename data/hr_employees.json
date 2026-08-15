@@ -15202,7 +15202,7 @@
     "email": "emp-00684@example.com",
     "current_role": "customer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -15213,7 +15213,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-22T13:29:09.668689Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-15T14:45:43.998431Z"
   },
   {
     "id": "EMP-00685",
@@ -21967,14 +21967,20 @@
     "id": "EMP-01013",
     "full_name": "Troy Wade",
     "email": "emp-01013@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "hr",
         "started_at": "2026-07-19T08:05:23.075020Z",
+        "ended_at": "2026-08-15T14:45:43.998431Z"
+      },
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-15T14:45:43.998431Z",
         "ended_at": null
       }
     ],
@@ -31197,6 +31203,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T14:14:39.626453Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01489",
+    "full_name": "Logan Scott",
+    "email": "emp-01489@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-15T14:45:43.998431Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T14:45:43.998431Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01490",
+    "full_name": "Patricia Strickland",
+    "email": "emp-01490@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-15T14:45:43.998431Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T14:45:43.998431Z",
     "terminated_at": null
   }
 ]
