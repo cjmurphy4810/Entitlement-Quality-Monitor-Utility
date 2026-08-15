@@ -23869,7 +23869,7 @@
     "email": "emp-01107@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -23880,7 +23880,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-25T14:08:29.427566Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-15T23:41:59.504575Z"
   },
   {
     "id": "EMP-01108",
@@ -31656,6 +31656,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T23:13:37.221353Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01510",
+    "full_name": "Jared Sanchez",
+    "email": "emp-01510@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-15T23:41:59.504575Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T23:41:59.504575Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01511",
+    "full_name": "Stephanie Graham",
+    "email": "emp-01511@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-15T23:41:59.504575Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T23:41:59.504575Z",
     "terminated_at": null
   }
 ]
