@@ -31040,5 +31040,43 @@
     "manager_id": null,
     "hired_at": "2026-08-15T10:15:43.121222Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01481",
+    "full_name": "Gregory Reed",
+    "email": "emp-01481@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-15T11:41:59.569482Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T11:41:59.569482Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01482",
+    "full_name": "Garrett Spencer",
+    "email": "emp-01482@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-15T11:41:59.569482Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T11:41:59.569482Z",
+    "terminated_at": null
   }
 ]

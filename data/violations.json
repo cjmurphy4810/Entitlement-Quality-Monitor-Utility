@@ -169363,5 +169363,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06975",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-15T11:42:02.505709Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02867",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00929",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00003",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06976",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-15T11:42:03.008184Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02867",
+    "explanation": "Terminated employee EMP-00929 (Jaime Carter) still holds active assignment ASN-02867.",
+    "evidence": {
+      "employee_id": "EMP-00929",
+      "terminated_at": "2026-08-09T22:58:50.039419+00:00",
+      "entitlement_id": "ENT-00003"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
