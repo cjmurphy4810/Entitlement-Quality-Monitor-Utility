@@ -6864,5 +6864,21 @@
     "sod_tags": [],
     "created_at": "2026-08-15T17:42:42.515728Z",
     "updated_at": "2026-08-15T17:42:42.515728Z"
+  },
+  {
+    "id": "ENT-00439",
+    "name": "new entitlement ENT-00439",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00109"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-15T19:42:55.138388Z",
+    "updated_at": "2026-08-15T19:42:55.138388Z"
   }
 ]
