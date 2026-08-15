@@ -167623,5 +167623,143 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06903",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-15T00:51:21.205046Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02835",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_analyst', 'business_user', 'customer'].",
+    "evidence": {
+      "employee_id": "EMP-00597",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00041",
+      "acceptable_roles": [
+        "business_analyst",
+        "business_user",
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06904",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-15T00:51:22.474034Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02835",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00597",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00041",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06905",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-15T00:51:22.728628Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02192",
+    "explanation": "Terminated employee EMP-00805 (Amanda Black) still holds active assignment ASN-02192.",
+    "evidence": {
+      "employee_id": "EMP-00805",
+      "terminated_at": "2026-08-15T00:51:20.302859+00:00",
+      "entitlement_id": "ENT-00276"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06906",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-15T00:51:22.733712Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02229",
+    "explanation": "Terminated employee EMP-00805 (Amanda Black) still holds active assignment ASN-02229.",
+    "evidence": {
+      "employee_id": "EMP-00805",
+      "terminated_at": "2026-08-15T00:51:20.302859+00:00",
+      "entitlement_id": "ENT-00146"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06907",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-15T00:51:22.767194Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02440",
+    "explanation": "Terminated employee EMP-00805 (Amanda Black) still holds active assignment ASN-02440.",
+    "evidence": {
+      "employee_id": "EMP-00805",
+      "terminated_at": "2026-08-15T00:51:20.302859+00:00",
+      "entitlement_id": "ENT-00229"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06908",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-15T00:51:22.830642Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02835",
+    "explanation": "Terminated employee EMP-00597 (Marc Gibson) still holds active assignment ASN-02835.",
+    "evidence": {
+      "employee_id": "EMP-00597",
+      "terminated_at": "2026-07-21T16:18:13.936694+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
