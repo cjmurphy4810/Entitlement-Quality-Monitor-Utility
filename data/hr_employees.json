@@ -31078,5 +31078,43 @@
     "manager_id": null,
     "hired_at": "2026-08-15T11:41:59.569482Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01483",
+    "full_name": "Elijah Jackson",
+    "email": "emp-01483@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-15T12:23:06.971813Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T12:23:06.971813Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01484",
+    "full_name": "Austin Green",
+    "email": "emp-01484@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-15T12:23:06.971813Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T12:23:06.971813Z",
+    "terminated_at": null
   }
 ]
