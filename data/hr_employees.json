@@ -31116,5 +31116,43 @@
     "manager_id": null,
     "hired_at": "2026-08-15T12:23:06.971813Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01485",
+    "full_name": "Kenneth Fuentes",
+    "email": "emp-01485@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-15T13:06:23.632050Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T13:06:23.632050Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01486",
+    "full_name": "David Garner",
+    "email": "emp-01486@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-15T13:06:23.632050Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T13:06:23.632050Z",
+    "terminated_at": null
   }
 ]
