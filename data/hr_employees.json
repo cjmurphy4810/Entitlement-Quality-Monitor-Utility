@@ -31154,5 +31154,24 @@
     "manager_id": null,
     "hired_at": "2026-08-15T13:06:23.632050Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01487",
+    "full_name": "Peggy Clark MD",
+    "email": "emp-01487@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-15T13:49:40.475736Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T13:49:40.475736Z",
+    "terminated_at": null
   }
 ]
