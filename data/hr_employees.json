@@ -31311,5 +31311,43 @@
     "manager_id": null,
     "hired_at": "2026-08-15T16:48:14.019685Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01494",
+    "full_name": "Dana Dawson",
+    "email": "emp-01494@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-15T17:42:42.515728Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T17:42:42.515728Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01495",
+    "full_name": "Ronald White",
+    "email": "emp-01495@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-15T17:42:42.515728Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T17:42:42.515728Z",
+    "terminated_at": null
   }
 ]

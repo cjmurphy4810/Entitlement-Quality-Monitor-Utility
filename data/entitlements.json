@@ -6850,5 +6850,19 @@
     "sod_tags": [],
     "created_at": "2026-08-15T16:15:26.056117Z",
     "updated_at": "2026-08-15T16:15:26.056117Z"
+  },
+  {
+    "id": "ENT-00438",
+    "name": "new entitlement ENT-00438",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-15T17:42:42.515728Z",
+    "updated_at": "2026-08-15T17:42:42.515728Z"
   }
 ]
