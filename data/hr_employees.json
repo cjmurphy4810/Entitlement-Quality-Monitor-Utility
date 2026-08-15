@@ -11855,8 +11855,8 @@
     "id": "EMP-00525",
     "full_name": "Kelly Kelley",
     "email": "emp-00525@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
@@ -11875,6 +11875,12 @@
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-07-06T00:02:02.766383Z",
+        "ended_at": "2026-08-15T21:13:47.522000Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-15T21:13:47.522000Z",
         "ended_at": null
       }
     ],
