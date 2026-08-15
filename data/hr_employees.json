@@ -31242,5 +31242,24 @@
     "manager_id": null,
     "hired_at": "2026-08-15T14:45:43.998431Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01491",
+    "full_name": "Jeffrey Cox",
+    "email": "emp-01491@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-15T15:42:44.813682Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T15:42:44.813682Z",
+    "terminated_at": null
   }
 ]
