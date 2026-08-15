@@ -30902,5 +30902,43 @@
     "manager_id": null,
     "hired_at": "2026-08-15T06:24:55.093363Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01475",
+    "full_name": "Jillian Jordan",
+    "email": "emp-01475@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-15T07:50:13.526642Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T07:50:13.526642Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01476",
+    "full_name": "Natasha Roberts",
+    "email": "emp-01476@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-15T07:50:13.526642Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T07:50:13.526642Z",
+    "terminated_at": null
   }
 ]

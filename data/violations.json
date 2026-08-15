@@ -168404,5 +168404,53 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-06936",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-15T07:50:14.734791Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02850",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00054",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00083",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-06937",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-15T07:50:16.435597Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02850",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00054",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00083",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
