@@ -17336,14 +17336,20 @@
     "id": "EMP-00786",
     "full_name": "Abigail Phillips",
     "email": "emp-00786@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-07-03T09:40:32.687667Z",
+        "ended_at": "2026-08-15T05:48:41.926298Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-15T05:48:41.926298Z",
         "ended_at": null
       }
     ],
