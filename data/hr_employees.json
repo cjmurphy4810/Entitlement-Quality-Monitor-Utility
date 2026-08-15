@@ -31525,5 +31525,24 @@
     "manager_id": null,
     "hired_at": "2026-08-15T20:14:34.072323Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01504",
+    "full_name": "Robin Price",
+    "email": "emp-01504@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-15T21:42:47.031048Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T21:42:47.031048Z",
+    "terminated_at": null
   }
 ]
