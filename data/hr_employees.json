@@ -30055,14 +30055,20 @@
     "id": "EMP-01427",
     "full_name": "Lisa Austin",
     "email": "emp-01427@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-08-13T01:20:15.686080Z",
+        "ended_at": "2026-08-15T20:14:34.072323Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-15T20:14:34.072323Z",
         "ended_at": null
       }
     ],
@@ -31493,6 +31499,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T19:42:55.138388Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01503",
+    "full_name": "David Norris",
+    "email": "emp-01503@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-15T20:14:34.072323Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T20:14:34.072323Z",
     "terminated_at": null
   }
 ]
