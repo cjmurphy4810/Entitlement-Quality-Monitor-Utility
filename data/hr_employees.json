@@ -30732,5 +30732,43 @@
     "manager_id": null,
     "hired_at": "2026-08-14T23:45:33.386576Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01467",
+    "full_name": "Peter Carter",
+    "email": "emp-01467@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-15T02:10:06.956571Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T02:10:06.956571Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01468",
+    "full_name": "Nicholas Rogers",
+    "email": "emp-01468@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-15T02:10:06.956571Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T02:10:06.956571Z",
+    "terminated_at": null
   }
 ]
