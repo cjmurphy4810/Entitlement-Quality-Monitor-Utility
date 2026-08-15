@@ -23668,14 +23668,20 @@
     "id": "EMP-01100",
     "full_name": "David Freeman",
     "email": "emp-01100@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-07-24T22:55:55.952283Z",
+        "ended_at": "2026-08-15T08:18:58.815435Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-15T08:18:58.815435Z",
         "ended_at": null
       }
     ],
@@ -30939,6 +30945,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T07:50:13.526642Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01477",
+    "full_name": "Brian King",
+    "email": "emp-01477@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-15T08:18:58.815435Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T08:18:58.815435Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01478",
+    "full_name": "Kenneth Lee",
+    "email": "emp-01478@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-15T08:18:58.815435Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T08:18:58.815435Z",
     "terminated_at": null
   }
 ]
