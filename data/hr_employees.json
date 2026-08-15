@@ -25894,7 +25894,7 @@
     "email": "emp-01212@example.com",
     "current_role": "operations",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -25905,7 +25905,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-01T22:26:36.336707Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-15T19:16:21.477673Z"
   },
   {
     "id": "EMP-01213",
@@ -27922,14 +27922,20 @@
     "id": "EMP-01316",
     "full_name": "Paul Wyatt",
     "email": "emp-01316@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-08-08T20:56:06.817569Z",
+        "ended_at": "2026-08-15T19:16:21.477673Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-15T19:16:21.477673Z",
         "ended_at": null
       }
     ],
@@ -31424,6 +31430,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T18:53:50.204514Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01500",
+    "full_name": "Rodney Brown MD",
+    "email": "emp-01500@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-15T19:16:21.477673Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T19:16:21.477673Z",
     "terminated_at": null
   }
 ]
