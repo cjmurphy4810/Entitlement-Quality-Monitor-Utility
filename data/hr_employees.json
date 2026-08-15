@@ -27367,14 +27367,20 @@
     "id": "EMP-01289",
     "full_name": "James Gordon",
     "email": "emp-01289@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "developer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2026-08-07T19:47:00.764236Z",
+        "ended_at": "2026-08-15T09:47:55.720033Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-15T09:47:55.720033Z",
         "ended_at": null
       }
     ],
@@ -30983,6 +30989,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T08:18:58.815435Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01479",
+    "full_name": "Andrew Gallegos",
+    "email": "emp-01479@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-15T09:47:55.720033Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T09:47:55.720033Z",
     "terminated_at": null
   }
 ]
