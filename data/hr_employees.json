@@ -27162,14 +27162,20 @@
     "id": "EMP-01276",
     "full_name": "Evelyn Russell",
     "email": "emp-01276@example.com",
-    "current_role": "customer",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "legal_compliance",
         "started_at": "2026-08-07T11:21:18.036564Z",
+        "ended_at": "2026-08-15T22:13:36.338852Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-15T22:13:36.338852Z",
         "ended_at": null
       }
     ],
@@ -31543,6 +31549,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T21:42:47.031048Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01505",
+    "full_name": "Holly Carroll",
+    "email": "emp-01505@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-15T22:13:36.338852Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T22:13:36.338852Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01506",
+    "full_name": "Bill Hamilton",
+    "email": "emp-01506@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-15T22:13:36.338852Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-15T22:13:36.338852Z",
     "terminated_at": null
   }
 ]
