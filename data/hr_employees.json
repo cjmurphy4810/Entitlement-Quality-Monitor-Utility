@@ -12327,8 +12327,8 @@
     "id": "EMP-00547",
     "full_name": "Mr. Gregory Lopez",
     "email": "emp-00547@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -12341,6 +12341,12 @@
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-06-27T20:05:17.943629Z",
+        "ended_at": "2026-08-16T17:13:49.869684Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-16T17:13:49.869684Z",
         "ended_at": null
       }
     ],
@@ -32160,6 +32166,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T16:15:55.915195Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01534",
+    "full_name": "Greg Proctor",
+    "email": "emp-01534@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-16T17:13:49.869684Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T17:13:49.869684Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01535",
+    "full_name": "Katherine Navarro",
+    "email": "emp-01535@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-16T17:13:49.869684Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T17:13:49.869684Z",
     "terminated_at": null
   }
 ]
