@@ -32079,5 +32079,43 @@
     "manager_id": null,
     "hired_at": "2026-08-16T13:50:37.215538Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01530",
+    "full_name": "Nicole Wang",
+    "email": "emp-01530@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-16T14:15:31.804776Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T14:15:31.804776Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01531",
+    "full_name": "Mark Atkinson",
+    "email": "emp-01531@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-16T14:15:31.804776Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T14:15:31.804776Z",
+    "terminated_at": null
   }
 ]
