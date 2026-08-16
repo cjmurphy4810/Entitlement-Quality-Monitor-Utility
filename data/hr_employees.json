@@ -31695,5 +31695,24 @@
     "manager_id": null,
     "hired_at": "2026-08-15T23:41:59.504575Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01512",
+    "full_name": "Amanda Campbell",
+    "email": "emp-01512@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-16T04:06:32.308376Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T04:06:32.308376Z",
+    "terminated_at": null
   }
 ]
