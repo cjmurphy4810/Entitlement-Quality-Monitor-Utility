@@ -31909,5 +31909,24 @@
     "manager_id": null,
     "hired_at": "2026-08-16T09:49:20.174554Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01522",
+    "full_name": "Stephanie Williams",
+    "email": "emp-01522@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T10:15:33.543595Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T10:15:33.543595Z",
+    "terminated_at": null
   }
 ]
