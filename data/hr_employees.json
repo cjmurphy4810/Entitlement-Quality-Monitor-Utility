@@ -22214,7 +22214,7 @@
     "email": "emp-01024@example.com",
     "current_role": "customer",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -22225,7 +22225,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-19T21:13:22.136390Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T11:13:29.090351Z"
   },
   {
     "id": "EMP-01025",
@@ -27451,8 +27451,8 @@
     "id": "EMP-01289",
     "full_name": "James Gordon",
     "email": "emp-01289@example.com",
-    "current_role": "developer",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -27465,6 +27465,12 @@
         "role": "developer",
         "division": "business_ops",
         "started_at": "2026-08-15T09:47:55.720033Z",
+        "ended_at": "2026-08-16T11:13:29.090351Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-16T11:13:29.090351Z",
         "ended_at": null
       }
     ],
