@@ -19472,14 +19472,20 @@
     "id": "EMP-00888",
     "full_name": "Sara Collins",
     "email": "emp-00888@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-07-11T11:46:47.546731Z",
+        "ended_at": "2026-08-16T23:41:27.423487Z"
+      },
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-16T23:41:27.423487Z",
         "ended_at": null
       }
     ],
@@ -32399,6 +32405,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T23:13:30.577478Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01545",
+    "full_name": "Patrick Foster",
+    "email": "emp-01545@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-16T23:41:27.423487Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T23:41:27.423487Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01546",
+    "full_name": "Vicki Moore",
+    "email": "emp-01546@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-16T23:41:27.423487Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T23:41:27.423487Z",
     "terminated_at": null
   }
 ]
