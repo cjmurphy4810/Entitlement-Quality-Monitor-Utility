@@ -27691,14 +27691,20 @@
     "id": "EMP-01301",
     "full_name": "Chad Howell II",
     "email": "emp-01301@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-08-08T11:31:15.591186Z",
+        "ended_at": "2026-08-16T13:08:05.489160Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-16T13:08:05.489160Z",
         "ended_at": null
       }
     ],
@@ -32009,6 +32015,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T12:24:23.869199Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01527",
+    "full_name": "Maria Watts",
+    "email": "emp-01527@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T13:08:05.489160Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T13:08:05.489160Z",
     "terminated_at": null
   }
 ]
