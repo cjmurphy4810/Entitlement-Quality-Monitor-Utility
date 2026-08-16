@@ -29617,14 +29617,20 @@
     "id": "EMP-01403",
     "full_name": "Jennifer Phillips",
     "email": "emp-01403@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-08-11T22:34:34.056572Z",
+        "ended_at": "2026-08-16T06:28:01.399715Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T06:28:01.399715Z",
         "ended_at": null
       }
     ],
@@ -31776,6 +31782,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T05:29:28.223961Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01516",
+    "full_name": "Darryl Arias",
+    "email": "emp-01516@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-16T06:28:01.399715Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T06:28:01.399715Z",
     "terminated_at": null
   }
 ]
