@@ -14974,7 +14974,7 @@
     "email": "emp-00672@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -14985,7 +14985,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T03:26:50.286450Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T07:52:50.900672Z"
   },
   {
     "id": "EMP-00673",
@@ -27180,8 +27180,8 @@
     "id": "EMP-01276",
     "full_name": "Evelyn Russell",
     "email": "emp-01276@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -27194,6 +27194,12 @@
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-08-15T22:13:36.338852Z",
+        "ended_at": "2026-08-16T07:52:50.900672Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T07:52:50.900672Z",
         "ended_at": null
       }
     ],
@@ -31801,6 +31807,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T06:28:01.399715Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01517",
+    "full_name": "Jessica Rodriguez",
+    "email": "emp-01517@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-16T07:52:50.900672Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T07:52:50.900672Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01518",
+    "full_name": "Kaitlyn Lynch",
+    "email": "emp-01518@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-16T07:52:50.900672Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T07:52:50.900672Z",
     "terminated_at": null
   }
 ]
