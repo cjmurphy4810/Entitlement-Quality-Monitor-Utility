@@ -27830,14 +27830,20 @@
     "id": "EMP-01308",
     "full_name": "Kelly Foster",
     "email": "emp-01308@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "hr",
         "started_at": "2026-08-08T16:24:35.666722Z",
+        "ended_at": "2026-08-16T13:50:37.215538Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T13:50:37.215538Z",
         "ended_at": null
       }
     ],
@@ -32034,6 +32040,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T13:08:05.489160Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01528",
+    "full_name": "Maria Lopez",
+    "email": "emp-01528@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-16T13:50:37.215538Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T13:50:37.215538Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01529",
+    "full_name": "Gregory Kirby",
+    "email": "emp-01529@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-16T13:50:37.215538Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T13:50:37.215538Z",
     "terminated_at": null
   }
 ]
