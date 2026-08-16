@@ -32136,5 +32136,24 @@
     "manager_id": null,
     "hired_at": "2026-08-16T15:43:40.403999Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01533",
+    "full_name": "Gregory Richardson",
+    "email": "emp-01533@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-16T16:15:55.915195Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T16:15:55.915195Z",
+    "terminated_at": null
   }
 ]
