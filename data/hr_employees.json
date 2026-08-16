@@ -27079,8 +27079,8 @@
     "id": "EMP-01271",
     "full_name": "Micheal Moore",
     "email": "emp-01271@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -27093,6 +27093,12 @@
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-08-15T22:45:09.379438Z",
+        "ended_at": "2026-08-16T09:49:20.174554Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-16T09:49:20.174554Z",
         "ended_at": null
       }
     ],
@@ -31883,6 +31889,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T08:54:19.643746Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01521",
+    "full_name": "Michael Clayton",
+    "email": "emp-01521@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-16T09:49:20.174554Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T09:49:20.174554Z",
     "terminated_at": null
   }
 ]
