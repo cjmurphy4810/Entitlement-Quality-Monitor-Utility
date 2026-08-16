@@ -3447,7 +3447,7 @@
     "email": "emp-00143@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -3464,7 +3464,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T13:05:45.054475Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T20:45:18.741824Z"
   },
   {
     "id": "EMP-00144",
@@ -32305,6 +32305,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T19:41:45.174442Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01541",
+    "full_name": "Richard Webb",
+    "email": "emp-01541@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-16T20:45:18.741824Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T20:45:18.741824Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01542",
+    "full_name": "Ryan Freeman",
+    "email": "emp-01542@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-16T20:45:18.741824Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T20:45:18.741824Z",
     "terminated_at": null
   }
 ]

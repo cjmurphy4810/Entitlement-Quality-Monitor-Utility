@@ -175885,5 +175885,210 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07247",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-16T20:45:19.991898Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02980",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00790",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00450",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07248",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-16T20:45:19.992949Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02981",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01094",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00160",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07249",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-16T20:45:21.791648Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02980",
+    "explanation": "Employee division 'finance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00790",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00450",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07250",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-16T20:45:21.820993Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00427",
+    "explanation": "Terminated employee EMP-00143 (Kimberly Rojas) still holds active assignment ASN-00427.",
+    "evidence": {
+      "employee_id": "EMP-00143",
+      "terminated_at": "2026-08-16T20:45:18.741824+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07251",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-16T20:45:21.826849Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00499",
+    "explanation": "Terminated employee EMP-00143 (Kimberly Rojas) still holds active assignment ASN-00499.",
+    "evidence": {
+      "employee_id": "EMP-00143",
+      "terminated_at": "2026-08-16T20:45:18.741824+00:00",
+      "entitlement_id": "ENT-00024"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07252",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-16T20:45:21.872872Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00826",
+    "explanation": "Terminated employee EMP-00143 (Kimberly Rojas) still holds active assignment ASN-00826.",
+    "evidence": {
+      "employee_id": "EMP-00143",
+      "terminated_at": "2026-08-16T20:45:18.741824+00:00",
+      "entitlement_id": "ENT-00083"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07253",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-16T20:45:21.911091Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01044",
+    "explanation": "Terminated employee EMP-00143 (Kimberly Rojas) still holds active assignment ASN-01044.",
+    "evidence": {
+      "employee_id": "EMP-00143",
+      "terminated_at": "2026-08-16T20:45:18.741824+00:00",
+      "entitlement_id": "ENT-00017"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07254",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-16T20:45:22.069806Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01886",
+    "explanation": "Terminated employee EMP-00143 (Kimberly Rojas) still holds active assignment ASN-01886.",
+    "evidence": {
+      "employee_id": "EMP-00143",
+      "terminated_at": "2026-08-16T20:45:18.741824+00:00",
+      "entitlement_id": "ENT-00133"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07255",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-16T20:45:22.256999Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02738",
+    "explanation": "Terminated employee EMP-00143 (Kimberly Rojas) still holds active assignment ASN-02738.",
+    "evidence": {
+      "employee_id": "EMP-00143",
+      "terminated_at": "2026-08-16T20:45:18.741824+00:00",
+      "entitlement_id": "ENT-00222"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
