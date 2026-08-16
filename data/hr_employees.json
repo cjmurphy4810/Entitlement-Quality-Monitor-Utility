@@ -10693,7 +10693,7 @@
     "email": "emp-00471@example.com",
     "current_role": "operations",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -10710,7 +10710,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-27T06:59:17.180909Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T16:48:20.609377Z"
   },
   {
     "id": "EMP-00472",
@@ -16677,14 +16677,20 @@
     "id": "EMP-00751",
     "full_name": "Sean Barnes",
     "email": "emp-00751@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-06-28T22:57:25.498127Z",
+        "ended_at": "2026-08-16T16:48:20.609377Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T16:48:20.609377Z",
         "ended_at": null
       }
     ],

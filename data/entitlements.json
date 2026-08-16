@@ -269,7 +269,7 @@
     "id": "ENT-00015",
     "name": "legal_compliance general_ro 15",
     "pbl_description": "Provides general read-only visibility into George Group Share_drive for reporting and review purposes.",
-    "access_tier": 2,
+    "access_tier": 4,
     "acceptable_roles": [
       "developer",
       "customer"
@@ -282,7 +282,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-04-01T04:52:59.501678Z",
-    "updated_at": "2026-07-17T21:13:08.040543Z"
+    "updated_at": "2026-08-16T16:48:20.609377Z"
   },
   {
     "id": "ENT-00016",
@@ -7060,5 +7060,21 @@
     "sod_tags": [],
     "created_at": "2026-08-16T14:15:31.804776Z",
     "updated_at": "2026-08-16T14:15:31.804776Z"
+  },
+  {
+    "id": "ENT-00452",
+    "name": "new entitlement ENT-00452",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00117"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-16T16:48:20.609377Z",
+    "updated_at": "2026-08-16T16:48:20.609377Z"
   }
 ]
