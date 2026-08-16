@@ -22561,7 +22561,7 @@
     "email": "emp-01041@example.com",
     "current_role": "operations",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -22572,7 +22572,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-20T22:52:23.851332Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T12:24:23.869199Z"
   },
   {
     "id": "EMP-01042",
@@ -31971,6 +31971,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T10:46:36.130460Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01525",
+    "full_name": "Karen Shaw",
+    "email": "emp-01525@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-16T12:24:23.869199Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T12:24:23.869199Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01526",
+    "full_name": "Heather Reyes",
+    "email": "emp-01526@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-16T12:24:23.869199Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T12:24:23.869199Z",
     "terminated_at": null
   }
 ]
