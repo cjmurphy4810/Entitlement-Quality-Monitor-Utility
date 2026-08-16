@@ -26550,7 +26550,7 @@
     "email": "emp-01244@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -26561,7 +26561,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-04T18:24:47.705304Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T18:53:48.450981Z"
   },
   {
     "id": "EMP-01245",
@@ -32229,6 +32229,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T18:18:33.231279Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01537",
+    "full_name": "Dalton Luna",
+    "email": "emp-01537@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-16T18:53:48.450981Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T18:53:48.450981Z",
     "terminated_at": null
   }
 ]
