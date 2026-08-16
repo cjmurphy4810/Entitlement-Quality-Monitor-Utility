@@ -18907,7 +18907,7 @@
     "email": "emp-00861@example.com",
     "current_role": "operations",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -18918,7 +18918,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-09T07:59:25.378118Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T08:54:19.643746Z"
   },
   {
     "id": "EMP-00862",
@@ -31845,6 +31845,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T07:52:50.900672Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01519",
+    "full_name": "Matthew Woods",
+    "email": "emp-01519@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T08:54:19.643746Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T08:54:19.643746Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01520",
+    "full_name": "Samantha Trujillo",
+    "email": "emp-01520@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-16T08:54:19.643746Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T08:54:19.643746Z",
     "terminated_at": null
   }
 ]
