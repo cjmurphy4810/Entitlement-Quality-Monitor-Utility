@@ -173033,5 +173033,161 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07127",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-08-16T08:20:09.863642Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00165",
+    "explanation": "Tier-1 PBL must mention 'administrator'",
+    "evidence": {
+      "access_tier": 1,
+      "pbl_description": "This entitlement gives access stuff for users."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-1 template (administrator + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07128",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-08-16T08:20:09.866769Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00165",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['business_user']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "business_user"
+      ],
+      "forbidden_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": []
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07129",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-16T08:20:10.820723Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02932",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer', 'business_analyst', 'operations'].",
+    "evidence": {
+      "employee_id": "EMP-00968",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00029",
+      "acceptable_roles": [
+        "customer",
+        "business_analyst",
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07130",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-16T08:20:12.743842Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02932",
+    "explanation": "Terminated employee EMP-00968 (Shannon Combs) still holds active assignment ASN-02932.",
+    "evidence": {
+      "employee_id": "EMP-00968",
+      "terminated_at": "2026-07-30T14:39:54.512513+00:00",
+      "entitlement_id": "ENT-00029"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07131",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-08-16T08:20:12.766691Z",
+    "target_type": "employee",
+    "target_id": "EMP-00056",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_sales', 'legal_compliance', 'tech_ops']",
+    "evidence": {
+      "divisions": [
+        "business_sales",
+        "legal_compliance",
+        "tech_ops"
+      ],
+      "entitlement_ids": [
+        "ENT-00026",
+        "ENT-00165",
+        "ENT-00275"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07132",
+    "rule_id": "TOX-03",
+    "rule_name": "Tier-1 in 3+ divisions",
+    "severity": "high",
+    "detected_at": "2026-08-16T08:20:12.766702Z",
+    "target_type": "employee",
+    "target_id": "EMP-00068",
+    "explanation": "Employee holds Tier-1 (Admin) in 3 divisions: ['business_dev', 'finance', 'legal_compliance']",
+    "evidence": {
+      "divisions": [
+        "business_dev",
+        "finance",
+        "legal_compliance"
+      ],
+      "entitlement_ids": [
+        "ENT-00004",
+        "ENT-00043",
+        "ENT-00165"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_note": "Reduce Tier-1 footprint to \u22642 divisions"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
