@@ -31714,5 +31714,43 @@
     "manager_id": null,
     "hired_at": "2026-08-16T04:06:32.308376Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01513",
+    "full_name": "Travis Ballard II",
+    "email": "emp-01513@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-16T04:58:24.488965Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T04:58:24.488965Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01514",
+    "full_name": "Ian King",
+    "email": "emp-01514@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T04:58:24.488965Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T04:58:24.488965Z",
+    "terminated_at": null
   }
 ]
