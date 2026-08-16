@@ -31042,7 +31042,7 @@
     "email": "emp-01476@example.com",
     "current_role": "business_analyst",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -31053,7 +31053,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T07:50:13.526642Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T10:46:36.130460Z"
   },
   {
     "id": "EMP-01477",
@@ -31927,6 +31927,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T10:15:33.543595Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01523",
+    "full_name": "Dr. Patrick Jackson Jr.",
+    "email": "emp-01523@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-16T10:46:36.130460Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T10:46:36.130460Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01524",
+    "full_name": "Sara Mejia",
+    "email": "emp-01524@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T10:46:36.130460Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T10:46:36.130460Z",
     "terminated_at": null
   }
 ]
