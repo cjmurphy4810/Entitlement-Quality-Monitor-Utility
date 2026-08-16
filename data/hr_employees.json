@@ -16419,14 +16419,20 @@
     "id": "EMP-00739",
     "full_name": "Angela Roth",
     "email": "emp-00739@example.com",
-    "current_role": "operations",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_ops",
         "started_at": "2026-06-27T21:36:16.850118Z",
+        "ended_at": "2026-08-16T05:29:28.223961Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-16T05:29:28.223961Z",
         "ended_at": null
       }
     ],
@@ -31751,6 +31757,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T04:58:24.488965Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01515",
+    "full_name": "Andrew Rodriguez",
+    "email": "emp-01515@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-16T05:29:28.223961Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T05:29:28.223961Z",
     "terminated_at": null
   }
 ]
