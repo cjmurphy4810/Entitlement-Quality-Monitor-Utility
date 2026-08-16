@@ -32249,5 +32249,24 @@
     "manager_id": null,
     "hired_at": "2026-08-16T18:53:48.450981Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01538",
+    "full_name": "Michael Dean",
+    "email": "emp-01538@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-16T19:16:18.156774Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T19:16:18.156774Z",
+    "terminated_at": null
   }
 ]

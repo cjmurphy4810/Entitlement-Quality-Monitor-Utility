@@ -7092,5 +7092,21 @@
     "sod_tags": [],
     "created_at": "2026-08-16T18:53:48.450981Z",
     "updated_at": "2026-08-16T18:53:48.450981Z"
+  },
+  {
+    "id": "ENT-00454",
+    "name": "new entitlement ENT-00454",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00118"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-16T19:16:18.156774Z",
+    "updated_at": "2026-08-16T19:16:18.156774Z"
   }
 ]
