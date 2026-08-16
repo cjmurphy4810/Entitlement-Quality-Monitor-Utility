@@ -32117,5 +32117,24 @@
     "manager_id": null,
     "hired_at": "2026-08-16T14:15:31.804776Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01532",
+    "full_name": "Thomas Salazar",
+    "email": "emp-01532@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-16T15:43:40.403999Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T15:43:40.403999Z",
+    "terminated_at": null
   }
 ]
