@@ -12741,14 +12741,20 @@
     "id": "EMP-00565",
     "full_name": "Kevin Higgins",
     "email": "emp-00565@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "business_user",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-06-06T22:58:07.035320Z",
+        "ended_at": "2026-08-16T22:13:36.794220Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-16T22:13:36.794220Z",
         "ended_at": null
       }
     ],
