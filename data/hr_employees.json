@@ -25285,7 +25285,7 @@
     "email": "emp-01179@example.com",
     "current_role": "operations",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -25296,7 +25296,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-30T17:54:54.920062Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-16T19:41:45.174442Z"
   },
   {
     "id": "EMP-01180",
@@ -32267,6 +32267,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T19:16:18.156774Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01539",
+    "full_name": "Brian Gomez",
+    "email": "emp-01539@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-16T19:41:45.174442Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T19:41:45.174442Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01540",
+    "full_name": "Chelsea Hobbs",
+    "email": "emp-01540@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-16T19:41:45.174442Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-16T19:41:45.174442Z",
     "terminated_at": null
   }
 ]
