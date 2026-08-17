@@ -7276,5 +7276,21 @@
     "sod_tags": [],
     "created_at": "2026-08-17T16:18:39.587055Z",
     "updated_at": "2026-08-17T16:18:39.587055Z"
+  },
+  {
+    "id": "ENT-00466",
+    "name": "new entitlement ENT-00466",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00162"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-17T19:07:44.343275Z",
+    "updated_at": "2026-08-17T19:07:44.343275Z"
   }
 ]

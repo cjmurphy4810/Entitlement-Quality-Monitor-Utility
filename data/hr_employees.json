@@ -15036,7 +15036,7 @@
     "email": "emp-00674@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -15047,7 +15047,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T11:27:43.451259Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-17T19:07:44.343275Z"
   },
   {
     "id": "EMP-00675",
@@ -32985,6 +32985,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T18:28:12.986118Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01573",
+    "full_name": "Judith Davila",
+    "email": "emp-01573@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-17T19:07:44.343275Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T19:07:44.343275Z",
     "terminated_at": null
   }
 ]
