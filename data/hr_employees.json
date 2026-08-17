@@ -32450,5 +32450,43 @@
     "manager_id": null,
     "hired_at": "2026-08-16T23:41:27.423487Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01547",
+    "full_name": "Jamie Best",
+    "email": "emp-01547@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-17T05:05:50.141916Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T05:05:50.141916Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01548",
+    "full_name": "Dwayne Sweeney",
+    "email": "emp-01548@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-17T05:05:50.141916Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T05:05:50.141916Z",
+    "terminated_at": null
   }
 ]
