@@ -13763,7 +13763,7 @@
     "email": "emp-00613@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -13774,7 +13774,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-12T10:49:09.816107Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-17T06:56:27.199591Z"
   },
   {
     "id": "EMP-00614",
@@ -32525,6 +32525,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T05:58:06.692653Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01551",
+    "full_name": "Larry Stephens",
+    "email": "emp-01551@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-17T06:56:27.199591Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T06:56:27.199591Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01552",
+    "full_name": "Christopher Salazar",
+    "email": "emp-01552@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-17T06:56:27.199591Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T06:56:27.199591Z",
     "terminated_at": null
   }
 ]
