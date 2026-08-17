@@ -24345,14 +24345,20 @@
     "id": "EMP-01129",
     "full_name": "Elizabeth Mccormick",
     "email": "emp-01129@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-07-26T17:56:46.453192Z",
+        "ended_at": "2026-08-17T10:55:03.858464Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-17T10:55:03.858464Z",
         "ended_at": null
       }
     ],
@@ -32689,6 +32695,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T10:24:35.793745Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01559",
+    "full_name": "Madeline Love",
+    "email": "emp-01559@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-17T10:55:03.858464Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T10:55:03.858464Z",
     "terminated_at": null
   }
 ]
