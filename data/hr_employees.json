@@ -32967,5 +32967,24 @@
     "manager_id": null,
     "hired_at": "2026-08-17T17:52:43.363770Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01572",
+    "full_name": "Amanda Thompson",
+    "email": "emp-01572@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-17T18:28:12.986118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T18:28:12.986118Z",
+    "terminated_at": null
   }
 ]
