@@ -32822,5 +32822,43 @@
     "manager_id": null,
     "hired_at": "2026-08-17T13:22:08.586872Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01565",
+    "full_name": "Jennifer Tyler",
+    "email": "emp-01565@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-17T14:32:02.922729Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T14:32:02.922729Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01566",
+    "full_name": "Lance Smith",
+    "email": "emp-01566@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-17T14:32:02.922729Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T14:32:02.922729Z",
+    "terminated_at": null
   }
 ]
