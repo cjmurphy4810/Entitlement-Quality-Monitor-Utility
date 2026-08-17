@@ -6021,7 +6021,7 @@
     "id": "ENT-00383",
     "name": "new entitlement ENT-00383",
     "pbl_description": "Lets the user do things in the system.",
-    "access_tier": 2,
+    "access_tier": 3,
     "acceptable_roles": [
       "operations"
     ],
@@ -6031,7 +6031,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-08-08T21:54:05.201693Z",
-    "updated_at": "2026-08-08T21:54:05.201693Z"
+    "updated_at": "2026-08-17T21:19:11.191457Z"
   },
   {
     "id": "ENT-00384",
@@ -7324,5 +7324,19 @@
     "sod_tags": [],
     "created_at": "2026-08-17T20:51:32.173046Z",
     "updated_at": "2026-08-17T20:51:32.173046Z"
+  },
+  {
+    "id": "ENT-00469",
+    "name": "new entitlement ENT-00469",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-17T21:19:11.191457Z",
+    "updated_at": "2026-08-17T21:19:11.191457Z"
   }
 ]
