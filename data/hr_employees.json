@@ -32929,5 +32929,43 @@
     "manager_id": null,
     "hired_at": "2026-08-17T16:18:39.587055Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01570",
+    "full_name": "Jennifer Salas",
+    "email": "emp-01570@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-17T17:52:43.363770Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T17:52:43.363770Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01571",
+    "full_name": "Vincent Ray",
+    "email": "emp-01571@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-17T17:52:43.363770Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T17:52:43.363770Z",
+    "terminated_at": null
   }
 ]
