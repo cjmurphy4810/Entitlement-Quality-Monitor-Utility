@@ -29596,14 +29596,20 @@
     "id": "EMP-01394",
     "full_name": "Jennifer Smith",
     "email": "emp-01394@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-08-11T16:51:53.472616Z",
+        "ended_at": "2026-08-17T23:16:25.784063Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-17T23:16:25.784063Z",
         "ended_at": null
       }
     ],
@@ -33129,6 +33135,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T21:48:03.974208Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01579",
+    "full_name": "Holly Robinson",
+    "email": "emp-01579@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-17T23:16:25.784063Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T23:16:25.784063Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01580",
+    "full_name": "Melissa Smith",
+    "email": "emp-01580@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-17T23:16:25.784063Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T23:16:25.784063Z",
     "terminated_at": null
   }
 ]
