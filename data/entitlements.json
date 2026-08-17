@@ -4673,7 +4673,7 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-07-17T05:25:38.532734Z",
-    "updated_at": "2026-07-17T05:25:38.532734Z"
+    "updated_at": "2026-08-17T20:51:32.173046Z"
   },
   {
     "id": "ENT-00296",
@@ -7308,5 +7308,21 @@
     "sod_tags": [],
     "created_at": "2026-08-17T20:18:07.336987Z",
     "updated_at": "2026-08-17T20:18:07.336987Z"
+  },
+  {
+    "id": "ENT-00468",
+    "name": "new entitlement ENT-00468",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00140"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-17T20:51:32.173046Z",
+    "updated_at": "2026-08-17T20:51:32.173046Z"
   }
 ]
