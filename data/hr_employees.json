@@ -9939,7 +9939,7 @@
     "email": "emp-00437@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -9950,7 +9950,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-23T19:43:25.442207Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-17T09:33:43.526233Z"
   },
   {
     "id": "EMP-00438",
@@ -32613,6 +32613,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T08:35:01.747396Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01555",
+    "full_name": "Christian Gutierrez",
+    "email": "emp-01555@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-17T09:33:43.526233Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T09:33:43.526233Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01556",
+    "full_name": "Mikayla Bowen",
+    "email": "emp-01556@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-17T09:33:43.526233Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T09:33:43.526233Z",
     "terminated_at": null
   }
 ]
