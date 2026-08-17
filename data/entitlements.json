@@ -7244,5 +7244,21 @@
     "sod_tags": [],
     "created_at": "2026-08-17T13:22:08.586872Z",
     "updated_at": "2026-08-17T13:22:08.586872Z"
+  },
+  {
+    "id": "ENT-00464",
+    "name": "new entitlement ENT-00464",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00012"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-17T15:18:16.479674Z",
+    "updated_at": "2026-08-17T15:18:16.479674Z"
   }
 ]

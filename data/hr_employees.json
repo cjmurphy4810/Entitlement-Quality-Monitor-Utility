@@ -16878,8 +16878,8 @@
     "id": "EMP-00760",
     "full_name": "Joanna Lewis",
     "email": "emp-00760@example.com",
-    "current_role": "business_user",
-    "current_division": "hr",
+    "current_role": "operations",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -16892,6 +16892,12 @@
         "role": "business_user",
         "division": "hr",
         "started_at": "2026-08-13T14:18:56.339497Z",
+        "ended_at": "2026-08-17T15:18:16.479674Z"
+      },
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-17T15:18:16.479674Z",
         "ended_at": null
       }
     ],
@@ -29271,7 +29277,7 @@
     "email": "emp-01379@example.com",
     "current_role": "customer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -29282,7 +29288,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-11T03:29:07.942622Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-17T15:18:16.479674Z"
   },
   {
     "id": "EMP-01380",
@@ -32859,6 +32865,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T14:32:02.922729Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01567",
+    "full_name": "Jeffrey Barry",
+    "email": "emp-01567@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-17T15:18:16.479674Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T15:18:16.479674Z",
     "terminated_at": null
   }
 ]
