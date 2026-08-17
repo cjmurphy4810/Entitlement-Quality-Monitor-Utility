@@ -19932,14 +19932,20 @@
     "id": "EMP-00910",
     "full_name": "Tracy King",
     "email": "emp-00910@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2026-07-12T17:54:45.214776Z",
+        "ended_at": "2026-08-17T08:35:01.747396Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-17T08:35:01.747396Z",
         "ended_at": null
       }
     ],
@@ -22060,7 +22066,7 @@
     "email": "emp-01014@example.com",
     "current_role": "customer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -22071,7 +22077,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-19T10:05:21.543943Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-17T08:35:01.747396Z"
   },
   {
     "id": "EMP-01015",
@@ -32588,6 +32594,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T07:49:31.554043Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01554",
+    "full_name": "Nathan Williams",
+    "email": "emp-01554@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-17T08:35:01.747396Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T08:35:01.747396Z",
     "terminated_at": null
   }
 ]
