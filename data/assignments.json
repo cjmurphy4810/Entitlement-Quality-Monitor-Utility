@@ -11732,7 +11732,7 @@
     "entitlement_id": "ENT-00194",
     "granted_at": "2026-06-16T19:41:45.834868Z",
     "granted_by": "system",
-    "last_certified_at": "2026-06-21T17:00:13.569164Z",
+    "last_certified_at": "2026-08-17T22:47:56.921321Z",
     "active": true
   },
   {
@@ -27526,6 +27526,15 @@
     "employee_id": "EMP-00673",
     "entitlement_id": "ENT-00324",
     "granted_at": "2026-08-17T22:16:43.860076Z",
+    "granted_by": "system",
+    "last_certified_at": null,
+    "active": true
+  },
+  {
+    "id": "ASN-03060",
+    "employee_id": "EMP-00045",
+    "entitlement_id": "ENT-00386",
+    "granted_at": "2026-08-17T22:47:56.921321Z",
     "granted_by": "system",
     "last_certified_at": null,
     "active": true

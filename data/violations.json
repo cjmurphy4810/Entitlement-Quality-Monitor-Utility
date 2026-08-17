@@ -180807,5 +180807,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07454",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-17T22:47:59.290688Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03060",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00045",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00386",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07455",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-17T22:47:59.696794Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03060",
+    "explanation": "Terminated employee EMP-00045 (Joshua Turner) still holds active assignment ASN-03060.",
+    "evidence": {
+      "employee_id": "EMP-00045",
+      "terminated_at": "2026-05-07T17:14:59.486795+00:00",
+      "entitlement_id": "ENT-00386"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
