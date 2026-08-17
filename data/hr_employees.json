@@ -26401,14 +26401,20 @@
     "id": "EMP-01235",
     "full_name": "Monica Hansen",
     "email": "emp-01235@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-08-03T23:33:22.696080Z",
+        "ended_at": "2026-08-17T07:49:31.554043Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-17T07:49:31.554043Z",
         "ended_at": null
       }
     ],
@@ -32563,6 +32569,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T06:56:27.199591Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01553",
+    "full_name": "Jamie Davis",
+    "email": "emp-01553@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-17T07:49:31.554043Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T07:49:31.554043Z",
     "terminated_at": null
   }
 ]
