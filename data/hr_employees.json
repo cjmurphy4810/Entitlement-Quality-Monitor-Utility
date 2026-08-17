@@ -8115,7 +8115,7 @@
     "email": "emp-00353@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -8132,7 +8132,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T17:51:44.507866Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-17T04:10:12.674265Z"
   },
   {
     "id": "EMP-00354",
@@ -23758,8 +23758,8 @@
     "id": "EMP-01100",
     "full_name": "David Freeman",
     "email": "emp-01100@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -23772,6 +23772,12 @@
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-08-15T08:18:58.815435Z",
+        "ended_at": "2026-08-17T04:10:12.674265Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-17T04:10:12.674265Z",
         "ended_at": null
       }
     ],
