@@ -178325,5 +178325,75 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07350",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-17T11:18:52.649034Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03024",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00501",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00254",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07351",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-17T11:18:54.199593Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03024",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00501",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00254",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07352",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-17T11:18:54.652014Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03024",
+    "explanation": "Terminated employee EMP-00501 (Elijah Drake MD) still holds active assignment ASN-03024.",
+    "evidence": {
+      "employee_id": "EMP-00501",
+      "terminated_at": "2026-07-15T14:43:32.728995+00:00",
+      "entitlement_id": "ENT-00254"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

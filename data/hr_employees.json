@@ -32715,5 +32715,24 @@
     "manager_id": null,
     "hired_at": "2026-08-17T10:55:03.858464Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01560",
+    "full_name": "Kayla Harper",
+    "email": "emp-01560@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-17T11:18:51.524848Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T11:18:51.524848Z",
+    "terminated_at": null
   }
 ]
