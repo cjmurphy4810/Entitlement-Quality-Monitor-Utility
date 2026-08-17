@@ -7260,5 +7260,21 @@
     "sod_tags": [],
     "created_at": "2026-08-17T15:18:16.479674Z",
     "updated_at": "2026-08-17T15:18:16.479674Z"
+  },
+  {
+    "id": "ENT-00465",
+    "name": "new entitlement ENT-00465",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00291"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-17T16:18:39.587055Z",
+    "updated_at": "2026-08-17T16:18:39.587055Z"
   }
 ]

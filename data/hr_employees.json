@@ -17296,7 +17296,7 @@
     "email": "emp-00780@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -17307,7 +17307,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-02T19:14:48.417096Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-17T16:18:39.587055Z"
   },
   {
     "id": "EMP-00781",
@@ -32884,6 +32884,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T15:18:16.479674Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01568",
+    "full_name": "Rebecca Rogers",
+    "email": "emp-01568@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-17T16:18:39.587055Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T16:18:39.587055Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01569",
+    "full_name": "Heidi Edwards",
+    "email": "emp-01569@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-17T16:18:39.587055Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T16:18:39.587055Z",
     "terminated_at": null
   }
 ]
