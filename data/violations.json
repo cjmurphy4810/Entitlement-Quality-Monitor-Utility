@@ -177447,5 +177447,27 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07312",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-17T05:58:09.882267Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03007",
+    "explanation": "Terminated employee EMP-00150 (Pamela Shaw) still holds active assignment ASN-03007.",
+    "evidence": {
+      "employee_id": "EMP-00150",
+      "terminated_at": "2026-08-04T10:29:56.408747+00:00",
+      "entitlement_id": "ENT-00459"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

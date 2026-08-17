@@ -32488,5 +32488,43 @@
     "manager_id": null,
     "hired_at": "2026-08-17T05:05:50.141916Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01549",
+    "full_name": "Benjamin Morse",
+    "email": "emp-01549@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-17T05:58:06.692653Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T05:58:06.692653Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01550",
+    "full_name": "Anthony Kelly",
+    "email": "emp-01550@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-17T05:58:06.692653Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-17T05:58:06.692653Z",
+    "terminated_at": null
   }
 ]
