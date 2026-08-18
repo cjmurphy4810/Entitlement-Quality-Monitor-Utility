@@ -102500,8 +102500,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-08-18T06:30:51.174518Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -182007,6 +182016,84 @@
         "revoke_developer_side",
         "revoke_operations_side"
       ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07505",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-18T06:30:48.534130Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02444",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer', 'business_analyst', 'developer', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00549",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00012",
+      "acceptable_roles": [
+        "customer",
+        "business_analyst",
+        "developer",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07506",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-18T06:30:48.950843Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03081",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01018",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00113",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07507",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-18T06:30:48.951789Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03082",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00786",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00334",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
     },
     "workflow_state": "open",
     "workflow_history": [],

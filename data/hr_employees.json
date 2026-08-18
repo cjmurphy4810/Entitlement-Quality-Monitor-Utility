@@ -12395,8 +12395,8 @@
     "id": "EMP-00549",
     "full_name": "Andrew Castaneda",
     "email": "emp-00549@example.com",
-    "current_role": "business_user",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
@@ -12409,6 +12409,12 @@
         "role": "business_user",
         "division": "business_ops",
         "started_at": "2026-07-08T00:59:26.635941Z",
+        "ended_at": "2026-08-18T06:30:47.779251Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-18T06:30:47.779251Z",
         "ended_at": null
       }
     ],
@@ -33274,6 +33280,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T05:52:38.375842Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01586",
+    "full_name": "Manuel Mann",
+    "email": "emp-01586@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-18T06:30:47.779251Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T06:30:47.779251Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01587",
+    "full_name": "Johnny Rice",
+    "email": "emp-01587@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-18T06:30:47.779251Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T06:30:47.779251Z",
     "terminated_at": null
   }
 ]
