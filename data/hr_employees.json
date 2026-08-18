@@ -33773,5 +33773,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T19:47:13.309646Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01610",
+    "full_name": "Kevin Smith",
+    "email": "emp-01610@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-18T20:15:13.169409Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T20:15:13.169409Z",
+    "terminated_at": null
   }
 ]
