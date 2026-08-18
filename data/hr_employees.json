@@ -33672,5 +33672,43 @@
     "manager_id": null,
     "hired_at": "2026-08-18T17:51:34.218230Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01605",
+    "full_name": "Javier Brooks",
+    "email": "emp-01605@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-18T18:27:19.770559Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T18:27:19.770559Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01606",
+    "full_name": "Nancy Wilson",
+    "email": "emp-01606@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-18T18:27:19.770559Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T18:27:19.770559Z",
+    "terminated_at": null
   }
 ]
