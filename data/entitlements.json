@@ -7480,5 +7480,21 @@
     "sod_tags": [],
     "created_at": "2026-08-18T22:15:21.661637Z",
     "updated_at": "2026-08-18T22:15:21.661637Z"
+  },
+  {
+    "id": "ENT-00479",
+    "name": "new entitlement ENT-00479",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00055"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-18T23:44:18.315382Z",
+    "updated_at": "2026-08-18T23:44:18.315382Z"
   }
 ]

@@ -33868,5 +33868,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T23:15:05.164342Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01615",
+    "full_name": "Melissa Gaines",
+    "email": "emp-01615@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-18T23:44:18.315382Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T23:44:18.315382Z",
+    "terminated_at": null
   }
 ]
