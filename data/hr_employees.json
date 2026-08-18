@@ -33514,5 +33514,43 @@
     "manager_id": null,
     "hired_at": "2026-08-18T13:36:37.603313Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01597",
+    "full_name": "Jonathan Huerta",
+    "email": "emp-01597@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-18T14:25:50.837369Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T14:25:50.837369Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01598",
+    "full_name": "Ariel Garcia",
+    "email": "emp-01598@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-18T14:25:50.837369Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T14:25:50.837369Z",
+    "terminated_at": null
   }
 ]
