@@ -20794,8 +20794,8 @@
     "id": "EMP-00950",
     "full_name": "Katelyn Bond",
     "email": "emp-00950@example.com",
-    "current_role": "customer",
-    "current_division": "business_dev",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -20814,6 +20814,12 @@
         "role": "customer",
         "division": "business_dev",
         "started_at": "2026-08-15T14:14:39.626453Z",
+        "ended_at": "2026-08-18T07:31:36.964909Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-18T07:31:36.964909Z",
         "ended_at": null
       }
     ],
@@ -33318,6 +33324,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T06:30:47.779251Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01588",
+    "full_name": "Elizabeth Mccoy",
+    "email": "emp-01588@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-18T07:31:36.964909Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T07:31:36.964909Z",
     "terminated_at": null
   }
 ]
