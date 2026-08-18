@@ -33432,5 +33432,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T11:18:55.166942Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01593",
+    "full_name": "Scott Moore",
+    "email": "emp-01593@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-18T11:48:50.793990Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T11:48:50.793990Z",
+    "terminated_at": null
   }
 ]
