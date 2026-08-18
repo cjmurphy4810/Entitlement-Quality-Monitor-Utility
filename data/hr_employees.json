@@ -33476,5 +33476,43 @@
     "manager_id": null,
     "hired_at": "2026-08-18T12:31:03.186840Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01595",
+    "full_name": "Sharon Thompson",
+    "email": "emp-01595@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-18T13:36:37.603313Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T13:36:37.603313Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01596",
+    "full_name": "Kevin Bentley",
+    "email": "emp-01596@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-18T13:36:37.603313Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T13:36:37.603313Z",
+    "terminated_at": null
   }
 ]
