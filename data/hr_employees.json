@@ -33615,5 +33615,43 @@
     "manager_id": null,
     "hired_at": "2026-08-18T16:56:29.896608Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01602",
+    "full_name": "Angela Anderson",
+    "email": "emp-01602@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-18T17:22:25.071513Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T17:22:25.071513Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01603",
+    "full_name": "James Robinson",
+    "email": "emp-01603@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-18T17:22:25.071513Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T17:22:25.071513Z",
+    "terminated_at": null
   }
 ]
