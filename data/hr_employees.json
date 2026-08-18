@@ -33552,5 +33552,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T14:25:50.837369Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01599",
+    "full_name": "Michael Hoover",
+    "email": "emp-01599@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-18T15:00:26.376631Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T15:00:26.376631Z",
+    "terminated_at": null
   }
 ]
