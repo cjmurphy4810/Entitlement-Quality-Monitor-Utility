@@ -18739,7 +18739,7 @@
     "email": "emp-00849@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -18750,7 +18750,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-08T00:59:26.635941Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-18T05:52:38.375842Z"
   },
   {
     "id": "EMP-00850",
@@ -33236,6 +33236,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T04:04:46.123273Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01584",
+    "full_name": "Tracy Oconnor",
+    "email": "emp-01584@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-18T05:52:38.375842Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T05:52:38.375842Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01585",
+    "full_name": "Christy Jefferson",
+    "email": "emp-01585@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-18T05:52:38.375842Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T05:52:38.375842Z",
     "terminated_at": null
   }
 ]
