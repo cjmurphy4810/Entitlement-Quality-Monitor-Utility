@@ -24937,7 +24937,7 @@
     "email": "emp-01155@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -24948,7 +24948,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-28T22:32:17.962436Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-18T11:18:55.166942Z"
   },
   {
     "id": "EMP-01156",
@@ -33412,6 +33412,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T10:54:16.203427Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01592",
+    "full_name": "Julie Peterson",
+    "email": "emp-01592@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-18T11:18:55.166942Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T11:18:55.166942Z",
     "terminated_at": null
   }
 ]
