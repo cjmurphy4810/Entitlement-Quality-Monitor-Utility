@@ -27204,14 +27204,20 @@
     "id": "EMP-01270",
     "full_name": "April Alvarado",
     "email": "emp-01270@example.com",
-    "current_role": "customer",
-    "current_division": "finance",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "finance",
         "started_at": "2026-08-07T03:44:24.889116Z",
+        "ended_at": "2026-08-18T10:54:16.203427Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-18T10:54:16.203427Z",
         "ended_at": null
       }
     ],
@@ -33387,6 +33393,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T08:27:26.049661Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01591",
+    "full_name": "Ashley Higgins",
+    "email": "emp-01591@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-18T10:54:16.203427Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T10:54:16.203427Z",
     "terminated_at": null
   }
 ]
