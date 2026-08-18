@@ -33830,5 +33830,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T21:16:33.245729Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01613",
+    "full_name": "David Griffin",
+    "email": "emp-01613@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-18T21:45:19.336928Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T21:45:19.336928Z",
+    "terminated_at": null
   }
 ]
