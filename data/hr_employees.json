@@ -5359,7 +5359,7 @@
     "email": "emp-00225@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -5388,7 +5388,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-06T20:08:30.809378Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-18T21:16:33.245729Z"
   },
   {
     "id": "EMP-00226",
@@ -33791,6 +33791,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T20:15:13.169409Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01611",
+    "full_name": "Alexis Walker",
+    "email": "emp-01611@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-18T21:16:33.245729Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T21:16:33.245729Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01612",
+    "full_name": "Erika Goodwin",
+    "email": "emp-01612@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-18T21:16:33.245729Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T21:16:33.245729Z",
     "terminated_at": null
   }
 ]
