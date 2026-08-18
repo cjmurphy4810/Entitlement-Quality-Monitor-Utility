@@ -26105,14 +26105,20 @@
     "id": "EMP-01215",
     "full_name": "Derrick Elliott",
     "email": "emp-01215@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-08-02T04:50:08.947488Z",
+        "ended_at": "2026-08-18T12:31:03.186840Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-18T12:31:03.186840Z",
         "ended_at": null
       }
     ],
@@ -33450,6 +33456,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T11:48:50.793990Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01594",
+    "full_name": "Faith Osborne",
+    "email": "emp-01594@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-18T12:31:03.186840Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T12:31:03.186840Z",
     "terminated_at": null
   }
 ]

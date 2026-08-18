@@ -3176,5 +3176,15 @@
     "environment": "prod",
     "linked_entitlement_ids": [],
     "description": "System middle then each total play."
+  },
+  {
+    "id": "RES-00308",
+    "name": "Dean-Smith",
+    "type": "database",
+    "criticality": "low",
+    "owner_division": "business_dev",
+    "environment": "staging",
+    "linked_entitlement_ids": [],
+    "description": "Final teach time ready open."
   }
 ]
