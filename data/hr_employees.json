@@ -33735,5 +33735,43 @@
     "manager_id": null,
     "hired_at": "2026-08-18T19:06:34.935914Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01608",
+    "full_name": "Brandi Williams",
+    "email": "emp-01608@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-18T19:47:13.309646Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T19:47:13.309646Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01609",
+    "full_name": "Todd Bush",
+    "email": "emp-01609@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-18T19:47:13.309646Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T19:47:13.309646Z",
+    "terminated_at": null
   }
 ]
