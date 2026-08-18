@@ -33218,5 +33218,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T00:50:55.891977Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01583",
+    "full_name": "James Atkinson",
+    "email": "emp-01583@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-18T04:04:46.123273Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T04:04:46.123273Z",
+    "terminated_at": null
   }
 ]
