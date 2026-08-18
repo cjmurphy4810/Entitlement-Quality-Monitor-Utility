@@ -33653,5 +33653,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T17:22:25.071513Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01604",
+    "full_name": "Michael Holmes",
+    "email": "emp-01604@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-18T17:51:34.218230Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-18T17:51:34.218230Z",
+    "terminated_at": null
   }
 ]
