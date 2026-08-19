@@ -29234,7 +29234,7 @@
     "email": "emp-01372@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -29245,7 +29245,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-10T21:34:42.493862Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-19T09:04:28.092367Z"
   },
   {
     "id": "EMP-01373",
@@ -34025,6 +34025,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T08:27:59.125193Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01623",
+    "full_name": "Marie Silva",
+    "email": "emp-01623@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-19T09:04:28.092367Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T09:04:28.092367Z",
     "terminated_at": null
   }
 ]
