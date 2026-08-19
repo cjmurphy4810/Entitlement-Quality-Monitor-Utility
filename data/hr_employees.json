@@ -34327,5 +34327,24 @@
     "manager_id": null,
     "hired_at": "2026-08-19T22:17:25.227625Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01636",
+    "full_name": "Tyler Sims",
+    "email": "emp-01636@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-19T23:44:29.941532Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T23:44:29.941532Z",
+    "terminated_at": null
   }
 ]
