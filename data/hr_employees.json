@@ -30293,14 +30293,20 @@
     "id": "EMP-01425",
     "full_name": "Ashlee Flores",
     "email": "emp-01425@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "tech_dev",
         "started_at": "2026-08-12T21:38:00.854681Z",
+        "ended_at": "2026-08-19T21:18:58.143726Z"
+      },
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-19T21:18:58.143726Z",
         "ended_at": null
       }
     ],
@@ -34232,6 +34238,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T17:48:17.911275Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01632",
+    "full_name": "Julie Anderson",
+    "email": "emp-01632@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-19T21:18:58.143726Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T21:18:58.143726Z",
     "terminated_at": null
   }
 ]
