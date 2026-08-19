@@ -34070,5 +34070,24 @@
     "manager_id": null,
     "hired_at": "2026-08-19T10:24:14.355170Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01625",
+    "full_name": "Kyle Morgan",
+    "email": "emp-01625@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-19T12:32:12.152519Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T12:32:12.152519Z",
+    "terminated_at": null
   }
 ]
