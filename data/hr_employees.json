@@ -34045,5 +34045,24 @@
     "manager_id": null,
     "hired_at": "2026-08-19T09:04:28.092367Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01624",
+    "full_name": "Bonnie Adams",
+    "email": "emp-01624@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-19T10:24:14.355170Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T10:24:14.355170Z",
+    "terminated_at": null
   }
 ]

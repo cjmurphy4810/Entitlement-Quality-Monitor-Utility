@@ -7568,5 +7568,21 @@
     "sod_tags": [],
     "created_at": "2026-08-19T07:32:02.923605Z",
     "updated_at": "2026-08-19T07:32:02.923605Z"
+  },
+  {
+    "id": "ENT-00485",
+    "name": "new entitlement ENT-00485",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00087"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-19T10:24:14.355170Z",
+    "updated_at": "2026-08-19T10:24:14.355170Z"
   }
 ]
