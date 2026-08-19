@@ -187359,5 +187359,120 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07724",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-19T14:25:40.595119Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03172",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00267",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00358",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07725",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-19T14:25:42.285287Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03172",
+    "explanation": "Employee division 'finance' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00267",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00358",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07726",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-19T14:25:42.286461Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03173",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00575",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00427",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07727",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-19T14:25:42.772465Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03172",
+    "explanation": "Terminated employee EMP-00267 (Alexander Evans) still holds active assignment ASN-03172.",
+    "evidence": {
+      "employee_id": "EMP-00267",
+      "terminated_at": "2026-08-09T22:26:20.185092+00:00",
+      "entitlement_id": "ENT-00358"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07728",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-19T14:25:42.773072Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03173",
+    "explanation": "Terminated employee EMP-00575 (Raymond James) still holds active assignment ASN-03173.",
+    "evidence": {
+      "employee_id": "EMP-00575",
+      "terminated_at": "2026-06-16T19:41:45.834868+00:00",
+      "entitlement_id": "ENT-00427"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

@@ -29219,14 +29219,20 @@
     "id": "EMP-01371",
     "full_name": "Angela Macdonald",
     "email": "emp-01371@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-08-10T19:50:25.673854Z",
+        "ended_at": "2026-08-19T14:25:39.361716Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-19T14:25:39.361716Z",
         "ended_at": null
       }
     ],
@@ -34088,6 +34094,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T12:32:12.152519Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01626",
+    "full_name": "Elizabeth Rodriguez",
+    "email": "emp-01626@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-19T14:25:39.361716Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T14:25:39.361716Z",
     "terminated_at": null
   }
 ]
