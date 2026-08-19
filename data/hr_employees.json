@@ -22028,14 +22028,20 @@
     "id": "EMP-01008",
     "full_name": "Susan Mclean",
     "email": "emp-01008@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "developer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-07-18T22:41:23.911426Z",
+        "ended_at": "2026-08-19T15:00:27.220756Z"
+      },
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-19T15:00:27.220756Z",
         "ended_at": null
       }
     ],
@@ -34113,6 +34119,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T14:25:39.361716Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01627",
+    "full_name": "Angela Montgomery",
+    "email": "emp-01627@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-19T15:00:27.220756Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T15:00:27.220756Z",
     "terminated_at": null
   }
 ]
