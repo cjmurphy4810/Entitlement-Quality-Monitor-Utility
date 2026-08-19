@@ -25490,14 +25490,20 @@
     "id": "EMP-01182",
     "full_name": "Leslie Ho",
     "email": "emp-01182@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-07-30T23:30:21.651599Z",
+        "ended_at": "2026-08-19T17:20:11.433590Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-19T17:20:11.433590Z",
         "ended_at": null
       }
     ],
