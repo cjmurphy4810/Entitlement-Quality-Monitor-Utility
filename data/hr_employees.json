@@ -33988,5 +33988,24 @@
     "manager_id": null,
     "hired_at": "2026-08-19T05:53:37.631506Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01621",
+    "full_name": "Melissa Hansen",
+    "email": "emp-01621@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-19T07:32:02.923605Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T07:32:02.923605Z",
+    "terminated_at": null
   }
 ]
