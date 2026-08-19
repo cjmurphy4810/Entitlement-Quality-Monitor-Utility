@@ -1800,7 +1800,7 @@
     "email": "user00074@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -1823,7 +1823,7 @@
     ],
     "manager_id": null,
     "hired_at": "2022-06-18T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-19T03:23:31.438446Z"
   },
   {
     "id": "EMP-00075",
@@ -33911,6 +33911,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T00:51:29.146268Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01617",
+    "full_name": "Bobby Smith",
+    "email": "emp-01617@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-19T03:23:31.438446Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T03:23:31.438446Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01618",
+    "full_name": "Tara Logan",
+    "email": "emp-01618@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-19T03:23:31.438446Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T03:23:31.438446Z",
     "terminated_at": null
   }
 ]
