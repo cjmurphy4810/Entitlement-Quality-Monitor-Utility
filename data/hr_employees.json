@@ -15461,7 +15461,7 @@
     "email": "emp-00691@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -15484,7 +15484,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-23T19:23:55.379762Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-19T21:48:18.267988Z"
   },
   {
     "id": "EMP-00692",
@@ -34257,6 +34257,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T21:18:58.143726Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01633",
+    "full_name": "Ronald Gordon",
+    "email": "emp-01633@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-19T21:48:18.267988Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T21:48:18.267988Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01634",
+    "full_name": "Timothy Hernandez",
+    "email": "emp-01634@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-19T21:48:18.267988Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T21:48:18.267988Z",
     "terminated_at": null
   }
 ]
