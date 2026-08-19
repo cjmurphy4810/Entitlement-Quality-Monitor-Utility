@@ -17489,7 +17489,7 @@
     "email": "emp-00787@example.com",
     "current_role": "business_analyst",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -17500,7 +17500,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-03T09:40:32.687667Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-19T08:27:59.125193Z"
   },
   {
     "id": "EMP-00788",
@@ -34006,6 +34006,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T07:32:02.923605Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01622",
+    "full_name": "Jessica Bryant",
+    "email": "emp-01622@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-19T08:27:59.125193Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T08:27:59.125193Z",
     "terminated_at": null
   }
 ]
