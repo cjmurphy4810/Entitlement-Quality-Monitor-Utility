@@ -33950,5 +33950,24 @@
     "manager_id": null,
     "hired_at": "2026-08-19T03:23:31.438446Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01619",
+    "full_name": "Tyrone Miles",
+    "email": "emp-01619@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-19T05:00:29.728962Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T05:00:29.728962Z",
+    "terminated_at": null
   }
 ]

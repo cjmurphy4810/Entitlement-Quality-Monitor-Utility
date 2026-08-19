@@ -5283,7 +5283,7 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-07-26T09:53:10.256959Z",
-    "updated_at": "2026-07-26T09:53:10.256959Z"
+    "updated_at": "2026-08-19T05:00:29.728962Z"
   },
   {
     "id": "ENT-00336",
@@ -7524,5 +7524,21 @@
     "sod_tags": [],
     "created_at": "2026-08-19T04:05:39.017093Z",
     "updated_at": "2026-08-19T04:05:39.017093Z"
+  },
+  {
+    "id": "ENT-00482",
+    "name": "new entitlement ENT-00482",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00160"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-19T05:00:29.728962Z",
+    "updated_at": "2026-08-19T05:00:29.728962Z"
   }
 ]
