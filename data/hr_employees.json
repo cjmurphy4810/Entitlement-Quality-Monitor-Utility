@@ -33887,5 +33887,24 @@
     "manager_id": null,
     "hired_at": "2026-08-18T23:44:18.315382Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01616",
+    "full_name": "George Powell",
+    "email": "emp-01616@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-19T00:51:29.146268Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T00:51:29.146268Z",
+    "terminated_at": null
   }
 ]
