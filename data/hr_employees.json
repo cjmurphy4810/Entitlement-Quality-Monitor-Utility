@@ -34139,5 +34139,24 @@
     "manager_id": null,
     "hired_at": "2026-08-19T15:00:27.220756Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01628",
+    "full_name": "Mark Charles",
+    "email": "emp-01628@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-19T15:54:54.818203Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T15:54:54.818203Z",
+    "terminated_at": null
   }
 ]
