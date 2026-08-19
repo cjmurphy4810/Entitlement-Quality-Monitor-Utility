@@ -33969,5 +33969,24 @@
     "manager_id": null,
     "hired_at": "2026-08-19T05:00:29.728962Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01620",
+    "full_name": "Randy Lee",
+    "email": "emp-01620@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-19T05:53:37.631506Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T05:53:37.631506Z",
+    "terminated_at": null
   }
 ]

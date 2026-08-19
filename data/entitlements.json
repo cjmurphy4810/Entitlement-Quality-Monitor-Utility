@@ -7540,5 +7540,19 @@
     "sod_tags": [],
     "created_at": "2026-08-19T05:00:29.728962Z",
     "updated_at": "2026-08-19T05:00:29.728962Z"
+  },
+  {
+    "id": "ENT-00483",
+    "name": "new entitlement ENT-00483",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-19T05:53:37.631506Z",
+    "updated_at": "2026-08-19T05:53:37.631506Z"
   }
 ]
