@@ -34158,5 +34158,43 @@
     "manager_id": null,
     "hired_at": "2026-08-19T15:54:54.818203Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01629",
+    "full_name": "Anthony Reeves",
+    "email": "emp-01629@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-19T16:22:55.415465Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T16:22:55.415465Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01630",
+    "full_name": "Matthew Thomas Jr.",
+    "email": "emp-01630@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-19T16:22:55.415465Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-19T16:22:55.415465Z",
+    "terminated_at": null
   }
 ]
