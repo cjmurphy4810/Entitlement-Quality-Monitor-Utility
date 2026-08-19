@@ -188006,5 +188006,75 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07751",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-19T18:23:25.852341Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03185",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00858",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00206",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07752",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-19T18:23:27.190539Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03185",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-00858",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00206",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07753",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-19T18:23:27.552454Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02967",
+    "explanation": "Terminated employee EMP-01064 (Carly Bennett) still holds active assignment ASN-02967.",
+    "evidence": {
+      "employee_id": "EMP-01064",
+      "terminated_at": "2026-08-19T18:23:24.872064+00:00",
+      "entitlement_id": "ENT-00418"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
