@@ -34908,5 +34908,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T17:54:24.913484Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01665",
+    "full_name": "Brooke Vaughn",
+    "email": "emp-01665@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T18:28:29.560477Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T18:28:29.560477Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01666",
+    "full_name": "Brandon Perez",
+    "email": "emp-01666@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-20T18:28:29.560477Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T18:28:29.560477Z",
+    "terminated_at": null
   }
 ]
