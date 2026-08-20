@@ -191015,5 +191015,97 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07874",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T11:50:50.380174Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03233",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00394",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00081",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07875",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T11:50:52.067545Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03233",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00394",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00081",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07876",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T11:50:52.173850Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01059",
+    "explanation": "Terminated employee EMP-00513 (Elizabeth Ford) still holds active assignment ASN-01059.",
+    "evidence": {
+      "employee_id": "EMP-00513",
+      "terminated_at": "2026-08-20T11:50:49.142547+00:00",
+      "entitlement_id": "ENT-00003"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07877",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T11:50:52.227642Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01381",
+    "explanation": "Terminated employee EMP-00513 (Elizabeth Ford) still holds active assignment ASN-01381.",
+    "evidence": {
+      "employee_id": "EMP-00513",
+      "terminated_at": "2026-08-20T11:50:49.142547+00:00",
+      "entitlement_id": "ENT-00124"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

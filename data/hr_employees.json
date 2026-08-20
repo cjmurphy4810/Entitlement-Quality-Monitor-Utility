@@ -11641,7 +11641,7 @@
     "email": "emp-00513@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -11658,7 +11658,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-31T07:39:47.716384Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T11:50:49.142547Z"
   },
   {
     "id": "EMP-00514",
@@ -34736,6 +34736,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T11:19:55.544526Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01656",
+    "full_name": "Kenneth Green",
+    "email": "emp-01656@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-20T11:50:49.142547Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T11:50:49.142547Z",
     "terminated_at": null
   }
 ]
