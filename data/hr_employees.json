@@ -34680,5 +34680,24 @@
     "manager_id": null,
     "hired_at": "2026-08-20T09:58:32.743446Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01653",
+    "full_name": "Rachel Moran",
+    "email": "emp-01653@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T10:32:18.230006Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T10:32:18.230006Z",
+    "terminated_at": null
   }
 ]
