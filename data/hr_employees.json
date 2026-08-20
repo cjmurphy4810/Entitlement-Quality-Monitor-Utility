@@ -5275,8 +5275,8 @@
     "id": "EMP-00221",
     "full_name": "Douglas Russo",
     "email": "emp-00221@example.com",
-    "current_role": "operations",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -5289,6 +5289,12 @@
         "role": "operations",
         "division": "business_ops",
         "started_at": "2026-06-28T08:22:14.926856Z",
+        "ended_at": "2026-08-20T03:23:08.901294Z"
+      },
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-20T03:23:08.901294Z",
         "ended_at": null
       }
     ],
