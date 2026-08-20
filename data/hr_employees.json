@@ -7749,7 +7749,7 @@
     "email": "emp-00335@example.com",
     "current_role": "business_analyst",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -7760,7 +7760,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-15T19:02:47.878530Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T23:18:57.883527Z"
   },
   {
     "id": "EMP-00336",
@@ -35115,6 +35115,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T22:52:50.750154Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01675",
+    "full_name": "Brent Watson",
+    "email": "emp-01675@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T23:18:57.883527Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T23:18:57.883527Z",
     "terminated_at": null
   }
 ]
