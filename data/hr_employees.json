@@ -31259,14 +31259,20 @@
     "id": "EMP-01473",
     "full_name": "Ronald Gregory",
     "email": "emp-01473@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-08-15T06:24:55.093363Z",
+        "ended_at": "2026-08-20T07:34:37.253941Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T07:34:37.253941Z",
         "ended_at": null
       }
     ],
