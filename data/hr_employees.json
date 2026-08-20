@@ -34813,5 +34813,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T13:39:49.158702Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01660",
+    "full_name": "Jennifer Walker",
+    "email": "emp-01660@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T14:28:47.220790Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T14:28:47.220790Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01661",
+    "full_name": "Nichole White",
+    "email": "emp-01661@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-20T14:28:47.220790Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T14:28:47.220790Z",
+    "terminated_at": null
   }
 ]
