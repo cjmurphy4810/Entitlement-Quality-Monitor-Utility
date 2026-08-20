@@ -31437,7 +31437,7 @@
     "email": "emp-01481@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -31448,7 +31448,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T11:41:59.569482Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T22:52:50.750154Z"
   },
   {
     "id": "EMP-01482",
@@ -35096,6 +35096,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T22:19:31.479381Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01674",
+    "full_name": "Kathleen Shannon",
+    "email": "emp-01674@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T22:52:50.750154Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T22:52:50.750154Z",
     "terminated_at": null
   }
 ]
