@@ -193485,5 +193485,98 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07978",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T23:48:02.121104Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03273",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01580",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00503",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07979",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T23:48:03.872136Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03273",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-01580",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00503",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07980",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T23:48:03.873288Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03274",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00340",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00005",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07981",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T23:48:04.385149Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03274",
+    "explanation": "Terminated employee EMP-00340 (Sarah Gardner) still holds active assignment ASN-03274.",
+    "evidence": {
+      "employee_id": "EMP-00340",
+      "terminated_at": "2026-06-05T00:00:47.691817+00:00",
+      "entitlement_id": "ENT-00005"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
