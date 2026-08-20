@@ -7786,5 +7786,21 @@
     "sod_tags": [],
     "created_at": "2026-08-20T14:28:47.220790Z",
     "updated_at": "2026-08-20T14:28:47.220790Z"
+  },
+  {
+    "id": "ENT-00499",
+    "name": "new entitlement ENT-00499",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00048"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-20T15:57:16.665437Z",
+    "updated_at": "2026-08-20T15:57:16.665437Z"
   }
 ]
