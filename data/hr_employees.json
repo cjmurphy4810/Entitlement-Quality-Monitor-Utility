@@ -34604,5 +34604,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T08:29:23.354431Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01649",
+    "full_name": "Gilbert Miller",
+    "email": "emp-01649@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T09:06:17.030186Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T09:06:17.030186Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01650",
+    "full_name": "Karen Lee",
+    "email": "emp-01650@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T09:06:17.030186Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T09:06:17.030186Z",
+    "terminated_at": null
   }
 ]
