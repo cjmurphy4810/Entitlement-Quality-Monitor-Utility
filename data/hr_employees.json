@@ -34699,5 +34699,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T10:32:18.230006Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01654",
+    "full_name": "Kenneth Crawford",
+    "email": "emp-01654@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-20T11:19:55.544526Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T11:19:55.544526Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01655",
+    "full_name": "Luis Guzman",
+    "email": "emp-01655@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T11:19:55.544526Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T11:19:55.544526Z",
+    "terminated_at": null
   }
 ]
