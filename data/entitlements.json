@@ -3569,7 +3569,7 @@
     "id": "ENT-00224",
     "name": "new entitlement ENT-00224",
     "pbl_description": "Lets the user do things in the system.",
-    "access_tier": 1,
+    "access_tier": 2,
     "acceptable_roles": [
       "customer"
     ],
@@ -3579,7 +3579,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-06-26T15:12:40.279808Z",
-    "updated_at": "2026-06-26T15:12:40.279808Z"
+    "updated_at": "2026-08-20T05:02:20.207249Z"
   },
   {
     "id": "ENT-00225",
@@ -7694,5 +7694,21 @@
     "sod_tags": [],
     "created_at": "2026-08-19T23:44:29.941532Z",
     "updated_at": "2026-08-19T23:44:29.941532Z"
+  },
+  {
+    "id": "ENT-00493",
+    "name": "new entitlement ENT-00493",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00117"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-20T05:02:20.207249Z",
+    "updated_at": "2026-08-20T05:02:20.207249Z"
   }
 ]

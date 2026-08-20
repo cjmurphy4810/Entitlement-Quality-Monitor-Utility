@@ -34459,5 +34459,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T04:05:43.223605Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01642",
+    "full_name": "Jennifer Hill",
+    "email": "emp-01642@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-20T05:02:20.207249Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T05:02:20.207249Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01643",
+    "full_name": "John Erickson",
+    "email": "emp-01643@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-20T05:02:20.207249Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T05:02:20.207249Z",
+    "terminated_at": null
   }
 ]
