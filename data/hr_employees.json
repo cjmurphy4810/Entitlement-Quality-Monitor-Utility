@@ -10998,14 +10998,20 @@
     "id": "EMP-00484",
     "full_name": "Roger Roberson",
     "email": "emp-00484@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-05-28T18:00:00.754582Z",
+        "ended_at": "2026-08-20T02:13:18.248452Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-20T02:13:18.248452Z",
         "ended_at": null
       }
     ],
@@ -34383,6 +34389,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T00:51:19.777113Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01639",
+    "full_name": "Kayla Hobbs",
+    "email": "emp-01639@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T02:13:18.248452Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T02:13:18.248452Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01640",
+    "full_name": "Benjamin Lam",
+    "email": "emp-01640@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-20T02:13:18.248452Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T02:13:18.248452Z",
     "terminated_at": null
   }
 ]
