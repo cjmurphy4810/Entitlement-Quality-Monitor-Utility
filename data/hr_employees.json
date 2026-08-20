@@ -29545,14 +29545,20 @@
     "id": "EMP-01385",
     "full_name": "Deborah Larsen",
     "email": "emp-01385@example.com",
-    "current_role": "customer",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_dev",
         "started_at": "2026-08-11T09:28:30.561720Z",
+        "ended_at": "2026-08-20T19:10:39.541982Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-20T19:10:39.541982Z",
         "ended_at": null
       }
     ],
@@ -34945,6 +34951,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T18:28:29.560477Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01667",
+    "full_name": "Billy Mcdonald",
+    "email": "emp-01667@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-20T19:10:39.541982Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T19:10:39.541982Z",
     "terminated_at": null
   }
 ]
