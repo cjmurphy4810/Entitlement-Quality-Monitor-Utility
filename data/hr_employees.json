@@ -34971,5 +34971,24 @@
     "manager_id": null,
     "hired_at": "2026-08-20T19:10:39.541982Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01668",
+    "full_name": "Steven Wagner",
+    "email": "emp-01668@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T19:53:28.545514Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T19:53:28.545514Z",
+    "terminated_at": null
   }
 ]

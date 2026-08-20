@@ -7818,5 +7818,21 @@
     "sod_tags": [],
     "created_at": "2026-08-20T17:21:47.948933Z",
     "updated_at": "2026-08-20T17:21:47.948933Z"
+  },
+  {
+    "id": "ENT-00501",
+    "name": "new entitlement ENT-00501",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00253"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-20T19:53:28.545514Z",
+    "updated_at": "2026-08-20T19:53:28.545514Z"
   }
 ]
