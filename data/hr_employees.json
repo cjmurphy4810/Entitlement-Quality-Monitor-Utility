@@ -13162,7 +13162,7 @@
     "email": "emp-00582@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -13173,7 +13173,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-08T18:21:08.087386Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T22:19:31.479381Z"
   },
   {
     "id": "EMP-00583",
@@ -35077,6 +35077,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T21:51:55.084998Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01673",
+    "full_name": "Matthew Fisher",
+    "email": "emp-01673@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T22:19:31.479381Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T22:19:31.479381Z",
     "terminated_at": null
   }
 ]
