@@ -26451,7 +26451,7 @@
     "email": "emp-01229@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -26468,7 +26468,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-03T17:23:19.246443Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T17:54:24.913484Z"
   },
   {
     "id": "EMP-01230",
@@ -34888,6 +34888,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T17:21:47.948933Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01664",
+    "full_name": "Robert Flores",
+    "email": "emp-01664@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T17:54:24.913484Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T17:54:24.913484Z",
     "terminated_at": null
   }
 ]
