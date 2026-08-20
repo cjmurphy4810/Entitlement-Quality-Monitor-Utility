@@ -15950,7 +15950,7 @@
     "email": "emp-00712@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -15961,7 +15961,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-25T16:18:32.578814Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T13:39:49.158702Z"
   },
   {
     "id": "EMP-00713",
@@ -34793,6 +34793,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T12:33:21.754239Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01659",
+    "full_name": "Amy Adams",
+    "email": "emp-01659@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-20T13:39:49.158702Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T13:39:49.158702Z",
     "terminated_at": null
   }
 ]
