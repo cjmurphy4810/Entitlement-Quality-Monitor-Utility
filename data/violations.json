@@ -191560,5 +191560,185 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07897",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T16:33:08.419813Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03242",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00914",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00072",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07898",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T16:33:09.930233Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03242",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00914",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00072",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07899",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T16:33:10.025446Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01069",
+    "explanation": "Terminated employee EMP-00361 (Maria Sanchez) still holds active assignment ASN-01069.",
+    "evidence": {
+      "employee_id": "EMP-00361",
+      "terminated_at": "2026-08-20T16:33:07.328937+00:00",
+      "entitlement_id": "ENT-00123"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07900",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T16:33:10.132920Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01792",
+    "explanation": "Terminated employee EMP-00361 (Maria Sanchez) still holds active assignment ASN-01792.",
+    "evidence": {
+      "employee_id": "EMP-00361",
+      "terminated_at": "2026-08-20T16:33:07.328937+00:00",
+      "entitlement_id": "ENT-00235"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07901",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T16:33:10.184838Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02128",
+    "explanation": "Terminated employee EMP-00361 (Maria Sanchez) still holds active assignment ASN-02128.",
+    "evidence": {
+      "employee_id": "EMP-00361",
+      "terminated_at": "2026-08-20T16:33:07.328937+00:00",
+      "entitlement_id": "ENT-00055"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07902",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T16:33:10.229234Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02397",
+    "explanation": "Terminated employee EMP-00361 (Maria Sanchez) still holds active assignment ASN-02397.",
+    "evidence": {
+      "employee_id": "EMP-00361",
+      "terminated_at": "2026-08-20T16:33:07.328937+00:00",
+      "entitlement_id": "ENT-00059"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07903",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T16:33:10.259757Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02589",
+    "explanation": "Terminated employee EMP-00361 (Maria Sanchez) still holds active assignment ASN-02589.",
+    "evidence": {
+      "employee_id": "EMP-00361",
+      "terminated_at": "2026-08-20T16:33:07.328937+00:00",
+      "entitlement_id": "ENT-00360"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07904",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T16:33:10.313479Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02878",
+    "explanation": "Terminated employee EMP-00361 (Maria Sanchez) still holds active assignment ASN-02878.",
+    "evidence": {
+      "employee_id": "EMP-00361",
+      "terminated_at": "2026-08-20T16:33:07.328937+00:00",
+      "entitlement_id": "ENT-00279"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
