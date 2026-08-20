@@ -34541,5 +34541,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T05:54:15.721842Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01646",
+    "full_name": "Adrian Evans DVM",
+    "email": "emp-01646@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T06:33:50.868835Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T06:33:50.868835Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01647",
+    "full_name": "Marc Schroeder",
+    "email": "emp-01647@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T06:33:50.868835Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T06:33:50.868835Z",
+    "terminated_at": null
   }
 ]

@@ -3276,5 +3276,15 @@
     "environment": "dev",
     "linked_entitlement_ids": [],
     "description": "National point carry care line name."
+  },
+  {
+    "id": "RES-00318",
+    "name": "Clark-Sanchez",
+    "type": "database",
+    "criticality": "critical",
+    "owner_division": "hr",
+    "environment": "staging",
+    "linked_entitlement_ids": [],
+    "description": "Easy manage safe left body ahead."
   }
 ]
