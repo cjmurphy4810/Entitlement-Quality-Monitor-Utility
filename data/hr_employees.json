@@ -34642,5 +34642,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T09:06:17.030186Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01651",
+    "full_name": "Corey Durham",
+    "email": "emp-01651@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-20T09:58:32.743446Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T09:58:32.743446Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01652",
+    "full_name": "Jessica Maddox",
+    "email": "emp-01652@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-20T09:58:32.743446Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T09:58:32.743446Z",
+    "terminated_at": null
   }
 ]
