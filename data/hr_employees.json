@@ -34990,5 +34990,43 @@
     "manager_id": null,
     "hired_at": "2026-08-20T19:53:28.545514Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01669",
+    "full_name": "Andres Maxwell",
+    "email": "emp-01669@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-20T20:19:52.200450Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T20:19:52.200450Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01670",
+    "full_name": "Brett Kramer",
+    "email": "emp-01670@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-20T20:19:52.200450Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T20:19:52.200450Z",
+    "terminated_at": null
   }
 ]
