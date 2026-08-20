@@ -192703,5 +192703,100 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-07945",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T21:20:50.373221Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03259",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00991",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00081",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07946",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T21:20:50.374329Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03260",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00437",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00091",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07947",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-20T21:20:52.402964Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03259",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-00991",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00081",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-07948",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-20T21:20:53.011373Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03260",
+    "explanation": "Terminated employee EMP-00437 (Jason Hanson) still holds active assignment ASN-03260.",
+    "evidence": {
+      "employee_id": "EMP-00437",
+      "terminated_at": "2026-08-17T09:33:43.526233+00:00",
+      "entitlement_id": "ENT-00091"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

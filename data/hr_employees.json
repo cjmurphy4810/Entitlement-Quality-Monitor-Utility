@@ -30499,20 +30499,26 @@
     "id": "EMP-01433",
     "full_name": "Lisa Duran",
     "email": "emp-01433@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
-    "status": "active",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-08-13T14:18:56.339497Z",
+        "ended_at": "2026-08-20T21:20:48.927541Z"
+      },
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-20T21:20:48.927541Z",
         "ended_at": null
       }
     ],
     "manager_id": null,
     "hired_at": "2026-08-13T14:18:56.339497Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T21:20:48.927541Z"
   },
   {
     "id": "EMP-01434",
