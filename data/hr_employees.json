@@ -34870,5 +34870,24 @@
     "manager_id": null,
     "hired_at": "2026-08-20T16:33:07.328937Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01663",
+    "full_name": "Craig Anderson",
+    "email": "emp-01663@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-20T17:21:47.948933Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T17:21:47.948933Z",
+    "terminated_at": null
   }
 ]
