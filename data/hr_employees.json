@@ -12081,7 +12081,7 @@
     "email": "emp-00533@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -12098,7 +12098,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-02T09:46:34.241489Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-20T20:54:22.614403Z"
   },
   {
     "id": "EMP-00534",
@@ -35027,6 +35027,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T20:19:52.200450Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01671",
+    "full_name": "Jennifer Carpenter",
+    "email": "emp-01671@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-20T20:54:22.614403Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T20:54:22.614403Z",
     "terminated_at": null
   }
 ]
