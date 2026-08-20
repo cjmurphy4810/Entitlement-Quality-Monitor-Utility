@@ -18924,14 +18924,20 @@
     "id": "EMP-00856",
     "full_name": "Lance Lee",
     "email": "emp-00856@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2026-07-08T16:55:20.711083Z",
+        "ended_at": "2026-08-20T05:54:15.721842Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-20T05:54:15.721842Z",
         "ended_at": null
       }
     ],
@@ -34496,6 +34502,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-20T05:02:20.207249Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01644",
+    "full_name": "Marcus Cooper",
+    "email": "emp-01644@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-20T05:54:15.721842Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T05:54:15.721842Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01645",
+    "full_name": "Steven Huffman",
+    "email": "emp-01645@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-20T05:54:15.721842Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T05:54:15.721842Z",
     "terminated_at": null
   }
 ]
