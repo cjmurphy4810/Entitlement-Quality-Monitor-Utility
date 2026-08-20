@@ -34346,5 +34346,43 @@
     "manager_id": null,
     "hired_at": "2026-08-19T23:44:29.941532Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01637",
+    "full_name": "Donald Butler",
+    "email": "emp-01637@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-20T00:51:19.777113Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T00:51:19.777113Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01638",
+    "full_name": "Duane Alvarez",
+    "email": "emp-01638@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-20T00:51:19.777113Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-20T00:51:19.777113Z",
+    "terminated_at": null
   }
 ]
