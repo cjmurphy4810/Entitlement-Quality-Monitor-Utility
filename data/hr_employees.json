@@ -35824,5 +35824,43 @@
     "manager_id": null,
     "hired_at": "2026-08-21T20:47:15.035590Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01711",
+    "full_name": "Karen Martin",
+    "email": "emp-01711@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-21T21:17:00.964175Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T21:17:00.964175Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01712",
+    "full_name": "Christina Robinson",
+    "email": "emp-01712@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-21T21:17:00.964175Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T21:17:00.964175Z",
+    "terminated_at": null
   }
 ]
