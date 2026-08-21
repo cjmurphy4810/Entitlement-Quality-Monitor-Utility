@@ -35173,5 +35173,24 @@
     "manager_id": null,
     "hired_at": "2026-08-21T00:54:38.460258Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01678",
+    "full_name": "Darin Brown",
+    "email": "emp-01678@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-21T02:20:16.409487Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T02:20:16.409487Z",
+    "terminated_at": null
   }
 ]
