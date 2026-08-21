@@ -21887,14 +21887,20 @@
     "id": "EMP-00999",
     "full_name": "Adam Rogers",
     "email": "emp-00999@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-07-18T14:21:07.192469Z",
+        "ended_at": "2026-08-21T20:47:15.035590Z"
+      },
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-21T20:47:15.035590Z",
         "ended_at": null
       }
     ],
@@ -35779,6 +35785,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T20:17:39.341626Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01709",
+    "full_name": "Jason Vasquez",
+    "email": "emp-01709@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-21T20:47:15.035590Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T20:47:15.035590Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01710",
+    "full_name": "William Rodriguez",
+    "email": "emp-01710@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-21T20:47:15.035590Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T20:47:15.035590Z",
     "terminated_at": null
   }
 ]
