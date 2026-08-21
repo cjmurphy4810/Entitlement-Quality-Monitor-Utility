@@ -35647,5 +35647,24 @@
     "manager_id": null,
     "hired_at": "2026-08-21T17:54:09.134829Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01702",
+    "full_name": "Andrew Carter",
+    "email": "emp-01702@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-21T18:26:21.189377Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T18:26:21.189377Z",
+    "terminated_at": null
   }
 ]
