@@ -35495,5 +35495,24 @@
     "manager_id": null,
     "hired_at": "2026-08-21T11:49:46.363132Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01694",
+    "full_name": "Charles Murphy",
+    "email": "emp-01694@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-21T13:39:14.793022Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T13:39:14.793022Z",
+    "terminated_at": null
   }
 ]
