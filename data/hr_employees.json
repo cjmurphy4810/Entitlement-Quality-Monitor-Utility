@@ -26406,7 +26406,7 @@
     "email": "emp-01226@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -26417,7 +26417,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-03T12:15:06.839482Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-21T11:49:46.363132Z"
   },
   {
     "id": "EMP-01227",
@@ -35475,6 +35475,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T11:19:28.749474Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01693",
+    "full_name": "Benjamin Martin",
+    "email": "emp-01693@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-21T11:49:46.363132Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T11:49:46.363132Z",
     "terminated_at": null
   }
 ]
