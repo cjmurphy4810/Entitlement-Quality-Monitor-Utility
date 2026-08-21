@@ -35742,5 +35742,43 @@
     "manager_id": null,
     "hired_at": "2026-08-21T19:45:39.464286Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01707",
+    "full_name": "James Sims",
+    "email": "emp-01707@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-21T20:17:39.341626Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T20:17:39.341626Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01708",
+    "full_name": "Jeffrey Armstrong",
+    "email": "emp-01708@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-21T20:17:39.341626Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T20:17:39.341626Z",
+    "terminated_at": null
   }
 ]
