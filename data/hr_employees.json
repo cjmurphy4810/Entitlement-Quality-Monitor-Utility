@@ -35375,5 +35375,43 @@
     "manager_id": null,
     "hired_at": "2026-08-21T09:29:09.549250Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01688",
+    "full_name": "Daniel Martinez",
+    "email": "emp-01688@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-21T10:01:10.137699Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T10:01:10.137699Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01689",
+    "full_name": "John Black",
+    "email": "emp-01689@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-21T10:01:10.137699Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T10:01:10.137699Z",
+    "terminated_at": null
   }
 ]
