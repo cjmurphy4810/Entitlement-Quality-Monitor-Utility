@@ -14441,7 +14441,7 @@
     "email": "emp-00643@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -14452,7 +14452,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-16T19:41:45.834868Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-21T19:05:47.292841Z"
   },
   {
     "id": "EMP-00644",
@@ -35665,6 +35665,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T18:26:21.189377Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01703",
+    "full_name": "Heidi Mathis",
+    "email": "emp-01703@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-21T19:05:47.292841Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T19:05:47.292841Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01704",
+    "full_name": "Heather Kim",
+    "email": "emp-01704@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-21T19:05:47.292841Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T19:05:47.292841Z",
     "terminated_at": null
   }
 ]
