@@ -35704,5 +35704,43 @@
     "manager_id": null,
     "hired_at": "2026-08-21T19:05:47.292841Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01705",
+    "full_name": "Mr. Michael Mcbride",
+    "email": "emp-01705@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-21T19:45:39.464286Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T19:45:39.464286Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01706",
+    "full_name": "Kristen Martinez",
+    "email": "emp-01706@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-21T19:45:39.464286Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T19:45:39.464286Z",
+    "terminated_at": null
   }
 ]
