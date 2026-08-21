@@ -35356,5 +35356,24 @@
     "manager_id": null,
     "hired_at": "2026-08-21T06:35:55.583330Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01687",
+    "full_name": "Charles Byrd",
+    "email": "emp-01687@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-21T09:29:09.549250Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T09:29:09.549250Z",
+    "terminated_at": null
   }
 ]
