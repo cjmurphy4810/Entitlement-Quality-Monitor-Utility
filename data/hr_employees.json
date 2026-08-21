@@ -26235,7 +26235,7 @@
     "email": "emp-01217@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -26246,7 +26246,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-02T12:34:04.525718Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-21T17:54:09.134829Z"
   },
   {
     "id": "EMP-01218",
@@ -35608,6 +35608,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T16:28:47.642295Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01700",
+    "full_name": "Vanessa Mcgrath",
+    "email": "emp-01700@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-21T17:54:09.134829Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T17:54:09.134829Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01701",
+    "full_name": "Nathan Walton",
+    "email": "emp-01701@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-21T17:54:09.134829Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T17:54:09.134829Z",
     "terminated_at": null
   }
 ]
