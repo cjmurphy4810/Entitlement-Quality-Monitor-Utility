@@ -27501,14 +27501,20 @@
     "id": "EMP-01279",
     "full_name": "Adrienne Owen",
     "email": "emp-01279@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-08-07T12:06:21.681193Z",
+        "ended_at": "2026-08-21T23:45:59.038459Z"
+      },
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-21T23:45:59.038459Z",
         "ended_at": null
       }
     ],
@@ -35930,6 +35936,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T22:48:14.148751Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01716",
+    "full_name": "Jacqueline Woodard",
+    "email": "emp-01716@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-21T23:45:59.038459Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T23:45:59.038459Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01717",
+    "full_name": "Jonathan Gibson",
+    "email": "emp-01717@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-21T23:45:59.038459Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T23:45:59.038459Z",
     "terminated_at": null
   }
 ]
