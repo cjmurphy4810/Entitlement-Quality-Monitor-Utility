@@ -32701,14 +32701,20 @@
     "id": "EMP-01547",
     "full_name": "Jamie Best",
     "email": "emp-01547@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-08-17T05:05:50.141916Z",
+        "ended_at": "2026-08-21T10:55:40.281143Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-21T10:55:40.281143Z",
         "ended_at": null
       }
     ],
@@ -35412,6 +35418,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T10:01:10.137699Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01690",
+    "full_name": "Mrs. Jessica Barton MD",
+    "email": "emp-01690@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-21T10:55:40.281143Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T10:55:40.281143Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01691",
+    "full_name": "Adam Pacheco",
+    "email": "emp-01691@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-21T10:55:40.281143Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T10:55:40.281143Z",
     "terminated_at": null
   }
 ]
