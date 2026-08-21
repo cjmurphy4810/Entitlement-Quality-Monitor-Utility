@@ -25595,14 +25595,20 @@
     "id": "EMP-01185",
     "full_name": "Patricia Holt",
     "email": "emp-01185@example.com",
-    "current_role": "customer",
-    "current_division": "hr",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "hr",
         "started_at": "2026-07-31T11:24:29.121113Z",
+        "ended_at": "2026-08-21T05:55:42.338070Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-21T05:55:42.338070Z",
         "ended_at": null
       }
     ],
@@ -35273,6 +35279,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T05:02:34.480187Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01683",
+    "full_name": "Stephanie Gibson",
+    "email": "emp-01683@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-21T05:55:42.338070Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T05:55:42.338070Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01684",
+    "full_name": "Dr. Stephanie Wiggins",
+    "email": "emp-01684@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-21T05:55:42.338070Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T05:55:42.338070Z",
     "terminated_at": null
   }
 ]
