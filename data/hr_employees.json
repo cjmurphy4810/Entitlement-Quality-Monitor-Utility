@@ -28740,14 +28740,20 @@
     "id": "EMP-01342",
     "full_name": "Robert Ortiz",
     "email": "emp-01342@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-08-09T17:56:35.839581Z",
+        "ended_at": "2026-08-21T23:16:35.964988Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-21T23:16:35.964988Z",
         "ended_at": null
       }
     ],
