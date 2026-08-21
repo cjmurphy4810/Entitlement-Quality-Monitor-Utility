@@ -35533,5 +35533,43 @@
     "manager_id": null,
     "hired_at": "2026-08-21T14:27:11.871973Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01696",
+    "full_name": "Tasha Mcknight",
+    "email": "emp-01696@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-08-21T15:56:38.043178Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T15:56:38.043178Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01697",
+    "full_name": "Allen Garza",
+    "email": "emp-01697@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-21T15:56:38.043178Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T15:56:38.043178Z",
+    "terminated_at": null
   }
 ]
