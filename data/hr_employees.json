@@ -15818,7 +15818,7 @@
     "email": "emp-00706@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -15835,7 +15835,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-24T22:44:34.324278Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-21T22:16:16.748810Z"
   },
   {
     "id": "EMP-00707",
@@ -35861,6 +35861,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T21:17:00.964175Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01713",
+    "full_name": "Amber Stewart",
+    "email": "emp-01713@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-21T22:16:16.748810Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T22:16:16.748810Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01714",
+    "full_name": "Regina Byrd",
+    "email": "emp-01714@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-08-21T22:16:16.748810Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T22:16:16.748810Z",
     "terminated_at": null
   }
 ]
