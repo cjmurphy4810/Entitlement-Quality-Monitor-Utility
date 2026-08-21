@@ -28076,8 +28076,8 @@
     "id": "EMP-01308",
     "full_name": "Kelly Foster",
     "email": "emp-01308@example.com",
-    "current_role": "business_analyst",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -28090,6 +28090,12 @@
         "role": "business_analyst",
         "division": "tech_ops",
         "started_at": "2026-08-16T13:50:37.215538Z",
+        "ended_at": "2026-08-21T22:48:14.148751Z"
+      },
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-21T22:48:14.148751Z",
         "ended_at": null
       }
     ],
@@ -35899,6 +35905,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T22:16:16.748810Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01715",
+    "full_name": "Greg Singh",
+    "email": "emp-01715@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-21T22:48:14.148751Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-21T22:48:14.148751Z",
     "terminated_at": null
   }
 ]
