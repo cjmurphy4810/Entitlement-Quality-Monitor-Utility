@@ -28653,7 +28653,7 @@
     "email": "emp-01337@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -28664,7 +28664,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T12:35:54.686843Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-22T02:11:59.390686Z"
   },
   {
     "id": "EMP-01338",
@@ -33472,14 +33472,20 @@
     "id": "EMP-01586",
     "full_name": "Manuel Mann",
     "email": "emp-01586@example.com",
-    "current_role": "business_analyst",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "finance",
         "started_at": "2026-08-18T06:30:47.779251Z",
+        "ended_at": "2026-08-22T02:11:59.390686Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-22T02:11:59.390686Z",
         "ended_at": null
       }
     ],
@@ -35993,6 +35999,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T00:51:10.412123Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01719",
+    "full_name": "Cindy Martin",
+    "email": "emp-01719@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-22T02:11:59.390686Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T02:11:59.390686Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01720",
+    "full_name": "Danielle Moore",
+    "email": "emp-01720@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-22T02:11:59.390686Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T02:11:59.390686Z",
     "terminated_at": null
   }
 ]
