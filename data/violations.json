@@ -202212,5 +202212,185 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08343",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-22T22:14:26.041747Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03421",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00089",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00209",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08344",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-22T22:14:27.949001Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03421",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00089",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00209",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08345",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-22T22:14:28.010690Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00752",
+    "explanation": "Terminated employee EMP-00313 (Courtney Schroeder) still holds active assignment ASN-00752.",
+    "evidence": {
+      "employee_id": "EMP-00313",
+      "terminated_at": "2026-08-22T22:14:24.653066+00:00",
+      "entitlement_id": "ENT-00105"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08346",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-22T22:14:28.064199Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01090",
+    "explanation": "Terminated employee EMP-00313 (Courtney Schroeder) still holds active assignment ASN-01090.",
+    "evidence": {
+      "employee_id": "EMP-00313",
+      "terminated_at": "2026-08-22T22:14:24.653066+00:00",
+      "entitlement_id": "ENT-00039"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08347",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-22T22:14:28.065979Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01111",
+    "explanation": "Terminated employee EMP-00313 (Courtney Schroeder) still holds active assignment ASN-01111.",
+    "evidence": {
+      "employee_id": "EMP-00313",
+      "terminated_at": "2026-08-22T22:14:24.653066+00:00",
+      "entitlement_id": "ENT-00091"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08348",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-22T22:14:28.235041Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02055",
+    "explanation": "Terminated employee EMP-00313 (Courtney Schroeder) still holds active assignment ASN-02055.",
+    "evidence": {
+      "employee_id": "EMP-00313",
+      "terminated_at": "2026-08-22T22:14:24.653066+00:00",
+      "entitlement_id": "ENT-00112"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08349",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-22T22:14:28.457792Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02916",
+    "explanation": "Terminated employee EMP-00313 (Courtney Schroeder) still holds active assignment ASN-02916.",
+    "evidence": {
+      "employee_id": "EMP-00313",
+      "terminated_at": "2026-08-22T22:14:24.653066+00:00",
+      "entitlement_id": "ENT-00193"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08350",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-22T22:14:28.564086Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03421",
+    "explanation": "Terminated employee EMP-00089 (Lisa Morris) still holds active assignment ASN-03421.",
+    "evidence": {
+      "employee_id": "EMP-00089",
+      "terminated_at": "2026-06-28T22:57:25.498127+00:00",
+      "entitlement_id": "ENT-00209"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
