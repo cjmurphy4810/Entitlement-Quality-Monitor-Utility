@@ -20637,14 +20637,20 @@
     "id": "EMP-00937",
     "full_name": "Leah Quinn",
     "email": "emp-00937@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-07-14T19:08:39.452462Z",
+        "ended_at": "2026-08-22T12:24:17.607178Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-22T12:24:17.607178Z",
         "ended_at": null
       }
     ],
@@ -36307,6 +36313,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T11:14:15.260296Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01733",
+    "full_name": "Kristy Mendoza",
+    "email": "emp-01733@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-22T12:24:17.607178Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T12:24:17.607178Z",
     "terminated_at": null
   }
 ]
