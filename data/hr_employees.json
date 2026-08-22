@@ -36616,5 +36616,24 @@
     "manager_id": null,
     "hired_at": "2026-08-22T20:46:25.928496Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01747",
+    "full_name": "Erik Marshall",
+    "email": "emp-01747@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-22T21:43:38.684429Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T21:43:38.684429Z",
+    "terminated_at": null
   }
 ]
