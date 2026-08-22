@@ -36358,5 +36358,43 @@
     "manager_id": null,
     "hired_at": "2026-08-22T13:08:08.006203Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01735",
+    "full_name": "Micheal Henson",
+    "email": "emp-01735@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-22T14:13:52.800544Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T14:13:52.800544Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01736",
+    "full_name": "Jonathon Carlson",
+    "email": "emp-01736@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-22T14:13:52.800544Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T14:13:52.800544Z",
+    "terminated_at": null
   }
 ]
