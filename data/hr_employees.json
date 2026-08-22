@@ -36396,5 +36396,24 @@
     "manager_id": null,
     "hired_at": "2026-08-22T14:13:52.800544Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01737",
+    "full_name": "Janet Yoder",
+    "email": "emp-01737@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-22T14:45:20.071543Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T14:45:20.071543Z",
+    "terminated_at": null
   }
 ]
