@@ -8246,5 +8246,21 @@
     "sod_tags": [],
     "created_at": "2026-08-22T19:44:02.505838Z",
     "updated_at": "2026-08-22T19:44:02.505838Z"
+  },
+  {
+    "id": "ENT-00529",
+    "name": "new entitlement ENT-00529",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00044"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-22T22:45:22.802671Z",
+    "updated_at": "2026-08-22T22:45:22.802671Z"
   }
 ]
