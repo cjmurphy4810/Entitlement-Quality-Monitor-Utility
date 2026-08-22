@@ -36553,5 +36553,43 @@
     "manager_id": null,
     "hired_at": "2026-08-22T19:18:46.528585Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01744",
+    "full_name": "Timothy Shepherd",
+    "email": "emp-01744@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-22T20:14:48.576704Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T20:14:48.576704Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01745",
+    "full_name": "Joseph Mcgrath",
+    "email": "emp-01745@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-22T20:14:48.576704Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T20:14:48.576704Z",
+    "terminated_at": null
   }
 ]
