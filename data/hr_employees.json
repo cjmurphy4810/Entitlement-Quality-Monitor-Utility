@@ -36157,5 +36157,24 @@
     "manager_id": null,
     "hired_at": "2026-08-22T08:54:56.098701Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01726",
+    "full_name": "David Michael",
+    "email": "emp-01726@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-22T09:19:58.917568Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T09:19:58.917568Z",
+    "terminated_at": null
   }
 ]
