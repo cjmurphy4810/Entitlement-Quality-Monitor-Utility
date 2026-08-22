@@ -8050,5 +8050,19 @@
     "sod_tags": [],
     "created_at": "2026-08-22T05:52:39.181297Z",
     "updated_at": "2026-08-22T05:52:39.181297Z"
+  },
+  {
+    "id": "ENT-00516",
+    "name": "new entitlement ENT-00516",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-22T07:09:01.527274Z",
+    "updated_at": "2026-08-22T07:09:01.527274Z"
   }
 ]
