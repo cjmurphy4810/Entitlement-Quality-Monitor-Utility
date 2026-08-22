@@ -31325,7 +31325,7 @@
     "email": "emp-01471@example.com",
     "current_role": "operations",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -31336,7 +31336,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T04:54:38.086920Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-22T15:43:37.461162Z"
   },
   {
     "id": "EMP-01472",
@@ -36433,6 +36433,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T15:13:33.193450Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01739",
+    "full_name": "Shelby Cook",
+    "email": "emp-01739@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-22T15:43:37.461162Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T15:43:37.461162Z",
     "terminated_at": null
   }
 ]
