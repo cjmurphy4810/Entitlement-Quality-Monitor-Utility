@@ -36415,5 +36415,24 @@
     "manager_id": null,
     "hired_at": "2026-08-22T14:45:20.071543Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01738",
+    "full_name": "Denise Johnson",
+    "email": "emp-01738@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-22T15:13:33.193450Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T15:13:33.193450Z",
+    "terminated_at": null
   }
 ]
