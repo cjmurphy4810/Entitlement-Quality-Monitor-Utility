@@ -8110,5 +8110,21 @@
     "sod_tags": [],
     "created_at": "2026-08-22T09:19:58.917568Z",
     "updated_at": "2026-08-22T09:19:58.917568Z"
+  },
+  {
+    "id": "ENT-00520",
+    "name": "new entitlement ENT-00520",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00140"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-22T09:49:23.400814Z",
+    "updated_at": "2026-08-22T09:49:23.400814Z"
   }
 ]
