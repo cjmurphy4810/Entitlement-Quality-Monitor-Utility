@@ -36509,5 +36509,43 @@
     "manager_id": null,
     "hired_at": "2026-08-22T18:56:01.724724Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01742",
+    "full_name": "Nicholas Bauer",
+    "email": "emp-01742@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-22T19:18:46.528585Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T19:18:46.528585Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01743",
+    "full_name": "Jeffery Hartman",
+    "email": "emp-01743@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-22T19:18:46.528585Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T19:18:46.528585Z",
+    "terminated_at": null
   }
 ]
