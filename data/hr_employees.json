@@ -36635,5 +36635,43 @@
     "manager_id": null,
     "hired_at": "2026-08-22T21:43:38.684429Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01748",
+    "full_name": "Melissa Miller",
+    "email": "emp-01748@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-22T23:13:34.998708Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T23:13:34.998708Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01749",
+    "full_name": "Steven Clayton",
+    "email": "emp-01749@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-22T23:13:34.998708Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T23:13:34.998708Z",
+    "terminated_at": null
   }
 ]
