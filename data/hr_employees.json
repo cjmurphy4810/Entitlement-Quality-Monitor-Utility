@@ -36459,5 +36459,24 @@
     "manager_id": null,
     "hired_at": "2026-08-22T15:43:37.461162Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01740",
+    "full_name": "Melissa Jones",
+    "email": "emp-01740@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-22T17:14:14.548113Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T17:14:14.548113Z",
+    "terminated_at": null
   }
 ]
