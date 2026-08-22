@@ -34075,7 +34075,7 @@
     "email": "emp-01617@example.com",
     "current_role": "developer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -34086,7 +34086,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T03:23:31.438446Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-22T04:58:03.255469Z"
   },
   {
     "id": "EMP-01618",
@@ -36043,6 +36043,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T02:11:59.390686Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01721",
+    "full_name": "Elizabeth Johnson",
+    "email": "emp-01721@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-08-22T04:58:03.255469Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T04:58:03.255469Z",
     "terminated_at": null
   }
 ]
