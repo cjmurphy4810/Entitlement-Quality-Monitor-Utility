@@ -20454,14 +20454,20 @@
     "id": "EMP-00928",
     "full_name": "Melanie Gonzalez",
     "email": "emp-00928@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-07-14T09:22:16.113880Z",
+        "ended_at": "2026-08-22T11:14:15.260296Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-22T11:14:15.260296Z",
         "ended_at": null
       }
     ],
@@ -36263,6 +36269,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T10:15:41.469197Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01731",
+    "full_name": "Matthew Hall",
+    "email": "emp-01731@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-22T11:14:15.260296Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T11:14:15.260296Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01732",
+    "full_name": "David Moore",
+    "email": "emp-01732@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-22T11:14:15.260296Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T11:14:15.260296Z",
     "terminated_at": null
   }
 ]
