@@ -25462,14 +25462,20 @@
     "id": "EMP-01178",
     "full_name": "Carla Daniels",
     "email": "emp-01178@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "customer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-07-30T16:21:44.643390Z",
+        "ended_at": "2026-08-22T07:52:54.575145Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-22T07:52:54.575145Z",
         "ended_at": null
       }
     ],
@@ -36062,6 +36068,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T04:58:03.255469Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01722",
+    "full_name": "Lindsey Miller",
+    "email": "emp-01722@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-22T07:52:54.575145Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T07:52:54.575145Z",
     "terminated_at": null
   }
 ]

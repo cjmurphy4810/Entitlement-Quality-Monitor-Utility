@@ -8064,5 +8064,21 @@
     "sod_tags": [],
     "created_at": "2026-08-22T07:09:01.527274Z",
     "updated_at": "2026-08-22T07:09:01.527274Z"
+  },
+  {
+    "id": "ENT-00517",
+    "name": "new entitlement ENT-00517",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00163"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-22T07:52:54.575145Z",
+    "updated_at": "2026-08-22T07:52:54.575145Z"
   }
 ]
