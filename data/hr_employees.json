@@ -15583,14 +15583,20 @@
     "id": "EMP-00695",
     "full_name": "Jorge Ryan",
     "email": "emp-00695@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-06-23T23:51:57.783467Z",
+        "ended_at": "2026-08-22T13:08:08.006203Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-22T13:08:08.006203Z",
         "ended_at": null
       }
     ],
@@ -36332,6 +36338,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T12:24:17.607178Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01734",
+    "full_name": "Brandon Perkins",
+    "email": "emp-01734@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-22T13:08:08.006203Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T13:08:08.006203Z",
     "terminated_at": null
   }
 ]
