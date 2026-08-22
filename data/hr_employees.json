@@ -30863,8 +30863,8 @@
     "id": "EMP-01449",
     "full_name": "Javier Perry",
     "email": "emp-01449@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
@@ -30877,6 +30877,12 @@
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-08-19T19:01:06.507217Z",
+        "ended_at": "2026-08-22T08:54:56.098701Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-22T08:54:56.098701Z",
         "ended_at": null
       }
     ],
@@ -36112,6 +36118,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T08:19:56.300947Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01724",
+    "full_name": "Susan Bullock DVM",
+    "email": "emp-01724@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-22T08:54:56.098701Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T08:54:56.098701Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01725",
+    "full_name": "Stephanie Evans",
+    "email": "emp-01725@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-22T08:54:56.098701Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T08:54:56.098701Z",
     "terminated_at": null
   }
 ]
