@@ -25416,14 +25416,20 @@
     "id": "EMP-01174",
     "full_name": "James Smith",
     "email": "emp-01174@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "customer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-07-30T12:10:24.116465Z",
+        "ended_at": "2026-08-22T16:15:10.178951Z"
+      },
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-22T16:15:10.178951Z",
         "ended_at": null
       }
     ],
