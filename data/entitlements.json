@@ -8230,5 +8230,21 @@
     "sod_tags": [],
     "created_at": "2026-08-22T17:14:14.548113Z",
     "updated_at": "2026-08-22T17:14:14.548113Z"
+  },
+  {
+    "id": "ENT-00528",
+    "name": "new entitlement ENT-00528",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00024"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-22T19:44:02.505838Z",
+    "updated_at": "2026-08-22T19:44:02.505838Z"
   }
 ]
