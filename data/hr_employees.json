@@ -16124,8 +16124,8 @@
     "id": "EMP-00720",
     "full_name": "Jeffrey Guerra",
     "email": "emp-00720@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -16138,6 +16138,12 @@
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-07-04T16:57:10.470337Z",
+        "ended_at": "2026-08-22T10:15:41.469197Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-22T10:15:41.469197Z",
         "ended_at": null
       }
     ],
@@ -36219,6 +36225,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T09:49:23.400814Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01729",
+    "full_name": "Michael Rush",
+    "email": "emp-01729@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-22T10:15:41.469197Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T10:15:41.469197Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01730",
+    "full_name": "Daniel Foster",
+    "email": "emp-01730@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-22T10:15:41.469197Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T10:15:41.469197Z",
     "terminated_at": null
   }
 ]
