@@ -1686,7 +1686,7 @@
     "email": "user00068@example.com",
     "current_role": "operations",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -1697,7 +1697,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-10-01T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-22T00:51:10.412123Z"
   },
   {
     "id": "EMP-00069",
@@ -35974,6 +35974,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T23:45:59.038459Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01718",
+    "full_name": "Dawn Roberts",
+    "email": "emp-01718@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-22T00:51:10.412123Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-22T00:51:10.412123Z",
     "terminated_at": null
   }
 ]
