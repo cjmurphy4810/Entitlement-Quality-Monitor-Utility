@@ -15627,8 +15627,8 @@
     "id": "EMP-00697",
     "full_name": "Megan Davis",
     "email": "emp-00697@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -15641,6 +15641,12 @@
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-07-07T22:06:58.299770Z",
+        "ended_at": "2026-08-22T18:18:57.207245Z"
+      },
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-22T18:18:57.207245Z",
         "ended_at": null
       }
     ],
@@ -21830,7 +21836,7 @@
     "email": "emp-00994@example.com",
     "current_role": "business_analyst",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -21847,7 +21853,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-18T09:37:49.506242Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-22T18:18:57.207245Z"
   },
   {
     "id": "EMP-00995",
