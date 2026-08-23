@@ -33997,14 +33997,20 @@
     "id": "EMP-01607",
     "full_name": "Melissa Jones",
     "email": "emp-01607@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-08-18T19:06:34.935914Z",
+        "ended_at": "2026-08-23T12:24:57.277942Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-23T12:24:57.277942Z",
         "ended_at": null
       }
     ],
@@ -36936,6 +36942,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T09:21:43.273594Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01762",
+    "full_name": "Janet Anderson",
+    "email": "emp-01762@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-08-23T12:24:57.277942Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T12:24:57.277942Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01763",
+    "full_name": "Megan Evans",
+    "email": "emp-01763@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-23T12:24:57.277942Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T12:24:57.277942Z",
     "terminated_at": null
   }
 ]
