@@ -206312,5 +206312,94 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08514",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-23T22:14:22.873742Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03497",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01044",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00072",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08515",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-23T22:14:22.918491Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00536",
+    "explanation": "Terminated employee EMP-00247 (Cheryl Brown) still holds active assignment ASN-00536.",
+    "evidence": {
+      "employee_id": "EMP-00247",
+      "terminated_at": "2026-08-23T22:14:18.772713+00:00",
+      "entitlement_id": "ENT-00057"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08516",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-23T22:14:22.939048Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00692",
+    "explanation": "Terminated employee EMP-00247 (Cheryl Brown) still holds active assignment ASN-00692.",
+    "evidence": {
+      "employee_id": "EMP-00247",
+      "terminated_at": "2026-08-23T22:14:18.772713+00:00",
+      "entitlement_id": "ENT-00029"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08517",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-23T22:14:23.070895Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01160",
+    "explanation": "Terminated employee EMP-00247 (Cheryl Brown) still holds active assignment ASN-01160.",
+    "evidence": {
+      "employee_id": "EMP-00247",
+      "terminated_at": "2026-08-23T22:14:18.772713+00:00",
+      "entitlement_id": "ENT-00060"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
