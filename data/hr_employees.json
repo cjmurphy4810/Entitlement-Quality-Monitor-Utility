@@ -15384,7 +15384,7 @@
     "email": "emp-00686@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -15407,7 +15407,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-22T21:18:38.299134Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-23T14:46:49.218755Z"
   },
   {
     "id": "EMP-00687",
@@ -37081,6 +37081,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T14:16:19.046560Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01769",
+    "full_name": "Meghan Porter",
+    "email": "emp-01769@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-08-23T14:46:49.218755Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T14:46:49.218755Z",
     "terminated_at": null
   }
 ]
