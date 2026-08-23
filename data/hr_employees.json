@@ -36736,5 +36736,24 @@
     "manager_id": null,
     "hired_at": "2026-08-23T02:21:04.055160Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01753",
+    "full_name": "Laura Hess",
+    "email": "emp-01753@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-23T03:27:51.163625Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T03:27:51.163625Z",
+    "terminated_at": null
   }
 ]
