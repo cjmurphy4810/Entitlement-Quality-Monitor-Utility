@@ -204402,5 +204402,120 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08434",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-23T11:43:40.712145Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03459",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00113",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00082",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08435",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-23T11:43:43.125151Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03459",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00113",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00082",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08436",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-23T11:43:43.126653Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03460",
+    "explanation": "Employee division 'hr' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00539",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00001",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08437",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-23T11:43:43.601069Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02349",
+    "explanation": "Terminated employee EMP-01145 (Tracy Conway) still holds active assignment ASN-02349.",
+    "evidence": {
+      "employee_id": "EMP-01145",
+      "terminated_at": "2026-08-23T11:43:39.005518+00:00",
+      "entitlement_id": "ENT-00005"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08438",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-23T11:43:43.873976Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03459",
+    "explanation": "Terminated employee EMP-00113 (Cathy Whitney) still holds active assignment ASN-03459.",
+    "evidence": {
+      "employee_id": "EMP-00113",
+      "terminated_at": "2026-05-04T08:22:33.493591+00:00",
+      "entitlement_id": "ENT-00082"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

@@ -8342,5 +8342,21 @@
     "sod_tags": [],
     "created_at": "2026-08-23T10:16:04.714173Z",
     "updated_at": "2026-08-23T10:16:04.714173Z"
+  },
+  {
+    "id": "ENT-00535",
+    "name": "new entitlement ENT-00535",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00171"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-23T11:43:39.005518Z",
+    "updated_at": "2026-08-23T11:43:39.005518Z"
   }
 ]
