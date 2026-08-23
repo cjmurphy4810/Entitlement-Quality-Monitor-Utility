@@ -37246,5 +37246,24 @@
     "manager_id": null,
     "hired_at": "2026-08-23T16:49:12.631268Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01777",
+    "full_name": "Gregory Gutierrez",
+    "email": "emp-01777@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-23T17:42:56.141379Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T17:42:56.141379Z",
+    "terminated_at": null
   }
 ]
