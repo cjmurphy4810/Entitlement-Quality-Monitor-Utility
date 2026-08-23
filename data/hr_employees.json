@@ -36774,5 +36774,43 @@
     "manager_id": null,
     "hired_at": "2026-08-23T05:00:00.313880Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01755",
+    "full_name": "Robert Cabrera",
+    "email": "emp-01755@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-23T05:34:06.209135Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T05:34:06.209135Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01756",
+    "full_name": "Abigail Pratt",
+    "email": "emp-01756@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-23T05:34:06.209135Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T05:34:06.209135Z",
+    "terminated_at": null
   }
 ]
