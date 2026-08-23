@@ -3506,5 +3506,15 @@
     "environment": "prod",
     "linked_entitlement_ids": [],
     "description": "Front player for oil."
+  },
+  {
+    "id": "RES-00341",
+    "name": "Brown Ltd",
+    "type": "application",
+    "criticality": "critical",
+    "owner_division": "business_ops",
+    "environment": "dev",
+    "linked_entitlement_ids": [],
+    "description": "Chair economic ready early require."
   }
 ]
