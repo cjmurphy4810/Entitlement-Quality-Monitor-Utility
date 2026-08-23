@@ -37265,5 +37265,43 @@
     "manager_id": null,
     "hired_at": "2026-08-23T17:42:56.141379Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01778",
+    "full_name": "Ruth Jackson",
+    "email": "emp-01778@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-23T18:18:41.512329Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T18:18:41.512329Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01779",
+    "full_name": "Marie Ritter",
+    "email": "emp-01779@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-23T18:18:41.512329Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T18:18:41.512329Z",
+    "terminated_at": null
   }
 ]
