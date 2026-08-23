@@ -37328,5 +37328,24 @@
     "manager_id": null,
     "hired_at": "2026-08-23T18:55:03.305409Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01781",
+    "full_name": "Abigail Ferrell",
+    "email": "emp-01781@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-08-23T19:17:17.755338Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T19:17:17.755338Z",
+    "terminated_at": null
   }
 ]
