@@ -37448,5 +37448,24 @@
     "manager_id": null,
     "hired_at": "2026-08-23T20:45:57.960055Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01787",
+    "full_name": "Thomas Lopez",
+    "email": "emp-01787@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-23T21:14:18.443271Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T21:14:18.443271Z",
+    "terminated_at": null
   }
 ]
