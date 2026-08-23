@@ -37385,5 +37385,24 @@
     "manager_id": null,
     "hired_at": "2026-08-23T19:43:17.314228Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01784",
+    "full_name": "Michael Morgan",
+    "email": "emp-01784@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-23T20:14:14.749100Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T20:14:14.749100Z",
+    "terminated_at": null
   }
 ]
