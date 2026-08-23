@@ -28285,14 +28285,20 @@
     "id": "EMP-01313",
     "full_name": "Jaime Conrad",
     "email": "emp-01313@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-08-08T19:07:29.208455Z",
+        "ended_at": "2026-08-23T16:49:12.631268Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-23T16:49:12.631268Z",
         "ended_at": null
       }
     ],
@@ -37201,6 +37207,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T16:16:40.162710Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01775",
+    "full_name": "Shelley Watson",
+    "email": "emp-01775@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-23T16:49:12.631268Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T16:49:12.631268Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01776",
+    "full_name": "Laurie Hernandez",
+    "email": "emp-01776@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-23T16:49:12.631268Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T16:49:12.631268Z",
     "terminated_at": null
   }
 ]
