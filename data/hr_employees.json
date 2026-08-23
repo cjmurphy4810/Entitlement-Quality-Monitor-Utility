@@ -36698,5 +36698,43 @@
     "manager_id": null,
     "hired_at": "2026-08-22T23:43:27.332619Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01751",
+    "full_name": "Daniel Perez",
+    "email": "emp-01751@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-23T02:21:04.055160Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T02:21:04.055160Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01752",
+    "full_name": "Alexis Vargas",
+    "email": "emp-01752@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-23T02:21:04.055160Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T02:21:04.055160Z",
+    "terminated_at": null
   }
 ]
