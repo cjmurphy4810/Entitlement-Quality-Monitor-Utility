@@ -37006,5 +37006,43 @@
     "manager_id": null,
     "hired_at": "2026-08-23T13:09:10.723829Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01765",
+    "full_name": "Amy Hill DVM",
+    "email": "emp-01765@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-23T13:52:03.507747Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T13:52:03.507747Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01766",
+    "full_name": "Richard Acosta",
+    "email": "emp-01766@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-23T13:52:03.507747Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T13:52:03.507747Z",
+    "terminated_at": null
   }
 ]

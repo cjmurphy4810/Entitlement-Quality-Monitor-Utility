@@ -3041,7 +3041,7 @@
     "id": "ENT-00189",
     "name": "new entitlement ENT-00189",
     "pbl_description": "Provides standard access to a system for authorized users.",
-    "access_tier": 3,
+    "access_tier": 2,
     "acceptable_roles": [
       "operations"
     ],
@@ -3049,7 +3049,7 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-06-13T14:35:44.648168Z",
-    "updated_at": "2026-06-13T14:35:44.648168Z"
+    "updated_at": "2026-08-23T13:52:03.507747Z"
   },
   {
     "id": "ENT-00190",
@@ -8358,5 +8358,21 @@
     "sod_tags": [],
     "created_at": "2026-08-23T11:43:39.005518Z",
     "updated_at": "2026-08-23T11:43:39.005518Z"
+  },
+  {
+    "id": "ENT-00536",
+    "name": "new entitlement ENT-00536",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00097"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-23T13:52:03.507747Z",
+    "updated_at": "2026-08-23T13:52:03.507747Z"
   }
 ]
