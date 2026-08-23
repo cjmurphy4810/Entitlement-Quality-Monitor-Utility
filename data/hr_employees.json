@@ -29474,14 +29474,20 @@
     "id": "EMP-01374",
     "full_name": "Tammie Walker",
     "email": "emp-01374@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-08-10T23:58:25.814505Z",
+        "ended_at": "2026-08-23T20:45:57.960055Z"
+      },
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-23T20:45:57.960055Z",
         "ended_at": null
       }
     ],
@@ -37403,6 +37409,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T20:14:14.749100Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01785",
+    "full_name": "Norman Williams",
+    "email": "emp-01785@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-23T20:45:57.960055Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T20:45:57.960055Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01786",
+    "full_name": "Laura Vaughan",
+    "email": "emp-01786@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-08-23T20:45:57.960055Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T20:45:57.960055Z",
     "terminated_at": null
   }
 ]
