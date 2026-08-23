@@ -37080,14 +37080,20 @@
     "id": "EMP-01768",
     "full_name": "Sarah Jones",
     "email": "emp-01768@example.com",
-    "current_role": "business_user",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_ops",
         "started_at": "2026-08-23T14:16:19.046560Z",
+        "ended_at": "2026-08-23T18:55:03.305409Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-08-23T18:55:03.305409Z",
         "ended_at": null
       }
     ],
@@ -37302,6 +37308,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T18:18:41.512329Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01780",
+    "full_name": "Rebecca Jacobs",
+    "email": "emp-01780@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-08-23T18:55:03.305409Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T18:55:03.305409Z",
     "terminated_at": null
   }
 ]
