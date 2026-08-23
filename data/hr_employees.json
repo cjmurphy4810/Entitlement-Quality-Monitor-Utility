@@ -37347,5 +37347,43 @@
     "manager_id": null,
     "hired_at": "2026-08-23T19:17:17.755338Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01782",
+    "full_name": "Carrie Adams",
+    "email": "emp-01782@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-23T19:43:17.314228Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T19:43:17.314228Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01783",
+    "full_name": "Ross Miller",
+    "email": "emp-01783@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-08-23T19:43:17.314228Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T19:43:17.314228Z",
+    "terminated_at": null
   }
 ]
