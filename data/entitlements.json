@@ -8262,5 +8262,21 @@
     "sod_tags": [],
     "created_at": "2026-08-22T22:45:22.802671Z",
     "updated_at": "2026-08-22T22:45:22.802671Z"
+  },
+  {
+    "id": "ENT-00530",
+    "name": "new entitlement ENT-00530",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00108"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-23T00:55:23.479587Z",
+    "updated_at": "2026-08-23T00:55:23.479587Z"
   }
 ]
