@@ -37044,5 +37044,43 @@
     "manager_id": null,
     "hired_at": "2026-08-23T13:52:03.507747Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01767",
+    "full_name": "Ross Trevino",
+    "email": "emp-01767@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-23T14:16:19.046560Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T14:16:19.046560Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01768",
+    "full_name": "Sarah Jones",
+    "email": "emp-01768@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-23T14:16:19.046560Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T14:16:19.046560Z",
+    "terminated_at": null
   }
 ]
