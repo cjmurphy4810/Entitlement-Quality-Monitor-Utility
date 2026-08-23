@@ -37145,5 +37145,43 @@
     "manager_id": null,
     "hired_at": "2026-08-23T15:14:56.304422Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01772",
+    "full_name": "Benjamin Berg",
+    "email": "emp-01772@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-23T15:44:36.254059Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T15:44:36.254059Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01773",
+    "full_name": "Hunter Conley",
+    "email": "emp-01773@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-23T15:44:36.254059Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T15:44:36.254059Z",
+    "terminated_at": null
   }
 ]
