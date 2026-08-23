@@ -36818,5 +36818,24 @@
     "manager_id": null,
     "hired_at": "2026-08-23T05:34:06.209135Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01757",
+    "full_name": "Mary Shelton",
+    "email": "emp-01757@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-23T07:54:50.436640Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-23T07:54:50.436640Z",
+    "terminated_at": null
   }
 ]
