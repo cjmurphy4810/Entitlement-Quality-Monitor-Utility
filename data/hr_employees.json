@@ -31941,14 +31941,20 @@
     "id": "EMP-01501",
     "full_name": "Destiny Lewis",
     "email": "emp-01501@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-08-15T19:42:55.138388Z",
+        "ended_at": "2026-08-23T06:28:49.411729Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-08-23T06:28:49.411729Z",
         "ended_at": null
       }
     ],
