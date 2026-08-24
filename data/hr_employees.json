@@ -34407,7 +34407,7 @@
     "email": "emp-01625@example.com",
     "current_role": "customer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -34418,7 +34418,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T12:32:12.152519Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-24T12:34:49.164899Z"
   },
   {
     "id": "EMP-01626",
