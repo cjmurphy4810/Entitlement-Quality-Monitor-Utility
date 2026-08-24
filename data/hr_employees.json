@@ -6204,8 +6204,8 @@
     "id": "EMP-00262",
     "full_name": "Anthony Collins",
     "email": "emp-00262@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -6218,6 +6218,12 @@
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-07-03T16:20:49.715849Z",
+        "ended_at": "2026-08-24T00:53:18.050419Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-24T00:53:18.050419Z",
         "ended_at": null
       }
     ],
