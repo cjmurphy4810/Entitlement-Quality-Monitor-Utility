@@ -24073,8 +24073,8 @@
     "id": "EMP-01103",
     "full_name": "Kevin Edwards",
     "email": "emp-01103@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
@@ -24087,6 +24087,12 @@
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-07-26T19:06:03.646573Z",
+        "ended_at": "2026-08-24T04:22:25.084591Z"
+      },
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-08-24T04:22:25.084591Z",
         "ended_at": null
       }
     ],
@@ -31422,7 +31428,7 @@
     "email": "emp-01472@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -31433,7 +31439,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T04:54:38.086920Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-24T04:22:25.084591Z"
   },
   {
     "id": "EMP-01473",
@@ -37560,6 +37566,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-24T03:29:56.309978Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01792",
+    "full_name": "Tara Peterson",
+    "email": "emp-01792@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-24T04:22:25.084591Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T04:22:25.084591Z",
     "terminated_at": null
   }
 ]
