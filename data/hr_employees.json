@@ -37849,5 +37849,24 @@
     "manager_id": null,
     "hired_at": "2026-08-24T18:31:41.855497Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01804",
+    "full_name": "Lisa Thompson",
+    "email": "emp-01804@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-24T19:22:56.570854Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T19:22:56.570854Z",
+    "terminated_at": null
   }
 ]
