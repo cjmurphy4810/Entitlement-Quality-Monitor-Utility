@@ -37523,5 +37523,43 @@
     "manager_id": null,
     "hired_at": "2026-08-23T22:45:13.502773Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01790",
+    "full_name": "Cynthia Stevens",
+    "email": "emp-01790@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-08-24T03:29:56.309978Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T03:29:56.309978Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01791",
+    "full_name": "Stephanie Cummings",
+    "email": "emp-01791@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-24T03:29:56.309978Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T03:29:56.309978Z",
+    "terminated_at": null
   }
 ]
