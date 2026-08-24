@@ -19733,14 +19733,20 @@
     "id": "EMP-00891",
     "full_name": "Mary White",
     "email": "emp-00891@example.com",
-    "current_role": "customer",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "finance",
         "started_at": "2026-07-11T16:47:59.814727Z",
+        "ended_at": "2026-08-24T08:39:29.280245Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-24T08:39:29.280245Z",
         "ended_at": null
       }
     ],
