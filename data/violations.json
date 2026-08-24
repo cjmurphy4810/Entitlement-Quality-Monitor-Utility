@@ -206985,5 +206985,97 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08542",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-24T05:09:32.298366Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03512",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-01670",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00158",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08543",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-24T05:09:34.310464Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03511",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-01666",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00091",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08544",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-24T05:09:34.590243Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01619",
+    "explanation": "Terminated employee EMP-00770 (John Lambert) still holds active assignment ASN-01619.",
+    "evidence": {
+      "employee_id": "EMP-00770",
+      "terminated_at": "2026-08-24T05:09:30.796169+00:00",
+      "entitlement_id": "ENT-00108"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08545",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-24T05:09:34.928425Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03261",
+    "explanation": "Terminated employee EMP-00770 (John Lambert) still holds active assignment ASN-03261.",
+    "evidence": {
+      "employee_id": "EMP-00770",
+      "terminated_at": "2026-08-24T05:09:30.796169+00:00",
+      "entitlement_id": "ENT-00076"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
