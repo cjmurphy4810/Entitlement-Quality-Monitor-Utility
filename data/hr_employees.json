@@ -33489,7 +33489,7 @@
     "email": "emp-01577@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -33500,7 +33500,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T21:48:03.974208Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-24T15:32:34.782355Z"
   },
   {
     "id": "EMP-01578",
@@ -37760,6 +37760,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-24T10:30:42.414872Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01800",
+    "full_name": "Shawn Santos",
+    "email": "emp-01800@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-24T15:32:34.782355Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T15:32:34.782355Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01801",
+    "full_name": "George Campbell",
+    "email": "emp-01801@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-24T15:32:34.782355Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T15:32:34.782355Z",
     "terminated_at": null
   }
 ]
