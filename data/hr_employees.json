@@ -22556,14 +22556,20 @@
     "id": "EMP-01026",
     "full_name": "Crystal Hughes",
     "email": "emp-01026@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-07-19T23:26:00.712560Z",
+        "ended_at": "2026-08-24T17:55:47.249524Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-08-24T17:55:47.249524Z",
         "ended_at": null
       }
     ],
