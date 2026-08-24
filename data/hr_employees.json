@@ -18221,7 +18221,7 @@
     "email": "emp-00817@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -18232,7 +18232,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-05T11:16:46.142735Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-24T22:50:59.308074Z"
   },
   {
     "id": "EMP-00818",
@@ -37930,6 +37930,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-24T20:21:22.938068Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01808",
+    "full_name": "Charlene Mitchell",
+    "email": "emp-01808@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-24T22:50:59.308074Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T22:50:59.308074Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01809",
+    "full_name": "James Jordan",
+    "email": "emp-01809@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-24T22:50:59.308074Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T22:50:59.308074Z",
     "terminated_at": null
   }
 ]
