@@ -207543,5 +207543,80 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08566",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-24T11:20:15.799175Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03522",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-01344",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00127",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08567",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-24T11:20:16.484926Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03523",
+    "explanation": "Terminated employee EMP-00001 (Cynthia Allen) still holds active assignment ASN-03523.",
+    "evidence": {
+      "employee_id": "EMP-00001",
+      "terminated_at": "2026-04-28T17:59:54.913235+00:00",
+      "entitlement_id": "ENT-00020"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08568",
+    "rule_id": "TOX-02",
+    "rule_name": "Dev + Prod-Admin on same application",
+    "severity": "critical",
+    "detected_at": "2026-08-24T11:20:16.513193Z",
+    "target_type": "employee",
+    "target_id": "EMP-00001",
+    "explanation": "Employee holds both Developer Tier-1 and Operations Tier-1 access on resource RES-00010.",
+    "evidence": {
+      "resource_id": "RES-00010",
+      "developer_admin_entitlements": [
+        "ENT-00020"
+      ],
+      "operations_admin_entitlements": [
+        "ENT-00020"
+      ]
+    },
+    "recommended_action": "route_to_compliance",
+    "suggested_fix": {
+      "_action": "compliance_review",
+      "_choices": [
+        "revoke_developer_side",
+        "revoke_operations_side"
+      ]
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

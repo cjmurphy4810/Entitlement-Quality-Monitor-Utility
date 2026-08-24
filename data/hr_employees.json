@@ -23933,14 +23933,20 @@
     "id": "EMP-01095",
     "full_name": "Brian Jones",
     "email": "emp-01095@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-07-24T14:19:01.495588Z",
+        "ended_at": "2026-08-24T11:20:12.035754Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-24T11:20:12.035754Z",
         "ended_at": null
       }
     ],
