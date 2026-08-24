@@ -22852,14 +22852,20 @@
     "id": "EMP-01040",
     "full_name": "Steve Clark",
     "email": "emp-01040@example.com",
-    "current_role": "customer",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "finance",
         "started_at": "2026-07-20T22:52:23.851332Z",
+        "ended_at": "2026-08-24T19:52:13.797246Z"
+      },
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-24T19:52:13.797246Z",
         "ended_at": null
       }
     ],
@@ -25854,7 +25860,7 @@
     "email": "emp-01190@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -25871,7 +25877,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-31T17:22:14.437999Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-24T19:52:13.797246Z"
   },
   {
     "id": "EMP-01191",
@@ -37867,6 +37873,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-24T19:22:56.570854Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01805",
+    "full_name": "Jeffrey Price",
+    "email": "emp-01805@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-24T19:52:13.797246Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T19:52:13.797246Z",
     "terminated_at": null
   }
 ]
