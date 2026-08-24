@@ -32089,7 +32089,7 @@
     "email": "emp-01503@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -32100,7 +32100,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-15T20:14:34.072323Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-24T20:21:22.938068Z"
   },
   {
     "id": "EMP-01504",
@@ -37892,6 +37892,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-24T19:52:13.797246Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01806",
+    "full_name": "Brian Russo",
+    "email": "emp-01806@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-24T20:21:22.938068Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T20:21:22.938068Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01807",
+    "full_name": "Mark Morris",
+    "email": "emp-01807@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-08-24T20:21:22.938068Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-24T20:21:22.938068Z",
     "terminated_at": null
   }
 ]
