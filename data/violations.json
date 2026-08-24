@@ -207125,5 +207125,145 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08548",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-24T07:35:16.234585Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03514",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer', 'customer'].",
+    "evidence": {
+      "employee_id": "EMP-01620",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00015",
+      "acceptable_roles": [
+        "developer",
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08549",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-24T07:35:16.235588Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03515",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-01584",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00525",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08550",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-24T07:35:18.219781Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03514",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-01620",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00015",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08551",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-24T07:35:18.633074Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02463",
+    "explanation": "Terminated employee EMP-00807 (Jillian Gomez) still holds active assignment ASN-02463.",
+    "evidence": {
+      "employee_id": "EMP-00807",
+      "terminated_at": "2026-08-24T07:35:14.798135+00:00",
+      "entitlement_id": "ENT-00310"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08552",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-24T07:35:18.644632Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02510",
+    "explanation": "Terminated employee EMP-00807 (Jillian Gomez) still holds active assignment ASN-02510.",
+    "evidence": {
+      "employee_id": "EMP-00807",
+      "terminated_at": "2026-08-24T07:35:14.798135+00:00",
+      "entitlement_id": "ENT-00171"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08553",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-24T07:35:18.780504Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03136",
+    "explanation": "Terminated employee EMP-00807 (Jillian Gomez) still holds active assignment ASN-03136.",
+    "evidence": {
+      "employee_id": "EMP-00807",
+      "terminated_at": "2026-08-24T07:35:14.798135+00:00",
+      "entitlement_id": "ENT-00221"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
