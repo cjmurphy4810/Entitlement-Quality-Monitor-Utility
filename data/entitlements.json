@@ -8610,5 +8610,21 @@
     "sod_tags": [],
     "created_at": "2026-08-25T19:09:09.065648Z",
     "updated_at": "2026-08-25T19:09:09.065648Z"
+  },
+  {
+    "id": "ENT-00552",
+    "name": "new entitlement ENT-00552",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00024"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-25T21:20:27.068121Z",
+    "updated_at": "2026-08-25T21:20:27.068121Z"
   }
 ]
