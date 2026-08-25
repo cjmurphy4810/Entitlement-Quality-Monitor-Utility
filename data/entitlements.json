@@ -8468,5 +8468,21 @@
     "sod_tags": [],
     "created_at": "2026-08-24T19:22:56.570854Z",
     "updated_at": "2026-08-24T19:22:56.570854Z"
+  },
+  {
+    "id": "ENT-00543",
+    "name": "new entitlement ENT-00543",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [
+      "RES-00248"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-25T04:06:51.546161Z",
+    "updated_at": "2026-08-25T04:06:51.546161Z"
   }
 ]
