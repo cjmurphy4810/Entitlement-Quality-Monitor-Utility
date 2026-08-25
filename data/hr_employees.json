@@ -37969,5 +37969,24 @@
     "manager_id": null,
     "hired_at": "2026-08-24T22:50:59.308074Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01810",
+    "full_name": "Shawn Becker DDS",
+    "email": "emp-01810@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-25T00:53:13.241245Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T00:53:13.241245Z",
+    "terminated_at": null
   }
 ]
