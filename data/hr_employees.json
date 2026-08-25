@@ -13667,14 +13667,20 @@
     "id": "EMP-00603",
     "full_name": "Brittany English",
     "email": "emp-00603@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-06-11T15:42:59.723983Z",
+        "ended_at": "2026-08-25T13:42:35.388816Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-25T13:42:35.388816Z",
         "ended_at": null
       }
     ],
@@ -38156,6 +38162,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-25T12:34:02.588094Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01818",
+    "full_name": "Kevin Henderson PhD",
+    "email": "emp-01818@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-25T13:42:35.388816Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T13:42:35.388816Z",
     "terminated_at": null
   }
 ]
