@@ -16857,8 +16857,8 @@
     "id": "EMP-00751",
     "full_name": "Sean Barnes",
     "email": "emp-00751@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -16871,6 +16871,12 @@
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-08-16T16:48:20.609377Z",
+        "ended_at": "2026-08-25T07:38:09.373935Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-25T07:38:09.373935Z",
         "ended_at": null
       }
     ],
