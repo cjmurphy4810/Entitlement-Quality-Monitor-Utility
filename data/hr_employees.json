@@ -38535,5 +38535,43 @@
     "manager_id": null,
     "hired_at": "2026-08-25T23:19:08.134690Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01836",
+    "full_name": "Madison Bullock",
+    "email": "emp-01836@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-08-25T23:46:42.247595Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T23:46:42.247595Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01837",
+    "full_name": "Tina Mitchell",
+    "email": "emp-01837@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-25T23:46:42.247595Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T23:46:42.247595Z",
+    "terminated_at": null
   }
 ]

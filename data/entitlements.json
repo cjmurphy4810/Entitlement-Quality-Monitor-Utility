@@ -8642,5 +8642,21 @@
     "sod_tags": [],
     "created_at": "2026-08-25T21:50:49.676857Z",
     "updated_at": "2026-08-25T21:50:49.676857Z"
+  },
+  {
+    "id": "ENT-00554",
+    "name": "new entitlement ENT-00554",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00150"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-25T23:46:42.247595Z",
+    "updated_at": "2026-08-25T23:46:42.247595Z"
   }
 ]
