@@ -38201,5 +38201,24 @@
     "manager_id": null,
     "hired_at": "2026-08-25T15:35:30.325917Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01820",
+    "full_name": "Timothy Lopez",
+    "email": "emp-01820@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-25T16:27:49.134518Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T16:27:49.134518Z",
+    "terminated_at": null
   }
 ]
