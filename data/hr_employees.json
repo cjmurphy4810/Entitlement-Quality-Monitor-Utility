@@ -38182,5 +38182,24 @@
     "manager_id": null,
     "hired_at": "2026-08-25T13:42:35.388816Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01819",
+    "full_name": "Kristen Vargas",
+    "email": "emp-01819@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-25T15:35:30.325917Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T15:35:30.325917Z",
+    "terminated_at": null
   }
 ]
