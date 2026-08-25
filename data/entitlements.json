@@ -8516,5 +8516,19 @@
     "sod_tags": [],
     "created_at": "2026-08-25T07:38:09.373935Z",
     "updated_at": "2026-08-25T07:38:09.373935Z"
+  },
+  {
+    "id": "ENT-00546",
+    "name": "new entitlement ENT-00546",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "business_sales",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-25T08:33:35.839980Z",
+    "updated_at": "2026-08-25T08:33:35.839980Z"
   }
 ]
