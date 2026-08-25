@@ -38459,5 +38459,43 @@
     "manager_id": null,
     "hired_at": "2026-08-25T21:50:49.676857Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01832",
+    "full_name": "Bryce Lawson",
+    "email": "emp-01832@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-25T22:19:07.425177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T22:19:07.425177Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01833",
+    "full_name": "Michael Reynolds",
+    "email": "emp-01833@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-25T22:19:07.425177Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T22:19:07.425177Z",
+    "terminated_at": null
   }
 ]
