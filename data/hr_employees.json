@@ -38497,5 +38497,24 @@
     "manager_id": null,
     "hired_at": "2026-08-25T22:19:07.425177Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01834",
+    "full_name": "Robin Myers",
+    "email": "emp-01834@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-08-25T22:52:42.624350Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T22:52:42.624350Z",
+    "terminated_at": null
   }
 ]
