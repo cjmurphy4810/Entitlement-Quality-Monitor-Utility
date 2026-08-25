@@ -38516,5 +38516,24 @@
     "manager_id": null,
     "hired_at": "2026-08-25T22:52:42.624350Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01835",
+    "full_name": "Parker Miller",
+    "email": "emp-01835@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-25T23:19:08.134690Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T23:19:08.134690Z",
+    "terminated_at": null
   }
 ]
