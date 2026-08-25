@@ -8594,5 +8594,21 @@
     "sod_tags": [],
     "created_at": "2026-08-25T17:04:47.083701Z",
     "updated_at": "2026-08-25T17:04:47.083701Z"
+  },
+  {
+    "id": "ENT-00551",
+    "name": "new entitlement ENT-00551",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00010"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-25T19:09:09.065648Z",
+    "updated_at": "2026-08-25T19:09:09.065648Z"
   }
 ]
