@@ -36347,14 +36347,20 @@
     "id": "EMP-01725",
     "full_name": "Stephanie Evans",
     "email": "emp-01725@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-08-22T08:54:56.098701Z",
+        "ended_at": "2026-08-25T03:25:00.334415Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-25T03:25:00.334415Z",
         "ended_at": null
       }
     ],
@@ -37987,6 +37993,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-25T00:53:13.241245Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01811",
+    "full_name": "Erik Adams",
+    "email": "emp-01811@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-25T03:25:00.334415Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T03:25:00.334415Z",
     "terminated_at": null
   }
 ]
