@@ -33808,7 +33808,7 @@
     "email": "emp-01590@example.com",
     "current_role": "operations",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -33819,7 +33819,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T08:27:26.049661Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-25T20:53:26.323793Z"
   },
   {
     "id": "EMP-01591",
@@ -38389,6 +38389,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-25T20:20:27.392570Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01829",
+    "full_name": "Carla Holland",
+    "email": "emp-01829@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-08-25T20:53:26.323793Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T20:53:26.323793Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01830",
+    "full_name": "Tara Haley",
+    "email": "emp-01830@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-25T20:53:26.323793Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T20:53:26.323793Z",
     "terminated_at": null
   }
 ]
