@@ -38264,5 +38264,24 @@
     "manager_id": null,
     "hired_at": "2026-08-25T17:04:47.083701Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01823",
+    "full_name": "Linda Baker",
+    "email": "emp-01823@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-08-25T17:53:42.745847Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T17:53:42.745847Z",
+    "terminated_at": null
   }
 ]
