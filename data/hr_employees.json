@@ -38371,5 +38371,24 @@
     "manager_id": null,
     "hired_at": "2026-08-25T19:53:33.549248Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01828",
+    "full_name": "John Powell",
+    "email": "emp-01828@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-25T20:20:27.392570Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T20:20:27.392570Z",
+    "terminated_at": null
   }
 ]
