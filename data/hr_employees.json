@@ -12304,7 +12304,7 @@
     "email": "emp-00540@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -12315,7 +12315,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-04T13:55:18.999805Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-25T21:50:49.676857Z"
   },
   {
     "id": "EMP-00541",
@@ -27578,14 +27578,20 @@
     "id": "EMP-01272",
     "full_name": "Alisha Williams",
     "email": "emp-01272@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "business_analyst",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-08-07T06:48:16.623187Z",
+        "ended_at": "2026-08-25T21:50:49.676857Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-25T21:50:49.676857Z",
         "ended_at": null
       }
     ],
@@ -38433,6 +38439,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-25T20:53:26.323793Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01831",
+    "full_name": "Kathleen Holt",
+    "email": "emp-01831@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-08-25T21:50:49.676857Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-25T21:50:49.676857Z",
     "terminated_at": null
   }
 ]
