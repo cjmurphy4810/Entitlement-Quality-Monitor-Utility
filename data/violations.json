@@ -215604,5 +215604,299 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08900",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-26T14:37:06.734748Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03662",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-01140",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00505",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08901",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-26T14:37:06.735836Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03663",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00264",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00385",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08902",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-26T14:37:09.024775Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03662",
+    "explanation": "Employee division 'finance' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-01140",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00505",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08903",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-26T14:37:09.026096Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03663",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00264",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00385",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08904",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.043921Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00253",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-00253.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00020"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08905",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.051788Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00365",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-00365.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00046"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08906",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.088717Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00739",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-00739.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00106"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08907",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.143681Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01081",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-01081.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00088"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08908",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.169575Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01233",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-01233.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00182"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08909",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.171858Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01243",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-01243.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00061"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08910",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.231722Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01581",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-01581.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00089"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08911",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.323444Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02060",
+    "explanation": "Terminated employee EMP-00117 (Jamie Nixon) still holds active assignment ASN-02060.",
+    "evidence": {
+      "employee_id": "EMP-00117",
+      "terminated_at": "2026-08-26T14:37:05.093647+00:00",
+      "entitlement_id": "ENT-00111"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08912",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T14:37:09.658570Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03663",
+    "explanation": "Terminated employee EMP-00264 (Debbie Browning) still holds active assignment ASN-03663.",
+    "evidence": {
+      "employee_id": "EMP-00264",
+      "terminated_at": "2026-05-20T13:35:38.532153+00:00",
+      "entitlement_id": "ENT-00385"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

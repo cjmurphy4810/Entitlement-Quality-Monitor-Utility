@@ -2815,7 +2815,7 @@
     "email": "emp-00117@example.com",
     "current_role": "business_user",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -2838,7 +2838,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-29T11:58:30.968763Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-26T14:37:05.093647Z"
   },
   {
     "id": "EMP-00118",
@@ -38829,6 +38829,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-26T11:53:53.079689Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01849",
+    "full_name": "Janice Jones",
+    "email": "emp-01849@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-26T14:37:05.093647Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T14:37:05.093647Z",
     "terminated_at": null
   }
 ]
