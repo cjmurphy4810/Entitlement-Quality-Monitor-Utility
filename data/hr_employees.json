@@ -38761,5 +38761,24 @@
     "manager_id": null,
     "hired_at": "2026-08-26T08:34:52.305809Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01846",
+    "full_name": "Edward Wells",
+    "email": "emp-01846@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-26T09:33:24.032163Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T09:33:24.032163Z",
+    "terminated_at": null
   }
 ]
