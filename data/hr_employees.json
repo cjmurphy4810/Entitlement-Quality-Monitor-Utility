@@ -26631,14 +26631,20 @@
     "id": "EMP-01225",
     "full_name": "James Jarvis",
     "email": "emp-01225@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-08-02T23:27:38.828169Z",
+        "ended_at": "2026-08-26T10:27:46.443566Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-26T10:27:46.443566Z",
         "ended_at": null
       }
     ],
