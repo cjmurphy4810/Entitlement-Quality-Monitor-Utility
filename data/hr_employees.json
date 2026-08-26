@@ -31710,14 +31710,20 @@
     "id": "EMP-01480",
     "full_name": "Tammy Wallace",
     "email": "emp-01480@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-08-15T10:15:43.121222Z",
+        "ended_at": "2026-08-26T05:27:06.865085Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-26T05:27:06.865085Z",
         "ended_at": null
       }
     ],
@@ -38660,6 +38666,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-26T03:31:18.006854Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01842",
+    "full_name": "Danielle Howard",
+    "email": "emp-01842@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-26T05:27:06.865085Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T05:27:06.865085Z",
     "terminated_at": null
   }
 ]
