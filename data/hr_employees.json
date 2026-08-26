@@ -14737,8 +14737,8 @@
     "id": "EMP-00653",
     "full_name": "Matthew Mullen",
     "email": "emp-00653@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "developer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -14751,6 +14751,12 @@
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-08-08T01:14:49.681318Z",
+        "ended_at": "2026-08-26T11:53:53.079689Z"
+      },
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-08-26T11:53:53.079689Z",
         "ended_at": null
       }
     ],
@@ -38804,6 +38810,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-26T11:01:19.347794Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01848",
+    "full_name": "Becky Moreno",
+    "email": "emp-01848@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-26T11:53:53.079689Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T11:53:53.079689Z",
     "terminated_at": null
   }
 ]
