@@ -38598,5 +38598,24 @@
     "manager_id": null,
     "hired_at": "2026-08-26T00:54:11.966069Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01839",
+    "full_name": "Melissa Hays",
+    "email": "emp-01839@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-08-26T02:21:33.013926Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T02:21:33.013926Z",
+    "terminated_at": null
   }
 ]

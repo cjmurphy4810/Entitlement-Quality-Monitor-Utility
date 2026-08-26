@@ -213929,5 +213929,124 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08830",
+    "rule_id": "ENT-Q-03",
+    "rule_name": "Tier vs role coherence",
+    "severity": "high",
+    "detected_at": "2026-08-26T02:21:33.165012Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00556",
+    "explanation": "Tier-1 (Admin) entitlement lists forbidden roles: ['customer']",
+    "evidence": {
+      "access_tier": 1,
+      "acceptable_roles": [
+        "customer"
+      ],
+      "forbidden_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "update_entitlement_field",
+    "suggested_fix": {
+      "acceptable_roles": []
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08831",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-26T02:21:34.859186Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03631",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00147",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00282",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08832",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-26T02:21:37.509790Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03631",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00147",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00282",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08833",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-26T02:21:37.511356Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03632",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-01810",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00184",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08834",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-26T02:21:38.241757Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03631",
+    "explanation": "Terminated employee EMP-00147 (Nancy Bradshaw) still holds active assignment ASN-03631.",
+    "evidence": {
+      "employee_id": "EMP-00147",
+      "terminated_at": "2026-06-07T17:45:55.274529+00:00",
+      "entitlement_id": "ENT-00282"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
