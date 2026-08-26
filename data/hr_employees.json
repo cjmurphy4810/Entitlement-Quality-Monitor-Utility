@@ -26722,7 +26722,7 @@
     "email": "emp-01230@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -26733,7 +26733,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-03T20:42:14.366267Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-26T06:55:01.873535Z"
   },
   {
     "id": "EMP-01231",
@@ -38710,6 +38710,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-26T05:59:22.383427Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01844",
+    "full_name": "Sheryl Becker",
+    "email": "emp-01844@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-08-26T06:55:01.873535Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T06:55:01.873535Z",
     "terminated_at": null
   }
 ]
