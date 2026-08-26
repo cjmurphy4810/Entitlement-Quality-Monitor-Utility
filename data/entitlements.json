@@ -8780,5 +8780,19 @@
     "sod_tags": [],
     "created_at": "2026-08-26T13:48:23.928428Z",
     "updated_at": "2026-08-26T13:48:23.928428Z"
+  },
+  {
+    "id": "ENT-00563",
+    "name": "new entitlement ENT-00563",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-26T18:12:06.672566Z",
+    "updated_at": "2026-08-26T18:12:06.672566Z"
   }
 ]
