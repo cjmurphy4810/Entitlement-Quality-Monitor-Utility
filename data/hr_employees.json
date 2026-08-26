@@ -38880,5 +38880,43 @@
     "manager_id": null,
     "hired_at": "2026-08-26T16:12:07.423591Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01851",
+    "full_name": "Carlos Hull",
+    "email": "emp-01851@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-26T23:56:03.169556Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T23:56:03.169556Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01852",
+    "full_name": "Walter Smith",
+    "email": "emp-01852@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-08-26T23:56:03.169556Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T23:56:03.169556Z",
+    "terminated_at": null
   }
 ]
