@@ -35850,14 +35850,20 @@
     "id": "EMP-01696",
     "full_name": "Tasha Mcknight",
     "email": "emp-01696@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-08-21T15:56:38.043178Z",
+        "ended_at": "2026-08-26T00:54:11.966069Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-08-26T00:54:11.966069Z",
         "ended_at": null
       }
     ],
@@ -38572,6 +38578,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-25T23:46:42.247595Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01838",
+    "full_name": "Janet Chavez",
+    "email": "emp-01838@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-26T00:54:11.966069Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T00:54:11.966069Z",
     "terminated_at": null
   }
 ]
