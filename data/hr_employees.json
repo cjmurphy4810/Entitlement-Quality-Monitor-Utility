@@ -38849,5 +38849,24 @@
     "manager_id": null,
     "hired_at": "2026-08-26T14:37:05.093647Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01850",
+    "full_name": "Donald Reed",
+    "email": "emp-01850@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-08-26T16:12:07.423591Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T16:12:07.423591Z",
+    "terminated_at": null
   }
 ]
