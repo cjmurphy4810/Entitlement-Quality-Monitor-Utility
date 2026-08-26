@@ -36343,7 +36343,7 @@
     "email": "emp-01719@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -36354,7 +36354,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T02:11:59.390686Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-26T11:01:19.347794Z"
   },
   {
     "id": "EMP-01720",
@@ -38785,6 +38785,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-26T09:33:24.032163Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01847",
+    "full_name": "Lauren Nielsen",
+    "email": "emp-01847@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-26T11:01:19.347794Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-26T11:01:19.347794Z",
     "terminated_at": null
   }
 ]
