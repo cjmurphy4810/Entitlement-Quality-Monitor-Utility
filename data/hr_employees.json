@@ -7029,7 +7029,7 @@
     "email": "emp-00299@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7040,7 +7040,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-11T23:52:32.002568Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-27T18:02:59.464214Z"
   },
   {
     "id": "EMP-00300",
@@ -18601,8 +18601,8 @@
     "id": "EMP-00833",
     "full_name": "Steve Sanders",
     "email": "emp-00833@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -18627,6 +18627,12 @@
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-08-25T19:09:09.065648Z",
+        "ended_at": "2026-08-27T18:02:59.464214Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-08-27T18:02:59.464214Z",
         "ended_at": null
       }
     ],
