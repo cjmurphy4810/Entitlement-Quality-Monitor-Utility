@@ -38258,14 +38258,20 @@
     "id": "EMP-01818",
     "full_name": "Kevin Henderson PhD",
     "email": "emp-01818@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-08-25T13:42:35.388816Z",
+        "ended_at": "2026-08-27T06:56:06.656248Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-08-27T06:56:06.656248Z",
         "ended_at": null
       }
     ],
