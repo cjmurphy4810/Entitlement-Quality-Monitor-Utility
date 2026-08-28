@@ -8810,5 +8810,19 @@
     "sod_tags": [],
     "created_at": "2026-08-27T06:56:06.656248Z",
     "updated_at": "2026-08-27T06:56:06.656248Z"
+  },
+  {
+    "id": "ENT-00565",
+    "name": "new entitlement ENT-00565",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-08-28T23:37:28.128850Z",
+    "updated_at": "2026-08-28T23:37:28.128850Z"
   }
 ]

@@ -12963,7 +12963,7 @@
     "email": "emp-00569@example.com",
     "current_role": "business_user",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -12974,7 +12974,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-07T12:57:54.559621Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-28T23:37:28.128850Z"
   },
   {
     "id": "EMP-00570",
@@ -38973,6 +38973,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-28T02:14:39.723445Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01855",
+    "full_name": "Bethany Rodriguez",
+    "email": "emp-01855@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-28T23:37:28.128850Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-28T23:37:28.128850Z",
     "terminated_at": null
   }
 ]
