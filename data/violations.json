@@ -216655,5 +216655,153 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08944",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-28T02:14:41.616310Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03675",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-01065",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00308",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08945",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-28T02:14:41.617682Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03676",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-00553",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00259",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08946",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-28T02:14:41.619014Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03677",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00296",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00288",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08947",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-28T02:14:44.285114Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03675",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01065",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00308",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08948",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-28T02:14:44.286707Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03676",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00553",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00259",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08949",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-28T02:14:44.295131Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01914",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'developer'. Last role change was 2026-07-28T22:32:17.962436+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00430",
+      "current_role": "developer",
+      "prior_roles": [
+        "customer"
+      ],
+      "last_role_change_at": "2026-07-28T22:32:17.962436+00:00",
+      "granted_at": "2026-07-15T23:53:23.180233+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

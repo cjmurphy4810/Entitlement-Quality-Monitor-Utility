@@ -38930,5 +38930,43 @@
     "manager_id": null,
     "hired_at": "2026-08-26T23:56:03.169556Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01853",
+    "full_name": "Blake Carter",
+    "email": "emp-01853@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-28T02:14:39.723445Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-28T02:14:39.723445Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01854",
+    "full_name": "Rebecca Smith",
+    "email": "emp-01854@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-08-28T02:14:39.723445Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-28T02:14:39.723445Z",
+    "terminated_at": null
   }
 ]
