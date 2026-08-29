@@ -5256,8 +5256,8 @@
     "id": "EMP-00220",
     "full_name": "James Peck",
     "email": "emp-00220@example.com",
-    "current_role": "customer",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -5288,6 +5288,12 @@
         "role": "customer",
         "division": "business_dev",
         "started_at": "2026-07-04T18:00:18.803104Z",
+        "ended_at": "2026-08-29T05:06:44.822376Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-08-29T05:06:44.822376Z",
         "ended_at": null
       }
     ],
@@ -38992,6 +38998,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-28T23:37:28.128850Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01856",
+    "full_name": "Deborah Ryan",
+    "email": "emp-01856@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-29T05:06:44.822376Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-29T05:06:44.822376Z",
     "terminated_at": null
   }
 ]
