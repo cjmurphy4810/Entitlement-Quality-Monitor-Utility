@@ -217143,5 +217143,107 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08963",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-29T11:43:48.253331Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03681",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-01083",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00146",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08964",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-29T11:43:50.036107Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03681",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-01083",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00146",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08965",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-29T11:43:50.040403Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01098",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'customer'. Last role change was 2026-07-30T07:52:48.542825+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00524",
+      "current_role": "customer",
+      "prior_roles": [
+        "business_analyst"
+      ],
+      "last_role_change_at": "2026-07-30T07:52:48.542825+00:00",
+      "granted_at": "2026-06-05T14:51:12.161297+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08966",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-29T11:43:50.042377Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01864",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_analyst'. Last role change was 2026-07-30T05:12:08.171810+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00641",
+      "current_role": "business_analyst",
+      "prior_roles": [
+        "developer"
+      ],
+      "last_role_change_at": "2026-07-30T05:12:08.171810+00:00",
+      "granted_at": "2026-07-13T22:53:01.396613+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
