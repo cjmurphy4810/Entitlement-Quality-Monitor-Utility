@@ -217268,5 +217268,131 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-08968",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-08-29T19:27:09.767062Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00567",
+    "explanation": "Entitlement Tier-3 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 3,
+      "offending_resources": [
+        {
+          "id": "RES-00008",
+          "criticality": "high"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08969",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-29T19:27:11.554742Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03683",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00655",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00333",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08970",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-29T19:27:14.269522Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03683",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00655",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00333",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08971",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-29T19:27:14.271135Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03684",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00287",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00037",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-08972",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-29T19:27:14.276468Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01035",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-07-30T17:54:54.920062+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00412",
+      "current_role": "business_user",
+      "prior_roles": [
+        "business_analyst",
+        "customer",
+        "developer"
+      ],
+      "last_role_change_at": "2026-07-30T17:54:54.920062+00:00",
+      "granted_at": "2026-06-01T00:01:56.533656+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

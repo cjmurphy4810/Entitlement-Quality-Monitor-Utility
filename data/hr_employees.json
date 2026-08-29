@@ -39018,5 +39018,43 @@
     "manager_id": null,
     "hired_at": "2026-08-29T05:06:44.822376Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01857",
+    "full_name": "Shawn Velazquez",
+    "email": "emp-01857@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-08-29T19:27:09.635168Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-29T19:27:09.635168Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01858",
+    "full_name": "Ashley Santos",
+    "email": "emp-01858@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-08-29T19:27:09.635168Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-29T19:27:09.635168Z",
+    "terminated_at": null
   }
 ]
