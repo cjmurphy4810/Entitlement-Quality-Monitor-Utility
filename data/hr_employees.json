@@ -892,8 +892,8 @@
     "id": "EMP-00038",
     "full_name": "Dean Santiago",
     "email": "user00038@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -906,6 +906,12 @@
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-04-28T17:59:54.913235Z",
+        "ended_at": "2026-08-29T21:52:07.796448Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-08-29T21:52:07.796448Z",
         "ended_at": null
       }
     ],
@@ -39055,6 +39061,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-29T19:27:09.635168Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01859",
+    "full_name": "Timothy George",
+    "email": "emp-01859@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-29T21:52:07.796448Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-29T21:52:07.796448Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01860",
+    "full_name": "Jason Curtis",
+    "email": "emp-01860@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-08-29T21:52:07.796448Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-29T21:52:07.796448Z",
     "terminated_at": null
   }
 ]
