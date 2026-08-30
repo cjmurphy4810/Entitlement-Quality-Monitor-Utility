@@ -39194,5 +39194,24 @@
     "manager_id": null,
     "hired_at": "2026-08-30T21:19:27.890523Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01865",
+    "full_name": "Pamela Whitaker",
+    "email": "emp-01865@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-08-30T23:39:56.325354Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-30T23:39:56.325354Z",
+    "terminated_at": null
   }
 ]
