@@ -39106,5 +39106,24 @@
     "manager_id": null,
     "hired_at": "2026-08-29T21:52:07.796448Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01861",
+    "full_name": "Jeffrey Johnson",
+    "email": "emp-01861@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-08-30T08:56:04.312479Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-30T08:56:04.312479Z",
+    "terminated_at": null
   }
 ]
