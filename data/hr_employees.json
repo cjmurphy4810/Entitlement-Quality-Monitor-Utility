@@ -10962,14 +10962,20 @@
     "id": "EMP-00478",
     "full_name": "Charles Russell",
     "email": "emp-00478@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-05-28T02:34:57.297721Z",
+        "ended_at": "2026-08-30T02:57:22.669106Z"
+      },
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-30T02:57:22.669106Z",
         "ended_at": null
       }
     ],
@@ -33867,7 +33873,7 @@
     "email": "emp-01589@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -33878,7 +33884,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-18T08:27:26.049661Z",
-    "terminated_at": null
+    "terminated_at": "2026-08-30T02:57:22.669106Z"
   },
   {
     "id": "EMP-01590",
