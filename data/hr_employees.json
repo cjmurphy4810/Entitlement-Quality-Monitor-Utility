@@ -39175,5 +39175,24 @@
     "manager_id": null,
     "hired_at": "2026-08-30T18:07:45.649897Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01864",
+    "full_name": "Melissa Medina",
+    "email": "emp-01864@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-08-30T21:19:27.890523Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-30T21:19:27.890523Z",
+    "terminated_at": null
   }
 ]
