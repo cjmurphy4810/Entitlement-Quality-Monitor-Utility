@@ -33415,14 +33415,20 @@
     "id": "EMP-01565",
     "full_name": "Jennifer Tyler",
     "email": "emp-01565@example.com",
-    "current_role": "operations",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_ops",
         "started_at": "2026-08-17T14:32:02.922729Z",
+        "ended_at": "2026-08-30T18:07:45.649897Z"
+      },
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-08-30T18:07:45.649897Z",
         "ended_at": null
       }
     ],
@@ -39130,6 +39136,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-30T08:56:04.312479Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01862",
+    "full_name": "Robin Bridges",
+    "email": "emp-01862@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-08-30T18:07:45.649897Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-30T18:07:45.649897Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01863",
+    "full_name": "Michael Leblanc",
+    "email": "emp-01863@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-08-30T18:07:45.649897Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-30T18:07:45.649897Z",
     "terminated_at": null
   }
 ]
