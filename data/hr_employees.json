@@ -31517,14 +31517,20 @@
     "id": "EMP-01467",
     "full_name": "Peter Carter",
     "email": "emp-01467@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-08-15T02:10:06.956571Z",
+        "ended_at": "2026-08-31T09:11:00.052052Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-08-31T09:11:00.052052Z",
         "ended_at": null
       }
     ],

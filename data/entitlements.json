@@ -8884,5 +8884,21 @@
     "sod_tags": [],
     "created_at": "2026-08-30T23:39:56.325354Z",
     "updated_at": "2026-08-30T23:39:56.325354Z"
+  },
+  {
+    "id": "ENT-00570",
+    "name": "new entitlement ENT-00570",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00305"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-08-31T09:11:00.052052Z",
+    "updated_at": "2026-08-31T09:11:00.052052Z"
   }
 ]
