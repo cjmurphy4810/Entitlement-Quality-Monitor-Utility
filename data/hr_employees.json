@@ -39219,5 +39219,24 @@
     "manager_id": null,
     "hired_at": "2026-08-30T23:39:56.325354Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01866",
+    "full_name": "Brian Wolfe",
+    "email": "emp-01866@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-08-31T17:09:53.240383Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-31T17:09:53.240383Z",
+    "terminated_at": null
   }
 ]
