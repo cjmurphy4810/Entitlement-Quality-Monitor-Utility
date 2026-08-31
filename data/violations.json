@@ -218793,5 +218793,152 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09030",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-31T21:58:35.591825Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03707",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-01414",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00150",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09031",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-31T21:58:35.593453Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03708",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-01020",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00167",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09032",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-08-31T21:58:35.595046Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03709",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'hr'.",
+    "evidence": {
+      "employee_id": "EMP-01124",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00443",
+      "entitlement_division": "hr"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09033",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-31T21:58:35.596858Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00280",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'developer'. Last role change was 2026-08-01T17:55:50.980130+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00139",
+      "current_role": "developer",
+      "prior_roles": [
+        "business_analyst",
+        "developer"
+      ],
+      "last_role_change_at": "2026-08-01T17:55:50.980130+00:00",
+      "granted_at": "2026-05-01T11:37:13.245875+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09034",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-08-31T21:58:35.597431Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00388",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'developer'. Last role change was 2026-08-01T17:55:50.980130+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00139",
+      "current_role": "developer",
+      "prior_roles": [
+        "business_analyst",
+        "developer"
+      ],
+      "last_role_change_at": "2026-08-01T17:55:50.980130+00:00",
+      "granted_at": "2026-05-04T18:01:42.209527+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09035",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-08-31T21:58:36.359761Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03707",
+    "explanation": "Terminated employee EMP-01414 (Brian Randolph) still holds active assignment ASN-03707.",
+    "evidence": {
+      "employee_id": "EMP-01414",
+      "terminated_at": "2026-08-16T17:42:32.741584+00:00",
+      "entitlement_id": "ENT-00150"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

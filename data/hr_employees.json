@@ -39238,5 +39238,24 @@
     "manager_id": null,
     "hired_at": "2026-08-31T17:09:53.240383Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01867",
+    "full_name": "Donna Glass",
+    "email": "emp-01867@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-08-31T21:58:30.876241Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-08-31T21:58:30.876241Z",
+    "terminated_at": null
   }
 ]
