@@ -18385,14 +18385,20 @@
     "id": "EMP-00821",
     "full_name": "Timothy Williams",
     "email": "emp-00821@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-07-05T15:45:34.023424Z",
+        "ended_at": "2026-09-01T19:07:09.885514Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-09-01T19:07:09.885514Z",
         "ended_at": null
       }
     ],
@@ -39281,6 +39287,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-01T01:02:33.936956Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01869",
+    "full_name": "Darren Livingston",
+    "email": "emp-01869@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-01T19:07:09.885514Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-01T19:07:09.885514Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01870",
+    "full_name": "Amanda Little",
+    "email": "emp-01870@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-09-01T19:07:09.885514Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-01T19:07:09.885514Z",
     "terminated_at": null
   }
 ]
