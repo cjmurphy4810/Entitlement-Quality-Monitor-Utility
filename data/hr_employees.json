@@ -26856,14 +26856,20 @@
     "id": "EMP-01234",
     "full_name": "Tara Thomas",
     "email": "emp-01234@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-08-03T23:33:22.696080Z",
+        "ended_at": "2026-09-01T06:26:37.986241Z"
+      },
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-09-01T06:26:37.986241Z",
         "ended_at": null
       }
     ],
