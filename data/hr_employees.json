@@ -12219,14 +12219,20 @@
     "id": "EMP-00535",
     "full_name": "Amy Sims",
     "email": "emp-00535@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-06-02T21:28:48.707565Z",
+        "ended_at": "2026-09-01T23:43:18.157268Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-01T23:43:18.157268Z",
         "ended_at": null
       }
     ],
