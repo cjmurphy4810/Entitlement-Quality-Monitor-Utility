@@ -39357,5 +39357,24 @@
     "manager_id": null,
     "hired_at": "2026-09-02T02:20:24.238707Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01872",
+    "full_name": "Meredith Mcknight",
+    "email": "emp-01872@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-09-02T12:12:14.829914Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-02T12:12:14.829914Z",
+    "terminated_at": null
   }
 ]
