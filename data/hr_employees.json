@@ -27209,8 +27209,8 @@
     "id": "EMP-01251",
     "full_name": "Patricia Baxter",
     "email": "emp-01251@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -27223,6 +27223,12 @@
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-08-09T01:10:32.433397Z",
+        "ended_at": "2026-09-02T02:20:24.238707Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-09-02T02:20:24.238707Z",
         "ended_at": null
       }
     ],
@@ -39331,6 +39337,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-01T19:07:09.885514Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01871",
+    "full_name": "Kevin Richard",
+    "email": "emp-01871@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-09-02T02:20:24.238707Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-02T02:20:24.238707Z",
     "terminated_at": null
   }
 ]
