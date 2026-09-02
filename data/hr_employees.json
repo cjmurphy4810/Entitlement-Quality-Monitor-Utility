@@ -39376,5 +39376,24 @@
     "manager_id": null,
     "hired_at": "2026-09-02T12:12:14.829914Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01873",
+    "full_name": "Tina Jones",
+    "email": "emp-01873@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-09-02T19:35:28.147925Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-02T19:35:28.147925Z",
+    "terminated_at": null
   }
 ]
