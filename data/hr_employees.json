@@ -39395,5 +39395,24 @@
     "manager_id": null,
     "hired_at": "2026-09-02T19:35:28.147925Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01874",
+    "full_name": "Wanda Pearson",
+    "email": "emp-01874@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-02T22:14:12.635314Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-02T22:14:12.635314Z",
+    "terminated_at": null
   }
 ]
