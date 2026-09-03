@@ -10511,7 +10511,7 @@
     "email": "emp-00457@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -10522,7 +10522,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-25T07:08:42.148326Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-03T20:00:16.065036Z"
   },
   {
     "id": "EMP-00458",
@@ -39482,6 +39482,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-03T17:26:09.615044Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01878",
+    "full_name": "Diane Brown",
+    "email": "emp-01878@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-03T20:00:16.065036Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-03T20:00:16.065036Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01879",
+    "full_name": "Hannah Caldwell",
+    "email": "emp-01879@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-03T20:00:16.065036Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-03T20:00:16.065036Z",
     "terminated_at": null
   }
 ]
