@@ -39521,5 +39521,24 @@
     "manager_id": null,
     "hired_at": "2026-09-03T20:00:16.065036Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01880",
+    "full_name": "Stephanie Landry",
+    "email": "emp-01880@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-09-03T22:27:50.106009Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-03T22:27:50.106009Z",
+    "terminated_at": null
   }
 ]
