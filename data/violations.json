@@ -220599,5 +220599,141 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09105",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-03T00:26:31.640243Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03737",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00127",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00208",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09106",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-03T00:26:33.943065Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03737",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00127",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00208",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09107",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-03T00:26:34.121805Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01443",
+    "explanation": "Terminated employee EMP-00659 (Frank Berry) still holds active assignment ASN-01443.",
+    "evidence": {
+      "employee_id": "EMP-00659",
+      "terminated_at": "2026-09-03T00:26:29.996308+00:00",
+      "entitlement_id": "ENT-00078"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09108",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-03T00:26:34.332581Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02535",
+    "explanation": "Terminated employee EMP-00659 (Frank Berry) still holds active assignment ASN-02535.",
+    "evidence": {
+      "employee_id": "EMP-00659",
+      "terminated_at": "2026-09-03T00:26:29.996308+00:00",
+      "entitlement_id": "ENT-00368"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09109",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-03T00:26:34.450579Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03069",
+    "explanation": "Terminated employee EMP-00659 (Frank Berry) still holds active assignment ASN-03069.",
+    "evidence": {
+      "employee_id": "EMP-00659",
+      "terminated_at": "2026-09-03T00:26:29.996308+00:00",
+      "entitlement_id": "ENT-00168"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09110",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-03T00:26:34.515477Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03380",
+    "explanation": "Terminated employee EMP-00659 (Frank Berry) still holds active assignment ASN-03380.",
+    "evidence": {
+      "employee_id": "EMP-00659",
+      "terminated_at": "2026-09-03T00:26:29.996308+00:00",
+      "entitlement_id": "ENT-00303"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
