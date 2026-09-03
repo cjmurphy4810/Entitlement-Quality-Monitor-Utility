@@ -21088,8 +21088,8 @@
     "id": "EMP-00950",
     "full_name": "Katelyn Bond",
     "email": "emp-00950@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -21114,6 +21114,12 @@
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-08-18T07:31:36.964909Z",
+        "ended_at": "2026-09-03T13:43:06.455761Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-09-03T13:43:06.455761Z",
         "ended_at": null
       }
     ],
@@ -35770,7 +35776,7 @@
     "email": "emp-01686@example.com",
     "current_role": "developer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -35781,7 +35787,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T06:35:55.583330Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-03T13:43:06.455761Z"
   },
   {
     "id": "EMP-01687",
