@@ -39414,5 +39414,43 @@
     "manager_id": null,
     "hired_at": "2026-09-02T22:14:12.635314Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01875",
+    "full_name": "Meredith Chan",
+    "email": "emp-01875@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-09-03T09:22:03.661411Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-03T09:22:03.661411Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01876",
+    "full_name": "Chloe Turner",
+    "email": "emp-01876@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-03T09:22:03.661411Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-03T09:22:03.661411Z",
+    "terminated_at": null
   }
 ]
