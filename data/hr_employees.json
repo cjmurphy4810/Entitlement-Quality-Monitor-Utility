@@ -11792,8 +11792,8 @@
     "id": "EMP-00516",
     "full_name": "Arthur Alvarez",
     "email": "emp-00516@example.com",
-    "current_role": "operations",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -11806,6 +11806,12 @@
         "role": "operations",
         "division": "tech_ops",
         "started_at": "2026-06-06T04:34:06.198707Z",
+        "ended_at": "2026-09-03T17:26:09.615044Z"
+      },
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-09-03T17:26:09.615044Z",
         "ended_at": null
       }
     ],
@@ -39457,6 +39463,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-03T09:22:03.661411Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01877",
+    "full_name": "Tommy Lane",
+    "email": "emp-01877@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-09-03T17:26:09.615044Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-03T17:26:09.615044Z",
     "terminated_at": null
   }
 ]
