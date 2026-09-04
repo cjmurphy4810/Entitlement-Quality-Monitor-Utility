@@ -31390,7 +31390,7 @@
     "email": "emp-01458@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -31401,7 +31401,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T20:02:10.808959Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-04T23:51:02.807866Z"
   },
   {
     "id": "EMP-01459",
@@ -39684,6 +39684,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-04T17:18:59.913863Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01888",
+    "full_name": "Michael Fletcher",
+    "email": "emp-01888@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-04T23:51:02.807866Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-04T23:51:02.807866Z",
     "terminated_at": null
   }
 ]
