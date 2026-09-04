@@ -39603,5 +39603,24 @@
     "manager_id": null,
     "hired_at": "2026-09-04T04:51:46.507939Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01884",
+    "full_name": "Ellen Ross",
+    "email": "emp-01884@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-09-04T09:15:35.482935Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-04T09:15:35.482935Z",
+    "terminated_at": null
   }
 ]
