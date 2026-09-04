@@ -39540,5 +39540,43 @@
     "manager_id": null,
     "hired_at": "2026-09-03T22:27:50.106009Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01881",
+    "full_name": "Mark Hunt",
+    "email": "emp-01881@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-09-04T00:16:18.786323Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-04T00:16:18.786323Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01882",
+    "full_name": "Christina Fisher",
+    "email": "emp-01882@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-09-04T00:16:18.786323Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-04T00:16:18.786323Z",
+    "terminated_at": null
   }
 ]
