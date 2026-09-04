@@ -39666,5 +39666,24 @@
     "manager_id": null,
     "hired_at": "2026-09-04T13:39:57.553170Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01887",
+    "full_name": "Michael Jones",
+    "email": "emp-01887@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-09-04T17:18:59.913863Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-04T17:18:59.913863Z",
+    "terminated_at": null
   }
 ]
