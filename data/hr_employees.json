@@ -39773,5 +39773,24 @@
     "manager_id": null,
     "hired_at": "2026-09-05T11:20:25.524092Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01892",
+    "full_name": "David Mclaughlin",
+    "email": "emp-01892@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-09-05T22:33:34.113522Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-05T22:33:34.113522Z",
+    "terminated_at": null
   }
 ]
