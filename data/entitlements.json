@@ -9050,5 +9050,19 @@
     "sod_tags": [],
     "created_at": "2026-09-05T11:20:25.524092Z",
     "updated_at": "2026-09-05T11:20:25.524092Z"
+  },
+  {
+    "id": "ENT-00581",
+    "name": "new entitlement ENT-00581",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-09-05T13:57:02.302147Z",
+    "updated_at": "2026-09-05T13:57:02.302147Z"
   }
 ]

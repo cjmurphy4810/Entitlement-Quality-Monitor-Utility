@@ -38854,14 +38854,20 @@
     "id": "EMP-01844",
     "full_name": "Sheryl Becker",
     "email": "emp-01844@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-08-26T06:55:01.873535Z",
+        "ended_at": "2026-09-05T13:57:02.302147Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-05T13:57:02.302147Z",
         "ended_at": null
       }
     ],
