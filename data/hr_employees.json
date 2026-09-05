@@ -39742,5 +39742,24 @@
     "manager_id": null,
     "hired_at": "2026-09-05T02:24:09.987488Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01891",
+    "full_name": "Mark Collins",
+    "email": "emp-01891@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-09-05T11:20:25.524092Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-05T11:20:25.524092Z",
+    "terminated_at": null
   }
 ]
