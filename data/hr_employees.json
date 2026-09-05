@@ -38126,14 +38126,20 @@
     "id": "EMP-01806",
     "full_name": "Brian Russo",
     "email": "emp-01806@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-08-24T20:21:22.938068Z",
+        "ended_at": "2026-09-05T20:52:33.413165Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-09-05T20:52:33.413165Z",
         "ended_at": null
       }
     ],
