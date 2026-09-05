@@ -39704,5 +39704,43 @@
     "manager_id": null,
     "hired_at": "2026-09-04T23:51:02.807866Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01889",
+    "full_name": "Victoria Moore",
+    "email": "emp-01889@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-09-05T02:24:09.987488Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-05T02:24:09.987488Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01890",
+    "full_name": "Erin Henry",
+    "email": "emp-01890@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-09-05T02:24:09.987488Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-05T02:24:09.987488Z",
+    "terminated_at": null
   }
 ]
