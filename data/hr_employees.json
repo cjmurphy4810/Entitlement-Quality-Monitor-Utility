@@ -39893,5 +39893,24 @@
     "manager_id": null,
     "hired_at": "2026-09-06T09:10:09.902270Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01898",
+    "full_name": "Samuel Perez",
+    "email": "emp-01898@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-09-06T13:00:43.787214Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T13:00:43.787214Z",
+    "terminated_at": null
   }
 ]
