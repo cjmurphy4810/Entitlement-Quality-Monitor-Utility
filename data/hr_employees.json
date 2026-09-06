@@ -31371,7 +31371,7 @@
     "email": "emp-01457@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -31382,7 +31382,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T19:26:16.458055Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-06T04:57:42.920488Z"
   },
   {
     "id": "EMP-01458",
@@ -39835,6 +39835,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-06T00:28:16.177763Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01895",
+    "full_name": "Jacob Reyes",
+    "email": "emp-01895@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-09-06T04:57:42.920488Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T04:57:42.920488Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01896",
+    "full_name": "Erica Choi",
+    "email": "emp-01896@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-09-06T04:57:42.920488Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T04:57:42.920488Z",
     "terminated_at": null
   }
 ]
