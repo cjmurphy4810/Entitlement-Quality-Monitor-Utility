@@ -39950,5 +39950,24 @@
     "manager_id": null,
     "hired_at": "2026-09-06T16:22:05.574423Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01901",
+    "full_name": "Joseph Smith",
+    "email": "emp-01901@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-09-06T18:28:41.935700Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T18:28:41.935700Z",
+    "terminated_at": null
   }
 ]
