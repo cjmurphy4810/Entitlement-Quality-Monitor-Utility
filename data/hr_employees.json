@@ -39874,5 +39874,24 @@
     "manager_id": null,
     "hired_at": "2026-09-06T04:57:42.920488Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01897",
+    "full_name": "Kimberly Montoya",
+    "email": "emp-01897@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-09-06T09:10:09.902270Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T09:10:09.902270Z",
+    "terminated_at": null
   }
 ]
