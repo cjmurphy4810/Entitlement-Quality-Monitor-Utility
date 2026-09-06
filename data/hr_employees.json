@@ -17529,7 +17529,7 @@
     "email": "emp-00779@example.com",
     "current_role": "business_analyst",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -17540,7 +17540,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-02T19:14:48.417096Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-06T16:22:05.574423Z"
   },
   {
     "id": "EMP-00780",
@@ -39911,6 +39911,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-06T13:00:43.787214Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01899",
+    "full_name": "Denise Frank",
+    "email": "emp-01899@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-09-06T16:22:05.574423Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T16:22:05.574423Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01900",
+    "full_name": "Ricardo Anderson",
+    "email": "emp-01900@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-09-06T16:22:05.574423Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T16:22:05.574423Z",
     "terminated_at": null
   }
 ]
