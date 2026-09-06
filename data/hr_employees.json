@@ -1191,8 +1191,8 @@
     "id": "EMP-00049",
     "full_name": "Brittney Campbell",
     "email": "user00049@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
@@ -1205,6 +1205,12 @@
         "role": "business_analyst",
         "division": "business_sales",
         "started_at": "2026-07-25T22:25:07.977770Z",
+        "ended_at": "2026-09-06T20:41:10.071814Z"
+      },
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-09-06T20:41:10.071814Z",
         "ended_at": null
       }
     ],
@@ -39968,6 +39974,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-06T18:28:41.935700Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01902",
+    "full_name": "Tamara Paul",
+    "email": "emp-01902@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-09-06T20:41:10.071814Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T20:41:10.071814Z",
     "terminated_at": null
   }
 ]
