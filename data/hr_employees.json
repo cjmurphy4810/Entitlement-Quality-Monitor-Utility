@@ -39994,5 +39994,43 @@
     "manager_id": null,
     "hired_at": "2026-09-06T20:41:10.071814Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01903",
+    "full_name": "Marilyn Cunningham",
+    "email": "emp-01903@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-09-06T22:37:31.902050Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T22:37:31.902050Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01904",
+    "full_name": "Elizabeth Hahn",
+    "email": "emp-01904@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-06T22:37:31.902050Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T22:37:31.902050Z",
+    "terminated_at": null
   }
 ]
