@@ -32374,14 +32374,20 @@
     "id": "EMP-01508",
     "full_name": "Randy Rose",
     "email": "emp-01508@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "hr",
         "started_at": "2026-08-15T22:45:09.379438Z",
+        "ended_at": "2026-09-06T00:28:16.177763Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-09-06T00:28:16.177763Z",
         "ended_at": null
       }
     ],
@@ -39780,7 +39786,7 @@
     "email": "emp-01892@example.com",
     "current_role": "customer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -39791,6 +39797,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-05T22:33:34.113522Z",
+    "terminated_at": "2026-09-06T00:28:16.177763Z"
+  },
+  {
+    "id": "EMP-01893",
+    "full_name": "Rodney Day",
+    "email": "emp-01893@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-09-06T00:28:16.177763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T00:28:16.177763Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01894",
+    "full_name": "Anthony Walker",
+    "email": "emp-01894@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-06T00:28:16.177763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-06T00:28:16.177763Z",
     "terminated_at": null
   }
 ]
