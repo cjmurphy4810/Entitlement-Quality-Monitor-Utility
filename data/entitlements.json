@@ -884,7 +884,7 @@
     "id": "ENT-00049",
     "name": "business_dev elevated_ro 49",
     "pbl_description": "Provides elevated read access in Moore-Bernard Application with limited write capability for approved exceptions.",
-    "access_tier": 1,
+    "access_tier": 2,
     "acceptable_roles": [
       "business_user",
       "customer",
@@ -896,7 +896,7 @@
     ],
     "sod_tags": [],
     "created_at": "2025-10-14T04:52:59.501678Z",
-    "updated_at": "2026-08-13T08:18:28.290564Z"
+    "updated_at": "2026-09-07T00:35:34.831912Z"
   },
   {
     "id": "ENT-00050",
