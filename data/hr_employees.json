@@ -40032,5 +40032,43 @@
     "manager_id": null,
     "hired_at": "2026-09-06T22:37:31.902050Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01905",
+    "full_name": "Reginald Rodriguez",
+    "email": "emp-01905@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-09-07T11:16:39.483412Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-07T11:16:39.483412Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01906",
+    "full_name": "Susan Williams",
+    "email": "emp-01906@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-09-07T11:16:39.483412Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-07T11:16:39.483412Z",
+    "terminated_at": null
   }
 ]
