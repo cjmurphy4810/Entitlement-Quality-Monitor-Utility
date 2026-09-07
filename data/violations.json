@@ -224458,5 +224458,118 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09263",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-09-07T16:34:28.436841Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00001",
+    "explanation": "Tier-4 PBL must mention 'read-only'",
+    "evidence": {
+      "access_tier": 4,
+      "pbl_description": "Grants administrator access and full configuration rights to the Rodriguez, Figueroa and Sanchez Application system."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-4 template (read-only + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09264",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-07T16:34:29.329384Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03807",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00937",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00095",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09265",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-07T16:34:30.753941Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03807",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00937",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00095",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09266",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-07T16:34:31.042501Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02936",
+    "explanation": "Terminated employee EMP-01390 (Brett Nelson) still holds active assignment ASN-02936.",
+    "evidence": {
+      "employee_id": "EMP-01390",
+      "terminated_at": "2026-09-07T16:34:28.296942+00:00",
+      "entitlement_id": "ENT-00078"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09267",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-07T16:34:31.124937Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03619",
+    "explanation": "Terminated employee EMP-01390 (Brett Nelson) still holds active assignment ASN-03619.",
+    "evidence": {
+      "employee_id": "EMP-01390",
+      "terminated_at": "2026-09-07T16:34:28.296942+00:00",
+      "entitlement_id": "ENT-00327"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

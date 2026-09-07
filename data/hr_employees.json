@@ -30038,7 +30038,7 @@
     "email": "emp-01390@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -30049,7 +30049,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-11T13:50:43.363185Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-07T16:34:28.296942Z"
   },
   {
     "id": "EMP-01391",
@@ -40069,6 +40069,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-07T11:16:39.483412Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01907",
+    "full_name": "Shannon Wallace",
+    "email": "emp-01907@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-09-07T16:34:28.296942Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-07T16:34:28.296942Z",
     "terminated_at": null
   }
 ]
