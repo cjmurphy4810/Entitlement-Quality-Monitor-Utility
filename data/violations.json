@@ -224571,5 +224571,185 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09268",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-07T20:19:08.824613Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03808",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00596",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00114",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09269",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-07T20:19:11.672542Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03808",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00596",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00114",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09270",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-07T20:19:11.674164Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03809",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-00791",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00565",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09271",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-09-07T20:19:11.677608Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00583",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-08-08T19:07:29.208455+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00058",
+      "current_role": "business_user",
+      "prior_roles": [
+        "operations",
+        "developer",
+        "customer"
+      ],
+      "last_role_change_at": "2026-08-08T19:07:29.208455+00:00",
+      "granted_at": "2026-05-11T20:13:48.353659+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09272",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-09-07T20:19:11.680354Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01115",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-08-08T19:07:29.208455+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00058",
+      "current_role": "business_user",
+      "prior_roles": [
+        "operations",
+        "developer",
+        "customer"
+      ],
+      "last_role_change_at": "2026-08-08T19:07:29.208455+00:00",
+      "granted_at": "2026-06-06T11:27:37.859564+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09273",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-09-07T20:19:11.684486Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02419",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'business_user'. Last role change was 2026-08-08T19:07:29.208455+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00058",
+      "current_role": "business_user",
+      "prior_roles": [
+        "operations",
+        "developer",
+        "customer"
+      ],
+      "last_role_change_at": "2026-08-08T19:07:29.208455+00:00",
+      "granted_at": "2026-08-03T22:01:28.592499+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09274",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-07T20:19:12.467204Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03808",
+    "explanation": "Terminated employee EMP-00596 (Laura Davies MD) still holds active assignment ASN-03808.",
+    "evidence": {
+      "employee_id": "EMP-00596",
+      "terminated_at": "2026-07-24T08:13:10.655165+00:00",
+      "entitlement_id": "ENT-00114"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

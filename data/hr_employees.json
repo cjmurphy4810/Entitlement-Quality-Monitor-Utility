@@ -40089,5 +40089,43 @@
     "manager_id": null,
     "hired_at": "2026-09-07T16:34:28.296942Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01908",
+    "full_name": "Joshua Carrillo",
+    "email": "emp-01908@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-07T20:19:06.798357Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-07T20:19:06.798357Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01909",
+    "full_name": "Mallory Bernard",
+    "email": "emp-01909@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-09-07T20:19:06.798357Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-07T20:19:06.798357Z",
+    "terminated_at": null
   }
 ]
