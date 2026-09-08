@@ -40259,5 +40259,24 @@
     "manager_id": null,
     "hired_at": "2026-09-08T10:24:12.022926Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01916",
+    "full_name": "Charles Davis",
+    "email": "emp-01916@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-08T14:40:39.331136Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-08T14:40:39.331136Z",
+    "terminated_at": null
   }
 ]
