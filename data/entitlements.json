@@ -9110,5 +9110,19 @@
     "sod_tags": [],
     "created_at": "2026-09-08T14:40:39.331136Z",
     "updated_at": "2026-09-08T14:40:39.331136Z"
+  },
+  {
+    "id": "ENT-00585",
+    "name": "new entitlement ENT-00585",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-09-08T21:17:37.997120Z",
+    "updated_at": "2026-09-08T21:17:37.997120Z"
   }
 ]
