@@ -11031,14 +11031,20 @@
     "id": "EMP-00481",
     "full_name": "Joyce Moody",
     "email": "emp-00481@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_dev",
         "started_at": "2026-05-28T10:51:07.214425Z",
+        "ended_at": "2026-09-08T05:31:30.364945Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-09-08T05:31:30.364945Z",
         "ended_at": null
       }
     ],
@@ -40170,6 +40176,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-08T00:52:50.580442Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01912",
+    "full_name": "Wanda Marshall",
+    "email": "emp-01912@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-09-08T05:31:30.364945Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-08T05:31:30.364945Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01913",
+    "full_name": "Allison Fisher",
+    "email": "emp-01913@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-09-08T05:31:30.364945Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-08T05:31:30.364945Z",
     "terminated_at": null
   }
 ]
