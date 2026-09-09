@@ -226090,5 +226090,128 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09330",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-09T06:16:22.403434Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03826",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00640",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00434",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09331",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-09T06:16:22.404466Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03827",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-01321",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00259",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09332",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-09T06:16:24.501484Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03826",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-00640",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00434",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09333",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-09T06:16:24.502686Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03827",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-01321",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00259",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09334",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-09-09T06:16:24.511039Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01884",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-08-10T03:23:15.462779+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00763",
+      "current_role": "operations",
+      "prior_roles": [
+        "business_user"
+      ],
+      "last_role_change_at": "2026-08-10T03:23:15.462779+00:00",
+      "granted_at": "2026-07-14T17:39:09.598151+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
