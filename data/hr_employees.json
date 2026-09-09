@@ -40441,5 +40441,43 @@
     "manager_id": null,
     "hired_at": "2026-09-09T18:59:01.523103Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01924",
+    "full_name": "Laura Vazquez",
+    "email": "emp-01924@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-09-09T21:32:24.038391Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-09T21:32:24.038391Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01925",
+    "full_name": "Erica Sandoval",
+    "email": "emp-01925@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-09T21:32:24.038391Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-09T21:32:24.038391Z",
+    "terminated_at": null
   }
 ]
