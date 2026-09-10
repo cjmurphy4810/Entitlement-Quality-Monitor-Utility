@@ -40599,5 +40599,24 @@
     "manager_id": null,
     "hired_at": "2026-09-10T19:24:47.469882Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01932",
+    "full_name": "Andrea Fernandez",
+    "email": "emp-01932@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-09-10T21:43:47.782273Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-10T21:43:47.782273Z",
+    "terminated_at": null
   }
 ]
