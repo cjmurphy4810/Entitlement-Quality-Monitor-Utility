@@ -40351,14 +40351,20 @@
     "id": "EMP-01919",
     "full_name": "Rebecca Porter",
     "email": "emp-01919@example.com",
-    "current_role": "customer",
-    "current_division": "hr",
+    "current_role": "developer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "hr",
         "started_at": "2026-09-09T11:38:51.857630Z",
+        "ended_at": "2026-09-10T16:49:30.703520Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-09-10T16:49:30.703520Z",
         "ended_at": null
       }
     ],
