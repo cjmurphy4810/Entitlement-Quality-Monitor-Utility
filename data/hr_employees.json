@@ -29183,7 +29183,7 @@
     "email": "emp-01345@example.com",
     "current_role": "business_analyst",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -29194,7 +29194,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-09T18:34:59.343447Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-10T02:32:18.711020Z"
   },
   {
     "id": "EMP-01346",
@@ -40516,6 +40516,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-09T23:44:29.287625Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01928",
+    "full_name": "Mark Neal",
+    "email": "emp-01928@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-09-10T02:32:18.711020Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-10T02:32:18.711020Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01929",
+    "full_name": "Jennifer Smith",
+    "email": "emp-01929@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-10T02:32:18.711020Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-10T02:32:18.711020Z",
     "terminated_at": null
   }
 ]
