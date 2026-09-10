@@ -40561,5 +40561,43 @@
     "manager_id": null,
     "hired_at": "2026-09-10T02:32:18.711020Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01930",
+    "full_name": "Dawn Thompson",
+    "email": "emp-01930@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-09-10T19:24:47.469882Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-10T19:24:47.469882Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01931",
+    "full_name": "Barry Davis",
+    "email": "emp-01931@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-09-10T19:24:47.469882Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-10T19:24:47.469882Z",
+    "terminated_at": null
   }
 ]
