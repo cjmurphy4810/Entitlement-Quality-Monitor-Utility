@@ -9977,7 +9977,7 @@
     "email": "emp-00433@example.com",
     "current_role": "developer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -9994,7 +9994,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-23T14:46:57.722936Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-11T23:46:05.671417Z"
   },
   {
     "id": "EMP-00434",
@@ -40743,6 +40743,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-11T21:49:08.853868Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01939",
+    "full_name": "Brian Armstrong",
+    "email": "emp-01939@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-09-11T23:46:05.671417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-11T23:46:05.671417Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01940",
+    "full_name": "Rebecca Robinson",
+    "email": "emp-01940@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-09-11T23:46:05.671417Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-11T23:46:05.671417Z",
     "terminated_at": null
   }
 ]
