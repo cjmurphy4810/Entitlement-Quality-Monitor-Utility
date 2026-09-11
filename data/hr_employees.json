@@ -23837,7 +23837,7 @@
     "email": "emp-01081@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -23848,7 +23848,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T11:46:42.845161Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-11T02:26:41.365071Z"
   },
   {
     "id": "EMP-01082",
@@ -40661,6 +40661,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-10T23:36:40.772839Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01935",
+    "full_name": "Miss Nicole Gray",
+    "email": "emp-01935@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-11T02:26:41.365071Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-11T02:26:41.365071Z",
     "terminated_at": null
   }
 ]
