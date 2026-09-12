@@ -35928,14 +35928,20 @@
     "id": "EMP-01690",
     "full_name": "Mrs. Jessica Barton MD",
     "email": "emp-01690@example.com",
-    "current_role": "operations",
-    "current_division": "business_dev",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_dev",
         "started_at": "2026-08-21T10:55:40.281143Z",
+        "ended_at": "2026-09-12T11:52:21.452977Z"
+      },
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-12T11:52:21.452977Z",
         "ended_at": null
       }
     ],
@@ -40806,6 +40812,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-12T02:34:21.187865Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01942",
+    "full_name": "Jill Robinson",
+    "email": "emp-01942@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-09-12T11:52:21.452977Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-12T11:52:21.452977Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01943",
+    "full_name": "Howard Bell",
+    "email": "emp-01943@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-09-12T11:52:21.452977Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-12T11:52:21.452977Z",
     "terminated_at": null
   }
 ]
