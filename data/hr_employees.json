@@ -13871,14 +13871,20 @@
     "id": "EMP-00609",
     "full_name": "Danielle Alvarez",
     "email": "emp-00609@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-06-11T23:04:49.696852Z",
+        "ended_at": "2026-09-12T22:02:53.981718Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-09-12T22:02:53.981718Z",
         "ended_at": null
       }
     ],
@@ -40926,6 +40932,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-12T17:36:20.272385Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01948",
+    "full_name": "Christina Logan",
+    "email": "emp-01948@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-09-12T22:02:53.981718Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-12T22:02:53.981718Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01949",
+    "full_name": "Alex Evans",
+    "email": "emp-01949@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-12T22:02:53.981718Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-12T22:02:53.981718Z",
     "terminated_at": null
   }
 ]
