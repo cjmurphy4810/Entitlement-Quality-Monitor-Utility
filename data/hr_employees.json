@@ -40889,5 +40889,43 @@
     "manager_id": null,
     "hired_at": "2026-09-12T14:47:20.951404Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01946",
+    "full_name": "Amber Ellis",
+    "email": "emp-01946@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-09-12T17:36:20.272385Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-12T17:36:20.272385Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01947",
+    "full_name": "Julia Lee",
+    "email": "emp-01947@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-09-12T17:36:20.272385Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-12T17:36:20.272385Z",
+    "terminated_at": null
   }
 ]
