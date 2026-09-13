@@ -9232,5 +9232,21 @@
     "sod_tags": [],
     "created_at": "2026-09-13T10:25:38.041766Z",
     "updated_at": "2026-09-13T10:25:38.041766Z"
+  },
+  {
+    "id": "ENT-00593",
+    "name": "new entitlement ENT-00593",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00234"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-09-13T17:49:26.729592Z",
+    "updated_at": "2026-09-13T17:49:26.729592Z"
   }
 ]

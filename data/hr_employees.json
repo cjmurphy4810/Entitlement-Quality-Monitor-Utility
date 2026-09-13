@@ -41040,5 +41040,43 @@
     "manager_id": null,
     "hired_at": "2026-09-13T14:31:03.981007Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01953",
+    "full_name": "Rhonda Gentry",
+    "email": "emp-01953@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-09-13T17:49:26.729592Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-13T17:49:26.729592Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01954",
+    "full_name": "William Johnson",
+    "email": "emp-01954@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-09-13T17:49:26.729592Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-13T17:49:26.729592Z",
+    "terminated_at": null
   }
 ]
