@@ -3371,7 +3371,7 @@
     "email": "emp-00139@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -3394,7 +3394,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-01T06:10:36.182711Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-13T22:30:16.264540Z"
   },
   {
     "id": "EMP-00140",
@@ -36470,14 +36470,20 @@
     "id": "EMP-01716",
     "full_name": "Jacqueline Woodard",
     "email": "emp-01716@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-08-21T23:45:59.038459Z",
+        "ended_at": "2026-09-13T22:30:16.264540Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-09-13T22:30:16.264540Z",
         "ended_at": null
       }
     ],
