@@ -6744,7 +6744,7 @@
     "email": "emp-00284@example.com",
     "current_role": "business_analyst",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -6755,7 +6755,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-10T14:34:58.218426Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-13T00:05:59.178838Z"
   },
   {
     "id": "EMP-00285",
@@ -35453,14 +35453,20 @@
     "id": "EMP-01665",
     "full_name": "Brooke Vaughn",
     "email": "emp-01665@example.com",
-    "current_role": "business_user",
-    "current_division": "cyber_tech",
+    "current_role": "operations",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "cyber_tech",
         "started_at": "2026-08-20T18:28:29.560477Z",
+        "ended_at": "2026-09-13T00:05:59.178838Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-09-13T00:05:59.178838Z",
         "ended_at": null
       }
     ],
@@ -40970,6 +40976,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-12T22:02:53.981718Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01950",
+    "full_name": "Franklin Fisher",
+    "email": "emp-01950@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-09-13T00:05:59.178838Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-13T00:05:59.178838Z",
     "terminated_at": null
   }
 ]
