@@ -41078,5 +41078,43 @@
     "manager_id": null,
     "hired_at": "2026-09-13T17:49:26.729592Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01955",
+    "full_name": "Christopher Watson",
+    "email": "emp-01955@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-09-13T20:06:02.337146Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-13T20:06:02.337146Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01956",
+    "full_name": "Suzanne Lynch",
+    "email": "emp-01956@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-09-13T20:06:02.337146Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-13T20:06:02.337146Z",
+    "terminated_at": null
   }
 ]
