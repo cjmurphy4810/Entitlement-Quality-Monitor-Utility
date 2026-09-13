@@ -8566,8 +8566,8 @@
     "id": "EMP-00368",
     "full_name": "Stephanie Pacheco",
     "email": "emp-00368@example.com",
-    "current_role": "business_analyst",
-    "current_division": "hr",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -8580,6 +8580,12 @@
         "role": "business_analyst",
         "division": "hr",
         "started_at": "2026-08-08T23:52:46.795752Z",
+        "ended_at": "2026-09-13T14:31:03.981007Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-09-13T14:31:03.981007Z",
         "ended_at": null
       }
     ],
@@ -40995,6 +41001,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-13T00:05:59.178838Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01951",
+    "full_name": "Carol Dominguez",
+    "email": "emp-01951@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-09-13T14:31:03.981007Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-13T14:31:03.981007Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01952",
+    "full_name": "Edward Lawson",
+    "email": "emp-01952@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-09-13T14:31:03.981007Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-13T14:31:03.981007Z",
     "terminated_at": null
   }
 ]
