@@ -41166,5 +41166,43 @@
     "manager_id": null,
     "hired_at": "2026-09-14T00:21:30.786885Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01959",
+    "full_name": "Scott Stone",
+    "email": "emp-01959@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-09-14T10:50:56.442312Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-14T10:50:56.442312Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01960",
+    "full_name": "Ashley Barajas DDS",
+    "email": "emp-01960@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-09-14T10:50:56.442312Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-14T10:50:56.442312Z",
+    "terminated_at": null
   }
 ]

@@ -230816,5 +230816,126 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09523",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-14T10:50:57.865603Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03902",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-01732",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00239",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09524",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-14T10:50:59.967698Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03902",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01732",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00239",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09525",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-14T10:50:59.968857Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03903",
+    "explanation": "Employee division 'business_ops' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01386",
+      "employee_division": "business_ops",
+      "entitlement_id": "ENT-00011",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09526",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-14T10:50:59.970032Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03904",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-01638",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00365",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09527",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-09-14T10:50:59.976008Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01239",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'developer'. Last role change was 2026-08-15T07:05:33.929164+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00592",
+      "current_role": "developer",
+      "prior_roles": [
+        "business_user"
+      ],
+      "last_role_change_at": "2026-08-15T07:05:33.929164+00:00",
+      "granted_at": "2026-06-13T00:15:07.604597+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
