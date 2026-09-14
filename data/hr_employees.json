@@ -17078,14 +17078,20 @@
     "id": "EMP-00756",
     "full_name": "Malik Roberson",
     "email": "emp-00756@example.com",
-    "current_role": "business_user",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "legal_compliance",
         "started_at": "2026-06-29T17:31:13.010607Z",
+        "ended_at": "2026-09-14T00:21:30.786885Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-09-14T00:21:30.786885Z",
         "ended_at": null
       }
     ],
@@ -41121,6 +41127,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-13T20:06:02.337146Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01957",
+    "full_name": "Mrs. Patricia Rodgers",
+    "email": "emp-01957@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-09-14T00:21:30.786885Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-14T00:21:30.786885Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01958",
+    "full_name": "Kristen Jones",
+    "email": "emp-01958@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-09-14T00:21:30.786885Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-14T00:21:30.786885Z",
     "terminated_at": null
   }
 ]
