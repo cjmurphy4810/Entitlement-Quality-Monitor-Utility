@@ -231322,5 +231322,165 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09543",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-15T02:56:49.367614Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03913",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00818",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00314",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09544",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-15T02:56:51.846759Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03911",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01632",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00140",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09545",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-15T02:56:51.848119Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03912",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00155",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00087",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09546",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-15T02:56:51.849480Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03913",
+    "explanation": "Employee division 'finance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00818",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00314",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09547",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-15T02:56:52.388287Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03182",
+    "explanation": "Terminated employee EMP-01205 (Christopher Haley) still holds active assignment ASN-03182.",
+    "evidence": {
+      "employee_id": "EMP-01205",
+      "terminated_at": "2026-09-15T02:56:47.606213+00:00",
+      "entitlement_id": "ENT-00308"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09548",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-15T02:56:52.533665Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03892",
+    "explanation": "Terminated employee EMP-01205 (Christopher Haley) still holds active assignment ASN-03892.",
+    "evidence": {
+      "employee_id": "EMP-01205",
+      "terminated_at": "2026-09-15T02:56:47.606213+00:00",
+      "entitlement_id": "ENT-00135"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09549",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-15T02:56:52.535117Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03913",
+    "explanation": "Terminated employee EMP-00818 (Brian Vargas) still holds active assignment ASN-03913.",
+    "evidence": {
+      "employee_id": "EMP-00818",
+      "terminated_at": "2026-07-18T03:50:21.587194+00:00",
+      "entitlement_id": "ENT-00314"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

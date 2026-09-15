@@ -26373,7 +26373,7 @@
     "email": "emp-01205@example.com",
     "current_role": "business_user",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -26384,7 +26384,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-01T17:55:50.980130Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-15T02:56:47.606213Z"
   },
   {
     "id": "EMP-01206",
@@ -41253,6 +41253,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-14T20:42:28.254662Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01963",
+    "full_name": "Michele Ford",
+    "email": "emp-01963@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-09-15T02:56:47.606213Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-15T02:56:47.606213Z",
     "terminated_at": null
   }
 ]
