@@ -17748,7 +17748,7 @@
     "email": "emp-00788@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -17759,7 +17759,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-03T12:04:34.269349Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-15T13:44:09.953787Z"
   },
   {
     "id": "EMP-00789",
@@ -41272,6 +41272,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-15T02:56:47.606213Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01964",
+    "full_name": "Angela Weiss",
+    "email": "emp-01964@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-09-15T13:44:09.953787Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-15T13:44:09.953787Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01965",
+    "full_name": "Stanley Forbes",
+    "email": "emp-01965@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-09-15T13:44:09.953787Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-15T13:44:09.953787Z",
     "terminated_at": null
   }
 ]

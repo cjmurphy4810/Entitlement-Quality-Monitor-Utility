@@ -9280,5 +9280,19 @@
     "sod_tags": [],
     "created_at": "2026-09-14T23:38:51.136305Z",
     "updated_at": "2026-09-14T23:38:51.136305Z"
+  },
+  {
+    "id": "ENT-00596",
+    "name": "new entitlement ENT-00596",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-09-15T13:44:09.953787Z",
+    "updated_at": "2026-09-15T13:44:09.953787Z"
   }
 ]
