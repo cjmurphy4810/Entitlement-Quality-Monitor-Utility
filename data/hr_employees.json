@@ -41330,5 +41330,43 @@
     "manager_id": null,
     "hired_at": "2026-09-15T17:51:56.382272Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01967",
+    "full_name": "Donald Woods",
+    "email": "emp-01967@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-09-15T23:20:51.723160Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-15T23:20:51.723160Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01968",
+    "full_name": "Alexandria Middleton",
+    "email": "emp-01968@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-09-15T23:20:51.723160Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-15T23:20:51.723160Z",
+    "terminated_at": null
   }
 ]
