@@ -41311,5 +41311,24 @@
     "manager_id": null,
     "hired_at": "2026-09-15T13:44:09.953787Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01966",
+    "full_name": "Amy Lloyd",
+    "email": "emp-01966@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-09-15T17:51:56.382272Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-15T17:51:56.382272Z",
+    "terminated_at": null
   }
 ]

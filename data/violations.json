@@ -231746,5 +231746,75 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09561",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-15T17:51:58.134308Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03918",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-00106",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00214",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09562",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-15T17:52:00.631781Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03918",
+    "explanation": "Employee division 'hr' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00106",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00214",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09563",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-15T17:52:01.323409Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03918",
+    "explanation": "Terminated employee EMP-00106 (Laura Lopez) still holds active assignment ASN-03918.",
+    "evidence": {
+      "employee_id": "EMP-00106",
+      "terminated_at": "2026-05-07T10:38:56.595201+00:00",
+      "entitlement_id": "ENT-00214"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
