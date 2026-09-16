@@ -9294,5 +9294,19 @@
     "sod_tags": [],
     "created_at": "2026-09-15T13:44:09.953787Z",
     "updated_at": "2026-09-15T13:44:09.953787Z"
+  },
+  {
+    "id": "ENT-00597",
+    "name": "new entitlement ENT-00597",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-09-16T17:24:29.323673Z",
+    "updated_at": "2026-09-16T17:24:29.323673Z"
   }
 ]

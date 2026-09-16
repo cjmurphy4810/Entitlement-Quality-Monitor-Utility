@@ -7481,7 +7481,7 @@
     "email": "emp-00319@example.com",
     "current_role": "developer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -7492,7 +7492,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-14T12:22:52.241804Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-16T17:24:29.323673Z"
   },
   {
     "id": "EMP-00320",
@@ -41430,6 +41430,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-16T12:40:54.096858Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01972",
+    "full_name": "Teresa Thomas",
+    "email": "emp-01972@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-09-16T17:24:29.323673Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-16T17:24:29.323673Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01973",
+    "full_name": "Samuel Levine",
+    "email": "emp-01973@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-09-16T17:24:29.323673Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-16T17:24:29.323673Z",
     "terminated_at": null
   }
 ]
