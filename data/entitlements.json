@@ -4407,7 +4407,7 @@
     "id": "ENT-00278",
     "name": "new entitlement ENT-00278",
     "pbl_description": "Provides administrator access to a system for authorized users.",
-    "access_tier": 1,
+    "access_tier": 3,
     "acceptable_roles": [
       "customer"
     ],
@@ -4417,7 +4417,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-07-12T16:51:55.649714Z",
-    "updated_at": "2026-07-12T16:51:55.649714Z"
+    "updated_at": "2026-09-16T23:06:14.915158Z"
   },
   {
     "id": "ENT-00279",
@@ -9308,5 +9308,21 @@
     "sod_tags": [],
     "created_at": "2026-09-16T17:24:29.323673Z",
     "updated_at": "2026-09-16T17:24:29.323673Z"
+  },
+  {
+    "id": "ENT-00598",
+    "name": "new entitlement ENT-00598",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00358"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-09-16T23:06:14.915158Z",
+    "updated_at": "2026-09-16T23:06:14.915158Z"
   }
 ]
