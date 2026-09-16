@@ -41469,5 +41469,43 @@
     "manager_id": null,
     "hired_at": "2026-09-16T17:24:29.323673Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01974",
+    "full_name": "Terri Henry",
+    "email": "emp-01974@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-09-16T20:18:22.072872Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-16T20:18:22.072872Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01975",
+    "full_name": "James Jackson",
+    "email": "emp-01975@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-09-16T20:18:22.072872Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-16T20:18:22.072872Z",
+    "terminated_at": null
   }
 ]
