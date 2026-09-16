@@ -41368,5 +41368,24 @@
     "manager_id": null,
     "hired_at": "2026-09-15T23:20:51.723160Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01969",
+    "full_name": "Brenda Hayes",
+    "email": "emp-01969@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-09-16T01:30:20.010000Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-16T01:30:20.010000Z",
+    "terminated_at": null
   }
 ]
