@@ -30935,14 +30935,20 @@
     "id": "EMP-01431",
     "full_name": "Jason Long",
     "email": "emp-01431@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2026-08-13T11:41:35.353810Z",
+        "ended_at": "2026-09-16T07:04:03.435061Z"
+      },
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-16T07:04:03.435061Z",
         "ended_at": null
       }
     ],
@@ -41386,6 +41392,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-16T01:30:20.010000Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01970",
+    "full_name": "Kelly Williams",
+    "email": "emp-01970@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-09-16T07:04:03.435061Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-16T07:04:03.435061Z",
     "terminated_at": null
   }
 ]
