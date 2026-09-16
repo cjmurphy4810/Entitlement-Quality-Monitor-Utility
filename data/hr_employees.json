@@ -41412,5 +41412,24 @@
     "manager_id": null,
     "hired_at": "2026-09-16T07:04:03.435061Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01971",
+    "full_name": "Kristy Vaughn",
+    "email": "emp-01971@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-16T12:40:54.096858Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-16T12:40:54.096858Z",
+    "terminated_at": null
   }
 ]
