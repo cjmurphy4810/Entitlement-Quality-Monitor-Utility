@@ -41526,5 +41526,24 @@
     "manager_id": null,
     "hired_at": "2026-09-16T23:06:14.915158Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01977",
+    "full_name": "Brenda Clark",
+    "email": "emp-01977@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-09-17T01:33:52.376941Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-17T01:33:52.376941Z",
+    "terminated_at": null
   }
 ]
