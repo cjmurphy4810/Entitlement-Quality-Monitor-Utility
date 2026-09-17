@@ -36588,14 +36588,20 @@
     "id": "EMP-01720",
     "full_name": "Danielle Moore",
     "email": "emp-01720@example.com",
-    "current_role": "business_user",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_ops",
         "started_at": "2026-08-22T02:11:59.390686Z",
+        "ended_at": "2026-09-17T20:27:09.420882Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-09-17T20:27:09.420882Z",
         "ended_at": null
       }
     ],
@@ -41645,6 +41651,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-17T17:13:04.089417Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01983",
+    "full_name": "Luis Obrien",
+    "email": "emp-01983@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-09-17T20:27:09.420882Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-17T20:27:09.420882Z",
     "terminated_at": null
   }
 ]
