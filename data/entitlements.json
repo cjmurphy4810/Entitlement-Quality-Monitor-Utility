@@ -9338,5 +9338,21 @@
     "sod_tags": [],
     "created_at": "2026-09-17T12:30:08.682681Z",
     "updated_at": "2026-09-17T12:30:08.682681Z"
+  },
+  {
+    "id": "ENT-00600",
+    "name": "new entitlement ENT-00600",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00319"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-09-17T17:13:04.089417Z",
+    "updated_at": "2026-09-17T17:13:04.089417Z"
   }
 ]
