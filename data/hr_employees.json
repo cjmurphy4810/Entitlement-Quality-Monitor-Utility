@@ -24018,7 +24018,7 @@
     "email": "emp-01088@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -24029,7 +24029,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-23T23:54:17.595153Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-17T06:59:32.963626Z"
   },
   {
     "id": "EMP-01089",
@@ -36090,8 +36090,8 @@
     "id": "EMP-01696",
     "full_name": "Tasha Mcknight",
     "email": "emp-01696@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -36110,6 +36110,12 @@
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-08-26T05:59:22.383427Z",
+        "ended_at": "2026-09-17T06:59:32.963626Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-17T06:59:32.963626Z",
         "ended_at": null
       }
     ],
@@ -41544,6 +41550,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-17T01:33:52.376941Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01978",
+    "full_name": "Suzanne Ward",
+    "email": "emp-01978@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-09-17T06:59:32.963626Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-17T06:59:32.963626Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01979",
+    "full_name": "Kathleen Ingram",
+    "email": "emp-01979@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-09-17T06:59:32.963626Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-17T06:59:32.963626Z",
     "terminated_at": null
   }
 ]
