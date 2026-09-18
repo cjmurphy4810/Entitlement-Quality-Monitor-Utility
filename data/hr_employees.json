@@ -20379,8 +20379,8 @@
     "id": "EMP-00913",
     "full_name": "Katrina Hernandez",
     "email": "emp-00913@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -20393,6 +20393,12 @@
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-07-18T05:59:30.590504Z",
+        "ended_at": "2026-09-18T11:33:57.112091Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-09-18T11:33:57.112091Z",
         "ended_at": null
       }
     ],
