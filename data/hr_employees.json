@@ -38503,14 +38503,20 @@
     "id": "EMP-01817",
     "full_name": "Peter Martinez",
     "email": "emp-01817@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "customer",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-08-25T12:34:02.588094Z",
+        "ended_at": "2026-09-18T21:22:23.186936Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-09-18T21:22:23.186936Z",
         "ended_at": null
       }
     ],
