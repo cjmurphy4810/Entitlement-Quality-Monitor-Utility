@@ -41771,5 +41771,24 @@
     "manager_id": null,
     "hired_at": "2026-09-18T15:35:57.112684Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01988",
+    "full_name": "Christopher Young",
+    "email": "emp-01988@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-09-18T18:47:03.680494Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-18T18:47:03.680494Z",
+    "terminated_at": null
   }
 ]
