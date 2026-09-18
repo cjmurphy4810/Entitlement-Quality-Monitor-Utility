@@ -41752,5 +41752,24 @@
     "manager_id": null,
     "hired_at": "2026-09-18T06:11:59.658729Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01987",
+    "full_name": "Kim Payne",
+    "email": "emp-01987@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-09-18T15:35:57.112684Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-18T15:35:57.112684Z",
+    "terminated_at": null
   }
 ]
