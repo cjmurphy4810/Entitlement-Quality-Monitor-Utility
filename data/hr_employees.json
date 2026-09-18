@@ -21136,8 +21136,8 @@
     "id": "EMP-00950",
     "full_name": "Katelyn Bond",
     "email": "emp-00950@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -21168,6 +21168,12 @@
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-09-03T13:43:06.455761Z",
+        "ended_at": "2026-09-18T06:11:59.658729Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-09-18T06:11:59.658729Z",
         "ended_at": null
       }
     ],
@@ -35877,7 +35883,7 @@
     "email": "emp-01685@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -35888,7 +35894,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T06:35:55.583330Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-18T06:11:59.658729Z"
   },
   {
     "id": "EMP-01686",
@@ -41701,6 +41707,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-17T22:58:30.232543Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01985",
+    "full_name": "Destiny Nunez",
+    "email": "emp-01985@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-09-18T06:11:59.658729Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-18T06:11:59.658729Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01986",
+    "full_name": "Carmen Williams",
+    "email": "emp-01986@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-09-18T06:11:59.658729Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-18T06:11:59.658729Z",
     "terminated_at": null
   }
 ]
