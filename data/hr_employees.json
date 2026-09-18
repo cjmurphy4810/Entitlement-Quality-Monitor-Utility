@@ -39092,14 +39092,20 @@
     "id": "EMP-01848",
     "full_name": "Becky Moreno",
     "email": "emp-01848@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-08-26T11:53:53.079689Z",
+        "ended_at": "2026-09-18T01:05:38.349664Z"
+      },
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-18T01:05:38.349664Z",
         "ended_at": null
       }
     ],
