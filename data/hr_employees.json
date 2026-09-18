@@ -41796,5 +41796,24 @@
     "manager_id": null,
     "hired_at": "2026-09-18T18:47:03.680494Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01989",
+    "full_name": "Diane James",
+    "email": "emp-01989@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-09-18T23:25:37.336693Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-18T23:25:37.336693Z",
+    "terminated_at": null
   }
 ]
