@@ -14880,7 +14880,7 @@
     "email": "emp-00656@example.com",
     "current_role": "business_user",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -14897,7 +14897,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-18T23:15:41.643437Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-19T01:21:33.370474Z"
   },
   {
     "id": "EMP-00657",
@@ -41814,6 +41814,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-18T23:25:37.336693Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01990",
+    "full_name": "David Carr",
+    "email": "emp-01990@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-09-19T01:21:33.370474Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-19T01:21:33.370474Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01991",
+    "full_name": "David Rogers",
+    "email": "emp-01991@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-09-19T01:21:33.370474Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-19T01:21:33.370474Z",
     "terminated_at": null
   }
 ]

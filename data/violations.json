@@ -234667,5 +234667,164 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-09679",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-19T01:21:34.440203Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03964",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-01568",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00294",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09680",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-19T01:21:36.018699Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03964",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-01568",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00294",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09681",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-19T01:21:36.019801Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03965",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00586",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00403",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09682",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-19T01:21:36.157304Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01359",
+    "explanation": "Terminated employee EMP-00656 (Brian Jackson) still holds active assignment ASN-01359.",
+    "evidence": {
+      "employee_id": "EMP-00656",
+      "terminated_at": "2026-09-19T01:21:33.370474+00:00",
+      "entitlement_id": "ENT-00205"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09683",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-19T01:21:36.157502Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01360",
+    "explanation": "Terminated employee EMP-00656 (Brian Jackson) still holds active assignment ASN-01360.",
+    "evidence": {
+      "employee_id": "EMP-00656",
+      "terminated_at": "2026-09-19T01:21:33.370474+00:00",
+      "entitlement_id": "ENT-00145"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09684",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-19T01:21:36.194093Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01704",
+    "explanation": "Terminated employee EMP-00656 (Brian Jackson) still holds active assignment ASN-01704.",
+    "evidence": {
+      "employee_id": "EMP-00656",
+      "terminated_at": "2026-09-19T01:21:33.370474+00:00",
+      "entitlement_id": "ENT-00062"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09685",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-19T01:21:36.209950Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01849",
+    "explanation": "Terminated employee EMP-00656 (Brian Jackson) still holds active assignment ASN-01849.",
+    "evidence": {
+      "employee_id": "EMP-00656",
+      "terminated_at": "2026-09-19T01:21:33.370474+00:00",
+      "entitlement_id": "ENT-00236"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
