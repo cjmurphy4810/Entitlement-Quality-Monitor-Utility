@@ -41853,5 +41853,43 @@
     "manager_id": null,
     "hired_at": "2026-09-19T01:21:33.370474Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01992",
+    "full_name": "Lisa Martinez",
+    "email": "emp-01992@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-09-19T11:17:08.188867Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-19T11:17:08.188867Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01993",
+    "full_name": "Heidi Thomas",
+    "email": "emp-01993@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-09-19T11:17:08.188867Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-19T11:17:08.188867Z",
+    "terminated_at": null
   }
 ]
