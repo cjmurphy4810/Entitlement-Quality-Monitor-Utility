@@ -20304,8 +20304,8 @@
     "id": "EMP-00910",
     "full_name": "Tracy King",
     "email": "emp-00910@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -20318,6 +20318,12 @@
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-08-17T08:35:01.747396Z",
+        "ended_at": "2026-09-19T14:35:04.094346Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-09-19T14:35:04.094346Z",
         "ended_at": null
       }
     ],
@@ -41890,6 +41896,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-19T11:17:08.188867Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01994",
+    "full_name": "Rachel Lucas",
+    "email": "emp-01994@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-09-19T14:35:04.094346Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-19T14:35:04.094346Z",
     "terminated_at": null
   }
 ]
