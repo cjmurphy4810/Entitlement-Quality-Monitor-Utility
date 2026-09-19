@@ -20910,7 +20910,7 @@
     "email": "emp-00938@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -20921,7 +20921,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-14T20:36:08.217952Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-19T19:52:32.417213Z"
   },
   {
     "id": "EMP-00939",
@@ -41940,6 +41940,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-19T17:39:20.671502Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01996",
+    "full_name": "Michael Dickerson",
+    "email": "emp-01996@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-09-19T19:52:32.417213Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-19T19:52:32.417213Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-01997",
+    "full_name": "Robert Lee",
+    "email": "emp-01997@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-09-19T19:52:32.417213Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-19T19:52:32.417213Z",
     "terminated_at": null
   }
 ]
