@@ -36656,14 +36656,20 @@
     "id": "EMP-01722",
     "full_name": "Lindsey Miller",
     "email": "emp-01722@example.com",
-    "current_role": "operations",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_ops",
         "started_at": "2026-08-22T07:52:54.575145Z",
+        "ended_at": "2026-09-20T22:05:32.534858Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-20T22:05:32.534858Z",
         "ended_at": null
       }
     ],
@@ -42092,6 +42098,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-20T17:12:55.243024Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02004",
+    "full_name": "Catherine White",
+    "email": "emp-02004@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-20T22:05:32.534858Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-20T22:05:32.534858Z",
     "terminated_at": null
   }
 ]
