@@ -42074,5 +42074,24 @@
     "manager_id": null,
     "hired_at": "2026-09-20T13:51:36.327383Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02003",
+    "full_name": "Darren Walker DVM",
+    "email": "emp-02003@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-09-20T17:12:55.243024Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-20T17:12:55.243024Z",
+    "terminated_at": null
   }
 ]
