@@ -41998,5 +41998,43 @@
     "manager_id": null,
     "hired_at": "2026-09-20T05:07:14.722795Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01999",
+    "full_name": "Maria Guerrero",
+    "email": "emp-01999@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-09-20T09:55:05.132072Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-20T09:55:05.132072Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02000",
+    "full_name": "Richard Martinez",
+    "email": "emp-02000@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-09-20T09:55:05.132072Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-20T09:55:05.132072Z",
+    "terminated_at": null
   }
 ]
