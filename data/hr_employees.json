@@ -42036,5 +42036,43 @@
     "manager_id": null,
     "hired_at": "2026-09-20T09:55:05.132072Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02001",
+    "full_name": "Thomas Calhoun",
+    "email": "emp-02001@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-09-20T13:51:36.327383Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-20T13:51:36.327383Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02002",
+    "full_name": "Paige Jones",
+    "email": "emp-02002@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-09-20T13:51:36.327383Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-20T13:51:36.327383Z",
+    "terminated_at": null
   }
 ]
