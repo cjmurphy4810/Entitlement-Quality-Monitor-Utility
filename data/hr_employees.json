@@ -41979,5 +41979,24 @@
     "manager_id": null,
     "hired_at": "2026-09-19T19:52:32.417213Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-01998",
+    "full_name": "Clayton Jones",
+    "email": "emp-01998@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-09-20T05:07:14.722795Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-20T05:07:14.722795Z",
+    "terminated_at": null
   }
 ]
