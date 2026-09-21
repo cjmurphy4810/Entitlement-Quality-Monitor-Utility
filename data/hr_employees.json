@@ -42181,5 +42181,43 @@
     "manager_id": null,
     "hired_at": "2026-09-21T10:55:04.157922Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02008",
+    "full_name": "Jared Chavez",
+    "email": "emp-02008@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-09-21T16:43:43.878362Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T16:43:43.878362Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02009",
+    "full_name": "Julia Leon",
+    "email": "emp-02009@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-09-21T16:43:43.878362Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T16:43:43.878362Z",
+    "terminated_at": null
   }
 ]
