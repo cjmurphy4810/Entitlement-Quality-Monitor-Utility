@@ -42124,5 +42124,43 @@
     "manager_id": null,
     "hired_at": "2026-09-20T22:05:32.534858Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02005",
+    "full_name": "Karen Dominguez",
+    "email": "emp-02005@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-09-21T05:12:36.374378Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T05:12:36.374378Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02006",
+    "full_name": "Robert Green Jr.",
+    "email": "emp-02006@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-09-21T05:12:36.374378Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T05:12:36.374378Z",
+    "terminated_at": null
   }
 ]
