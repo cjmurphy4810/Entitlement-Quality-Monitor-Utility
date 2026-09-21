@@ -42219,5 +42219,24 @@
     "manager_id": null,
     "hired_at": "2026-09-21T16:43:43.878362Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02010",
+    "full_name": "Laurie Williams",
+    "email": "emp-02010@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-21T20:43:18.510008Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T20:43:18.510008Z",
+    "terminated_at": null
   }
 ]
