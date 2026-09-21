@@ -13394,7 +13394,7 @@
     "email": "emp-00586@example.com",
     "current_role": "business_user",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -13411,7 +13411,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-09T02:33:19.661190Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-21T23:45:22.033026Z"
   },
   {
     "id": "EMP-00587",
@@ -42237,6 +42237,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-21T20:43:18.510008Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02011",
+    "full_name": "Nicole Duffy",
+    "email": "emp-02011@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-09-21T23:45:22.033026Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T23:45:22.033026Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02012",
+    "full_name": "Robert Bryan",
+    "email": "emp-02012@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-21T23:45:22.033026Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T23:45:22.033026Z",
     "terminated_at": null
   }
 ]
