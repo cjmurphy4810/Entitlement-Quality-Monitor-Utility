@@ -42162,5 +42162,24 @@
     "manager_id": null,
     "hired_at": "2026-09-21T05:12:36.374378Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02007",
+    "full_name": "Jill Ellis",
+    "email": "emp-02007@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-09-21T10:55:04.157922Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-21T10:55:04.157922Z",
+    "terminated_at": null
   }
 ]
