@@ -8091,7 +8091,7 @@
     "email": "emp-00347@example.com",
     "current_role": "developer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -8108,7 +8108,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-16T13:08:14.615000Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-22T08:08:08.441282Z"
   },
   {
     "id": "EMP-00348",
@@ -42300,6 +42300,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-22T02:47:15.949874Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02014",
+    "full_name": "Steven Newman",
+    "email": "emp-02014@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-09-22T08:08:08.441282Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-22T08:08:08.441282Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02015",
+    "full_name": "Wendy King",
+    "email": "emp-02015@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-09-22T08:08:08.441282Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-22T08:08:08.441282Z",
     "terminated_at": null
   }
 ]
