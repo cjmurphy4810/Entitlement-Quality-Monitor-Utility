@@ -42383,5 +42383,43 @@
     "manager_id": null,
     "hired_at": "2026-09-22T13:32:15.641888Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02018",
+    "full_name": "Wendy Lewis",
+    "email": "emp-02018@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-09-22T20:44:03.217048Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-22T20:44:03.217048Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02019",
+    "full_name": "Wesley Torres",
+    "email": "emp-02019@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-09-22T20:44:03.217048Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-22T20:44:03.217048Z",
+    "terminated_at": null
   }
 ]
