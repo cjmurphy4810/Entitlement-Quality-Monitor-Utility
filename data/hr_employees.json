@@ -36435,14 +36435,20 @@
     "id": "EMP-01711",
     "full_name": "Karen Martin",
     "email": "emp-01711@example.com",
-    "current_role": "operations",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "cyber_tech",
         "started_at": "2026-08-21T21:17:00.964175Z",
+        "ended_at": "2026-09-22T02:47:15.949874Z"
+      },
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-09-22T02:47:15.949874Z",
         "ended_at": null
       }
     ],
@@ -42275,6 +42281,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-21T23:45:22.033026Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02013",
+    "full_name": "James Huff",
+    "email": "emp-02013@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-22T02:47:15.949874Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-22T02:47:15.949874Z",
     "terminated_at": null
   }
 ]
