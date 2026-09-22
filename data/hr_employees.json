@@ -19989,14 +19989,20 @@
     "id": "EMP-00895",
     "full_name": "Amanda Ford",
     "email": "emp-00895@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-07-11T22:12:06.366743Z",
+        "ended_at": "2026-09-22T13:32:15.641888Z"
+      },
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-09-22T13:32:15.641888Z",
         "ended_at": null
       }
     ],
@@ -39275,7 +39281,7 @@
     "email": "emp-01855@example.com",
     "current_role": "operations",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -39286,7 +39292,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-28T23:37:28.128850Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-22T13:32:15.641888Z"
   },
   {
     "id": "EMP-01856",
@@ -42338,6 +42344,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-22T08:08:08.441282Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02016",
+    "full_name": "Patricia Briggs",
+    "email": "emp-02016@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-09-22T13:32:15.641888Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-22T13:32:15.641888Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02017",
+    "full_name": "William Mcfarland",
+    "email": "emp-02017@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-09-22T13:32:15.641888Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-22T13:32:15.641888Z",
     "terminated_at": null
   }
 ]
