@@ -31238,7 +31238,7 @@
     "email": "emp-01444@example.com",
     "current_role": "customer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -31249,7 +31249,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T01:19:35.633429Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-23T20:56:30.870059Z"
   },
   {
     "id": "EMP-01445",
@@ -42489,6 +42489,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-23T17:38:06.096728Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02023",
+    "full_name": "Jenny Montes",
+    "email": "emp-02023@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-09-23T20:56:30.870059Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-23T20:56:30.870059Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02024",
+    "full_name": "John Flores",
+    "email": "emp-02024@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-09-23T20:56:30.870059Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-23T20:56:30.870059Z",
     "terminated_at": null
   }
 ]
