@@ -42528,5 +42528,43 @@
     "manager_id": null,
     "hired_at": "2026-09-23T20:56:30.870059Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02025",
+    "full_name": "Derek Benson",
+    "email": "emp-02025@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-09-23T23:24:47.439342Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-23T23:24:47.439342Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02026",
+    "full_name": "Tara Fowler",
+    "email": "emp-02026@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-09-23T23:24:47.439342Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-23T23:24:47.439342Z",
+    "terminated_at": null
   }
 ]
