@@ -36113,14 +36113,20 @@
     "id": "EMP-01695",
     "full_name": "John Gonzalez",
     "email": "emp-01695@example.com",
-    "current_role": "operations",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "business_dev",
         "started_at": "2026-08-21T14:27:11.871973Z",
+        "ended_at": "2026-09-23T07:07:29.877808Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-23T07:07:29.877808Z",
         "ended_at": null
       }
     ],
