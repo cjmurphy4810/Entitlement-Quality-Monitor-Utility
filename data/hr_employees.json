@@ -42471,5 +42471,24 @@
     "manager_id": null,
     "hired_at": "2026-09-23T12:51:13.287635Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02022",
+    "full_name": "Lisa Poole",
+    "email": "emp-02022@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-09-23T17:38:06.096728Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-23T17:38:06.096728Z",
+    "terminated_at": null
   }
 ]
