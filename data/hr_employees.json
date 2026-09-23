@@ -42452,5 +42452,24 @@
     "manager_id": null,
     "hired_at": "2026-09-22T23:24:24.601669Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02021",
+    "full_name": "Bryan Lang",
+    "email": "emp-02021@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-09-23T12:51:13.287635Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-23T12:51:13.287635Z",
+    "terminated_at": null
   }
 ]
