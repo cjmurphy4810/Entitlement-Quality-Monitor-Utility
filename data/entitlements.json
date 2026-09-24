@@ -9508,5 +9508,21 @@
     "sod_tags": [],
     "created_at": "2026-09-24T01:34:02.228868Z",
     "updated_at": "2026-09-24T01:34:02.228868Z"
+  },
+  {
+    "id": "ENT-00611",
+    "name": "new entitlement ENT-00611",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "business_dev",
+    "linked_resource_ids": [
+      "RES-00066"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-09-24T23:56:02.872849Z",
+    "updated_at": "2026-09-24T23:56:02.872849Z"
   }
 ]

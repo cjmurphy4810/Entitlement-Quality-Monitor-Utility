@@ -42642,5 +42642,24 @@
     "manager_id": null,
     "hired_at": "2026-09-24T17:41:13.226746Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02031",
+    "full_name": "John Ramos",
+    "email": "emp-02031@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-09-24T23:56:02.872849Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-24T23:56:02.872849Z",
+    "terminated_at": null
   }
 ]
