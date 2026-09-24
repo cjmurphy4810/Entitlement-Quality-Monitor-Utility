@@ -42623,5 +42623,24 @@
     "manager_id": null,
     "hired_at": "2026-09-24T07:02:16.834366Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02030",
+    "full_name": "Claudia Wright",
+    "email": "emp-02030@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-09-24T17:41:13.226746Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-24T17:41:13.226746Z",
+    "terminated_at": null
   }
 ]
