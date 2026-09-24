@@ -42566,5 +42566,43 @@
     "manager_id": null,
     "hired_at": "2026-09-23T23:24:47.439342Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02027",
+    "full_name": "Michael Stewart",
+    "email": "emp-02027@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-09-24T01:34:02.228868Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-24T01:34:02.228868Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02028",
+    "full_name": "Kyle Rangel",
+    "email": "emp-02028@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-09-24T01:34:02.228868Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-24T01:34:02.228868Z",
+    "terminated_at": null
   }
 ]
