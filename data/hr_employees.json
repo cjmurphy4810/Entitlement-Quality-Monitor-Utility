@@ -30424,7 +30424,7 @@
     "email": "emp-01404@example.com",
     "current_role": "business_user",
     "current_division": "finance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -30435,7 +30435,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-12T01:18:44.425372Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-24T07:02:16.834366Z"
   },
   {
     "id": "EMP-01405",
@@ -42603,6 +42603,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-24T01:34:02.228868Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02029",
+    "full_name": "Laurie Richardson",
+    "email": "emp-02029@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-24T07:02:16.834366Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-24T07:02:16.834366Z",
     "terminated_at": null
   }
 ]
