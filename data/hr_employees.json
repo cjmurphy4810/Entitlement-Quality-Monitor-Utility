@@ -19201,8 +19201,8 @@
     "id": "EMP-00857",
     "full_name": "Anne Sherman",
     "email": "emp-00857@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
@@ -19215,6 +19215,12 @@
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-08-15T16:48:14.019685Z",
+        "ended_at": "2026-09-25T08:58:50.275866Z"
+      },
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-25T08:58:50.275866Z",
         "ended_at": null
       }
     ],
@@ -42660,6 +42666,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-24T23:56:02.872849Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02032",
+    "full_name": "Douglas Deleon",
+    "email": "emp-02032@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-09-25T08:58:50.275866Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-25T08:58:50.275866Z",
     "terminated_at": null
   }
 ]
