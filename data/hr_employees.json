@@ -1160,8 +1160,8 @@
     "id": "EMP-00048",
     "full_name": "Deborah Preston",
     "email": "user00048@example.com",
-    "current_role": "operations",
-    "current_division": "business_dev",
+    "current_role": "business_user",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -1180,6 +1180,12 @@
         "role": "operations",
         "division": "business_dev",
         "started_at": "2026-08-07T21:32:25.901138Z",
+        "ended_at": "2026-09-25T18:48:37.131045Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-09-25T18:48:37.131045Z",
         "ended_at": null
       }
     ],
@@ -42704,6 +42710,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-25T14:28:45.219581Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02034",
+    "full_name": "Bryan Preston",
+    "email": "emp-02034@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-09-25T18:48:37.131045Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-25T18:48:37.131045Z",
     "terminated_at": null
   }
 ]
