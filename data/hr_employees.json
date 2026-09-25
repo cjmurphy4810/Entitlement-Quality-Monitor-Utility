@@ -42686,5 +42686,24 @@
     "manager_id": null,
     "hired_at": "2026-09-25T08:58:50.275866Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02033",
+    "full_name": "Patricia Thomas",
+    "email": "emp-02033@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-09-25T14:28:45.219581Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-25T14:28:45.219581Z",
+    "terminated_at": null
   }
 ]

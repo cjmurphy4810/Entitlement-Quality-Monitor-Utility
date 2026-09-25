@@ -224072,8 +224072,17 @@
       "_action": "compliance_review",
       "_note": "Reduce Tier-1 footprint to \u22642 divisions"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-09-25T14:28:51.780862Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -240304,6 +240313,104 @@
       ],
       "last_role_change_at": "2026-08-26T07:40:04.639676+00:00",
       "granted_at": "2026-07-23T07:02:41.901329+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09914",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-09-25T14:28:45.337686Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00337",
+    "explanation": "Entitlement Tier-4 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 4,
+      "offending_resources": [
+        {
+          "id": "RES-00046",
+          "criticality": "critical"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09915",
+    "rule_id": "ENT-Q-02",
+    "rule_name": "PBL template match",
+    "severity": "medium",
+    "detected_at": "2026-09-25T14:28:45.357222Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00337",
+    "explanation": "Tier-4 PBL must mention 'read-only'",
+    "evidence": {
+      "access_tier": 4,
+      "pbl_description": "Provides administrator access to a system for authorized users."
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "pbl_description": "[Owner \u2014 rewrite to match Tier-4 template (read-only + system name).]"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09916",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-25T14:28:50.799095Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04045",
+    "explanation": "Employee division 'finance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01533",
+      "employee_division": "finance",
+      "entitlement_id": "ENT-00181",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-09917",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-09-25T14:28:50.811161Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01666",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'developer'. Last role change was 2026-08-26T11:53:53.079689+00:00.",
+    "evidence": {
+      "employee_id": "EMP-00653",
+      "current_role": "developer",
+      "prior_roles": [
+        "business_user",
+        "business_analyst"
+      ],
+      "last_role_change_at": "2026-08-26T11:53:53.079689+00:00",
+      "granted_at": "2026-07-05T18:35:01.729898+00:00"
     },
     "recommended_action": "route_to_user_manager",
     "suggested_fix": {
