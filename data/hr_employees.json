@@ -42774,5 +42774,24 @@
     "manager_id": null,
     "hired_at": "2026-09-26T00:18:55.488383Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02037",
+    "full_name": "Henry Fox",
+    "email": "emp-02037@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-09-26T05:15:27.409787Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T05:15:27.409787Z",
+    "terminated_at": null
   }
 ]
