@@ -38088,14 +38088,20 @@
     "id": "EMP-01792",
     "full_name": "Tara Peterson",
     "email": "emp-01792@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_dev",
         "started_at": "2026-08-24T04:22:25.084591Z",
+        "ended_at": "2026-09-26T21:21:31.907763Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-09-26T21:21:31.907763Z",
         "ended_at": null
       }
     ],
@@ -42855,6 +42861,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-26T18:13:17.289677Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02041",
+    "full_name": "Deborah Perkins",
+    "email": "emp-02041@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-09-26T21:21:31.907763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T21:21:31.907763Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02042",
+    "full_name": "Cheryl Villanueva",
+    "email": "emp-02042@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-09-26T21:21:31.907763Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T21:21:31.907763Z",
     "terminated_at": null
   }
 ]
