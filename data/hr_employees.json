@@ -31300,7 +31300,7 @@
     "email": "emp-01446@example.com",
     "current_role": "customer",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -31311,7 +31311,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-14T03:35:42.146134Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-26T23:43:01.709260Z"
   },
   {
     "id": "EMP-01447",
@@ -42899,6 +42899,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-26T21:21:31.907763Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02043",
+    "full_name": "Daniel Anderson",
+    "email": "emp-02043@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-09-26T23:43:01.709260Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T23:43:01.709260Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02044",
+    "full_name": "Anthony Olson",
+    "email": "emp-02044@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-09-26T23:43:01.709260Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T23:43:01.709260Z",
     "terminated_at": null
   }
 ]
