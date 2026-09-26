@@ -24524,14 +24524,20 @@
     "id": "EMP-01110",
     "full_name": "Javier Walker",
     "email": "emp-01110@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "finance",
         "started_at": "2026-07-25T16:50:28.756177Z",
+        "ended_at": "2026-09-26T18:13:17.289677Z"
+      },
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-09-26T18:13:17.289677Z",
         "ended_at": null
       }
     ],
@@ -42811,6 +42817,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-26T14:37:39.115946Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02039",
+    "full_name": "Allison Terry",
+    "email": "emp-02039@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-09-26T18:13:17.289677Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T18:13:17.289677Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02040",
+    "full_name": "Katie Garcia",
+    "email": "emp-02040@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-09-26T18:13:17.289677Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T18:13:17.289677Z",
     "terminated_at": null
   }
 ]
