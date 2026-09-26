@@ -42736,5 +42736,43 @@
     "manager_id": null,
     "hired_at": "2026-09-25T18:48:37.131045Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02035",
+    "full_name": "Peter Marsh",
+    "email": "emp-02035@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-09-26T00:18:55.488383Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T00:18:55.488383Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02036",
+    "full_name": "Ryan Curry",
+    "email": "emp-02036@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-09-26T00:18:55.488383Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-26T00:18:55.488383Z",
+    "terminated_at": null
   }
 ]
