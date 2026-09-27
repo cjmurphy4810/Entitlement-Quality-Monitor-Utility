@@ -37578,7 +37578,7 @@
     "email": "emp-01766@example.com",
     "current_role": "business_user",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -37589,7 +37589,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T13:52:03.507747Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-27T03:00:55.913653Z"
   },
   {
     "id": "EMP-01767",
@@ -42937,6 +42937,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-26T23:43:01.709260Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02045",
+    "full_name": "Donald Perez",
+    "email": "emp-02045@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-09-27T03:00:55.913653Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-27T03:00:55.913653Z",
     "terminated_at": null
   }
 ]
