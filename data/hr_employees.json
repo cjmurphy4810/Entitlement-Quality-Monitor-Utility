@@ -42976,5 +42976,43 @@
     "manager_id": null,
     "hired_at": "2026-09-27T09:25:22.824497Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02047",
+    "full_name": "April Ford",
+    "email": "emp-02047@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-09-27T14:45:55.106095Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-27T14:45:55.106095Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02048",
+    "full_name": "William Jones",
+    "email": "emp-02048@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-09-27T14:45:55.106095Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-27T14:45:55.106095Z",
+    "terminated_at": null
   }
 ]
