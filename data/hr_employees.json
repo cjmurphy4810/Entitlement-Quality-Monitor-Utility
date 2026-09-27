@@ -42957,5 +42957,24 @@
     "manager_id": null,
     "hired_at": "2026-09-27T03:00:55.913653Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02046",
+    "full_name": "Alexandra Miller",
+    "email": "emp-02046@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-09-27T09:25:22.824497Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-27T09:25:22.824497Z",
+    "terminated_at": null
   }
 ]
