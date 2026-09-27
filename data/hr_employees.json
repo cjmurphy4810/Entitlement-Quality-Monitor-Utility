@@ -18104,14 +18104,20 @@
     "id": "EMP-00804",
     "full_name": "Adam Harris",
     "email": "emp-00804@example.com",
-    "current_role": "customer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "hr",
         "started_at": "2026-07-04T12:02:35.851278Z",
+        "ended_at": "2026-09-27T18:50:12.832322Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-09-27T18:50:12.832322Z",
         "ended_at": null
       }
     ],
@@ -43013,6 +43019,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-27T14:45:55.106095Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02049",
+    "full_name": "Nancy Gilmore",
+    "email": "emp-02049@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-09-27T18:50:12.832322Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-27T18:50:12.832322Z",
     "terminated_at": null
   }
 ]
