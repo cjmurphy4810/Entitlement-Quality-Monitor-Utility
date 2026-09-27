@@ -36245,7 +36245,7 @@
     "email": "emp-01699@example.com",
     "current_role": "business_user",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -36256,7 +36256,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-21T16:28:47.642295Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-27T21:47:17.600960Z"
   },
   {
     "id": "EMP-01700",
@@ -43038,6 +43038,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-27T18:50:12.832322Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02050",
+    "full_name": "Jennifer Jones",
+    "email": "emp-02050@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-09-27T21:47:17.600960Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-27T21:47:17.600960Z",
     "terminated_at": null
   }
 ]
