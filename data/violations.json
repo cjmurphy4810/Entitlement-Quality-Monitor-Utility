@@ -242459,5 +242459,75 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10000",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-28T19:56:31.893466Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04079",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-00301",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00523",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10001",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-28T19:56:34.240065Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04080",
+    "explanation": "Employee division 'cyber_tech' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00864",
+      "employee_division": "cyber_tech",
+      "entitlement_id": "ENT-00561",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10002",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-28T19:56:34.908151Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04079",
+    "explanation": "Terminated employee EMP-00301 (Dr. Crystal Camacho) still holds active assignment ASN-04079.",
+    "evidence": {
+      "employee_id": "EMP-00301",
+      "terminated_at": "2026-05-16T14:38:04.856518+00:00",
+      "entitlement_id": "ENT-00523"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

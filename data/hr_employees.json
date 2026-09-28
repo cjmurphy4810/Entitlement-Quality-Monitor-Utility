@@ -27089,7 +27089,7 @@
     "email": "emp-01237@example.com",
     "current_role": "customer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -27100,7 +27100,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-04T01:53:42.791398Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-28T19:56:30.238849Z"
   },
   {
     "id": "EMP-01238",
@@ -43101,6 +43101,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-28T12:35:36.093609Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02053",
+    "full_name": "Rachel Pham",
+    "email": "emp-02053@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-09-28T19:56:30.238849Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-28T19:56:30.238849Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02054",
+    "full_name": "Jennifer Walters",
+    "email": "emp-02054@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-09-28T19:56:30.238849Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-28T19:56:30.238849Z",
     "terminated_at": null
   }
 ]
