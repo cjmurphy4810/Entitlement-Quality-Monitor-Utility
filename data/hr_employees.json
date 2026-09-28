@@ -41600,14 +41600,20 @@
     "id": "EMP-01974",
     "full_name": "Terri Henry",
     "email": "emp-01974@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "business_analyst",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-09-16T20:18:22.072872Z",
+        "ended_at": "2026-09-28T12:35:36.093609Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-09-28T12:35:36.093609Z",
         "ended_at": null
       }
     ],
@@ -43057,6 +43063,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-27T21:47:17.600960Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02051",
+    "full_name": "Renee Brown",
+    "email": "emp-02051@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-09-28T12:35:36.093609Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-28T12:35:36.093609Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02052",
+    "full_name": "Tonya Singh",
+    "email": "emp-02052@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-09-28T12:35:36.093609Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-28T12:35:36.093609Z",
     "terminated_at": null
   }
 ]
