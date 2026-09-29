@@ -1162,7 +1162,7 @@
     "email": "user00048@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -1191,7 +1191,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-03-20T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-29T05:57:25.606572Z"
   },
   {
     "id": "EMP-00049",
@@ -32207,14 +32207,20 @@
     "id": "EMP-01491",
     "full_name": "Jeffrey Cox",
     "email": "emp-01491@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "developer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-08-15T15:42:44.813682Z",
+        "ended_at": "2026-09-29T05:57:25.606572Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-09-29T05:57:25.606572Z",
         "ended_at": null
       }
     ],
@@ -43139,6 +43145,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-28T19:56:30.238849Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02055",
+    "full_name": "Mary Wright",
+    "email": "emp-02055@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-09-29T05:57:25.606572Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-29T05:57:25.606572Z",
     "terminated_at": null
   }
 ]
