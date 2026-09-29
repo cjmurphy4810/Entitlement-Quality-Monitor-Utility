@@ -43184,5 +43184,24 @@
     "manager_id": null,
     "hired_at": "2026-09-29T12:11:14.997530Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02057",
+    "full_name": "David Sampson",
+    "email": "emp-02057@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-09-29T18:10:41.544876Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-29T18:10:41.544876Z",
+    "terminated_at": null
   }
 ]
