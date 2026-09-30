@@ -243716,5 +243716,75 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10052",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-30T19:32:28.055320Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04098",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00940",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00540",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10053",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-09-30T19:32:30.892913Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04098",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00940",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00540",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10054",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-09-30T19:32:31.699269Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04098",
+    "explanation": "Terminated employee EMP-00940 (Megan Carlson) still holds active assignment ASN-04098.",
+    "evidence": {
+      "employee_id": "EMP-00940",
+      "terminated_at": "2026-07-18T09:37:49.506242+00:00",
+      "entitlement_id": "ENT-00540"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

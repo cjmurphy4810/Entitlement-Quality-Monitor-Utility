@@ -43278,5 +43278,43 @@
     "manager_id": null,
     "hired_at": "2026-09-30T14:01:09.306461Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02061",
+    "full_name": "Crystal Mejia",
+    "email": "emp-02061@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-09-30T19:32:26.070437Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-30T19:32:26.070437Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02062",
+    "full_name": "Anthony Ballard",
+    "email": "emp-02062@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-09-30T19:32:26.070437Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-30T19:32:26.070437Z",
+    "terminated_at": null
   }
 ]
