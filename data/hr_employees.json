@@ -34822,7 +34822,7 @@
     "email": "emp-01626@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -34833,7 +34833,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-19T14:25:39.361716Z",
-    "terminated_at": null
+    "terminated_at": "2026-09-30T01:25:38.822415Z"
   },
   {
     "id": "EMP-01627",
@@ -43208,6 +43208,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-29T18:10:41.544876Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02058",
+    "full_name": "Peter Williams",
+    "email": "emp-02058@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-09-30T01:25:38.822415Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-30T01:25:38.822415Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02059",
+    "full_name": "Jeremy Hernandez",
+    "email": "emp-02059@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-09-30T01:25:38.822415Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-30T01:25:38.822415Z",
     "terminated_at": null
   }
 ]
