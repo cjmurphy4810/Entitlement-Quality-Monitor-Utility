@@ -32529,14 +32529,20 @@
     "id": "EMP-01507",
     "full_name": "Patricia Barker",
     "email": "emp-01507@example.com",
-    "current_role": "customer",
-    "current_division": "cyber_tech",
+    "current_role": "developer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "cyber_tech",
         "started_at": "2026-08-15T22:45:09.379438Z",
+        "ended_at": "2026-09-30T14:01:09.306461Z"
+      },
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-09-30T14:01:09.306461Z",
         "ended_at": null
       }
     ],
@@ -43252,6 +43258,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-30T01:25:38.822415Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02060",
+    "full_name": "Brian Myers",
+    "email": "emp-02060@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-09-30T14:01:09.306461Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-09-30T14:01:09.306461Z",
     "terminated_at": null
   }
 ]
