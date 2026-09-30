@@ -37682,14 +37682,20 @@
     "id": "EMP-01770",
     "full_name": "Sandra Hensley",
     "email": "emp-01770@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-08-23T15:14:56.304422Z",
+        "ended_at": "2026-09-30T07:01:32.876518Z"
+      },
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-09-30T07:01:32.876518Z",
         "ended_at": null
       }
     ],
