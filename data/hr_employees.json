@@ -13507,7 +13507,7 @@
     "email": "emp-00591@example.com",
     "current_role": "business_user",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -13518,7 +13518,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-09T20:30:26.580236Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-01T02:16:08.041524Z"
   },
   {
     "id": "EMP-00592",
@@ -43359,6 +43359,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-30T23:22:27.034686Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02065",
+    "full_name": "Kelsey Ibarra",
+    "email": "emp-02065@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-10-01T02:16:08.041524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-01T02:16:08.041524Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02066",
+    "full_name": "April Edwards",
+    "email": "emp-02066@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-10-01T02:16:08.041524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-01T02:16:08.041524Z",
     "terminated_at": null
   }
 ]
