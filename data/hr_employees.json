@@ -43436,5 +43436,24 @@
     "manager_id": null,
     "hired_at": "2026-10-01T16:35:42.133351Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02069",
+    "full_name": "Jesus Pruitt",
+    "email": "emp-02069@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-10-01T21:31:24.812992Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-01T21:31:24.812992Z",
+    "terminated_at": null
   }
 ]
