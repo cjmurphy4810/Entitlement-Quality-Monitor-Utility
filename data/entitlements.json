@@ -9706,5 +9706,21 @@
     "sod_tags": [],
     "created_at": "2026-10-01T02:16:08.041524Z",
     "updated_at": "2026-10-01T02:16:08.041524Z"
+  },
+  {
+    "id": "ENT-00624",
+    "name": "new entitlement ENT-00624",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "business_ops",
+    "linked_resource_ids": [
+      "RES-00366"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-10-02T07:12:42.263826Z",
+    "updated_at": "2026-10-02T07:12:42.263826Z"
   }
 ]

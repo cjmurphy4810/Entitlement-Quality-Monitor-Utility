@@ -25332,14 +25332,20 @@
     "id": "EMP-01150",
     "full_name": "Elizabeth Griffin",
     "email": "emp-01150@example.com",
-    "current_role": "operations",
-    "current_division": "tech_dev",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "tech_dev",
         "started_at": "2026-07-28T15:15:01.205925Z",
+        "ended_at": "2026-10-02T07:12:42.263826Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-10-02T07:12:42.263826Z",
         "ended_at": null
       }
     ],
@@ -43498,6 +43504,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-02T01:13:42.184303Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02072",
+    "full_name": "Bobby Shelton",
+    "email": "emp-02072@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-10-02T07:12:42.263826Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-02T07:12:42.263826Z",
     "terminated_at": null
   }
 ]
