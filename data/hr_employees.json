@@ -28871,14 +28871,20 @@
     "id": "EMP-01323",
     "full_name": "Joseph Bradley",
     "email": "emp-01323@example.com",
-    "current_role": "customer",
-    "current_division": "tech_dev",
+    "current_role": "developer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_dev",
         "started_at": "2026-08-08T23:52:46.795752Z",
+        "ended_at": "2026-10-03T13:34:43.308695Z"
+      },
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-10-03T13:34:43.308695Z",
         "ended_at": null
       }
     ],
@@ -43618,6 +43624,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-03T08:23:26.433957Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02078",
+    "full_name": "Peter Freeman",
+    "email": "emp-02078@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-10-03T13:34:43.308695Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T13:34:43.308695Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02079",
+    "full_name": "Drew Ramirez",
+    "email": "emp-02079@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-10-03T13:34:43.308695Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T13:34:43.308695Z",
     "terminated_at": null
   }
 ]
