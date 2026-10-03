@@ -26110,7 +26110,7 @@
     "email": "emp-01188@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -26121,7 +26121,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-31T15:35:11.136491Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-03T02:10:13.644978Z"
   },
   {
     "id": "EMP-01189",
@@ -43561,6 +43561,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-02T23:07:13.366523Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02075",
+    "full_name": "Kaitlyn Reynolds",
+    "email": "emp-02075@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-10-03T02:10:13.644978Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T02:10:13.644978Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02076",
+    "full_name": "Oscar Dalton",
+    "email": "emp-02076@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-10-03T02:10:13.644978Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T02:10:13.644978Z",
     "terminated_at": null
   }
 ]
