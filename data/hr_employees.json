@@ -43600,5 +43600,24 @@
     "manager_id": null,
     "hired_at": "2026-10-03T02:10:13.644978Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02077",
+    "full_name": "Seth Robertson",
+    "email": "emp-02077@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-10-03T08:23:26.433957Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T08:23:26.433957Z",
+    "terminated_at": null
   }
 ]
