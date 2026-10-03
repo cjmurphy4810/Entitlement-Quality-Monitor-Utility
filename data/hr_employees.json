@@ -32610,14 +32610,20 @@
     "id": "EMP-01510",
     "full_name": "Jared Sanchez",
     "email": "emp-01510@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-08-15T23:41:59.504575Z",
+        "ended_at": "2026-10-03T17:42:29.317505Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-10-03T17:42:29.317505Z",
         "ended_at": null
       }
     ],
@@ -43662,6 +43668,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-03T13:34:43.308695Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02080",
+    "full_name": "Krystal Harding",
+    "email": "emp-02080@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-10-03T17:42:29.317505Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T17:42:29.317505Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02081",
+    "full_name": "Andrew Brown",
+    "email": "emp-02081@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-10-03T17:42:29.317505Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T17:42:29.317505Z",
     "terminated_at": null
   }
 ]
