@@ -43707,5 +43707,24 @@
     "manager_id": null,
     "hired_at": "2026-10-03T17:42:29.317505Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02082",
+    "full_name": "Brittany Smith",
+    "email": "emp-02082@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-10-03T23:14:32.910766Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-03T23:14:32.910766Z",
+    "terminated_at": null
   }
 ]
