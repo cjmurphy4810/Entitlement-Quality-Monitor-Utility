@@ -15339,7 +15339,7 @@
     "email": "emp-00677@example.com",
     "current_role": "developer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -15356,7 +15356,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-21T15:21:48.965220Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-04T02:47:09.779449Z"
   },
   {
     "id": "EMP-00678",
@@ -43725,6 +43725,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-03T23:14:32.910766Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02083",
+    "full_name": "Matthew Mcdonald",
+    "email": "emp-02083@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-10-04T02:47:09.779449Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-04T02:47:09.779449Z",
     "terminated_at": null
   }
 ]
