@@ -7554,14 +7554,20 @@
     "id": "EMP-00322",
     "full_name": "Alexander Robinson",
     "email": "emp-00322@example.com",
-    "current_role": "developer",
-    "current_division": "legal_compliance",
+    "current_role": "operations",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "legal_compliance",
         "started_at": "2026-05-14T17:17:24.814190Z",
+        "ended_at": "2026-10-05T05:59:57.055201Z"
+      },
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-10-05T05:59:57.055201Z",
         "ended_at": null
       }
     ],
@@ -39573,7 +39579,7 @@
     "email": "emp-01865@example.com",
     "current_role": "business_analyst",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -39584,7 +39590,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-30T23:39:56.325354Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-05T05:59:57.055201Z"
   },
   {
     "id": "EMP-01866",
@@ -43782,6 +43788,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-04T09:12:51.062689Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02086",
+    "full_name": "Natalie Lawson",
+    "email": "emp-02086@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-10-05T05:59:57.055201Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-05T05:59:57.055201Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02087",
+    "full_name": "Regina Shepherd",
+    "email": "emp-02087@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-10-05T05:59:57.055201Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-05T05:59:57.055201Z",
     "terminated_at": null
   }
 ]
