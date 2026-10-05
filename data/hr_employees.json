@@ -43827,5 +43827,24 @@
     "manager_id": null,
     "hired_at": "2026-10-05T05:59:57.055201Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02088",
+    "full_name": "Keith Adams",
+    "email": "emp-02088@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-10-05T21:32:58.231780Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-05T21:32:58.231780Z",
+    "terminated_at": null
   }
 ]
