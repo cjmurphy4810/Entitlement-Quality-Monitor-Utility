@@ -6391,7 +6391,7 @@
     "id": "ENT-00407",
     "name": "new entitlement ENT-00407",
     "pbl_description": "Lets the user do things in the system.",
-    "access_tier": 1,
+    "access_tier": 2,
     "acceptable_roles": [
       "developer"
     ],
@@ -6399,7 +6399,7 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-08-11T14:51:50.983227Z",
-    "updated_at": "2026-08-11T14:51:50.983227Z"
+    "updated_at": "2026-10-06T21:05:38.227275Z"
   },
   {
     "id": "ENT-00408",
@@ -9796,5 +9796,19 @@
     "sod_tags": [],
     "created_at": "2026-10-05T14:14:11.688335Z",
     "updated_at": "2026-10-05T14:14:11.688335Z"
+  },
+  {
+    "id": "ENT-00630",
+    "name": "new entitlement ENT-00630",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-10-06T21:05:38.227275Z",
+    "updated_at": "2026-10-06T21:05:38.227275Z"
   }
 ]

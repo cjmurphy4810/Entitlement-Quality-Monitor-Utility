@@ -26764,14 +26764,20 @@
     "id": "EMP-01220",
     "full_name": "Gary Thompson",
     "email": "emp-01220@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-08-02T17:56:36.348456Z",
+        "ended_at": "2026-10-06T21:05:38.227275Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-10-06T21:05:38.227275Z",
         "ended_at": null
       }
     ],
@@ -43952,6 +43958,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-06T16:05:33.116005Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02094",
+    "full_name": "Vanessa Mccarthy",
+    "email": "emp-02094@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-10-06T21:05:38.227275Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-06T21:05:38.227275Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02095",
+    "full_name": "Michelle Hill",
+    "email": "emp-02095@example.com",
+    "current_role": "business_analyst",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-10-06T21:05:38.227275Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-06T21:05:38.227275Z",
     "terminated_at": null
   }
 ]
