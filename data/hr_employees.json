@@ -34476,14 +34476,20 @@
     "id": "EMP-01606",
     "full_name": "Nancy Wilson",
     "email": "emp-01606@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-08-18T18:27:19.770559Z",
+        "ended_at": "2026-10-06T09:10:38.458154Z"
+      },
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-10-06T09:10:38.458154Z",
         "ended_at": null
       }
     ],
@@ -43889,6 +43895,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-06T02:00:24.096104Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02091",
+    "full_name": "Jacqueline Hicks",
+    "email": "emp-02091@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-10-06T09:10:38.458154Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-06T09:10:38.458154Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02092",
+    "full_name": "Candace Walker",
+    "email": "emp-02092@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-10-06T09:10:38.458154Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-06T09:10:38.458154Z",
     "terminated_at": null
   }
 ]
