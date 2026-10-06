@@ -43934,5 +43934,24 @@
     "manager_id": null,
     "hired_at": "2026-10-06T09:10:38.458154Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02093",
+    "full_name": "Paul Chapman",
+    "email": "emp-02093@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-10-06T16:05:33.116005Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-06T16:05:33.116005Z",
+    "terminated_at": null
   }
 ]
