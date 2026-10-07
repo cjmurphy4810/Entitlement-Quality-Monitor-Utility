@@ -43997,5 +43997,24 @@
     "manager_id": null,
     "hired_at": "2026-10-06T21:05:38.227275Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02096",
+    "full_name": "Steven Johnson",
+    "email": "emp-02096@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-10-07T00:52:35.781010Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-07T00:52:35.781010Z",
+    "terminated_at": null
   }
 ]

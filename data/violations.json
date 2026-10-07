@@ -247085,5 +247085,53 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10191",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-07T00:52:38.204484Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04158",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-01484",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00330",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10192",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-07T00:52:41.630714Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04158",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01484",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00330",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
