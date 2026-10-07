@@ -44079,5 +44079,24 @@
     "manager_id": null,
     "hired_at": "2026-10-07T14:07:46.272500Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02100",
+    "full_name": "Frank Davis",
+    "email": "emp-02100@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-10-07T20:02:32.557597Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-07T20:02:32.557597Z",
+    "terminated_at": null
   }
 ]
