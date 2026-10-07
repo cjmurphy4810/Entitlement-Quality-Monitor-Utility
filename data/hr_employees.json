@@ -33516,7 +33516,7 @@
     "email": "emp-01556@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -33527,7 +33527,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T09:33:43.526233Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-07T06:46:27.980265Z"
   },
   {
     "id": "EMP-01557",
@@ -44015,6 +44015,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-07T00:52:35.781010Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02097",
+    "full_name": "Adam Shields",
+    "email": "emp-02097@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-10-07T06:46:27.980265Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-07T06:46:27.980265Z",
     "terminated_at": null
   }
 ]
