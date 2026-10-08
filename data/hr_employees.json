@@ -44098,5 +44098,24 @@
     "manager_id": null,
     "hired_at": "2026-10-07T20:02:32.557597Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02101",
+    "full_name": "Vicki Mcclure",
+    "email": "emp-02101@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-10-08T06:25:00.039668Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-08T06:25:00.039668Z",
+    "terminated_at": null
   }
 ]
