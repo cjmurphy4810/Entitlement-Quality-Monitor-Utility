@@ -25573,7 +25573,7 @@
     "email": "emp-01161@example.com",
     "current_role": "customer",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -25584,7 +25584,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-29T13:12:43.134798Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-08T13:49:12.785473Z"
   },
   {
     "id": "EMP-01162",
@@ -44116,6 +44116,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-08T06:25:00.039668Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02102",
+    "full_name": "Jamie Phillips",
+    "email": "emp-02102@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-10-08T13:49:12.785473Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-08T13:49:12.785473Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02103",
+    "full_name": "Ashley Malone",
+    "email": "emp-02103@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-10-08T13:49:12.785473Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-08T13:49:12.785473Z",
     "terminated_at": null
   }
 ]
