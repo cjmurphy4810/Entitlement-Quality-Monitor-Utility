@@ -38450,8 +38450,8 @@
     "id": "EMP-01806",
     "full_name": "Brian Russo",
     "email": "emp-01806@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -38464,6 +38464,12 @@
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-09-05T20:52:33.413165Z",
+        "ended_at": "2026-10-08T19:36:02.899481Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-10-08T19:36:02.899481Z",
         "ended_at": null
       }
     ],
@@ -44154,6 +44160,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-08T13:49:12.785473Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02104",
+    "full_name": "Julie Roberts",
+    "email": "emp-02104@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-10-08T19:36:02.899481Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-08T19:36:02.899481Z",
     "terminated_at": null
   }
 ]
