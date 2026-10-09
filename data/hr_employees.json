@@ -32965,7 +32965,7 @@
     "email": "emp-01527@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -32976,7 +32976,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-16T13:08:05.489160Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-09T23:22:59.961761Z"
   },
   {
     "id": "EMP-01528",
@@ -44318,6 +44318,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-09T19:10:43.964209Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02112",
+    "full_name": "Christopher Dixon",
+    "email": "emp-02112@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-10-09T23:22:59.961761Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T23:22:59.961761Z",
     "terminated_at": null
   }
 ]
