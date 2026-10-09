@@ -44218,5 +44218,43 @@
     "manager_id": null,
     "hired_at": "2026-10-09T00:04:58.493022Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02107",
+    "full_name": "Norman Hamilton",
+    "email": "emp-02107@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-10-09T06:25:54.896435Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T06:25:54.896435Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02108",
+    "full_name": "Megan Parker",
+    "email": "emp-02108@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-10-09T06:25:54.896435Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T06:25:54.896435Z",
+    "terminated_at": null
   }
 ]
