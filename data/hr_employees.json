@@ -33541,7 +33541,7 @@
     "email": "emp-01557@example.com",
     "current_role": "business_user",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -33552,7 +33552,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-17T10:24:35.793745Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-09T00:04:58.493022Z"
   },
   {
     "id": "EMP-01558",
@@ -44179,6 +44179,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-08T19:36:02.899481Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02105",
+    "full_name": "Bryan Wilson",
+    "email": "emp-02105@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-10-09T00:04:58.493022Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T00:04:58.493022Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02106",
+    "full_name": "Andrew Trujillo",
+    "email": "emp-02106@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-10-09T00:04:58.493022Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T00:04:58.493022Z",
     "terminated_at": null
   }
 ]
