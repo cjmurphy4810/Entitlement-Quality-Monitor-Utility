@@ -27182,7 +27182,7 @@
     "email": "emp-01240@example.com",
     "current_role": "business_user",
     "current_division": "hr",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -27193,7 +27193,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-04T14:58:57.567913Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-09T19:10:43.964209Z"
   },
   {
     "id": "EMP-01241",
@@ -44147,14 +44147,20 @@
     "id": "EMP-02103",
     "full_name": "Ashley Malone",
     "email": "emp-02103@example.com",
-    "current_role": "customer",
-    "current_division": "tech_ops",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "tech_ops",
         "started_at": "2026-10-08T13:49:12.785473Z",
+        "ended_at": "2026-10-09T19:10:43.964209Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-10-09T19:10:43.964209Z",
         "ended_at": null
       }
     ],
@@ -44293,6 +44299,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-09T13:34:29.663868Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02111",
+    "full_name": "Dillon Meyer",
+    "email": "emp-02111@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-10-09T19:10:43.964209Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T19:10:43.964209Z",
     "terminated_at": null
   }
 ]
