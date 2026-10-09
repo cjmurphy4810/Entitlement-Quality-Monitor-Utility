@@ -44256,5 +44256,43 @@
     "manager_id": null,
     "hired_at": "2026-10-09T06:25:54.896435Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02109",
+    "full_name": "John Carroll",
+    "email": "emp-02109@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-10-09T13:34:29.663868Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T13:34:29.663868Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02110",
+    "full_name": "Matthew Medina",
+    "email": "emp-02110@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-10-09T13:34:29.663868Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-09T13:34:29.663868Z",
+    "terminated_at": null
   }
 ]
