@@ -16488,7 +16488,7 @@
     "email": "emp-00728@example.com",
     "current_role": "customer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -16511,7 +16511,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-26T22:42:33.544619Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-10T09:17:01.580048Z"
   },
   {
     "id": "EMP-00729",
@@ -44375,6 +44375,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-10T02:30:24.350407Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02115",
+    "full_name": "Stephen West",
+    "email": "emp-02115@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-10-10T09:17:01.580048Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-10T09:17:01.580048Z",
     "terminated_at": null
   }
 ]
