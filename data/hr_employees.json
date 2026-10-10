@@ -31384,14 +31384,20 @@
     "id": "EMP-01448",
     "full_name": "Christopher Kennedy",
     "email": "emp-01448@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-08-14T08:08:52.864458Z",
+        "ended_at": "2026-10-10T15:29:30.736786Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-10-10T15:29:30.736786Z",
         "ended_at": null
       }
     ],
@@ -36853,7 +36859,7 @@
     "email": "emp-01725@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -36870,7 +36876,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-22T08:54:56.098701Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-10T15:29:30.736786Z"
   },
   {
     "id": "EMP-01726",
@@ -44394,6 +44400,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-10T09:17:01.580048Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02116",
+    "full_name": "Jesse Charles",
+    "email": "emp-02116@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-10-10T15:29:30.736786Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-10T15:29:30.736786Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02117",
+    "full_name": "Amanda Shelton",
+    "email": "emp-02117@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-10-10T15:29:30.736786Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-10T15:29:30.736786Z",
     "terminated_at": null
   }
 ]
