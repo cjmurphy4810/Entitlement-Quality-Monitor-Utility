@@ -44439,5 +44439,24 @@
     "manager_id": null,
     "hired_at": "2026-10-10T15:29:30.736786Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02118",
+    "full_name": "Sarah Rodriguez",
+    "email": "emp-02118@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-10-10T19:27:07.833769Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-10T19:27:07.833769Z",
+    "terminated_at": null
   }
 ]
