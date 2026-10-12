@@ -250080,5 +250080,125 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10316",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-12T10:04:33.023206Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04209",
+    "explanation": "Employee role 'business_analyst' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-01225",
+      "employee_role": "business_analyst",
+      "entitlement_id": "ENT-00234",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10317",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-12T10:04:34.812871Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04209",
+    "explanation": "Employee division 'business_dev' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-01225",
+      "employee_division": "business_dev",
+      "entitlement_id": "ENT-00234",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10318",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-12T10:04:34.813808Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04210",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'business_sales'.",
+    "evidence": {
+      "employee_id": "EMP-01365",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00185",
+      "entitlement_division": "business_sales"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10319",
+    "rule_id": "HR-03",
+    "rule_name": "Legacy entitlement after role change",
+    "severity": "high",
+    "detected_at": "2026-10-12T10:04:34.824866Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03022",
+    "explanation": "Assignment was appropriate under prior role(s) but employee's current role is 'operations'. Last role change was 2026-09-12T02:34:21.187865+00:00.",
+    "evidence": {
+      "employee_id": "EMP-01387",
+      "current_role": "operations",
+      "prior_roles": [
+        "business_user"
+      ],
+      "last_role_change_at": "2026-09-12T02:34:21.187865+00:00",
+      "granted_at": "2026-08-17T10:55:03.858464+00:00"
+    },
+    "recommended_action": "route_to_user_manager",
+    "suggested_fix": {
+      "_action": "delete_assignment",
+      "_note": "Manager should confirm before revocation."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10320",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-12T10:04:35.314327Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04210",
+    "explanation": "Terminated employee EMP-01365 (Lisa Mosley) still holds active assignment ASN-04210.",
+    "evidence": {
+      "employee_id": "EMP-01365",
+      "terminated_at": "2026-08-15T22:45:09.379438+00:00",
+      "entitlement_id": "ENT-00185"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
