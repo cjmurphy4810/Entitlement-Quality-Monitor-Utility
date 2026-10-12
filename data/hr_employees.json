@@ -44546,5 +44546,24 @@
     "manager_id": null,
     "hired_at": "2026-10-11T23:01:16.128217Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02123",
+    "full_name": "Stanley Brennan",
+    "email": "emp-02123@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-10-12T19:54:21.407619Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-12T19:54:21.407619Z",
+    "terminated_at": null
   }
 ]
