@@ -32361,14 +32361,20 @@
     "id": "EMP-01495",
     "full_name": "Ronald White",
     "email": "emp-01495@example.com",
-    "current_role": "business_user",
-    "current_division": "cyber_tech",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "cyber_tech",
         "started_at": "2026-08-15T17:42:42.515728Z",
+        "ended_at": "2026-10-14T15:43:40.371236Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-10-14T15:43:40.371236Z",
         "ended_at": null
       }
     ],

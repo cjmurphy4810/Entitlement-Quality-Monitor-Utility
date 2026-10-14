@@ -9936,5 +9936,19 @@
     "sod_tags": [],
     "created_at": "2026-10-14T05:41:44.100669Z",
     "updated_at": "2026-10-14T05:41:44.100669Z"
+  },
+  {
+    "id": "ENT-00639",
+    "name": "new entitlement ENT-00639",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-10-14T15:43:40.371236Z",
+    "updated_at": "2026-10-14T15:43:40.371236Z"
   }
 ]
