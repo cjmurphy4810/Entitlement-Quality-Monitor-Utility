@@ -44596,5 +44596,24 @@
     "manager_id": null,
     "hired_at": "2026-10-13T01:45:09.667996Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02125",
+    "full_name": "Natalie Hall",
+    "email": "emp-02125@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-10-14T05:41:44.100669Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-14T05:41:44.100669Z",
+    "terminated_at": null
   }
 ]
