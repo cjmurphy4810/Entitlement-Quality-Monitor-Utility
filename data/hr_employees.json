@@ -13825,8 +13825,8 @@
     "id": "EMP-00605",
     "full_name": "Robert Wolf",
     "email": "emp-00605@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
@@ -13839,6 +13839,12 @@
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-07-10T20:19:36.809978Z",
+        "ended_at": "2026-10-14T00:47:49.858935Z"
+      },
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-10-14T00:47:49.858935Z",
         "ended_at": null
       }
     ],
