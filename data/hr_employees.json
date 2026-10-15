@@ -44640,5 +44640,24 @@
     "manager_id": null,
     "hired_at": "2026-10-14T10:58:36.651201Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02127",
+    "full_name": "Dorothy Contreras",
+    "email": "emp-02127@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-10-15T01:09:39.068121Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-15T01:09:39.068121Z",
+    "terminated_at": null
   }
 ]
