@@ -13708,7 +13708,7 @@
     "email": "emp-00600@example.com",
     "current_role": "developer",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -13719,7 +13719,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-10T20:20:58.489510Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-15T06:06:14.142695Z"
   },
   {
     "id": "EMP-00601",
@@ -44658,6 +44658,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-15T01:09:39.068121Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02128",
+    "full_name": "Natalie Blankenship",
+    "email": "emp-02128@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-10-15T06:06:14.142695Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-15T06:06:14.142695Z",
     "terminated_at": null
   }
 ]
