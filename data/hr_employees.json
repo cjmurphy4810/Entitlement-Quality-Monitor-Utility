@@ -44760,5 +44760,43 @@
     "manager_id": null,
     "hired_at": "2026-10-16T05:20:47.459797Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02133",
+    "full_name": "Joseph Campbell",
+    "email": "emp-02133@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-10-16T10:00:27.413558Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T10:00:27.413558Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02134",
+    "full_name": "Suzanne Rose",
+    "email": "emp-02134@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-10-16T10:00:27.413558Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T10:00:27.413558Z",
+    "terminated_at": null
   }
 ]
