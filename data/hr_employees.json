@@ -37671,14 +37671,20 @@
     "id": "EMP-01765",
     "full_name": "Amy Hill DVM",
     "email": "emp-01765@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-08-23T13:52:03.507747Z",
+        "ended_at": "2026-10-16T18:36:28.475194Z"
+      },
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-10-16T18:36:28.475194Z",
         "ended_at": null
       }
     ],
@@ -44835,6 +44841,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-16T14:57:01.713508Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02137",
+    "full_name": "Brandon Brown",
+    "email": "emp-02137@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-10-16T18:36:28.475194Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T18:36:28.475194Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02138",
+    "full_name": "Patricia Sanders",
+    "email": "emp-02138@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-10-16T18:36:28.475194Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T18:36:28.475194Z",
     "terminated_at": null
   }
 ]
