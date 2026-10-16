@@ -12783,7 +12783,7 @@
     "email": "emp-00557@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -12800,7 +12800,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-06T07:43:03.537061Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-16T00:55:50.821866Z"
   },
   {
     "id": "EMP-00558",
@@ -44696,6 +44696,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-15T16:06:00.456540Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02130",
+    "full_name": "Nicolas Calhoun",
+    "email": "emp-02130@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-10-16T00:55:50.821866Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T00:55:50.821866Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02131",
+    "full_name": "Joshua Elliott",
+    "email": "emp-02131@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-10-16T00:55:50.821866Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T00:55:50.821866Z",
     "terminated_at": null
   }
 ]
