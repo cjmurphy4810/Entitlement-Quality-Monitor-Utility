@@ -44798,5 +44798,43 @@
     "manager_id": null,
     "hired_at": "2026-10-16T10:00:27.413558Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02135",
+    "full_name": "Lindsay Brown",
+    "email": "emp-02135@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-10-16T14:57:01.713508Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T14:57:01.713508Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02136",
+    "full_name": "Mrs. Stacey Rose",
+    "email": "emp-02136@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-10-16T14:57:01.713508Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-16T14:57:01.713508Z",
+    "terminated_at": null
   }
 ]
