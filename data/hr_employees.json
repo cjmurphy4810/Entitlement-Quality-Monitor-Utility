@@ -43842,7 +43842,7 @@
     "email": "emp-02084@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -43853,7 +43853,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-04T09:12:51.062689Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-17T12:42:24.448336Z"
   },
   {
     "id": "EMP-02085",
@@ -44961,6 +44961,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-17T08:57:31.774521Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02143",
+    "full_name": "Justin Kirby",
+    "email": "emp-02143@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-10-17T12:42:24.448336Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T12:42:24.448336Z",
     "terminated_at": null
   }
 ]
