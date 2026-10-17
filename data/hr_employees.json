@@ -3752,7 +3752,7 @@
     "email": "emp-00154@example.com",
     "current_role": "customer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -3763,7 +3763,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-02T11:39:48.860693Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-17T00:05:27.796128Z"
   },
   {
     "id": "EMP-00155",
