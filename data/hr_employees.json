@@ -40763,14 +40763,20 @@
     "id": "EMP-01923",
     "full_name": "Michael Rios",
     "email": "emp-01923@example.com",
-    "current_role": "business_user",
-    "current_division": "business_sales",
+    "current_role": "business_analyst",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_sales",
         "started_at": "2026-09-09T18:59:01.523103Z",
+        "ended_at": "2026-10-17T04:46:02.886202Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "hr",
+        "started_at": "2026-10-17T04:46:02.886202Z",
         "ended_at": null
       }
     ],
@@ -44879,6 +44885,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-16T18:36:28.475194Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02139",
+    "full_name": "Stacey Kim",
+    "email": "emp-02139@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-10-17T04:46:02.886202Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T04:46:02.886202Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02140",
+    "full_name": "Ashley Jackson",
+    "email": "emp-02140@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-10-17T04:46:02.886202Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T04:46:02.886202Z",
     "terminated_at": null
   }
 ]
