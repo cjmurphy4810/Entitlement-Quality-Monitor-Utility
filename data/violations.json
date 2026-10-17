@@ -253621,5 +253621,98 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10464",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-17T16:04:04.992456Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04269",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['developer', 'customer'].",
+    "evidence": {
+      "employee_id": "EMP-01708",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00015",
+      "acceptable_roles": [
+        "developer",
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10465",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-17T16:04:08.800093Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04269",
+    "explanation": "Employee division 'tech_dev' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-01708",
+      "employee_division": "tech_dev",
+      "entitlement_id": "ENT-00015",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10466",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-17T16:04:09.161241Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01863",
+    "explanation": "Terminated employee EMP-00570 (Mary Hernandez) still holds active assignment ASN-01863.",
+    "evidence": {
+      "employee_id": "EMP-00570",
+      "terminated_at": "2026-10-17T16:04:02.289033+00:00",
+      "entitlement_id": "ENT-00209"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10467",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-17T16:04:09.206333Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02027",
+    "explanation": "Terminated employee EMP-00570 (Mary Hernandez) still holds active assignment ASN-02027.",
+    "evidence": {
+      "employee_id": "EMP-00570",
+      "terminated_at": "2026-10-17T16:04:02.289033+00:00",
+      "entitlement_id": "ENT-00057"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

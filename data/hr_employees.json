@@ -13078,7 +13078,7 @@
     "email": "emp-00570@example.com",
     "current_role": "developer",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -13095,7 +13095,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-07T14:53:25.940057Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-17T16:04:02.289033Z"
   },
   {
     "id": "EMP-00571",
@@ -44980,6 +44980,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-17T12:42:24.448336Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02144",
+    "full_name": "Beth Neal",
+    "email": "emp-02144@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-10-17T16:04:02.289033Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T16:04:02.289033Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02145",
+    "full_name": "Joshua Acosta",
+    "email": "emp-02145@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-10-17T16:04:02.289033Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T16:04:02.289033Z",
     "terminated_at": null
   }
 ]
