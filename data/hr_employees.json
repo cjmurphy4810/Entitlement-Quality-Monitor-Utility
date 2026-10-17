@@ -9560,7 +9560,7 @@
     "email": "emp-00412@example.com",
     "current_role": "business_user",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -9589,7 +9589,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-21T11:47:54.123803Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-17T21:10:32.262413Z"
   },
   {
     "id": "EMP-00413",
@@ -45056,6 +45056,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-17T18:40:22.131680Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02148",
+    "full_name": "Katherine Benson",
+    "email": "emp-02148@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-10-17T21:10:32.262413Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T21:10:32.262413Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02149",
+    "full_name": "Shirley White",
+    "email": "emp-02149@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-10-17T21:10:32.262413Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T21:10:32.262413Z",
     "terminated_at": null
   }
 ]
