@@ -45095,5 +45095,24 @@
     "manager_id": null,
     "hired_at": "2026-10-17T21:10:32.262413Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02150",
+    "full_name": "Angela Stevens",
+    "email": "emp-02150@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-10-17T23:16:08.173708Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T23:16:08.173708Z",
+    "terminated_at": null
   }
 ]
