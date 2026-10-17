@@ -45019,5 +45019,43 @@
     "manager_id": null,
     "hired_at": "2026-10-17T16:04:02.289033Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02146",
+    "full_name": "Laura Cross",
+    "email": "emp-02146@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-10-17T18:40:22.131680Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T18:40:22.131680Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02147",
+    "full_name": "Christina Dominguez",
+    "email": "emp-02147@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-10-17T18:40:22.131680Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-17T18:40:22.131680Z",
+    "terminated_at": null
   }
 ]

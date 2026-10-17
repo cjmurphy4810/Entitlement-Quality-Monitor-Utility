@@ -253714,5 +253714,75 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10468",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-17T18:40:24.832470Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04270",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['developer'].",
+    "evidence": {
+      "employee_id": "EMP-01221",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00623",
+      "acceptable_roles": [
+        "developer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10469",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-17T18:40:28.551606Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04270",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-01221",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00623",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10470",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-17T18:40:29.634411Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04270",
+    "explanation": "Terminated employee EMP-01221 (Natalie Dunn) still holds active assignment ASN-04270.",
+    "evidence": {
+      "employee_id": "EMP-01221",
+      "terminated_at": "2026-08-09T03:13:00.590434+00:00",
+      "entitlement_id": "ENT-00623"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
