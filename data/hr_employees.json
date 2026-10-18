@@ -45158,5 +45158,43 @@
     "manager_id": null,
     "hired_at": "2026-10-18T06:14:26.873668Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02153",
+    "full_name": "Kendra Gomez",
+    "email": "emp-02153@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_dev",
+        "started_at": "2026-10-18T22:11:45.083890Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-18T22:11:45.083890Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02154",
+    "full_name": "John Friedman DDS",
+    "email": "emp-02154@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-10-18T22:11:45.083890Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-18T22:11:45.083890Z",
+    "terminated_at": null
   }
 ]
