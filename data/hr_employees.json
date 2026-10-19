@@ -45196,5 +45196,43 @@
     "manager_id": null,
     "hired_at": "2026-10-18T22:11:45.083890Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02155",
+    "full_name": "Ian Potter",
+    "email": "emp-02155@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-10-19T05:01:28.716303Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-19T05:01:28.716303Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02156",
+    "full_name": "Lawrence Owens",
+    "email": "emp-02156@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-10-19T05:01:28.716303Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-19T05:01:28.716303Z",
+    "terminated_at": null
   }
 ]
