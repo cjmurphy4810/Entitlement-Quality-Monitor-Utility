@@ -31,20 +31,30 @@ class _HR01:
             if emp.current_role not in ent.acceptable_roles:
                 vid = next_violation_id(existing_ids)
                 existing_ids.append(vid)
-                violations.append(Violation(
-                    id=vid, rule_id=self.id, rule_name=self.name,
-                    severity=self.severity, detected_at=now_utc(),
-                    target_type="assignment", target_id=a.id,
-                    explanation=(f"Employee role '{emp.current_role.value}' not in "
-                                 f"entitlement.acceptable_roles "
-                                 f"{[r.value for r in ent.acceptable_roles]}."),
-                    evidence={"employee_id": emp.id,
-                              "employee_role": emp.current_role.value,
-                              "entitlement_id": ent.id,
-                              "acceptable_roles": [r.value for r in ent.acceptable_roles]},
-                    recommended_action=self.recommended_action,
-                    suggested_fix={"_action": "delete_assignment"},
-                ))
+                violations.append(
+                    Violation(
+                        id=vid,
+                        rule_id=self.id,
+                        rule_name=self.name,
+                        severity=self.severity,
+                        detected_at=now_utc(),
+                        target_type="assignment",
+                        target_id=a.id,
+                        explanation=(
+                            f"Employee role '{emp.current_role.value}' not in "
+                            f"entitlement.acceptable_roles "
+                            f"{[r.value for r in ent.acceptable_roles]}."
+                        ),
+                        evidence={
+                            "employee_id": emp.id,
+                            "employee_role": emp.current_role.value,
+                            "entitlement_id": ent.id,
+                            "acceptable_roles": [r.value for r in ent.acceptable_roles],
+                        },
+                        recommended_action=self.recommended_action,
+                        suggested_fix={"_action": "delete_assignment"},
+                    )
+                )
         return violations
 
 
@@ -74,20 +84,30 @@ class _HR02:
             if emp.current_division != ent.division:
                 vid = next_violation_id(existing_ids)
                 existing_ids.append(vid)
-                violations.append(Violation(
-                    id=vid, rule_id=self.id, rule_name=self.name,
-                    severity=self.severity, detected_at=now_utc(),
-                    target_type="assignment", target_id=a.id,
-                    explanation=(f"Employee division '{emp.current_division.value}' "
-                                 f"does not match entitlement division "
-                                 f"'{ent.division.value}'."),
-                    evidence={"employee_id": emp.id,
-                              "employee_division": emp.current_division.value,
-                              "entitlement_id": ent.id,
-                              "entitlement_division": ent.division.value},
-                    recommended_action=self.recommended_action,
-                    suggested_fix={"_action": "delete_assignment"},
-                ))
+                violations.append(
+                    Violation(
+                        id=vid,
+                        rule_id=self.id,
+                        rule_name=self.name,
+                        severity=self.severity,
+                        detected_at=now_utc(),
+                        target_type="assignment",
+                        target_id=a.id,
+                        explanation=(
+                            f"Employee division '{emp.current_division.value}' "
+                            f"does not match entitlement division "
+                            f"'{ent.division.value}'."
+                        ),
+                        evidence={
+                            "employee_id": emp.id,
+                            "employee_division": emp.current_division.value,
+                            "entitlement_id": ent.id,
+                            "entitlement_division": ent.division.value,
+                        },
+                        recommended_action=self.recommended_action,
+                        suggested_fix={"_action": "delete_assignment"},
+                    )
+                )
         return violations
 
 
@@ -135,23 +155,35 @@ class _HR03:
                 continue  # never was appropriate; that's HR-01, not HR-03
             vid = next_violation_id(existing_ids)
             existing_ids.append(vid)
-            violations.append(Violation(
-                id=vid, rule_id=self.id, rule_name=self.name,
-                severity=self.severity, detected_at=now_utc(),
-                target_type="assignment", target_id=a.id,
-                explanation=(f"Assignment was appropriate under prior role(s) "
-                             f"but employee's current role is "
-                             f"'{emp.current_role.value}'. Last role change "
-                             f"was {last_change_at.isoformat()}."),
-                evidence={"employee_id": emp.id,
-                          "current_role": emp.current_role.value,
-                          "prior_roles": [r.value for r in prior_roles],
-                          "last_role_change_at": last_change_at.isoformat(),
-                          "granted_at": a.granted_at.isoformat()},
-                recommended_action=self.recommended_action,
-                suggested_fix={"_action": "delete_assignment",
-                               "_note": "Manager should confirm before revocation."},
-            ))
+            violations.append(
+                Violation(
+                    id=vid,
+                    rule_id=self.id,
+                    rule_name=self.name,
+                    severity=self.severity,
+                    detected_at=now_utc(),
+                    target_type="assignment",
+                    target_id=a.id,
+                    explanation=(
+                        f"Assignment was appropriate under prior role(s) "
+                        f"but employee's current role is "
+                        f"'{emp.current_role.value}'. Last role change "
+                        f"was {last_change_at.isoformat()}."
+                    ),
+                    evidence={
+                        "employee_id": emp.id,
+                        "current_role": emp.current_role.value,
+                        "prior_roles": sorted(r.value for r in prior_roles),
+                        "last_role_change_at": last_change_at.isoformat(),
+                        "granted_at": a.granted_at.isoformat(),
+                    },
+                    recommended_action=self.recommended_action,
+                    suggested_fix={
+                        "_action": "delete_assignment",
+                        "_note": "Manager should confirm before revocation.",
+                    },
+                )
+            )
         return violations
 
 
@@ -179,19 +211,30 @@ class _HR04:
             if emp.status == EmployeeStatus.TERMINATED:
                 vid = next_violation_id(existing_ids)
                 existing_ids.append(vid)
-                violations.append(Violation(
-                    id=vid, rule_id=self.id, rule_name=self.name,
-                    severity=self.severity, detected_at=now_utc(),
-                    target_type="assignment", target_id=a.id,
-                    explanation=(f"Terminated employee {emp.id} ({emp.full_name}) "
-                                 f"still holds active assignment {a.id}."),
-                    evidence={"employee_id": emp.id,
-                              "terminated_at": (emp.terminated_at.isoformat()
-                                                if emp.terminated_at else None),
-                              "entitlement_id": a.entitlement_id},
-                    recommended_action=self.recommended_action,
-                    suggested_fix={"_action": "delete_assignment"},
-                ))
+                violations.append(
+                    Violation(
+                        id=vid,
+                        rule_id=self.id,
+                        rule_name=self.name,
+                        severity=self.severity,
+                        detected_at=now_utc(),
+                        target_type="assignment",
+                        target_id=a.id,
+                        explanation=(
+                            f"Terminated employee {emp.id} ({emp.full_name}) "
+                            f"still holds active assignment {a.id}."
+                        ),
+                        evidence={
+                            "employee_id": emp.id,
+                            "terminated_at": (
+                                emp.terminated_at.isoformat() if emp.terminated_at else None
+                            ),
+                            "entitlement_id": a.entitlement_id,
+                        },
+                        recommended_action=self.recommended_action,
+                        suggested_fix={"_action": "delete_assignment"},
+                    )
+                )
         return violations
 
 

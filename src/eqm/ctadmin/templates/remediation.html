@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block signal_rail %}
+  <section class="signal-rail" aria-label="Remediation scope">
+    <span class="signal-node" aria-hidden="true"></span>
+    <span>Repair queue / {{ remediation_payload.pagination.total }} matching findings</span>
+    {% if remediation_payload.filters.state or remediation_payload.filters.severity or remediation_payload.filters.rule or remediation_payload.filters.targetType or remediation_payload.filters.search %}
+      <a class="signal-clear" href="/ctadmin/remediation">Clear filters</a>
+    {% endif %}
+  </section>
+{% endblock %}
+
+{% block content %}
+  <div class="remediation-shell">
+    <section class="dashboard-thesis" aria-labelledby="page-heading">
+      <div>
+        <p class="eyebrow">CONTROL QUEUE / VERIFIED EXECUTION</p>
+        <h1 id="page-heading">Repair the signal, verify the outcome.</h1>
+        <p>Prioritize access-quality findings, inspect evidence, and apply deterministic changes to EQMU source records.</p>
+      </div>
+    </section>
+
+    <section class="kpi-grid workflow-kpis" aria-label="Remediation workflow totals">
+      <article class="kpi-card"><span class="kpi-label">Not started</span><strong class="kpi-value">{{ remediation_payload.kpis.notStartedFindings }}</strong><small>Open findings</small></article>
+      <article class="kpi-card kpi-progress"><span class="kpi-label">In progress</span><strong class="kpi-value">{{ remediation_payload.kpis.inProgressFindings }}</strong><small>Approval or manual repair</small></article>
+      <article class="kpi-card"><span class="kpi-label">Complete</span><strong class="kpi-value">{{ remediation_payload.kpis.completeFindings }}</strong><small>Resolved or rejected</small></article>
+    </section>
+
+    <form class="queue-filters" method="get" action="/ctadmin/remediation" aria-label="Filter remediation queue">
+      <label for="state-filter">Workflow
+        <select id="state-filter" name="state">
+          <option value="">All states</option>
+          {% for value, label in [('not_started', 'Not started'), ('in_progress', 'In progress'), ('complete', 'Complete')] %}
+            <option value="{{ value }}"{% if value in remediation_payload.filters.state %} selected{% endif %}>{{ label }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label for="severity-filter">Severity
+        <select id="severity-filter" name="severity">
+          <option value="">All severities</option>
+          {% for value in ['critical', 'high', 'medium', 'low'] %}<option value="{{ value }}"{% if value in remediation_payload.filters.severity %} selected{% endif %}>{{ value | title }}</option>{% endfor %}
+        </select>
+      </label>
+      <label for="rule-filter">Rule
+        <select id="rule-filter" name="rule">
+          <option value="">All rules</option>
+          {% for rule_id, rule_name in rule_options %}<option value="{{ rule_id }}"{% if rule_id | lower in remediation_payload.filters.rule %} selected{% endif %}>{{ rule_id }} · {{ rule_name }}</option>{% endfor %}
+        </select>
+      </label>
+      <label for="target-filter">Target
+        <select id="target-filter" name="targetType">
+          <option value="">All target types</option>
+          {% for value in ['employee', 'assignment', 'entitlement', 'resource'] %}<option value="{{ value }}"{% if value in remediation_payload.filters.targetType %} selected{% endif %}>{{ value | title }}</option>{% endfor %}
+        </select>
+      </label>
+      <label class="queue-search" for="remediation-search">Search
+        <input id="remediation-search" name="search" type="search" value="{{ remediation_payload.filters.search }}" placeholder="Finding, user, rule, or target">
+      </label>
+      <input type="hidden" name="pageSize" value="{{ remediation_payload.filters.pageSize }}">
+      <button class="primary-button" type="submit">Apply filters</button>
+    </form>
+
+    <section class="results-panel" aria-labelledby="queue-heading">
+      <header class="results-header"><div><p class="panel-code">ADMINISTRATIVE QUEUE</p><h2 id="queue-heading">Findings</h2></div><p class="results-count">{{ remediation_payload.pagination.total }} in scope</p></header>
+      <div class="table-scroll" tabindex="0" aria-label="Scrollable remediation findings">
+        <table>
+          <caption class="visually-hidden">Remediation findings and available repair actions</caption>
+          <thead><tr><th>Violation</th><th>User</th><th>Rule</th><th>Status</th><th>Severity</th><th>Target</th><th>Recommended action</th><th>Action</th></tr></thead>
+          <tbody>
+            {% for row in remediation_payload.rows %}
+              <tr>
+                <td><a class="finding-link" href="{{ row.detailHref }}">{{ row.violationId }}</a></td>
+                <td>{{ row.userName }}</td><td><span class="mono-cell">{{ row.ruleId }}</span><br>{{ row.ruleName }}</td>
+                <td>{{ row.status }}</td><td class="severity severity-{{ row.severity | lower }}">{{ row.severity }}</td>
+                <td class="mono-cell">{{ row.targetType }} / {{ row.targetId }}</td><td>{{ row.recommendedAction | replace('_', ' ') | title }}</td>
+                <td>{% if row.repairable %}<button class="repair-trigger secondary-button" type="button" data-finding-id="{{ row.violationId }}">Repair</button>{% else %}<span class="state-complete">Complete</span>{% endif %}</td>
+              </tr>
+            {% else %}
+              <tr class="empty-row"><td colspan="8">No findings match this queue signal. Clear a filter or broaden the search.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <nav class="pagination" aria-label="Remediation pages">
+        {% set page = remediation_payload.pagination.page %}{% set total_pages = remediation_payload.pagination.totalPages %}
+        <span>Page {{ page }} of {{ total_pages or 0 }}</span>
+        <div>
+          {% if remediation_payload.pagination.previousHref %}<a class="secondary-button" href="{{ remediation_payload.pagination.previousHref }}">Previous</a>{% endif %}
+          {% if remediation_payload.pagination.nextHref %}<a class="secondary-button" href="{{ remediation_payload.pagination.nextHref }}">Next</a>{% endif %}
+        </div>
+      </nav>
+    </section>
+  </div>
+  {% include "_repair_drawer.html" %}
+  <script src="/ctadmin/static/dashboard.js" defer></script>
+{% endblock %}

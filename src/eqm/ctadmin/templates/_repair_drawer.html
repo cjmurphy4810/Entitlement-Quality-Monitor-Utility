@@ -1,0 +1,39 @@
+<div id="repair-drawer-backdrop" class="drawer-backdrop" hidden></div>
+<aside
+  id="repair-drawer"
+  class="repair-drawer"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="repair-drawer-title"
+  aria-describedby="repair-drawer-description"
+  aria-hidden="true"
+  data-csrf-token="{{ csrf_token }}"
+  hidden
+>
+  <header class="drawer-header">
+    <div>
+      <p class="panel-code">VERIFIED REPAIR PATH</p>
+      <h2 id="repair-drawer-title">Repair finding</h2>
+    </div>
+    <button id="repair-drawer-close" class="icon-button" type="button" aria-label="Close repair drawer">×</button>
+  </header>
+  <div class="drawer-body">
+    <p id="repair-drawer-description" class="muted">Review current evidence and confirm the exact data change.</p>
+    <div id="repair-drawer-loading" class="drawer-state" role="status">Loading verified repair path…</div>
+    <div id="repair-drawer-error" class="form-error" role="alert" hidden></div>
+    <section id="repair-drawer-content" hidden>
+      <div class="drawer-finding-id"><span>Finding</span><strong id="repair-preview-id"></strong></div>
+      <p id="repair-preview-reason"></p>
+      <h3>Current evidence</h3>
+      <pre id="repair-preview-evidence" class="evidence-code"></pre>
+      <form id="repair-form">
+        <div id="repair-fields" class="repair-fields"></div>
+        <div class="drawer-actions">
+          <button id="repair-cancel" class="secondary-button" type="button">Cancel</button>
+          <button id="repair-confirm" class="primary-button" type="submit">Confirm repair</button>
+        </div>
+      </form>
+    </section>
+    <div id="repair-outcome" class="repair-outcome" aria-live="polite" tabindex="-1"></div>
+  </div>
+</aside>
