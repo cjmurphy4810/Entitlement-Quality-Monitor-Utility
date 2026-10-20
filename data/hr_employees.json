@@ -45347,5 +45347,43 @@
     "manager_id": null,
     "hired_at": "2026-10-20T10:46:24.241829Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02162",
+    "full_name": "Steven Kelley",
+    "email": "emp-02162@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-10-20T15:30:59.340076Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-20T15:30:59.340076Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02163",
+    "full_name": "Brenda Pittman",
+    "email": "emp-02163@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-10-20T15:30:59.340076Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-20T15:30:59.340076Z",
+    "terminated_at": null
   }
 ]
