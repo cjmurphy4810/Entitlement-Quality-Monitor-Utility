@@ -37583,7 +37583,7 @@
     "email": "emp-01759@example.com",
     "current_role": "business_analyst",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -37594,7 +37594,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T08:21:13.500880Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-20T22:52:21.129344Z"
   },
   {
     "id": "EMP-01760",
@@ -45428,6 +45428,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-20T19:46:47.138923Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02166",
+    "full_name": "John Powell",
+    "email": "emp-02166@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-10-20T22:52:21.129344Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-20T22:52:21.129344Z",
     "terminated_at": null
   }
 ]
