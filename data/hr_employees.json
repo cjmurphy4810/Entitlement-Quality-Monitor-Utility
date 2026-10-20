@@ -45303,5 +45303,24 @@
     "manager_id": null,
     "hired_at": "2026-10-19T17:37:32.782090Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02160",
+    "full_name": "Jenny Larsen",
+    "email": "emp-02160@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-10-20T05:36:25.124230Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-20T05:36:25.124230Z",
+    "terminated_at": null
   }
 ]
