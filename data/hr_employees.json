@@ -26869,14 +26869,20 @@
     "id": "EMP-01223",
     "full_name": "Sarah Miller",
     "email": "emp-01223@example.com",
-    "current_role": "developer",
-    "current_division": "business_sales",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_sales",
         "started_at": "2026-08-02T21:24:09.530826Z",
+        "ended_at": "2026-10-20T10:46:24.241829Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-10-20T10:46:24.241829Z",
         "ended_at": null
       }
     ],
@@ -45321,6 +45327,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-20T05:36:25.124230Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02161",
+    "full_name": "David Elliott",
+    "email": "emp-02161@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-10-20T10:46:24.241829Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-20T10:46:24.241829Z",
     "terminated_at": null
   }
 ]
