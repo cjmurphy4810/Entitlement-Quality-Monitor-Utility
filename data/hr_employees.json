@@ -11423,14 +11423,20 @@
     "id": "EMP-00495",
     "full_name": "Shawn Mann",
     "email": "emp-00495@example.com",
-    "current_role": "developer",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "business_dev",
         "started_at": "2026-05-29T21:48:52.161983Z",
+        "ended_at": "2026-10-20T00:51:57.258209Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-10-20T00:51:57.258209Z",
         "ended_at": null
       }
     ],
