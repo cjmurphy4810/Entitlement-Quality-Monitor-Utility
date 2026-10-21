@@ -45486,5 +45486,24 @@
     "manager_id": null,
     "hired_at": "2026-10-21T01:10:33.923835Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02169",
+    "full_name": "Troy Bailey",
+    "email": "emp-02169@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-10-21T06:14:45.119446Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T06:14:45.119446Z",
+    "terminated_at": null
   }
 ]
