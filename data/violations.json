@@ -256741,5 +256741,163 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10593",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-21T20:49:15.448823Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04319",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-01735",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00076",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10594",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-21T20:49:18.989740Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04319",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'cyber_tech'.",
+    "evidence": {
+      "employee_id": "EMP-01735",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00076",
+      "entitlement_division": "cyber_tech"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10595",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-21T20:49:19.188934Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01284",
+    "explanation": "Terminated employee EMP-00479 (Donna Johnson) still holds active assignment ASN-01284.",
+    "evidence": {
+      "employee_id": "EMP-00479",
+      "terminated_at": "2026-10-21T20:49:12.879123+00:00",
+      "entitlement_id": "ENT-00077"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10596",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-21T20:49:19.234209Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01467",
+    "explanation": "Terminated employee EMP-00479 (Donna Johnson) still holds active assignment ASN-01467.",
+    "evidence": {
+      "employee_id": "EMP-00479",
+      "terminated_at": "2026-10-21T20:49:12.879123+00:00",
+      "entitlement_id": "ENT-00110"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10597",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-21T20:49:19.283232Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01668",
+    "explanation": "Terminated employee EMP-00479 (Donna Johnson) still holds active assignment ASN-01668.",
+    "evidence": {
+      "employee_id": "EMP-00479",
+      "terminated_at": "2026-10-21T20:49:12.879123+00:00",
+      "entitlement_id": "ENT-00123"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10598",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-21T20:49:19.358029Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01993",
+    "explanation": "Terminated employee EMP-00479 (Donna Johnson) still holds active assignment ASN-01993.",
+    "evidence": {
+      "employee_id": "EMP-00479",
+      "terminated_at": "2026-10-21T20:49:12.879123+00:00",
+      "entitlement_id": "ENT-00145"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10599",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-21T20:49:19.630516Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02928",
+    "explanation": "Terminated employee EMP-00479 (Donna Johnson) still holds active assignment ASN-02928.",
+    "evidence": {
+      "employee_id": "EMP-00479",
+      "terminated_at": "2026-10-21T20:49:12.879123+00:00",
+      "entitlement_id": "ENT-00051"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

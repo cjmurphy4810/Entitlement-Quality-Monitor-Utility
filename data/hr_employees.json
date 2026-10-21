@@ -11049,7 +11049,7 @@
     "email": "emp-00479@example.com",
     "current_role": "customer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -11060,7 +11060,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-05-28T02:34:57.297721Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-21T20:49:12.879123Z"
   },
   {
     "id": "EMP-00480",
@@ -45580,6 +45580,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-21T17:29:05.180717Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02174",
+    "full_name": "Christopher Abbott",
+    "email": "emp-02174@example.com",
+    "current_role": "operations",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-10-21T20:49:12.879123Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T20:49:12.879123Z",
     "terminated_at": null
   }
 ]
