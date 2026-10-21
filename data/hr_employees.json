@@ -37056,14 +37056,20 @@
     "id": "EMP-01732",
     "full_name": "David Moore",
     "email": "emp-01732@example.com",
-    "current_role": "business_user",
-    "current_division": "business_dev",
+    "current_role": "operations",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_dev",
         "started_at": "2026-08-22T11:14:15.260296Z",
+        "ended_at": "2026-10-21T23:51:36.252036Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-10-21T23:51:36.252036Z",
         "ended_at": null
       }
     ],
@@ -45599,6 +45605,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-21T20:49:12.879123Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02175",
+    "full_name": "Matthew Flores",
+    "email": "emp-02175@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-10-21T23:51:36.252036Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T23:51:36.252036Z",
     "terminated_at": null
   }
 ]
