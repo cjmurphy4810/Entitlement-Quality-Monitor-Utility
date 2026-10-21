@@ -45505,5 +45505,43 @@
     "manager_id": null,
     "hired_at": "2026-10-21T06:14:45.119446Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02170",
+    "full_name": "Deborah Adams",
+    "email": "emp-02170@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-10-21T12:08:47.004341Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T12:08:47.004341Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02171",
+    "full_name": "Elizabeth Petersen",
+    "email": "emp-02171@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-10-21T12:08:47.004341Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T12:08:47.004341Z",
+    "terminated_at": null
   }
 ]
