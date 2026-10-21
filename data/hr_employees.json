@@ -37854,7 +37854,7 @@
     "email": "emp-01772@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -37865,7 +37865,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-23T15:44:36.254059Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-21T17:29:05.180717Z"
   },
   {
     "id": "EMP-01773",
@@ -45542,6 +45542,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-21T12:08:47.004341Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02172",
+    "full_name": "Gabrielle Brown",
+    "email": "emp-02172@example.com",
+    "current_role": "business_user",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_sales",
+        "started_at": "2026-10-21T17:29:05.180717Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T17:29:05.180717Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02173",
+    "full_name": "Anna Knight",
+    "email": "emp-02173@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-10-21T17:29:05.180717Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T17:29:05.180717Z",
     "terminated_at": null
   }
 ]
