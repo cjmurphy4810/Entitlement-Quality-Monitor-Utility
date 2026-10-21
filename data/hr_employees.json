@@ -45448,5 +45448,43 @@
     "manager_id": null,
     "hired_at": "2026-10-20T22:52:21.129344Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02167",
+    "full_name": "Catherine Lopez",
+    "email": "emp-02167@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-10-21T01:10:33.923835Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T01:10:33.923835Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02168",
+    "full_name": "Brandon Lambert",
+    "email": "emp-02168@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-10-21T01:10:33.923835Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-21T01:10:33.923835Z",
+    "terminated_at": null
   }
 ]
