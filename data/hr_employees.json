@@ -45701,5 +45701,43 @@
     "manager_id": null,
     "hired_at": "2026-10-22T08:12:05.698532Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02180",
+    "full_name": "Amanda Buchanan",
+    "email": "emp-02180@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-10-22T13:58:13.268568Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-22T13:58:13.268568Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02181",
+    "full_name": "Julia Rush",
+    "email": "emp-02181@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-10-22T13:58:13.268568Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-22T13:58:13.268568Z",
+    "terminated_at": null
   }
 ]

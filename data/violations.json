@@ -257377,5 +257377,50 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10620",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-22T13:58:19.480379Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04328",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00468",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00372",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10621",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-22T13:58:20.534876Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04328",
+    "explanation": "Terminated employee EMP-00468 (Lori Thompson) still holds active assignment ASN-04328.",
+    "evidence": {
+      "employee_id": "EMP-00468",
+      "terminated_at": "2026-07-18T14:21:07.192469+00:00",
+      "entitlement_id": "ENT-00372"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
