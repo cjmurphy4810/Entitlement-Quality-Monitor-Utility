@@ -10084,5 +10084,21 @@
     "sod_tags": [],
     "created_at": "2026-10-22T18:21:40.346348Z",
     "updated_at": "2026-10-22T18:21:40.346348Z"
+  },
+  {
+    "id": "ENT-00649",
+    "name": "new entitlement ENT-00649",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "tech_dev",
+    "linked_resource_ids": [
+      "RES-00367"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-10-22T21:49:04.296518Z",
+    "updated_at": "2026-10-22T21:49:04.296518Z"
   }
 ]
