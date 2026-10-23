@@ -45928,5 +45928,24 @@
     "manager_id": null,
     "hired_at": "2026-10-23T15:18:27.432722Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02191",
+    "full_name": "Scott Blackwell",
+    "email": "emp-02191@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-10-23T19:24:49.145624Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-23T19:24:49.145624Z",
+    "terminated_at": null
   }
 ]
