@@ -19627,14 +19627,20 @@
     "id": "EMP-00875",
     "full_name": "Emily Lynch",
     "email": "emp-00875@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-07-10T18:56:35.762953Z",
+        "ended_at": "2026-10-23T05:08:27.140203Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-10-23T05:08:27.140203Z",
         "ended_at": null
       }
     ],
@@ -45858,6 +45864,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-23T00:19:27.006142Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02188",
+    "full_name": "Bianca Figueroa",
+    "email": "emp-02188@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-10-23T05:08:27.140203Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-23T05:08:27.140203Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02189",
+    "full_name": "Randy Petty",
+    "email": "emp-02189@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-10-23T05:08:27.140203Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-23T05:08:27.140203Z",
     "terminated_at": null
   }
 ]

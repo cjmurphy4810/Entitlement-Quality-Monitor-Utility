@@ -4751,7 +4751,7 @@
     ],
     "sod_tags": [],
     "created_at": "2026-07-17T20:00:44.449629Z",
-    "updated_at": "2026-07-17T20:00:44.449629Z"
+    "updated_at": "2026-10-23T05:08:27.140203Z"
   },
   {
     "id": "ENT-00301",
@@ -10100,5 +10100,21 @@
     "sod_tags": [],
     "created_at": "2026-10-22T21:49:04.296518Z",
     "updated_at": "2026-10-22T21:49:04.296518Z"
+  },
+  {
+    "id": "ENT-00650",
+    "name": "new entitlement ENT-00650",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00396"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-10-23T05:08:27.140203Z",
+    "updated_at": "2026-10-23T05:08:27.140203Z"
   }
 ]
