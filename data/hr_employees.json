@@ -45821,5 +45821,43 @@
     "manager_id": null,
     "hired_at": "2026-10-22T21:49:04.296518Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02186",
+    "full_name": "Diane Baldwin",
+    "email": "emp-02186@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-10-23T00:19:27.006142Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-23T00:19:27.006142Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02187",
+    "full_name": "Christopher Brown",
+    "email": "emp-02187@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-10-23T00:19:27.006142Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-23T00:19:27.006142Z",
+    "terminated_at": null
   }
 ]
