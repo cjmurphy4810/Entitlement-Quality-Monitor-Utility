@@ -45947,5 +45947,43 @@
     "manager_id": null,
     "hired_at": "2026-10-23T19:24:49.145624Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02192",
+    "full_name": "Aaron Bates",
+    "email": "emp-02192@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-10-23T22:27:44.912761Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-23T22:27:44.912761Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02193",
+    "full_name": "Mary Foster",
+    "email": "emp-02193@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-10-23T22:27:44.912761Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-23T22:27:44.912761Z",
+    "terminated_at": null
   }
 ]

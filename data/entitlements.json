@@ -10116,5 +10116,21 @@
     "sod_tags": [],
     "created_at": "2026-10-23T05:08:27.140203Z",
     "updated_at": "2026-10-23T05:08:27.140203Z"
+  },
+  {
+    "id": "ENT-00651",
+    "name": "new entitlement ENT-00651",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "developer"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00311"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-10-23T22:27:44.912761Z",
+    "updated_at": "2026-10-23T22:27:44.912761Z"
   }
 ]
