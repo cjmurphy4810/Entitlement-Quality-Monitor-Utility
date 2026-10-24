@@ -46016,5 +46016,43 @@
     "manager_id": null,
     "hired_at": "2026-10-24T09:41:56.403253Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02195",
+    "full_name": "Michael Freeman",
+    "email": "emp-02195@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-10-24T13:46:36.479515Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-24T13:46:36.479515Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02196",
+    "full_name": "Alexandra Berg",
+    "email": "emp-02196@example.com",
+    "current_role": "developer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_dev",
+        "started_at": "2026-10-24T13:46:36.479515Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-24T13:46:36.479515Z",
+    "terminated_at": null
   }
 ]
