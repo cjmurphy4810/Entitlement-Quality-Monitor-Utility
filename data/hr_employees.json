@@ -45997,5 +45997,24 @@
     "manager_id": null,
     "hired_at": "2026-10-23T22:27:44.912761Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02194",
+    "full_name": "David Kelley",
+    "email": "emp-02194@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-10-24T09:41:56.403253Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-24T09:41:56.403253Z",
+    "terminated_at": null
   }
 ]
