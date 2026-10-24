@@ -46092,5 +46092,24 @@
     "manager_id": null,
     "hired_at": "2026-10-24T19:37:26.811700Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02199",
+    "full_name": "Sean Buchanan",
+    "email": "emp-02199@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-10-24T22:10:11.898760Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-24T22:10:11.898760Z",
+    "terminated_at": null
   }
 ]
