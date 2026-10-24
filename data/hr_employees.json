@@ -46073,5 +46073,24 @@
     "manager_id": null,
     "hired_at": "2026-10-24T17:08:24.304327Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02198",
+    "full_name": "William Carrillo",
+    "email": "emp-02198@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-10-24T19:37:26.811700Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-24T19:37:26.811700Z",
+    "terminated_at": null
   }
 ]
