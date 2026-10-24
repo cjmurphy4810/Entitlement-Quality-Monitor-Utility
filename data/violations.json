@@ -258372,5 +258372,117 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10661",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-24T00:56:18.981879Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04345",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-01892",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00259",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10662",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-24T00:56:18.983835Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04346",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01694",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00549",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10663",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-24T00:56:19.251062Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01521",
+    "explanation": "Terminated employee EMP-00488 (James Carter) still holds active assignment ASN-01521.",
+    "evidence": {
+      "employee_id": "EMP-00488",
+      "terminated_at": "2026-10-24T00:56:12.409515+00:00",
+      "entitlement_id": "ENT-00200"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10664",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-24T00:56:19.288804Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01660",
+    "explanation": "Terminated employee EMP-00488 (James Carter) still holds active assignment ASN-01660.",
+    "evidence": {
+      "employee_id": "EMP-00488",
+      "terminated_at": "2026-10-24T00:56:12.409515+00:00",
+      "entitlement_id": "ENT-00093"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10665",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-24T00:56:20.085725Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04345",
+    "explanation": "Terminated employee EMP-01892 (David Mclaughlin) still holds active assignment ASN-04345.",
+    "evidence": {
+      "employee_id": "EMP-01892",
+      "terminated_at": "2026-09-06T00:28:16.177763+00:00",
+      "entitlement_id": "ENT-00259"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
