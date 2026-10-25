@@ -43019,14 +43019,20 @@
     "id": "EMP-02037",
     "full_name": "Henry Fox",
     "email": "emp-02037@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-09-26T05:15:27.409787Z",
+        "ended_at": "2026-10-25T20:14:48.139494Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-10-25T20:14:48.139494Z",
         "ended_at": null
       }
     ],
@@ -46185,6 +46191,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-25T14:09:26.974524Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02203",
+    "full_name": "Jeremy Young",
+    "email": "emp-02203@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-10-25T20:14:48.139494Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-25T20:14:48.139494Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02204",
+    "full_name": "Scott Choi",
+    "email": "emp-02204@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-10-25T20:14:48.139494Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-25T20:14:48.139494Z",
     "terminated_at": null
   }
 ]
