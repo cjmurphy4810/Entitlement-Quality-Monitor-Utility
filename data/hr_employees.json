@@ -34275,14 +34275,20 @@
     "id": "EMP-01591",
     "full_name": "Ashley Higgins",
     "email": "emp-01591@example.com",
-    "current_role": "developer",
-    "current_division": "tech_dev",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_dev",
         "started_at": "2026-08-18T10:54:16.203427Z",
+        "ended_at": "2026-10-25T14:09:26.974524Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-10-25T14:09:26.974524Z",
         "ended_at": null
       }
     ],
@@ -46160,6 +46166,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-25T09:58:33.503875Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02202",
+    "full_name": "Timothy Golden",
+    "email": "emp-02202@example.com",
+    "current_role": "business_user",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_ops",
+        "started_at": "2026-10-25T14:09:26.974524Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-25T14:09:26.974524Z",
     "terminated_at": null
   }
 ]
