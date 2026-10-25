@@ -38769,7 +38769,7 @@
     "email": "emp-01817@example.com",
     "current_role": "customer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -38786,7 +38786,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-25T12:34:02.588094Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-25T00:25:52.856398Z"
   },
   {
     "id": "EMP-01818",
