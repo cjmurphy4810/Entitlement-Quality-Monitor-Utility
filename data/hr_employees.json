@@ -19118,7 +19118,7 @@
     "email": "emp-00850@example.com",
     "current_role": "customer",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -19129,7 +19129,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-08T04:17:47.506060Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-25T22:42:53.185376Z"
   },
   {
     "id": "EMP-00851",
@@ -46229,6 +46229,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-25T20:14:48.139494Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02205",
+    "full_name": "Robert Bell",
+    "email": "emp-02205@example.com",
+    "current_role": "operations",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "finance",
+        "started_at": "2026-10-25T22:42:53.185376Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-25T22:42:53.185376Z",
     "terminated_at": null
   }
 ]
