@@ -31230,7 +31230,7 @@
     "email": "emp-01436@example.com",
     "current_role": "operations",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -31241,7 +31241,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-08-13T18:25:56.260826Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-26T12:02:51.765354Z"
   },
   {
     "id": "EMP-01437",
@@ -46317,6 +46317,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-26T05:41:43.670576Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02209",
+    "full_name": "Brian Diaz",
+    "email": "emp-02209@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-10-26T12:02:51.765354Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-26T12:02:51.765354Z",
     "terminated_at": null
   }
 ]
