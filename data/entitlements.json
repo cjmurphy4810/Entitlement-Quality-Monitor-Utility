@@ -8529,7 +8529,7 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-08-25T08:33:35.839980Z",
-    "updated_at": "2026-08-25T08:33:35.839980Z"
+    "updated_at": "2026-10-26T18:45:36.745770Z"
   },
   {
     "id": "ENT-00547",
@@ -10194,5 +10194,21 @@
     "sod_tags": [],
     "created_at": "2026-10-25T17:44:18.322547Z",
     "updated_at": "2026-10-25T17:44:18.322547Z"
+  },
+  {
+    "id": "ENT-00656",
+    "name": "new entitlement ENT-00656",
+    "pbl_description": "Provides administrator access to a system for authorized users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "tech_ops",
+    "linked_resource_ids": [
+      "RES-00380"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-10-26T18:45:36.745770Z",
+    "updated_at": "2026-10-26T18:45:36.745770Z"
   }
 ]
