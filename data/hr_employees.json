@@ -11536,8 +11536,8 @@
     "id": "EMP-00500",
     "full_name": "Cassie Larson",
     "email": "emp-00500@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -11550,6 +11550,12 @@
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-06-12T19:00:17.398800Z",
+        "ended_at": "2026-10-26T00:55:33.627992Z"
+      },
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-10-26T00:55:33.627992Z",
         "ended_at": null
       }
     ],
@@ -46248,6 +46254,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-25T22:42:53.185376Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02206",
+    "full_name": "Brianna Tucker",
+    "email": "emp-02206@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-10-26T00:55:33.627992Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-26T00:55:33.627992Z",
     "terminated_at": null
   }
 ]
