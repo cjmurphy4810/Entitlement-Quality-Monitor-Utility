@@ -46356,5 +46356,24 @@
     "manager_id": null,
     "hired_at": "2026-10-26T18:45:36.745770Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02211",
+    "full_name": "Dale Velazquez",
+    "email": "emp-02211@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-10-26T22:58:43.273600Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-26T22:58:43.273600Z",
+    "terminated_at": null
   }
 ]
