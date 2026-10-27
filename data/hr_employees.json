@@ -2494,7 +2494,7 @@
     "email": "emp-00102@example.com",
     "current_role": "developer",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -2511,7 +2511,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-04-28T07:28:36.536901Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-27T18:50:21.087495Z"
   },
   {
     "id": "EMP-00103",
@@ -46418,6 +46418,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-27T07:09:49.938514Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02214",
+    "full_name": "Mr. Christopher Montoya",
+    "email": "emp-02214@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-10-27T18:50:21.087495Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-27T18:50:21.087495Z",
     "terminated_at": null
   }
 ]
