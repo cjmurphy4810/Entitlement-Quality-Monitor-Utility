@@ -46463,5 +46463,24 @@
     "manager_id": null,
     "hired_at": "2026-10-28T01:57:43.726449Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02216",
+    "full_name": "Sarah Ball",
+    "email": "emp-02216@example.com",
+    "current_role": "business_analyst",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "finance",
+        "started_at": "2026-10-28T14:51:41.461127Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-28T14:51:41.461127Z",
+    "terminated_at": null
   }
 ]
