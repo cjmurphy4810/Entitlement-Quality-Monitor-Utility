@@ -19639,8 +19639,8 @@
     "id": "EMP-00875",
     "full_name": "Emily Lynch",
     "email": "emp-00875@example.com",
-    "current_role": "operations",
-    "current_division": "business_sales",
+    "current_role": "customer",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
@@ -19653,6 +19653,12 @@
         "role": "operations",
         "division": "business_sales",
         "started_at": "2026-10-23T05:08:27.140203Z",
+        "ended_at": "2026-10-28T01:57:43.726449Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-10-28T01:57:43.726449Z",
         "ended_at": null
       }
     ],
@@ -44666,7 +44672,7 @@
     "email": "emp-02122@example.com",
     "current_role": "operations",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -44677,7 +44683,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-11T23:01:16.128217Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-28T01:57:43.726449Z"
   },
   {
     "id": "EMP-02123",
@@ -46437,6 +46443,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-27T18:50:21.087495Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02215",
+    "full_name": "Amy Collins",
+    "email": "emp-02215@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-10-28T01:57:43.726449Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-28T01:57:43.726449Z",
     "terminated_at": null
   }
 ]
