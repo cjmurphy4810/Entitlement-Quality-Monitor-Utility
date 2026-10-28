@@ -19603,7 +19603,7 @@
     "email": "emp-00873@example.com",
     "current_role": "operations",
     "current_division": "business_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -19614,7 +19614,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-10T15:10:02.831921Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-28T20:01:08.548061Z"
   },
   {
     "id": "EMP-00874",
@@ -46481,6 +46481,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-28T14:51:41.461127Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02217",
+    "full_name": "Dan White",
+    "email": "emp-02217@example.com",
+    "current_role": "operations",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "legal_compliance",
+        "started_at": "2026-10-28T20:01:08.548061Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-28T20:01:08.548061Z",
     "terminated_at": null
   }
 ]
