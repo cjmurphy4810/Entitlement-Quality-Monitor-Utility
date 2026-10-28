@@ -10238,5 +10238,21 @@
     "sod_tags": [],
     "created_at": "2026-10-27T22:47:49.470769Z",
     "updated_at": "2026-10-27T22:47:49.470769Z"
+  },
+  {
+    "id": "ENT-00659",
+    "name": "new entitlement ENT-00659",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "cyber_tech",
+    "linked_resource_ids": [
+      "RES-00017"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-10-28T07:57:17.659138Z",
+    "updated_at": "2026-10-28T07:57:17.659138Z"
   }
 ]
