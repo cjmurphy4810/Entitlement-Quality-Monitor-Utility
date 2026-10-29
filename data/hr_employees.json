@@ -46501,5 +46501,43 @@
     "manager_id": null,
     "hired_at": "2026-10-28T20:01:08.548061Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02218",
+    "full_name": "Antonio Lambert",
+    "email": "emp-02218@example.com",
+    "current_role": "developer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "finance",
+        "started_at": "2026-10-29T06:07:27.685569Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-29T06:07:27.685569Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02219",
+    "full_name": "Tina Stephenson",
+    "email": "emp-02219@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-10-29T06:07:27.685569Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-29T06:07:27.685569Z",
+    "terminated_at": null
   }
 ]
