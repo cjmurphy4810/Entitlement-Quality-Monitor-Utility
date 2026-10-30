@@ -262840,5 +262840,148 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10848",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-30T16:06:44.661030Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04421",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00898",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00525",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10849",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-30T16:06:44.661875Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04422",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['business_analyst'].",
+    "evidence": {
+      "employee_id": "EMP-00760",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00213",
+      "acceptable_roles": [
+        "business_analyst"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10850",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-30T16:06:44.662704Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04423",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-01619",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00332",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10851",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-30T16:06:46.713532Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04421",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'business_ops'.",
+    "evidence": {
+      "employee_id": "EMP-00898",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00525",
+      "entitlement_division": "business_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10852",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-10-30T16:06:46.714577Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04423",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'tech_dev'.",
+    "evidence": {
+      "employee_id": "EMP-01619",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00332",
+      "entitlement_division": "tech_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10853",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-10-30T16:06:47.318285Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04421",
+    "explanation": "Terminated employee EMP-00898 (Robert Anderson) still holds active assignment ASN-04421.",
+    "evidence": {
+      "employee_id": "EMP-00898",
+      "terminated_at": "2026-08-18T23:15:05.164342+00:00",
+      "entitlement_id": "ENT-00525"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]

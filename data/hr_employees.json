@@ -24854,14 +24854,20 @@
     "id": "EMP-01122",
     "full_name": "Sara Rush",
     "email": "emp-01122@example.com",
-    "current_role": "operations",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "hr",
         "started_at": "2026-07-26T07:32:13.262216Z",
+        "ended_at": "2026-10-30T16:06:43.153671Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-10-30T16:06:43.153671Z",
         "ended_at": null
       }
     ],
