@@ -43285,7 +43285,7 @@
     "email": "emp-02049@example.com",
     "current_role": "developer",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "developer",
@@ -43296,7 +43296,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-27T18:50:12.832322Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-30T02:46:19.070785Z"
   },
   {
     "id": "EMP-02050",
@@ -46582,6 +46582,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-29T13:27:29.294139Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02222",
+    "full_name": "Jaime Stevenson",
+    "email": "emp-02222@example.com",
+    "current_role": "operations",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-10-30T02:46:19.070785Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-30T02:46:19.070785Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02223",
+    "full_name": "Justin Barrera",
+    "email": "emp-02223@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-10-30T02:46:19.070785Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-30T02:46:19.070785Z",
     "terminated_at": null
   }
 ]
