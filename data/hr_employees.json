@@ -46740,5 +46740,24 @@
     "manager_id": null,
     "hired_at": "2026-10-31T06:03:08.343260Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02229",
+    "full_name": "Robert Arnold MD",
+    "email": "emp-02229@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-10-31T12:53:57.552836Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-31T12:53:57.552836Z",
+    "terminated_at": null
   }
 ]
