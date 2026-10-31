@@ -16629,7 +16629,7 @@
     "email": "emp-00731@example.com",
     "current_role": "operations",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -16652,7 +16652,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-27T09:25:27.595493Z",
-    "terminated_at": null
+    "terminated_at": "2026-10-31T23:53:22.122793Z"
   },
   {
     "id": "EMP-00732",
@@ -46808,6 +46808,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-31T20:36:04.345168Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02232",
+    "full_name": "Robert Singh",
+    "email": "emp-02232@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-10-31T23:53:22.122793Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-31T23:53:22.122793Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02233",
+    "full_name": "Lauren Archer",
+    "email": "emp-02233@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-10-31T23:53:22.122793Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-31T23:53:22.122793Z",
     "terminated_at": null
   }
 ]
