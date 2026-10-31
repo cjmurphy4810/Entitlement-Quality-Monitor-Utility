@@ -46721,5 +46721,24 @@
     "manager_id": null,
     "hired_at": "2026-10-31T00:21:26.621040Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02228",
+    "full_name": "Rachel Stark",
+    "email": "emp-02228@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-10-31T06:03:08.343260Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-10-31T06:03:08.343260Z",
+    "terminated_at": null
   }
 ]
