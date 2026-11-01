@@ -39237,14 +39237,20 @@
     "id": "EMP-01837",
     "full_name": "Tina Mitchell",
     "email": "emp-01837@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_dev",
+    "current_role": "customer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "business_dev",
         "started_at": "2026-08-25T23:46:42.247595Z",
+        "ended_at": "2026-11-01T21:01:11.999363Z"
+      },
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-11-01T21:01:11.999363Z",
         "ended_at": null
       }
     ],
@@ -45752,7 +45758,7 @@
     "email": "emp-02176@example.com",
     "current_role": "business_user",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -45763,7 +45769,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-22T02:49:27.580133Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-01T21:01:11.999363Z"
   },
   {
     "id": "EMP-02177",
@@ -46865,6 +46871,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-01T16:59:27.947809Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02235",
+    "full_name": "Stephanie Hall",
+    "email": "emp-02235@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-11-01T21:01:11.999363Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-01T21:01:11.999363Z",
     "terminated_at": null
   }
 ]
