@@ -46847,5 +46847,24 @@
     "manager_id": null,
     "hired_at": "2026-10-31T23:53:22.122793Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02234",
+    "full_name": "Taylor Maldonado",
+    "email": "emp-02234@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-11-01T16:59:27.947809Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-01T16:59:27.947809Z",
+    "terminated_at": null
   }
 ]
