@@ -10300,5 +10300,19 @@
     "sod_tags": [],
     "created_at": "2026-10-31T23:53:22.122793Z",
     "updated_at": "2026-10-31T23:53:22.122793Z"
+  },
+  {
+    "id": "ENT-00663",
+    "name": "new entitlement ENT-00663",
+    "pbl_description": "Provides read-only access to a system for authorized users.",
+    "access_tier": 4,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-11-01T10:56:52.842611Z",
+    "updated_at": "2026-11-01T10:56:52.842611Z"
   }
 ]
