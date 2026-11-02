@@ -46891,5 +46891,24 @@
     "manager_id": null,
     "hired_at": "2026-11-01T21:01:11.999363Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02236",
+    "full_name": "Tyrone Rios",
+    "email": "emp-02236@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-11-02T17:17:27.956507Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-02T17:17:27.956507Z",
+    "terminated_at": null
   }
 ]
