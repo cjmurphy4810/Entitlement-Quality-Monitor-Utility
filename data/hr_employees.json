@@ -46960,5 +46960,24 @@
     "manager_id": null,
     "hired_at": "2026-11-03T13:25:18.185860Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02239",
+    "full_name": "Briana Collins",
+    "email": "emp-02239@example.com",
+    "current_role": "business_user",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "cyber_tech",
+        "started_at": "2026-11-03T20:11:32.897701Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-03T20:11:32.897701Z",
+    "terminated_at": null
   }
 ]
