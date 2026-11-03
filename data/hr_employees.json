@@ -10682,8 +10682,8 @@
     "id": "EMP-00462",
     "full_name": "Michael Conner",
     "email": "emp-00462@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -10696,6 +10696,12 @@
         "role": "developer",
         "division": "hr",
         "started_at": "2026-06-08T15:36:47.077773Z",
+        "ended_at": "2026-11-03T05:31:24.801087Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-11-03T05:31:24.801087Z",
         "ended_at": null
       }
     ],
@@ -18832,7 +18838,7 @@
     "email": "emp-00834@example.com",
     "current_role": "business_user",
     "current_division": "business_sales",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -18843,7 +18849,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-06T18:24:14.033058Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-03T05:31:24.801087Z"
   },
   {
     "id": "EMP-00835",

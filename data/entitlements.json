@@ -4269,7 +4269,7 @@
     "id": "ENT-00269",
     "name": "new entitlement ENT-00269",
     "pbl_description": "This entitlement gives access stuff for users.",
-    "access_tier": 4,
+    "access_tier": 2,
     "acceptable_roles": [
       "business_analyst"
     ],
@@ -4277,7 +4277,7 @@
     "linked_resource_ids": [],
     "sod_tags": [],
     "created_at": "2026-07-10T12:25:39.364571Z",
-    "updated_at": "2026-07-10T12:25:39.364571Z"
+    "updated_at": "2026-11-03T05:31:24.801087Z"
   },
   {
     "id": "ENT-00270",
@@ -10362,5 +10362,21 @@
     "sod_tags": [],
     "created_at": "2026-11-02T23:57:34.111823Z",
     "updated_at": "2026-11-02T23:57:34.111823Z"
+  },
+  {
+    "id": "ENT-00667",
+    "name": "new entitlement ENT-00667",
+    "pbl_description": "This entitlement gives access stuff for users.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "operations"
+    ],
+    "division": "legal_compliance",
+    "linked_resource_ids": [
+      "RES-00190"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-11-03T05:31:24.801087Z",
+    "updated_at": "2026-11-03T05:31:24.801087Z"
   }
 ]
