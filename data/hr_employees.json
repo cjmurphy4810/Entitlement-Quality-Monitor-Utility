@@ -39653,14 +39653,20 @@
     "id": "EMP-01857",
     "full_name": "Shawn Velazquez",
     "email": "emp-01857@example.com",
-    "current_role": "customer",
-    "current_division": "hr",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "hr",
         "started_at": "2026-08-29T19:27:09.635168Z",
+        "ended_at": "2026-11-04T21:39:27.779711Z"
+      },
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-11-04T21:39:27.779711Z",
         "ended_at": null
       }
     ],
