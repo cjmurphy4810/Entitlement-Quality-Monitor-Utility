@@ -47023,5 +47023,24 @@
     "manager_id": null,
     "hired_at": "2026-11-04T00:44:11.272922Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02242",
+    "full_name": "Manuel Lindsey",
+    "email": "emp-02242@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-11-04T15:37:22.474863Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-04T15:37:22.474863Z",
+    "terminated_at": null
   }
 ]
