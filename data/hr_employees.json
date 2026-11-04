@@ -22929,14 +22929,20 @@
     "id": "EMP-01027",
     "full_name": "Jessica Johnson",
     "email": "emp-01027@example.com",
-    "current_role": "developer",
-    "current_division": "finance",
+    "current_role": "customer",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "finance",
         "started_at": "2026-07-19T23:26:00.712560Z",
+        "ended_at": "2026-11-04T07:08:03.960105Z"
+      },
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-11-04T07:08:03.960105Z",
         "ended_at": null
       }
     ],
