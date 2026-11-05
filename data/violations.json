@@ -265788,5 +265788,100 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-10970",
+    "rule_id": "CMDB-02",
+    "rule_name": "Tier inconsistency on critical resource",
+    "severity": "high",
+    "detected_at": "2026-11-05T17:00:26.187344Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00670",
+    "explanation": "Entitlement Tier-3 is linked to high/critical resources requiring Tier \u2264 2.",
+    "evidence": {
+      "access_tier": 3,
+      "offending_resources": [
+        {
+          "id": "RES-00023",
+          "criticality": "critical"
+        }
+      ]
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "access_tier": 2
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10971",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-05T17:00:27.669705Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04465",
+    "explanation": "Employee role 'developer' not in entitlement.acceptable_roles ['business_user'].",
+    "evidence": {
+      "employee_id": "EMP-02190",
+      "employee_role": "developer",
+      "entitlement_id": "ENT-00258",
+      "acceptable_roles": [
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10972",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-05T17:00:30.070863Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01798",
+    "explanation": "Terminated employee EMP-00855 (Janice Gallagher) still holds active assignment ASN-01798.",
+    "evidence": {
+      "employee_id": "EMP-00855",
+      "terminated_at": "2026-11-05T17:00:26.063008+00:00",
+      "entitlement_id": "ENT-00158"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-10973",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-05T17:00:30.101850Z",
+    "target_type": "assignment",
+    "target_id": "ASN-02015",
+    "explanation": "Terminated employee EMP-00855 (Janice Gallagher) still holds active assignment ASN-02015.",
+    "evidence": {
+      "employee_id": "EMP-00855",
+      "terminated_at": "2026-11-05T17:00:26.063008+00:00",
+      "entitlement_id": "ENT-00244"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
