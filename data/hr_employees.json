@@ -44723,14 +44723,20 @@
     "id": "EMP-02121",
     "full_name": "Sarah Mccoy",
     "email": "emp-02121@example.com",
-    "current_role": "business_analyst",
-    "current_division": "legal_compliance",
+    "current_role": "developer",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "legal_compliance",
         "started_at": "2026-10-11T07:37:16.896257Z",
+        "ended_at": "2026-11-05T01:56:12.823902Z"
+      },
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-11-05T01:56:12.823902Z",
         "ended_at": null
       }
     ],
@@ -47047,6 +47053,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-04T15:37:22.474863Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02243",
+    "full_name": "Randy Davis",
+    "email": "emp-02243@example.com",
+    "current_role": "business_user",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "hr",
+        "started_at": "2026-11-05T01:56:12.823902Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-05T01:56:12.823902Z",
     "terminated_at": null
   }
 ]
