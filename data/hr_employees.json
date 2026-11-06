@@ -47155,5 +47155,24 @@
     "manager_id": null,
     "hired_at": "2026-11-06T11:15:46.631914Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02248",
+    "full_name": "Melinda Thomas",
+    "email": "emp-02248@example.com",
+    "current_role": "customer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_sales",
+        "started_at": "2026-11-06T18:10:24.988353Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-06T18:10:24.988353Z",
+    "terminated_at": null
   }
 ]
