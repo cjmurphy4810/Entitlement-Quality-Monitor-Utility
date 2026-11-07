@@ -41766,14 +41766,20 @@
     "id": "EMP-01966",
     "full_name": "Amy Lloyd",
     "email": "emp-01966@example.com",
-    "current_role": "developer",
-    "current_division": "tech_ops",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "tech_ops",
         "started_at": "2026-09-15T17:51:56.382272Z",
+        "ended_at": "2026-11-07T09:43:14.220083Z"
+      },
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-11-07T09:43:14.220083Z",
         "ended_at": null
       }
     ],
