@@ -47199,5 +47199,43 @@
     "manager_id": null,
     "hired_at": "2026-11-07T02:58:41.019810Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02250",
+    "full_name": "Allison Simpson",
+    "email": "emp-02250@example.com",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-11-07T20:22:01.649771Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-07T20:22:01.649771Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02251",
+    "full_name": "Robyn Keller",
+    "email": "emp-02251@example.com",
+    "current_role": "customer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "cyber_tech",
+        "started_at": "2026-11-07T20:22:01.649771Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-07T20:22:01.649771Z",
+    "terminated_at": null
   }
 ]
