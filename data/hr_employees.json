@@ -33866,14 +33866,20 @@
     "id": "EMP-01566",
     "full_name": "Lance Smith",
     "email": "emp-01566@example.com",
-    "current_role": "business_analyst",
-    "current_division": "cyber_tech",
+    "current_role": "business_user",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_analyst",
         "division": "cyber_tech",
         "started_at": "2026-08-17T14:32:02.922729Z",
+        "ended_at": "2026-11-07T23:45:10.656548Z"
+      },
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-11-07T23:45:10.656548Z",
         "ended_at": null
       }
     ],
@@ -47236,6 +47242,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-07T20:22:01.649771Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02252",
+    "full_name": "Kaitlyn Russell",
+    "email": "emp-02252@example.com",
+    "current_role": "customer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_dev",
+        "started_at": "2026-11-07T23:45:10.656548Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-07T23:45:10.656548Z",
     "terminated_at": null
   }
 ]
