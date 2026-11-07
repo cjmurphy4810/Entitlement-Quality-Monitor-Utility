@@ -47174,5 +47174,24 @@
     "manager_id": null,
     "hired_at": "2026-11-06T18:10:24.988353Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02249",
+    "full_name": "Dr. Brooke Graham",
+    "email": "emp-02249@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-11-07T02:58:41.019810Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-07T02:58:41.019810Z",
+    "terminated_at": null
   }
 ]
