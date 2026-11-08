@@ -41392,14 +41392,20 @@
     "id": "EMP-01946",
     "full_name": "Amber Ellis",
     "email": "emp-01946@example.com",
-    "current_role": "developer",
-    "current_division": "hr",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
         "role": "developer",
         "division": "hr",
         "started_at": "2026-09-12T17:36:20.272385Z",
+        "ended_at": "2026-11-08T10:57:46.268660Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-11-08T10:57:46.268660Z",
         "ended_at": null
       }
     ],
@@ -47267,6 +47273,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-07T23:45:10.656548Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02253",
+    "full_name": "Matthew Burke",
+    "email": "emp-02253@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-11-08T10:57:46.268660Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-08T10:57:46.268660Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02254",
+    "full_name": "Aaron Mcgee",
+    "email": "emp-02254@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-11-08T10:57:46.268660Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-08T10:57:46.268660Z",
     "terminated_at": null
   }
 ]
