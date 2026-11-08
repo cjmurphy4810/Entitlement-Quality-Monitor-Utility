@@ -47312,5 +47312,24 @@
     "manager_id": null,
     "hired_at": "2026-11-08T10:57:46.268660Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02255",
+    "full_name": "Karen Lindsey",
+    "email": "emp-02255@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-11-08T16:55:29.229201Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-08T16:55:29.229201Z",
+    "terminated_at": null
   }
 ]
