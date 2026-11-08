@@ -130,7 +130,7 @@
     "email": "user00006@example.com",
     "current_role": "developer",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -153,7 +153,7 @@
     ],
     "manager_id": null,
     "hired_at": "2024-01-23T04:52:59.501678Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-08T20:55:54.103517Z"
   },
   {
     "id": "EMP-00007",
@@ -14805,8 +14805,8 @@
     "id": "EMP-00649",
     "full_name": "Ryan Barber MD",
     "email": "emp-00649@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "business_sales",
     "status": "active",
     "role_history": [
       {
@@ -14825,6 +14825,12 @@
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-07-07T16:43:51.168014Z",
+        "ended_at": "2026-11-08T20:55:54.103517Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_sales",
+        "started_at": "2026-11-08T20:55:54.103517Z",
         "ended_at": null
       }
     ],
@@ -47330,6 +47336,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-08T16:55:29.229201Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02256",
+    "full_name": "Crystal Wilson",
+    "email": "emp-02256@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-11-08T20:55:54.103517Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-08T20:55:54.103517Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02257",
+    "full_name": "Regina Powell",
+    "email": "emp-02257@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-11-08T20:55:54.103517Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-08T20:55:54.103517Z",
     "terminated_at": null
   }
 ]

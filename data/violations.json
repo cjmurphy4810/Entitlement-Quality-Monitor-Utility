@@ -89487,8 +89487,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-11-08T20:56:01.582945Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -124700,8 +124709,17 @@
     "suggested_fix": {
       "_action": "delete_assignment"
     },
-    "workflow_state": "open",
-    "workflow_history": [],
+    "workflow_state": "resolved",
+    "workflow_history": [
+      {
+        "from_state": "open",
+        "to_state": "resolved",
+        "actor": "engine",
+        "timestamp": "2026-11-08T20:56:01.583601Z",
+        "note": "auto-resolved by drift",
+        "override_fix": null
+      }
+    ],
     "appian_case_id": null
   },
   {
@@ -267471,6 +267489,412 @@
       "employee_division": "finance",
       "entitlement_id": "ENT-00181",
       "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11041",
+    "rule_id": "CMDB-01",
+    "rule_name": "Orphan entitlement",
+    "severity": "low",
+    "detected_at": "2026-11-08T20:55:54.310552Z",
+    "target_type": "entitlement",
+    "target_id": "ENT-00678",
+    "explanation": "Entitlement is not linked to any valid CMDB resource.",
+    "evidence": {
+      "declared_links": [],
+      "valid_links": []
+    },
+    "recommended_action": "route_to_entitlement_owner",
+    "suggested_fix": {
+      "_action": "link_to_resource",
+      "_note": "Owner should add at least one valid resource id."
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11042",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-08T20:55:56.791015Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04492",
+    "explanation": "Employee role 'customer' not in entitlement.acceptable_roles ['developer', 'business_user'].",
+    "evidence": {
+      "employee_id": "EMP-00566",
+      "employee_role": "customer",
+      "entitlement_id": "ENT-00033",
+      "acceptable_roles": [
+        "developer",
+        "business_user"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11043",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-08T20:55:56.792513Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04493",
+    "explanation": "Employee role 'business_user' not in entitlement.acceptable_roles ['operations'].",
+    "evidence": {
+      "employee_id": "EMP-01862",
+      "employee_role": "business_user",
+      "entitlement_id": "ENT-00270",
+      "acceptable_roles": [
+        "operations"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11044",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-08T20:55:59.659271Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04007",
+    "explanation": "Employee division 'business_sales' does not match entitlement division 'finance'.",
+    "evidence": {
+      "employee_id": "EMP-00649",
+      "employee_division": "business_sales",
+      "entitlement_id": "ENT-00425",
+      "entitlement_division": "finance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11045",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-08T20:56:00.412726Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04492",
+    "explanation": "Employee division 'hr' does not match entitlement division 'business_dev'.",
+    "evidence": {
+      "employee_id": "EMP-00566",
+      "employee_division": "hr",
+      "entitlement_id": "ENT-00033",
+      "entitlement_division": "business_dev"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11046",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-08T20:56:00.414526Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04493",
+    "explanation": "Employee division 'legal_compliance' does not match entitlement division 'tech_ops'.",
+    "evidence": {
+      "employee_id": "EMP-01862",
+      "employee_division": "legal_compliance",
+      "entitlement_id": "ENT-00270",
+      "entitlement_division": "tech_ops"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11047",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.439529Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00017",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00017.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00021"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11048",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.440456Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00071",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00071.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00047"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11049",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.441584Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00108",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00108.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00015"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11050",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.441888Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00114",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00114.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00028"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11051",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.445079Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00187",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00187.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00041"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11052",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.445306Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00194",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00194.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00013"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11053",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.458742Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00370",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00370.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00068"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11054",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.494531Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00687",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00687.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00027"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11055",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.515519Z",
+    "target_type": "assignment",
+    "target_id": "ASN-00802",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-00802.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00043"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11056",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.617017Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01304",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-01304.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00194"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11057",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.679822Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01558",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-01558.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00218"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11058",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-08T20:56:00.701495Z",
+    "target_type": "assignment",
+    "target_id": "ASN-01643",
+    "explanation": "Terminated employee EMP-00006 (Tanya Campos) still holds active assignment ASN-01643.",
+    "evidence": {
+      "employee_id": "EMP-00006",
+      "terminated_at": "2026-11-08T20:55:54.103517+00:00",
+      "entitlement_id": "ENT-00111"
     },
     "recommended_action": "auto_revoke_assignment",
     "suggested_fix": {
