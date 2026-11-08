@@ -10500,5 +10500,21 @@
     "sod_tags": [],
     "created_at": "2026-11-07T23:45:10.656548Z",
     "updated_at": "2026-11-07T23:45:10.656548Z"
+  },
+  {
+    "id": "ENT-00676",
+    "name": "new entitlement ENT-00676",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00224"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-11-08T03:48:10.538462Z",
+    "updated_at": "2026-11-08T03:48:10.538462Z"
   }
 ]
