@@ -10211,8 +10211,8 @@
     "id": "EMP-00441",
     "full_name": "Breanna Phillips",
     "email": "emp-00441@example.com",
-    "current_role": "business_analyst",
-    "current_division": "business_ops",
+    "current_role": "customer",
+    "current_division": "legal_compliance",
     "status": "active",
     "role_history": [
       {
@@ -10225,6 +10225,12 @@
         "role": "business_analyst",
         "division": "business_ops",
         "started_at": "2026-05-25T14:42:15.413386Z",
+        "ended_at": "2026-11-09T17:15:04.759473Z"
+      },
+      {
+        "role": "customer",
+        "division": "legal_compliance",
+        "started_at": "2026-11-09T17:15:04.759473Z",
         "ended_at": null
       }
     ],
