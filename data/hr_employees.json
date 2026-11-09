@@ -38818,14 +38818,20 @@
     "id": "EMP-01814",
     "full_name": "Daniel Rojas",
     "email": "emp-01814@example.com",
-    "current_role": "business_user",
-    "current_division": "business_ops",
+    "current_role": "operations",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_ops",
         "started_at": "2026-08-25T05:02:26.739554Z",
+        "ended_at": "2026-11-09T00:25:49.369758Z"
+      },
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-11-09T00:25:49.369758Z",
         "ended_at": null
       }
     ],
