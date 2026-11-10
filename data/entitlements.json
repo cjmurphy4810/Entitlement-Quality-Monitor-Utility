@@ -10578,5 +10578,19 @@
     "sod_tags": [],
     "created_at": "2026-11-10T00:47:14.188531Z",
     "updated_at": "2026-11-10T00:47:14.188531Z"
+  },
+  {
+    "id": "ENT-00681",
+    "name": "new entitlement ENT-00681",
+    "pbl_description": "admin access for whoever needs it",
+    "access_tier": 2,
+    "acceptable_roles": [
+      "customer"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [],
+    "sod_tags": [],
+    "created_at": "2026-11-10T07:56:16.435902Z",
+    "updated_at": "2026-11-10T07:56:16.435902Z"
   }
 ]
