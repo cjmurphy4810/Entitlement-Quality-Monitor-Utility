@@ -47456,5 +47456,43 @@
     "manager_id": null,
     "hired_at": "2026-11-10T07:56:16.435902Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02261",
+    "full_name": "John Rogers",
+    "email": "emp-02261@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_sales",
+        "started_at": "2026-11-10T21:51:54.832572Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-10T21:51:54.832572Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02262",
+    "full_name": "Carolyn Walsh",
+    "email": "emp-02262@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-11-10T21:51:54.832572Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-10T21:51:54.832572Z",
+    "terminated_at": null
   }
 ]
