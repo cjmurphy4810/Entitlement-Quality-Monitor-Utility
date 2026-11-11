@@ -41947,14 +41947,20 @@
     "id": "EMP-01973",
     "full_name": "Samuel Levine",
     "email": "emp-01973@example.com",
-    "current_role": "business_user",
-    "current_division": "tech_ops",
+    "current_role": "customer",
+    "current_division": "finance",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "tech_ops",
         "started_at": "2026-09-16T17:24:29.323673Z",
+        "ended_at": "2026-11-11T08:42:42.960350Z"
+      },
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-11-11T08:42:42.960350Z",
         "ended_at": null
       }
     ],
