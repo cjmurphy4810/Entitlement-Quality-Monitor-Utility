@@ -47494,5 +47494,24 @@
     "manager_id": null,
     "hired_at": "2026-11-10T21:51:54.832572Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02263",
+    "full_name": "Frank Bell",
+    "email": "emp-02263@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-11-11T01:38:07.661529Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-11T01:38:07.661529Z",
+    "terminated_at": null
   }
 ]
