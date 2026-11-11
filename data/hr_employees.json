@@ -47519,5 +47519,24 @@
     "manager_id": null,
     "hired_at": "2026-11-11T01:38:07.661529Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02264",
+    "full_name": "Adrienne Obrien",
+    "email": "emp-02264@example.com",
+    "current_role": "operations",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_ops",
+        "started_at": "2026-11-11T16:48:39.765705Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-11T16:48:39.765705Z",
+    "terminated_at": null
   }
 ]
