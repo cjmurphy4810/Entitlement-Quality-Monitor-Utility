@@ -28143,8 +28143,8 @@
     "id": "EMP-01279",
     "full_name": "Adrienne Owen",
     "email": "emp-01279@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "business_analyst",
+    "current_division": "business_dev",
     "status": "active",
     "role_history": [
       {
@@ -28157,6 +28157,12 @@
         "role": "operations",
         "division": "finance",
         "started_at": "2026-08-21T23:45:59.038459Z",
+        "ended_at": "2026-11-12T03:58:51.890418Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "business_dev",
+        "started_at": "2026-11-12T03:58:51.890418Z",
         "ended_at": null
       }
     ],
