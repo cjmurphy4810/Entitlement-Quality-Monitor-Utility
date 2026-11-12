@@ -47544,5 +47544,24 @@
     "manager_id": null,
     "hired_at": "2026-11-11T16:48:39.765705Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02265",
+    "full_name": "Earl Johnson",
+    "email": "emp-02265@example.com",
+    "current_role": "developer",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "cyber_tech",
+        "started_at": "2026-11-12T12:19:06.923291Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-12T12:19:06.923291Z",
+    "terminated_at": null
   }
 ]
