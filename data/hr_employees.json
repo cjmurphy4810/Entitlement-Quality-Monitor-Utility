@@ -47563,5 +47563,43 @@
     "manager_id": null,
     "hired_at": "2026-11-12T12:19:06.923291Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02266",
+    "full_name": "Yesenia Schwartz",
+    "email": "emp-02266@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-11-12T20:13:51.192824Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-12T20:13:51.192824Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02267",
+    "full_name": "Tamara Hayes",
+    "email": "emp-02267@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-11-12T20:13:51.192824Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-12T20:13:51.192824Z",
+    "terminated_at": null
   }
 ]
