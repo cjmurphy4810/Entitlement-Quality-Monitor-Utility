@@ -37560,14 +37560,20 @@
     "id": "EMP-01750",
     "full_name": "Brian Johnson",
     "email": "emp-01750@example.com",
-    "current_role": "customer",
-    "current_division": "business_ops",
+    "current_role": "developer",
+    "current_division": "hr",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_ops",
         "started_at": "2026-08-22T23:43:27.332619Z",
+        "ended_at": "2026-11-13T16:38:19.249320Z"
+      },
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-11-13T16:38:19.249320Z",
         "ended_at": null
       }
     ],
@@ -47600,6 +47606,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-12T20:13:51.192824Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02268",
+    "full_name": "Melissa Carroll",
+    "email": "emp-02268@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-11-13T16:38:19.249320Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-13T16:38:19.249320Z",
     "terminated_at": null
   }
 ]
