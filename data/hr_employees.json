@@ -40791,7 +40791,7 @@
     "email": "emp-01913@example.com",
     "current_role": "operations",
     "current_division": "business_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "operations",
@@ -40802,7 +40802,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-09-08T05:31:30.364945Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-13T22:19:39.785798Z"
   },
   {
     "id": "EMP-01914",
@@ -47625,6 +47625,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-13T16:38:19.249320Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02269",
+    "full_name": "Cynthia Walker",
+    "email": "emp-02269@example.com",
+    "current_role": "operations",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "business_dev",
+        "started_at": "2026-11-13T22:19:39.785798Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-13T22:19:39.785798Z",
     "terminated_at": null
   }
 ]
