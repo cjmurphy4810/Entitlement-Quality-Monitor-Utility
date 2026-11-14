@@ -23914,7 +23914,7 @@
     "email": "emp-01074@example.com",
     "current_role": "business_user",
     "current_division": "cyber_tech",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -23925,7 +23925,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-22T23:09:39.722601Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-14T20:50:46.824621Z"
   },
   {
     "id": "EMP-01075",
@@ -24712,14 +24712,20 @@
     "id": "EMP-01112",
     "full_name": "Natalie Sanders",
     "email": "emp-01112@example.com",
-    "current_role": "customer",
-    "current_division": "business_sales",
+    "current_role": "operations",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "customer",
         "division": "business_sales",
         "started_at": "2026-07-25T17:53:21.619554Z",
+        "ended_at": "2026-11-14T20:50:46.824621Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_ops",
+        "started_at": "2026-11-14T20:50:46.824621Z",
         "ended_at": null
       }
     ],
@@ -47726,6 +47732,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-14T16:17:41.586318Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02274",
+    "full_name": "Alexander Lopez",
+    "email": "emp-02274@example.com",
+    "current_role": "operations",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "hr",
+        "started_at": "2026-11-14T20:50:46.824621Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-14T20:50:46.824621Z",
     "terminated_at": null
   }
 ]
