@@ -47689,5 +47689,43 @@
     "manager_id": null,
     "hired_at": "2026-11-14T09:42:33.522378Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02272",
+    "full_name": "Jacob Vargas",
+    "email": "emp-02272@example.com",
+    "current_role": "customer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "tech_ops",
+        "started_at": "2026-11-14T16:17:41.586318Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-14T16:17:41.586318Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02273",
+    "full_name": "Antonio Lee",
+    "email": "emp-02273@example.com",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-11-14T16:17:41.586318Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-14T16:17:41.586318Z",
+    "terminated_at": null
   }
 ]
