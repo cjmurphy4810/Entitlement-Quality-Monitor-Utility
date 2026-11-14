@@ -10652,5 +10652,21 @@
     "sod_tags": [],
     "created_at": "2026-11-13T22:19:39.785798Z",
     "updated_at": "2026-11-13T22:19:39.785798Z"
+  },
+  {
+    "id": "ENT-00686",
+    "name": "new entitlement ENT-00686",
+    "pbl_description": "Lets the user do things in the system.",
+    "access_tier": 1,
+    "acceptable_roles": [
+      "business_analyst"
+    ],
+    "division": "finance",
+    "linked_resource_ids": [
+      "RES-00216"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-11-14T02:34:04.864470Z",
+    "updated_at": "2026-11-14T02:34:04.864470Z"
   }
 ]
