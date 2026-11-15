@@ -47752,5 +47752,43 @@
     "manager_id": null,
     "hired_at": "2026-11-14T20:50:46.824621Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02275",
+    "full_name": "Tina Mckinney",
+    "email": "emp-02275@example.com",
+    "current_role": "business_user",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "legal_compliance",
+        "started_at": "2026-11-15T00:35:36.924753Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-15T00:35:36.924753Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02276",
+    "full_name": "Nicole Conway",
+    "email": "emp-02276@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-11-15T00:35:36.924753Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-15T00:35:36.924753Z",
+    "terminated_at": null
   }
 ]
