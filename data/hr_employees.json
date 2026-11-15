@@ -15780,7 +15780,7 @@
     "email": "emp-00692@example.com",
     "current_role": "business_analyst",
     "current_division": "tech_dev",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_analyst",
@@ -15791,7 +15791,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-06-23T21:12:19.094982Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-15T07:25:15.407410Z"
   },
   {
     "id": "EMP-00693",
@@ -47789,6 +47789,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-15T00:35:36.924753Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02277",
+    "full_name": "Cynthia Ho",
+    "email": "emp-02277@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-11-15T07:25:15.407410Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-15T07:25:15.407410Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02278",
+    "full_name": "William Gordon",
+    "email": "emp-02278@example.com",
+    "current_role": "business_analyst",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "business_ops",
+        "started_at": "2026-11-15T07:25:15.407410Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-15T07:25:15.407410Z",
     "terminated_at": null
   }
 ]
