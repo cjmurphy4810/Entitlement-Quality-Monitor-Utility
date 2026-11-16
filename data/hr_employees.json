@@ -43971,14 +43971,20 @@
     "id": "EMP-02077",
     "full_name": "Seth Robertson",
     "email": "emp-02077@example.com",
-    "current_role": "business_user",
-    "current_division": "business_ops",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "business_user",
         "division": "business_ops",
         "started_at": "2026-10-03T08:23:26.433957Z",
+        "ended_at": "2026-11-16T00:06:39.661468Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-11-16T00:06:39.661468Z",
         "ended_at": null
       }
     ],
@@ -47833,6 +47839,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-15T07:25:15.407410Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02279",
+    "full_name": "Anthony Kidd",
+    "email": "emp-02279@example.com",
+    "current_role": "customer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "hr",
+        "started_at": "2026-11-16T00:06:39.661468Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-16T00:06:39.661468Z",
     "terminated_at": null
   }
 ]
