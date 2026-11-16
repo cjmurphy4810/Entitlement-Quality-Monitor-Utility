@@ -47884,5 +47884,24 @@
     "manager_id": null,
     "hired_at": "2026-11-16T06:58:19.187849Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02281",
+    "full_name": "Andrew Romero",
+    "email": "emp-02281@example.com",
+    "current_role": "customer",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "finance",
+        "started_at": "2026-11-16T16:48:14.674606Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-16T16:48:14.674606Z",
+    "terminated_at": null
   }
 ]
