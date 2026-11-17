@@ -271383,5 +271383,119 @@
     "workflow_state": "open",
     "workflow_history": [],
     "appian_case_id": null
+  },
+  {
+    "id": "VIO-11203",
+    "rule_id": "HR-01",
+    "rule_name": "Role mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-17T08:43:41.852162Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04550",
+    "explanation": "Employee role 'operations' not in entitlement.acceptable_roles ['customer'].",
+    "evidence": {
+      "employee_id": "EMP-01514",
+      "employee_role": "operations",
+      "entitlement_id": "ENT-00282",
+      "acceptable_roles": [
+        "customer"
+      ]
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11204",
+    "rule_id": "HR-02",
+    "rule_name": "Division mismatch",
+    "severity": "medium",
+    "detected_at": "2026-11-17T08:43:44.237410Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04550",
+    "explanation": "Employee division 'tech_ops' does not match entitlement division 'legal_compliance'.",
+    "evidence": {
+      "employee_id": "EMP-01514",
+      "employee_division": "tech_ops",
+      "entitlement_id": "ENT-00282",
+      "entitlement_division": "legal_compliance"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11205",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-17T08:43:44.703150Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03262",
+    "explanation": "Terminated employee EMP-01514 (Ian King) still holds active assignment ASN-03262.",
+    "evidence": {
+      "employee_id": "EMP-01514",
+      "terminated_at": "2026-11-17T08:43:40.117004+00:00",
+      "entitlement_id": "ENT-00135"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11206",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-17T08:43:44.729098Z",
+    "target_type": "assignment",
+    "target_id": "ASN-03405",
+    "explanation": "Terminated employee EMP-01514 (Ian King) still holds active assignment ASN-03405.",
+    "evidence": {
+      "employee_id": "EMP-01514",
+      "terminated_at": "2026-11-17T08:43:40.117004+00:00",
+      "entitlement_id": "ENT-00298"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
+  },
+  {
+    "id": "VIO-11207",
+    "rule_id": "HR-04",
+    "rule_name": "Terminated user holds active assignment",
+    "severity": "critical",
+    "detected_at": "2026-11-17T08:43:44.927940Z",
+    "target_type": "assignment",
+    "target_id": "ASN-04550",
+    "explanation": "Terminated employee EMP-01514 (Ian King) still holds active assignment ASN-04550.",
+    "evidence": {
+      "employee_id": "EMP-01514",
+      "terminated_at": "2026-11-17T08:43:40.117004+00:00",
+      "entitlement_id": "ENT-00282"
+    },
+    "recommended_action": "auto_revoke_assignment",
+    "suggested_fix": {
+      "_action": "delete_assignment"
+    },
+    "workflow_state": "open",
+    "workflow_history": [],
+    "appian_case_id": null
   }
 ]
