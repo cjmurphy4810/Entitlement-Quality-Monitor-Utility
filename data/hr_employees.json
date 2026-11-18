@@ -47984,5 +47984,43 @@
     "manager_id": null,
     "hired_at": "2026-11-17T18:01:42.678468Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02285",
+    "full_name": "Melissa Sandoval",
+    "email": "emp-02285@example.com",
+    "current_role": "business_analyst",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "cyber_tech",
+        "started_at": "2026-11-18T08:46:26.160691Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-18T08:46:26.160691Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02286",
+    "full_name": "Diane Smith",
+    "email": "emp-02286@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-11-18T08:46:26.160691Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-18T08:46:26.160691Z",
+    "terminated_at": null
   }
 ]
