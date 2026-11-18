@@ -18627,14 +18627,20 @@
     "id": "EMP-00823",
     "full_name": "Ariel Benson",
     "email": "emp-00823@example.com",
-    "current_role": "operations",
-    "current_division": "legal_compliance",
+    "current_role": "business_analyst",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
         "role": "operations",
         "division": "legal_compliance",
         "started_at": "2026-07-05T18:35:01.729898Z",
+        "ended_at": "2026-11-18T17:43:10.305760Z"
+      },
+      {
+        "role": "business_analyst",
+        "division": "tech_ops",
+        "started_at": "2026-11-18T17:43:10.305760Z",
         "ended_at": null
       }
     ],
