@@ -48116,5 +48116,24 @@
     "manager_id": null,
     "hired_at": "2026-11-19T14:36:46.926199Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02291",
+    "full_name": "Ashley Johnson",
+    "email": "emp-02291@example.com",
+    "current_role": "operations",
+    "current_division": "cyber_tech",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "cyber_tech",
+        "started_at": "2026-11-19T22:31:14.006063Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-19T22:31:14.006063Z",
+    "terminated_at": null
   }
 ]
