@@ -28879,8 +28879,8 @@
     "id": "EMP-01313",
     "full_name": "Jaime Conrad",
     "email": "emp-01313@example.com",
-    "current_role": "business_user",
-    "current_division": "finance",
+    "current_role": "operations",
+    "current_division": "tech_dev",
     "status": "active",
     "role_history": [
       {
@@ -28893,6 +28893,12 @@
         "role": "business_user",
         "division": "finance",
         "started_at": "2026-08-23T16:49:12.631268Z",
+        "ended_at": "2026-11-19T14:36:46.926199Z"
+      },
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-11-19T14:36:46.926199Z",
         "ended_at": null
       }
     ],
@@ -48071,6 +48077,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-19T05:27:17.418415Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02289",
+    "full_name": "Anthony Green",
+    "email": "emp-02289@example.com",
+    "current_role": "developer",
+    "current_division": "hr",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "hr",
+        "started_at": "2026-11-19T14:36:46.926199Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-19T14:36:46.926199Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02290",
+    "full_name": "Phillip Archer",
+    "email": "emp-02290@example.com",
+    "current_role": "customer",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_dev",
+        "started_at": "2026-11-19T14:36:46.926199Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-19T14:36:46.926199Z",
     "terminated_at": null
   }
 ]
