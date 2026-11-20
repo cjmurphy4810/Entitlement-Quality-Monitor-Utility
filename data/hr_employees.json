@@ -7409,8 +7409,8 @@
     "id": "EMP-00315",
     "full_name": "Krystal Smith",
     "email": "emp-00315@example.com",
-    "current_role": "operations",
-    "current_division": "finance",
+    "current_role": "business_user",
+    "current_division": "tech_ops",
     "status": "active",
     "role_history": [
       {
@@ -7423,6 +7423,12 @@
         "role": "operations",
         "division": "finance",
         "started_at": "2026-05-17T17:53:16.819998Z",
+        "ended_at": "2026-11-20T12:23:23.527833Z"
+      },
+      {
+        "role": "business_user",
+        "division": "tech_ops",
+        "started_at": "2026-11-20T12:23:23.527833Z",
         "ended_at": null
       }
     ],
@@ -45109,7 +45115,7 @@
     "email": "emp-02133@example.com",
     "current_role": "business_user",
     "current_division": "tech_ops",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "business_user",
@@ -45120,7 +45126,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-10-16T10:00:27.413558Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-20T12:23:23.527833Z"
   },
   {
     "id": "EMP-02134",
@@ -48134,6 +48140,44 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-19T22:31:14.006063Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02292",
+    "full_name": "Michelle Turner",
+    "email": "emp-02292@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-11-20T12:23:23.527833Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-20T12:23:23.527833Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02293",
+    "full_name": "Bonnie Brown",
+    "email": "emp-02293@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-11-20T12:23:23.527833Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-20T12:23:23.527833Z",
     "terminated_at": null
   }
 ]
