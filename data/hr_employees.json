@@ -48286,5 +48286,43 @@
     "manager_id": null,
     "hired_at": "2026-11-21T09:01:45.756548Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02299",
+    "full_name": "William White",
+    "email": "emp-02299@example.com",
+    "current_role": "business_user",
+    "current_division": "finance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "finance",
+        "started_at": "2026-11-21T16:52:43.649164Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-21T16:52:43.649164Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02300",
+    "full_name": "Andrew Hill",
+    "email": "emp-02300@example.com",
+    "current_role": "customer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "customer",
+        "division": "business_ops",
+        "started_at": "2026-11-21T16:52:43.649164Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-21T16:52:43.649164Z",
+    "terminated_at": null
   }
 ]
