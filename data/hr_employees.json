@@ -20083,7 +20083,7 @@
     "email": "emp-00891@example.com",
     "current_role": "business_analyst",
     "current_division": "legal_compliance",
-    "status": "active",
+    "status": "terminated",
     "role_history": [
       {
         "role": "customer",
@@ -20100,7 +20100,7 @@
     ],
     "manager_id": null,
     "hired_at": "2026-07-11T16:47:59.814727Z",
-    "terminated_at": null
+    "terminated_at": "2026-11-21T01:54:36.848874Z"
   },
   {
     "id": "EMP-00892",
@@ -48222,6 +48222,25 @@
     ],
     "manager_id": null,
     "hired_at": "2026-11-20T20:36:51.946325Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02296",
+    "full_name": "James Whitaker",
+    "email": "emp-02296@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-11-21T01:54:36.848874Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-21T01:54:36.848874Z",
     "terminated_at": null
   }
 ]
