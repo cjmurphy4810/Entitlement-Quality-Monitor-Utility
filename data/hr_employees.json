@@ -48406,5 +48406,43 @@
     "manager_id": null,
     "hired_at": "2026-11-22T01:56:05.775118Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02305",
+    "full_name": "Richard York",
+    "email": "emp-02305@example.com",
+    "current_role": "developer",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_dev",
+        "started_at": "2026-11-22T09:15:32.817843Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-22T09:15:32.817843Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02306",
+    "full_name": "Christopher Williams",
+    "email": "emp-02306@example.com",
+    "current_role": "operations",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "operations",
+        "division": "tech_dev",
+        "started_at": "2026-11-22T09:15:32.817843Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-22T09:15:32.817843Z",
+    "terminated_at": null
   }
 ]
