@@ -48368,5 +48368,43 @@
     "manager_id": null,
     "hired_at": "2026-11-21T21:58:21.176730Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02303",
+    "full_name": "Joshua Smith",
+    "email": "emp-02303@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-11-22T01:56:05.775118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-22T01:56:05.775118Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02304",
+    "full_name": "Rodney Brady",
+    "email": "emp-02304@example.com",
+    "current_role": "business_analyst",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_analyst",
+        "division": "legal_compliance",
+        "started_at": "2026-11-22T01:56:05.775118Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-22T01:56:05.775118Z",
+    "terminated_at": null
   }
 ]
