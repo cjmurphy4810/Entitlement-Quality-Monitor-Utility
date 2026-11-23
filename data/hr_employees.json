@@ -48482,5 +48482,43 @@
     "manager_id": null,
     "hired_at": "2026-11-23T03:25:08.456231Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02309",
+    "full_name": "Chelsea Mcclain",
+    "email": "emp-02309@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-11-23T13:24:46.864949Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-23T13:24:46.864949Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02310",
+    "full_name": "Danielle Davies",
+    "email": "emp-02310@example.com",
+    "current_role": "developer",
+    "current_division": "tech_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "tech_ops",
+        "started_at": "2026-11-23T13:24:46.864949Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-23T13:24:46.864949Z",
+    "terminated_at": null
   }
 ]
