@@ -10770,5 +10770,21 @@
     "sod_tags": [],
     "created_at": "2026-11-22T22:38:52.517610Z",
     "updated_at": "2026-11-22T22:38:52.517610Z"
+  },
+  {
+    "id": "ENT-00694",
+    "name": "new entitlement ENT-00694",
+    "pbl_description": "Provides standard access to a system for authorized users.",
+    "access_tier": 3,
+    "acceptable_roles": [
+      "business_user"
+    ],
+    "division": "hr",
+    "linked_resource_ids": [
+      "RES-00215"
+    ],
+    "sod_tags": [],
+    "created_at": "2026-11-23T03:25:08.456231Z",
+    "updated_at": "2026-11-23T03:25:08.456231Z"
   }
 ]
