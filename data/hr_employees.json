@@ -48520,5 +48520,43 @@
     "manager_id": null,
     "hired_at": "2026-11-23T13:24:46.864949Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02311",
+    "full_name": "Michael Taylor",
+    "email": "emp-02311@example.com",
+    "current_role": "developer",
+    "current_division": "business_sales",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_sales",
+        "started_at": "2026-11-24T11:17:44.715514Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-24T11:17:44.715514Z",
+    "terminated_at": null
+  },
+  {
+    "id": "EMP-02312",
+    "full_name": "Melissa Morgan",
+    "email": "emp-02312@example.com",
+    "current_role": "developer",
+    "current_division": "legal_compliance",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "legal_compliance",
+        "started_at": "2026-11-24T11:17:44.715514Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-24T11:17:44.715514Z",
+    "terminated_at": null
   }
 ]
