@@ -48577,5 +48577,24 @@
     "manager_id": null,
     "hired_at": "2026-11-25T04:25:03.651447Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02314",
+    "full_name": "Mrs. Wendy Herrera",
+    "email": "emp-02314@example.com",
+    "current_role": "developer",
+    "current_division": "business_ops",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "developer",
+        "division": "business_ops",
+        "started_at": "2026-11-25T14:44:30.246548Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-25T14:44:30.246548Z",
+    "terminated_at": null
   }
 ]
