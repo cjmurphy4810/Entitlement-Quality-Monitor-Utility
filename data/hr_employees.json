@@ -48602,5 +48602,24 @@
     "manager_id": null,
     "hired_at": "2026-11-25T14:44:30.246548Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02315",
+    "full_name": "Christian French",
+    "email": "emp-02315@example.com",
+    "current_role": "business_user",
+    "current_division": "business_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "business_dev",
+        "started_at": "2026-11-27T00:14:10.459679Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-27T00:14:10.459679Z",
+    "terminated_at": null
   }
 ]
