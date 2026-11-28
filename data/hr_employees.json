@@ -48703,5 +48703,24 @@
     "manager_id": null,
     "hired_at": "2026-11-27T18:37:34.498412Z",
     "terminated_at": null
+  },
+  {
+    "id": "EMP-02320",
+    "full_name": "Thomas Rodgers",
+    "email": "emp-02320@example.com",
+    "current_role": "business_user",
+    "current_division": "tech_dev",
+    "status": "active",
+    "role_history": [
+      {
+        "role": "business_user",
+        "division": "tech_dev",
+        "started_at": "2026-11-28T09:40:33.183326Z",
+        "ended_at": null
+      }
+    ],
+    "manager_id": null,
+    "hired_at": "2026-11-28T09:40:33.183326Z",
+    "terminated_at": null
   }
 ]
